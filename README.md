@@ -51,6 +51,10 @@ Several drivers also have a `verify` or `check` step that recomputes a result fr
 
 Python 3.12 was used. [`requirements.txt`](requirements.txt) lists the third-party packages: NumPy, SciPy and jsonschema at the versions installed on the build workstation; Matplotlib and ReportLab for figures, whose versions were not recorded; and the OpenAI client for the live answering and scoring stages only. RetrievalArena is used at the commits recorded in each evidence file.
 
+## License
+
+The study code, configurations, tools and documentation are released under the [MIT License](LICENSE) (Copyright 2026 Rocker D'Antonio). Some evidence records, prompts and generation records quote Docker documentation, which remains under Docker's Apache License 2.0; the files under `vendor/docspectra_importer/` are the author's own code, also under the MIT License.
+
 ## Citation
 
-Cite this repository with [`CITATION.cff`](CITATION.cff). Cite the dataset as DockerDocsSet2026 and the framework as RetrievalArena separately.
+Cite this repository (version 1.0.0, Git tag `v1.0.0`) with [`CITATION.cff`](CITATION.cff). Cite the dataset as DockerDocsSet2026 and the framework as RetrievalArena separately.
