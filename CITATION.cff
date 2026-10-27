@@ -26,7 +26,9 @@ references:
   - type: software
     title: "Retrieval Arena"
     authors:
-      - name: "DocSpectra"
+      - family-names: "D'Antonio"
+        given-names: "Rocker"
+        orcid: "https://orcid.org/0009-0001-8444-1772"
     repository-code: "https://github.com/DocSpectra/RetrievalArena"
     license: MIT
   - type: conference-paper
