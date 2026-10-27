@@ -1,0 +1,1163 @@
+{
+ "schema_version": "docspectra.icsc.wc_tier1_tasks.v2",
+ "created": "2026-10-18",
+ "status": "author-reviewed (HR-19): reviewer rockerd, 2026-10-15; revisions applied with the author's approval 2026-10-18",
+ "supersedes": {
+  "path": "git/context/evidence/wc-tier1-tasks-v1-2026-10-14.json",
+  "sha256": "25b4375613695e91454434710b3c34569a69ba1e600f0bd4ff4185f4b7ce53c3"
+ },
+ "review": {
+  "path": "git/context/evidence/wc-tier1-review-hr19-2026-10-15.json",
+  "sha256": "d8ac19a6f8f75226183b90701f0cfb61da2c3412d0a4a82816a91cd0c8b9049a",
+  "reviewer": {
+   "name": "rockerd",
+   "at": "2026-10-15T21:41:16.640Z"
+  },
+  "counts": {
+   "accept": 63,
+   "revise": 10,
+   "reject": 2
+  }
+ },
+ "reject_rule": "rejected elements are removed and not replaced; a task is dropped only if fewer than 4 core elements remain (author, 2026-10-18)",
+ "changes": [
+  {
+   "element": "2bc9f044 C3",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "33a7bb36 C5",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "345c89ea C4",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "3799b969 C3",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "42f436b5 C1",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 2
+  },
+  {
+   "element": "42f436b5 C2",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "d15b7bba C1",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "fd3eec31 C2",
+   "change": "added supporting quote(s) from the cited page",
+   "quotes_added": 1
+  },
+  {
+   "element": "d15b7bba C5",
+   "change": "acceptance reworded to the page's wording",
+   "acceptance_before": "Explain that Desktop access management requires enforcing sign-in and managing membership manually or through provisioning; state that enforced sign-in limits use after signing in to organization members."
+  },
+  {
+   "element": "345c89ea C3",
+   "change": "none: the noted typo ('with' for 'which') is in Docker's page; quotes stay verbatim",
+   "author_note": "typo with -> which"
+  },
+  {
+   "element": "3799b969 C4",
+   "change": "removed (author rejected)"
+  },
+  {
+   "element": "42f436b5 C4",
+   "change": "removed (author rejected)"
+  }
+ ],
+ "element_count": 73,
+ "tasks": [
+  {
+   "core_elements": [
+    {
+     "acceptance": "Identifies Docker Pro, Team, or Business as required for automated builds.",
+     "element_id": "C1",
+     "page_id": "content_manuals_docker_hub_repos_manage_builds_setup__80a4da98",
+     "requirement": "State the subscription prerequisite.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Directs the user to the repository's Builds tab and to connect GitHub as the source provider.",
+     "element_id": "C2",
+     "page_id": "content_manuals_docker_hub_repos_manage_builds_setup__80a4da98",
+     "requirement": "Explain where to begin configuring the repository and source connection.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Instructs the user to choose the GitHub repository that contains the image source.",
+     "element_id": "C3",
+     "page_id": "content_manuals_docker_hub_repos_manage_builds_setup__80a4da98",
+     "requirement": "Select the intended source repository.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Explains that build rules determine source branch and resulting tag, notes the default main/master to latest mapping, and calls for Autobuild to be enabled on the intended branch.",
+     "element_id": "C4",
+     "page_id": "content_manuals_docker_hub_repos_manage_builds_setup__80a4da98",
+     "requirement": "Configure the branch-to-image build rule and enable Autobuild for that branch.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Specifies a docker-compose.test.yml beside the Dockerfile with a sut service, and explains that the image is pushed only when configured tests succeed.",
+     "element_id": "C5",
+     "page_id": "content_manuals_docker_hub_repos_manage_builds_automated_testing__4c9411b2",
+     "requirement": "Set up container tests that gate the pushed image.",
+     "supporting_quotes": []
+    }
+   ],
+   "question": "I maintain a GitHub-hosted application and want Docker Hub to build and publish its image when I push to the main branch, but only after container tests pass. How should I set this up, verify the builds, and handle common failures, including a possible private submodule?",
+   "source": "11b (2026-10-08)",
+   "support_page_ids": [
+    "content_manuals_docker_hub_repos_manage_builds_automated_testing__4c9411b2",
+    "content_manuals_docker_hub_repos_manage_builds_setup__80a4da98"
+   ],
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "States the experimental status and checks for Buildx 0.31.0 or later and BuildKit 0.27.0 or later using the documented version and inspect commands.",
+     "element_id": "C1",
+     "page_id": "content_manuals_build_policies_index__0d5e2f82",
+     "requirement": "Check that the installed Buildx and BuildKit versions support build policies before proceeding.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Names `Dockerfile.rego` beside `Dockerfile`, and explains the corresponding `app.Dockerfile.rego` name if the Dockerfile is named `app.Dockerfile`.",
+     "element_id": "C2",
+     "page_id": "content_manuals_build_policies_usage__43829299",
+     "requirement": "Place the policy where Buildx will load it for the Dockerfile.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Includes `package docker`, `default allow := false`, `allow if input.local`, and a `decision` object returning the allow result; explains why local access is needed.",
+     "element_id": "C3",
+     "page_id": "content_manuals_build_policies_intro__69332bb3",
+     "requirement": "Give the policy a valid deny-by-default decision while allowing local input.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Shows an image rule using `input.image.host` and makes the approved host values explicit customization points.",
+     "element_id": "C4",
+     "page_id": "content_manuals_build_policies_examples__526d2b0b",
+     "requirement": "Restrict image inputs to the team's chosen registry hosts.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Shows a rule checking `input.http.schema == \"https\"` and applies it to remote downloads referenced by the Dockerfile.",
+     "element_id": "C5",
+     "page_id": "content_manuals_build_policies_inputs__b1f0e2d9",
+     "requirement": "Allow HTTP download inputs only when they use HTTPS.",
+     "supporting_quotes": []
+    }
+   ],
+   "question": "I maintain a Dockerfile that uses a base image and downloads a remote file. How should I set up a build policy so our builds accept images from approved registries and permit only HTTPS downloads, then check that the policy behaves as intended before using it in our builds?",
+   "source": "11b (2026-10-08)",
+   "support_page_ids": [
+    "content_manuals_build_policies_examples__526d2b0b",
+    "content_manuals_build_policies_index__0d5e2f82",
+    "content_manuals_build_policies_inputs__b1f0e2d9",
+    "content_manuals_build_policies_intro__69332bb3",
+    "content_manuals_build_policies_usage__43829299"
+   ],
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "Shows a rag source with docs paths, a chunked-embeddings strategy, embedding model, vector dimensions, and local database path consistent with the supplied example.",
+     "element_id": "C1",
+     "page_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+     "requirement": "Configure a RAG source over code paths.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Shows the agent's rag array referencing the defined source and an instruction to search the codebase when needed.",
+     "element_id": "C2",
+     "page_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+     "requirement": "Attach the named RAG source to the agent.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Places agent definitions under the required agents top-level section and the RAG source under rag.",
+     "element_id": "C3",
+     "page_id": "content_manuals_ai_docker_agent_reference_config__fb52747e",
+     "requirement": "Use a valid agent configuration structure.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Calls for Docker Agent, an agent YAML configuration, an ACP-capable editor, and the chosen model provider's API key in the editor's shell environment.",
+     "element_id": "C4",
+     "page_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+     "requirement": "Identify ACP prerequisites.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Describes starting the ACP server through the editor, sending a test prompt, checking the reply, and asking it to read a file.",
+     "element_id": "C5",
+     "page_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+     "requirement": "Validate the editor integration.",
+     "supporting_quotes": []
+    }
+   ],
+   "question": "I maintain a growing codebase and want a Docker Agent coding assistant in my ACP-capable editor to find relevant code by meaning without loading the whole repository into its prompt. How should I configure the searchable source and editor integration, then check that it works and choose sensible operating options?",
+   "source": "11b (2026-10-08)",
+   "support_page_ids": [
+    "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+    "content_manuals_ai_docker_agent_rag__ee9ce84f",
+    "content_manuals_ai_docker_agent_reference_config__fb52747e"
+   ],
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "States that mirroring requires Select or Enterprise and that an organization owner or editor, or an authorized PAT/OAT, is needed.",
+     "element_id": "C1",
+     "page_id": "content_manuals_dhi_how_to_mirror__819fcf55",
+     "requirement": "Check subscription and organizational authority before mirroring.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Describes using the catalog's FIPS filter or `docker dhi catalog list --filter python --fips` to narrow the choice.",
+     "element_id": "C2",
+     "page_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+     "requirement": "Find a Python repository with a FIPS variant.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Provides the documented `docker dhi mirror start --org <your-org> -r dhi/python,<your-org>/dhi-python` pattern, with placeholders identified.",
+     "element_id": "C3",
+     "page_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+     "requirement": "Start mirroring the selected repository to the organization.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Tells the engineer to wait for mirroring and confirm a `dhi-` prefixed repository in the organization namespace.",
+     "element_id": "C4",
+     "page_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+     "requirement": "Verify that the mirror is available before customization.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Describes customizing the mirrored DHI image by adding an OCI artifact for the company certificate and states the owner-first mirroring dependency.",
+     "element_id": "C5",
+     "page_id": "content_manuals_dhi_how_to_customize__db61f385",
+     "requirement": "Create the certificate customization from the mirrored repository.",
+     "supporting_quotes": []
+    }
+   ],
+   "question": "Our organization has a DHI Select subscription and needs a FIPS variant of a Python image with an additional company certificate for a regulated service. As the platform engineer, how should I find and mirror the right repository, create the customized image, and check that the resulting image is suitable to hand to the application team?",
+   "source": "11b (2026-10-08)",
+   "support_page_ids": [
+    "content_manuals_dhi_how_to_customize__db61f385",
+    "content_manuals_dhi_how_to_mirror__819fcf55",
+    "content_manuals_dhi_how_to_select_enterprise__d6b4e655"
+   ],
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "Recommends a user-defined bridge and states that it provides automatic DNS resolution between containers.",
+     "element_id": "C1",
+     "page_id": "content_manuals_engine_network_drivers_bridge__a8bf8c6e",
+     "requirement": "Choose a user-defined bridge for the same-host containers and explain its name-resolution benefit.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Includes `docker network create -d bridge my-net` and a `docker run` example using `--network=my-net`, or equivalent commands grounded in the excerpt.",
+     "element_id": "C2",
+     "page_id": "content_manuals_engine_network_index__3d09088c",
+     "requirement": "Give an actionable way to create the bridge and attach a container.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "States that containers on the same bridge can communicate and that containers on different bridges are isolated by default except through published ports.",
+     "element_id": "C3",
+     "page_id": "content_manuals_engine_network_drivers_bridge__a8bf8c6e",
+     "requirement": "Explain the bridge's communication boundary.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Shows a host-to-container port mapping such as `-p 8080:80` and identifies which side is the host port.",
+     "element_id": "C4",
+     "page_id": "content_manuals_engine_network_port_publishing__05c5f445",
+     "requirement": "Explain how to publish the web container's port when access beyond its bridge is intended.",
+     "supporting_quotes": []
+    },
+    {
+     "acceptance": "Uses `127.0.0.1` or `::1` in the publish mapping and explains that this limits access to the Docker host, subject to the version caveat in R8.",
+     "element_id": "C5",
+     "page_id": "content_manuals_engine_network_port_publishing__05c5f445",
+     "requirement": "Bind the initial published endpoint to localhost.",
+     "supporting_quotes": []
+    }
+   ],
+   "question": "I manage two application containers on one Linux Docker host. They need to reach each other by name, while a web endpoint should initially be reachable only from the host. How should I set up and check their networking, and what changes if we later need access from another host or have a legacy application that requires a physical-network identity?",
+   "source": "11b (2026-10-08)",
+   "support_page_ids": [
+    "content_manuals_engine_network_drivers_bridge__a8bf8c6e",
+    "content_manuals_engine_network_index__3d09088c",
+    "content_manuals_engine_network_port_publishing__05c5f445"
+   ],
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "The answer ties the proposed guide to an issue requesting missing or improved documentation.",
+     "element_id": "C1",
+     "exact_quote": "You can also use\nthe issue tracker to raise requests on improvements, or suggest new content\nthat you think is missing or that you would like to see.",
+     "page_id": "contributing__b8334458",
+     "requirement": "Treat the reported gap as a documentation contribution and identify the requested content change.",
+     "supporting_quotes": [
+      {
+       "page_id": "contributing__b8334458",
+       "quote": "You can also use\nthe issue tracker to raise requests on improvements, or suggest new content\nthat you think is missing or that you would like to see.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer identifies `/content` as the primary Markdown source and checks whether the relevant content is edited there.",
+     "element_id": "C2",
+     "exact_quote": "The content is primarily\nMarkdown files in the `/content` directory of this repository (with a few\nexceptions, see [Content not edited here](#content-not-edited-here)).",
+     "page_id": "contributing__b8334458",
+     "requirement": "Locate the editable Markdown source under the repository's content directory.",
+     "supporting_quotes": [
+      {
+       "page_id": "contributing__b8334458",
+       "quote": "The content is primarily\nMarkdown files in the `/content` directory of this repository (with a few\nexceptions, see [Content not edited here](#content-not-edited-here)).",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer directs the contributor to fork `docker/docs` and clone that fork before preparing changes.",
+     "element_id": "C3",
+     "exact_quote": "You must fork this repository to create a pull request to propose changes. For more details, see [Local setup](#local-setup).",
+     "page_id": "contributing__b8334458",
+     "requirement": "Work from a fork and local clone.",
+     "supporting_quotes": [
+      {
+       "page_id": "contributing__b8334458",
+       "quote": "You must fork this repository to create a pull request to propose changes. For more details, see [Local setup](#local-setup).",
+       "origin": "generation"
+      },
+      {
+       "page_id": "contributing__b8334458",
+       "quote": "1. [Fork the docker/docs repository.](https://github.com/docker/docs/fork)\n\n2. Clone your forked docs repository:",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer applies the four stated writing principles to the proposed instructions.",
+     "element_id": "C5",
+     "exact_quote": "1. **Correct** - Information is accurate\n2. **Concise** - Succinct without unnecessary words\n3. **Complete** - Includes enough detail to complete the task\n4. **Clear** - Easy to understand",
+     "page_id": "style__137b172f",
+     "requirement": "Write the guide to be accurate, succinct, sufficient to complete the task, and understandable.",
+     "supporting_quotes": [
+      {
+       "page_id": "style__137b172f",
+       "quote": "1. **Correct** - Information is accurate\n2. **Concise** - Succinct without unnecessary words\n3. **Complete** - Includes enough detail to complete the task\n4. **Clear** - Easy to understand",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "A community issue asks for a new Docker documentation guide with platform-specific steps and links to existing product pages. As a contributor, how should I prepare a focused, reviewable pull request?",
+   "source": "panel 2026-09-28, passed not selected",
+   "support_page_ids": [
+    "contributing__b8334458",
+    "style__137b172f"
+   ],
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+  },
+  {
+   "core_elements": [
+    {
+     "acceptance": "The answer directs the administrator to Docker Home, Admin Console, Enterprise deployment, and the Windows OS MSI download.",
+     "element_id": "C1",
+     "exact_quote": "1. In [Docker Home](http://app.docker.com), choose your organization.\n2. Select **Admin Console**, then **Enterprise deployment**.\n3. From the **Windows OS** tab, select the **Download MSI installer** button.",
+     "page_id": "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33",
+     "requirement": "Obtain the organization's Windows MSI installer from the Admin Console.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33",
+       "quote": "1. In [Docker Home](http://app.docker.com), choose your organization.\n2. Select **Admin Console**, then **Enterprise deployment**.\n3. From the **Windows OS** tab, select the **Download MSI installer** button.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer identifies the Windows app (Win32) type and selects the `intunewin` package.",
+     "element_id": "C2",
+     "exact_quote": "2. Add a new app. Select **Apps**, then **Windows**, then **Add**.\n3. For the app type, select **Windows app (Win32)**\n4. Select the `intunewin` package.",
+     "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+     "requirement": "Create an Intune Windows Win32 app using the packaged installer.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+       "quote": "2. Add a new app. Select **Apps**, then **Windows**, then **Add**.\n3. For the app type, select **Windows app (Win32)**\n4. Select the `intunewin` package.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer uses the documented `msiexec /i \"DockerDesktop.msi\" /qn` default and notes that the Program install command can be adjusted.",
+     "element_id": "C3",
+     "exact_quote": "On the **Program** tab, you can update the **Install command** field to suit your needs. The field is pre-populated with `msiexec /i \"DockerDesktop.msi\" /qn`.",
+     "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+     "requirement": "Set or confirm the silent MSI install command in Intune.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+       "quote": "On the **Program** tab, you can update the **Install command** field to suit your needs. The field is pre-populated with `msiexec /i \"DockerDesktop.msi\" /qn`.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer accounts for WSL versus Hyper-V and the case where only one backend is supported.",
+     "element_id": "C4",
+     "exact_quote": "Select the Docker Desktop backend: WSL or Hyper-V. If only one is supported by your system, you won't be able to choose.",
+     "page_id": "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33",
+     "requirement": "Choose an installation backend supported by target devices.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33",
+       "quote": "Select the Docker Desktop backend: WSL or Hyper-V. If only one is supported by your system, you won't be able to choose.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "The answer recommends scheduling a reboot and treats return code `3010` as success with reboot required.",
+     "element_id": "C5",
+     "exact_quote": "It's recommended you configure the Intune deployment to schedule a reboot of the machine on successful installs.\n   >\n   > This is because the Docker Desktop installer installs Windows features depending on your engine selection and also updates the membership of the `docker-users` local group.\n   >\n   > You may also want to set Intune to determine behaviour based on return codes and watch for a return code of `3010`. Return code 3010 means the installation succeeded but a reboot is required.",
+     "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+     "requirement": "Handle a successful install that requires a restart.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e",
+       "quote": "It's recommended you configure the Intune deployment to schedule a reboot of the machine on successful installs.\n   >\n   > This is because the Docker Desktop installer installs Windows features depending on your engine selection and also updates the membership of the `docker-users` local group.\n   >\n   > You may also want to set Intune to determine behaviour based on return codes and watch for a return code of `3010`. Return code 3010 means the installation succeeded but a reboot is required.",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I'm an IT administrator rolling out Docker Desktop to managed Windows devices through Intune. How should I prepare the deployment so the installation and organization settings are consistent, users can sign in under our policy, and I can verify when a restart or update is needed?",
+   "source": "panel 2026-09-28, passed not selected",
+   "support_page_ids": [
+    "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33",
+    "content_manuals_enterprise_enterprise_deployment_use_intune__3c1b6e2e"
+   ],
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238"
+  },
+  {
+   "area_id": "A06",
+   "core_elements": [
+    {
+     "acceptance": "Provides a Compose pgadmin service using dpage/pgadmin4:9.8 and the documented 5050:80 mapping, identifying host port 5050 as the browser entry point.",
+     "element_id": "C1",
+     "exact_quote": "      pgadmin:\n        image: dpage/pgadmin4:9.8\n        ports:\n          - 5050:80",
+     "page_id": "content_guides_pgadmin__96f10a97",
+     "requirement": "Add a pgAdmin service with an image and browser-access port mapping.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_pgadmin__96f10a97",
+       "quote": "      pgadmin:\n        image: dpage/pgadmin4:9.8\n        ports:\n          - 5050:80",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Includes PGADMIN_DEFAULT_EMAIL and PGADMIN_DEFAULT_PASSWORD in the pgAdmin service, clearly treating the documented values as example credentials.",
+     "element_id": "C2",
+     "exact_quote": "          # Required by pgAdmin\n          PGADMIN_DEFAULT_EMAIL: demo@example.com\n          PGADMIN_DEFAULT_PASSWORD: secret",
+     "page_id": "content_guides_pgadmin__96f10a97",
+     "requirement": "Supply the required pgAdmin account environment variables.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_pgadmin__96f10a97",
+       "quote": "          # Required by pgAdmin\n          PGADMIN_DEFAULT_EMAIL: demo@example.com\n          PGADMIN_DEFAULT_PASSWORD: secret",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Sets PGADMIN_CONFIG_SERVER_MODE and PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED to the quoted string 'False', explaining that these disable the login and master-password prompts in the documented local configuration.",
+     "element_id": "C3",
+     "exact_quote": "          # Don't require the user to login\n          PGADMIN_CONFIG_SERVER_MODE: 'False'\n\n          # Don't require a \"master\" password after logging in\n          PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'",
+     "page_id": "content_guides_pgadmin__96f10a97",
+     "requirement": "Configure the requested local login convenience.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_pgadmin__96f10a97",
+       "quote": "          # Don't require the user to login\n          PGADMIN_CONFIG_SERVER_MODE: 'False'\n\n          # Don't require a \"master\" password after logging in\n          PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Uses docker compose up and tells the developer to check the pgAdmin startup output for its listening message before attempting browser access.",
+     "element_id": "C4",
+     "exact_quote": "2. Start the Compose stack with the following command:\n\n    ```console\n    $ docker compose up\n    ```\n\n    After the image is downloaded the container starts, you will see output that looks similar to the following indicating pgAdmin is ready:",
+     "page_id": "content_guides_pgadmin__96f10a97",
+     "requirement": "Start the stack and identify pgAdmin readiness.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_pgadmin__96f10a97",
+       "quote": "2. Start the Compose stack with the following command:\n\n    ```console\n    $ docker compose up\n    ```\n\n    After the image is downloaded the container starts, you will see output that looks similar to the following indicating pgAdmin is ready:",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Configures pgAdmin's database host as the existing PostgreSQL service name, with port 5432, and explains why localhost inside pgAdmin is the wrong database address.",
+     "element_id": "C5",
+     "exact_quote": "**Networking**: In a Docker Compose environment, pgAdmin connects to the database using the internal service name (for example, `db:5432`) rather than `localhost`",
+     "page_id": "content_guides_postgresql_companions_for_postgresql__a03fe3ed",
+     "requirement": "Use the PostgreSQL Compose service name for the database connection.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_postgresql_companions_for_postgresql__a03fe3ed",
+       "quote": "**Networking**: In a Docker Compose environment, pgAdmin connects to the database using the internal service name (for example, `db:5432`) rather than `localhost`",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "Our team already runs PostgreSQL in Docker Compose with persistent development data. How can I add a browser-based database interface that teammates can start without repeated login prompts, connect it to the database without publishing the database port, and check that it is ready? Include ways to preserve the interface's settings, diagnose connection-address mistakes, and assess what must change before using shared or sensitive data.",
+   "source": "Sprint 16 generation, area A06",
+   "support_page_ids": [
+    "content_guides_pgadmin__96f10a97",
+    "content_guides_postgresql_companions_for_postgresql__a03fe3ed"
+   ],
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2"
+  },
+  {
+   "area_id": "A25",
+   "core_elements": [
+    {
+     "acceptance": "Shows client.New with client.FromEnv and checks its returned error before proceeding.",
+     "element_id": "C1",
+     "exact_quote": "apiClient, err := client.New(client.FromEnv, client.WithUserAgent(\"my-application/1.0.0\"))\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}",
+     "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+     "requirement": "Initialize the Go Docker client using environment-derived configuration and handle initialization failure.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "quote": "apiClient, err := client.New(client.FromEnv, client.WithUserAgent(\"my-application/1.0.0\"))\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Uses ImagePull for docker.io/library/alpine, handles its error, and drains the returned reader before container creation.",
+     "element_id": "C2",
+     "exact_quote": "reader, err := apiClient.ImagePull(ctx, \"docker.io/library/alpine\", client.ImagePullOptions{})\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}\n\n\tdefer reader.Close()\n\t// cli.ImagePull is asynchronous.\n\t// The reader needs to be read completely for the pull operation to complete.\n\t// If stdout is not required, consider using io.Discard instead of os.Stdout.\n\tio.Copy(os.Stdout, reader)",
+     "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+     "requirement": "Pull Alpine and consume the pull response completely before creating the container.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "quote": "reader, err := apiClient.ImagePull(ctx, \"docker.io/library/alpine\", client.ImagePullOptions{})\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}\n\n\tdefer reader.Close()\n\t// cli.ImagePull is asynchronous.\n\t// The reader needs to be read completely for the pull operation to complete.\n\t// If stdout is not required, consider using io.Discard instead of os.Stdout.\n\tio.Copy(os.Stdout, reader)",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Shows ContainerCreate with Image set to alpine, Cmd set to echo, hello world, Tty false, and an error check.",
+     "element_id": "C3",
+     "exact_quote": "resp, err := apiClient.ContainerCreate(ctx, client.ContainerCreateOptions{\n\t\tConfig: &container.Config{\n\t\t\tCmd: []string{\"echo\", \"hello world\"},\n\t\t\tTty: false,\n\t\t},\n\t\tImage: \"alpine\",\n\t})\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}",
+     "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+     "requirement": "Create an Alpine container configured to execute the requested command.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "quote": "resp, err := apiClient.ContainerCreate(ctx, client.ContainerCreateOptions{\n\t\tConfig: &container.Config{\n\t\t\tCmd: []string{\"echo\", \"hello world\"},\n\t\t\tTty: false,\n\t\t},\n\t\tImage: \"alpine\",\n\t})\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Passes the creation response's ID to ContainerStart and checks the returned error.",
+     "element_id": "C4",
+     "exact_quote": "if _, err := apiClient.ContainerStart(ctx, resp.ID, client.ContainerStartOptions{}); err != nil {\n\t\tlog.Fatal(err)\n\t}",
+     "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+     "requirement": "Start the newly created container and handle start failure.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "quote": "if _, err := apiClient.ContainerStart(ctx, resp.ID, client.ContainerStartOptions{}); err != nil {\n\t\tlog.Fatal(err)\n\t}",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Uses ContainerWait with the created container ID and selects between wait.Error and wait.Result, handling a non-nil error.",
+     "element_id": "C5",
+     "exact_quote": "wait := apiClient.ContainerWait(ctx, resp.ID, client.ContainerWaitOptions{})\n\tselect {\n\tcase err := <-wait.Error:\n\t\tif err != nil {\n\t\t\tlog.Fatal(err)\n\t\t}\n\tcase <-wait.Result:\n\t}",
+     "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+     "requirement": "Wait for container completion and handle the wait error channel.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "quote": "wait := apiClient.ContainerWait(ctx, resp.ID, client.ContainerWaitOptions{})\n\tselect {\n\tcase err := <-wait.Error:\n\t\tif err != nil {\n\t\t\tlog.Fatal(err)\n\t\t}\n\tcase <-wait.Result:\n\t}",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I'm replacing a shell-based Docker smoke test with a Go application that runs Alpine's `echo hello world` command and waits for completion. How should I implement it and prepare the SDK connection, including on Docker Desktop for Linux, when the Docker client and daemon may have different versions?",
+   "source": "Sprint 16 generation, area A25",
+   "support_page_ids": [
+    "content_reference_api_engine_sdk_examples__eb819a43"
+   ],
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219"
+  },
+  {
+   "area_id": "A22",
+   "core_elements": [
+    {
+     "acceptance": "Direct the owner to select the organization in Docker Home, open Billing, and select Add seats.",
+     "element_id": "C1",
+     "exact_quote": "1. Select **Add seats** and follow the on-screen instructions to complete\n   adding seats.",
+     "page_id": "content_manuals_subscription_manage_seats__09a0f0f8",
+     "requirement": "Explain how to add subscription seats before inviting users when capacity is insufficient.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_subscription_manage_seats__09a0f0f8",
+       "quote": "1. Select **Add seats** and follow the on-screen instructions to complete\n   adding seats.",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_manuals_subscription_manage_seats__09a0f0f8",
+       "quote": "1. Sign in to [Docker Home](https://app.docker.com/) and select your\n   organization.\n1. Select **Billing**.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Require an email header and split the export into at least two files, each containing no more than 1,000 email-address rows; explain that additional columns are ignored.",
+     "element_id": "C2",
+     "exact_quote": "The file must contain a header row with at least one heading named email. Additional columns are allowed and are ignored in the import.\n   - The file must contain a maximum of 1000 email addresses (rows). To invite more than 1000 users, create multiple CSV files and perform all steps in this task for each file.",
+     "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+     "requirement": "Prepare valid CSV files for the 1,200-person invitation batch.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+       "quote": "The file must contain a header row with at least one heading named email. Additional columns are allowed and are ignored in the import.\n   - The file must contain a maximum of 1000 email addresses (rows). To invite more than 1000 users, create multiple CSV files and perform all steps in this task for each file.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Use Members > Invite > CSV upload in the selected organization, and require Review to identify invalid addresses, already invited users, existing members, and duplicates before continuing.",
+     "element_id": "C3",
+     "exact_quote": "After the CSV file has been uploaded, select **Review** to identify any invalid email addresses, already invited users, invited users who are already members, or duplicated email addresses within the same CSV file.",
+     "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+     "requirement": "Describe the CSV invitation route and review gate.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+       "quote": "After the CSV file has been uploaded, select **Review** to identify any invalid email addresses, already invited users, invited users who are already members, or duplicated email addresses within the same CSV file.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "State that invitees receive a role when invited and direct the owner to Roles and permissions to assess the access granted; do not invent role capabilities absent from these excerpts.",
+     "element_id": "C4",
+     "exact_quote": "When you invite members, you assign them a role. See [Roles and permissions](/manuals/enterprise/security/roles-and-permissions/_index.md) for\ndetails about the access permissions for each role.",
+     "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+     "requirement": "Include role assignment during invitations.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_admin_organization_manage_members__86a15bd2",
+       "quote": "When you invite members, you assign them a role. See [Roles and permissions](/manuals/enterprise/security/roles-and-permissions/_index.md) for\ndetails about the access permissions for each role.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Explain that the documented steps to manage Docker Desktop access are to enforce sign-in and to manage members manually or through provisioning, and that with sign-in enforced only users who are members of the organization can use Docker Desktop after signing in.",
+     "element_id": "C5",
+     "exact_quote": "1. [Enforce sign-in](/manuals/enterprise/security/enforce-sign-in/_index.md).\n1. Manage members [manually](./members.md) or use\n   [provisioning](/manuals/enterprise/security/provisioning/_index.md).\n\nWith sign-in enforced, only users who are a member of your organization can\nuse Docker Desktop after signing in.",
+     "page_id": "content_manuals_admin_organization_manage_manage_products__542f067a",
+     "requirement": "Connect Desktop access restriction to enforced sign-in and membership management.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_admin_organization_manage_manage_products__542f067a",
+       "quote": "1. [Enforce sign-in](/manuals/enterprise/security/enforce-sign-in/_index.md).\n1. Manage members [manually](./members.md) or use\n   [provisioning](/manuals/enterprise/security/provisioning/_index.md).\n\nWith sign-in enforced, only users who are a member of your organization can\nuse Docker Desktop after signing in.",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I'm the owner of a Docker organization onboarding 1,200 colleagues from an email export. How should I prepare capacity, invite them with appropriate roles, and restrict Docker Desktop use to organization members? Include checks that prevent onboarding blockers and options for managing future joiners through our identity provider.",
+   "source": "Sprint 16 generation, area A22",
+   "support_page_ids": [
+    "content_manuals_admin_organization_manage_manage_products__542f067a",
+    "content_manuals_admin_organization_manage_members__86a15bd2",
+    "content_manuals_subscription_manage_seats__09a0f0f8"
+   ],
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8"
+  },
+  {
+   "area_id": "A14",
+   "core_elements": [
+    {
+     "acceptance": "Explain how to select the volume and use its Container in-use tab to identify its consumers and mounted target.",
+     "element_id": "C1",
+     "exact_quote": "The **Container in-use** tab displays the name of the container using the\nvolume, the image name, the port number used by the container, and the target.",
+     "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+     "requirement": "Identify the source volume and the containers that depend on it before copying.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+       "quote": "The **Container in-use** tab displays the name of the container using the\nvolume, the image name, the port number used by the container, and the target.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "State that cloning copies all volume data into a new volume, requires signing in, and starts through the volume's Clone icon in the Actions column.",
+     "element_id": "C2",
+     "exact_quote": "1. Sign in to Docker Desktop. You must be signed in to clone a volume.\n2. In the **Volumes** view, select the **Clone** icon in the **Actions** column\n   for the volume you want to clone.",
+     "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+     "requirement": "Use volume cloning to obtain a separate copy, including the sign-in prerequisite.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+       "quote": "1. Sign in to Docker Desktop. You must be signed in to clone a volume.\n2. In the **Volumes** view, select the **Clone** icon in the **Actions** column\n   for the volume you want to clone.",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+       "quote": "Cloning a volume creates a new volume with a copy of all of the data from the\ncloned volume. When cloning a volume used by one or more running containers, the",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Explicitly explain that running containers using the source volume are temporarily stopped and restarted after cloning completes.",
+     "element_id": "C3",
+     "exact_quote": "When cloning a volume used by one or more running containers, the\ncontainers are temporarily stopped while Docker clones the data, and then\nrestarted when the cloning process is completed.",
+     "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+     "requirement": "Account for interruption during cloning.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_desktop_use_desktop_volumes__234877e0",
+       "quote": "When cloning a volume used by one or more running containers, the\ncontainers are temporarily stopped while Docker clones the data, and then\nrestarted when the cloning process is completed.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Direct the developer to Run in the Images view and Optional settings to specify the test container's name, ports, copied volume, and any required environment variables.",
+     "element_id": "C4",
+     "exact_quote": "- Select the **Optional settings** drop-down to specify a name, port, volumes, environment variables and select **Run**",
+     "page_id": "content_manuals_desktop_use_desktop_images__f598e80d",
+     "requirement": "Launch a separate test container with the copied volume.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_desktop_use_desktop_images__f598e80d",
+       "quote": "- Select the **Optional settings** drop-down to specify a name, port, volumes, environment variables and select **Run**",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Explain how to select the container, use Inspect to verify image version and port mapping, and use Logs to observe its real-time output.",
+     "element_id": "C5",
+     "exact_quote": "Select **Inspect** to view low-level information about the container. It displays the local path, version number of the image, SHA-256, port mapping, and other details.",
+     "page_id": "content_manuals_desktop_use_desktop_container__fc9b41af",
+     "requirement": "Verify the test container configuration and begin observing its behavior.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_desktop_use_desktop_container__fc9b41af",
+       "quote": "Select **Inspect** to view low-level information about the container. It displays the local path, version number of the image, SHA-256, port mapping, and other details.",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I maintain a containerized development app in Docker Desktop. A teammate's CI-built image produces errors and slowdowns with our existing data. How can I copy the app's volume, run a separate test instance against that copy, and use Desktop's container logs and build inspection tools to investigate? I need to preserve the original data and account for any interruption to containers using it.",
+   "source": "Sprint 16 generation, area A14",
+   "support_page_ids": [
+    "content_manuals_desktop_use_desktop_container__fc9b41af",
+    "content_manuals_desktop_use_desktop_images__f598e80d",
+    "content_manuals_desktop_use_desktop_volumes__234877e0"
+   ],
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2"
+  },
+  {
+   "area_id": "A20",
+   "core_elements": [
+    {
+     "acceptance": "Direct the owner to Repository settings in the Scout Dashboard, select the service repository, and select Enable image analysis.",
+     "element_id": "C1",
+     "exact_quote": "1. Go to [Repository settings](https://scout.docker.com/settings/repos) in the Docker Scout Dashboard.\n2. Select the repositories that you want to enable.\n3. Select **Enable image analysis**.",
+     "page_id": "content_manuals_scout_explore_analysis__f28ca754",
+     "requirement": "Explain how to enable repository image analysis.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_scout_explore_analysis__f28ca754",
+       "quote": "1. Go to [Repository settings](https://scout.docker.com/settings/repos) in the Docker Scout Dashboard.\n2. Select the repositories that you want to enable.\n3. Select **Enable image analysis**.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "State that the candidate must be pushed to an integrated registry and a repository with image analysis activated.",
+     "element_id": "C2",
+     "exact_quote": "To trigger image analysis for an image in a registry, push the image to a\nregistry that's integrated with Docker Scout, to a repository where image\nanalysis is activated.",
+     "page_id": "content_manuals_scout_explore_analysis__f28ca754",
+     "requirement": "Explain how to trigger analysis of the published candidate.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_scout_explore_analysis__f28ca754",
+       "quote": "To trigger image analysis for an image in a registry, push the image to a\nregistry that's integrated with Docker Scout, to a repository where image\nanalysis is activated.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Explain that selecting a base image identifies its originating layers and selecting layers filters packages and vulnerabilities to their contributions.",
+     "element_id": "C3",
+     "exact_quote": "Selecting a base image under **Image hierarchy** \nhighlights with layers originate from a base image.\n\nSelecting individual or multiple layers filters the packages and vulnerabilities\non the right-hand side to show what the selected layers added.",
+     "page_id": "content_manuals_scout_explore_image_details_view__128790b0",
+     "requirement": "Provide a way to distinguish base-image contributions from application layers.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_scout_explore_image_details_view__128790b0",
+       "quote": "Selecting a base image under **Image hierarchy** \nhighlights with layers originate from a base image.\n\nSelecting individual or multiple layers filters the packages and vulnerabilities\non the right-hand side to show what the selected layers added.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Identify Express 4.17.3 as the documented fix for CVE-2022-24999, update package.json from 4.17.1, and rebuild and push under a new tag.",
+     "element_id": "C4",
+     "exact_quote": "The version 4.17.3 of the express package fixes the vulnerability. Therefore, update the `package.json` file to the new version:\n\n   ```diff\n      \"dependencies\": {\n   -    \"express\": \"4.17.1\"\n   +    \"express\": \"4.17.3\"\n      }\n   ```\n   \nRebuild the image with a new tag and push it to your Docker Hub repository:",
+     "page_id": "content_manuals_scout_quickstart__bf4353bf",
+     "requirement": "Describe the documented Express remediation and publication step.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_scout_quickstart__bf4353bf",
+       "quote": "The version 4.17.3 of the express package fixes the vulnerability. Therefore, update the `package.json` file to the new version:\n\n   ```diff\n      \"dependencies\": {\n   -    \"express\": \"4.17.1\"\n   +    \"express\": \"4.17.3\"\n      }\n   ```\n   \nRebuild the image with a new tag and push it to your Docker Hub repository:",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_manuals_scout_quickstart__bf4353bf",
+       "quote": "After the Docker Scout analysis, a high vulnerability CVE-2022-24999 was found, caused by an outdated version of the **express** package.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Use docker scout env <environment> <image> to record the deployed image references and explain using docker scout compare with --to-env production to compare the candidate with production.",
+     "element_id": "C5",
+     "exact_quote": "You can also compare with streams using the `--to-env` flag on the\n[`docker scout compare`](/reference/cli/docker/scout/compare/)\nCLI command:",
+     "page_id": "content_manuals_scout_integrations_environment_index__49dcad7e",
+     "requirement": "Establish deployment references and compare the candidate with production.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_scout_integrations_environment_index__49dcad7e",
+       "quote": "You can also compare with streams using the `--to-env` flag on the\n[`docker scout compare`](/reference/cli/docker/scout/compare/)\nCLI command:",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I own a Docker organization and maintain a Node.js service whose image contains Express 4.17.1. We have different versions running in staging and production. How can I enable ongoing Scout analysis, investigate application and base-image vulnerabilities, publish a corrected candidate, and compare it with production before deciding to promote it? Include build-attestation constraints and how to keep tracking security improvements after the initial fix.",
+   "source": "Sprint 16 generation, area A20",
+   "support_page_ids": [
+    "content_manuals_scout_explore_analysis__f28ca754",
+    "content_manuals_scout_explore_image_details_view__128790b0",
+    "content_manuals_scout_integrations_environment_index__49dcad7e",
+    "content_manuals_scout_quickstart__bf4353bf"
+   ],
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538"
+  },
+  {
+   "area_id": "A05",
+   "core_elements": [
+    {
+     "acceptance": "Shows a Spring Boot test with Testcontainers lifecycle integration and a static @Container LocalStackContainer, identifying localstack/localstack:3.0 as the supplied example image.",
+     "element_id": "C1",
+     "exact_quote": "@SpringBootTest\n@Testcontainers\nclass MessageListenerTest {\n\n  @Container\n  static LocalStackContainer localStack = new LocalStackContainer(\n    DockerImageName.parse(\"localstack/localstack:3.0\")\n  );",
+     "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "requirement": "Configure a Testcontainers-managed LocalStack instance for the Spring Boot test.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+       "quote": "@SpringBootTest\n@Testcontainers\nclass MessageListenerTest {\n\n  @Container\n  static LocalStackContainer localStack = new LocalStackContainer(\n    DockerImageName.parse(\"localstack/localstack:3.0\")\n  );",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Specifies an ephemeral container on a random available port and explains that this prevents port conflicts between parallel CI builds.",
+     "element_id": "C2",
+     "exact_quote": "For testing, use an ephemeral container that starts on a random available port\nso that you can run multiple builds in CI in parallel without port conflicts.",
+     "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "requirement": "Avoid a fixed host port for parallel test execution.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+       "quote": "For testing, use an ephemeral container that starts on a random available port\nso that you can run multiple builds in CI in parallel without port conflicts.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Registers spring.cloud.aws.s3.endpoint and spring.cloud.aws.sqs.endpoint through @DynamicPropertySource using the corresponding S3 and SQS endpoint overrides.",
+     "element_id": "C3",
+     "exact_quote": "registry.add(\n      \"spring.cloud.aws.s3.endpoint\",\n      () -> localStack.getEndpointOverride(S3).toString()\n    );\n    registry.add(\n      \"spring.cloud.aws.sqs.endpoint\",\n      () -> localStack.getEndpointOverride(SQS).toString()\n    );",
+     "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "requirement": "Wire both AWS service endpoints dynamically to the test container.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+       "quote": "registry.add(\n      \"spring.cloud.aws.s3.endpoint\",\n      () -> localStack.getEndpointOverride(S3).toString()\n    );\n    registry.add(\n      \"spring.cloud.aws.sqs.endpoint\",\n      () -> localStack.getEndpointOverride(SQS).toString()\n    );",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+       "quote": "`@DynamicPropertySource` connects it to Spring Cloud AWS.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Registers spring.cloud.aws.region.static, spring.cloud.aws.credentials.access-key, and spring.cloud.aws.credentials.secret-key using the container's region, access key, and secret key getters.",
+     "element_id": "C4",
+     "exact_quote": "registry.add(\n      \"spring.cloud.aws.region.static\",\n      () -> localStack.getRegion()\n    );\n    registry.add(\n      \"spring.cloud.aws.credentials.access-key\",\n      () -> localStack.getAccessKey()\n    );\n    registry.add(\n      \"spring.cloud.aws.credentials.secret-key\",\n      () -> localStack.getSecretKey()\n    );",
+     "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "requirement": "Configure the test region and credentials from the container.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+       "quote": "registry.add(\n      \"spring.cloud.aws.region.static\",\n      () -> localStack.getRegion()\n    );\n    registry.add(\n      \"spring.cloud.aws.credentials.access-key\",\n      () -> localStack.getAccessKey()\n    );\n    registry.add(\n      \"spring.cloud.aws.credentials.secret-key\",\n      () -> localStack.getSecretKey()\n    );",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Provides ./mvnw test or ./gradlew test and states that successful validation includes container startup, a passing test, and automatic container stop and removal after completion.",
+     "element_id": "C5",
+     "exact_quote": "## Run the tests\n\n```console\n$ ./mvnw test\n```\n\nOr with Gradle:\n\n```console\n$ ./gradlew test\n```\n\nYou should see the LocalStack Docker container start and the test pass. After\nthe tests finish, the container stops and is removed automatically.",
+     "page_id": "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+     "requirement": "Give execution commands and observable lifecycle checks.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+       "quote": "## Run the tests\n\n```console\n$ ./mvnw test\n```\n\nOr with Gradle:\n\n```console\n$ ./gradlew test\n```\n\nYou should see the LocalStack Docker container start and the test pass. After\nthe tests finish, the container stops and is removed automatically.",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I'm preparing a Spring Boot application's S3 and SQS integration-test environment for parallel CI builds. How should I configure the project and test harness to avoid real AWS calls and conflicting ports, verify that the environment runs and cleans up, and evaluate a cloud runtime if container workloads strain our development machines?",
+   "source": "Sprint 16 generation, area A05",
+   "support_page_ids": [
+    "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+    "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f"
+   ],
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1"
+  },
+  {
+   "area_id": "A04",
+   "core_elements": [
+    {
+     "acceptance": "Check that localhost:8080 displays Student name is Moby Whale, stop the application, run docker compose rm and docker compose up --build, then refresh and confirm the name remains.",
+     "element_id": "C1",
+     "exact_quote": "In the terminal, run `docker compose rm` to remove your containers and then run `docker compose up` to run your application again.\n\n```console\n$ docker compose rm\n$ docker compose up --build\n```",
+     "page_id": "content_guides_dotnet_develop__b9588047",
+     "requirement": "Provide the documented database persistence check.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_dotnet_develop__b9588047",
+       "quote": "In the terminal, run `docker compose rm` to remove your containers and then run `docker compose up` to run your application again.\n\n```console\n$ docker compose rm\n$ docker compose up --build\n```",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_guides_dotnet_develop__b9588047",
+       "quote": "Open a browser and view the application at [http://localhost:8080](http://localhost:8080). You should see a simple web application with the text `Student name is Moby Whale`.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      },
+      {
+       "page_id": "content_guides_dotnet_develop__b9588047",
+       "quote": "Refresh [http://localhost:8080](http://localhost:8080) in your browser and verify that the student name persisted, even after the containers were removed and ran again.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Run docker compose run --build --rm server dotnet test /source/tests from docker-dotnet-sample and identify the documented result as one passed test with zero failures.",
+     "element_id": "C2",
+     "exact_quote": "Run the following command in the `docker-dotnet-sample` directory to run the tests inside a container.\n\n```console\n$ docker compose run --build --rm server dotnet test /source/tests\n```",
+     "page_id": "content_guides_dotnet_run_tests__df5b8b95",
+     "requirement": "Give the local containerized unit-test command and its success criterion.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_dotnet_run_tests__df5b8b95",
+       "quote": "Run the following command in the `docker-dotnet-sample` directory to run the tests inside a container.\n\n```console\n$ docker compose run --build --rm server dotnet test /source/tests\n```",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_guides_dotnet_run_tests__df5b8b95",
+       "quote": "Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: < 1 ms - /source/tests/bin/Debug/net10.0/tests.dll (net10.0)",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    },
+    {
+     "acceptance": "Place RUN dotnet test /source/tests in the Dockerfile build stage, following the documented publish instruction.",
+     "element_id": "C3",
+     "exact_quote": "RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \\\n    dotnet publish -a ${TARGETARCH/amd64/x64} --use-current-runtime --self-contained false -o /app\nRUN dotnet test /source/tests",
+     "page_id": "content_guides_dotnet_run_tests__df5b8b95",
+     "requirement": "Add unit-test execution to the image build.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_dotnet_run_tests__df5b8b95",
+       "quote": "RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \\\n    dotnet publish -a ${TARGETARCH/amd64/x64} --use-current-runtime --self-contained false -o /app\nRUN dotnet test /source/tests",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Set the server image to the developer's Docker username and repository created for the CI/CD workflow rather than leaving DOCKER_USERNAME/REPO_NAME.",
+     "element_id": "C5",
+     "exact_quote": "Replace `DOCKER_USERNAME/REPO_NAME` with your Docker\nusername and the name of the repository that you created in [Configure CI/CD for\nyour .NET application](configure-ci-cd.md).",
+     "page_id": "content_guides_dotnet_deploy__a508745b",
+     "requirement": "Replace the manifest's application-image placeholder.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_guides_dotnet_deploy__a508745b",
+       "quote": "Replace `DOCKER_USERNAME/REPO_NAME` with your Docker\nusername and the name of the repository that you created in [Configure CI/CD for\nyour .NET application](configure-ci-cd.md).",
+       "origin": "generation"
+      }
+     ]
+    }
+   ],
+   "question": "I’m a .NET developer with the add-db sample and its local database development setup already configured. Before handing it off for a deployment rehearsal, how should I check database persistence, run containerized unit tests locally and during image builds, and prepare the Docker Desktop Kubernetes manifest? Include the image and repository prerequisites for using an image published through GitHub Actions, and keep the configuration aligned with the documented sample.",
+   "source": "Sprint 16 generation, area A04",
+   "support_page_ids": [
+    "content_guides_dotnet_deploy__a508745b",
+    "content_guides_dotnet_develop__b9588047",
+    "content_guides_dotnet_run_tests__df5b8b95"
+   ],
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d"
+  },
+  {
+   "area_id": "A24",
+   "core_elements": [
+    {
+     "acceptance": "Identifies React+MUI as the officially supported combination and recommends using Docker's Material UI theme to reproduce Docker Desktop's appearance.",
+     "element_id": "C1",
+     "exact_quote": "You can use our [Material UI theme](https://www.npmjs.com/package/@docker/docker-mui-theme) to automatically replicate Docker Desktop's look and feel.",
+     "page_id": "content_manuals_extensions_extensions_sdk_design_index__1cafd635",
+     "requirement": "Use the Docker Material UI theme as the baseline for the existing React/MUI frontend.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_design_index__1cafd635",
+       "quote": "You can use our [Material UI theme](https://www.npmjs.com/package/@docker/docker-mui-theme) to automatically replicate Docker Desktop's look and feel.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Recommends minimizing overrides and using typography variants, canned component sizes, and semantic colors instead of fixed typography, pixel sizes, and explicit color codes.",
+     "element_id": "C2",
+     "exact_quote": "-  Use canned sizes. e.g. use `size=\"small\"` on buttons, or `fontSize=\"small\"` on icons, instead of specifying sizes in pixels.\n-  Prefer semantic colors. e.g. use `error` or `primary` over explicit color codes.",
+     "page_id": "content_manuals_extensions_extensions_sdk_design_mui_best_practices__f17acaf7",
+     "requirement": "Replace fragile visual specialization with semantic MUI styling.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_design_mui_best_practices__f17acaf7",
+       "quote": "-  Use canned sizes. e.g. use `size=\"small\"` on buttons, or `fontSize=\"small\"` on icons, instead of specifying sizes in pixels.\n-  Prefer semantic colors. e.g. use `error` or `primary` over explicit color codes.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Requires checking the extension in both light and dark themes and ties the use of Docker's prescribed components and styles to the documented level AA accessibility standard.",
+     "element_id": "C3",
+     "exact_quote": "Ensure the extension has both a light and dark theme. Using the components and styles as per the Docker style guide ensures that your extension meets the [level AA accessibility standard.](https://www.w3.org/WAI/WCAG2AA-Conformance).",
+     "page_id": "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+     "requirement": "Include light and dark themes in the UI readiness criteria.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+       "quote": "Ensure the extension has both a light and dark theme. Using the components and styles as per the Docker style guide ensures that your extension meets the [level AA accessibility standard.](https://www.w3.org/WAI/WCAG2AA-Conformance).",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "Reviews whether normal functionality sends users to a CLI or webpage and recommends implementing those actions natively inside Docker Desktop.",
+     "element_id": "C4",
+     "exact_quote": "In order not to disrupt the flow of users, avoid scenarios where the user has to navigate outside Docker Desktop, to the CLI or a webpage for example, in order to carry out certain functionalities.",
+     "page_id": "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+     "requirement": "Keep the extension's functional workflow inside Docker Desktop.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+       "quote": "In order not to disrupt the flow of users, avoid scenarios where the user has to navigate outside Docker Desktop, to the CLI or a webpage for example, in order to carry out certain functionalities.",
+       "origin": "generation"
+      }
+     ]
+    },
+    {
+     "acceptance": "States that validation checks must pass before submission and directs the maintainer to automated submission because manual review is paused.",
+     "element_id": "C5",
+     "exact_quote": "The Docker manual review process for extensions is paused at the moment. Submit your extension through the [automated submission process](https://github.com/docker/extensions-submissions/issues/new?assignees=&labels=&template=1_automatic_review.yaml&title=%5BSubmission%5D%3A+)",
+     "page_id": "content_manuals_extensions_extensions_sdk_extensions_publish__1aa55ed9",
+     "requirement": "Explain the documented validation gate and current Marketplace submission route.",
+     "supporting_quotes": [
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_extensions_publish__1aa55ed9",
+       "quote": "The Docker manual review process for extensions is paused at the moment. Submit your extension through the [automated submission process](https://github.com/docker/extensions-submissions/issues/new?assignees=&labels=&template=1_automatic_review.yaml&title=%5BSubmission%5D%3A+)",
+       "origin": "generation"
+      },
+      {
+       "page_id": "content_manuals_extensions_extensions_sdk_extensions_publish__1aa55ed9",
+       "quote": "Before you submit your extension, it must pass the [validation](validate.md) checks.",
+       "origin": "author review 2026-10-15 (added supporting quote)"
+      }
+     ]
+    }
+   ],
+   "question": "I maintain a working React/MUI Docker extension prototype and want to prepare it for Marketplace submission. What UI changes and local verification should I prioritize so it fits Docker Desktop, remains maintainable as its appearance changes, and is ready for the documented submission process? Include how to package the release information and handle subsequent updates.",
+   "source": "Sprint 16 generation, area A24",
+   "support_page_ids": [
+    "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+    "content_manuals_extensions_extensions_sdk_design_index__1cafd635",
+    "content_manuals_extensions_extensions_sdk_design_mui_best_practices__f17acaf7",
+    "content_manuals_extensions_extensions_sdk_extensions_publish__1aa55ed9"
+   ],
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460"
+  }
+ ]
+}

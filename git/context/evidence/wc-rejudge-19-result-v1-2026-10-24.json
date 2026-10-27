@@ -1,0 +1,343 @@
+{
+ "schema_version": "docspectra.icsc.wc_rejudge_result.v1",
+ "plan_sha256": "3fa30b2a51eff52b394fff073f42fa3d172311793a811212f26cfa2c7180fca1",
+ "variants": {
+  "v-5d89a3217d52": {
+   "receipt_sha256": "fc9f80b01b07317a046aa478ad78d2a0352754b8dbbaedff64005d5e8dcd06b3",
+   "source_commit": "9e68b89721d9b8e9fcd8f5126d5091da7ccd1d56",
+   "qrels_sha256": "61023f71a402fd97e90b6eb58740b9af0b8603e72eafc272964515c65931e82f",
+   "qrels_manifest_sha256": "a09d8e4d8a689b5aab86f3e43a59b0b9e0dddada8f06851f39e9c8554b9f5062",
+   "outcomes": {
+    "answers": 39,
+    "insufficient": 37,
+    "not_answer": 213,
+    "span_invalid": 2
+   },
+   "decisions": {
+    "not_supported": 5385,
+    "supported": 424,
+    "undetermined": 74
+   },
+   "questions_supported": 111,
+   "questions_supported_before": 111,
+   "questions_still_lost": []
+  },
+  "v-6337600cdc97": {
+   "receipt_sha256": "25f88fbe46ecb28aba2c39a166c025b4bee8ff234db5c9e3433cc28a4e1c7696",
+   "source_commit": "9e68b89721d9b8e9fcd8f5126d5091da7ccd1d56",
+   "qrels_sha256": "dab9639135fc394ef1583e61292bd65c26617cf5f03d19967810f7d21bd63b8c",
+   "qrels_manifest_sha256": "ab0724c18d372630ac5e9b4dbc025c4ef2400b228416aaa73c2636afcefed310",
+   "outcomes": {
+    "answers": 45,
+    "insufficient": 52,
+    "not_answer": 210
+   },
+   "decisions": {
+    "not_supported": 4922,
+    "supported": 442,
+    "undetermined": 66
+   },
+   "questions_supported": 110,
+   "questions_supported_before": 105,
+   "questions_still_lost": [
+    "docker_docs_faq_0020"
+   ]
+  },
+  "v-9a7d7f0e7b47": {
+   "receipt_sha256": "bb032d9090e38c1f0a2f6ac603b36bd71bcc5426aa4a3e8a080779d6b003ac7c",
+   "source_commit": "9e68b89721d9b8e9fcd8f5126d5091da7ccd1d56",
+   "qrels_sha256": "dd3be58090bc0004304f8759ea69f6f6f6ae571f85661c0d1ae34fc8d3b36560",
+   "qrels_manifest_sha256": "90ddf00bd8e10202b5d9218df38f5660daafddceabe93c029d63352900954d0b",
+   "outcomes": {
+    "answers": 39,
+    "insufficient": 38,
+    "not_answer": 213,
+    "span_invalid": 2
+   },
+   "decisions": {
+    "not_supported": 5381,
+    "supported": 423,
+    "undetermined": 75
+   },
+   "questions_supported": 111,
+   "questions_supported_before": 111,
+   "questions_still_lost": []
+  },
+  "v-c2c2731d2141": {
+   "receipt_sha256": "59b62a24e9dfda0178dca9aaf2bc02ad2b722538c14e28e05d54362456ff88e3",
+   "source_commit": "9e68b89721d9b8e9fcd8f5126d5091da7ccd1d56",
+   "qrels_sha256": "516251f5959bf043f8c2eb1f992ec8e18a756f935621be2eebfcf9aff5a3e762",
+   "qrels_manifest_sha256": "fd73cdffba4fc9bdbd670089e6d92f92ca28dc5f1043a09933bcf5a67f321c74",
+   "outcomes": {
+    "answers": 50,
+    "insufficient": 29,
+    "not_answer": 219,
+    "span_invalid": 4
+   },
+   "decisions": {
+    "not_supported": 4373,
+    "supported": 413,
+    "undetermined": 40
+   },
+   "questions_supported": 106,
+   "questions_supported_before": 103,
+   "questions_still_lost": [
+    "docker_docs_faq_0054",
+    "docker_docs_faq_0062",
+    "docker_docs_faq_0077",
+    "docker_docs_faq_0080",
+    "docker_docs_faq_0140"
+   ]
+  }
+ },
+ "common_set": {
+  "rule": "S19-4: a tier-2 question is in the common set if it has >= 1 supported page on all four variants (escalated qrels)",
+  "n": 105,
+  "question_ids": [
+   "docker_docs_faq_0001",
+   "docker_docs_faq_0002",
+   "docker_docs_faq_0004",
+   "docker_docs_faq_0005",
+   "docker_docs_faq_0006",
+   "docker_docs_faq_0007",
+   "docker_docs_faq_0008",
+   "docker_docs_faq_0009",
+   "docker_docs_faq_0010",
+   "docker_docs_faq_0011",
+   "docker_docs_faq_0012",
+   "docker_docs_faq_0013",
+   "docker_docs_faq_0014",
+   "docker_docs_faq_0015",
+   "docker_docs_faq_0017",
+   "docker_docs_faq_0023",
+   "docker_docs_faq_0024",
+   "docker_docs_faq_0025",
+   "docker_docs_faq_0026",
+   "docker_docs_faq_0031",
+   "docker_docs_faq_0033",
+   "docker_docs_faq_0034",
+   "docker_docs_faq_0035",
+   "docker_docs_faq_0038",
+   "docker_docs_faq_0039",
+   "docker_docs_faq_0040",
+   "docker_docs_faq_0041",
+   "docker_docs_faq_0043",
+   "docker_docs_faq_0044",
+   "docker_docs_faq_0045",
+   "docker_docs_faq_0046",
+   "docker_docs_faq_0047",
+   "docker_docs_faq_0049",
+   "docker_docs_faq_0050",
+   "docker_docs_faq_0051",
+   "docker_docs_faq_0052",
+   "docker_docs_faq_0053",
+   "docker_docs_faq_0055",
+   "docker_docs_faq_0056",
+   "docker_docs_faq_0057",
+   "docker_docs_faq_0061",
+   "docker_docs_faq_0063",
+   "docker_docs_faq_0064",
+   "docker_docs_faq_0065",
+   "docker_docs_faq_0067",
+   "docker_docs_faq_0068",
+   "docker_docs_faq_0069",
+   "docker_docs_faq_0070",
+   "docker_docs_faq_0071",
+   "docker_docs_faq_0072",
+   "docker_docs_faq_0074",
+   "docker_docs_faq_0075",
+   "docker_docs_faq_0078",
+   "docker_docs_faq_0079",
+   "docker_docs_faq_0082",
+   "docker_docs_faq_0083",
+   "docker_docs_faq_0084",
+   "docker_docs_faq_0085",
+   "docker_docs_faq_0086",
+   "docker_docs_faq_0087",
+   "docker_docs_faq_0088",
+   "docker_docs_faq_0089",
+   "docker_docs_faq_0090",
+   "docker_docs_faq_0091",
+   "docker_docs_faq_0093",
+   "docker_docs_faq_0094",
+   "docker_docs_faq_0095",
+   "docker_docs_faq_0096",
+   "docker_docs_faq_0097",
+   "docker_docs_faq_0099",
+   "docker_docs_faq_0100",
+   "docker_docs_faq_0101",
+   "docker_docs_faq_0102",
+   "docker_docs_faq_0103",
+   "docker_docs_faq_0105",
+   "docker_docs_faq_0107",
+   "docker_docs_faq_0109",
+   "docker_docs_faq_0111",
+   "docker_docs_faq_0113",
+   "docker_docs_faq_0114",
+   "docker_docs_faq_0115",
+   "docker_docs_faq_0116",
+   "docker_docs_faq_0117",
+   "docker_docs_faq_0118",
+   "docker_docs_faq_0119",
+   "docker_docs_faq_0120",
+   "docker_docs_faq_0122",
+   "docker_docs_faq_0123",
+   "docker_docs_faq_0124",
+   "docker_docs_faq_0125",
+   "docker_docs_faq_0127",
+   "docker_docs_faq_0128",
+   "docker_docs_faq_0129",
+   "docker_docs_faq_0130",
+   "docker_docs_faq_0131",
+   "docker_docs_faq_0132",
+   "docker_docs_faq_0133",
+   "docker_docs_faq_0134",
+   "docker_docs_faq_0135",
+   "docker_docs_faq_0136",
+   "docker_docs_faq_0137",
+   "docker_docs_faq_0138",
+   "docker_docs_faq_0139",
+   "docker_docs_faq_0142",
+   "docker_docs_faq_0144"
+  ],
+  "question_ids_sha256": "f2c247522a6e4fe638cc3079c330ff7cc41f1799d67452d87e6300fb1f10dc1b"
+ },
+ "hr20_agreement": {
+  "table": {
+   "author_True_rejudge_True": 4,
+   "author_True_rejudge_False": 3,
+   "author_False_rejudge_True": 4,
+   "author_False_rejudge_False": 3
+  },
+  "items": [
+   {
+    "item": "Q01",
+    "question_id": "docker_docs_faq_0115",
+    "variant": "v-6337600cdc97",
+    "verdict": "answer_moved",
+    "answer_present": true,
+    "escalated_supported": true,
+    "agrees": true
+   },
+   {
+    "item": "Q02",
+    "question_id": "docker_docs_faq_0115",
+    "variant": "v-c2c2731d2141",
+    "verdict": "still_answers",
+    "answer_present": true,
+    "escalated_supported": true,
+    "agrees": true
+   },
+   {
+    "item": "Q03",
+    "question_id": "docker_docs_faq_0080",
+    "variant": "v-6337600cdc97",
+    "verdict": "answer_moved",
+    "answer_present": true,
+    "escalated_supported": true,
+    "agrees": true
+   },
+   {
+    "item": "Q04",
+    "question_id": "docker_docs_faq_0054",
+    "variant": "v-c2c2731d2141",
+    "verdict": "still_answers",
+    "answer_present": true,
+    "escalated_supported": false,
+    "agrees": false
+   },
+   {
+    "item": "Q05",
+    "question_id": "docker_docs_faq_0068",
+    "variant": "v-c2c2731d2141",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": true,
+    "agrees": false
+   },
+   {
+    "item": "Q06",
+    "question_id": "docker_docs_faq_0080",
+    "variant": "v-c2c2731d2141",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": false,
+    "agrees": true
+   },
+   {
+    "item": "Q07",
+    "question_id": "docker_docs_faq_0062",
+    "variant": "v-c2c2731d2141",
+    "verdict": "still_answers",
+    "answer_present": true,
+    "escalated_supported": false,
+    "agrees": false
+   },
+   {
+    "item": "Q08",
+    "question_id": "docker_docs_faq_0140",
+    "variant": "v-c2c2731d2141",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": false,
+    "agrees": true
+   },
+   {
+    "item": "Q09",
+    "question_id": "docker_docs_faq_0077",
+    "variant": "v-6337600cdc97",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": true,
+    "agrees": false
+   },
+   {
+    "item": "Q10",
+    "question_id": "docker_docs_faq_0020",
+    "variant": "v-6337600cdc97",
+    "verdict": "answer_moved",
+    "answer_present": true,
+    "escalated_supported": false,
+    "agrees": false
+   },
+   {
+    "item": "Q11",
+    "question_id": "docker_docs_faq_0077",
+    "variant": "v-c2c2731d2141",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": false,
+    "agrees": true
+   },
+   {
+    "item": "Q12",
+    "question_id": "docker_docs_faq_0103",
+    "variant": "v-c2c2731d2141",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": true,
+    "agrees": false
+   },
+   {
+    "item": "Q13",
+    "question_id": "docker_docs_faq_0127",
+    "variant": "v-6337600cdc97",
+    "verdict": "unsure",
+    "answer_present": false,
+    "escalated_supported": true,
+    "agrees": false
+   },
+   {
+    "item": "Q14",
+    "question_id": "docker_docs_faq_0068",
+    "variant": "v-6337600cdc97",
+    "verdict": "answer_moved",
+    "answer_present": true,
+    "escalated_supported": true,
+    "agrees": true
+   }
+  ]
+ },
+ "spend_usd_upper_total": 21.0881,
+ "note": "old 101 common set: see wc-answers-19-run-v1-2026-10-24.json (S19-4); kept as a sensitivity row"
+}

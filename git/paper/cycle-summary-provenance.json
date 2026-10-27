@@ -1,0 +1,49 @@
+{
+  "source": "git\\context\\evidence\\magnetic-attribution-23-v1-2026-10-25.json",
+  "source_sha256": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df",
+  "summary": "Counts and maxima over all four topology-selected cycles per corpus, not means or population estimates.",
+  "rows": [
+    {
+      "corpus": "Docker",
+      "table_indices": [
+        5,
+        8,
+        11,
+        14
+      ],
+      "resolved": 4,
+      "maximum_index": 8,
+      "maximum_absolute_percent": 0.13288088296875888,
+      "maximum_display": "0.133\\%",
+      "baseline_support_percent": 0.591630153420611
+    },
+    {
+      "corpus": "React",
+      "table_indices": [
+        20,
+        23,
+        26,
+        29
+      ],
+      "resolved": 4,
+      "maximum_index": 20,
+      "maximum_absolute_percent": 1.014292526603314,
+      "maximum_display": "1.014\\%",
+      "baseline_support_percent": 9.065358828446477
+    },
+    {
+      "corpus": "GitHub",
+      "table_indices": [
+        35,
+        38,
+        41,
+        44
+      ],
+      "resolved": 0,
+      "maximum_index": 35,
+      "maximum_absolute_percent": 4.994919077553106e-06,
+      "maximum_display": "---",
+      "baseline_support_percent": 0.28910090779977216
+    }
+  ]
+}

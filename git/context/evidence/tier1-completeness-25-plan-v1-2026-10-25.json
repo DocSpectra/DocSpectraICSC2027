@@ -1,0 +1,359 @@
+{
+ "aggregation": {
+  "context": [
+   "R0 - O",
+   "S - O"
+  ],
+  "contrasts": [
+   "LT - O",
+   "LT - R0",
+   "R0 - O",
+   "S - O"
+  ],
+  "descriptive_only": "condition- and replicate-specific tables are descriptive; no best condition, no subgroup search, no new test family; identically numbered replicates are display pairs, not paired draws; S - O is context, not a noise threshold or equivalence bound",
+  "element_cells": "per task x condition x element x arm: counted eligible verdicts and observed grades over two answer replicates with the scheduled denominator; difference of rates; incomplete cells flagged; complete-cell comparison shown beside the historical order",
+  "intervals": "none new; Sprint 20 bootstrap intervals are linked from wc-analysis-20 tier1.tables",
+  "main": [
+   "LT - O",
+   "LT - R0"
+  ],
+  "rule": "replicate_condition_task_v1 (Sprint 20 order): replicates within condition, conditions within task, tasks equally; missing values dropped at each level as Sprint 20 did"
+ },
+ "code": {
+  "driver": {
+   "bytes": 31683,
+   "path": "git/context/scripts/tier1_completeness_25.py",
+   "sha256": "651cd840d366d1a256fe77cefed56e133b27a9ef5a6dede9eb4533614f6ebd1f"
+  },
+  "image": {
+   "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+   "image": {
+    "reference": "sha256:b0641188e27d523d70210ca64f4b71d2d33d222044ea7aa79a1aea8b7d41ab93",
+    "tag": "retrieval-arena/verification:icsc-s25"
+   },
+   "platform": "linux/amd64",
+   "receipt_sha256": "48ac0a996bdb5ccef43d655d6b9bd80c0f4647a42ebf687d2f062cb53c6a7775",
+   "schema_version": "retrieval_arena.verification_image_receipt.v2",
+   "source_commit": "f596da954ccc05899f1836d39785295cd7eaa246",
+   "source_tree": "eac361d860e577a87325acc00b6c824f15a71b7f"
+  },
+  "note": "rendering and report code in the driver may be completed after the freeze; any change to joins, populations, score rules, aggregation or selection needs a versioned amendment",
+  "ra": {
+   "clean": true,
+   "commit": "f596da954ccc05899f1836d39785295cd7eaa246",
+   "contract": {
+    "bytes": 7168,
+    "path": "git/RetrievalArena/docs/evaluations/answer_element_comparison.md",
+    "sha256": "f86543c5d083a56a45a048e6f32d735ac3e84bb88383106f3962d91fa2eaea2b"
+   },
+   "module": {
+    "bytes": 41047,
+    "path": "git/RetrievalArena/retrieval_arena/answer_element_comparison.py",
+    "sha256": "0ad1217f5c85a701e4578f3ed50480e8afe272432104b439c68155a581b01e9d"
+   },
+   "operator": {
+    "bytes": 7216,
+    "path": "git/RetrievalArena/containers/verification/answer_element_comparison.py",
+    "sha256": "ad2e0cc3155743c3fdaeb1422ea1463e33d661dd7508d78de7b45a4c02c91226"
+   },
+   "tests": {
+    "bytes": 20418,
+    "path": "git/RetrievalArena/unit_tests/test_answer_element_comparison.py",
+    "sha256": "5c7af737ac4239312d9269d2d4291f7f7b735e78436d02832071985a5afbc1e7"
+   },
+   "tree": "eac361d860e577a87325acc00b6c824f15a71b7f"
+  }
+ },
+ "created": "2026-10-25",
+ "inputs": {
+  "files": 7724,
+  "files_sha256": "7e053a79cc8062c502e013993198954829f6a6bb289d993e9157ed90747739e4",
+  "inventory": {
+   "bytes": 1942129,
+   "path": "git/context/evidence/tier1-completeness-25-inputs-v1-2026-10-25.json",
+   "sha256": "140ee9fa40fbf53648e41ea1f8846ac081ba7c0d6e48e1738ce9e801afb26167"
+  },
+  "sources": [
+   {
+    "bytes": 72485,
+    "path": "git/context/evidence/wc-tier1-tasks-v2-2026-10-18.json",
+    "sha256": "671a15da2560ef5cd387788e87fd146bf2be90a520281531666adef258136a49"
+   },
+   {
+    "bytes": 284466,
+    "path": "git/context/evidence/wc-answers-19-plan-v1-2026-10-22.json",
+    "sha256": "c61bbb7e4eb21c9d79caf85809d8b76bd0cc75451bb64a632e78e60a39a33b79"
+   },
+   {
+    "bytes": 224760,
+    "path": "git/context/evidence/wc-answers-19-run-v1-2026-10-24.json",
+    "sha256": "6b7b704102c58d4921ed4e782d970d6f19f07856306cfe7cb08e973d3c0f325c"
+   },
+   {
+    "bytes": 378944,
+    "path": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+    "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+   },
+   {
+    "bytes": 118938,
+    "path": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+    "sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65"
+   },
+   {
+    "bytes": 564651,
+    "path": "git/context/evidence/lt-trace-audit-24-planning-inventory-v1-2026-10-25.json",
+    "sha256": "9a5bdfd7ec55ac8904637a5ca3ada090ea81d2f7fb280448bd6ab8024e85a1f1"
+   }
+  ]
+ },
+ "join_keys": {
+  "answer": "trace file stem = opaque variant + 12-hex task prefix + condition + replicate; arm from the host-private key; task from the trace question_id (full 64-hex task_id), checked against the prefix, question text and question SHA-256; condition checked against follow and search budget",
+  "luna": "each pass's host-private answer key label -> answer file; packet answer and question checked against the trace and task",
+  "rubric": "aliases.json unit -> answer files (one-to-many kept); a unit joins an answer only when its packet answer equals the trace answer text, its question hash equals the trace's, and its elements equal the frozen task elements (ids, requirement, acceptance, order)"
+ },
+ "model_calls": 0,
+ "network_calls": 0,
+ "packet": {
+  "disclosed_risks": "answer content (wording, cited page ids of LT-created pages) and author familiarity may reveal treatment; the author is not an independent reviewer",
+  "hides": "arm identities, opaque variant ids, prior scores, verdicts and reasons, strata, trace file names, the key, conditions and replicate numbers",
+  "human": "optional; registered in pending_review as optional, ready; no human claim without returned labels; labels never prefilled from model output; a model never acts as the reviewer",
+  "shows": "task, frozen requirements and acceptance criteria, the original (O) corpus pages the rubric cites as reference excerpts, complete saved answers A/B, empty review form"
+ },
+ "populations": {
+  "answer_replicates_from": "the Sprint 19 schedule (trace file names and the plan's ledgers), never from the number of judge packets or scoring passes",
+  "arms": [
+   "O",
+   "S",
+   "LT",
+   "R0"
+  ],
+  "conditions": [
+   "s1-no-follow",
+   "s1-follow",
+   "s6-no-follow",
+   "s6-follow"
+  ],
+  "element_rows": 2336,
+  "elements": 73,
+  "exclusions": "none: every scheduled answer x element is one row; an answer without an answer, a rubric unit or a valid completion stays as not observed with its status",
+  "replicates": [
+   1,
+   2
+  ],
+  "scheduled_answers": 480,
+  "tasks": 15
+ },
+ "preservation": "source artifacts and frozen evidence are read-only; the inventory hashes are re-verified at analyse and verify",
+ "provenance_cards": "selected packet cases only, analyst-side, from saved Sprint 24 tables: cited pages, first exposure routes, follow edge classes; requirement-to-evidence mapping `unresolved` unless reliable; page ids and similarity are not support",
+ "question": "Which required pieces of information do the saved LT, O, R0 and S tier-1 answers cover or omit according to the frozen rubric judgments, and how consistent are the differences across the existing conditions and replicates?",
+ "reconciliation": {
+  "answers": 480,
+  "answers_without_rubric_unit": [
+   {
+    "answer_id": "v-6337600cdc97-33a7bb365f92-s6-follow-r1",
+    "terminal": "invalid_action_limit"
+   }
+  ],
+  "elements": 73,
+  "elements_per_task": [
+   5,
+   5,
+   5,
+   5,
+   5,
+   4,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   4,
+   5
+  ],
+  "issues": [],
+  "join_checks": {
+   "answer_text_True": 479,
+   "elements_True": 479,
+   "question_True": 479
+  },
+  "luna": {
+   "A": {
+    "packets": 479,
+    "valid": 479
+   },
+   "B": {
+    "packets": 479,
+    "valid": 479
+   }
+  },
+  "per_arm_condition": {
+   "LT|s1-follow": 30,
+   "LT|s1-no-follow": 30,
+   "LT|s6-follow": 30,
+   "LT|s6-no-follow": 30,
+   "O|s1-follow": 30,
+   "O|s1-no-follow": 30,
+   "O|s6-follow": 30,
+   "O|s6-no-follow": 30,
+   "R0|s1-follow": 30,
+   "R0|s1-no-follow": 30,
+   "R0|s6-follow": 30,
+   "R0|s6-no-follow": 30,
+   "S|s1-follow": 30,
+   "S|s1-no-follow": 30,
+   "S|s6-follow": 30,
+   "S|s6-no-follow": 30
+  },
+  "rubric_alias_targets": 479,
+  "rubric_aliases_per_unit": {
+   "1": 479
+  },
+  "rubric_answers_with_several_units": 0,
+  "rubric_status": {
+   "no_completion:TimeoutError:timed out": 1,
+   "valid": 478
+  },
+  "rubric_unit_without_completion": [
+   [
+    "3e3ab250b1e3f4d5e2fa5556d9aff36bb25061830674ac904360545109249b1e",
+    [
+     "v-5d89a3217d52-d5686022be2b-s6-follow-r2"
+    ]
+   ]
+  ],
+  "rubric_units": 479,
+  "schedule_cells_plan19": 480,
+  "schedule_matches_traces": true,
+  "tasks": 15,
+  "terminals": {
+   "answer": 479,
+   "invalid_action_limit": 1
+  },
+  "trace_hash_vs_sprint24_inventory": {
+   "match": 480
+  }
+ },
+ "reproduction_targets": {
+  "completeness": {
+   "LT - O": {
+    "ci95": [
+     -0.22916666666666666,
+     0.0625
+    ],
+    "estimate": -0.07916666666666666,
+    "mean_a": 3.5166666666666666,
+    "mean_b": 3.595833333333333,
+    "n": 15
+   },
+   "LT - R0": {
+    "ci95": [
+     -0.30416666666666664,
+     0.1
+    ],
+    "estimate": -0.10416666666666667,
+    "mean_a": 3.5166666666666666,
+    "mean_b": 3.620833333333333,
+    "n": 15
+   },
+   "R0 - O": {
+    "ci95": [
+     -0.15416666666666667,
+     0.19583333333333333
+    ],
+    "estimate": 0.025,
+    "mean_a": 3.620833333333333,
+    "mean_b": 3.595833333333333,
+    "n": 15
+   },
+   "S - O": {
+    "ci95": [
+     -0.12083333333333333,
+     0.14166666666666666
+    ],
+    "estimate": 0.008333333333333333,
+    "mean_a": 3.6041666666666665,
+    "mean_b": 3.595833333333333,
+    "n": 15
+   }
+  },
+  "rubric_relaxed": {
+   "LT - O": {
+    "ci95": [
+     -0.05499999999999997,
+     0.01583333333333335
+    ],
+    "estimate": -0.019999999999999993,
+    "mean_a": 0.7554166666666667,
+    "mean_b": 0.7754166666666666,
+    "n": 15
+   },
+   "LT - R0": {
+    "ci95": [
+     -0.12083333333333333,
+     -0.02166666666666665
+    ],
+    "estimate": -0.06958333333333334,
+    "mean_a": 0.7554166666666667,
+    "mean_b": 0.825,
+    "n": 15
+   },
+   "R0 - O": {
+    "ci95": [
+     0.013333333333333353,
+     0.08833333333333335
+    ],
+    "estimate": 0.04958333333333335,
+    "mean_a": 0.825,
+    "mean_b": 0.7754166666666666,
+    "n": 15
+   },
+   "S - O": {
+    "ci95": [
+     -0.006666666666666639,
+     0.05000000000000003
+    ],
+    "estimate": 0.022083333333333354,
+    "mean_a": 0.7975,
+    "mean_b": 0.7754166666666666,
+    "n": 15
+   }
+  }
+ },
+ "retrospective": "Aggregate tier-1 results were already known (Sprint 20, October 24) when this plan was written. The analysis is a retrospective, descriptive decomposition of saved answers and saved judgments; it is not pre-registration and not independent confirmation. Reusing the same model verdicts does not independently validate answer completeness.",
+ "runtime": {
+  "command": "compare-answer-elements",
+  "image_receipt": "artifacts/tier1-completeness-25-v1/image/verification-image.json",
+  "network": "none"
+ },
+ "schema_version": "docspectra.icsc.tier1_completeness_25.plan.v1",
+ "score_rules": {
+  "luna": "five measures per pass from the valid completion's normalized attempt; the two passes of one answer are averaged (missing dropped); they are two grades, not two answers",
+  "outcomes": "relaxed_satisfied | quote_rejected (raw positive, span fails) | judged_not_satisfied | not_observed (no answer, no unit, no valid completion, identity mismatch, missing or duplicate verdict); a quote match shows the text exists, not that it is correct",
+  "relaxed": "quote_match_relaxed_v1, reproduced exactly in RA; counted = raw satisfied and span admitted",
+  "verdicts": "the completion's selected attempt only: raw verdicts from attempt-XX.raw.json, strict from attempt-XX.normalized.json; element_id, verdict, answer_span and reason preserved"
+ },
+ "selection": {
+  "candidates": "same task, condition and numbered replicate with complete valid element records on both sides",
+  "contrasts": [
+   "LT-O",
+   "LT-R0"
+  ],
+  "focal": "LT",
+  "interpretation": "retrospective and outcome-stratified: illustrates differences and checks judgments; cannot estimate prevalence or population improvement",
+  "max_pairs": 8,
+  "order": "packet order by ascending SHA-256 of '25|20261025|order|<contrast>|...'",
+  "position": "LT side alternates A, B, A, B in ascending SHA-256 of '25|20261025|position|<contrast>|...' within each contrast (balanced within one)",
+  "rule": "lowest SHA-256 of '25|20261025|<contrast>|<full_task_id>|<condition>|<replicate>' per stratum (contrast written LT-O / LT-R0, replicate as 1 or 2); an empty stratum stays empty",
+  "sets": "gains = elements counted for LT only; losses = elements counted for the comparator only (relaxed)",
+  "strata": [
+   "net_gain: gains > losses",
+   "net_loss: losses > gains",
+   "tradeoff: equal nonzero",
+   "label_agreement: no gains and no losses"
+  ]
+ },
+ "status": "frozen before any element-level difference, persistence table or example selection was computed",
+ "version": 1
+}

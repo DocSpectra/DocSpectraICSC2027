@@ -1,0 +1,5 @@
+Judge only what the SAVED ANSWER explicitly states for each proposed task element. The question and element descriptions tell you what to check; they do not establish that the answer contains it. Do not use outside knowledge or infer omitted steps.
+
+Mark `satisfied` only if the answer states every mandatory fact in the requirement and acceptance text, including conditions and exceptions. Mark `missing` if any mandatory fact is absent, `contradicted` if the answer explicitly states the opposite, and `uncertain` if the wording is genuinely ambiguous. Paraphrases count. For a satisfied or contradicted verdict, copy a short exact substring of the saved answer as `answer_span`; otherwise use JSON null. Give each supplied element exactly one verdict. Do not add prose outside the JSON schema.
+
+INPUT JSON:

@@ -1,0 +1,1398 @@
+{
+ "analysis_evidence_sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23",
+ "arms": {
+  "LT": {
+   "decisions": {
+    "not_supported": 53,
+    "supported": 51,
+    "undetermined": 6
+   },
+   "pairs": 110,
+   "questions": 51,
+   "questions_with_a_supported_credited_page": 37,
+   "rows": [
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_roles_and_permissions_custom_roles__c4e1075f"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_roles_and_permissions_custom_role_permissions__8d67a54c",
+     "question_id": "docker_docs_faq_0008",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_guides_admin_set_up_index__09826164"
+     ],
+     "decision": "supported",
+     "doc_id": "content_guides_admin_set_up_rollout_context__c0a7f8e2",
+     "question_id": "docker_docs_faq_0011",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+     "question_id": "docker_docs_faq_0011",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_ai_mcp_catalog_and_toolkit_toolkit__90991de5"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+     "question_id": "docker_docs_faq_0020",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_ai_mcp_catalog_and_toolkit_get_started__f60611f0",
+      "content_manuals_ai_mcp_catalog_and_toolkit_profiles__e0771b8d"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+     "question_id": "docker_docs_faq_0023",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_ai_mcp_catalog_and_toolkit_get_started__f60611f0",
+      "content_manuals_ai_mcp_catalog_and_toolkit_profiles__e0771b8d",
+      "content_manuals_ai_mcp_catalog_and_toolkit_toolkit__90991de5"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+     "question_id": "docker_docs_faq_0025",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_ai_mcp_catalog_and_toolkit_profiles__e0771b8d"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+     "question_id": "docker_docs_faq_0026",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_reference_compose_file_profiles__b39e5b2c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_reference_compose_file_debug_profile_dependencies__616a11a7",
+     "question_id": "docker_docs_faq_0026",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_guides_docker_compose_common_questions__2a8b9f06"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_compose_how_tos_startup_order__b0a66ea9",
+     "question_id": "docker_docs_faq_0039",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_reference_compose_file_services__c8e812e7"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_reference_compose_file_wait_for_healthy_dependencies__931b831f",
+     "question_id": "docker_docs_faq_0040",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_settings_management_policy_model__ab3c1471",
+     "question_id": "docker_docs_faq_0044",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_linux_index__6bb68b09"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_linux_requirements__22fc05a5",
+     "question_id": "docker_docs_faq_0045",
+     "retrievers": [
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_linux_index__6bb68b09"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_engine_security_connect_ssh__caf1eb40",
+     "question_id": "docker_docs_faq_0045",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_reference_api_engine_sdk_index__8b9020be"
+     ],
+     "decision": "supported",
+     "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+     "question_id": "docker_docs_faq_0045",
+     "retrievers": [
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_features_networking_networking_how_tos__3573e9db"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_features_networking_connect_host__61abb310",
+     "question_id": "docker_docs_faq_0046",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_features_networking_networking_how_tos__3573e9db"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_features_networking_index__83fe2b9a",
+     "question_id": "docker_docs_faq_0046",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_features_networking_networking_how_tos__3573e9db"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_features_networking_ssh_agent__15407255",
+     "question_id": "docker_docs_faq_0046",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_install__7b39b11f",
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_installer_options__cc45e0c1",
+     "question_id": "docker_docs_faq_0049",
+     "retrievers": [
+      "embedding",
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_requirements__3bce57bd",
+     "question_id": "docker_docs_faq_0049",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_mac_upgrade_permissions__51206716",
+     "question_id": "docker_docs_faq_0049",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_access_denied__ded704f1",
+     "question_id": "docker_docs_faq_0049",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_write_protected__b77bf698",
+     "question_id": "docker_docs_faq_0049",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+     "question_id": "docker_docs_faq_0050",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_file_sharing__dadca7f0",
+     "question_id": "docker_docs_faq_0051",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_volume_permissions__48113da7",
+     "question_id": "docker_docs_faq_0051",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_linux_index__6bb68b09"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_desktop_setup_install_linux_engine_context__5de09d14",
+     "question_id": "docker_docs_faq_0052",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_linux_index__6bb68b09"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_linux_requirements__22fc05a5",
+     "question_id": "docker_docs_faq_0052",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_reference_api_engine_sdk_index__8b9020be"
+     ],
+     "decision": "supported",
+     "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+     "question_id": "docker_docs_faq_0052",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_linux_index__6bb68b09"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_linux_engine_context__5de09d14",
+     "question_id": "docker_docs_faq_0053",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_get_started_workshop_03_updating_app__6b17f188"
+     ],
+     "decision": "supported",
+     "doc_id": "content_get_started_shared_stop_and_remove_containers__4661372d",
+     "question_id": "docker_docs_faq_0057",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_build_buildkit_configure__4ac29f59"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_build_buildkit_registry_certificates__ecb1635b",
+     "question_id": "docker_docs_faq_0067",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_registry_certificates__b908e27e",
+     "question_id": "docker_docs_faq_0067",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_engine_security_protect_access__8b0e812b"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_engine_security_connect_tls__055d281e",
+     "question_id": "docker_docs_faq_0067",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_engine_security_protect_access__8b0e812b"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_engine_security_tls_certificates__1b171143",
+     "question_id": "docker_docs_faq_0067",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_previous_versions_4_0_4_9__36fc122c",
+     "question_id": "docker_docs_faq_0068",
+     "retrievers": [
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_previous_versions_4_30_4_39__2a92807d",
+     "question_id": "docker_docs_faq_0068",
+     "retrievers": [
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_previous_versions_4_50_4_59__520cb0ae",
+     "question_id": "docker_docs_faq_0068",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_desktop_release_availability__9ae0611d",
+     "question_id": "docker_docs_faq_0068",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_install__7b39b11f",
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_inventory__8172963b",
+     "question_id": "docker_docs_faq_0069",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_containers__bbd23b73",
+     "question_id": "docker_docs_faq_0072",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff",
+     "question_id": "docker_docs_faq_0072",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_windows_install__d9e924ae"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_requirements__3bce57bd",
+     "question_id": "docker_docs_faq_0072",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_engine_install_binaries__6c7b4cfb"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_engine_install_binaries_windows__7546e73d",
+     "question_id": "docker_docs_faq_0072",
+     "retrievers": [
+      "embedding",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_dhi_how_to_customize__db61f385"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_dhi_core_concepts_customizations__86213f7b",
+     "question_id": "docker_docs_faq_0074",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_dhi_how_to_customize__db61f385"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+     "question_id": "docker_docs_faq_0074",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff",
+     "question_id": "docker_docs_faq_0077",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_download_installers__4da56024",
+     "question_id": "docker_docs_faq_0077",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_installer_updates__74d3dbdc",
+     "question_id": "docker_docs_faq_0077",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_msi_reference__8e10c32d",
+     "question_id": "docker_docs_faq_0077",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_download_installers__4da56024",
+     "question_id": "docker_docs_faq_0078",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_mac_command_line__561d6da9",
+     "question_id": "docker_docs_faq_0079",
+     "retrievers": [
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff",
+     "question_id": "docker_docs_faq_0079",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_download_installers__4da56024",
+     "question_id": "docker_docs_faq_0079",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_installer_updates__74d3dbdc",
+     "question_id": "docker_docs_faq_0079",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_enterprise_deployment_msi_install_and_configure__21afaa33"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_enterprise_deployment_msi_reference__8e10c32d",
+     "question_id": "docker_docs_faq_0079",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e",
+      "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+     "question_id": "docker_docs_faq_0082",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e",
+      "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+     "question_id": "docker_docs_faq_0088",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_use_desktop_kubernetes_custom_registry__6ea6bbb2",
+     "question_id": "docker_docs_faq_0088",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_use_desktop_kubernetes_provisioning__a447e411",
+     "question_id": "docker_docs_faq_0088",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_settings_management_json_file_reference__bb6544e2",
+     "question_id": "docker_docs_faq_0088",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_use_desktop_kubernetes_custom_registry__6ea6bbb2",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_config__b96a2109"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_ci_tools__912891b4",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_config__b96a2109"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_development_tools__8c3b535a",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_config__b96a2109"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_testcontainers__97368be1",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_settings_reference__8aae6bc6"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_settings_management_json_file_reference__bb6544e2",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0094",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0095",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+     "question_id": "docker_docs_faq_0096",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0096",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+     "question_id": "docker_docs_faq_0099",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0099",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_troubleshoot_sso__95fb14c4"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_diagnostics__7788559b",
+     "question_id": "docker_docs_faq_0100",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_index__221587fb"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc",
+     "question_id": "docker_docs_faq_0100",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+     "question_id": "docker_docs_faq_0102",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_sso_prerequisites__63915fec",
+     "question_id": "docker_docs_faq_0102",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_manage__fc89b5c1"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+     "question_id": "docker_docs_faq_0105",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0105",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0109",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_auto_provisioning__19aa1387",
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_disable_jit__4df65e78",
+     "question_id": "docker_docs_faq_0111",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+     "question_id": "docker_docs_faq_0111",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_manage__fc89b5c1"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+     "question_id": "docker_docs_faq_0111",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_role_mapping__0bba3582",
+     "question_id": "docker_docs_faq_0111",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e",
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+      "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_sso_prerequisites__63915fec",
+     "question_id": "docker_docs_faq_0111",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_index__32360fe6",
+      "content_manuals_enterprise_security_single_sign_on_manage__fc89b5c1"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+     "question_id": "docker_docs_faq_0113",
+     "retrievers": [
+      "embedding",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024"
+     ],
+     "decision": "undetermined",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_group_mapping_reference__d0e8b1fc",
+     "question_id": "docker_docs_faq_0113",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050",
+     "question_id": "docker_docs_faq_0113",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0116",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+     "question_id": "docker_docs_faq_0117",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_group_mapping_reference__d0e8b1fc",
+     "question_id": "docker_docs_faq_0117",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e",
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+      "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_sso_prerequisites__63915fec",
+     "question_id": "docker_docs_faq_0117",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_disable_jit__4df65e78",
+     "question_id": "docker_docs_faq_0118",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+     "question_id": "docker_docs_faq_0118",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_auto_provisioning__19aa1387",
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_disable_jit__4df65e78",
+     "question_id": "docker_docs_faq_0119",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_just_in_time__24b7cd6e"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+     "question_id": "docker_docs_faq_0119",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e",
+      "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+     "question_id": "docker_docs_faq_0122",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_get_started_workshop_06_bind_mounts__03f6a403"
+     ],
+     "decision": "supported",
+     "doc_id": "content_get_started_docker_concepts_running_containers_sharing_local_files__73a1f090",
+     "question_id": "docker_docs_faq_0123",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_engine_security_index__b03dc456"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_engine_security_daemon_security__26f6b8b4",
+     "question_id": "docker_docs_faq_0123",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_engine_security_index__b03dc456"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_engine_security_kernel_security__5c68681f",
+     "question_id": "docker_docs_faq_0123",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e",
+      "content_manuals_desktop_setup_install_windows_permission_requirements__3b9fc0ff"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+     "question_id": "docker_docs_faq_0124",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+     "question_id": "docker_docs_faq_0127",
+     "retrievers": [
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_index__32360fe6"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+     "question_id": "docker_docs_faq_0128",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_index__32360fe6"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_sso_attributes__65c7539f",
+     "question_id": "docker_docs_faq_0128",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_single_sign_on_manage__fc89b5c1"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+     "question_id": "docker_docs_faq_0133",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_group_mapping_reference__d0e8b1fc",
+     "question_id": "docker_docs_faq_0133",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_role_mapping__0bba3582",
+     "question_id": "docker_docs_faq_0133",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_scim_attributes__f407d4d8",
+     "question_id": "docker_docs_faq_0133",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050",
+     "question_id": "docker_docs_faq_0133",
+     "retrievers": [
+      "embedding"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_extensions_marketplace__bb372e8f"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_extensions_manage_extensions__8eadae3f",
+     "question_id": "docker_docs_faq_0135",
+     "retrievers": [
+      "embedding",
+      "graph_expand"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_registry_access_management__830de7b4"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_image_registry_controls__ea280a73",
+     "question_id": "docker_docs_faq_0136",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+     ],
+     "decision": "supported",
+     "doc_id": "content_manuals_enterprise_security_hardened_desktop_container_proxy_reference__1cc4b7ee",
+     "question_id": "docker_docs_faq_0137",
+     "retrievers": [
+      "embedding"
+     ]
+    }
+   ],
+   "variant": "v-6337600cdc97"
+  },
+  "R0": {
+   "decisions": {
+    "not_supported": 4
+   },
+   "pairs": 4,
+   "questions": 4,
+   "questions_with_a_supported_credited_page": 0,
+   "rows": [
+    {
+     "credited_for": [
+      "content_reference_api_engine_sdk_index__8b9020be"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+     "question_id": "docker_docs_faq_0052",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_dhi_how_to_customize__db61f385"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_dhi_how_to_oci_artifacts__ef436e7c",
+     "question_id": "docker_docs_faq_0074",
+     "retrievers": [
+      "embedding",
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_use_desktop_kubernetes_images__59e98c5c",
+     "question_id": "docker_docs_faq_0088",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    },
+    {
+     "credited_for": [
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+     ],
+     "decision": "not_supported",
+     "doc_id": "content_manuals_desktop_use_desktop_kubernetes_images__59e98c5c",
+     "question_id": "docker_docs_faq_0089",
+     "retrievers": [
+      "graph_expand",
+      "lexical"
+     ]
+    }
+   ],
+   "variant": "v-c2c2731d2141"
+  }
+ },
+ "code_sha256": "fd71c07e812e4a2dc84d9718d6d4ddfbb2fd6fd23a3b939c80dd56ec66e3a23d",
+ "created": "2026-10-24",
+ "model_calls": 0,
+ "schema_version": "docspectra.icsc.wc_o1_credited_20.v1"
+}

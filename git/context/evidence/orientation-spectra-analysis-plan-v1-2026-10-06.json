@@ -1,0 +1,61 @@
+{
+ "schema_version": "docspectra.icsc.orientation_spectra.v1.analysis_plan",
+ "status": "frozen_before_measures_and_exposure",
+ "sprint": "09c",
+ "input_evidence": "orientation-spectra-inputs-v1-2026-10-06.json",
+ "input_evidence_sha256": "1b5acb7dbe1cde9b11580e9b7b36e8823eabc8f62c35335218646b298ad3f72b",
+ "unit_of_analysis": "graph version; the 142 questions share one skeleton, one seed set and one corpus and are not independent graph treatments",
+ "versions": {
+  "test_set": "29 versions: 20 random-half (RND90901-RND90920) and 9 partial (P10, P25, P50 x 3 seeds)",
+  "contrast_set": "F, R, U",
+  "all_reported": "every one of the 32 versions is reported, including null, degenerate and fallback-heavy versions"
+ },
+ "retrieval": {
+  "operator": "E009 semantic_seeded_directional_pilot_v1, direction outgoing over each version's edge file (U file = two-way)",
+  "parameters": "seed_top_k 1, graph_hops 1, neighbor_budget 20, candidate_budget 40, final_top_k 4, distance_penalty 0.02, max_context_chars_per_doc 1200; Sept 25 matrix values, not tuned",
+  "seeds": "one shared MiniLM semantic ranking per question, identical across versions",
+  "replay_admission": "host replay with the pinned runner's pilot_selection is admitted only if, for all 142 questions, final context IDs, seeds, candidates and fallback match the pinned E009 image for F outgoing, F built-in reversed, R file outgoing, U file outgoing and F built-in undirected; R file outgoing must equal F built-in reversed"
+ },
+ "support": "automatic candidate support: the five historical lexical top_docs per question; every exposure result is labelled as measured against automatic candidate support, not qrels",
+ "outcomes": {
+  "primary": "Y_v = fraction of the 142 questions for which at least one candidate support page is in the final context with role expanded_neighbor (graph distance >= 1; not a seed and not a semantic fallback)",
+  "secondary": [
+   "literal non-seed rate: candidate support in final context and not a seed, including fallback fills",
+   "candidate support in final context (any role)",
+   "candidate support in seeds (constant by construction; reported as a check)",
+   "top-1 candidate only, expansion-added",
+   "mean candidate-pool size; fraction of questions with any fallback; mean fallback items"
+  ]
+ },
+ "measures": {
+  "operator": "RA magnetic_matrix: unnormalized D - W o exp(i 2 pi q (A - A^T)), W = (A + A^T)/2, binary simple edges; complex128; full numpy.linalg.eigh; OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1",
+  "primary_view": "retrieval_no_faq_lwcc (844 nodes; skeleton fixed so the node set is identical across versions)",
+  "secondary_view": "retrieval_no_faq (1263 nodes, the edge set E009 traverses); reported, not tested",
+  "primary": ["lambda1_q0.25 (lowest eigenvalue, frustration)", "lambda2_q0.25 (second-lowest eigenvalue)"],
+  "secondary": ["lambda1 and lambda2 at q in {0.05, 0.10, 0.15, 0.20}", "magnetic_subspace_edge_polarization.v1 (pinned config; descriptor only, never a target)"],
+  "directed_degree_controls": ["out-degree Gini over all nodes", "sources: out > 0 and in = 0", "sinks: in > 0 and out = 0", "mean out-degree of each question's seed page (over 142 questions)"],
+  "mechanistic_reference": "mean directed reachable-set size from the seed within 1 hop under neighbor_budget 20 (equals the expanded candidate count); reported, not a competitor",
+  "controls_view": "retrieval_no_faq (what the retriever traverses); LWCC values also reported",
+  "sanity_checks": ["undirected unnormalized lambda2 (magnetic operator at q = 0) identical across versions within 1e-9", "normalized undirected lambda2 identical", "per-node total degree (in + out) identical", "F and R magnetic spectra identical within 1e-9 at every q (reversal conjugates L)"]
+ },
+ "confirmatory_tests": {
+  "primary": {
+   "statistic": "Spearman rho (average ranks) between each primary magnetic measure and Y_v across the 29 test versions",
+   "inference": "two-sided version-level permutation test: 20,000 permutations of Y across versions, numpy default_rng(90999); p = (1 + count(|rho*| >= |rho| - 1e-12)) / 20,001",
+   "multiplicity": "Holm over the two primary measures at alpha 0.05",
+   "uncertainty": "percentile bootstrap 95% CI over versions, 2,000 resamples, default_rng(90998); descriptive",
+   "degenerate": "if Y or a measure has zero variance over the 29 versions the test is reported as unavailable, which counts as a null"
+  },
+  "incremental": {
+   "statistic": "partial Spearman: rank-transform measure, Y and the four directed-degree controls; residualize rank(measure) and rank(Y) on the control ranks with intercept (least squares, pseudo-inverse); rho_partial = Pearson correlation of residuals",
+   "inference": "Freedman-Lane: permute residuals of rank(Y) on controls, 20,000 permutations, default_rng(90996), two-sided",
+   "adds_information_rule": "a primary measure adds information beyond directed-degree controls only if (a) its primary test is Holm-significant, (b) rho_partial has the same sign as the marginal rho, and (c) the Freedman-Lane p is below 0.05 after Holm over the measures reaching this step. Anything else is reported as no demonstrated incremental information.",
+   "descriptive_companions": ["partial Spearman with each single control", "partial Spearman controlling for the mechanistic reference", "leave-one-version-out R^2 of rank(Y) on control ranks versus control ranks plus the measure rank"]
+  },
+  "robustness": "fit on the 20 random versions (Spearman, permutation p as above with default_rng(90995)); report whether the sign of rho on the 9 partial versions agrees. Agreement requires both rhos nonzero with the same sign. Descriptive; does not change the confirmatory result.",
+  "sensitivity": "repeat the primary and incremental analyses with every edge incident to an _index page or release-notes page removed (nodes kept): spectra on the LWCC of the reduced skeleton, exposure with the reduced edge file, controls on the reduced retrieval view; Holm within the sensitivity family",
+  "contrasts": "F vs R vs U: per-question expansion-added indicator; rates; paired differences F-R, F-U, R-U with exact two-sided McNemar and question-bootstrap 95% CI (5,000 resamples, default_rng(90997)). Reported as direction-versus-connectivity evidence; magnetic eigenvalues cannot distinguish F from R by construction"
+ },
+ "exploratory": "every other analysis, figure or comparison is labelled exploratory",
+ "claims_boundary": "no claim that a magnetic measure is a quality objective; no generalization beyond this Docker snapshot; answer quality only from the author's blind grading"
+}

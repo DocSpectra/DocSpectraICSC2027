@@ -1,0 +1,78 @@
+{
+  "created": "2026-10-10",
+  "decided": "O5 is pinned here as the design delegates it to Sprint 15 (section 3)",
+  "embedding_model": {
+    "dir": "artifacts/docker-cikm-2026-05-14/model",
+    "lock": {
+      "path": "artifacts/docker-cikm-2026-05-14/provenance/embedding_models.lock.json",
+      "sha256": "96cce460b8729f761146f72c0544313a1e02a2bbe2ce2eee9dc4725f22908fdd"
+    },
+    "model_safetensors_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+  },
+  "notes": [
+    "k = 10 for every retriever so that nDCG@10 has 10 ranked items; Recall@5 uses the first 5 (design D8)",
+    "graph-expand is RA's rag_graph_ranked_expand (BM25 seeds + ranked one-hop neighbours, 6 + 4): rag_graph_expand returns at most 2 items whatever top_k is, so it cannot carry Recall@5 or nDCG@10",
+    "the embedding image runs sentence-transformers 5.5.0 / transformers 5.8.1; the model lock records 5.4.1 / 5.7.0 from the May 2026 CIKM run; the snapshot bytes match the lock (checked at run time by the runner)",
+    "scoring is in this driver (credited equivalence sets, PROVENANCE_RULE), not RA score_ranked: RA's qrels have one id per target and its pinned engine ir-measures==0.4.3 is not installed on this host; on O the two coincide (identity equivalence) and an RA cross-check on O is a follow-up",
+    "runner bytes inside each image equal tests/<provider>/runner.py at RA ffe09f1124fe7a08380af60dea82b36737ca2fe0"
+  ],
+  "ra_commit": "ffe09f1124fe7a08380af60dea82b36737ca2fe0",
+  "retrievers": {
+    "embedding": {
+      "config": {
+        "batch_size": 32,
+        "embedding_backend": "sentence_transformers_local",
+        "max_context_chars_per_doc": 1500,
+        "model_cache_path": "/models/minilm",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "model_lock_path": "/model_provenance/embedding_models.lock.json",
+        "model_revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+        "top_k": 10
+      },
+      "image": "retrieval-arena/rag-embedding-topk:latest",
+      "image_id": "sha256:eac5614e9d9e887bf4457d2bd40396a1a338b95e4b3cdd3a3b681eaf1d511569",
+      "mounts": {
+        "lock": "/model_provenance",
+        "model": "/models/minilm"
+      },
+      "provider": "rag_embedding_topk",
+      "runner_sha256": "3386415574830ee89bfdba402123fef3fe30202a2dbde1e262315d01661ec600",
+      "runtime_versions": {
+        "sentence_transformers": "5.5.0",
+        "torch": "2.11.0+cu130",
+        "transformers": "5.8.1"
+      }
+    },
+    "graph_expand": {
+      "config": {
+        "answer_policy": "head_of_document_v1",
+        "max_context_chars_per_doc": 1200,
+        "neighbor_budget": 4,
+        "seed_top_k": 6
+      },
+      "image": "retrieval-arena/rag-graph-ranked-expand:s025",
+      "image_id": "sha256:f8ace4e954772119ed719159674e6a94ac5448a71ebd9a8ef29840c8fbe3697f",
+      "provider": "rag_graph_ranked_expand",
+      "runner_sha256": "16bf70162a0fd8737e118c75f5889e1d64764a407f65b1d2dc3390899df0929c"
+    },
+    "lexical": {
+      "config": {
+        "answer_policy": "head_of_document_v1",
+        "max_context_chars_per_doc": 1500,
+        "top_k": 10
+      },
+      "image": "retrieval-arena/rag-lexical-topk:s024",
+      "image_id": "sha256:f2f5a80146491273ce67ad4d0d6c54bf14dfc521f9668a62e470416744eb18f2",
+      "provider": "rag_lexical_topk",
+      "runner_sha256": "b001af0f4eb426dd6c82a88d992ce7a5a18b63ca17237c00003333f7c8015e24"
+    }
+  },
+  "schema_version": "docspectra.icsc.wc_refinement_15.v1.retriever_pins",
+  "scoring": {
+    "label": "automatic support labels, not human-reviewed",
+    "mrr": "reciprocal rank of the first credited item within 10",
+    "ndcg": "nDCG@10 (log2(rank+1), binary gain, each support unit once)",
+    "recall": "Recall@5",
+    "support": "credited equivalence sets (PROVENANCE_RULE)"
+  }
+}

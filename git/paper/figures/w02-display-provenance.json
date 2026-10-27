@@ -1,0 +1,986 @@
+{
+  "purpose": "Presentation only; no new scientific computation",
+  "evidence": {
+    "s22": {
+      "file": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e"
+    },
+    "s23": {
+      "file": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "sha256": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df"
+    },
+    "s20": {
+      "file": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+    }
+  },
+  "figures": [
+    {
+      "output": "figures/w02-five-node.pdf",
+      "sha256": "8267eb83c7c1c202a9a4d90b2d6f33ad49252423a4489b258a9d18fcf8ed588b",
+      "input": "artifacts/magnetic-attribution-23-v1/figures/fig-small-five-energy.csv",
+      "input_sha256": "efc88f87e9fc91a251644309b67c1affda4a97cd97e5328a9d96e9c4f9b6813f",
+      "encoding": "arrow widths = 0.5 + 20 * recorded energy; labels 3 decimals; uniform node circles; fixed layout; both sides and all edges"
+    },
+    {
+      "output": "figures/w02-refinement.pdf",
+      "sha256": "bf834805386483e8d305459c4a5690e2573a0c6d27d432e5aea7bbe8634d691a",
+      "input": "artifacts/normalized-magnetic-22-v1/figures/fig-c-refinement.pdf",
+      "copy": "byte-identical saved S22 plot; all 5 nulls/family/arm"
+    }
+  ],
+  "table_values": [
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[0].lwcc_nodes",
+      "exact": 23,
+      "displayed": "23",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[0].nodes_full",
+      "exact": 59,
+      "displayed": "59",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[0].lambda1_q0.25",
+      "exact": 0.076228247717201,
+      "displayed": "0.0762",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[0].lambda2_q0.25",
+      "exact": 0.1527337767870773,
+      "displayed": "0.1527",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[0].weighted_q0_lambda2",
+      "exact": 0.14741701893809234,
+      "displayed": "0.1474",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[1].lwcc_nodes",
+      "exact": 391,
+      "displayed": "391",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[1].nodes_full",
+      "exact": 492,
+      "displayed": "492",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[1].lambda1_q0.25",
+      "exact": 0.013153765450941537,
+      "displayed": "0.0132",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[1].lambda2_q0.25",
+      "exact": 0.014987071280465118,
+      "displayed": "0.0150",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[1].weighted_q0_lambda2",
+      "exact": 0.003745005647424577,
+      "displayed": "0.0037",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[2].lwcc_nodes",
+      "exact": 393,
+      "displayed": "393",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[2].nodes_full",
+      "exact": 470,
+      "displayed": "470",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[2].lambda1_q0.25",
+      "exact": 0.003828214881070955,
+      "displayed": "0.0038",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[2].lambda2_q0.25",
+      "exact": 0.005116487333228091,
+      "displayed": "0.0051",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[2].weighted_q0_lambda2",
+      "exact": 0.005034099231490579,
+      "displayed": "0.0050",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[3].lwcc_nodes",
+      "exact": 649,
+      "displayed": "649",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[3].nodes_full",
+      "exact": 651,
+      "displayed": "651",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[3].lambda1_q0.25",
+      "exact": 0.05330315583029798,
+      "displayed": "0.0533",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[3].lambda2_q0.25",
+      "exact": 0.18732679738201585,
+      "displayed": "0.1873",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[3].weighted_q0_lambda2",
+      "exact": 0.06381218601928423,
+      "displayed": "0.0638",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[4].lwcc_nodes",
+      "exact": 844,
+      "displayed": "844",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[4].nodes_full",
+      "exact": 1263,
+      "displayed": "1263",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[4].lambda1_q0.25",
+      "exact": 0.08417108937548456,
+      "displayed": "0.0842",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[4].lambda2_q0.25",
+      "exact": 0.09692275498738123,
+      "displayed": "0.0969",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[4].weighted_q0_lambda2",
+      "exact": 0.01006184994784384,
+      "displayed": "0.0101",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[5].lwcc_nodes",
+      "exact": 2257,
+      "displayed": "2257",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[5].nodes_full",
+      "exact": 2364,
+      "displayed": "2364",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[5].lambda1_q0.25",
+      "exact": 0.0966258887661183,
+      "displayed": "0.0966",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[5].lambda2_q0.25",
+      "exact": 0.11878622899029775,
+      "displayed": "0.1188",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[5].weighted_q0_lambda2",
+      "exact": 0.02714397272367686,
+      "displayed": "0.0271",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[6].lwcc_nodes",
+      "exact": 44,
+      "displayed": "44",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[6].nodes_full",
+      "exact": 52,
+      "displayed": "52",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[6].lambda1_q0.25",
+      "exact": 0.05912641839797903,
+      "displayed": "0.0591",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[6].lambda2_q0.25",
+      "exact": 0.09240525097063254,
+      "displayed": "0.0924",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[6].weighted_q0_lambda2",
+      "exact": 0.0853684161444442,
+      "displayed": "0.0854",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[7].lwcc_nodes",
+      "exact": 2354,
+      "displayed": "2354",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[7].nodes_full",
+      "exact": 3515,
+      "displayed": "3515",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[7].lambda1_q0.25",
+      "exact": 0.013943572845237794,
+      "displayed": "0.0139",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[7].lambda2_q0.25",
+      "exact": 0.039579428654252374,
+      "displayed": "0.0396",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[7].weighted_q0_lambda2",
+      "exact": 0.0030097154968946964,
+      "displayed": "0.0030",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[8].lwcc_nodes",
+      "exact": 1146,
+      "displayed": "1146",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[8].nodes_full",
+      "exact": 1572,
+      "displayed": "1572",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[8].lambda1_q0.25",
+      "exact": 0.05043505024167269,
+      "displayed": "0.0504",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[8].lambda2_q0.25",
+      "exact": 0.12567089104838627,
+      "displayed": "0.1257",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[8].weighted_q0_lambda2",
+      "exact": 0.03935029940227449,
+      "displayed": "0.0394",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[9].lwcc_nodes",
+      "exact": 295,
+      "displayed": "295",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[9].nodes_full",
+      "exact": 418,
+      "displayed": "418",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[9].lambda1_q0.25",
+      "exact": 0.12963147235921318,
+      "displayed": "0.1296",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[9].lambda2_q0.25",
+      "exact": 0.13113161991367014,
+      "displayed": "0.1311",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[9].weighted_q0_lambda2",
+      "exact": 0.11336947948763132,
+      "displayed": "0.1134",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[10].lwcc_nodes",
+      "exact": 9,
+      "displayed": "9",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[10].nodes_full",
+      "exact": 244,
+      "displayed": "244",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[10].lambda1_q0.25",
+      "exact": 9.343776168232881e-17,
+      "displayed": "0.0000",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[10].lambda2_q0.25",
+      "exact": 0.29289321881345226,
+      "displayed": "0.2929",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[10].weighted_q0_lambda2",
+      "exact": 0.2928932188134523,
+      "displayed": "0.2929",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[11].lwcc_nodes",
+      "exact": 206,
+      "displayed": "206",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[11].nodes_full",
+      "exact": 218,
+      "displayed": "218",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[11].lambda1_q0.25",
+      "exact": 0.2099418144526756,
+      "displayed": "0.2099",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[11].lambda2_q0.25",
+      "exact": 0.22370461144131487,
+      "displayed": "0.2237",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[11].weighted_q0_lambda2",
+      "exact": 0.13323494189540197,
+      "displayed": "0.1332",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[12].lwcc_nodes",
+      "exact": 45,
+      "displayed": "45",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[12].nodes_full",
+      "exact": 97,
+      "displayed": "97",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[12].lambda1_q0.25",
+      "exact": 0.012360428990183933,
+      "displayed": "0.0124",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[12].lambda2_q0.25",
+      "exact": 0.07455333098144647,
+      "displayed": "0.0746",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[12].weighted_q0_lambda2",
+      "exact": 0.016077424495952824,
+      "displayed": "0.0161",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[13].lwcc_nodes",
+      "exact": 658,
+      "displayed": "658",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[13].nodes_full",
+      "exact": 770,
+      "displayed": "770",
+      "rounding": "integer"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[13].lambda1_q0.25",
+      "exact": 0.0620361167994803,
+      "displayed": "0.0620",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[13].lambda2_q0.25",
+      "exact": 0.11637114720510798,
+      "displayed": "0.1164",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "field": "A_characterization.table[13].weighted_q0_lambda2",
+      "exact": 0.06106371183380061,
+      "displayed": "0.0611",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[5].delta_lambda1",
+      "exact": -8.557527352130723e-05,
+      "displayed": "-8.56\\!\\times\\!10^{-5}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[4].delta_lambda1",
+      "exact": -3.363870516720491e-07,
+      "displayed": "-3.36\\!\\times\\!10^{-7}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[5].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[8].delta_lambda1",
+      "exact": -0.00011184728676656708,
+      "displayed": "-1.12\\!\\times\\!10^{-4}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[7].delta_lambda1",
+      "exact": -3.111672390483655e-06,
+      "displayed": "-3.11\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[8].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[11].delta_lambda1",
+      "exact": -2.993961485675545e-08,
+      "displayed": "-2.99\\!\\times\\!10^{-8}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[10].delta_lambda1",
+      "exact": 3.1001371525313237e-06,
+      "displayed": "+3.10\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[11].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[14].delta_lambda1",
+      "exact": -1.1701844115780125e-06,
+      "displayed": "-1.17\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[13].delta_lambda1",
+      "exact": 7.462683745879106e-06,
+      "displayed": "+7.46\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[14].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[5].a.effective_support_fraction",
+      "exact": 0.00591630153420611,
+      "displayed": "0.0059",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[5].a.degree_mass_tv_distance",
+      "exact": 0.9618440857559136,
+      "displayed": "0.962",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[20].delta_lambda1",
+      "exact": 0.002129424134208885,
+      "displayed": "+2.13\\!\\times\\!10^{-3}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[19].delta_lambda1",
+      "exact": -6.958259878467321e-06,
+      "displayed": "-6.96\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[20].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[23].delta_lambda1",
+      "exact": 0.0009125409300483889,
+      "displayed": "+9.13\\!\\times\\!10^{-4}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[22].delta_lambda1",
+      "exact": -0.0001319712499032455,
+      "displayed": "-1.32\\!\\times\\!10^{-4}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[23].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[26].delta_lambda1",
+      "exact": -5.934883501867994e-07,
+      "displayed": "-5.93\\!\\times\\!10^{-7}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[25].delta_lambda1",
+      "exact": 3.9648464424252294e-06,
+      "displayed": "+3.96\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[26].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[29].delta_lambda1",
+      "exact": 5.515025590818734e-06,
+      "displayed": "+5.52\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[28].delta_lambda1",
+      "exact": -9.382406872968097e-06,
+      "displayed": "-9.38\\!\\times\\!10^{-6}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[29].resolved",
+      "exact": true,
+      "displayed": "yes",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[20].a.effective_support_fraction",
+      "exact": 0.09065358828446478,
+      "displayed": "0.0907",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[20].a.degree_mass_tv_distance",
+      "exact": 0.7303442815123706,
+      "displayed": "0.730",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[35].delta_lambda1",
+      "exact": -6.96470180139297e-10,
+      "displayed": "-6.96\\!\\times\\!10^{-10}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[34].delta_lambda1",
+      "exact": -6.3302709497892184e-09,
+      "displayed": "-6.33\\!\\times\\!10^{-9}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[35].resolved",
+      "exact": false,
+      "displayed": "no",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[38].delta_lambda1",
+      "exact": 1.0611563537599178e-10,
+      "displayed": "+1.06\\!\\times\\!10^{-10}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[37].delta_lambda1",
+      "exact": 7.31072948706446e-10,
+      "displayed": "+7.31\\!\\times\\!10^{-10}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[38].resolved",
+      "exact": false,
+      "displayed": "no",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[41].delta_lambda1",
+      "exact": 2.5870052627885443e-12,
+      "displayed": "+2.59\\!\\times\\!10^{-12}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[40].delta_lambda1",
+      "exact": 1.5533771300507704e-09,
+      "displayed": "+1.55\\!\\times\\!10^{-9}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[41].resolved",
+      "exact": false,
+      "displayed": "no",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[44].delta_lambda1",
+      "exact": -9.350481326719784e-11,
+      "displayed": "-9.35\\!\\times\\!10^{-11}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[43].delta_lambda1",
+      "exact": -1.874288849124106e-10,
+      "displayed": "-1.87\\!\\times\\!10^{-10}",
+      "rounding": "3 significant figures, scientific notation"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[44].resolved",
+      "exact": false,
+      "displayed": "no",
+      "rounding": "boolean"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[35].a.effective_support_fraction",
+      "exact": 0.0028910090779977215,
+      "displayed": "0.0029",
+      "rounding": "4 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "field": "table[35].a.degree_mass_tv_distance",
+      "exact": 0.9966939938644472,
+      "displayed": "0.997",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - O].estimate",
+      "exact": -0.07916666666666666,
+      "displayed": "-0.079",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - O].ci95[0]",
+      "exact": -0.22916666666666666,
+      "displayed": "-0.229",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - O].ci95[1]",
+      "exact": 0.0625,
+      "displayed": "+0.063",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[R0 - O].estimate",
+      "exact": 0.025,
+      "displayed": "+0.025",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[R0 - O].ci95[0]",
+      "exact": -0.15416666666666667,
+      "displayed": "-0.154",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[R0 - O].ci95[1]",
+      "exact": 0.19583333333333333,
+      "displayed": "+0.196",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - R0].estimate",
+      "exact": -0.10416666666666667,
+      "displayed": "-0.104",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - R0].ci95[0]",
+      "exact": -0.30416666666666664,
+      "displayed": "-0.304",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[LT - R0].ci95[1]",
+      "exact": 0.1,
+      "displayed": "+0.100",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[S - O].estimate",
+      "exact": 0.008333333333333333,
+      "displayed": "+0.008",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[S - O].ci95[0]",
+      "exact": -0.12083333333333333,
+      "displayed": "-0.121",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier1.tables.completeness[S - O].ci95[1]",
+      "exact": 0.14166666666666666,
+      "displayed": "+0.142",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - O].estimate",
+      "exact": -0.0046396396396396426,
+      "displayed": "-0.005",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - O].ci95[0]",
+      "exact": -0.026091789516789518,
+      "displayed": "-0.026",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - O].ci95[1]",
+      "exact": 0.01615149792969066,
+      "displayed": "+0.016",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[R0 - O].estimate",
+      "exact": 0.004279279279279281,
+      "displayed": "+0.004",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[R0 - O].ci95[0]",
+      "exact": -0.018244020569241803,
+      "displayed": "-0.018",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[R0 - O].ci95[1]",
+      "exact": 0.026636383748994366,
+      "displayed": "+0.027",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - R0].estimate",
+      "exact": -0.00891891891891892,
+      "displayed": "-0.009",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - R0].ci95[0]",
+      "exact": -0.03250057339449542,
+      "displayed": "-0.033",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[LT - R0].ci95[1]",
+      "exact": 0.014549845898530102,
+      "displayed": "+0.015",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[S - O].estimate",
+      "exact": 0.004504504504504506,
+      "displayed": "+0.005",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[S - O].ci95[0]",
+      "exact": -0.016518105158730156,
+      "displayed": "-0.017",
+      "rounding": "3 decimals, half away from zero"
+    },
+    {
+      "source": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "field": "tier2.ragas.full_111.tables.factual_correctness/pooled[S - O].ci95[1]",
+      "exact": 0.02606571738022425,
+      "displayed": "+0.026",
+      "rounding": "3 decimals, half away from zero"
+    }
+  ]
+}

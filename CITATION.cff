@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or these records, please cite them as below."
+type: software
+title: "DocSpectraICSC2027: study code and evidence for normalized magnetic characterization of documentation structure"
+version: "1.0.0"
+authors:
+  - family-names: "D'Antonio"
+    given-names: "Rocker"
+    orcid: "https://orcid.org/0009-0001-8444-1772"
+    affiliation: "Mississippi State University"
+repository-code: "https://github.com/DocSpectra/DocSpectraICSC2027"
+url: "https://github.com/DocSpectra/DocSpectraICSC2027"
+references:
+  - type: dataset
+    title: "DockerDocsSet2026: Docker documentation variants, question sets and support judgments"
+    authors:
+      - family-names: "D'Antonio"
+        given-names: "Rocker"
+    repository-code: "https://github.com/DocSpectra/DockerDocsSet2026"
+  - type: software
+    title: "Retrieval Arena"
+    authors:
+      - name: "DocSpectra"
+    repository-code: "https://github.com/DocSpectra/RetrievalArena"
+    license: MIT
+  - type: conference-paper
+    title: "Measuring Directed Documentation Structure with Normalized Magnetic Spectra"
+    authors:
+      - family-names: "D'Antonio"
+        given-names: "Rocker"
+        affiliation: "Mississippi State University"
+    status: in-preparation
+    conference:
+      name: "ICSC 2027"

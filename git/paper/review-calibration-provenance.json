@@ -1,0 +1,635 @@
+{
+  "purpose": "Selected completed author reviews and judge qualification; no new judgments or analyses.",
+  "sources": {
+    "calibration": {
+      "path": "validations/rockerd-answer-variant-labels-adjudicated-v1.json",
+      "sha256": "abbcbe5998770d84b2aa92f664373479a4894048b7d4019d201679211f3a9396"
+    },
+    "calibration_decision": {
+      "path": "git/context/handoffs/2026-09-28-gptoss-v2-clean-replacement.md",
+      "sha256": "0f1875dd8b87dfd942b4b9ecd45e67b023a9a984bc01d0be8614bab5c5cfa112"
+    },
+    "hr19": {
+      "path": "git/context/evidence/wc-tier1-review-hr19-2026-10-15.json",
+      "sha256": "d8ac19a6f8f75226183b90701f0cfb61da2c3412d0a4a82816a91cd0c8b9049a"
+    },
+    "tasks": {
+      "path": "git/context/evidence/wc-tier1-tasks-v2-2026-10-18.json",
+      "sha256": "671a15da2560ef5cd387788e87fd146bf2be90a520281531666adef258136a49"
+    },
+    "hr03": {
+      "path": "git/context/evidence/wc-hr03-review-2026-10-21.json",
+      "sha256": "3a2f5fa503051f0b5192dc93e1e2d429eb019d01eb4adcb22da4b992d836f2b0"
+    },
+    "hr18": {
+      "path": "git/context/evidence/c2-pooled-qrels-docker-tier2-2026-10-12.json",
+      "sha256": "4d77d513baa104b827fb13628de8e8d30dd5d738f52d2d7c83374d15bf11d4d0"
+    },
+    "hr20": {
+      "path": "git/context/evidence/wc-hr20-verdicts-v1-2026-10-24.json",
+      "sha256": "74d6efa702ee9ac2b93b6ef011dee1bcdabc20b7c935fb0dda4e3c4d15dea8de"
+    },
+    "hr20_agreement": {
+      "path": "git/context/reports/2026-10-24-whole-corpus-refinement-report.md",
+      "sha256": "38939b07e45144fe4edce7e3a81b622edab1e535c8b05bdea14475a2828dcfa5"
+    },
+    "hr21": {
+      "path": "git/context/evidence/wc-hr21-result-v1-2026-10-24.json",
+      "sha256": "9f2ec33b0161879dfe18630d49ee4c944a394f3934dae96ff75c2bfb59f00300"
+    },
+    "hr21_plan": {
+      "path": "git/context/evidence/wc-hr21-plan-v1-2026-10-24.json",
+      "sha256": "a29fddf2a96ee76f38eb952a79fc0bd0453c4e40fdbd14aca62d17bde59faebd"
+    },
+    "luna": {
+      "path": "git/context/evidence/scoring-pilot-11h-analysis-2026-10-08.json",
+      "sha256": "8bc3b006871f6b9bfea99899ae5d743ad8284d25e909313655eb348d37ce7b0e"
+    },
+    "luna_decision": {
+      "path": "git/context/evidence/scoring-pilot-11h-decision-2026-10-08.json",
+      "sha256": "5d4902a0feb92c76daab8cc856aa26e5baadd2f04a85fa93c8f9505a5cbeabc9"
+    },
+    "luna_plan": {
+      "path": "git/context/evidence/scoring-pilot-11h-plan-2026-10-08.json",
+      "sha256": "61acadb9940548645317067d2072f8c68723ac0a1bebbd1846fcd184f82171f3"
+    },
+    "ragas": {
+      "path": "git/context/evidence/wc-ragas-judge-qualification-c3-2026-10-12.json",
+      "sha256": "5d28251fd8b7bf886122d8e2da23b7c579b046a5a85f0949e22caf8771013973"
+    },
+    "deviations": {
+      "path": "git/context/docs/manuscript-deviations-wc-refinement.md",
+      "sha256": "b6e5c812d760ac53622e4d7eec71c9ce8a29b49e425e82b885d3a0490b2e103c"
+    }
+  },
+  "verified_fields": [
+    {
+      "source": "calibration",
+      "path": [
+        "verdicts"
+      ],
+      "transform": "length",
+      "exact": 154
+    },
+    {
+      "source": "calibration",
+      "path": [
+        "notes"
+      ],
+      "transform": "length",
+      "exact": 70
+    },
+    {
+      "source": "hr19",
+      "path": [
+        "counts",
+        "accept"
+      ],
+      "transform": null,
+      "exact": 63
+    },
+    {
+      "source": "hr19",
+      "path": [
+        "counts",
+        "revise"
+      ],
+      "transform": null,
+      "exact": 10
+    },
+    {
+      "source": "hr19",
+      "path": [
+        "counts",
+        "reject"
+      ],
+      "transform": null,
+      "exact": 2
+    },
+    {
+      "source": "tasks",
+      "path": [
+        "tasks"
+      ],
+      "transform": "length",
+      "exact": 15
+    },
+    {
+      "source": "tasks",
+      "path": [
+        "element_count"
+      ],
+      "transform": null,
+      "exact": 73
+    },
+    {
+      "source": "hr03",
+      "path": [
+        "per_arm",
+        "LT",
+        "reviewed"
+      ],
+      "transform": null,
+      "exact": 20
+    },
+    {
+      "source": "hr03",
+      "path": [
+        "per_arm",
+        "LT",
+        "counts",
+        "no_problem"
+      ],
+      "transform": null,
+      "exact": 20
+    },
+    {
+      "source": "hr03",
+      "path": [
+        "per_arm",
+        "R0",
+        "reviewed"
+      ],
+      "transform": null,
+      "exact": 20
+    },
+    {
+      "source": "hr03",
+      "path": [
+        "per_arm",
+        "R0",
+        "counts",
+        "no_problem"
+      ],
+      "transform": null,
+      "exact": 20
+    },
+    {
+      "source": "hr03",
+      "path": [
+        "stop_rule"
+      ],
+      "transform": null,
+      "exact": ">= 3 of 20"
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "precision",
+        "n"
+      ],
+      "transform": null,
+      "exact": 34
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "precision",
+        "successes"
+      ],
+      "transform": null,
+      "exact": 29
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "miss_rate",
+        "n"
+      ],
+      "transform": null,
+      "exact": 33
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "miss_rate",
+        "successes"
+      ],
+      "transform": null,
+      "exact": 0
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "unsure",
+        "verifier_yes"
+      ],
+      "transform": null,
+      "exact": 1
+    },
+    {
+      "source": "hr18",
+      "path": [
+        "spot_check",
+        "unsure",
+        "verifier_no"
+      ],
+      "transform": null,
+      "exact": 2
+    },
+    {
+      "source": "hr20",
+      "path": [
+        "reviewed"
+      ],
+      "transform": null,
+      "exact": 14
+    },
+    {
+      "source": "hr20",
+      "path": [
+        "counts",
+        "still_answers"
+      ],
+      "transform": null,
+      "exact": 3
+    },
+    {
+      "source": "hr20",
+      "path": [
+        "counts",
+        "answer_moved"
+      ],
+      "transform": null,
+      "exact": 4
+    },
+    {
+      "source": "hr20",
+      "path": [
+        "counts",
+        "answer_lost"
+      ],
+      "transform": null,
+      "exact": 0
+    },
+    {
+      "source": "hr20",
+      "path": [
+        "counts",
+        "unsure"
+      ],
+      "transform": null,
+      "exact": 7
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "disputed",
+        "counts",
+        "answers"
+      ],
+      "transform": null,
+      "exact": 4
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "disputed",
+        "counts",
+        "partly_answers"
+      ],
+      "transform": null,
+      "exact": 3
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "disputed",
+        "counts",
+        "does_not_answer"
+      ],
+      "transform": null,
+      "exact": 9
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "control",
+        "counts",
+        "answers"
+      ],
+      "transform": null,
+      "exact": 2
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "control",
+        "counts",
+        "partly_answers"
+      ],
+      "transform": null,
+      "exact": 1
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "control",
+        "counts",
+        "does_not_answer"
+      ],
+      "transform": null,
+      "exact": 1
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "disputed",
+        "answers",
+        "n"
+      ],
+      "transform": null,
+      "exact": 16
+    },
+    {
+      "source": "hr21",
+      "path": [
+        "control",
+        "answers",
+        "n"
+      ],
+      "transform": null,
+      "exact": 4
+    },
+    {
+      "source": "luna",
+      "path": [
+        "spread_A",
+        "answers"
+      ],
+      "transform": null,
+      "exact": 60
+    },
+    {
+      "source": "luna",
+      "path": [
+        "stability_A_vs_B",
+        "within_1"
+      ],
+      "transform": null,
+      "exact": 293
+    },
+    {
+      "source": "luna",
+      "path": [
+        "stability_A_vs_B",
+        "scores"
+      ],
+      "transform": null,
+      "exact": 300
+    },
+    {
+      "source": "luna",
+      "path": [
+        "stability_A_vs_B",
+        "same_ranking_cells"
+      ],
+      "transform": null,
+      "exact": 11
+    },
+    {
+      "source": "luna",
+      "path": [
+        "stability_A_vs_B",
+        "cells"
+      ],
+      "transform": null,
+      "exact": 20
+    },
+    {
+      "source": "luna_decision",
+      "path": [
+        "criteria",
+        "spread",
+        "status"
+      ],
+      "transform": null,
+      "exact": "pass"
+    },
+    {
+      "source": "luna_decision",
+      "path": [
+        "criteria",
+        "sham_balance",
+        "status"
+      ],
+      "transform": null,
+      "exact": "pass"
+    },
+    {
+      "source": "luna_decision",
+      "path": [
+        "criteria",
+        "stability",
+        "status"
+      ],
+      "transform": null,
+      "exact": "fail"
+    },
+    {
+      "source": "luna",
+      "path": [
+        "human_agreement",
+        "status"
+      ],
+      "transform": null,
+      "exact": "not_collected"
+    },
+    {
+      "source": "luna_plan",
+      "path": [
+        "criteria",
+        "stability",
+        "threshold"
+      ],
+      "transform": null,
+      "exact": ">= 0.90 scores within +-1 and >= 0.80 cells same ranking"
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-response/factual_correctness",
+        "separation_by_run",
+        0,
+        "pairs"
+      ],
+      "transform": null,
+      "exact": 40
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-response/factual_correctness",
+        "repeat",
+        "within_0_1"
+      ],
+      "transform": null,
+      "exact": 78
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-response/factual_correctness",
+        "repeat",
+        "units"
+      ],
+      "transform": null,
+      "exact": 80
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "thresholds",
+        "repeat_delta_max"
+      ],
+      "transform": null,
+      "exact": 0.1
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-reference/context_recall",
+        "pass"
+      ],
+      "transform": null,
+      "exact": false
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-response/factual_correctness",
+        "pass"
+      ],
+      "transform": null,
+      "exact": true
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "controls-response/faithfulness",
+        "pass"
+      ],
+      "transform": null,
+      "exact": false
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/context_recall",
+        "repeat",
+        "units"
+      ],
+      "transform": null,
+      "exact": 40
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/context_recall",
+        "checks",
+        "repeat"
+      ],
+      "transform": null,
+      "exact": false
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/factual_correctness",
+        "repeat",
+        "units"
+      ],
+      "transform": null,
+      "exact": 40
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/factual_correctness",
+        "checks",
+        "repeat"
+      ],
+      "transform": null,
+      "exact": false
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/faithfulness",
+        "repeat",
+        "units"
+      ],
+      "transform": null,
+      "exact": 40
+    },
+    {
+      "source": "ragas",
+      "path": [
+        "metrics",
+        "real-tier1/faithfulness",
+        "checks",
+        "repeat"
+      ],
+      "transform": null,
+      "exact": false
+    }
+  ],
+  "row_sources": {
+    "Calibration": [
+      "calibration",
+      "calibration_decision"
+    ],
+    "HR-19": [
+      "hr19",
+      "tasks"
+    ],
+    "HR-03": [
+      "hr03",
+      "deviations"
+    ],
+    "HR-18": [
+      "hr18"
+    ],
+    "HR-20": [
+      "hr20",
+      "hr20_agreement"
+    ],
+    "HR-21": [
+      "hr21",
+      "hr21_plan"
+    ],
+    "Luna": [
+      "luna",
+      "luna_decision",
+      "luna_plan"
+    ],
+    "Haiku/RAGAS": [
+      "ragas"
+    ]
+  },
+  "selection_notes": [
+    "Development calibration and current application reviews are distinct; this is not every historical pilot.",
+    "HR-18: 70 sampled windows comprises 34 definite verifier-positive judgments, 33 definite verifier-negative judgments and 3 unsure.",
+    "HR-03: 40 pages comprises 20 per arm; fixed criteria and review after structural results are recorded in deviations D-P4.",
+    "HR-20: 7/14 rejudgment agreement and Q01 unblinding are reported in the analysis record.",
+    "HR-21 controls list answer/partly/no in the same order as disputed items.",
+    "HR-22 deliberately omitted by author October 26; no pending-review reference in the manuscript; original frozen packet preserved."
+  ],
+  "table_sha256": "289d11d30baa4f4881131c6d90de19e22496a5fa83a8e6b0b146e9e176a0a0bb"
+}

@@ -1,0 +1,168 @@
+{
+  "purpose": "Bounded source inspection for descriptive corpus purposes, not a style taxonomy, prevalence estimate, or test of style effects.",
+  "roster": "evidence/cross-corpus-roster-recovered-v4-2026-09-28.json",
+  "sources": [
+    {
+      "corpus": "agopengps",
+      "commit": "10a682e32c352f1ee4bf4d1ae89bf91da791bd01",
+      "path": "content/getting-started/_index.md",
+      "sha256": "cafee60b5cc0351dc1072a4a2dbd216635c7e4783fd9f3ccab37e89b3252fb3d"
+    },
+    {
+      "corpus": "agopengps",
+      "commit": "10a682e32c352f1ee4bf4d1ae89bf91da791bd01",
+      "path": "content/hardware/boards/all-in-one-boards/assemblingtheboard/_index.md",
+      "sha256": "7cb94a1e7b4f1349a8645562e4b83a1170b4ccc77bfd5211e8f416807bbe6c88"
+    },
+    {
+      "corpus": "ansible_docs",
+      "commit": "02adbd3a6f6778f2a05a1c846c614fad49a00765",
+      "path": "docs/docsite/rst/getting_started/index.rst",
+      "sha256": "b76520c0fa9545025d310e8c582cade561170a2acf5536b734a63c96b3af52d6"
+    },
+    {
+      "corpus": "ansible_docs",
+      "commit": "02adbd3a6f6778f2a05a1c846c614fad49a00765",
+      "path": "docs/docsite/rst/playbook_guide/index.rst",
+      "sha256": "3948388ee75b9d4da432e494f34f2dfc6646a0676d47e53e77021bb2ae798ca8"
+    },
+    {
+      "corpus": "argo_cd_docs",
+      "commit": "f8707f822736352ae557a2a3bd6589666b88402b",
+      "path": "docs/operator-manual/index.md",
+      "sha256": "5f0af692267b6dff8a36000726fef90d2ad81cdefcab6009c27e85bc0f512f59"
+    },
+    {
+      "corpus": "argo_cd_docs",
+      "commit": "f8707f822736352ae557a2a3bd6589666b88402b",
+      "path": "docs/user-guide/index.md",
+      "sha256": "58ca925b0f4659c8800eb35998d5440e1429ac6595dec7e27b0f18c5cb4ba6ec"
+    },
+    {
+      "corpus": "django_docs",
+      "commit": "f2169ef3688422d394d36007e320bac839117f0b",
+      "path": "docs/index.txt",
+      "sha256": "09635130956780da5c2c9b42f6c74ce87c35d7604db52bd2230fe0616862ca87"
+    },
+    {
+      "corpus": "docker_docs",
+      "commit": "274681c49355bd951ae60c9208e854ff70f12474",
+      "path": "content/get-started/_index.md",
+      "sha256": "73b53111bf4100a25b3a796cb2c6ca17920843dd451e2d93231ef926fbc76c80"
+    },
+    {
+      "corpus": "docker_docs",
+      "commit": "274681c49355bd951ae60c9208e854ff70f12474",
+      "path": "content/reference/_index.md",
+      "sha256": "f5307c185f725321f86beb6835367559af8c6cb58a8585689026d4877e7b3bf9"
+    },
+    {
+      "corpus": "elasticsearch_docs",
+      "commit": "a1d4031bca59d5d5668020b56ee9db17d2a12c3e",
+      "path": "deploy-manage/index.md",
+      "sha256": "e2e8a6086783eb50c600149ec45e4a174aa06ec04b68a3ae9364f3f4f3b117bd"
+    },
+    {
+      "corpus": "elasticsearch_docs",
+      "commit": "a1d4031bca59d5d5668020b56ee9db17d2a12c3e",
+      "path": "manage-data/index.md",
+      "sha256": "67e48dc5c6d268af0d95bf5d8239dc4b4c2e19ff0ffa75f0e09fd316099ad01e"
+    },
+    {
+      "corpus": "express_docs",
+      "commit": "2d4df3f05fbd5d5f211f5938395ae965e8714d60",
+      "path": "en/starter/hello-world.md",
+      "sha256": "2c901651bf3643da52c8349ed4b7d4f197d8822212a72c0609ff952898a80fd8"
+    },
+    {
+      "corpus": "express_docs",
+      "commit": "2d4df3f05fbd5d5f211f5938395ae965e8714d60",
+      "path": "en/5x/api.md",
+      "sha256": "0ae767110b64fa0dee898bcbde7f56c368c41eca05489c2209b7960060b35f09"
+    },
+    {
+      "corpus": "github_docs",
+      "commit": "945b78ebf7892e0eaec742fff8872b30aef33790",
+      "path": "content/actions/concepts/workflows-and-actions/index.md",
+      "sha256": "04555f7d5c05c6fd4ca2ed09fdba6eb61cab94c8d2e3a4b456df41ee1600a806"
+    },
+    {
+      "corpus": "github_docs",
+      "commit": "945b78ebf7892e0eaec742fff8872b30aef33790",
+      "path": "content/account-and-profile/how-tos/index.md",
+      "sha256": "515c4780a9443fb0fc8381a93ee9b1e3decef364dda91ea1fe299fe2f714f16b"
+    },
+    {
+      "corpus": "kubernetes_website_docs",
+      "commit": "a98baf3848b1f072a50d322eb44d722b127efe3e",
+      "path": "content/en/docs/tasks/_index.md",
+      "sha256": "1cc06ea63be94d9bedde4ac5377bb31ea7ca0395e60727a7e0d999e980bcfabd"
+    },
+    {
+      "corpus": "kubernetes_website_docs",
+      "commit": "a98baf3848b1f072a50d322eb44d722b127efe3e",
+      "path": "content/en/docs/concepts/_index.md",
+      "sha256": "a66749dd03ad9aa4270e07f3c5e739cce901e7bc97421582773205042c23a7a4"
+    },
+    {
+      "corpus": "nextjs_docs",
+      "commit": "ed1c6ccbdb2642d514dfe503eda337a2b7b53286",
+      "path": "docs/01-app/01-getting-started/index.mdx",
+      "sha256": "0f042cec3080eed568ade7f740aa930ac2d6c7cbeae20e8dd515c039dfdc56ba"
+    },
+    {
+      "corpus": "nextjs_docs",
+      "commit": "ed1c6ccbdb2642d514dfe503eda337a2b7b53286",
+      "path": "docs/01-app/03-api-reference/02-components/index.mdx",
+      "sha256": "e8c37a832f5ef119300fd93768e404185dd68112a380c3aa9083ce4227323b43"
+    },
+    {
+      "corpus": "pytorch_docs",
+      "commit": "787b289f36fcfd28bc4401cfa2d775fb12286bf4",
+      "path": "docs/source/autograd.md",
+      "sha256": "22175beb21a69b0f2ff3345d7ae4ee1996fe629aff5644c6c15b3d6883d7fa10"
+    },
+    {
+      "corpus": "pytorch_docs",
+      "commit": "787b289f36fcfd28bc4401cfa2d775fb12286bf4",
+      "path": "docs/source/torch.rst",
+      "sha256": "ed24f517ded530f85963da5363b8c454af8921e3e6517846f94de08b6f05577f"
+    },
+    {
+      "corpus": "react_docs",
+      "commit": "40ea071c846b3ab1232391bab15d31f508913bf4",
+      "path": "src/content/learn/index.md",
+      "sha256": "1ae74cbdeafe44684845f9283197237f537de3c468e41fec67fa09a265ba26d6"
+    },
+    {
+      "corpus": "react_docs",
+      "commit": "40ea071c846b3ab1232391bab15d31f508913bf4",
+      "path": "src/content/reference/react/index.md",
+      "sha256": "a5c03297321bfabdb4de8b4a796dc3a53f4d766fd872e1bdeac06cbc66496f7d"
+    },
+    {
+      "corpus": "redis_docs",
+      "commit": "1044224477fceacc5af56a636b0a7495d19e533c",
+      "path": "docs/data-types/_index.md",
+      "sha256": "d997eb37dae94744f3cc73d9a231ded7b2dd6656f50540e53d3bc157bcffad32"
+    },
+    {
+      "corpus": "redis_docs",
+      "commit": "1044224477fceacc5af56a636b0a7495d19e533c",
+      "path": "docs/management/admin.md",
+      "sha256": "5c94b393a6a46d8dbbeafbb9f26ea6d8b27a8db9f96bad71d4ace0efb2910bd2"
+    },
+    {
+      "corpus": "vscode_docs",
+      "commit": "8f89278b1fbe4ee0b8a69cd6103f0668d569a9e1",
+      "path": "docs/configure/settings.md",
+      "sha256": "7b678e44be017e9f019c496d93735ef87b1a4da1398cf3210ec2732a2b3ab4bf"
+    },
+    {
+      "corpus": "vscode_docs",
+      "commit": "8f89278b1fbe4ee0b8a69cd6103f0668d569a9e1",
+      "path": "api/index.md",
+      "sha256": "de0df9492a702f6603c035e8a15440b517431f483c5b1fece9370d072379d938"
+    }
+  ]
+}

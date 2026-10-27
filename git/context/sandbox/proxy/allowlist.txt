@@ -1,0 +1,5 @@
+# Sprint 11 egress allowlist (exact host:port, CONNECT only).
+# Codex 0.161.0 model and auth endpoints; metrics (ab.chatgpt.com) and update checks are not listed.
+chatgpt.com:443
+auth.openai.com:443
+api.openai.com:443

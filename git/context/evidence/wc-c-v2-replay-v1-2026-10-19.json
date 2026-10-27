@@ -1,0 +1,2883 @@
+{
+  "c_v2": {
+    "base_config_sha256": [
+      "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09"
+    ],
+    "config_sha256": [
+      "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01"
+    ],
+    "module": "retrieval_arena/graph/structural_target_v2.py",
+    "module_sha256": "b2b64ab59e49405f58dc12cd908f5fb5c26652ff202d29f215de1558d95147f3",
+    "ra_branch": "icsc2027/downstream-case",
+    "ra_commit": "60af29d31bbb8127cea57a017cad27255f8d89af",
+    "ra_module_committed": true,
+    "templated_rule": {
+      "include_reference": "\\{\\{[%<]\\s*include\\s+\\\"([^\\\"]+)\\\"",
+      "include_root": "content/includes/",
+      "index_filename": "_index.md",
+      "page_suffix": ".md"
+    },
+    "v1_code_sha256": "08658f1b61c6cd9d1566a1fc77abdd0b4b5e68d8de36242a48461b17d9562895",
+    "version": "structural_connectivity_constraint.v2"
+  },
+  "created": "2026-10-19",
+  "driver": {
+    "C1B_EXEMPTION": "C1b ignores a new page under content/includes/ that a variant page references with an include shortcode, and a new section _index.md whose folder holds another page (author, October 19)",
+    "C2_FIX": "on a C2 failure, lambda2 is recomputed on the v1 evaluation set plus the baseline pages outside the baseline main component that the variant joined to its main component; C2 passes if that value meets the v1 threshold",
+    "final_rule": "wc_refine_17.c_admission_c1b (C v1 + C2_FIX + C1B_EXEMPTION)",
+    "script": "scripts/wc_refine_17.py",
+    "script_sha256": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525"
+  },
+  "excluded": [
+    {
+      "ledger": "voided",
+      "namespace": "LT-r01",
+      "reason": "no C receipt"
+    },
+    {
+      "ledger": "not an editing session",
+      "namespace": "O-r01",
+      "reason": "no C receipt"
+    },
+    {
+      "ledger": "voided",
+      "namespace": "R0-r03",
+      "reason": "no C receipt"
+    },
+    {
+      "ledger": "not an editing session",
+      "namespace": "S-r01",
+      "reason": "no C receipt"
+    }
+  ],
+  "ledger": {
+    "effective_end_rows": 56,
+    "replay": "wc_refine_17.effective (voids dropped, amends applied, reopened rows marked superseded)",
+    "rows": 136
+  },
+  "model_calls": 0,
+  "recorded_utc": "2026-10-20T03:57:42+00:00",
+  "rule_of_comparison": "verdict_matches: the recorded receipt's passed, the run-state c_passed and the ledger end row's C verdict all equal C v2's passed, and the end row's action recomputed with C v2's verdict equals the recorded (effective) action. v2_equals_driver_final_rule: passed, reasons, lambda2 and C1b exemptions equal the driver's final rule.",
+  "run_id": "wc-v1",
+  "schema_version": "docspectra.icsc.wc_c_v2_replay.v1",
+  "sessions": [
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 5,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.00825388473560646,
+        "lambda2_v1": 0.00817489782365951,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.00825388473560646,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A09",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 7
+      },
+      "namespace": "LT-r02",
+      "receipt": "launch",
+      "receipt_graph_sha256": "99ca94e604e98144d1d58f362b77c3ade4783633040d67a13463486d88c0cc6b",
+      "receipt_sha256": "a2ab5a5c396c1475879ff7bcdecfb2f0aee43fe9283abb25620c85d9dcc26068",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.00817489782365951,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "99ca94e604e98144d1d58f362b77c3ade4783633040d67a13463486d88c0cc6b",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 9,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.010923638824885153,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "c_v2_supports_reopen": true,
+      "class": "superseded-by-reopen",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.010923638824885153,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A21",
+        "arm": "LT",
+        "kind": "pass-superseded",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "protected-lines-missing:13",
+          "introduced-unresolved:18"
+        ],
+        "reasons_with_c_v2": [
+          "protected-lines-missing:13",
+          "introduced-unresolved:18"
+        ],
+        "recorded_c_passed": false,
+        "seq": 15
+      },
+      "namespace": "LT-r03",
+      "receipt": "launch",
+      "receipt_graph_sha256": "2d7f73c202bb85526d42acc7a68f2f0a7f4eddbb2c08e332b251bc549102e9f2",
+      "receipt_sha256": "041b0301f8c634862f8b40a14eb0b85e5c77d9b79ec0ddd62edae68e2ef670f5",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "reopen": {
+        "author_quote": "If you come across implementation errors we didn't predict it's fine to work through them and fix them and start a run.",
+        "reason": "LT-r03 (A21) was rejected only by admission defects fixed later (C2 evaluation set, Hugo resolver, prompt marker): under all three fixes it scores 0 protected missing, 0 introduced unresolved, C passed. LT has moved on, so it cannot be amended; LT A21 gets one fresh pass from the current LT head",
+        "seq": 67
+      },
+      "tree_graph_sha256": "2d7f73c202bb85526d42acc7a68f2f0a7f4eddbb2c08e332b251bc549102e9f2",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": false
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 2,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A19",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 18
+      },
+      "namespace": "LT-r04",
+      "receipt": "launch",
+      "receipt_graph_sha256": "96e0e9b4997a854cfb7c9a838f221d0e801feb8fe5cc79f8f92212349a411302",
+      "receipt_sha256": "d966cf0f11787918f3da424e49af6178689e6d995acc6e6f3af3f40d528830fb",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "96e0e9b4997a854cfb7c9a838f221d0e801feb8fe5cc79f8f92212349a411302",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 58,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0109322712776411,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0109322712776411,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A06",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 29
+      },
+      "namespace": "LT-r05",
+      "receipt": "launch",
+      "receipt_graph_sha256": "78a28a1d2670519440b2ba7a2b03b9c0fd1835aa2f9c1189770bfae1214f32f9",
+      "receipt_sha256": "8295fe2852286e68595859e34167b5c4952bb3d11c9b9f77a6acf22b4e4df03f",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0109322712776411,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "78a28a1d2670519440b2ba7a2b03b9c0fd1835aa2f9c1189770bfae1214f32f9",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 58,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.010580281817268541,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.010580281817268541,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A25",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 31
+      },
+      "namespace": "LT-r06",
+      "receipt": "launch",
+      "receipt_graph_sha256": "5d07978b8d14bd34f96ccafe0a72c1dbb3e72dcc93f8c2b41ec754fc6698c833",
+      "receipt_sha256": "594073acce1c6bb87a1bc2c1840364cc15d1f61e1769c3b9b4dce9a8e79e447b",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.010580281817268541,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "5d07978b8d14bd34f96ccafe0a72c1dbb3e72dcc93f8c2b41ec754fc6698c833",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 66,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-baseline-page-left-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C1-baseline-page-left-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-baseline-page-left-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A22",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 37
+      },
+      "namespace": "LT-r07",
+      "receipt": "launch",
+      "receipt_graph_sha256": "aa06b46d3def26eaf88fd2155fd3ff0a0f0eb8ecea599dc278eea75599afd16d",
+      "receipt_sha256": "45d91b6badfa30589cad34151261116fb5da02f2e65f050ca92f936378fa12ce",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-baseline-page-left-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "aa06b46d3def26eaf88fd2155fd3ff0a0f0eb8ecea599dc278eea75599afd16d",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 59,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A01",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "introduced-unresolved:1"
+        ],
+        "reasons_with_c_v2": [
+          "introduced-unresolved:1",
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 39
+      },
+      "namespace": "LT-r08",
+      "receipt": "launch",
+      "receipt_graph_sha256": "ac149cdfb641fea4ff125d5a53dbc49f2423ff84e3b8092e35cacee26ffe2c2b",
+      "receipt_sha256": "9a0df0b7ee7ab4a8bd3ec76ba8523a4d5844365fa71b5bb56364af91482a4304",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0,
+        "passed": false,
+        "reasons": [
+          "C1-new-page-outside-main-component",
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "ac149cdfb641fea4ff125d5a53dbc49f2423ff84e3b8092e35cacee26ffe2c2b",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 63,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01056204310098644,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01056204310098644,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A14",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 45
+      },
+      "namespace": "LT-r09",
+      "receipt": "launch",
+      "receipt_graph_sha256": "376602c644ef03ab1a52af55e485a622db1b377b26644366db79de7919675381",
+      "receipt_sha256": "e859bb69e447994497e2ad12f0c9b447ed1a86bd4caef7135d68e22db86fdea4",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.01056204310098644,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "376602c644ef03ab1a52af55e485a622db1b377b26644366db79de7919675381",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 66,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.010551261509254164,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.010551261509254164,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A23",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 47
+      },
+      "namespace": "LT-r10",
+      "receipt": "launch",
+      "receipt_graph_sha256": "84c1b715201bf303600631c45e6253fb36e824630b2993ef5d15e4dad9425770",
+      "receipt_sha256": "973d4db16c36d80c848779497315ffcb8ddf368c64b4471a9dc2720c932e72cc",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.010551261509254164,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "84c1b715201bf303600631c45e6253fb36e824630b2993ef5d15e4dad9425770",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 80,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01051217945384101,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01051217945384101,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A20",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 53
+      },
+      "namespace": "LT-r11",
+      "receipt": "launch",
+      "receipt_graph_sha256": "3209da91fb55ebe4b1d577c23a76925e3f370d873bc49aaa45b4c8fad681e64f",
+      "receipt_sha256": "30ac7b68941c8404f27ec019f4bfaff2cdea571269c0ba8f7213ac1948776d4c",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.01051217945384101,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "3209da91fb55ebe4b1d577c23a76925e3f370d873bc49aaa45b4c8fad681e64f",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 165,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0007196041175333147,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0007196041175333147,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A05",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 55
+      },
+      "namespace": "LT-r12",
+      "receipt": "launch",
+      "receipt_graph_sha256": "c8e52befa699962dbb277a065ded1e9f7f2fc3b6f592d40a093d8380753c8cfa",
+      "receipt_sha256": "5e3d8fd47437616cc0ea4b3d3d0ab0307254841ba723087856103a7deb10207b",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0007196041175333147,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "c8e52befa699962dbb277a065ded1e9f7f2fc3b6f592d40a093d8380753c8cfa",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 94,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.010481290151010843,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.010481290151010843,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A04",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 61
+      },
+      "namespace": "LT-r13",
+      "receipt": "launch",
+      "receipt_graph_sha256": "5f63d3c97f000d761a61844fc373cdaee71016f277409260e3ccb16bb0db82a2",
+      "receipt_sha256": "a5b411ed4a4e30aa837e018c4a649c496ea28dee5f3dea8a3c617bf340c8aba6",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.010481290151010843,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "5f63d3c97f000d761a61844fc373cdaee71016f277409260e3ccb16bb0db82a2",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 100,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012741993285092137,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012741993285092137,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A24",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 63
+      },
+      "namespace": "LT-r14",
+      "receipt": "launch",
+      "receipt_graph_sha256": "842045b6446905fc0ecda065a517196bbc9e31b3f07676e232db913978bca793",
+      "receipt_sha256": "00cb5d6d1ffbaa8540437e73ca577a4cbc547da7ff196dc91f5c2517c8d5a435",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012741993285092137,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "842045b6446905fc0ecda065a517196bbc9e31b3f07676e232db913978bca793",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 107,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012668529405114579,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012668529405114579,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A21",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 71
+      },
+      "namespace": "LT-r15",
+      "receipt": "launch",
+      "receipt_graph_sha256": "e25a7c5181f414149302d97231b1895c5704e87fe80a3e799f0ce06f26f21419",
+      "receipt_sha256": "12ea3eacf45d8a21e77a0c605ca9c1cb1bbccc89be2a8ad66a7ac21011798473",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012668529405114579,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "e25a7c5181f414149302d97231b1895c5704e87fe80a3e799f0ce06f26f21419",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 129,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012680793638185518,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012680793638185518,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A15",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 75
+      },
+      "namespace": "LT-r16",
+      "receipt": "launch",
+      "receipt_graph_sha256": "4bbaabe20cf88873bae84db5f82d123cc3bbee30bbba26b9b51032dea7f305af",
+      "receipt_sha256": "730e6a03358b32954355eb709193b0e9debe808678a88ab689eb584fc133e3ed",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012680793638185518,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "4bbaabe20cf88873bae84db5f82d123cc3bbee30bbba26b9b51032dea7f305af",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 135,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012684536711150005,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012684536711150005,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A13",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 77
+      },
+      "namespace": "LT-r17",
+      "receipt": "launch",
+      "receipt_graph_sha256": "0fc45516c2e4839639ab6100318cb01fe6b9e051fcbd7f1ffad416647b2544a5",
+      "receipt_sha256": "988146d3b3742c04b0e06fad8dae337ef6734800f465d53e46d637f23987247b",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012684536711150005,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "0fc45516c2e4839639ab6100318cb01fe6b9e051fcbd7f1ffad416647b2544a5",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": [
+          "content/manuals/build/bake/examples/_index.md"
+        ],
+        "c2_joined_pages": 145,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012663433678596564,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C1b-new-page-without-in-link",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "c_v2_supports_reopen": true,
+      "class": "superseded-by-reopen",
+      "driver_final_rule": {
+        "c1b_exempted": [
+          "content/manuals/build/bake/examples/_index.md"
+        ],
+        "lambda2": 0.012663433678596564,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "advance",
+        "area": "A10",
+        "arm": "LT",
+        "kind": "pass-superseded",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": false,
+        "seq": 83
+      },
+      "namespace": "LT-r18",
+      "receipt": "launch",
+      "receipt_graph_sha256": "8d7d1a0a8293c5e837a06da1bbb16d717da60bb4565956f29c572f0515a2a3c3",
+      "receipt_sha256": "4d196072d5c1869c0a0a8565bbcdfe8dfeef638b416c7e29a5845d80e837b6f3",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012663433678596564,
+        "passed": false,
+        "reasons": [
+          "C1b-new-page-without-in-link"
+        ],
+        "run_state_c_passed": false
+      },
+      "reopen": {
+        "author_quote": "Yes: keep C2 with fix 3, and exempt from C1b only new includes that some page references with an include shortcode and new section _index pages that have child pages. Both arms. Rerun LT A10 and A12, then run reconciliation, and plan the sensitivity analysis.",
+        "reason": "rule review (author, Oct 19): C1b exemption for templated pages; the only failure of this session was one templated orphan now exempt; LT has moved on, so one fresh pass from the current LT head",
+        "seq": 125
+      },
+      "tree_graph_sha256": "8d7d1a0a8293c5e837a06da1bbb16d717da60bb4565956f29c572f0515a2a3c3",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": false
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 141,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012687840271808607,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012687840271808607,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A11",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 85
+      },
+      "namespace": "LT-r19",
+      "receipt": "launch",
+      "receipt_graph_sha256": "27beb5ad5fc4078af79a396c1ca05c3f06963d7986f111f0d04dc16d2c002cc4",
+      "receipt_sha256": "5c713df0c9ad16bdb80b4ab77d19c246b402d8542814450b06075854e9b9ead3",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012687840271808607,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "27beb5ad5fc4078af79a396c1ca05c3f06963d7986f111f0d04dc16d2c002cc4",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 141,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01268688686267479,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01268688686267479,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A03",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 91
+      },
+      "namespace": "LT-r20",
+      "receipt": "launch",
+      "receipt_graph_sha256": "fc105f8233ff3dec3e22d21dff1929bd709df03171d7774a55c7c0ac0cbcb44c",
+      "receipt_sha256": "dbc9aeeddfb90bcbd77670f728695a09e09b85b5ebee8fb9c9e339d3066d7ede",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.01268688686267479,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "fc105f8233ff3dec3e22d21dff1929bd709df03171d7774a55c7c0ac0cbcb44c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 146,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.009387652649240475,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.009387652649240475,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A08",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "protected-lines-missing:3"
+        ],
+        "reasons_with_c_v2": [
+          "protected-lines-missing:3",
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 93
+      },
+      "namespace": "LT-r21",
+      "receipt": "launch",
+      "receipt_graph_sha256": "39dada6c974e2d6fc1a199b50fd434df7fe0a928905a5b8f79fa5af79d33a37c",
+      "receipt_sha256": "9347f5f016785664419c34324f59f0e175e602363678d382ccc716b102a0fd12",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.009387652649240475,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "39dada6c974e2d6fc1a199b50fd434df7fe0a928905a5b8f79fa5af79d33a37c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 151,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012689177243202397,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012689177243202397,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A16",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 99
+      },
+      "namespace": "LT-r22",
+      "receipt": "launch",
+      "receipt_graph_sha256": "7a20889d2edd6d4818dfeda48bde7b54372fc94a4258e791e01345b5e8648858",
+      "receipt_sha256": "5a9f6e8fede212e43563c7b922b772d119329a3d5db7b2f99b886c3c96815b71",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012689177243202397,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "7a20889d2edd6d4818dfeda48bde7b54372fc94a4258e791e01345b5e8648858",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 164,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012689690326427394,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012689690326427394,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A07",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 101
+      },
+      "namespace": "LT-r23",
+      "receipt": "launch",
+      "receipt_graph_sha256": "3d666270feecf00a24c44891e7f459165c7651af53778246a4a1137b02e56675",
+      "receipt_sha256": "c27f9c3d7c82da1f71f5cd14d0eb4122285e7f4b0cba3c97cb76768367c0cd43",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012689690326427394,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "3d666270feecf00a24c44891e7f459165c7651af53778246a4a1137b02e56675",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": [
+          "content/includes/compose/synchronized-file-shares.md"
+        ],
+        "c2_joined_pages": 167,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012689270673998727,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C1b-new-page-without-in-link",
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "c_v2_supports_reopen": true,
+      "class": "superseded-by-reopen",
+      "driver_final_rule": {
+        "c1b_exempted": [
+          "content/includes/compose/synchronized-file-shares.md"
+        ],
+        "lambda2": 0.012689270673998727,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "advance",
+        "area": "A12",
+        "arm": "LT",
+        "kind": "pass-superseded",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": false,
+        "seq": 107
+      },
+      "namespace": "LT-r24",
+      "receipt": "launch",
+      "receipt_graph_sha256": "b30e79414d5287083d8ce7d4a52fac9b094e77ede3bd19f1c5d3aac10a56b320",
+      "receipt_sha256": "08213efeb0f3e89aed03503112d2d80a8d9f8f8a7672e046498a66b66ebd4358",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012689270673998727,
+        "passed": false,
+        "reasons": [
+          "C1b-new-page-without-in-link"
+        ],
+        "run_state_c_passed": false
+      },
+      "reopen": {
+        "author_quote": "Yes: keep C2 with fix 3, and exempt from C1b only new includes that some page references with an include shortcode and new section _index pages that have child pages. Both arms. Rerun LT A10 and A12, then run reconciliation, and plan the sensitivity analysis.",
+        "reason": "rule review (author, Oct 19): C1b exemption for templated pages; the only failure of this session was one templated orphan now exempt; LT has moved on, so one fresh pass from the current LT head",
+        "seq": 126
+      },
+      "tree_graph_sha256": "b30e79414d5287083d8ce7d4a52fac9b094e77ede3bd19f1c5d3aac10a56b320",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": false
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 168,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012691659942034608,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012691659942034608,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A18",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 109
+      },
+      "namespace": "LT-r25",
+      "receipt": "launch",
+      "receipt_graph_sha256": "b9b98645f7a395fb017c5ea9648be10223d7abd7e92c4c23197ec2f6b2aca48b",
+      "receipt_sha256": "cd5a1ac9a9311741fd48effd086029aab73fe073fcd55a05393f9cf1831124f5",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012691659942034608,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "b9b98645f7a395fb017c5ea9648be10223d7abd7e92c4c23197ec2f6b2aca48b",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 207,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012699257717461011,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012699257717461011,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A02",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 118
+      },
+      "namespace": "LT-r26",
+      "receipt": "launch",
+      "receipt_graph_sha256": "dde04e68991eeb59b6c04a39af76cbc9a2dfcadea29978673e94671525fbf8e5",
+      "receipt_sha256": "aec829a8ebff4e834e6fb183df8079f23fe2913fefe19b269bdc0d7538163c84",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012699257717461011,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "dde04e68991eeb59b6c04a39af76cbc9a2dfcadea29978673e94671525fbf8e5",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 210,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01270022260095035,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01270022260095035,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A17",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [
+          "introduced-unresolved:6"
+        ],
+        "reasons_with_c_v2": [
+          "introduced-unresolved:6"
+        ],
+        "recorded_c_passed": true,
+        "seq": 120
+      },
+      "namespace": "LT-r27",
+      "receipt": "launch",
+      "receipt_graph_sha256": "fd3650952d761ba9ab88bcd3b46aaabb202a3fa75927bf5f0793f76e4a4f2c8e",
+      "receipt_sha256": "f11a5cd8e4c0e9f28b9d38068f0d92de5bd79719106e2dc4666919ec5417cb1d",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.01270022260095035,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "fd3650952d761ba9ab88bcd3b46aaabb202a3fa75927bf5f0793f76e4a4f2c8e",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 217,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012683972900892694,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012683972900892694,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A10",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 129
+      },
+      "namespace": "LT-r28",
+      "receipt": "launch",
+      "receipt_graph_sha256": "8f052d3b1ccd58211f861cf6fb86d9b649d3a1f3ba24ba8b1ac8374b944aa25f",
+      "receipt_sha256": "32c81673d5e23efc1b10956a02fde0f1d9ad37478d44b13a201f55c5b1e978ac",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012683972900892694,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "8f052d3b1ccd58211f861cf6fb86d9b649d3a1f3ba24ba8b1ac8374b944aa25f",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 222,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012684897285280099,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012684897285280099,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A12",
+        "arm": "LT",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 131
+      },
+      "namespace": "LT-r29",
+      "receipt": "launch",
+      "receipt_graph_sha256": "23fcb0774a267f96ed72fdd214643e70dbe0d25b9625edfdde0a4b7fd8d6fe50",
+      "receipt_sha256": "643a35ecc384d004afdf0e45d0ce5f02be640b1a7c437d3d3cb8f2a820597cb6",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012684897285280099,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "23fcb0774a267f96ed72fdd214643e70dbe0d25b9625edfdde0a4b7fd8d6fe50",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 222,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.012746001729749086,
+        "lambda2_v1": 0.0,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.012746001729749086,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "ALL",
+        "arm": "LT",
+        "kind": "reconcile",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 133
+      },
+      "namespace": "LT-r30",
+      "receipt": "launch",
+      "receipt_graph_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+      "receipt_sha256": "f068b29ed4e09ab63172e2ae37d416419fb7a7472177f710414804dce68ce7bd",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.012746001729749086,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011090890079546487,
+        "lambda2_v1": 0.011090890079546487,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011090890079546487,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A09",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 9
+      },
+      "namespace": "R0-r01",
+      "receipt": "launch",
+      "receipt_graph_sha256": "fd24602a62798a529134b646087d7426c1e1643698cd52e89aa8bb64c3ecd27c",
+      "receipt_sha256": "0849665c958295c50382c372c2da85aa0c14539179a5bbc40e1c1a513bff9f2d",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011090890079546487,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "fd24602a62798a529134b646087d7426c1e1643698cd52e89aa8bb64c3ecd27c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011065724977995631,
+        "lambda2_v1": 0.011065724977995631,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011065724977995631,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A21",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 11
+      },
+      "namespace": "R0-r02",
+      "receipt": "launch",
+      "receipt_graph_sha256": "cf086bb129502d96d148cb82b0ca2cf9978ac640a037d7bafbe7d0049f1c159f",
+      "receipt_sha256": "664c45971411e8dac4db2b662eda0cbad8517d113b88c4a05abb2785e498ca16",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011065724977995631,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "cf086bb129502d96d148cb82b0ca2cf9978ac640a037d7bafbe7d0049f1c159f",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011061637761313095,
+        "lambda2_v1": 0.011061637761313095,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011061637761313095,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A19",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 25
+      },
+      "namespace": "R0-r04",
+      "receipt": "launch",
+      "receipt_graph_sha256": "6217ded9a80098ca7a20f186f2601961bcb70fcb23cf16d02bc3a7cc717e1b20",
+      "receipt_sha256": "45751e2872174f41b4ac9ba3df2a41392ebb33ff9db0f958fdfd31df6d0342fc",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011061637761313095,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "6217ded9a80098ca7a20f186f2601961bcb70fcb23cf16d02bc3a7cc717e1b20",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011061333382199202,
+        "lambda2_v1": 0.011061333382199202,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011061333382199202,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A06",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 27
+      },
+      "namespace": "R0-r05",
+      "receipt": "launch",
+      "receipt_graph_sha256": "c6a22d66c1ffe4c8c32af26096591c292f6f35440d74afd8f58bfd5bf6b5ec82",
+      "receipt_sha256": "48301b2148bc1b830d48eebac95e91c3156c921840e5dd648a31149924ea0ac9",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011061333382199202,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "c6a22d66c1ffe4c8c32af26096591c292f6f35440d74afd8f58bfd5bf6b5ec82",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01123027126090366,
+        "lambda2_v1": 0.01123027126090366,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01123027126090366,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A25",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 33
+      },
+      "namespace": "R0-r06",
+      "receipt": "launch",
+      "receipt_graph_sha256": "a7eaafb18e2a36c02349a3a78da1d7b0e30b102b3b1d682411bdce4065ef0b7e",
+      "receipt_sha256": "956e0aaaa404850026a1b5e85bf56a088732844bd01eaf0beb0cd5001dd46794",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01123027126090366,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "a7eaafb18e2a36c02349a3a78da1d7b0e30b102b3b1d682411bdce4065ef0b7e",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011223154887690098,
+        "lambda2_v1": 0.011223154887690098,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011223154887690098,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A22",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 35
+      },
+      "namespace": "R0-r07",
+      "receipt": "launch",
+      "receipt_graph_sha256": "849c4c4959d641ed62c463ca4b22ff0838b1d417cd055197dd8aee08ddb884b0",
+      "receipt_sha256": "2b66ff5b8f5ac3dbce35266ac6973cc83408a01d7f505b55079e197561ace972",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011223154887690098,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "849c4c4959d641ed62c463ca4b22ff0838b1d417cd055197dd8aee08ddb884b0",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011222928306355559,
+        "lambda2_v1": 0.011222928306355559,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011222928306355559,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A01",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 41
+      },
+      "namespace": "R0-r08",
+      "receipt": "launch",
+      "receipt_graph_sha256": "df923a86bd0ef57f27a82d6ed545badf982a4a9e091d17f1a057e25c182a4573",
+      "receipt_sha256": "fe96edc546f317c4c1232817bff23bc66e4a6bf70d06d7283403a1bc302ae7ee",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011222928306355559,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "df923a86bd0ef57f27a82d6ed545badf982a4a9e091d17f1a057e25c182a4573",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011220963802964869,
+        "lambda2_v1": 0.011220963802964869,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011220963802964869,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A14",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 43
+      },
+      "namespace": "R0-r09",
+      "receipt": "launch",
+      "receipt_graph_sha256": "533486f2cfa08cd2cfda0e359cd6c918144687c3f8b595786eea401d0d311656",
+      "receipt_sha256": "5cb349ab991d7d33178b05d7c9423876e514a55b488add249ac984900abd0980",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011220963802964869,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "533486f2cfa08cd2cfda0e359cd6c918144687c3f8b595786eea401d0d311656",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011215445824205035,
+        "lambda2_v1": 0.011215445824205035,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011215445824205035,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A23",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 49
+      },
+      "namespace": "R0-r10",
+      "receipt": "launch",
+      "receipt_graph_sha256": "4556b93527bf52e96c11cca309073ba255f34785b84403df428ce04fcd097b1c",
+      "receipt_sha256": "d5e43cdcbb7f51a96676799ad5b4fe2d9a34ae65d0cfa9c11567ae68c50044fb",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011215445824205035,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "4556b93527bf52e96c11cca309073ba255f34785b84403df428ce04fcd097b1c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011212034592691218,
+        "lambda2_v1": 0.011212034592691218,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011212034592691218,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A20",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 51
+      },
+      "namespace": "R0-r11",
+      "receipt": "launch",
+      "receipt_graph_sha256": "33d2513807fa9a8908b8d78022662733afa8f0def751cf0b2e799c21a8d75e95",
+      "receipt_sha256": "be5ec9113cf31c341b14f389aada2bb2397354d467e628d4e29dc18b2f4a6fb2",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011212034592691218,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "33d2513807fa9a8908b8d78022662733afa8f0def751cf0b2e799c21a8d75e95",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011212034592691218,
+        "lambda2_v1": 0.011212034592691218,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011212034592691218,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A05",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 57
+      },
+      "namespace": "R0-r12",
+      "receipt": "launch",
+      "receipt_graph_sha256": "e61ef578b3aaf058eec70c4222b5e676db1e0289b7e95fbbb15f79dc9a481b28",
+      "receipt_sha256": "8f7f6fdabb82f99eaff24cf32f93f7258abb7caca175623f7fd3a5610e25819a",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011212034592691218,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "e61ef578b3aaf058eec70c4222b5e676db1e0289b7e95fbbb15f79dc9a481b28",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011207233394556669,
+        "lambda2_v1": 0.011207233394556669,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011207233394556669,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A04",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 59
+      },
+      "namespace": "R0-r13",
+      "receipt": "launch",
+      "receipt_graph_sha256": "6651a6b66477a9bb47dd3b5fcfd85699fdd84fe562ba78f0b3815b383bcef5fd",
+      "receipt_sha256": "125deb751f9b94677f139e15836a7fc3fdeb1e339143c511a53a046d84fb6b7a",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011207233394556669,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "6651a6b66477a9bb47dd3b5fcfd85699fdd84fe562ba78f0b3815b383bcef5fd",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013337299728698987,
+        "lambda2_v1": 0.013337299728698987,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013337299728698987,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A24",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 68
+      },
+      "namespace": "R0-r14",
+      "receipt": "launch",
+      "receipt_graph_sha256": "4bc9e57c8d2958825a54e7663324f4c16c74ff6bfc713176224144047fb59877",
+      "receipt_sha256": "30816ef104753cdc34887524a0fa3c3834874186ee9c1ccb267bf5345793156c",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013337299728698987,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "4bc9e57c8d2958825a54e7663324f4c16c74ff6bfc713176224144047fb59877",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013383932782603664,
+        "lambda2_v1": 0.013383932782603664,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013383932782603664,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A15",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 73
+      },
+      "namespace": "R0-r15",
+      "receipt": "launch",
+      "receipt_graph_sha256": "f5d30be964ee1c1166333f4dfac5de93f5894006146b520297b4dea9a18a31ac",
+      "receipt_sha256": "dac2c88488465c885d421d29409710c4828560d7ca18698d3a25f4630e568eed",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013383932782603664,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "f5d30be964ee1c1166333f4dfac5de93f5894006146b520297b4dea9a18a31ac",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013383427343392339,
+        "lambda2_v1": 0.013383427343392339,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013383427343392339,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A13",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 79
+      },
+      "namespace": "R0-r16",
+      "receipt": "launch",
+      "receipt_graph_sha256": "1d56734d1487a98e33de0c572ae68ddbe31c46507668a86f5d68218e68eea630",
+      "receipt_sha256": "da93608f70ec41ce01be690e5d22e86369629b297d1ad5a360684d5e44b533c3",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013383427343392339,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "1d56734d1487a98e33de0c572ae68ddbe31c46507668a86f5d68218e68eea630",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01337562202618836,
+        "lambda2_v1": 0.01337562202618836,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01337562202618836,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A10",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 81
+      },
+      "namespace": "R0-r17",
+      "receipt": "launch",
+      "receipt_graph_sha256": "4991ca42bc9a1dcfe386193dbc5e62a11971956c5bd309ff8ed7607bbad3f32c",
+      "receipt_sha256": "6ab336fc2defecd22eb852dfee84723f62883663a1ab8cf0439299b0be413fc9",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01337562202618836,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "4991ca42bc9a1dcfe386193dbc5e62a11971956c5bd309ff8ed7607bbad3f32c",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013372550498095374,
+        "lambda2_v1": 0.013372550498095374,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013372550498095374,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A11",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 87
+      },
+      "namespace": "R0-r18",
+      "receipt": "launch",
+      "receipt_graph_sha256": "f9f06740d221020f56c2f4b800800c27e215bd43c910eb8c66670eca087d81ad",
+      "receipt_sha256": "b33f3842b7166dbccb8c2e92eb7ec5e46d6b6f72d4bd65d48dcf2f8a4ea86747",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013372550498095374,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "f9f06740d221020f56c2f4b800800c27e215bd43c910eb8c66670eca087d81ad",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013356380001129427,
+        "lambda2_v1": 0.013356380001129427,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013356380001129427,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A03",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 89
+      },
+      "namespace": "R0-r19",
+      "receipt": "launch",
+      "receipt_graph_sha256": "537a080bbb6e48c961e9c69bc809dbca22e52001c816740bd6d2ef28858755a3",
+      "receipt_sha256": "e826136c354ea8aecd23fcaa444f28b5e1d35087a825f18b7d16dd170dcbc101",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013356380001129427,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "537a080bbb6e48c961e9c69bc809dbca22e52001c816740bd6d2ef28858755a3",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 269,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0016812170166289409,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0016812170166289409,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A08",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "protected-lines-missing:1"
+        ],
+        "reasons_with_c_v2": [
+          "protected-lines-missing:1",
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 95
+      },
+      "namespace": "R0-r20",
+      "receipt": "launch",
+      "receipt_graph_sha256": "655545a6361ce3ef32b1790e84f1f62917f0b15682c5767a46e181f5d1c6cb7b",
+      "receipt_sha256": "0218bb476920470b6c3822c1455ffe3cda3711a6dc250f6ac027fddbfc6706a0",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0016812170166289409,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "655545a6361ce3ef32b1790e84f1f62917f0b15682c5767a46e181f5d1c6cb7b",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01336308145717945,
+        "lambda2_v1": 0.01336308145717945,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01336308145717945,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A16",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 97
+      },
+      "namespace": "R0-r21",
+      "receipt": "launch",
+      "receipt_graph_sha256": "71f28388b51a4c36c19d802eeebbad9b60154fbe056b7de344cf21f26f1bcefd",
+      "receipt_sha256": "1262971e50f00f7b3d87e23fc2b465c0e2576e5b617fbad857802c210fd198ae",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01336308145717945,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "71f28388b51a4c36c19d802eeebbad9b60154fbe056b7de344cf21f26f1bcefd",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01335066824788702,
+        "lambda2_v1": 0.01335066824788702,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01335066824788702,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A07",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 103
+      },
+      "namespace": "R0-r22",
+      "receipt": "launch",
+      "receipt_graph_sha256": "82a2ff2fd12f7891b73c476460a16e091fd8c063719ed2c2edbdfcfc46af71a0",
+      "receipt_sha256": "994ea9fe75870a03e08e020093d857f8eb5b86b6894d94be58a36ea6ab374e04",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01335066824788702,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "82a2ff2fd12f7891b73c476460a16e091fd8c063719ed2c2edbdfcfc46af71a0",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01334517847455825,
+        "lambda2_v1": 0.01334517847455825,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01334517847455825,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A12",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 105
+      },
+      "namespace": "R0-r23",
+      "receipt": "launch",
+      "receipt_graph_sha256": "e0513a1d66861691cff91676972ccb12c93d788a6f43241614a67394dc98519d",
+      "receipt_sha256": "ed11bab2aa4e3bcf068d5e79315835cb888321ccdc75b0102b073ca651e9547a",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01334517847455825,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "e0513a1d66861691cff91676972ccb12c93d788a6f43241614a67394dc98519d",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01334458518588729,
+        "lambda2_v1": 0.01334458518588729,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01334458518588729,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A18",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 113
+      },
+      "namespace": "R0-r24",
+      "receipt": "launch",
+      "receipt_graph_sha256": "dc578a4b45abda7ff69fdf82c76d039603b11dfe198ce7d98aaa8f217e358601",
+      "receipt_sha256": "3ddfb83d998a195123d0d3d22af78783050b4e44aef5c287def058f1923327aa",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01334458518588729,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "dc578a4b45abda7ff69fdf82c76d039603b11dfe198ce7d98aaa8f217e358601",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.013341768127828214,
+        "lambda2_v1": 0.013341768127828214,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.013341768127828214,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "A02",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 116
+      },
+      "namespace": "R0-r25",
+      "receipt": "launch",
+      "receipt_graph_sha256": "801b0c55e57e97db9aff7cc5deb0c402795a0a4b1b7d347c13767c4e6f7e194f",
+      "receipt_sha256": "9f54068aab6a2bf02c40a3a897aa5dff73aede5832a1b970edd2354f5116e991",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.013341768127828214,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "801b0c55e57e97db9aff7cc5deb0c402795a0a4b1b7d347c13767c4e6f7e194f",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": 329,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.0032023262439685868,
+        "lambda2_v1": 0.0,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "v1_reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.0032023262439685868,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ]
+      },
+      "ledger": {
+        "action": "rollback",
+        "action_with_c_v2": "rollback",
+        "area": "A17",
+        "arm": "R0",
+        "kind": "pass",
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "reasons_with_c_v2": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "recorded_c_passed": false,
+        "seq": 124
+      },
+      "namespace": "R0-r26",
+      "receipt": "launch",
+      "receipt_graph_sha256": "86e4781954604af18052aa07bc85b165b2ac8024de3e4bad12370d001fc32748",
+      "receipt_sha256": "21e62a1382511a2e819cbd72459804ffbec811f6b0f36d22c0b5fadaa00cf045",
+      "recorded": {
+        "c_fix": "wc_refine_17.C2_FIX",
+        "lambda2": 0.0032023262439685868,
+        "passed": false,
+        "reasons": [
+          "C2-lambda2-below-tolerance"
+        ],
+        "run_state_c_passed": false
+      },
+      "tree_graph_sha256": "86e4781954604af18052aa07bc85b165b2ac8024de3e4bad12370d001fc32748",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.01334646781286039,
+        "lambda2_v1": 0.01334646781286039,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.01334646781286039,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "advance",
+        "action_with_c_v2": "advance",
+        "area": "ALL",
+        "arm": "R0",
+        "kind": "reconcile",
+        "not_admitted_because": [],
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 136
+      },
+      "namespace": "R0-r27",
+      "receipt": "launch",
+      "receipt_graph_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+      "receipt_sha256": "8c1b4c1c716f299aea6634040d2d5cac27946a4163283419d89992a9d5ecf832",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.01334646781286039,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    },
+    {
+      "c_v2": {
+        "base_config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+        "c1b_exempted": null,
+        "c2_joined_pages": null,
+        "config_sha256": "afeefb3e7b8dcaf3b7e7080095a2c03d83d927cb4dee1aea40bf02f29ea8af01",
+        "lambda2": 0.011037979927050976,
+        "lambda2_v1": 0.011037979927050976,
+        "passed": true,
+        "reasons": [],
+        "v1_reasons": []
+      },
+      "class": "effective",
+      "driver_final_rule": {
+        "c1b_exempted": null,
+        "lambda2": 0.011037979927050976,
+        "passed": true,
+        "reasons": []
+      },
+      "ledger": {
+        "action": "survey",
+        "action_with_c_v2": "survey",
+        "area": "ALL",
+        "arm": "WS",
+        "kind": "survey",
+        "not_admitted_because": null,
+        "reasons_with_c_v2": [],
+        "recorded_c_passed": true,
+        "seq": 1
+      },
+      "namespace": "WS-r01",
+      "receipt": "launch",
+      "receipt_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+      "receipt_sha256": "7f04f4e613f8376a7655720b6b09eb4b4c59aec6676a0abc4c18a2589507e9d9",
+      "recorded": {
+        "c_fix": null,
+        "lambda2": 0.011037979927050976,
+        "passed": true,
+        "reasons": [],
+        "run_state_c_passed": true
+      },
+      "tree_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+      "tree_matches_receipt": true,
+      "v2_equals_driver_final_rule": true,
+      "verdict_matches": true
+    }
+  ],
+  "total": {
+    "all_effective_verdicts_match": true,
+    "all_equal_driver_final_rule": true,
+    "c_v2_passed": 48,
+    "effective_rows": 53,
+    "effective_verdicts_match": 53,
+    "recorded_passed": 45,
+    "sessions_replayed": 56,
+    "superseded_c_v2_supports_reopen": 3,
+    "superseded_rows": 3,
+    "superseded_verdicts_match_recorded": 0,
+    "tree_matches_receipt_graph": 56,
+    "v2_equals_driver_final_rule": 56
+  }
+}

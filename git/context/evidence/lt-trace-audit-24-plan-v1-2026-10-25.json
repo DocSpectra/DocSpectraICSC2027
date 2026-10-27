@@ -1,0 +1,1212 @@
+{
+ "authority": "author request October 25 (Sprint 24 prompt); existing artifacts only",
+ "case_selection": {
+  "counterparts": "same question, condition and replicate in O and S; the arm's follow-off cell; shown without claiming they differ only in one link",
+  "empty_stratum": "reported empty, never substituted",
+  "max_cards": 6,
+  "nature": "outcome-stratified illustrations, not a representative sample or effect estimate",
+  "order": "lexicographically first (tier, question_id, condition, replicate, call), per arm (LT, R0) and stratum",
+  "strata": {
+   "a": "accepted added-edge follow with first page text exposure (no earlier returned lines or snippet line), a `supported` same-variant direct label for the destination, and a final-answer citation of the destination whose cited lines intersect the lines this follow returned",
+   "b": "accepted added-edge follow whose destination page is not cited in the final answer",
+   "c": "accepted follow with an attribution-breaking missing or ambiguous record: edge class unknown, replay not verified, file or text identity false, offered menu unknown, a tier-2 destination label of identity_mismatch, never_judged or undetermined, or a supported destination whose spans are all unmappable"
+  }
+ },
+ "created": "2026-10-25",
+ "definitions": {
+  "chain_t2_follow": [
+   "planned follow-enabled traces",
+   "traces with >=1 accepted follow",
+   "traces with >=1 accepted added-edge follow",
+   "... of which the follow is the destination's first page text exposure",
+   "... and the destination label is supported (same variant, page bytes joined)",
+   "... and a located supporting span lies in the lines that follow returned",
+   "... and the final answer cites the destination",
+   "... and the cited lines intersect the lines that follow returned"
+  ],
+  "chain_units": "planned traces and unique question-destination pairs; follows are repeated observations within a question, never independent replications",
+  "legacy_landing": "Sprint 20 follows_landing_on_support (all follow actions by name, verify-escalated positive qrels, common 105, mean per question)",
+  "novelty": {
+   "first_page_text_exposure": "first_returned_lines and no earlier snippet line of it",
+   "first_returned_lines": "no earlier read/follow returned any line of the destination",
+   "listed_by_prior_search": "destination id in an earlier search's hits",
+   "new_lines_beyond_snippets": "returned lines not returned before and not shown as snippets"
+  },
+  "opportunity": "per accepted follow decision, the share of offered menu arcs that are added; reported beside the added share of uses, descriptively",
+  "success_landing": "accepted follows whose destination label is supported under the page-byte join, same population and averaging"
+ },
+ "gap_matrix": "interpretive; authored after the results, from the recorded fields and coverage",
+ "join_keys": {
+  "edge_class": "historical Sprint 15 variant_context: added = variant edges minus mapped baseline edges (O edges mapped through the derived page mapping); edges of the exported graph absent from the table are unknown; new_page_incident = an endpoint outside the mapping image",
+  "mismatch": "quarantined/unknown row with an explicit exclusion count",
+  "page": "returned file_sha256 = exported page bytes = pool page_sha256 = decision page_sha256",
+  "spectral_view": "Sprint 22 graph bundles wc/{O,S,LT,R0} (full and lwcc views by the unchanged RA select_view) and LT/R0 O-prime (mapped baseline); node/arc-set comparison, both hash namespaces reported; no eigensolve",
+  "trace": "run wc-v1, tier, opaque variant id, question id, question SHA-256 (declared = recorded = recomputed), condition, replicate, trace SHA-256 (planning inventory)",
+  "variant": "trace graph_sha256 = SHA-256 of the exported graph_edges.csv bytes; corpus_inventory_sha256 = SHA-256 of the canonical {stem: file sha256}"
+ },
+ "model_calls": 0,
+ "network_calls": 0,
+ "not_done": [
+  "significance tests",
+  "outcome-driven subgroup searches",
+  "new semantic labels or scoring",
+  "O1 moved-content credit as direct support (named historical sensitivity only)",
+  "merging 09c automatic candidate-support labels with direct judgments",
+  "correlations between spectra and arm summaries"
+ ],
+ "outputs": {
+  "cards": "git/context/evidence/lt-trace-audit-24-cards-v1-2026-10-25.json",
+  "evidence": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+  "tables": "git/context/reports/2026-10-25-lt-retrieval-trace-audit-tables.md",
+  "untracked": "artifacts/lt-trace-audit-24-v1/ (witness, operator input/output, receipts)"
+ },
+ "pins": {
+  "answer_plan": {
+   "bytes": 284466,
+   "path": "git/context/evidence/wc-answers-19-plan-v1-2026-10-22.json",
+   "sha256": "c61bbb7e4eb21c9d79caf85809d8b76bd0cc75451bb64a632e78e60a39a33b79"
+  },
+  "arm_key": {
+   "bytes": 2181,
+   "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/host-private/answers-19-key.json",
+   "sha256": "545377978f232750e80a2ff35177b66c9455e7bc6f4a9a455030221088c48895"
+  },
+  "driver": {
+   "bytes": 58120,
+   "path": "git/context/scripts/lt_trace_audit_24.py",
+   "sha256": "37261c49f4214fc402b08a2bd950ee5e55c16c9ccbebc8cce952c7a96dac1374"
+  },
+  "image": {
+   "reference": "sha256:b6b7260edeba71b79cca54261abdc221262589569d073b6d0c0a685fe42cfac1",
+   "tag": "retrieval-arena/verification:icsc-s24"
+  },
+  "image_receipt": {
+   "bytes": 526,
+   "path": "artifacts/lt-trace-audit-24-v1/image/verification-image-9b0f84f.json",
+   "sha256": "63a8475215b17b072b8fd808f6d25af51ad5aeed89dccad6236eb188ea4b1721"
+  },
+  "labels_latest": [
+   {
+    "bytes": 3035282,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/pool-agents/pool.jsonl",
+    "sha256": "88c00d663eb74e98115ba8e7b671e393dec3ed6e99b583750e8ed3084ed2fb92"
+   },
+   {
+    "bytes": 5788612,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/verify-escalated/page_decisions.jsonl",
+    "sha256": "1368016ebeb31b2b61a6718ee765a32d7e051e53055637b0a23752f97be29616"
+   },
+   {
+    "bytes": 33541123,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/verify-escalated/judgments.jsonl",
+    "sha256": "d67c191b799d6029d5f1960cfbca648f4b871308d71ecd126aac67b39d52c0ff"
+   },
+   {
+    "bytes": 1649458,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/verify-escalated/qrels.jsonl",
+    "sha256": "61023f71a402fd97e90b6eb58740b9af0b8603e72eafc272964515c65931e82f"
+   },
+   {
+    "bytes": 7242,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/verify-escalated/qrels_manifest.json",
+    "sha256": "a09d8e4d8a689b5aab86f3e43a59b0b9e0dddada8f06851f39e9c8554b9f5062"
+   },
+   {
+    "bytes": 3596,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-5d89a3217d52/verify-escalated/receipt.json",
+    "sha256": "019b48a98d19ff38455edb35614f3cae6195c2f23b9339e91cf655f74b67555a"
+   },
+   {
+    "bytes": 3103572,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/pool-agents/pool.jsonl",
+    "sha256": "38e3b98f7276e52484c791e20a764aa662db98e105fe2ca219199dddccf96f6e"
+   },
+   {
+    "bytes": 9139180,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/verify-escalated/page_decisions.jsonl",
+    "sha256": "142b6c02deb4726da6715c710f742f198336995bf22cc9e4af0ca8b33f29a8ca"
+   },
+   {
+    "bytes": 51934735,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/verify-escalated/judgments.jsonl",
+    "sha256": "e72cf4d5112b2058903fa7c17053fdc32e15a422c1f04b4a9c9dc374b206d23b"
+   },
+   {
+    "bytes": 1774814,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/verify-escalated/qrels.jsonl",
+    "sha256": "dab9639135fc394ef1583e61292bd65c26617cf5f03d19967810f7d21bd63b8c"
+   },
+   {
+    "bytes": 7244,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/verify-escalated/qrels_manifest.json",
+    "sha256": "ab0724c18d372630ac5e9b4dbc025c4ef2400b228416aaa73c2636afcefed310"
+   },
+   {
+    "bytes": 3603,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-6337600cdc97/verify-escalated/receipt.json",
+    "sha256": "0895d2f7832aa85e42e23b15a70840a7b7cd930aba35ffef2d05a3977a83b0f3"
+   },
+   {
+    "bytes": 3032098,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/pool-agents/pool.jsonl",
+    "sha256": "f9179390ccc7cfe4145ac2d53bce59a17ccc38b7ab0237600659e81ca84237bf"
+   },
+   {
+    "bytes": 5785001,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/verify-escalated/page_decisions.jsonl",
+    "sha256": "2e1a99868bd774b21e5265e45658b33aaa7e17f38e8ab189da53b3a139e6a348"
+   },
+   {
+    "bytes": 33526382,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/verify-escalated/judgments.jsonl",
+    "sha256": "d45fd9888b783f10151d951e391c9e54a3c2a7ba8b4e84c634bb3e85b5fbfcc9"
+   },
+   {
+    "bytes": 1647530,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/verify-escalated/qrels.jsonl",
+    "sha256": "dd3be58090bc0004304f8759ea69f6f6f6ae571f85661c0d1ae34fc8d3b36560"
+   },
+   {
+    "bytes": 7243,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/verify-escalated/qrels_manifest.json",
+    "sha256": "90ddf00bd8e10202b5d9218df38f5660daafddceabe93c029d63352900954d0b"
+   },
+   {
+    "bytes": 3597,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-9a7d7f0e7b47/verify-escalated/receipt.json",
+    "sha256": "00431ce932a22811a53b083f275a910dfb54a122c77a1c42ce982d892899dbfb"
+   },
+   {
+    "bytes": 3015567,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/pool-agents/pool.jsonl",
+    "sha256": "a0ab928a75b2ed0602b0068e5923d771c3cb94603d2a7b3eb470dcdd46a581f0"
+   },
+   {
+    "bytes": 9634188,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/verify-escalated/page_decisions.jsonl",
+    "sha256": "541793e24ca4ab28b9a144430f5f5fea2a1d27ae289cd704d0a28526eee4213c"
+   },
+   {
+    "bytes": 55540599,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/verify-escalated/judgments.jsonl",
+    "sha256": "4548301c074770e2a56c87c35f05d57adf190e6a2e6ad27e8e73ca0d9ac5d4fa"
+   },
+   {
+    "bytes": 1576986,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/verify-escalated/qrels.jsonl",
+    "sha256": "516251f5959bf043f8c2eb1f992ec8e18a756f935621be2eebfcf9aff5a3e762"
+   },
+   {
+    "bytes": 7210,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/verify-escalated/qrels_manifest.json",
+    "sha256": "fd73cdffba4fc9bdbd670089e6d92f92ca28dc5f1043a09933bcf5a67f321c74"
+   },
+   {
+    "bytes": 3697,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19-pool/v-c2c2731d2141/verify-escalated/receipt.json",
+    "sha256": "214f5e82873fc4c43b623b539426dc592cc79498a949b9f7fa1f8f7926aac77a"
+   }
+  ],
+  "loop_source": {
+   "bytes": 42787,
+   "path": "git/context/scripts/complex_task_agent_loop.py",
+   "sha256": "8a238a1fd59c772f88afb0b223fe87b47635dce5e3907bcc232c25bb09f8a581"
+  },
+  "pinned_historical_helpers": [
+   {
+    "bytes": 38797,
+    "path": "git/context/scripts/wc_analysis_20.py",
+    "sha256": "882c25d5cbd71a62402216c0a8f57c046609a3e21f73cfbac6495b52a64ba675"
+   },
+   {
+    "bytes": 53235,
+    "path": "git/context/scripts/wc_answers_19.py",
+    "sha256": "330e34f7427c6042de707049b1b4436a3787aef7ed4fb8edc548e0fd7ffcd95b"
+   },
+   {
+    "bytes": 90406,
+    "path": "git/context/scripts/wc_refinement_15.py",
+    "sha256": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2"
+   },
+   {
+    "bytes": 53608,
+    "path": "git/context/scripts/wc_refine_17.py",
+    "sha256": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525"
+   },
+   {
+    "bytes": 98029,
+    "path": "git/context/scripts/structure_forcing_12.py",
+    "sha256": "d2bc45f73b920fd31072929800277966671e5b00b4fb17612b07e7e1ecf54fe5"
+   },
+   {
+    "bytes": 89719,
+    "path": "git/context/scripts/structure_forcing_12b.py",
+    "sha256": "545dd2abf707c1b74c87fc4c455b786f6f6a437c1a869bd237aabfe3bbce7872"
+   },
+   {
+    "bytes": 29048,
+    "path": "git/context/scripts/lt_locality_13.py",
+    "sha256": "e4e1adfaedb1a558d295fb9a7b67fdadd24f6d91288f46ba787c2ea4a19d162f"
+   },
+   {
+    "bytes": 29322,
+    "path": "git/context/scripts/docker_corpus_variants.py",
+    "sha256": "af39db1a05dc5119b9fab4ac19104c65e740d2746e35f9876113d348d4c72cfe"
+   },
+   {
+    "bytes": 51604,
+    "path": "git/context/scripts/restructuring_runs.py",
+    "sha256": "c0f2bb29f5999c04c4775d2d46d96ea81c50aa09c3e93b1fb717131132d1acef"
+   },
+   {
+    "bytes": 21099,
+    "path": "git/context/scripts/wc_freeze_16.py",
+    "sha256": "40b7d7068cb64d31ea6db14aac8f7aad4c2489d6151d8588b3e06d98119bd591"
+   }
+  ],
+  "planning_inventory": {
+   "bytes": 564651,
+   "path": "git/context/evidence/lt-trace-audit-24-planning-inventory-v1-2026-10-25.json",
+   "sha256": "9a5bdfd7ec55ac8904637a5ca3ada090ea81d2f7fb280448bd6ab8024e85a1f1"
+  },
+  "ra": {
+   "commit": "9b0f84f49d5dd8a5d6050fd5e41e6429adab4869",
+   "metric_version": "trace_provenance_audit.v1",
+   "module": "retrieval_arena/trace_provenance.py",
+   "module_sha256": "12502dcf64fe06a1c59c6e3ac6ed269ec0830857fe27eac0f73376a3bb4ac2e2",
+   "operator": "audit-trace-provenance",
+   "tree": "3a31dfd54afef64d7526258ad00fe68bd9ad8d10"
+  },
+  "rejudge": {
+   "bytes": 9463,
+   "path": "git/context/evidence/wc-rejudge-19-result-v1-2026-10-24.json",
+   "sha256": "1411e755496b0fec403f34ae93c471caf8c3e9641d103f83034af71dcc3a787b"
+  },
+  "s20": {
+   "bytes": 378944,
+   "path": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+   "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+  },
+  "sprint22_bundles": [
+   {
+    "bytes": 364380,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__O.json",
+    "sha256": "9cd503bb6e1455f3ba135685074367c0c25d1bf4c561b63dc5739c22f2d552ed"
+   },
+   {
+    "bytes": 364380,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__S.json",
+    "sha256": "e73a07a6eb91c122032feddb5a8b16d0b75028f5b87494f4151be5ceec4b5ea3"
+   },
+   {
+    "bytes": 716577,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__LT.json",
+    "sha256": "28a2e5ea2126532a8237869afe0852b5300e6c1894ed4103350dc3907f394faf"
+   },
+   {
+    "bytes": 590562,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__R0.json",
+    "sha256": "88fda0de11638e50a61db659bbaca402a315b262d490e09bcff2c5bdfbb6025f"
+   },
+   {
+    "bytes": 400974,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__LT__O-prime.json",
+    "sha256": "0e920c222bc15b5443b183c0ce53befb353b1db3d83da6c0cccef67e1bb2fd6b"
+   },
+   {
+    "bytes": 365008,
+    "path": "artifacts/normalized-magnetic-22-v1/inputs/wc/bundles/wc__R0__O-prime.json",
+    "sha256": "42d7ecc4e227a60c5746bee90c0c089663cfc0ab897bb8ff71ee11e46d4955e3"
+   }
+  ],
+  "system_message_sha256": "5641b4202b5c96f4793998aaed0e319f424700fefe919710aef0338d0cb7694b",
+  "system_prompt": {
+   "bytes": 3510,
+   "path": "git/context/design/complex-task-agentic-operator-prompt-v12.txt",
+   "sha256": "f4c1e8c101dc55a3f322aff7bfb87919f30e20685944b31a8c8daa7bc3e91f0f"
+  },
+  "tier1_tasks": {
+   "bytes": 72485,
+   "path": "git/context/evidence/wc-tier1-tasks-v2-2026-10-18.json",
+   "sha256": "671a15da2560ef5cd387788e87fd146bf2be90a520281531666adef258136a49"
+  }
+ },
+ "populations": {
+  "active_traces": {
+   "source": "planning inventory trace_inventory (one row per active trace, bytes pinned)",
+   "t1": 480,
+   "t2": 888
+  },
+  "archived_excluded": {
+   "archive_events": [
+    {
+     "cell": "v-6337600cdc97-42f436b5b230-s1-follow-r2",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t1-r2.jsonl",
+     "reason": "call 2 ValueError:response-incomplete-or-wrong-model (provider returned an incomplete response); 2 model calls, 1,142 tokens"
+    },
+    {
+     "cell": "v-6337600cdc97-0daa1729fe47-s6-follow-r2",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t1-r2.jsonl",
+     "reason": "call 11 ValueError:expected-exactly-one-function-call (model returned no single function call); model behaviour, archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-6337600cdc97-37820b00f201-s6-no-follow-r2",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t1-r2.jsonl",
+     "reason": "completed response without exactly one function call (model behaviour); archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-5d89a3217d52.jsonl",
+     "reason": "provider returned status incomplete (incomplete_details recorded in the raw response); archived under the frozen rule: max_output_tokens at 256 output tokens"
+    },
+    {
+     "cell": "v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-5d89a3217d52.jsonl",
+     "reason": "completed response without exactly one function call (model behaviour); archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-5d89a3217d52.jsonl",
+     "reason": "completed response without exactly one function call (model behaviour); archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-6337600cdc97.jsonl",
+     "reason": "provider returned status incomplete (incomplete_details recorded in the raw response); archived under the frozen rule: max_messages"
+    },
+    {
+     "cell": "v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-6337600cdc97.jsonl",
+     "reason": "completed response without exactly one function call (model behaviour); archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-6337600cdc97.jsonl",
+     "reason": "ValueError:action-empty-answer (model behaviour, the 12b r2 cell 256 case); archived under the frozen rule"
+    },
+    {
+     "cell": "v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-9a7d7f0e7b47.jsonl",
+     "reason": "completed response without exactly one function call (model behaviour); archived under the frozen rule as in 12b r2 cell 256"
+    },
+    {
+     "cell": "v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1",
+     "event": "infrastructure_attempt_archive",
+     "log": "commands-t2-v-c2c2731d2141.jsonl",
+     "reason": "provider returned status incomplete (incomplete_details recorded in the raw response); archived under the frozen rule: max_output_tokens at 0 output tokens"
+    }
+   ],
+   "files": [
+    {
+     "bytes": 24838,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/events.jsonl",
+     "sha256": "5543ea4c69cb47ed1f885a1c84dd676380a6b0aefa212b8e5787b7dce1dfed39"
+    },
+    {
+     "bytes": 5981,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "cecfdcda227b80f2377c7afe71dc434e3a855d1239074d8a066d4253ad2523d3"
+    },
+    {
+     "bytes": 3208,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/response-0cfe4d6be49965fb70bbfef981be44c2241ff8637a6b449b64244a2ca5998e88.json",
+     "sha256": "0cfe4d6be49965fb70bbfef981be44c2241ff8637a6b449b64244a2ca5998e88"
+    },
+    {
+     "bytes": 11288,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/response-5d75945111f45560aaa9635a62300fb8b92e3894d9af30d359b37b6d8118419e.json",
+     "sha256": "5d75945111f45560aaa9635a62300fb8b92e3894d9af30d359b37b6d8118419e"
+    },
+    {
+     "bytes": 2147,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/response-65e38bb7c7d20e0a2207a730ec2f1a1fb6301838231702098578839964fe8752.json",
+     "sha256": "65e38bb7c7d20e0a2207a730ec2f1a1fb6301838231702098578839964fe8752"
+    },
+    {
+     "bytes": 5353,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/response-7b5fb07139e3692fe5e299b2fa3571775e6d639f607e63453cb2793ba6df5979.json",
+     "sha256": "7b5fb07139e3692fe5e299b2fa3571775e6d639f607e63453cb2793ba6df5979"
+    },
+    {
+     "bytes": 2049,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/provider/response-abe10842f8af924845fdecd23f6bdb3d231aab86a9268c56df9c0e8dd1a5dc08.json",
+     "sha256": "abe10842f8af924845fdecd23f6bdb3d231aab86a9268c56df9c0e8dd1a5dc08"
+    },
+    {
+     "bytes": 37218,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0043-s1-no-follow-r1/1/trace.json",
+     "sha256": "973f2ed8b0df334b4fe7f0d8a924a0e465e3d411a21effac1f2f79fec8d5c5d4"
+    },
+    {
+     "bytes": 5636,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1/1/events.jsonl",
+     "sha256": "2b3b9d633a3851fa068113309e08d61f65af23dafcf74572f5dd5a3bacc8d38b"
+    },
+    {
+     "bytes": 2070,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "1216ae4d35e84dd557b9f715159dd7bd27ef0a4d06091e2b126a7c8fe2918009"
+    },
+    {
+     "bytes": 2023,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1/1/provider/response-1e6a40459f9d41962bfae88dd4450cb0f8a082fea443a8bd0b27560fbd12b27c.json",
+     "sha256": "1e6a40459f9d41962bfae88dd4450cb0f8a082fea443a8bd0b27560fbd12b27c"
+    },
+    {
+     "bytes": 5018,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1/1/provider/response-edcb82cdb3c18b3548a174d193ca0ec2778c2239b38621d4fc35bd633421d6d5.json",
+     "sha256": "edcb82cdb3c18b3548a174d193ca0ec2778c2239b38621d4fc35bd633421d6d5"
+    },
+    {
+     "bytes": 8366,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0070-s1-follow-r1/1/trace.json",
+     "sha256": "1ad31ad45418bad25a333d528c66e96d97ce5e0b8bc94b9f6e757d30984dedb8"
+    },
+    {
+     "bytes": 16105,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/events.jsonl",
+     "sha256": "ffc7349050f4ce69e9f290828ea0dedfec23a1f267bf498a989119bf42a0f043"
+    },
+    {
+     "bytes": 4702,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "5a069572a178abea5482dd34d0b20d81b58851000c077ac739450c130aea31b8"
+    },
+    {
+     "bytes": 2024,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/provider/response-2687ccf71cfbe62a41f00fbd0acf552740cabcc351dd8dd4001b8de081ddebaa.json",
+     "sha256": "2687ccf71cfbe62a41f00fbd0acf552740cabcc351dd8dd4001b8de081ddebaa"
+    },
+    {
+     "bytes": 3902,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/provider/response-93164a83a70d6cb53e3e59590de85011e96308d849fdc262ba6a905463c68652.json",
+     "sha256": "93164a83a70d6cb53e3e59590de85011e96308d849fdc262ba6a905463c68652"
+    },
+    {
+     "bytes": 10962,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/provider/response-d66170c8cb5045e2e9a7040bc1ca5bd3d352373c57fe9e84bb29a502efcaf39b.json",
+     "sha256": "d66170c8cb5045e2e9a7040bc1ca5bd3d352373c57fe9e84bb29a502efcaf39b"
+    },
+    {
+     "bytes": 5628,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/provider/response-e60746ab0420aa277d5511cad0e0e923b480dab1e1097402a537508670d1dd44.json",
+     "sha256": "e60746ab0420aa277d5511cad0e0e923b480dab1e1097402a537508670d1dd44"
+    },
+    {
+     "bytes": 23302,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-5d89a3217d52-docker_docs_faq_0127-s1-no-follow-r1/1/trace.json",
+     "sha256": "bcbc72988ad53312941f6278a10eb26086785d8af34152376311490ee98bf67a"
+    },
+    {
+     "bytes": 58038,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/events.jsonl",
+     "sha256": "f7e0fed1be71b5fb478bb66d03cb5f08de42a8fb3544612109869fe9b0a02d89"
+    },
+    {
+     "bytes": 13997,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/provider-events.jsonl",
+     "sha256": "0cf64c29ffca4ddfa59b1f599deda038ff100f726e0752b4541da04987f73559"
+    },
+    {
+     "bytes": 2088,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-0ea31d3ad78618a3f74f6e40740f2928e159d312b5e5539381da60059a3a6e09.json",
+     "sha256": "0ea31d3ad78618a3f74f6e40740f2928e159d312b5e5539381da60059a3a6e09"
+    },
+    {
+     "bytes": 7391,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-2cd0bd93c74b33729139cb5910a8fd8df4fabf5243033b9fdf7791738d0b68d1.json",
+     "sha256": "2cd0bd93c74b33729139cb5910a8fd8df4fabf5243033b9fdf7791738d0b68d1"
+    },
+    {
+     "bytes": 6130,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-30ca30f8bf4e40cbb5d12950acfa638d64d9f3e071cbac8f693a59e3982ea958.json",
+     "sha256": "30ca30f8bf4e40cbb5d12950acfa638d64d9f3e071cbac8f693a59e3982ea958"
+    },
+    {
+     "bytes": 6383,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-52f4e4abd83bdf92501018387ee11955997e87baedda6f8d9efd08dd05361282.json",
+     "sha256": "52f4e4abd83bdf92501018387ee11955997e87baedda6f8d9efd08dd05361282"
+    },
+    {
+     "bytes": 2480,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-73c50129c3c0452c77388c1949f18739e8984bd7cbec8bc34977304ab53fd023.json",
+     "sha256": "73c50129c3c0452c77388c1949f18739e8984bd7cbec8bc34977304ab53fd023"
+    },
+    {
+     "bytes": 5992,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-80a2d599c3857f7863de6945442d7951fe7edcdd2b3db0e8bb9c1e70e4a66f5e.json",
+     "sha256": "80a2d599c3857f7863de6945442d7951fe7edcdd2b3db0e8bb9c1e70e4a66f5e"
+    },
+    {
+     "bytes": 5996,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-91ae28776edde72d76222326ed010257de335d8221f649d27b2a215d7c2aeccf.json",
+     "sha256": "91ae28776edde72d76222326ed010257de335d8221f649d27b2a215d7c2aeccf"
+    },
+    {
+     "bytes": 6785,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-a4447a5d83c313cd27996c041c241b43ee7ed0fb9192c1976d0ef741fe500c80.json",
+     "sha256": "a4447a5d83c313cd27996c041c241b43ee7ed0fb9192c1976d0ef741fe500c80"
+    },
+    {
+     "bytes": 35896,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-b8063e26761bb73fe8380b54e0cff12cefa58e4bab255648443c4afcf84c3220.json",
+     "sha256": "b8063e26761bb73fe8380b54e0cff12cefa58e4bab255648443c4afcf84c3220"
+    },
+    {
+     "bytes": 6672,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-d108e479de65b6d3f6667d5ef1935ae28595263281f0bdade724225aeb6ff0d1.json",
+     "sha256": "d108e479de65b6d3f6667d5ef1935ae28595263281f0bdade724225aeb6ff0d1"
+    },
+    {
+     "bytes": 4012,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/provider/response-d5363d82da5dfaef788a85ff90e743b8fad60d6942528606d057f12ebba68b93.json",
+     "sha256": "d5363d82da5dfaef788a85ff90e743b8fad60d6942528606d057f12ebba68b93"
+    },
+    {
+     "bytes": 88810,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-0daa1729fe47-s6-follow-r2/1/trace.json",
+     "sha256": "60a247657bb5626bb768f6fed847048490f712907870ba4ac8d0fdfd9ed07769"
+    },
+    {
+     "bytes": 57496,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/events.jsonl",
+     "sha256": "18c98de4e8b7e050c8719c4078b6e9dacb85b3bd24494c5d213cae9e35f5d4f6"
+    },
+    {
+     "bytes": 13883,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/provider-events.jsonl",
+     "sha256": "c58bb39c29eb484c014fe0795337543f03e024b5c536cdeb1adcf0c604dfd71c"
+    },
+    {
+     "bytes": 5653,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-2f822719bded7b8e4251ee80ff5c85b64cda4f456ff3c58387af1f547b63bbd3.json",
+     "sha256": "2f822719bded7b8e4251ee80ff5c85b64cda4f456ff3c58387af1f547b63bbd3"
+    },
+    {
+     "bytes": 2495,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-5fde5ef80659ddcc1be6ed77ebd44f33e9f119ea5a19ec8bf4226e21ada12053.json",
+     "sha256": "5fde5ef80659ddcc1be6ed77ebd44f33e9f119ea5a19ec8bf4226e21ada12053"
+    },
+    {
+     "bytes": 2470,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-738910b9147f617f2606e5cd6cac86ea59b40c8b28491c814ba8ff3a8f46d540.json",
+     "sha256": "738910b9147f617f2606e5cd6cac86ea59b40c8b28491c814ba8ff3a8f46d540"
+    },
+    {
+     "bytes": 2098,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-8914eb74533d1491b72c3098159c35894305fd0b8fb37222b9e3f9c1ffce76f5.json",
+     "sha256": "8914eb74533d1491b72c3098159c35894305fd0b8fb37222b9e3f9c1ffce76f5"
+    },
+    {
+     "bytes": 43617,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-b3d00ca4b33b5d9366f3490aae49dae3280bbbe67a423877e5f088b5a90837f8.json",
+     "sha256": "b3d00ca4b33b5d9366f3490aae49dae3280bbbe67a423877e5f088b5a90837f8"
+    },
+    {
+     "bytes": 3524,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-cc800f8c787736d5227f2e4725d4f9177aaa52667aaea558195b708517f593e2.json",
+     "sha256": "cc800f8c787736d5227f2e4725d4f9177aaa52667aaea558195b708517f593e2"
+    },
+    {
+     "bytes": 5996,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-d12aa36f552a37019b3f1998c2c16efc91bf07e5769e3997585035b8632fbba5.json",
+     "sha256": "d12aa36f552a37019b3f1998c2c16efc91bf07e5769e3997585035b8632fbba5"
+    },
+    {
+     "bytes": 3536,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-e131a64548d16d9621edb78049f2be55a7b156a0a7a1f5a1ecb80d65fc81d7a2.json",
+     "sha256": "e131a64548d16d9621edb78049f2be55a7b156a0a7a1f5a1ecb80d65fc81d7a2"
+    },
+    {
+     "bytes": 6249,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-e85ee177ca07bef3f1a0530b96b97d994b49d32d17d529543ae62c6bc4a5f585.json",
+     "sha256": "e85ee177ca07bef3f1a0530b96b97d994b49d32d17d529543ae62c6bc4a5f585"
+    },
+    {
+     "bytes": 5527,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-fa972c6ce2229961b009912b8f54e92733d424301e48e5c5c6b71f4c59d365e9.json",
+     "sha256": "fa972c6ce2229961b009912b8f54e92733d424301e48e5c5c6b71f4c59d365e9"
+    },
+    {
+     "bytes": 5687,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/provider/response-fbd6bf765f24a67f0a75a6f01edb6293a55ebb32b85fd13493bca2d2d80c585f.json",
+     "sha256": "fbd6bf765f24a67f0a75a6f01edb6293a55ebb32b85fd13493bca2d2d80c585f"
+    },
+    {
+     "bytes": 87296,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-37820b00f201-s6-no-follow-r2/1/trace.json",
+     "sha256": "36d114fdcc68163bbf715ff378585e83c0948dd842109b8c1a3270194261fa5a"
+    },
+    {
+     "bytes": 6690,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-42f436b5b230-s1-follow-r2/1/events.jsonl",
+     "sha256": "199c048213ee28b000a2ef903b24df4f0f76c10464e109f8d5ebce8443005e59"
+    },
+    {
+     "bytes": 2113,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-42f436b5b230-s1-follow-r2/1/provider/provider-events.jsonl",
+     "sha256": "212248622baa8c7fd51637b63697f149d939b7cfd3a5631e489b7d88df22581d"
+    },
+    {
+     "bytes": 2082,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-42f436b5b230-s1-follow-r2/1/provider/response-5d9bf0f3326984aeeb322819e175551d722af69a83eba4ccc8b81a0620dad776.json",
+     "sha256": "5d9bf0f3326984aeeb322819e175551d722af69a83eba4ccc8b81a0620dad776"
+    },
+    {
+     "bytes": 6721,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-42f436b5b230-s1-follow-r2/1/provider/response-98c12ea2d1b15c61850fd63f92ea30d5d14758db374d7ab7dfc9d8fdfa81ce21.json",
+     "sha256": "98c12ea2d1b15c61850fd63f92ea30d5d14758db374d7ab7dfc9d8fdfa81ce21"
+    },
+    {
+     "bytes": 10570,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-42f436b5b230-s1-follow-r2/1/trace.json",
+     "sha256": "ff702f9649652730e53a484255184b9fbef32cf89bffa7a0b280f38537052df1"
+    },
+    {
+     "bytes": 22503,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/events.jsonl",
+     "sha256": "a25edb33238081f9bc07d00e8e5975857186b806fc70de6fcdf0b35ed1077dab"
+    },
+    {
+     "bytes": 6072,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "bb98e6939c6f4506a8bc2b73f2ee730830cec7359bfc300d86029dd1babdafd3"
+    },
+    {
+     "bytes": 5875,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/response-32e22fc43755146485ec3f2de9cf276b7257990ce4c376e45946372b6b982265.json",
+     "sha256": "32e22fc43755146485ec3f2de9cf276b7257990ce4c376e45946372b6b982265"
+    },
+    {
+     "bytes": 5603,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/response-373e6a78b7bd051a384d86962a822f78578f50f4e8fa9b7e2048c0698868d37d.json",
+     "sha256": "373e6a78b7bd051a384d86962a822f78578f50f4e8fa9b7e2048c0698868d37d"
+    },
+    {
+     "bytes": 2174,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/response-69f54684f8fae5b2c3b036e58af8e0bbdb8e8943f427af7f487e5c89ab1a648b.json",
+     "sha256": "69f54684f8fae5b2c3b036e58af8e0bbdb8e8943f427af7f487e5c89ab1a648b"
+    },
+    {
+     "bytes": 8251,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/response-a811e28bc1e9965423df73806c81557911fe0c7f570a411cd9ecd9f91d9d57de.json",
+     "sha256": "a811e28bc1e9965423df73806c81557911fe0c7f570a411cd9ecd9f91d9d57de"
+    },
+    {
+     "bytes": 2045,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/provider/response-be102a6ed11d76af8eed12e6ece6197b85ff7ac67e52327eb85769b468f993f0.json",
+     "sha256": "be102a6ed11d76af8eed12e6ece6197b85ff7ac67e52327eb85769b468f993f0"
+    },
+    {
+     "bytes": 32023,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0061-s1-no-follow-r1/1/trace.json",
+     "sha256": "22e6cf9a324c9c9754848aa59047297ca5008e7bdf836b280dc928ee599c0874"
+    },
+    {
+     "bytes": 18955,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/events.jsonl",
+     "sha256": "6a921cadc90cb4fa86a50fc42a2bb533d3d8fb1e91e7400ef2be0ffde9e5de1e"
+    },
+    {
+     "bytes": 4875,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "e07159df045121fb9e581b07fedd693098edb060447e604fc6377150075c2a43"
+    },
+    {
+     "bytes": 5243,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/provider/response-2433f3c4d49b4699db57922fe87bc0fe7b53e02f235e7ce43fcbfe6d3d32413c.json",
+     "sha256": "2433f3c4d49b4699db57922fe87bc0fe7b53e02f235e7ce43fcbfe6d3d32413c"
+    },
+    {
+     "bytes": 11187,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/provider/response-4fb9d002b8c901bb56159e8ac62d4325031d93165fc0b6ed166ba43bbd51c9e7.json",
+     "sha256": "4fb9d002b8c901bb56159e8ac62d4325031d93165fc0b6ed166ba43bbd51c9e7"
+    },
+    {
+     "bytes": 2023,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/provider/response-b726b1b5bdfec410c29c5530b51cbc4456d45bf3c00acd5cef60447783587279.json",
+     "sha256": "b726b1b5bdfec410c29c5530b51cbc4456d45bf3c00acd5cef60447783587279"
+    },
+    {
+     "bytes": 8591,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/provider/response-f85ed6b59257a733ca3d7e7a4905ce7e3d49dcd7598d26d95a2fef334cadf8c3.json",
+     "sha256": "f85ed6b59257a733ca3d7e7a4905ce7e3d49dcd7598d26d95a2fef334cadf8c3"
+    },
+    {
+     "bytes": 26831,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0070-s1-follow-r1/1/trace.json",
+     "sha256": "d433481c18b8eeacd59175770a24b376913ec667131ef25cb6d5d5a44e5a6c26"
+    },
+    {
+     "bytes": 28731,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/events.jsonl",
+     "sha256": "431dc3a3f39e673b3a5ae223a789645e94563043735940a858d070b269a538bf"
+    },
+    {
+     "bytes": 6119,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "763bf00054e6898cc012897ef215b5eea110b3ffe22e433a05dfc224c4c23820"
+    },
+    {
+     "bytes": 2057,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/response-03564e0bdf26ade0e48094fff2fc57b7b79fd76daabd754d4e64cb31d734e7c4.json",
+     "sha256": "03564e0bdf26ade0e48094fff2fc57b7b79fd76daabd754d4e64cb31d734e7c4"
+    },
+    {
+     "bytes": 193359,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/response-657536a844de6982fe37feefd0e932e3d3375bd30f1eded21512b9b56ad20575.json",
+     "sha256": "657536a844de6982fe37feefd0e932e3d3375bd30f1eded21512b9b56ad20575"
+    },
+    {
+     "bytes": 6247,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/response-7edb2fa7f7071e163908c9569f265478d81ddf2bb491b894fdf88a3fe9dfa2fb.json",
+     "sha256": "7edb2fa7f7071e163908c9569f265478d81ddf2bb491b894fdf88a3fe9dfa2fb"
+    },
+    {
+     "bytes": 5778,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/response-d3fb98b9d10dae98fb48c624e8c43fad28d099de383fc768a7846e981b6a6637.json",
+     "sha256": "d3fb98b9d10dae98fb48c624e8c43fad28d099de383fc768a7846e981b6a6637"
+    },
+    {
+     "bytes": 2164,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/provider/response-f2f5c48840ff26a7003598d8663a99f025627c2080763e77963f61e3addf0d7b.json",
+     "sha256": "f2f5c48840ff26a7003598d8663a99f025627c2080763e77963f61e3addf0d7b"
+    },
+    {
+     "bytes": 43828,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-6337600cdc97-docker_docs_faq_0138-s1-follow-r1/1/trace.json",
+     "sha256": "8f0ccc0b10147633d62206cfa249e11ee2d4ba5098482e0f5e1631c74eef83a2"
+    },
+    {
+     "bytes": 21881,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/events.jsonl",
+     "sha256": "21fc816d8df9937e99f778066aea96258386d4163c8d7af232bf691d0e2c8970"
+    },
+    {
+     "bytes": 4710,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "8758a88a62bc1f69b072565ca1049b8d04c06d2e2ac970c24a4cfdc48856bd59"
+    },
+    {
+     "bytes": 12297,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/provider/response-1383247b6451d99a15180b2ec8abd6594fe37ef5cc4f5530edb2d48fc3135d89.json",
+     "sha256": "1383247b6451d99a15180b2ec8abd6594fe37ef5cc4f5530edb2d48fc3135d89"
+    },
+    {
+     "bytes": 5111,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/provider/response-381c3e77450d887f1cbf41cd4c6cf25ca58d3d6f1a0c8befaafc44870f05c11c.json",
+     "sha256": "381c3e77450d887f1cbf41cd4c6cf25ca58d3d6f1a0c8befaafc44870f05c11c"
+    },
+    {
+     "bytes": 2163,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/provider/response-61b6089af722ad0583402a6f57b70057c8642cc1020088aeaf1f32603d794040.json",
+     "sha256": "61b6089af722ad0583402a6f57b70057c8642cc1020088aeaf1f32603d794040"
+    },
+    {
+     "bytes": 2039,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/provider/response-ba9d3c2404891bd7a63f0ea423e95c92c5ae81273dc11237d0419f72e01e272d.json",
+     "sha256": "ba9d3c2404891bd7a63f0ea423e95c92c5ae81273dc11237d0419f72e01e272d"
+    },
+    {
+     "bytes": 34647,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-9a7d7f0e7b47-docker_docs_faq_0057-s1-no-follow-r1/1/trace.json",
+     "sha256": "d2c5d9e7ba3440cae63d1c890ea5d0240641c27bf2c54667700a9418a8dce00c"
+    },
+    {
+     "bytes": 5945,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1/1/events.jsonl",
+     "sha256": "119da7e7e670e61b2599e2ab27b702fc43bc8f7113e746a27f477ab566be0c44"
+    },
+    {
+     "bytes": 2088,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1/1/provider/provider-events.jsonl",
+     "sha256": "91deed957967eeffad0e87bfa75fe8487a78562f06417a2ed0208f795b196307"
+    },
+    {
+     "bytes": 5037,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1/1/provider/response-3b249bc8226748df0e8d719faca2dc65800a12236cfd0558754d6e93927bda08.json",
+     "sha256": "3b249bc8226748df0e8d719faca2dc65800a12236cfd0558754d6e93927bda08"
+    },
+    {
+     "bytes": 2035,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1/1/provider/response-7eb73e52c7055254ae3a0bad60a8cb9a0d8d480bedefe00e8f4754203b028549.json",
+     "sha256": "7eb73e52c7055254ae3a0bad60a8cb9a0d8d480bedefe00e8f4754203b028549"
+    },
+    {
+     "bytes": 8792,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/infrastructure-attempts/v-c2c2731d2141-docker_docs_faq_0132-s1-no-follow-r1/1/trace.json",
+     "sha256": "92b4e2d706c8ce200216365cef7d9d6542fed675ec3108ca2bf84799e4c798a4"
+    },
+    {
+     "bytes": 1122,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/commands-t2-v-5d89a3217d52.jsonl",
+     "sha256": "7a0c7b5a89ad44f39e8f8ef27839c1037fdb07f4a3f9c910aec052e735624f9e"
+    },
+    {
+     "bytes": 1122,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/commands-t2-v-6337600cdc97.jsonl",
+     "sha256": "d668488827ca2778e772b9d5a0d72ca59e6c7277671c48879978a78447200fd8"
+    },
+    {
+     "bytes": 564,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/commands-t2-v-9a7d7f0e7b47.jsonl",
+     "sha256": "59ab119f11a4446c41f330081ecf884afe25f3cc4cfa9337a1deefdcf1321eeb"
+    },
+    {
+     "bytes": 1122,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/commands-t2-v-c2c2731d2141.jsonl",
+     "sha256": "7c169eb879f5fbae62d32c114cf07aafff3d49d26f1cbed4b64643567ed0b032"
+    },
+    {
+     "bytes": 6973,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/provider-events.jsonl",
+     "sha256": "4fa4daf3a2ce50f39b23da40169ff00225c7fb0dbde7fb6d4996d0003d6aa2a9"
+    },
+    {
+     "bytes": 8523,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/response-150f96f9980f3aec9171ca062300634dd43b7a612d6746569555ee8d301d7556.json",
+     "sha256": "150f96f9980f3aec9171ca062300634dd43b7a612d6746569555ee8d301d7556"
+    },
+    {
+     "bytes": 7654,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/response-2fcb1b4d7670cc0d933de7bd9670f1a84598b4e7cd52dc9228352bdd34f2e7ae.json",
+     "sha256": "2fcb1b4d7670cc0d933de7bd9670f1a84598b4e7cd52dc9228352bdd34f2e7ae"
+    },
+    {
+     "bytes": 2165,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/response-a550879fedcd68d11753807e312baefc6068cec30a823ba2a5a5dd2a685d6840.json",
+     "sha256": "a550879fedcd68d11753807e312baefc6068cec30a823ba2a5a5dd2a685d6840"
+    },
+    {
+     "bytes": 2005,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/response-b9309b75610b6d865938c2a78bddebf34e6dedbe238b8de0237d34226062a935.json",
+     "sha256": "b9309b75610b6d865938c2a78bddebf34e6dedbe238b8de0237d34226062a935"
+    },
+    {
+     "bytes": 10111,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1-provider/response-fa60dd9ca46f788c7538cd8ea30255670c93c84a4eabd724fb68b3b0f37c76d9.json",
+     "sha256": "fa60dd9ca46f788c7538cd8ea30255670c93c84a4eabd724fb68b3b0f37c76d9"
+    },
+    {
+     "bytes": 22443,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1.events.jsonl",
+     "sha256": "a454cb99ab01f03a542b5941dfec218180bb305355c4339cb84adbc8eb9b7011"
+    },
+    {
+     "bytes": 31208,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-follow-r1.json",
+     "sha256": "aa358b2d26d735fe84fe7ffa0080b5d9676f558e49684d79dab3ad6efe1243f9"
+    },
+    {
+     "bytes": 4397,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1-provider/provider-events.jsonl",
+     "sha256": "351d3a2654232060ad35e97c46615e1f68eb10a709c85d4ab4a67217be7c95e0"
+    },
+    {
+     "bytes": 5886,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1-provider/response-8b4c5f38e1ffd0b6c459e2025f9ca85bc4f74a17256fa17d21ff41b62094eabc.json",
+     "sha256": "8b4c5f38e1ffd0b6c459e2025f9ca85bc4f74a17256fa17d21ff41b62094eabc"
+    },
+    {
+     "bytes": 2032,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1-provider/response-9f2d81ebda9dc52c339c0002337ce3a35670a8ea23912780f5a07f9c2b0eef0e.json",
+     "sha256": "9f2d81ebda9dc52c339c0002337ce3a35670a8ea23912780f5a07f9c2b0eef0e"
+    },
+    {
+     "bytes": 2159,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1-provider/response-cdaf164a70c3514925ad88d567249abf5c87455eb072dbd591a99bef633ed925.json",
+     "sha256": "cdaf164a70c3514925ad88d567249abf5c87455eb072dbd591a99bef633ed925"
+    },
+    {
+     "bytes": 13157,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1.events.jsonl",
+     "sha256": "a7c9c6081b2a74de5a49d732278b8baf15d230db31c4981444b65b8627a2ea9d"
+    },
+    {
+     "bytes": 19074,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-5d89a3217d52-docker_docs_-s1-no-follow-r1.json",
+     "sha256": "dd073cc3c5f13a542f3ea7a4d8a24bd88a31cb9156ad570cc2dbf874fd0ebfd6"
+    },
+    {
+     "bytes": 12531,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/provider-events.jsonl",
+     "sha256": "1fdf25123cd52ebe8a5c37fae3c0c2e72bcd952b79a085dc10b5c84fe4522de5"
+    },
+    {
+     "bytes": 6675,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-0764f39848202f0539852f3326b63a341e440cd4c3c776261e17272abffbb0f1.json",
+     "sha256": "0764f39848202f0539852f3326b63a341e440cd4c3c776261e17272abffbb0f1"
+    },
+    {
+     "bytes": 2178,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-1138a5961f54ca3d31196c1d1502940b3ce89e5f6ec964864606342c8300cc82.json",
+     "sha256": "1138a5961f54ca3d31196c1d1502940b3ce89e5f6ec964864606342c8300cc82"
+    },
+    {
+     "bytes": 6169,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-2eba6c25c2a62ce51938fa8a88c18f1fb11ca3ee2131d91655aba4b8f9414783.json",
+     "sha256": "2eba6c25c2a62ce51938fa8a88c18f1fb11ca3ee2131d91655aba4b8f9414783"
+    },
+    {
+     "bytes": 5802,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-4807cdc79d6aecbc606be6a8011079d1031a167b6329b67d9e4542a9a6fe0567.json",
+     "sha256": "4807cdc79d6aecbc606be6a8011079d1031a167b6329b67d9e4542a9a6fe0567"
+    },
+    {
+     "bytes": 6472,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-70db5b0734656cfb1720cc7f45f89d8d594d1bde9add87b5eb1f323b9f8375ed.json",
+     "sha256": "70db5b0734656cfb1720cc7f45f89d8d594d1bde9add87b5eb1f323b9f8375ed"
+    },
+    {
+     "bytes": 7940,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-96234d3b5055c97f482079e8e98a8db2a1640f49b47e87d639968a2a67e87a4e.json",
+     "sha256": "96234d3b5055c97f482079e8e98a8db2a1640f49b47e87d639968a2a67e87a4e"
+    },
+    {
+     "bytes": 11391,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-980c7343e37fb6809671a31558290c715990f3d20c5d222aa0a584a2ca1d5007.json",
+     "sha256": "980c7343e37fb6809671a31558290c715990f3d20c5d222aa0a584a2ca1d5007"
+    },
+    {
+     "bytes": 2030,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1-provider/response-b8eb7424ebd2b89087ff3cd0b3023698c4dbf3ebb2d37af0fc7919dc6bc542f3.json",
+     "sha256": "b8eb7424ebd2b89087ff3cd0b3023698c4dbf3ebb2d37af0fc7919dc6bc542f3"
+    },
+    {
+     "bytes": 41012,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1.events.jsonl",
+     "sha256": "88039d74cca01a6a2beda284301e318a7e8f61f35d6e443f98d37bae00485d5a"
+    },
+    {
+     "bytes": 56740,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-follow-r1.json",
+     "sha256": "6a992ebbbaa4d1355c6832211409e5bb1334fc91952dc989fe4c663869c2487d"
+    },
+    {
+     "bytes": 5800,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1-provider/provider-events.jsonl",
+     "sha256": "bf825f56cf330a52bbe62f35549b75c643858222f8ece69a3d10a2547bd35c2e"
+    },
+    {
+     "bytes": 2151,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1-provider/response-347ecd2ef2bca8fdf2a831ef48509e69b8252a9cc0a3e613d30119f3c5a695e3.json",
+     "sha256": "347ecd2ef2bca8fdf2a831ef48509e69b8252a9cc0a3e613d30119f3c5a695e3"
+    },
+    {
+     "bytes": 2046,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1-provider/response-4dfc9d481743e43614fb4340010dd39949ab26c04282122d700ef4f52b8734a0.json",
+     "sha256": "4dfc9d481743e43614fb4340010dd39949ab26c04282122d700ef4f52b8734a0"
+    },
+    {
+     "bytes": 5329,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1-provider/response-5e8850e1b3e9767cc4f7ec59f995ddd9f3799a2b9f3544b6ef44bb6471fc012b.json",
+     "sha256": "5e8850e1b3e9767cc4f7ec59f995ddd9f3799a2b9f3544b6ef44bb6471fc012b"
+    },
+    {
+     "bytes": 8136,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1-provider/response-b770d90ee9affe83b77446509f848d87ea7fa6eef84b827c5847246bdb16ec38.json",
+     "sha256": "b770d90ee9affe83b77446509f848d87ea7fa6eef84b827c5847246bdb16ec38"
+    },
+    {
+     "bytes": 23205,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1.events.jsonl",
+     "sha256": "ef15a2f2eaf0c0cbff1d31f1fcaf93a9450ca683996731bb711622aec020b0ef"
+    },
+    {
+     "bytes": 36268,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-6337600cdc97-docker_docs_-s1-no-follow-r1.json",
+     "sha256": "ff1b93946b34c0081e9e16df17c731ad4e9a5a420bf0032293ac0084547dd4b9"
+    },
+    {
+     "bytes": 4106,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1-provider/provider-events.jsonl",
+     "sha256": "c72870324e2a0ea156521af2486c2f6bca0bd6bdce8c019d144fa57be1295ccc"
+    },
+    {
+     "bytes": 5678,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1-provider/response-b098385acb5b256f6f1f09e16aef5ec78c0c255ab6be72b32cfd3e4ed5c33e42.json",
+     "sha256": "b098385acb5b256f6f1f09e16aef5ec78c0c255ab6be72b32cfd3e4ed5c33e42"
+    },
+    {
+     "bytes": 2152,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1-provider/response-d52299a030b6393eac7b2a3bf727477c64bf6b9a8753ad8385f852acd08e43dd.json",
+     "sha256": "d52299a030b6393eac7b2a3bf727477c64bf6b9a8753ad8385f852acd08e43dd"
+    },
+    {
+     "bytes": 2039,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1-provider/response-d7c79093c907030b2680698c209502ed06079e78408d896334642c5655d9d222.json",
+     "sha256": "d7c79093c907030b2680698c209502ed06079e78408d896334642c5655d9d222"
+    },
+    {
+     "bytes": 9637,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1.events.jsonl",
+     "sha256": "fc7f77049c320e37677f4fae083dfcbfccd68e2c531c2e7f6fea991023f9da36"
+    },
+    {
+     "bytes": 13749,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-9a7d7f0e7b47-docker_docs_-s1-no-follow-r1.json",
+     "sha256": "70b80c980a9814f9b7d766d5e9db174ec80ce1c2d1ff74141311884b0a65b799"
+    },
+    {
+     "bytes": 5835,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1-provider/provider-events.jsonl",
+     "sha256": "50dd8b7eba76473b8c0be253c462835f643308b379d7b0df85b94d2595e38d0d"
+    },
+    {
+     "bytes": 5379,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1-provider/response-05474d54539ab6f3a1759f85bd49e1f7d54edd827c0a3a23b16a9f19409106f4.json",
+     "sha256": "05474d54539ab6f3a1759f85bd49e1f7d54edd827c0a3a23b16a9f19409106f4"
+    },
+    {
+     "bytes": 2146,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1-provider/response-5da079db92147f4c414e2b6f14eada89165c304419a913261b1b0edb344408e1.json",
+     "sha256": "5da079db92147f4c414e2b6f14eada89165c304419a913261b1b0edb344408e1"
+    },
+    {
+     "bytes": 6785,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1-provider/response-5ea9206de61d8f5ab22997ff3c9db454eb3663378e774ddd1d8c675393c4dcd6.json",
+     "sha256": "5ea9206de61d8f5ab22997ff3c9db454eb3663378e774ddd1d8c675393c4dcd6"
+    },
+    {
+     "bytes": 2027,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1-provider/response-a51d566ee65dc43d3655df377a0ddd39c2705c1fe6cac16b4cf66c6f38cee3d8.json",
+     "sha256": "a51d566ee65dc43d3655df377a0ddd39c2705c1fe6cac16b4cf66c6f38cee3d8"
+    },
+    {
+     "bytes": 19021,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1.events.jsonl",
+     "sha256": "7f8c9ad432642ba05829a787a2c4dfb78c6d35a86c3a3cbe0350a128d9a25a87"
+    },
+    {
+     "bytes": 28690,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-follow-r1.json",
+     "sha256": "f3f018a81ccfe88a6c6c9337d050f59542227008a3b6cce9f5e5d1f076b489e3"
+    },
+    {
+     "bytes": 4161,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1-provider/provider-events.jsonl",
+     "sha256": "1b9e5f9ba7f32fba0c5f9446bb4b7803612b330aee41626c6252365ae65ba718"
+    },
+    {
+     "bytes": 2032,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1-provider/response-304d505d4a7f8067ab11b1f0e7bd334b1ed2ae7113d1f7329e42418ac9fe1819.json",
+     "sha256": "304d505d4a7f8067ab11b1f0e7bd334b1ed2ae7113d1f7329e42418ac9fe1819"
+    },
+    {
+     "bytes": 2156,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1-provider/response-48ae6b59a9f7aae3e9353e591bc73b803335b6f53eee3feacf478c435c3316fd.json",
+     "sha256": "48ae6b59a9f7aae3e9353e591bc73b803335b6f53eee3feacf478c435c3316fd"
+    },
+    {
+     "bytes": 5993,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1-provider/response-5350568596e029957e9e67c0f69af1ce1e6918af1fcad134a72532d6943f5f1e.json",
+     "sha256": "5350568596e029957e9e67c0f69af1ce1e6918af1fcad134a72532d6943f5f1e"
+    },
+    {
+     "bytes": 11613,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1.events.jsonl",
+     "sha256": "0086b6c9ef787cdd55c441258de9a9c6b362fb8036f91934f8bf9748b0ab5fe8"
+    },
+    {
+     "bytes": 17109,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/superseded/t2-stem-collision-2026-10-24/t2/v-c2c2731d2141-docker_docs_-s1-no-follow-r1.json",
+     "sha256": "2303aa4a8be6156aba3375fe08a0ef30f6fcac9f5c3d7713e4092c00574563ef"
+    }
+   ]
+  },
+  "keep_separate": [
+   "tier",
+   "search budget (s1/s6)",
+   "follow condition",
+   "arm",
+   "replicate"
+  ],
+  "t1": "15 tasks x 4 arms x {s1,s6} x {follow,no-follow} x 2 replicates; route and citation audit plus tier-1 rubric page references by id (not exhaustive, never verified negatives); no tier-2 labels",
+  "t2_comparability": "post-D-P5 common 105 (wc-rejudge-19-result common_set), labelled separately",
+  "t2_descriptive": "all 111 FAQ questions x 4 arms x {follow, no-follow} x 1 replicate"
+ },
+ "pre_freeze_observations": {
+  "identity_smoke": "LT variant only: 4,666/4,666 pooled page hashes equal the exported file bytes; the exported LT graph equals the Sprint 22 wc/LT bundle (1,823 nodes, 5,203 arcs, canonical 80548ca0...)",
+  "ra_tests": "14 fixture tests on host; focused suite in image icsc-s24: 438 OK (skipped 2)",
+  "replay_probe": "a scratch reimplementation reproduced every recorded call_start and step history_sha256 on the planning example trace (13 calls) and on 10 further traces with recorded compactions (6 tier 1, 4 tier 2: the first in lexicographic order with a compaction event); no chain summary was computed"
+ },
+ "reconciliation_targets": {
+  "added": {
+   "LT": 39,
+   "R0": 20
+  },
+  "follows": {
+   "LT": 76,
+   "O": 67,
+   "R0": 68,
+   "S": 52
+  },
+  "landing_mean_common105": {
+   "LT": 0.17142857142857143,
+   "O": 0.11428571428571428,
+   "R0": 0.12380952380952381,
+   "S": 0.09523809523809523
+  },
+  "note": "historical definition: wr.annotate_trace / navigation_metrics count follow actions by name; reproduced with the pinned helpers before success-qualified counts; old evidence is never rewritten",
+  "s20_evidence_sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+ },
+ "schema_version": "docspectra.icsc.lt_trace_audit_24.plan.v1",
+ "status": "post hoc retrospective analysis plan, frozen before the audit's chain summaries; not independent confirmation or pre-registration. The audit question was chosen after the Sprint 19/20 results were known.",
+ "status_vocabulary": {
+  "action": [
+   "accepted",
+   "executed_tool_error",
+   "rejected",
+   "indeterminate"
+  ],
+  "edge_class": [
+   "mapped_baseline",
+   "added",
+   "unknown",
+   "not_an_edge"
+  ],
+  "final_context": [
+   "full",
+   "partial",
+   "none",
+   "unknown"
+  ],
+  "first_exposure": [
+   "follow_only",
+   "read_only",
+   "mixed",
+   "none"
+  ],
+  "label": [
+   "supported",
+   "not_supported",
+   "undetermined",
+   "never_judged",
+   "identity_mismatch",
+   "not_applicable"
+  ],
+  "replay": [
+   "verified",
+   "unmatched",
+   "not_reached"
+  ],
+  "span_exposure": [
+   "full",
+   "partial",
+   "none",
+   "unmappable_only",
+   "no_valid_span",
+   "not_applicable"
+  ]
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "amendment": 1,
+ "amends": {
+  "bytes": 68974,
+  "path": "git/context/evidence/lt-trace-audit-24-plan-v1-2026-10-25.json",
+  "sha256": "229de8d6fffb42018886c34b502fab070eea0b3085e97041697151f3be195f4c"
+ },
+ "change": "edge_class.new_page_incident: an endpoint is a page the Sprint 15 derive_mapping receipt lists in `added` (variant pages absent from the baseline). Plan v1 said 'an endpoint outside the mapping image'; the driver implemented that as the values of receipt['mapping'], which maps only removed baseline pages to survivors, so every edge (all of O's 2,494 unchanged edges included) was flagged. Edge classes themselves (added vs mapped baseline) are unchanged.",
+ "created": "2026-10-25",
+ "detected_by": "cross-tab of class by flag in the first witness output: O mapped_baseline/True 2494; LT added/True 3318, mapped/True 1885; R0 added/True 2023, mapped/True 2479",
+ "driver_before": {
+  "bytes": 58270,
+  "note": "driver bytes at amendment time, i.e. after the fix; the frozen v1 driver is pinned in the plan",
+  "path": "git/context/scripts/lt_trace_audit_24.py",
+  "sha256": "c05515f8b40f6faf184c16eb611ee10de80ba0a89871496737118470b7386bdd"
+ },
+ "model_calls": 0,
+ "recorded_before": "re-running the witness stage and before any operator run or chain summary",
+ "schema_version": "docspectra.icsc.lt_trace_audit_24.plan_amendment.v1",
+ "superseded_output": [
+  {
+   "bytes": 484126,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/edges-v-5d89a3217d52.jsonl",
+   "sha256": "df5d3a930869f3f15326c5c730f1211e5fc3bc42e41ae3d4bd7b58eb19a540c8"
+  },
+  {
+   "bytes": 972353,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/edges-v-6337600cdc97.jsonl",
+   "sha256": "46a13ead6a2fe32e89668d2773d4e2d155f827be6467aa14494d31f4ab566787"
+  },
+  {
+   "bytes": 484126,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/edges-v-9a7d7f0e7b47.jsonl",
+   "sha256": "df5d3a930869f3f15326c5c730f1211e5fc3bc42e41ae3d4bd7b58eb19a540c8"
+  },
+  {
+   "bytes": 841978,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/edges-v-c2c2731d2141.jsonl",
+   "sha256": "6a14192d32bd924ca10e8e61f761f5547e9d29eaf89be6d07b1424e4b4379e6b"
+  },
+  {
+   "bytes": 99048,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/legacy-v-5d89a3217d52.jsonl",
+   "sha256": "ae81e7bbc9097c1f99a2084f65f357aa0d20faf38e30072345dfa77b2253636c"
+  },
+  {
+   "bytes": 105784,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/legacy-v-6337600cdc97.jsonl",
+   "sha256": "6399f11a21f0234a7c12a631d568022d5bcb9d87b80432efec689f3a0fe42da0"
+  },
+  {
+   "bytes": 94975,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/legacy-v-9a7d7f0e7b47.jsonl",
+   "sha256": "446299500a58a97fc183e6869ff10952f5bcbfd13427c0ed74060cd8ea37c05d"
+  },
+  {
+   "bytes": 104485,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/legacy-v-c2c2731d2141.jsonl",
+   "sha256": "9b2ddd9eacf3388630578bb3bc9b6128daf84cf0dee0805bd4c68e19045336f6"
+  },
+  {
+   "bytes": 12670,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/witness.json",
+   "sha256": "8b68430c9033dbbd1e97cbf7ad752273e16770a9080e5837b5a0f5212c514b29"
+  },
+  {
+   "bytes": 2215,
+   "path": "artifacts/lt-trace-audit-24-v1/witness.superseded-1/witness.log",
+   "sha256": "645afe4cda60bd82c8b863f3a578f197c9fb473fa16d9a41e067f110184f20b9"
+  }
+ ],
+ "unchanged_results_of_first_witness": {
+  "legacy": {
+   "LT": {
+    "added": 39,
+    "follows": 76,
+    "landing_mean_common105": 0.17142857142857143
+   },
+   "O": {
+    "added": 0,
+    "follows": 67,
+    "landing_mean_common105": 0.11428571428571428
+   },
+   "R0": {
+    "added": 20,
+    "follows": 68,
+    "landing_mean_common105": 0.12380952380952381
+   },
+   "S": {
+    "added": 0,
+    "follows": 52,
+    "landing_mean_common105": 0.09523809523809523
+   }
+  },
+  "s20_recomputed_sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23",
+  "s20_reproduced": true
+ }
+}

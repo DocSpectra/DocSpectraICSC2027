@@ -1,0 +1,2411 @@
+{
+  "blind_summary_sha256": {
+    "A": "ed628eec29db8442a4dd2eb71657080f6debb1a152a563f3b7fb51b8a05e7957",
+    "A2": "657f494e8c2a086b5e01f105778f0ef513b1678b8e146793c7aa743048a160dc",
+    "B": "0eefb17bfd36444555a3e0c3fa99de4ee3bec5059091aba53774925b858b274b"
+  },
+  "by_pair_type": {
+    "A": {
+      "O-R0": {
+        "base_wins": 6,
+        "other_wins": 9,
+        "pairs": 20,
+        "ties": 5,
+        "unavailable": 0
+      },
+      "O-S": {
+        "base_wins": 6,
+        "other_wins": 7,
+        "pairs": 20,
+        "ties": 7,
+        "unavailable": 0
+      },
+      "S-R0": {
+        "base_wins": 5,
+        "other_wins": 8,
+        "pairs": 20,
+        "ties": 7,
+        "unavailable": 0
+      }
+    },
+    "A2": {
+      "O-R0": {
+        "base_wins": 5,
+        "other_wins": 9,
+        "pairs": 20,
+        "ties": 6,
+        "unavailable": 0
+      },
+      "O-S": {
+        "base_wins": 4,
+        "other_wins": 8,
+        "pairs": 20,
+        "ties": 8,
+        "unavailable": 0
+      },
+      "S-R0": {
+        "base_wins": 4,
+        "other_wins": 10,
+        "pairs": 20,
+        "ties": 6,
+        "unavailable": 0
+      }
+    },
+    "B": {
+      "O-R0": {
+        "base_wins": 4,
+        "other_wins": 9,
+        "pairs": 20,
+        "ties": 7,
+        "unavailable": 0
+      },
+      "O-S": {
+        "base_wins": 8,
+        "other_wins": 7,
+        "pairs": 20,
+        "ties": 5,
+        "unavailable": 0
+      },
+      "S-R0": {
+        "base_wins": 3,
+        "other_wins": 11,
+        "pairs": 20,
+        "ties": 6,
+        "unavailable": 0
+      }
+    }
+  },
+  "by_pair_type_A": {
+    "O-R0": {
+      "base_wins": 6,
+      "other_wins": 9,
+      "pairs": 20,
+      "ties": 5,
+      "unavailable": 0
+    },
+    "O-S": {
+      "base_wins": 6,
+      "other_wins": 7,
+      "pairs": 20,
+      "ties": 7,
+      "unavailable": 0
+    },
+    "S-R0": {
+      "base_wins": 5,
+      "other_wins": 8,
+      "pairs": 20,
+      "ties": 7,
+      "unavailable": 0
+    }
+  },
+  "cells_A": [
+    {
+      "condition": "s1-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 1,
+        "S": 1
+      },
+      "question_id": "3b5890ab4c45",
+      "ranking": [
+        [
+          "S",
+          "R0"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 1,
+          "correctness": 5,
+          "fit": 1
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-no-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 2,
+        "S": 0
+      },
+      "question_id": "3b5890ab4c45",
+      "ranking": [
+        [
+          "R0"
+        ],
+        [
+          "S"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 3,
+          "fit": 3
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 5,
+          "fit": 3
+        },
+        "S": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 1,
+          "correctness": 5,
+          "fit": 1
+        }
+      }
+    },
+    {
+      "condition": "s6-follow",
+      "net_wins": {
+        "O": 0,
+        "R0": 0,
+        "S": 0
+      },
+      "question_id": "3b5890ab4c45",
+      "ranking": [
+        [
+          "O",
+          "S",
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-no-follow",
+      "net_wins": {
+        "O": 0,
+        "R0": 0,
+        "S": 0
+      },
+      "question_id": "3b5890ab4c45",
+      "ranking": [
+        [
+          "S",
+          "R0",
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-follow",
+      "net_wins": {
+        "O": 2,
+        "R0": -2,
+        "S": 0
+      },
+      "question_id": "4fcc92145464",
+      "ranking": [
+        [
+          "O"
+        ],
+        [
+          "S"
+        ],
+        [
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 3,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 3,
+          "clarity": 4,
+          "completeness": 3,
+          "correctness": 2,
+          "fit": 4
+        },
+        "S": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 3,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-no-follow",
+      "net_wins": {
+        "O": 2,
+        "R0": 0,
+        "S": -2
+      },
+      "question_id": "4fcc92145464",
+      "ranking": [
+        [
+          "O"
+        ],
+        [
+          "R0"
+        ],
+        [
+          "S"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 2,
+          "correctness": 3,
+          "fit": 3
+        }
+      }
+    },
+    {
+      "condition": "s6-follow",
+      "net_wins": {
+        "O": 0,
+        "R0": 2,
+        "S": -2
+      },
+      "question_id": "4fcc92145464",
+      "ranking": [
+        [
+          "R0"
+        ],
+        [
+          "O"
+        ],
+        [
+          "S"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 2,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 2,
+          "correctness": 2,
+          "fit": 3
+        }
+      }
+    },
+    {
+      "condition": "s6-no-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 2,
+        "S": 0
+      },
+      "question_id": "4fcc92145464",
+      "ranking": [
+        [
+          "R0"
+        ],
+        [
+          "S"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 2,
+          "correctness": 2,
+          "fit": 3
+        },
+        "R0": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 3,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 3,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-follow",
+      "net_wins": {
+        "O": 1,
+        "R0": -2,
+        "S": 1
+      },
+      "question_id": "d5686022be2b",
+      "ranking": [
+        [
+          "O",
+          "S"
+        ],
+        [
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-no-follow",
+      "net_wins": {
+        "O": 0,
+        "R0": 0,
+        "S": 0
+      },
+      "question_id": "d5686022be2b",
+      "ranking": [
+        [
+          "O",
+          "R0",
+          "S"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 1,
+        "S": 1
+      },
+      "question_id": "d5686022be2b",
+      "ranking": [
+        [
+          "R0",
+          "S"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 4,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-no-follow",
+      "net_wins": {
+        "O": 1,
+        "R0": 1,
+        "S": -2
+      },
+      "question_id": "d5686022be2b",
+      "ranking": [
+        [
+          "R0",
+          "O"
+        ],
+        [
+          "S"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 3,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 1,
+        "S": 1
+      },
+      "question_id": "ec6fdb1c0596",
+      "ranking": [
+        [
+          "R0",
+          "S"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 4,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-no-follow",
+      "net_wins": {
+        "O": 1,
+        "R0": -2,
+        "S": 1
+      },
+      "question_id": "ec6fdb1c0596",
+      "ranking": [
+        [
+          "S",
+          "O"
+        ],
+        [
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 3,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 2,
+        "S": 0
+      },
+      "question_id": "ec6fdb1c0596",
+      "ranking": [
+        [
+          "R0"
+        ],
+        [
+          "S"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-no-follow",
+      "net_wins": {
+        "O": 1,
+        "R0": -2,
+        "S": 1
+      },
+      "question_id": "ec6fdb1c0596",
+      "ranking": [
+        [
+          "S",
+          "O"
+        ],
+        [
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 4,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-follow",
+      "net_wins": {
+        "O": -1,
+        "R0": 2,
+        "S": -1
+      },
+      "question_id": "f0432b9e0387",
+      "ranking": [
+        [
+          "R0"
+        ],
+        [
+          "S",
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s1-no-follow",
+      "net_wins": {
+        "O": 2,
+        "R0": -2,
+        "S": 0
+      },
+      "question_id": "f0432b9e0387",
+      "ranking": [
+        [
+          "O"
+        ],
+        [
+          "S"
+        ],
+        [
+          "R0"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 4,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 4,
+          "fit": 4
+        },
+        "S": {
+          "caveats": 1,
+          "clarity": 5,
+          "completeness": 2,
+          "correctness": 5,
+          "fit": 2
+        }
+      }
+    },
+    {
+      "condition": "s6-follow",
+      "net_wins": {
+        "O": -2,
+        "R0": 1,
+        "S": 1
+      },
+      "question_id": "f0432b9e0387",
+      "ranking": [
+        [
+          "S",
+          "R0"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5
+        }
+      }
+    },
+    {
+      "condition": "s6-no-follow",
+      "net_wins": {
+        "O": 1,
+        "R0": 1,
+        "S": -2
+      },
+      "question_id": "f0432b9e0387",
+      "ranking": [
+        [
+          "O",
+          "R0"
+        ],
+        [
+          "S"
+        ]
+      ],
+      "scores": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 5,
+          "fit": 5
+        },
+        "S": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 4,
+          "correctness": 3,
+          "fit": 5
+        }
+      }
+    }
+  ],
+  "cells_with_cycles": {
+    "A": 0,
+    "A2": 0,
+    "B": 0
+  },
+  "cost": {
+    "A": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1682,
+      "reasoning_tokens_median": 706.0,
+      "reported_missing": 0,
+      "reported_usd": 0.0394701,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    },
+    "A2": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1983,
+      "reasoning_tokens_median": 747.0,
+      "reported_missing": 0,
+      "reported_usd": 0.03084031,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    },
+    "B": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1895,
+      "reasoning_tokens_median": 810.0,
+      "reported_missing": 0,
+      "reported_usd": 0.0415686,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    }
+  },
+  "created": "2026-10-08",
+  "deciding_measure_A": {
+    "caveats": 3,
+    "completeness": 8,
+    "correctness": 25,
+    "fit": 5,
+    "tie": 19
+  },
+  "diagnostic_3b5890_s1_follow": [
+    {
+      "A": {
+        "caveats": {
+          "note": "It gives Hub-native troubleshooting and a private-submodule workaround, but does not explain how to configure private-submodule access for the GitHub Actions workflow it recommends.",
+          "score": 3
+        },
+        "clarity": {
+          "note": "The numbered setup and separate failure-handling section are easy to follow.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It omits the Docker Hub Builds-tab setup, GitHub source connection, repository selection, branch-to-tag rule, Autobuild enablement, and the required docker-compose.test.yml with a sut service.",
+          "score": 1
+        },
+        "correctness": {
+          "note": "The described GitHub Actions sequence gates its publish steps on successful tests, and the Hub-specific submodule guidance is presented with a clear scope limitation.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "The answer switches the build and publish work from Docker Hub to GitHub Actions, despite the request for Docker Hub to build and publish the image.",
+          "score": 1
+        }
+      },
+      "A2": {
+        "caveats": {
+          "note": "It gives a specific workaround for private submodules in Docker Hub autobuilds, but the recommended Actions workflow’s private-submodule access is left as something to configure separately. Its failure guidance is also mostly about native Hub builds, not the proposed Actions workflow.",
+          "score": 3
+        },
+        "clarity": {
+          "note": "The numbered flow is easy to follow, though switching between the recommended Actions approach and Hub-native build details makes the applicable instructions less clear.",
+          "score": 4
+        },
+        "completeness": {
+          "note": "It omits the Docker Hub Builds-tab setup, GitHub source/repository selection, branch-to-tag rule and Autobuild configuration, and the docker-compose.test.yml sut test setup. It also gives no complete workflow to carry out its alternative from the answer alone.",
+          "score": 1
+        },
+        "correctness": {
+          "note": "The GitHub Actions test-then-publish sequence and the Docker Hub-specific submodule workaround are technically coherent; no clearly wrong or unsafe instruction is stated.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "The answer makes GitHub Actions, rather than Docker Hub, perform the build and publish steps, despite the request specifying Docker Hub for that work.",
+          "score": 1
+        }
+      },
+      "B": {
+        "caveats": {
+          "note": "It covers build logs and retries, and gives a specific SSH-key workaround for a private submodule in a Docker Hub native autobuild, while clearly limiting that workaround to Hub.",
+          "score": 4
+        },
+        "clarity": {
+          "note": "The numbered workflow and separate failure/submodule section are easy to follow, and the distinction between Actions and Docker Hub native builds is explicit.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It does not give the requested Docker Hub setup: it omits the Builds tab/source connection, repository selection, branch-to-tag rule, enabling Autobuild, and the docker-compose.test.yml sut configuration.",
+          "score": 1
+        },
+        "correctness": {
+          "note": "The described GitHub Actions sequence can gate a Docker Hub push on successful tests, and the answer distinguishes it from Docker Hub’s native autobuild and Autotest behavior.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It preserves the test-then-publish goal, but moves building and publishing orchestration to GitHub Actions instead of having Docker Hub build the image as requested.",
+          "score": 3
+        }
+      },
+      "arm": "O",
+      "label": "aq-361424b1ea125c50"
+    },
+    {
+      "A": {
+        "caveats": {
+          "note": "It covers common build failures and the private-submodule SSH-key setup, with steps to investigate or validate them.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup followed by verification and troubleshooting is easy to follow.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It gives the subscription prerequisite, repository setup, Autobuild rule, test-file structure, validation steps, and build verification details.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The setup, branch/tag rule, test gating, verification, retry/timeout guidance, and private-submodule steps are consistent with the reference notes.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It directly addresses publishing from the GitHub main branch only after container tests pass, including the requested private-submodule case.",
+          "score": 5
+        }
+      },
+      "A2": {
+        "caveats": {
+          "note": "It addresses build failures and retries, time limits, and the private-submodule SSH-key setup.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup steps and separate verification and troubleshooting sections are easy to follow.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It covers connecting GitHub, choosing the repository, configuring and enabling the main-branch rule, adding the sut test service, and validating the result.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The instructions align with the documented subscription, build-rule, test-gating, verification, and private-submodule guidance.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It keeps Docker Hub responsible for building and publishing on main after configured container tests pass.",
+          "score": 5
+        }
+      },
+      "B": {
+        "caveats": {
+          "note": "It covers build failures, retries and permissions, the build time limit, and access for a private submodule.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup steps are followed by clear verification and troubleshooting sections.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It gives the repository setup, source selection, branch/tag rule, Autobuild, test configuration, validation steps, and required subscription.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The setup, test gating, build-rule behavior, subscription prerequisite, and private-submodule guidance align with the reference notes.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It addresses publishing from the main branch only after container tests pass, using Docker Hub Automated Builds and GitHub as the source.",
+          "score": 5
+        }
+      },
+      "arm": "S",
+      "label": "aq-0fb7a0722e128074"
+    },
+    {
+      "A": {
+        "caveats": {
+          "note": "It addresses test failures, builds that do not start, failed or timed-out builds, and the possible private submodule.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup and verification steps are easy to follow, with a separate list of common failure checks.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It covers the repository and GitHub connection, build rule and Autobuild, the sut test configuration, verification, and the key setup steps.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The setup, test-gating behavior, subscription prerequisite, build verification, and private-submodule guidance are consistent with the reference notes.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It keeps Docker Hub as the build and publish service, targets pushes to main, and gates publishing on container tests.",
+          "score": 5
+        }
+      },
+      "A2": {
+        "caveats": {
+          "note": "It addresses failed tests, builds that do not start, build logs and timeouts, and the private-submodule access requirements.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup followed by verification and failure checks is easy to follow.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It covers the subscription, repository and source connection, build rule and Autobuild, compose test setup, and verification steps.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The setup, test-gating, verification, and private-submodule instructions are consistent with the reference notes.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It keeps Docker Hub responsible for builds and publishing, targets pushes to main, and gates publishing on tests passing.",
+          "score": 5
+        }
+      },
+      "B": {
+        "caveats": {
+          "note": "It covers test failures, missing build triggers, build logs and timeouts, and private-submodule access and SSH configuration.",
+          "score": 5
+        },
+        "clarity": {
+          "note": "The numbered setup and verification steps followed by focused failure checks are easy to follow.",
+          "score": 5
+        },
+        "completeness": {
+          "note": "It gives the setup path, repository selection, branch/tag and Autobuild configuration, test-file example, verification steps, and subscription prerequisite.",
+          "score": 5
+        },
+        "correctness": {
+          "note": "The instructions align with the notes, including branch rules, test gating, subscription requirements, and private-submodule handling.",
+          "score": 5
+        },
+        "errors": [],
+        "fit": {
+          "note": "It addresses the requested Docker Hub build on pushes to main, gated by container tests, and covers the possible private submodule.",
+          "score": 5
+        }
+      },
+      "arm": "R0",
+      "label": "aq-889416c630c77ba8"
+    }
+  ],
+  "disclosures": {
+    "configuration": "third scorer configuration on these same 60 11b answers (11e: qwen3:14b think false, failed spread 59/60 all-5; 11f: qwen3:14b think true, failed spread 37/60 all-5). Only the scorer model changes; prompt v2, schema v2, ranking rule, criteria, thresholds, seeds and answers are unchanged. One configuration is frozen here and not adjusted after outputs are seen.",
+    "reproducibility": "closed model: no digest pin. The model string the API reports, response ids, request settings and full responses are saved; A vs A2 measures nondeterminism.",
+    "self_grading": "gpt-6-luna wrote the 60 answers it scores. Every arm is a Luna answer, so self-preference shifts all arms alike; it is reported, not corrected."
+  },
+  "errors_listed_A": {
+    "answers_scored": 60,
+    "answers_with_errors": 19,
+    "errors_total": 19
+  },
+  "human_agreement": {
+    "authority": "author decision in chat, 2026-10-08: close the refinement experiment with no human graders; the decision rests on the automated criteria only",
+    "status": "not_collected"
+  },
+  "nondeterminism_A_vs_A2": {
+    "cells": 20,
+    "exact": 263,
+    "identical_score_vectors": 34,
+    "per_measure_exact": {
+      "caveats": 55,
+      "clarity": 58,
+      "completeness": 46,
+      "correctness": 51,
+      "fit": 53
+    },
+    "per_measure_within_1": {
+      "caveats": 60,
+      "clarity": 60,
+      "completeness": 60,
+      "correctness": 57,
+      "fit": 59
+    },
+    "same_ranking_cells": 9,
+    "same_ranking_share": 0.45,
+    "scores": 300,
+    "within_1": 296,
+    "within_1_share": 0.9866666666666667
+  },
+  "pairs_A": [
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s1-follow.json",
+      "base_label": "aq-361424b1ea125c50",
+      "condition": "s1-follow",
+      "deciding_measure": "fit",
+      "other_answer": "v-cd58d2008fa6-3b5890ab4c45-s1-follow.json",
+      "other_label": "aq-0fb7a0722e128074",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-3b5890ab4c45-s1-follow.json",
+      "base_label": "aq-0fb7a0722e128074",
+      "condition": "s1-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s1-follow.json",
+      "other_label": "aq-889416c630c77ba8",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s1-follow.json",
+      "base_label": "aq-361424b1ea125c50",
+      "condition": "s1-follow",
+      "deciding_measure": "fit",
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s1-follow.json",
+      "other_label": "aq-889416c630c77ba8",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s1-no-follow.json",
+      "base_label": "aq-70b50ecb32ccd896",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-3b5890ab4c45-s1-no-follow.json",
+      "other_label": "aq-a88bd675fda43ae7",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s1-no-follow.json",
+      "base_label": "aq-70b50ecb32ccd896",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s1-no-follow.json",
+      "other_label": "aq-f518dcbe09842215",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-3b5890ab4c45-s1-no-follow.json",
+      "base_label": "aq-a88bd675fda43ae7",
+      "condition": "s1-no-follow",
+      "deciding_measure": "fit",
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s1-no-follow.json",
+      "other_label": "aq-f518dcbe09842215",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s6-follow.json",
+      "base_label": "aq-02ae66617b21822c",
+      "condition": "s6-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-3b5890ab4c45-s6-follow.json",
+      "other_label": "aq-111b0bb9456c00bc",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s6-follow.json",
+      "base_label": "aq-02ae66617b21822c",
+      "condition": "s6-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s6-follow.json",
+      "other_label": "aq-8eeea67c70e211f7",
+      "outcome": "tie",
+      "pair_type": "O-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-3b5890ab4c45-s6-follow.json",
+      "base_label": "aq-111b0bb9456c00bc",
+      "condition": "s6-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s6-follow.json",
+      "other_label": "aq-8eeea67c70e211f7",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-3b5890ab4c45-s6-no-follow.json",
+      "base_label": "aq-ad69f59859edf9ae",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s6-no-follow.json",
+      "other_label": "aq-c336656ae155fccc",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s6-no-follow.json",
+      "base_label": "aq-d2db9299d1e8e1ba",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-3b5890ab4c45-s6-no-follow.json",
+      "other_label": "aq-ad69f59859edf9ae",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-3b5890ab4c45-s6-no-follow.json",
+      "base_label": "aq-d2db9299d1e8e1ba",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-3b5890ab4c45-s6-no-follow.json",
+      "other_label": "aq-c336656ae155fccc",
+      "outcome": "tie",
+      "pair_type": "O-R0",
+      "question_id": "3b5890ab4c45"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s1-follow.json",
+      "base_label": "aq-07a615de0a514e83",
+      "condition": "s1-follow",
+      "deciding_measure": "caveats",
+      "other_answer": "v-cd58d2008fa6-4fcc92145464-s1-follow.json",
+      "other_label": "aq-3ce7fcb2ee1d8531",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s1-follow.json",
+      "base_label": "aq-07a615de0a514e83",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s1-follow.json",
+      "other_label": "aq-792ef24334339aaf",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-4fcc92145464-s1-follow.json",
+      "base_label": "aq-3ce7fcb2ee1d8531",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s1-follow.json",
+      "other_label": "aq-792ef24334339aaf",
+      "outcome": "base",
+      "pair_type": "S-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s1-no-follow.json",
+      "base_label": "aq-31b066ce9c2b9de1",
+      "condition": "s1-no-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s1-no-follow.json",
+      "other_label": "aq-77f8c46004b3fd27",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s1-no-follow.json",
+      "base_label": "aq-31b066ce9c2b9de1",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-4fcc92145464-s1-no-follow.json",
+      "other_label": "aq-9e607c80452118b5",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-4fcc92145464-s1-no-follow.json",
+      "base_label": "aq-9e607c80452118b5",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s1-no-follow.json",
+      "other_label": "aq-77f8c46004b3fd27",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s6-follow.json",
+      "base_label": "aq-d3e9b4ad86719d9f",
+      "condition": "s6-follow",
+      "deciding_measure": "fit",
+      "other_answer": "v-cd58d2008fa6-4fcc92145464-s6-follow.json",
+      "other_label": "aq-2d1874c9640e77fc",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-4fcc92145464-s6-follow.json",
+      "base_label": "aq-2d1874c9640e77fc",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s6-follow.json",
+      "other_label": "aq-ea7ddb3ef1de3787",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s6-follow.json",
+      "base_label": "aq-d3e9b4ad86719d9f",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s6-follow.json",
+      "other_label": "aq-ea7ddb3ef1de3787",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-4fcc92145464-s6-no-follow.json",
+      "base_label": "aq-060177bdd90292e1",
+      "condition": "s6-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s6-no-follow.json",
+      "other_label": "aq-2f452ba38fb87e6e",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s6-no-follow.json",
+      "base_label": "aq-e33fcca66c2aaff5",
+      "condition": "s6-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-4fcc92145464-s6-no-follow.json",
+      "other_label": "aq-060177bdd90292e1",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-4fcc92145464-s6-no-follow.json",
+      "base_label": "aq-e33fcca66c2aaff5",
+      "condition": "s6-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-4fcc92145464-s6-no-follow.json",
+      "other_label": "aq-2f452ba38fb87e6e",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "4fcc92145464"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s1-follow.json",
+      "base_label": "aq-928c1b4a654f8125",
+      "condition": "s1-follow",
+      "deciding_measure": "caveats",
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s1-follow.json",
+      "other_label": "aq-45ac9a94950adf49",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-d5686022be2b-s1-follow.json",
+      "base_label": "aq-b006b9c20ba36864",
+      "condition": "s1-follow",
+      "deciding_measure": "caveats",
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s1-follow.json",
+      "other_label": "aq-45ac9a94950adf49",
+      "outcome": "base",
+      "pair_type": "S-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s1-follow.json",
+      "base_label": "aq-928c1b4a654f8125",
+      "condition": "s1-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-d5686022be2b-s1-follow.json",
+      "other_label": "aq-b006b9c20ba36864",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s1-no-follow.json",
+      "base_label": "aq-b06dcebba7113812",
+      "condition": "s1-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s1-no-follow.json",
+      "other_label": "aq-d36a2a60b6372aec",
+      "outcome": "tie",
+      "pair_type": "O-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s1-no-follow.json",
+      "base_label": "aq-b06dcebba7113812",
+      "condition": "s1-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-d5686022be2b-s1-no-follow.json",
+      "other_label": "aq-f0722929d091aa6e",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-d5686022be2b-s1-no-follow.json",
+      "base_label": "aq-f0722929d091aa6e",
+      "condition": "s1-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s1-no-follow.json",
+      "other_label": "aq-d36a2a60b6372aec",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s6-follow.json",
+      "base_label": "aq-cb49fc7dfaf5c15c",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s6-follow.json",
+      "other_label": "aq-d0d8d794fa3721db",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s6-follow.json",
+      "base_label": "aq-cb49fc7dfaf5c15c",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-d5686022be2b-s6-follow.json",
+      "other_label": "aq-e5c97947ecb13eb4",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-d5686022be2b-s6-follow.json",
+      "base_label": "aq-e5c97947ecb13eb4",
+      "condition": "s6-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s6-follow.json",
+      "other_label": "aq-d0d8d794fa3721db",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-d5686022be2b-s6-no-follow.json",
+      "base_label": "aq-006614e2cd2c76d7",
+      "condition": "s6-no-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s6-no-follow.json",
+      "other_label": "aq-3f6aa289fe870dba",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s6-no-follow.json",
+      "base_label": "aq-a72b8bd5a19692a6",
+      "condition": "s6-no-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-cd58d2008fa6-d5686022be2b-s6-no-follow.json",
+      "other_label": "aq-006614e2cd2c76d7",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-d5686022be2b-s6-no-follow.json",
+      "base_label": "aq-a72b8bd5a19692a6",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-d5686022be2b-s6-no-follow.json",
+      "other_label": "aq-3f6aa289fe870dba",
+      "outcome": "tie",
+      "pair_type": "O-R0",
+      "question_id": "d5686022be2b"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-ec6fdb1c0596-s1-follow.json",
+      "base_label": "aq-708929ef89a332da",
+      "condition": "s1-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s1-follow.json",
+      "other_label": "aq-2234504961382b72",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s1-follow.json",
+      "base_label": "aq-e6950292a732c6f1",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s1-follow.json",
+      "other_label": "aq-2234504961382b72",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s1-follow.json",
+      "base_label": "aq-e6950292a732c6f1",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-ec6fdb1c0596-s1-follow.json",
+      "other_label": "aq-708929ef89a332da",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s1-no-follow.json",
+      "base_label": "aq-648115bcfec2e632",
+      "condition": "s1-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-ec6fdb1c0596-s1-no-follow.json",
+      "other_label": "aq-2aaa21516cda3f0c",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-ec6fdb1c0596-s1-no-follow.json",
+      "base_label": "aq-2aaa21516cda3f0c",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s1-no-follow.json",
+      "other_label": "aq-f0bf1ab5ed7eaac5",
+      "outcome": "base",
+      "pair_type": "S-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s1-no-follow.json",
+      "base_label": "aq-648115bcfec2e632",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s1-no-follow.json",
+      "other_label": "aq-f0bf1ab5ed7eaac5",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s6-follow.json",
+      "base_label": "aq-3b993d36d4a45401",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-ec6fdb1c0596-s6-follow.json",
+      "other_label": "aq-03452eb3e2dae1ec",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-ec6fdb1c0596-s6-follow.json",
+      "base_label": "aq-03452eb3e2dae1ec",
+      "condition": "s6-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s6-follow.json",
+      "other_label": "aq-d33c1920b741f9da",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s6-follow.json",
+      "base_label": "aq-3b993d36d4a45401",
+      "condition": "s6-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s6-follow.json",
+      "other_label": "aq-d33c1920b741f9da",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-ec6fdb1c0596-s6-no-follow.json",
+      "base_label": "aq-9c2f44bfa55e0c92",
+      "condition": "s6-no-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s6-no-follow.json",
+      "other_label": "aq-1905af2e221bfb18",
+      "outcome": "base",
+      "pair_type": "S-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s6-no-follow.json",
+      "base_label": "aq-fa7802bbca2a86a8",
+      "condition": "s6-no-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-ec6fdb1c0596-s6-no-follow.json",
+      "other_label": "aq-1905af2e221bfb18",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-ec6fdb1c0596-s6-no-follow.json",
+      "base_label": "aq-fa7802bbca2a86a8",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-ec6fdb1c0596-s6-no-follow.json",
+      "other_label": "aq-9c2f44bfa55e0c92",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "ec6fdb1c0596"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-f0432b9e0387-s1-follow.json",
+      "base_label": "aq-721efeaba9019582",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s1-follow.json",
+      "other_label": "aq-08421ae84e1f5e4e",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s1-follow.json",
+      "base_label": "aq-afc725d37f66a51a",
+      "condition": "s1-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s1-follow.json",
+      "other_label": "aq-08421ae84e1f5e4e",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s1-follow.json",
+      "base_label": "aq-afc725d37f66a51a",
+      "condition": "s1-follow",
+      "deciding_measure": null,
+      "other_answer": "v-cd58d2008fa6-f0432b9e0387-s1-follow.json",
+      "other_label": "aq-721efeaba9019582",
+      "outcome": "tie",
+      "pair_type": "O-S",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-f0432b9e0387-s1-no-follow.json",
+      "base_label": "aq-0eb7d6cb7f10daa7",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s1-no-follow.json",
+      "other_label": "aq-62ac6354086afd9d",
+      "outcome": "base",
+      "pair_type": "S-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s1-no-follow.json",
+      "base_label": "aq-e8016b4eda3eab41",
+      "condition": "s1-no-follow",
+      "deciding_measure": "fit",
+      "other_answer": "v-cd58d2008fa6-f0432b9e0387-s1-no-follow.json",
+      "other_label": "aq-0eb7d6cb7f10daa7",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s1-no-follow.json",
+      "base_label": "aq-e8016b4eda3eab41",
+      "condition": "s1-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s1-no-follow.json",
+      "other_label": "aq-62ac6354086afd9d",
+      "outcome": "base",
+      "pair_type": "O-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-f0432b9e0387-s6-follow.json",
+      "base_label": "aq-b8af88f41d45c180",
+      "condition": "s6-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s6-follow.json",
+      "other_label": "aq-fcfab40e839e1ee2",
+      "outcome": "tie",
+      "pair_type": "S-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s6-follow.json",
+      "base_label": "aq-fd23dfb60ede7050",
+      "condition": "s6-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-cd58d2008fa6-f0432b9e0387-s6-follow.json",
+      "other_label": "aq-b8af88f41d45c180",
+      "outcome": "other",
+      "pair_type": "O-S",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s6-follow.json",
+      "base_label": "aq-fd23dfb60ede7050",
+      "condition": "s6-follow",
+      "deciding_measure": "completeness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s6-follow.json",
+      "other_label": "aq-fcfab40e839e1ee2",
+      "outcome": "other",
+      "pair_type": "O-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s6-no-follow.json",
+      "base_label": "aq-8d4129f93bf22a2e",
+      "condition": "s6-no-follow",
+      "deciding_measure": null,
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s6-no-follow.json",
+      "other_label": "aq-da1720d35a351b8b",
+      "outcome": "tie",
+      "pair_type": "O-R0",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-882ff393b4aa-f0432b9e0387-s6-no-follow.json",
+      "base_label": "aq-8d4129f93bf22a2e",
+      "condition": "s6-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-cd58d2008fa6-f0432b9e0387-s6-no-follow.json",
+      "other_label": "aq-dbd58b9a11bec511",
+      "outcome": "base",
+      "pair_type": "O-S",
+      "question_id": "f0432b9e0387"
+    },
+    {
+      "base_answer": "v-cd58d2008fa6-f0432b9e0387-s6-no-follow.json",
+      "base_label": "aq-dbd58b9a11bec511",
+      "condition": "s6-no-follow",
+      "deciding_measure": "correctness",
+      "other_answer": "v-e893881e7fb2-f0432b9e0387-s6-no-follow.json",
+      "other_label": "aq-da1720d35a351b8b",
+      "outcome": "other",
+      "pair_type": "S-R0",
+      "question_id": "f0432b9e0387"
+    }
+  ],
+  "per_arm_means": {
+    "A": {
+      "O": {
+        "caveats": 4.6,
+        "clarity": 4.95,
+        "completeness": 4.05,
+        "correctness": 4.25,
+        "fit": 4.6,
+        "n": 20
+      },
+      "R0": {
+        "caveats": 4.6,
+        "clarity": 4.95,
+        "completeness": 4.25,
+        "correctness": 4.65,
+        "fit": 4.8,
+        "n": 20
+      },
+      "S": {
+        "caveats": 4.25,
+        "clarity": 5,
+        "completeness": 3.9,
+        "correctness": 4.35,
+        "fit": 4.45,
+        "n": 20
+      }
+    },
+    "A2": {
+      "O": {
+        "caveats": 4.5,
+        "clarity": 4.9,
+        "completeness": 4.1,
+        "correctness": 4.3,
+        "fit": 4.7,
+        "n": 20
+      },
+      "R0": {
+        "caveats": 4.6,
+        "clarity": 5,
+        "completeness": 4.25,
+        "correctness": 4.65,
+        "fit": 4.8,
+        "n": 20
+      },
+      "S": {
+        "caveats": 4.3,
+        "clarity": 5,
+        "completeness": 3.95,
+        "correctness": 4.45,
+        "fit": 4.55,
+        "n": 20
+      }
+    },
+    "B": {
+      "O": {
+        "caveats": 4.45,
+        "clarity": 4.95,
+        "completeness": 4.05,
+        "correctness": 4.3,
+        "fit": 4.55,
+        "n": 20
+      },
+      "R0": {
+        "caveats": 4.4,
+        "clarity": 5,
+        "completeness": 4.15,
+        "correctness": 4.7,
+        "fit": 4.75,
+        "n": 20
+      },
+      "S": {
+        "caveats": 4.25,
+        "clarity": 4.9,
+        "completeness": 3.65,
+        "correctness": 4.1,
+        "fit": 4.25,
+        "n": 20
+      }
+    }
+  },
+  "per_arm_means_A": {
+    "O": {
+      "caveats": 4.6,
+      "clarity": 4.95,
+      "completeness": 4.05,
+      "correctness": 4.25,
+      "fit": 4.6,
+      "n": 20
+    },
+    "R0": {
+      "caveats": 4.6,
+      "clarity": 4.95,
+      "completeness": 4.25,
+      "correctness": 4.65,
+      "fit": 4.8,
+      "n": 20
+    },
+    "S": {
+      "caveats": 4.25,
+      "clarity": 5,
+      "completeness": 3.9,
+      "correctness": 4.35,
+      "fit": 4.45,
+      "n": 20
+    }
+  },
+  "plan_sha256": "61acadb9940548645317067d2072f8c68723ac0a1bebbd1846fcd184f82171f3",
+  "prior_configurations": {
+    "11e": {
+      "by_pair_type_A": {
+        "O-R0": {
+          "base_wins": 0,
+          "other_wins": 0,
+          "pairs": 20,
+          "ties": 20,
+          "unavailable": 0
+        },
+        "O-S": {
+          "base_wins": 1,
+          "other_wins": 0,
+          "pairs": 20,
+          "ties": 19,
+          "unavailable": 0
+        },
+        "S-R0": {
+          "base_wins": 0,
+          "other_wins": 1,
+          "pairs": 20,
+          "ties": 19,
+          "unavailable": 0
+        }
+      },
+      "deciding_measure_A": {
+        "fit": 2,
+        "tie": 58
+      },
+      "per_arm_means_A": {
+        "O": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5,
+          "n": 20
+        },
+        "R0": {
+          "caveats": 5,
+          "clarity": 5,
+          "completeness": 5,
+          "correctness": 5,
+          "fit": 5,
+          "n": 20
+        },
+        "S": {
+          "caveats": 4.8,
+          "clarity": 5,
+          "completeness": 4.9,
+          "correctness": 5,
+          "fit": 4.9,
+          "n": 20
+        }
+      },
+      "rubric_agreement_A": {
+        "rubric_v1_raw": {
+          "agree": 2,
+          "both_tie": 40,
+          "derived_tie_rubric_differs": 18,
+          "derived_win_rubric_tie": 0,
+          "disagree": 0
+        },
+        "rubric_v1_relaxed": {
+          "agree": 2,
+          "both_tie": 38,
+          "derived_tie_rubric_differs": 20,
+          "derived_win_rubric_tie": 0,
+          "disagree": 0
+        },
+        "rubric_v1_strict": {
+          "agree": 2,
+          "both_tie": 25,
+          "derived_tie_rubric_differs": 33,
+          "derived_win_rubric_tie": 0,
+          "disagree": 0
+        }
+      },
+      "spread_A": {
+        "all_5": 59,
+        "all_5_share": 0.9833333333333333,
+        "answers": 60
+      }
+    },
+    "11f": {
+      "by_pair_type_A": {
+        "O-R0": {
+          "base_wins": 6,
+          "other_wins": 4,
+          "pairs": 20,
+          "ties": 10,
+          "unavailable": 0
+        },
+        "O-S": {
+          "base_wins": 7,
+          "other_wins": 3,
+          "pairs": 20,
+          "ties": 10,
+          "unavailable": 0
+        },
+        "S-R0": {
+          "base_wins": 5,
+          "other_wins": 6,
+          "pairs": 20,
+          "ties": 9,
+          "unavailable": 0
+        }
+      },
+      "deciding_measure_A": {
+        "caveats": 6,
+        "completeness": 4,
+        "correctness": 15,
+        "fit": 6,
+        "tie": 29
+      },
+      "per_arm_means_A": {
+        "O": {
+          "caveats": 4.7,
+          "clarity": 4.95,
+          "completeness": 4.75,
+          "correctness": 4.75,
+          "fit": 4.9,
+          "n": 20
+        },
+        "R0": {
+          "caveats": 4.4,
+          "clarity": 4.9,
+          "completeness": 4.75,
+          "correctness": 4.65,
+          "fit": 5,
+          "n": 20
+        },
+        "S": {
+          "caveats": 4.3,
+          "clarity": 5,
+          "completeness": 4.6,
+          "correctness": 4.65,
+          "fit": 4.75,
+          "n": 20
+        }
+      },
+      "rubric_agreement_A": {
+        "rubric_v1_raw": {
+          "agree": 8,
+          "both_tie": 19,
+          "derived_tie_rubric_differs": 10,
+          "derived_win_rubric_tie": 21,
+          "disagree": 2
+        },
+        "rubric_v1_relaxed": {
+          "agree": 10,
+          "both_tie": 19,
+          "derived_tie_rubric_differs": 10,
+          "derived_win_rubric_tie": 19,
+          "disagree": 2
+        },
+        "rubric_v1_strict": {
+          "agree": 17,
+          "both_tie": 15,
+          "derived_tie_rubric_differs": 14,
+          "derived_win_rubric_tie": 10,
+          "disagree": 4
+        }
+      },
+      "spread_A": {
+        "all_5": 37,
+        "all_5_share": 0.6166666666666667,
+        "answers": 60,
+        "status": "fail"
+      }
+    }
+  },
+  "receipt_sha256": {
+    "A": "f7a3858f5ce173013c9062fedddf148d39ded7c9299b24920b66fa8745494770",
+    "A2": "8ac8af3306b3b22c2a3fff5e52611d146a8385b141ea05f233a5016112fe1445",
+    "B": "4efff27b642f063f04eb9181e1857d6907f356ed7f7ee48967ffadae016ae69d"
+  },
+  "rubric_agreement_A": {
+    "rubric_v1_raw": {
+      "agree": 11,
+      "both_tie": 16,
+      "derived_tie_rubric_differs": 3,
+      "derived_win_rubric_tie": 24,
+      "disagree": 6
+    },
+    "rubric_v1_relaxed": {
+      "agree": 12,
+      "both_tie": 15,
+      "derived_tie_rubric_differs": 4,
+      "derived_win_rubric_tie": 23,
+      "disagree": 6
+    },
+    "rubric_v1_strict": {
+      "agree": 17,
+      "both_tie": 9,
+      "derived_tie_rubric_differs": 10,
+      "derived_win_rubric_tie": 16,
+      "disagree": 8
+    }
+  },
+  "runs": [
+    "A",
+    "A2",
+    "B"
+  ],
+  "schema_version": "docspectra.icsc.scoring_pilot_11h.v1.analysis",
+  "scope": "exploratory: scorer v2 (designed after the frozen 11b no-go) with gpt-6-luna as the scorer; never changes the 11b decision; not answer-quality or restructuring-effect evidence for the paper",
+  "score_differences_A": {
+    "R0_minus_O": {
+      "caveats": {
+        "mean": 0,
+        "mean_abs": 0.4,
+        "n": 20,
+        "nonzero": 7,
+        "sd": 0.7254762501100117
+      },
+      "clarity": {
+        "mean": 0,
+        "mean_abs": 0.1,
+        "n": 20,
+        "nonzero": 2,
+        "sd": 0.3244428422615251
+      },
+      "completeness": {
+        "mean": 0.2,
+        "mean_abs": 0.5,
+        "n": 20,
+        "nonzero": 7,
+        "sd": 1.0563093645728086
+      },
+      "correctness": {
+        "mean": 0.4,
+        "mean_abs": 0.8,
+        "n": 20,
+        "nonzero": 10,
+        "sd": 1.231174022502185
+      },
+      "fit": {
+        "mean": 0.2,
+        "mean_abs": 0.4,
+        "n": 20,
+        "nonzero": 4,
+        "sd": 1.0563093645728086
+      }
+    },
+    "S_minus_O": {
+      "caveats": {
+        "mean": -0.35,
+        "mean_abs": 0.55,
+        "n": 20,
+        "nonzero": 5,
+        "sd": 1.1821033884786185
+      },
+      "clarity": {
+        "mean": 0.05,
+        "mean_abs": 0.05,
+        "n": 20,
+        "nonzero": 1,
+        "sd": 0.22360679774997896
+      },
+      "completeness": {
+        "mean": -0.15,
+        "mean_abs": 0.85,
+        "n": 20,
+        "nonzero": 9,
+        "sd": 1.4244112357114616
+      },
+      "correctness": {
+        "mean": 0.1,
+        "mean_abs": 0.5,
+        "n": 20,
+        "nonzero": 7,
+        "sd": 0.9119095061289915
+      },
+      "fit": {
+        "mean": -0.15,
+        "mean_abs": 0.75,
+        "n": 20,
+        "nonzero": 6,
+        "sd": 1.460893742308382
+      }
+    }
+  },
+  "score_distribution_A": {
+    "caveats": {
+      "1": 1,
+      "2": 0,
+      "3": 10,
+      "4": 7,
+      "5": 42
+    },
+    "clarity": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 58
+    },
+    "completeness": {
+      "1": 2,
+      "2": 4,
+      "3": 10,
+      "4": 16,
+      "5": 28
+    },
+    "correctness": {
+      "1": 0,
+      "2": 4,
+      "3": 7,
+      "4": 9,
+      "5": 40
+    },
+    "fit": {
+      "1": 2,
+      "2": 1,
+      "3": 5,
+      "4": 2,
+      "5": 50
+    }
+  },
+  "spread_A": {
+    "all_5": 21,
+    "all_5_share": 0.35,
+    "answers": 60
+  },
+  "stability_A_vs_B": {
+    "cells": 20,
+    "exact": 244,
+    "identical_score_vectors": 28,
+    "per_measure_exact": {
+      "caveats": 51,
+      "clarity": 57,
+      "completeness": 42,
+      "correctness": 50,
+      "fit": 44
+    },
+    "per_measure_within_1": {
+      "caveats": 58,
+      "clarity": 60,
+      "completeness": 59,
+      "correctness": 58,
+      "fit": 58
+    },
+    "same_ranking_cells": 11,
+    "same_ranking_share": 0.55,
+    "scores": 300,
+    "within_1": 293,
+    "within_1_share": 0.9766666666666667
+  },
+  "unavailable": {
+    "A": [],
+    "A2": [],
+    "B": []
+  },
+  "usage": {
+    "A": {
+      "calls": 60,
+      "eval_count": 56488,
+      "failures": [],
+      "field_order_ok": 60,
+      "first_attempt_valid": 60,
+      "max_attempts": 1,
+      "packets": 60,
+      "packets_valid": 60,
+      "prompt_eval_count": 112261,
+      "total_duration_ns": 521087349600,
+      "valid": 60
+    },
+    "A2": {
+      "calls": 60,
+      "eval_count": 59403,
+      "failures": [],
+      "field_order_ok": 60,
+      "first_attempt_valid": 60,
+      "max_attempts": 1,
+      "packets": 60,
+      "packets_valid": 60,
+      "prompt_eval_count": 112261,
+      "total_duration_ns": 529133561400,
+      "valid": 60
+    },
+    "B": {
+      "calls": 60,
+      "eval_count": 60685,
+      "failures": [],
+      "field_order_ok": 60,
+      "first_attempt_valid": 60,
+      "max_attempts": 1,
+      "packets": 60,
+      "packets_valid": 60,
+      "prompt_eval_count": 112261,
+      "total_duration_ns": 522167409800,
+      "valid": 60
+    }
+  }
+}

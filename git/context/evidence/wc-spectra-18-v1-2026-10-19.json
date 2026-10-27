@@ -1,0 +1,3158 @@
+{
+  "SA1": {
+    "areas_in_test": [
+      "A02",
+      "A03",
+      "A04",
+      "A06",
+      "A07",
+      "A11",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A18",
+      "A20",
+      "A23",
+      "A24",
+      "A25"
+    ],
+    "assignments": 32768,
+    "drops": {
+      "LT": [
+        "A10",
+        "A12",
+        "A21"
+      ]
+    },
+    "minimum_p": 6.103515625e-05,
+    "n": 15,
+    "note": "the frozen test already drops areas edited by one arm only, so SA4 (paired areas) equals the primary test",
+    "p": 0.04364013671875,
+    "statistic_mean": -1.0733018453560883,
+    "two_sided": true
+  },
+  "code_sha256": {
+    "wc_refine_17": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525",
+    "wc_refinement_15": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2",
+    "wc_spectra_18": "c645cc78c8679f28f26d411aecb3b3fa017cd3bd656e1070add88b7d4adb20fa"
+  },
+  "controls": {
+    "LT": {
+      "arm_new_page_inbound": 1942,
+      "arm_new_pages": 605,
+      "buckets": {
+        "A02": {
+          "T": 69,
+          "a": 218,
+          "added_edges": 218,
+          "added_pages": [
+            "content_get_started_docker_concepts_container_supported_development__8dbea50a",
+            "content_get_started_shared_docker_hub_access__2461b9fd",
+            "content_get_started_shared_stop_and_remove_containers__4661372d",
+            "content_get_started_shared_workshop_prerequisites__623a3d90",
+            "content_get_started_tasks_add_development_tools__2816d4d9",
+            "content_get_started_tasks_build_and_push_todo_image__cb1d9461",
+            "content_get_started_tasks_build_java_in_stages__2985177e",
+            "content_get_started_tasks_build_maven_tomcat_image__116be94f",
+            "content_get_started_tasks_build_static_react_image__3fc5d549",
+            "content_get_started_tasks_cache_node_builds__9df45f18",
+            "content_get_started_tasks_configure_postgres_containers__48d39f10",
+            "content_get_started_tasks_connect_postgres_network__7769ef63",
+            "content_get_started_tasks_create_image_layers__b89b65f3",
+            "content_get_started_tasks_develop_cloud_locally__a33bf0b6",
+            "content_get_started_tasks_find_and_inspect_images__88b396d2",
+            "content_get_started_tasks_index__fb7abffe",
+            "content_get_started_tasks_limit_postgres_resources__d7b22d13",
+            "content_get_started_tasks_mock_api_endpoints__04aaf0a7",
+            "content_get_started_tasks_override_postgres_startup__a6a556a8",
+            "content_get_started_tasks_persist_postgres_data__af7b923f",
+            "content_get_started_tasks_publish_quickstart_image__b09a5b71",
+            "content_get_started_tasks_publish_welcome_ports__a648027a",
+            "content_get_started_tasks_run_interactive_ubuntu__6e99af40",
+            "content_get_started_tasks_run_local_databases__cb8f8062",
+            "content_get_started_tasks_run_node_redis_stack__3fffd586",
+            "content_get_started_tasks_run_postgres_instances__0cf83c76",
+            "content_get_started_tasks_run_todo_with_compose__c011796c",
+            "content_get_started_tasks_run_welcome_container__697a2f88",
+            "content_get_started_tasks_share_site_files__8a62b44c",
+            "content_get_started_tasks_write_node_dockerfile__1d0118b6"
+          ],
+          "f": 0.0779816513761468,
+          "r": 12
+        },
+        "A03": {
+          "T": 66,
+          "a": 215,
+          "added_edges": 215,
+          "added_pages": [
+            "content_guides_angular_build_images__7c433fc6",
+            "content_guides_angular_run__07a90f27",
+            "content_guides_compose_test_services__7cbe8231",
+            "content_guides_github_actions_repository__8893c761",
+            "content_guides_github_actions_run__9131a0bb",
+            "content_guides_image_build_and_inspect__6ab0f75b",
+            "content_guides_kubernetes_deployment_cycle__adee4873",
+            "content_guides_nextjs_build_images__1d0a1ce0",
+            "content_guides_nextjs_configure_lint__5db5d417",
+            "content_guides_nextjs_configure_tests__04334772",
+            "content_guides_nextjs_export__0eec9d64",
+            "content_guides_nextjs_run__8c096048",
+            "content_guides_nextjs_standalone__c1208092",
+            "content_guides_node_image_context__2d5fcbc1",
+            "content_guides_nodejs_build_images__3501faa1",
+            "content_guides_nodejs_configure_compose__6842691e",
+            "content_guides_nodejs_debug__419b5aec",
+            "content_guides_nodejs_kubernetes_context__29d84094",
+            "content_guides_nodejs_kubernetes_manifest__41d8fca7",
+            "content_guides_nodejs_persist_data__fd8fb630",
+            "content_guides_nodejs_run__0130adf8",
+            "content_guides_nodejs_tasks__0c511761",
+            "content_guides_reactjs_build_images__d8615056",
+            "content_guides_reactjs_run__90a77a48",
+            "content_guides_vuejs_build_images__315607c0",
+            "content_guides_vuejs_run__59e5da86"
+          ],
+          "f": 0.23255813953488372,
+          "r": 8
+        },
+        "A04": {
+          "T": 76,
+          "a": 193,
+          "added_edges": 193,
+          "added_pages": [
+            "content_guides_container_lifecycle__ad7f6fb1",
+            "content_guides_container_test_stages__6605fbd8",
+            "content_guides_docker_init__16572b97",
+            "content_guides_frameworks_django_containerize__849f5102",
+            "content_guides_frameworks_django_create_project__e1c1007f",
+            "content_guides_frameworks_django_develop__64e5ad0c",
+            "content_guides_frameworks_django_prerequisites__28925d32",
+            "content_guides_github_actions_setup__e2e8128d",
+            "content_guides_golang_develop_application__ba3d66c0",
+            "content_guides_golang_develop_compose__6e2350ad",
+            "content_guides_golang_develop_database__d05832c5",
+            "content_guides_golang_prerequisites__66f42ad0",
+            "content_guides_image_tags__57d19996",
+            "content_guides_local_kubernetes__0fbbf125",
+            "content_guides_python_code_checks__dae2ee9d",
+            "content_guides_run_compose_application__cde2ca8e"
+          ],
+          "f": 0.0,
+          "r": 20
+        },
+        "A06": {
+          "T": 127,
+          "a": 283,
+          "added_edges": 283,
+          "added_pages": [
+            "content_guides_add_pgadmin__d022c37f",
+            "content_guides_database_tasks_compose__a03fe53b",
+            "content_guides_database_tasks_connect_from_container__b45370ca",
+            "content_guides_database_tasks_connect_from_host__6f3cef48",
+            "content_guides_database_tasks_custom_image__a819bc9f",
+            "content_guides_database_tasks_persist_data__79cf793f",
+            "content_guides_database_tasks_remove_container__1d01da69",
+            "content_guides_database_tasks_run__d1b8f892",
+            "content_guides_database_tasks_shell__e9ca409d",
+            "content_guides_go_prometheus_monitoring_configuration__75005dfb",
+            "content_guides_go_prometheus_monitoring_image__f9b6f2a3",
+            "content_guides_go_prometheus_monitoring_metrics__c73818ed",
+            "content_guides_go_prometheus_monitoring_setup__c9e0fdf0",
+            "content_guides_hardened_image_access__f7616f0b",
+            "content_guides_jupyter_bind_mount__4df4cce4",
+            "content_guides_jupyter_compose__c480842e",
+            "content_guides_jupyter_context__483b1f29",
+            "content_guides_jupyter_customize__49ed1d94",
+            "content_guides_jupyter_notebooks__e8711902",
+            "content_guides_jupyter_run__bf017f9b",
+            "content_guides_jupyter_share__323266ef",
+            "content_guides_kafka_container_app__9a3c6e42",
+            "content_guides_kafka_images__9a9f76ef",
+            "content_guides_kafka_listeners__847a2f5b",
+            "content_guides_kafka_native_app__aa7f2d11",
+            "content_guides_kafka_project__ed492e88",
+            "content_guides_kafka_start__87ea3393",
+            "content_guides_kafka_ui__eaeefae8",
+            "content_guides_observability_context__3aabcd1a",
+            "content_guides_opentelemetry_app__137b7341",
+            "content_guides_opentelemetry_stack__aedc7d30",
+            "content_guides_pgadmin_auto_connect__97a06123",
+            "content_guides_pgadmin_context__8ac76c5d",
+            "content_guides_postgresql_benchmark__cc515371",
+            "content_guides_postgresql_bind_mounts__994384c7",
+            "content_guides_postgresql_compose__e27192c9",
+            "content_guides_postgresql_compose_networking__ef1e1ae8",
+            "content_guides_postgresql_configure_locale__07e77965",
+            "content_guides_postgresql_connect_from_containers__27a1dfaa",
+            "content_guides_postgresql_connect_from_host__f4e8a19c",
+            "content_guides_postgresql_connection_pooling__39d76695",
+            "content_guides_postgresql_connection_troubleshooting__e5203aff",
+            "content_guides_postgresql_data_persistence__fae48c6f",
+            "content_guides_postgresql_initialization__522f19da",
+            "content_guides_postgresql_initialize_database__211506c1",
+            "content_guides_postgresql_named_volumes__b2128cf2",
+            "content_guides_postgresql_pgadmin__6a1b9809",
+            "content_guides_postgresql_pgbouncer__bae2b0e0",
+            "content_guides_postgresql_psql__83b1a6bc",
+            "content_guides_postgresql_start__06cfc0c6",
+            "content_guides_postgresql_tune_performance__56514662",
+            "content_guides_pre_seeding_image__aaae02f2",
+            "content_guides_pre_seeding_javascript__56f92c28",
+            "content_guides_pre_seeding_sql__7457e724",
+            "content_guides_pre_seeding_start__7e675eb6",
+            "content_guides_prerequisites__56c0492d",
+            "content_guides_ros2_concepts__cb8bf9fe",
+            "content_guides_ros2_display_forwarding__833f637d",
+            "content_guides_sample_service_setup__a5b790e5",
+            "content_guides_traefik_development__d2d5d658",
+            "content_guides_traefik_docker__97499dbd",
+            "content_guides_traefik_native__0cf6a564",
+            "content_guides_traefik_project__d3f75738",
+            "content_guides_traefik_providers__a729f77e"
+          ],
+          "f": 0.0,
+          "r": 6
+        },
+        "A07": {
+          "T": 86,
+          "a": 165,
+          "added_edges": 165,
+          "added_pages": [
+            "content_guides_genai_container_assets__d602b0b6",
+            "content_guides_genai_leveraging_rag_stack_setup__42bc9313",
+            "content_guides_genai_video_bot_architecture__4f32081d",
+            "content_guides_nlp_container_environment__b9c1929b",
+            "content_guides_nlp_sample_workflow__b104915d",
+            "content_guides_ollama_container_requirements__ea5efc8e",
+            "content_guides_rag_concepts__7e6a0cc3",
+            "content_guides_tensorflowjs_application__def8815c",
+            "content_guides_tensorflowjs_context__78e5f6d9",
+            "content_manuals_ai_compose_agentic_application_components__7550cbe9",
+            "content_manuals_ai_compose_model_binding__38e8ebda",
+            "content_manuals_ai_docker_agent_agent_teams__e3abd946",
+            "content_manuals_ai_docker_agent_eval_context__27da2209",
+            "content_manuals_ai_docker_agent_installation__3f40afb3",
+            "content_manuals_ai_docker_agent_integrations_agent_context__aa174d33",
+            "content_manuals_ai_docker_agent_run_debugger__05593a0c",
+            "content_manuals_ai_gordon_concepts_prompts_and_context__8be2592e",
+            "content_manuals_ai_gordon_get_started__1324ff96",
+            "content_manuals_ai_gordon_how_to_disable__ef3e16bb",
+            "content_manuals_ai_gordon_requirements__1ee513e9",
+            "content_manuals_ai_model_runner_aider_integration__4d03cde8",
+            "content_manuals_ai_model_runner_client_setup__e9b92c63",
+            "content_manuals_ai_model_runner_cline_integration__81f02943",
+            "content_manuals_ai_model_runner_continue_integration__56c5a18e",
+            "content_manuals_ai_model_runner_cursor_integration__299e5177",
+            "content_manuals_ai_model_runner_diagnose__300c88b2",
+            "content_manuals_ai_model_runner_diffusers__c6f51b9a",
+            "content_manuals_ai_model_runner_engine_management__641a6370",
+            "content_manuals_ai_model_runner_github_actions__4964d5d1",
+            "content_manuals_ai_model_runner_langchain_integration__39fa32aa",
+            "content_manuals_ai_model_runner_llama_cpp__e9cdc371",
+            "content_manuals_ai_model_runner_llamaindex_integration__47bb112a",
+            "content_manuals_ai_model_runner_publish_models__d20f6579",
+            "content_manuals_ai_model_runner_requirements__ba7a596e",
+            "content_manuals_ai_model_runner_run_models__4ccae567",
+            "content_manuals_ai_model_runner_runtime_and_privacy__6c7c94c2",
+            "content_manuals_ai_model_runner_sample_application__3ea647e7",
+            "content_manuals_ai_model_runner_setup__36fc7fc1",
+            "content_manuals_ai_model_runner_vllm__15d41c30",
+            "content_manuals_ai_model_runner_zed_integration__3cfd410b"
+          ],
+          "f": 0.006060606060606061,
+          "r": 17
+        },
+        "A10": {
+          "T": 101,
+          "a": 233,
+          "added_edges": 233,
+          "added_pages": [
+            "content_guides_bake_build_tags__6b3109e5",
+            "content_guides_bake_export_binaries__3974ffde",
+            "content_guides_bake_image_variants__58b9e1cf",
+            "content_guides_bake_project_setup__78326b1e",
+            "content_guides_bake_test_and_lint__3c8fe8e2",
+            "content_manuals_build_builders_drivers_container_cache__341f34bc",
+            "content_manuals_build_builders_drivers_container_network__a74e4694",
+            "content_manuals_build_builders_drivers_container_qemu__0e92b94e",
+            "content_manuals_build_builders_drivers_docker_container_reference__6efc7ff4",
+            "content_manuals_build_builders_drivers_kubernetes_build__585f039f",
+            "content_manuals_build_builders_drivers_kubernetes_reference__f388067b",
+            "content_manuals_build_builders_drivers_remote_container__e8720ad5",
+            "content_manuals_build_builders_drivers_remote_kubernetes__4913fbc3",
+            "content_manuals_build_builders_drivers_remote_reference__b4368901",
+            "content_manuals_build_builders_drivers_remote_unix__2afd3cb2",
+            "content_manuals_build_builders_image_loading__fa3b11a2",
+            "content_manuals_build_builders_selection__3c0ee869",
+            "content_manuals_build_buildkit_cni_networking__0e000050",
+            "content_manuals_build_buildkit_concepts__5bed6a47",
+            "content_manuals_build_buildkit_configuration__6458b811",
+            "content_manuals_build_buildkit_registry_certificates__ecb1635b",
+            "content_manuals_build_buildkit_registry_mirror__fcedfa62",
+            "content_manuals_build_buildkit_resource_limits__98e89cc0",
+            "content_manuals_build_buildkit_windows__2a3d898a",
+            "content_manuals_build_ci_github_actions_attestation_settings__b9e1eadf",
+            "content_manuals_build_ci_github_actions_builder_authentication__063b3a86",
+            "content_manuals_build_ci_github_actions_builder_config__653545b0",
+            "content_manuals_build_ci_github_actions_builder_isolation__e59d7728",
+            "content_manuals_build_ci_github_actions_builder_logs__bfe69ebc",
+            "content_manuals_build_ci_github_actions_builder_nodes__be4ae52c",
+            "content_manuals_build_ci_github_actions_builder_standalone__c0dfbf30",
+            "content_manuals_build_ci_github_actions_builder_versions__688334e5",
+            "content_manuals_build_ci_github_actions_cache_gha__bdd01daa",
+            "content_manuals_build_ci_github_actions_cache_inline__982e23ea",
+            "content_manuals_build_ci_github_actions_cache_local__aa55ef73",
+            "content_manuals_build_ci_github_actions_cache_mounts__b6332ba7",
+            "content_manuals_build_ci_github_actions_cache_registry__289df657",
+            "content_manuals_build_ci_github_actions_cache_requirements__7099151e",
+            "content_manuals_build_ci_github_actions_provenance__27c06070",
+            "content_manuals_build_ci_github_actions_registry_credentials__f03b2826",
+            "content_manuals_build_ci_github_actions_sbom__a90a06e6",
+            "content_manuals_build_cloud_build__301f115d",
+            "content_manuals_build_cloud_cache__0f2a0b1a",
+            "content_manuals_build_cloud_ci_bitbucket__2a53747d",
+            "content_manuals_build_cloud_ci_buildkite__0081d28c",
+            "content_manuals_build_cloud_ci_circleci__5306675c",
+            "content_manuals_build_cloud_ci_compose__59356aef",
+            "content_manuals_build_cloud_ci_github_actions__9615c0fb",
+            "content_manuals_build_cloud_ci_gitlab__75a8bb97",
+            "content_manuals_build_cloud_ci_jenkins__7fc0e5dd",
+            "content_manuals_build_cloud_ci_requirements__ce4eb7c6",
+            "content_manuals_build_cloud_ci_shell__41e940a0",
+            "content_manuals_build_cloud_ci_travis__19b7c5d8",
+            "content_manuals_build_cloud_compose__03c960fa",
+            "content_manuals_build_cloud_desktop_builds__9aa308fd",
+            "content_manuals_build_cloud_firewall__5407ef19",
+            "content_manuals_build_cloud_outputs__cc0edb98",
+            "content_manuals_build_cloud_private_resources__fcea1b95",
+            "content_manuals_build_cloud_secrets__aa45cb9e",
+            "content_manuals_build_cloud_select_builder__3054f6d6",
+            "content_manuals_build_cloud_storage_settings__4f6bb93a"
+          ],
+          "f": 0.0,
+          "r": 42
+        },
+        "A11": {
+          "T": 48,
+          "a": 102,
+          "added_edges": 102,
+          "added_pages": [
+            "content_manuals_compose_bridge_default_output__a470b649",
+            "content_manuals_compose_bridge_transformations__19aea8bc",
+            "content_manuals_compose_how_tos_environment_variables_interpolation_syntax__8cd99339",
+            "content_manuals_compose_how_tos_multiple_compose_files_merge_rules__7bcc387f",
+            "content_manuals_compose_intro_compose_cli__94be3bed",
+            "content_manuals_compose_intro_gpu_reservations__38b47691",
+            "content_manuals_compose_intro_lifecycle_hooks__880da1dc",
+            "content_manuals_compose_intro_provider_services__2ceb4ad6",
+            "content_manuals_compose_intro_secrets__057ce3a0"
+          ],
+          "f": 0.029411764705882353,
+          "r": 18
+        },
+        "A12": {
+          "T": 32,
+          "a": 63,
+          "added_edges": 63,
+          "added_pages": [
+            "content_reference_compose_file_build_and_publish_images__b05b7559",
+            "content_reference_compose_file_configure_model_endpoints__be133b3f",
+            "content_reference_compose_file_connect_services_to_networks__1b91071d",
+            "content_reference_compose_file_debug_profile_dependencies__616a11a7",
+            "content_reference_compose_file_grant_service_secrets__318b3b57",
+            "content_reference_compose_file_load_service_environment__44825edf",
+            "content_reference_compose_file_reuse_environment_configuration__a59ec67d",
+            "content_reference_compose_file_share_volume_for_backups__085862cc",
+            "content_reference_compose_file_sync_and_rebuild_services__d2f2997a",
+            "content_reference_compose_file_value_formats__374e76a6",
+            "content_reference_compose_file_wait_for_healthy_dependencies__931b831f"
+          ],
+          "f": 0.047619047619047616,
+          "r": 2
+        },
+        "A13": {
+          "T": 67,
+          "a": 186,
+          "added_edges": 186,
+          "added_pages": [
+            "content_manuals_desktop_cert_revoke_restart__a780c1b3",
+            "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+            "content_manuals_desktop_setup_install_installer_options__cc45e0c1",
+            "content_manuals_desktop_setup_install_inventory__8172963b",
+            "content_manuals_desktop_setup_install_linux_engine_context__5de09d14",
+            "content_manuals_desktop_setup_install_linux_package_installation__2755efe1",
+            "content_manuals_desktop_setup_install_linux_requirements__22fc05a5",
+            "content_manuals_desktop_setup_install_mac_command_line__561d6da9",
+            "content_manuals_desktop_setup_install_mac_interactive__711fe459",
+            "content_manuals_desktop_setup_install_mac_preparation__fd41e7d6",
+            "content_manuals_desktop_setup_install_mac_reinstall__b919d929",
+            "content_manuals_desktop_setup_install_mac_requirements__580d6971",
+            "content_manuals_desktop_setup_install_windows_containers__bbd23b73",
+            "content_manuals_desktop_setup_install_windows_requirements__3bce57bd",
+            "content_manuals_desktop_setup_install_windows_virtualization__0eed4e74",
+            "content_manuals_desktop_setup_linux_credentials__d4700843",
+            "content_manuals_desktop_setup_linux_start__eb719670",
+            "content_manuals_desktop_setup_linux_uninstall_cleanup__105b25cf",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_configuration_integrity__143a3dc9",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_diagnostics__5e4ad933",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_display_artifacts__1ae29dd2",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_file_sharing__dadca7f0",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_git_bash__b0d005c0",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_mac_helper_running__c49c01c2",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_mac_incompatible_cpu__534607c1",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_mac_upgrade_permissions__51206716",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_menu__e43e1295",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_port_already_allocated__44a6f46e",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_registry_certificates__b908e27e",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_socket_path_length__1f4a402b",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_access_denied__ded704f1",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_antivirus__9721eb24",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_line_endings__0f58fd1a",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_path_conversion__00291e2f",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_virtualization__e2fb7f97",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_volume_permissions__48113da7",
+            "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_write_protected__b77bf698",
+            "content_manuals_desktop_uninstall_arch__a8cad11e",
+            "content_manuals_desktop_uninstall_data__1008b263",
+            "content_manuals_desktop_uninstall_fedora__75b4602b",
+            "content_manuals_desktop_uninstall_mac__9d5f004e",
+            "content_manuals_desktop_uninstall_ubuntu_debian__a0d963e4",
+            "content_manuals_desktop_uninstall_windows__b2f1a51a"
+          ],
+          "f": 0.010752688172043012,
+          "r": 33
+        },
+        "A14": {
+          "T": 74,
+          "a": 156,
+          "added_edges": 156,
+          "added_pages": [
+            "content_manuals_desktop_features_file_sharing_context__f1ebd0e8",
+            "content_manuals_desktop_features_networking_connect_host__61abb310",
+            "content_manuals_desktop_features_networking_network_settings__236e7e05",
+            "content_manuals_desktop_features_networking_proxies__d58646f8",
+            "content_manuals_desktop_features_networking_ssh_agent__15407255",
+            "content_manuals_desktop_features_networking_vpn__5451b678",
+            "content_manuals_desktop_features_vmm_reference__60adb81f",
+            "content_manuals_desktop_features_wasm_build__d2da8708",
+            "content_manuals_desktop_features_wasm_runtime_options__38bbb79a",
+            "content_manuals_desktop_features_wsl_enable_wsl__e2b48f17",
+            "content_manuals_desktop_features_wsl_integration__4a10ce46",
+            "content_manuals_desktop_features_wsl_requirements__d9a7958f",
+            "content_manuals_desktop_features_wsl_security__dc70faa0",
+            "content_manuals_desktop_settings_and_maintenance_backup_running_desktop__ba80f965",
+            "content_manuals_desktop_settings_and_maintenance_backup_vm_disk__8d6ec3ff",
+            "content_manuals_desktop_settings_and_maintenance_builders__7094969b",
+            "content_manuals_desktop_settings_and_maintenance_proxy_settings__c3a2c5b5",
+            "content_manuals_desktop_use_desktop_build_inspection_reference__6d9d7951",
+            "content_manuals_desktop_use_desktop_build_traces__7db428b3",
+            "content_manuals_desktop_use_desktop_container_debug__8699d9b6",
+            "content_manuals_desktop_use_desktop_container_files__b5bd53d4",
+            "content_manuals_desktop_use_desktop_container_logs__526c1fdd",
+            "content_manuals_desktop_use_desktop_container_reference__282bef01",
+            "content_manuals_desktop_use_desktop_image_hub__36f1c518",
+            "content_manuals_desktop_use_desktop_image_inspect__63b47256",
+            "content_manuals_desktop_use_desktop_image_reference__80e96bc4",
+            "content_manuals_desktop_use_desktop_image_remove__c3956859",
+            "content_manuals_desktop_use_desktop_image_run__3e3145ad",
+            "content_manuals_desktop_use_desktop_kubernetes_custom_registry__6ea6bbb2",
+            "content_manuals_desktop_use_desktop_kubernetes_provisioning__a447e411",
+            "content_manuals_desktop_use_desktop_log_reference__7a0835a8",
+            "content_manuals_desktop_use_desktop_resource_saving_context__d448550b",
+            "content_manuals_desktop_use_desktop_terminal__1683aeb9",
+            "content_manuals_desktop_use_desktop_volume_create__c21a80e4",
+            "content_manuals_desktop_use_desktop_volume_data__147eb045",
+            "content_manuals_desktop_use_desktop_volume_export__e7d77013",
+            "content_manuals_desktop_use_desktop_volume_export_options__e52a6ed8",
+            "content_manuals_engine_storage_image_store_capabilities__ce3d8f9b",
+            "content_manuals_offload_access__e80f220d",
+            "content_manuals_offload_requirements__e8fb74e3",
+            "content_manuals_offload_session_monitoring__0484568b"
+          ],
+          "f": 0.0,
+          "r": 45
+        },
+        "A15": {
+          "T": 69,
+          "a": 255,
+          "added_edges": 255,
+          "added_pages": [
+            "content_manuals_desktop_previous_versions_4_0_4_9__36fc122c",
+            "content_manuals_desktop_previous_versions_4_10_4_19__a4aa3f70",
+            "content_manuals_desktop_previous_versions_4_20_4_29__f35b3ff7",
+            "content_manuals_desktop_previous_versions_4_30_4_39__2a92807d",
+            "content_manuals_desktop_previous_versions_4_40_4_49__bfbc5573",
+            "content_manuals_desktop_previous_versions_4_50_4_59__520cb0ae",
+            "content_manuals_desktop_previous_versions_4_60_4_69__b353f470",
+            "content_manuals_desktop_previous_versions_edge_mac_2016__e6093c11",
+            "content_manuals_desktop_previous_versions_edge_mac_2017__10908cff",
+            "content_manuals_desktop_previous_versions_edge_mac_2018__e730ced6",
+            "content_manuals_desktop_previous_versions_edge_mac_2_x__e995eab7",
+            "content_manuals_desktop_previous_versions_edge_windows_2016__a29e6ddf",
+            "content_manuals_desktop_previous_versions_edge_windows_2017__c5e4bc03",
+            "content_manuals_desktop_previous_versions_edge_windows_2018__de032127",
+            "content_manuals_desktop_previous_versions_edge_windows_2_x__c857c2de",
+            "content_manuals_desktop_previous_versions_upgrade_guidance__f0a0e3d2",
+            "content_manuals_desktop_release_availability__9ae0611d",
+            "content_manuals_engine_release_notes_legacy_0_x__c91cbb3b",
+            "content_manuals_engine_release_notes_legacy_1_0_1_9__16fe27ca",
+            "content_manuals_engine_release_notes_legacy_1_10__ebba8714",
+            "content_manuals_engine_release_notes_legacy_1_11__dce8dbab",
+            "content_manuals_engine_release_notes_legacy_1_12__4b9e6c62",
+            "content_manuals_engine_release_notes_legacy_1_13__7d1f53e3",
+            "content_manuals_engine_release_notes_upgrade__f891428c",
+            "content_manuals_security_security_advisories_container_components_2024__02405090",
+            "content_manuals_security_security_advisories_log4j_2021__a2b677e8",
+            "content_manuals_security_security_advisories_text4shell_2022__7216d408"
+          ],
+          "f": 0.0,
+          "r": 90
+        },
+        "A16": {
+          "T": 59,
+          "a": 104,
+          "added_edges": 104,
+          "added_pages": [
+            "content_manuals_engine_cli_otel_context__dd80b67f",
+            "content_manuals_engine_cli_proxy_context__ec898eee",
+            "content_manuals_engine_containers_cgroup_metrics__ce1d9ab8",
+            "content_manuals_engine_containers_cgroups__a4e14634",
+            "content_manuals_engine_containers_memory_context__f9f3d68d",
+            "content_manuals_engine_containers_metrics_collection__682b420b",
+            "content_manuals_engine_containers_network_metrics__2e520f5f",
+            "content_manuals_engine_containers_process_management__fcf66793",
+            "content_manuals_engine_daemon_configuration__b53cd946",
+            "content_manuals_engine_daemon_kernel_requirements__5aeb48ab",
+            "content_manuals_engine_daemon_proxy_environment__47d79d5f",
+            "content_manuals_engine_daemon_troubleshoot_network__e7a97a35",
+            "content_manuals_engine_daemon_troubleshoot_startup__52e1f780",
+            "content_manuals_engine_daemon_troubleshoot_volume_removal__9a440f45",
+            "content_manuals_engine_install_binaries_linux__e4fb4505",
+            "content_manuals_engine_install_binaries_macos__f887939a",
+            "content_manuals_engine_install_binaries_windows__7546e73d",
+            "content_manuals_engine_install_binary_installation__095131d8",
+            "content_manuals_engine_install_common_installation_steps__3d075395",
+            "content_manuals_engine_manage_resources_context_concepts__64ce6cc2",
+            "content_manuals_engine_manage_resources_label_concepts__310adef8",
+            "content_manuals_engine_manage_resources_prune_options__3f775316"
+          ],
+          "f": 0.019230769230769232,
+          "r": 12
+        },
+        "A18": {
+          "T": 102,
+          "a": 204,
+          "added_edges": 204,
+          "added_pages": [
+            "content_guides_orchestration_kubernetes_setup__02af2c83",
+            "content_guides_orchestration_manifests__5325f5bf",
+            "content_guides_orchestration_swarm_setup__497dd0ce",
+            "content_manuals_engine_security_apparmor_debug__3bf07fc0",
+            "content_manuals_engine_security_apparmor_nginx__fd8382c0",
+            "content_manuals_engine_security_apparmor_profiles__dac1c2c9",
+            "content_manuals_engine_security_connect_ssh__caf1eb40",
+            "content_manuals_engine_security_connect_tls__055d281e",
+            "content_manuals_engine_security_daemon_security__26f6b8b4",
+            "content_manuals_engine_security_kernel_security__5c68681f",
+            "content_manuals_engine_security_rootless_context__9e094794",
+            "content_manuals_engine_security_rootless_network_and_resources__efa6cf67",
+            "content_manuals_engine_security_rootless_requirements__a5b460d9",
+            "content_manuals_engine_security_rootless_uninstall__ab7bb53c",
+            "content_manuals_engine_security_seccomp_syscalls__60c108dc",
+            "content_manuals_engine_security_tls_certificates__1b171143",
+            "content_manuals_engine_security_trust_client_enforcement__eeb4b57b",
+            "content_manuals_engine_security_trust_client_setup__062b560d",
+            "content_manuals_engine_security_trust_context__a3eadd19",
+            "content_manuals_engine_security_trust_delegation_keys__24eff499",
+            "content_manuals_engine_security_trust_sign_images__3f42fa0c",
+            "content_manuals_engine_security_userns_context__63999e4a",
+            "content_manuals_engine_swarm_address_pools__0e70fc0f",
+            "content_manuals_engine_swarm_advertise_address__d6d9b68d",
+            "content_manuals_engine_swarm_autolock_context__72098ee3",
+            "content_manuals_engine_swarm_backup_recovery__3e28032b",
+            "content_manuals_engine_swarm_configs_context__e0cb375e",
+            "content_manuals_engine_swarm_configs_nginx__839eb111",
+            "content_manuals_engine_swarm_configs_redis__4d59c399",
+            "content_manuals_engine_swarm_configs_template__c8609b4a",
+            "content_manuals_engine_swarm_configs_windows__056ff738",
+            "content_manuals_engine_swarm_join_tokens__5250ce84",
+            "content_manuals_engine_swarm_manager_health__fcfaa05b",
+            "content_manuals_engine_swarm_manager_quorum__a51f8394",
+            "content_manuals_engine_swarm_network_context__19a4e6de",
+            "content_manuals_engine_swarm_network_gwbridge__870e54a0",
+            "content_manuals_engine_swarm_network_ingress__4d3746ce",
+            "content_manuals_engine_swarm_network_interfaces__6eda78ec",
+            "content_manuals_engine_swarm_node_availability__3d0c1d26",
+            "content_manuals_engine_swarm_pki_context__a8ff0e96",
+            "content_manuals_engine_swarm_prerequisites__e07804c6",
+            "content_manuals_engine_swarm_rebalance__0a546cc6",
+            "content_manuals_engine_swarm_secrets_context__84ce6879",
+            "content_manuals_engine_swarm_secrets_nginx__2122f9d3",
+            "content_manuals_engine_swarm_secrets_redis__2243d75b",
+            "content_manuals_engine_swarm_secrets_windows__15723182",
+            "content_manuals_engine_swarm_service_discovery__b5e80d4a",
+            "content_manuals_engine_swarm_service_images__c540424a",
+            "content_manuals_engine_swarm_service_lifecycle__1922ab9d",
+            "content_manuals_engine_swarm_service_networks__dd4de249",
+            "content_manuals_engine_swarm_service_placement__91ca3c03",
+            "content_manuals_engine_swarm_service_ports__e30da2be",
+            "content_manuals_engine_swarm_service_storage__7a4a7fd2",
+            "content_manuals_engine_swarm_service_templates__505e3366",
+            "content_manuals_engine_swarm_service_updates__3671bd4c",
+            "content_manuals_engine_swarm_service_windows__69486130",
+            "content_manuals_engine_swarm_site_certificate__dd661699"
+          ],
+          "f": 0.014705882352941176,
+          "r": 37
+        },
+        "A20": {
+          "T": 79,
+          "a": 180,
+          "added_edges": 180,
+          "added_pages": [
+            "content_manuals_scout_deep_dive_ci_comparison__4f50366d",
+            "content_manuals_scout_deep_dive_exceptions__4e34c306",
+            "content_manuals_scout_deep_dive_health_scores__df4c990e",
+            "content_manuals_scout_deep_dive_image_analysis__7e9255c6",
+            "content_manuals_scout_deep_dive_integration_types__760481ef",
+            "content_manuals_scout_deep_dive_metrics__fcad2e60",
+            "content_manuals_scout_deep_dive_notifications__d79cd92f",
+            "content_manuals_scout_deep_dive_policy_evaluation__52902e98",
+            "content_manuals_scout_deep_dive_remediation__bf0fbd77",
+            "content_manuals_scout_deep_dive_sboms__466ea096",
+            "content_manuals_scout_deep_dive_supply_chain_security__080f9423",
+            "content_manuals_scout_explore_metrics_datadog__a2be85d2",
+            "content_manuals_scout_explore_metrics_prometheus__d10be214",
+            "content_manuals_scout_how_tos_analyze_local_images__82555dd7",
+            "content_manuals_scout_how_tos_analyze_registry_images__7797710e",
+            "content_manuals_scout_how_tos_build_sbom_attestations__a29d5e07",
+            "content_manuals_scout_how_tos_build_with_attestations__b9dc3453",
+            "content_manuals_scout_how_tos_enable_repositories__e0248c81",
+            "content_manuals_scout_how_tos_export_sboms__ee456829",
+            "content_manuals_scout_how_tos_sbom_cli__713c8a2c",
+            "content_manuals_scout_policy_types__48453662",
+            "content_manuals_security_image_attestations__d86f9e4a",
+            "content_manuals_security_sbom__ae993bf7",
+            "content_manuals_security_vex__52596c94"
+          ],
+          "f": 0.0,
+          "r": 50
+        },
+        "A21": {
+          "T": 109,
+          "a": 343,
+          "added_edges": 343,
+          "added_pages": [
+            "content_manuals_dhi_core_concepts_charts__de4e5f4e",
+            "content_manuals_dhi_core_concepts_ci__bb05f531",
+            "content_manuals_dhi_core_concepts_customizations__86213f7b",
+            "content_manuals_dhi_core_concepts_definitions__804050c0",
+            "content_manuals_dhi_core_concepts_mirroring__ff915519",
+            "content_manuals_dhi_core_concepts_node_native_addons__3502ed8b",
+            "content_manuals_dhi_core_concepts_openshift__148d1b6e",
+            "content_manuals_dhi_core_concepts_packages__a9a54a01",
+            "content_manuals_dhi_core_concepts_socket_firewall__6926e8fb",
+            "content_manuals_dhi_core_concepts_verification__951281fd",
+            "content_manuals_dhi_how_to_authenticate__4c76d7ba",
+            "content_manuals_dhi_how_to_build_app_images__414c9f02",
+            "content_manuals_dhi_how_to_build_debian__5ffd3f9c",
+            "content_manuals_dhi_how_to_build_definition__ea99012a",
+            "content_manuals_dhi_how_to_build_nginx__d8851537",
+            "content_manuals_dhi_how_to_build_variants__e3a1bcf7",
+            "content_manuals_dhi_how_to_compare_images__43c86471",
+            "content_manuals_dhi_how_to_compliance_variants__fd0a0711",
+            "content_manuals_dhi_how_to_contribute_definitions__bce1d514",
+            "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+            "content_manuals_dhi_how_to_customize_chart__2c532e55",
+            "content_manuals_dhi_how_to_customize_image__30c8070e",
+            "content_manuals_dhi_how_to_debug__8774f272",
+            "content_manuals_dhi_how_to_definition_reference__c8c9f668",
+            "content_manuals_dhi_how_to_discover_attestations__90a3f04a",
+            "content_manuals_dhi_how_to_export_vex__04aca9b7",
+            "content_manuals_dhi_how_to_find_cis__2f52d856",
+            "content_manuals_dhi_how_to_kubernetes__76d00d58",
+            "content_manuals_dhi_how_to_manage_customizations__5182942b",
+            "content_manuals_dhi_how_to_mirror_hub__d71697c0",
+            "content_manuals_dhi_how_to_mirror_registry__0df447fb",
+            "content_manuals_dhi_how_to_monitor_customizations__79d936d1",
+            "content_manuals_dhi_how_to_openshift_debug__eccd2984",
+            "content_manuals_dhi_how_to_openshift_helm__855bf059",
+            "content_manuals_dhi_how_to_openshift_nginx__6effbe3a",
+            "content_manuals_dhi_how_to_openshift_node__90857035",
+            "content_manuals_dhi_how_to_openshift_permissions__086e4a2c",
+            "content_manuals_dhi_how_to_openshift_pull__fa3c267e",
+            "content_manuals_dhi_how_to_openshift_troubleshoot__b71bf8eb",
+            "content_manuals_dhi_how_to_openshift_users__6a7d12ce",
+            "content_manuals_dhi_how_to_openshift_verify__fc46ccef",
+            "content_manuals_dhi_how_to_packages_enterprise__23e6da41",
+            "content_manuals_dhi_how_to_packages_public__45b2463d",
+            "content_manuals_dhi_how_to_pull_run__1bcb2869",
+            "content_manuals_dhi_how_to_runtime_issues__6c314152",
+            "content_manuals_dhi_how_to_scan_child_images__abad5db8",
+            "content_manuals_dhi_how_to_scan_ci__a2e791a7",
+            "content_manuals_dhi_how_to_scan_docker_scout__1a69fb8e",
+            "content_manuals_dhi_how_to_scan_grype__8ddc3600",
+            "content_manuals_dhi_how_to_scan_mend__0953df68",
+            "content_manuals_dhi_how_to_scan_trivy__f262741a",
+            "content_manuals_dhi_how_to_scan_wiz__740bc743",
+            "content_manuals_dhi_how_to_sign_images__d521dccb",
+            "content_manuals_dhi_how_to_use_digests__5f6045a8",
+            "content_manuals_dhi_how_to_use_fips__763fc7ae",
+            "content_manuals_dhi_how_to_use_stig__f129a4c7",
+            "content_manuals_dhi_how_to_verify_attestations__d1ffb5b2",
+            "content_manuals_dhi_how_to_verify_charts__e2f1d9ec",
+            "content_manuals_dhi_how_to_verify_malware__c35e0d98",
+            "content_manuals_dhi_how_to_verify_packages__4768214f",
+            "content_manuals_dhi_how_to_verify_sbom__2e012391",
+            "content_manuals_dhi_how_to_verify_signatures__3b6e5fe1",
+            "content_manuals_dhi_how_to_verify_slsa__673482a6",
+            "content_manuals_dhi_how_to_verify_tests__4af30aee",
+            "content_manuals_dhi_migration_dockerfile__5756c5ad",
+            "content_manuals_dhi_migration_image_differences__3fc36ca6"
+          ],
+          "f": 0.0,
+          "r": 74
+        },
+        "A23": {
+          "T": 84,
+          "a": 159,
+          "added_edges": 159,
+          "added_pages": [
+            "content_guides_admin_set_up_rollout_context__c0a7f8e2",
+            "content_guides_admin_set_up_subscription_products__107c3ae3",
+            "content_guides_proxy_root_certificates__d7bfff09",
+            "content_guides_zscaler_certificate_context__d11538be",
+            "content_manuals_enterprise_enterprise_deployment_download_installers__4da56024",
+            "content_manuals_enterprise_enterprise_deployment_installer_updates__74d3dbdc",
+            "content_manuals_enterprise_enterprise_deployment_msi_reference__8e10c32d",
+            "content_manuals_enterprise_enterprise_deployment_msi_uninstall__ba42c5a5",
+            "content_manuals_enterprise_enterprise_deployment_supported_desktop_versions__af8042fd",
+            "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+            "content_manuals_enterprise_security_enforce_sign_in_mac_plist__2c499e7a",
+            "content_manuals_enterprise_security_enforce_sign_in_mac_profiles__44488590",
+            "content_manuals_enterprise_security_enforce_sign_in_method_reference__41f5a069",
+            "content_manuals_enterprise_security_enforce_sign_in_registry_json__f6514a33",
+            "content_manuals_enterprise_security_enforce_sign_in_windows_registry__1fc50846",
+            "content_manuals_enterprise_security_hardened_desktop_container_proxy_reference__1cc4b7ee",
+            "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_ci_tools__912891b4",
+            "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_development_tools__8c3b535a",
+            "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_testcontainers__97368be1",
+            "content_manuals_enterprise_security_hardened_desktop_image_registry_controls__ea280a73",
+            "content_manuals_enterprise_security_hardened_desktop_settings_management_apply_settings__dea7b0f9",
+            "content_manuals_enterprise_security_hardened_desktop_settings_management_json_file_reference__bb6544e2",
+            "content_manuals_enterprise_security_hardened_desktop_settings_management_policy_model__ab3c1471",
+            "content_manuals_enterprise_security_hardened_desktop_settings_management_settings_file_deployment__997e1b10",
+            "content_manuals_enterprise_security_organization_token_context__de38166e",
+            "content_manuals_enterprise_security_provisioning_disable_jit__4df65e78",
+            "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+            "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+            "content_manuals_enterprise_security_provisioning_scim_group_mapping_reference__d0e8b1fc",
+            "content_manuals_enterprise_security_provisioning_scim_role_mapping__0bba3582",
+            "content_manuals_enterprise_security_provisioning_scim_scim_attributes__f407d4d8",
+            "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050",
+            "content_manuals_enterprise_security_provisioning_sso_attributes__65c7539f",
+            "content_manuals_enterprise_security_provisioning_sso_prerequisites__63915fec",
+            "content_manuals_enterprise_security_roles_and_permissions_custom_role_permissions__8d67a54c",
+            "content_manuals_enterprise_security_single_sign_on_diagnostics__7788559b",
+            "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+            "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc"
+          ],
+          "f": 0.03773584905660377,
+          "r": 53
+        },
+        "A24": {
+          "T": 70,
+          "a": 144,
+          "added_edges": 144,
+          "added_pages": [
+            "content_manuals_extensions_extensions_sdk_build_build_install__ff37f81e",
+            "content_manuals_extensions_extensions_sdk_design_ui_styling__ef0ae546",
+            "content_manuals_extensions_extensions_sdk_dev_api_client__3c619a45",
+            "content_manuals_extensions_extensions_sdk_dev_api_docker_commands__e0beb4be",
+            "content_manuals_extensions_extensions_sdk_dev_api_docker_objects__c9c1124a",
+            "content_manuals_extensions_extensions_sdk_dev_api_file_dialog__c331fab4",
+            "content_manuals_extensions_extensions_sdk_dev_api_notifications__542d8390",
+            "content_manuals_extensions_extensions_sdk_dev_api_open_url__3bb03236",
+            "content_manuals_extensions_extensions_sdk_prerequisites__29b12201",
+            "content_manuals_extensions_feedback__dd9e0732",
+            "content_manuals_extensions_manage_extensions__8eadae3f",
+            "content_manuals_extensions_private_marketplace_configuration__765ed258",
+            "content_manuals_extensions_settings__8ccd7c05"
+          ],
+          "f": 0.0,
+          "r": 48
+        },
+        "A25": {
+          "T": 17,
+          "a": 64,
+          "added_edges": 64,
+          "added_pages": [
+            "content_reference_api_engine_http_socket__e0b0b353",
+            "content_reference_api_engine_sdk_commit_container__18c92dbf",
+            "content_reference_api_engine_sdk_container_logs__7f5e4f09",
+            "content_reference_api_engine_sdk_install__7cca9109",
+            "content_reference_api_engine_sdk_libraries__96fb9a98",
+            "content_reference_api_engine_sdk_list_containers__ec49a12d",
+            "content_reference_api_engine_sdk_list_images__0b0e1abb",
+            "content_reference_api_engine_sdk_pull_image__065bee26",
+            "content_reference_api_engine_sdk_pull_image_auth__2294e740",
+            "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+            "content_reference_api_engine_sdk_run_container__27e91b9d",
+            "content_reference_api_engine_sdk_run_container_background__67c23b8e",
+            "content_reference_api_engine_sdk_stop_containers__f443ae8e",
+            "content_reference_api_engine_versioning__f9c03b91"
+          ],
+          "f": 0.0,
+          "r": 16
+        },
+        "ALL": {
+          "T": 43,
+          "a": 51,
+          "added_edges": 51,
+          "added_pages": [
+            "content_manuals_admin_organization_manage_team_repository_permissions__105f7251",
+            "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d"
+          ],
+          "f": 0.0,
+          "r": 26
+        }
+      },
+      "nulls": {
+        "LT/ln-1": {
+          "added_existing_edges": 0,
+          "added_total": 3314,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 588
+        },
+        "LT/ln-2": {
+          "added_existing_edges": 0,
+          "added_total": 3316,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 578
+        },
+        "LT/ln-3": {
+          "added_existing_edges": 0,
+          "added_total": 3317,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 583
+        },
+        "LT/ln-4": {
+          "added_existing_edges": 0,
+          "added_total": 3317,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 579
+        },
+        "LT/ln-5": {
+          "added_existing_edges": 0,
+          "added_total": 3316,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 581
+        },
+        "LT/pc-1": {
+          "added_existing_edges": 0,
+          "added_total": 3316,
+          "pc_inbound_placed": 1942,
+          "pc_new_pages": 605,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 585
+        },
+        "LT/pc-2": {
+          "added_existing_edges": 0,
+          "added_total": 3313,
+          "pc_inbound_placed": 1942,
+          "pc_new_pages": 605,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 578
+        },
+        "LT/pc-3": {
+          "added_existing_edges": 0,
+          "added_total": 3311,
+          "pc_inbound_placed": 1942,
+          "pc_new_pages": 605,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 581
+        },
+        "LT/pc-4": {
+          "added_existing_edges": 0,
+          "added_total": 3313,
+          "pc_inbound_placed": 1942,
+          "pc_new_pages": 605,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 585
+        },
+        "LT/pc-5": {
+          "added_existing_edges": 0,
+          "added_total": 3317,
+          "pc_inbound_placed": 1942,
+          "pc_new_pages": 605,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 581
+        },
+        "LT/rn-1": {
+          "added_existing_edges": 0,
+          "added_total": 3315,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 579
+        },
+        "LT/rn-2": {
+          "added_existing_edges": 0,
+          "added_total": 3317,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 584
+        },
+        "LT/rn-3": {
+          "added_existing_edges": 0,
+          "added_total": 3314,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 590
+        },
+        "LT/rn-4": {
+          "added_existing_edges": 0,
+          "added_total": 3316,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 582
+        },
+        "LT/rn-5": {
+          "added_existing_edges": 0,
+          "added_total": 3317,
+          "planned_added": 3318,
+          "planned_removed": 609,
+          "removed_total": 583
+        }
+      },
+      "unattributed": {
+        "edges": 0,
+        "pages": 0,
+        "survivor_pages": 0
+      }
+    },
+    "R0": {
+      "arm_new_page_inbound": 66,
+      "arm_new_pages": 11,
+      "buckets": {
+        "A01": {
+          "T": 12,
+          "a": 40,
+          "added_edges": 40,
+          "added_pages": [],
+          "f": 0.1,
+          "r": 0
+        },
+        "A02": {
+          "T": 38,
+          "a": 85,
+          "added_edges": 85,
+          "added_pages": [],
+          "f": 0.32941176470588235,
+          "r": 0
+        },
+        "A03": {
+          "T": 42,
+          "a": 101,
+          "added_edges": 101,
+          "added_pages": [
+            "content_guides_nextjs_export__0eec9d64",
+            "content_guides_nextjs_standalone__c1208092"
+          ],
+          "f": 0.900990099009901,
+          "r": 1
+        },
+        "A04": {
+          "T": 60,
+          "a": 146,
+          "added_edges": 146,
+          "added_pages": [],
+          "f": 0.8835616438356164,
+          "r": 0
+        },
+        "A05": {
+          "T": 86,
+          "a": 227,
+          "added_edges": 227,
+          "added_pages": [],
+          "f": 0.9074889867841409,
+          "r": 0
+        },
+        "A06": {
+          "T": 63,
+          "a": 133,
+          "added_edges": 133,
+          "added_pages": [],
+          "f": 0.8195488721804511,
+          "r": 0
+        },
+        "A07": {
+          "T": 56,
+          "a": 110,
+          "added_edges": 110,
+          "added_pages": [
+            "content_guides_ai_task_guides__f7dada83",
+            "content_manuals_ai_model_runner_troubleshooting__7c56afe6"
+          ],
+          "f": 0.35454545454545455,
+          "r": 0
+        },
+        "A09": {
+          "T": 44,
+          "a": 71,
+          "added_edges": 71,
+          "added_pages": [],
+          "f": 0.09859154929577464,
+          "r": 0
+        },
+        "A10": {
+          "T": 56,
+          "a": 81,
+          "added_edges": 81,
+          "added_pages": [],
+          "f": 0.16049382716049382,
+          "r": 1
+        },
+        "A11": {
+          "T": 43,
+          "a": 67,
+          "added_edges": 67,
+          "added_pages": [],
+          "f": 0.22388059701492538,
+          "r": 1
+        },
+        "A12": {
+          "T": 42,
+          "a": 60,
+          "added_edges": 60,
+          "added_pages": [],
+          "f": 0.08333333333333333,
+          "r": 0
+        },
+        "A13": {
+          "T": 25,
+          "a": 49,
+          "added_edges": 49,
+          "added_pages": [],
+          "f": 0.14285714285714285,
+          "r": 1
+        },
+        "A14": {
+          "T": 35,
+          "a": 85,
+          "added_edges": 85,
+          "added_pages": [
+            "content_manuals_desktop_use_desktop_kubernetes_images__59e98c5c"
+          ],
+          "f": 0.4235294117647059,
+          "r": 2
+        },
+        "A15": {
+          "T": 44,
+          "a": 109,
+          "added_edges": 109,
+          "added_pages": [
+            "content_manuals_engine_release_notes_overview__16a2321f"
+          ],
+          "f": 0.7706422018348624,
+          "r": 3
+        },
+        "A16": {
+          "T": 38,
+          "a": 74,
+          "added_edges": 74,
+          "added_pages": [],
+          "f": 0.14864864864864866,
+          "r": 0
+        },
+        "A18": {
+          "T": 52,
+          "a": 78,
+          "added_edges": 78,
+          "added_pages": [],
+          "f": 0.46153846153846156,
+          "r": 0
+        },
+        "A19": {
+          "T": 39,
+          "a": 69,
+          "added_edges": 69,
+          "added_pages": [],
+          "f": 0.13043478260869565,
+          "r": 0
+        },
+        "A20": {
+          "T": 40,
+          "a": 88,
+          "added_edges": 88,
+          "added_pages": [],
+          "f": 0.23863636363636365,
+          "r": 0
+        },
+        "A21": {
+          "T": 57,
+          "a": 121,
+          "added_edges": 121,
+          "added_pages": [
+            "content_manuals_dhi_how_to_kubernetes__76d00d58",
+            "content_manuals_dhi_how_to_oci_artifacts__ef436e7c",
+            "content_manuals_dhi_how_to_scan_child_images__abad5db8"
+          ],
+          "f": 0.15702479338842976,
+          "r": 2
+        },
+        "A22": {
+          "T": 35,
+          "a": 68,
+          "added_edges": 68,
+          "added_pages": [],
+          "f": 0.08823529411764706,
+          "r": 0
+        },
+        "A23": {
+          "T": 47,
+          "a": 65,
+          "added_edges": 65,
+          "added_pages": [],
+          "f": 0.36923076923076925,
+          "r": 4
+        },
+        "A24": {
+          "T": 38,
+          "a": 61,
+          "added_edges": 61,
+          "added_pages": [],
+          "f": 0.2459016393442623,
+          "r": 0
+        },
+        "A25": {
+          "T": 5,
+          "a": 13,
+          "added_edges": 13,
+          "added_pages": [
+            "content_reference_api_engine_sdk_libraries__96fb9a98",
+            "content_reference_api_engine_sdk_quickstart__e94c7e9c"
+          ],
+          "f": 0.6923076923076923,
+          "r": 0
+        },
+        "ALL": {
+          "T": 20,
+          "a": 22,
+          "added_edges": 22,
+          "added_pages": [],
+          "f": 0.09090909090909091,
+          "r": 0
+        }
+      },
+      "nulls": {
+        "R0/ln-1": {
+          "added_existing_edges": 0,
+          "added_total": 1980,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/ln-2": {
+          "added_existing_edges": 0,
+          "added_total": 1989,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/ln-3": {
+          "added_existing_edges": 0,
+          "added_total": 1980,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/ln-4": {
+          "added_existing_edges": 0,
+          "added_total": 1976,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/ln-5": {
+          "added_existing_edges": 0,
+          "added_total": 1985,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/pc-1": {
+          "added_existing_edges": 0,
+          "added_total": 1985,
+          "pc_inbound_placed": 66,
+          "pc_new_pages": 11,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 14
+        },
+        "R0/pc-2": {
+          "added_existing_edges": 0,
+          "added_total": 1990,
+          "pc_inbound_placed": 66,
+          "pc_new_pages": 11,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/pc-3": {
+          "added_existing_edges": 0,
+          "added_total": 1987,
+          "pc_inbound_placed": 66,
+          "pc_new_pages": 11,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/pc-4": {
+          "added_existing_edges": 0,
+          "added_total": 1987,
+          "pc_inbound_placed": 66,
+          "pc_new_pages": 11,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/pc-5": {
+          "added_existing_edges": 0,
+          "added_total": 1991,
+          "pc_inbound_placed": 66,
+          "pc_new_pages": 11,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/rn-1": {
+          "added_existing_edges": 0,
+          "added_total": 1988,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/rn-2": {
+          "added_existing_edges": 0,
+          "added_total": 1980,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/rn-3": {
+          "added_existing_edges": 0,
+          "added_total": 1981,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/rn-4": {
+          "added_existing_edges": 0,
+          "added_total": 1987,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        },
+        "R0/rn-5": {
+          "added_existing_edges": 0,
+          "added_total": 1980,
+          "planned_added": 2023,
+          "planned_removed": 15,
+          "removed_total": 15
+        }
+      },
+      "unattributed": {
+        "edges": 0,
+        "pages": 0,
+        "survivor_pages": 0
+      }
+    }
+  },
+  "controls_check": {
+    "O_equals_12b_O": true,
+    "O_f_reference": {
+      "applies": true,
+      "lambda1_exact": true,
+      "lambda1_q0.25": 0.08630868621054655,
+      "lwcc_edges_equal": true,
+      "lwcc_nodes_equal": true,
+      "normalized_lambda2": 0.011037979927050976,
+      "normalized_lambda2_exact": true,
+      "retrieval_graph_equals_09c_F": false,
+      "rounded_6": [
+        0.086309,
+        0.011038
+      ]
+    },
+    "O_profile_sha256": "7f25bb30fdbaad2ac7c9f451da5086f2307f8fefd0a7092520839350b1eac980",
+    "S_profile_equals_O": true,
+    "S_tree_equals_O_tree": true,
+    "flow_imbalance_O": 0.027340513670256836
+  },
+  "created": "2026-10-19",
+  "descriptives": {
+    "LT": {
+      "flow_imbalance": {
+        "LN": {
+          "max": 0.08805513016845329,
+          "mean": 0.04577411303709436,
+          "min": 0.0038314176245210726,
+          "n": 5
+        },
+        "O": 0.027340513670256836,
+        "O_prime": 0.027340513670256836,
+        "PC": {
+          "max": 0.249856184084372,
+          "mean": 0.1387640013219114,
+          "min": 0.04729082902546429,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.052430156907768845,
+          "mean": 0.03383996033948773,
+          "min": 0.01606118546845124,
+          "n": 5
+        },
+        "arm": 0.05948026948989413
+      },
+      "lambda1_q0.25": {
+        "LN": {
+          "max": 0.14486949772955526,
+          "mean": 0.1158156211578936,
+          "min": 0.05990217810179366,
+          "n": 5
+        },
+        "O": 0.08630868621054655,
+        "O_prime": 0.08630868621054655,
+        "PC": {
+          "max": 0.13708567134165495,
+          "mean": 0.11326286814634608,
+          "min": 0.08568049034935957,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.1511442674393577,
+          "mean": 0.13709836991915142,
+          "min": 0.12166550316987869,
+          "n": 5
+        },
+        "arm": 0.0734960174119018
+      },
+      "normalized_lambda2": {
+        "LN": {
+          "max": 0.022590096135737925,
+          "mean": 0.01704451628883354,
+          "min": 0.013334558143624671,
+          "n": 5
+        },
+        "O": 0.011037979927050976,
+        "O_prime": 0.011037979927050976,
+        "PC": {
+          "max": 0.021882852304014246,
+          "mean": 0.016275537121009535,
+          "min": 0.01300662972036178,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.16222408039329855,
+          "mean": 0.14223281890402198,
+          "min": 0.1303505567485903,
+          "n": 5
+        },
+        "arm": 0.012746001729749086
+      }
+    },
+    "R0": {
+      "flow_imbalance": {
+        "LN": {
+          "max": 0.10011198208286674,
+          "mean": 0.05928450133504556,
+          "min": 0.027559937261931438,
+          "n": 5
+        },
+        "O": 0.027340513670256836,
+        "O_prime": 0.027340513670256836,
+        "PC": {
+          "max": 0.19067891552767197,
+          "mean": 0.1096981450441844,
+          "min": 0.039606175878272545,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.08434275459847465,
+          "mean": 0.052190879370217345,
+          "min": 0.019959632204530165,
+          "n": 5
+        },
+        "arm": 0.07452725250278086
+      },
+      "lambda1_q0.25": {
+        "LN": {
+          "max": 0.137186269490903,
+          "mean": 0.10753848393947414,
+          "min": 0.08461057647984076,
+          "n": 5
+        },
+        "O": 0.08630868621054655,
+        "O_prime": 0.08630868621054655,
+        "PC": {
+          "max": 0.1251582956437837,
+          "mean": 0.1106852640273845,
+          "min": 0.07913641409088652,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.165477288174393,
+          "mean": 0.12342779046270216,
+          "min": 0.10079533344905353,
+          "n": 5
+        },
+        "arm": 0.0712672675183675
+      },
+      "normalized_lambda2": {
+        "LN": {
+          "max": 0.010264043179676054,
+          "mean": 0.006171750032951651,
+          "min": 0.003952460048398818,
+          "n": 5
+        },
+        "O": 0.011037979927050976,
+        "O_prime": 0.011037979927050976,
+        "PC": {
+          "max": 0.008759094822662964,
+          "mean": 0.006207847584715276,
+          "min": 0.0040088755864458765,
+          "n": 5
+        },
+        "RN": {
+          "max": 0.11744672849060492,
+          "mean": 0.10571707586841772,
+          "min": 0.09013259552905839,
+          "n": 5
+        },
+        "arm": 0.0032235372865135766
+      }
+    }
+  },
+  "final_trees": {
+    "LT": "d4cdf7f7d3f9ddc27696ae397487cd335b70e8ab8687f1e7086bfb1b0d115f74",
+    "R0": "a01b9cedb040a7f7c52845a1ea7bd66a5da8f26dc6b78889b21f87a5e3d658d1"
+  },
+  "full_view": {
+    "LT": {
+      "LT": {
+        "flow_imbalance": 0.05948026948989413,
+        "lambda1_q0.25": 0.0734960174119018,
+        "lwcc_nodes": 1671,
+        "normalized_lambda2": 0.012746001729749086,
+        "q_sweep_lambda1": {
+          "0.00": 1.7403089460282688e-15,
+          "0.05": 0.03394821388770348,
+          "0.10": 0.06773144756332179,
+          "0.15": 0.07194854112487208,
+          "0.20": 0.0729421351957311,
+          "0.25": 0.0734960174119018
+        }
+      },
+      "LT/O-prime": {
+        "flow_imbalance": 0.027340513670256836,
+        "lambda1_q0.25": 0.08630868621054655,
+        "lwcc_nodes": 844,
+        "normalized_lambda2": 0.011037979927050976,
+        "q_sweep_lambda1": {
+          "0.00": -1.0166662000382082e-15,
+          "0.05": 0.02983041418020502,
+          "0.10": 0.043767146751502874,
+          "0.15": 0.05936502305779269,
+          "0.20": 0.07915494878729855,
+          "0.25": 0.08630868621054655
+        }
+      },
+      "LT/ln-1": {
+        "flow_imbalance": 0.03280260886245924,
+        "lambda1_q0.25": 0.09320624287287314,
+        "lwcc_nodes": 1644,
+        "normalized_lambda2": 0.013364050666988078,
+        "q_sweep_lambda1": {
+          "0.00": 4.0209758954995866e-16,
+          "0.05": 0.06873376355002114,
+          "0.10": 0.08250699615335359,
+          "0.15": 0.09314203647346155,
+          "0.20": 0.09319941533639653,
+          "0.25": 0.09320624287287314
+        }
+      },
+      "LT/ln-2": {
+        "flow_imbalance": 0.04326186830015314,
+        "lambda1_q0.25": 0.141196277306559,
+        "lwcc_nodes": 1633,
+        "normalized_lambda2": 0.022590096135737925,
+        "q_sweep_lambda1": {
+          "0.00": -8.920074213423032e-16,
+          "0.05": 0.06781619890751131,
+          "0.10": 0.08163476227873341,
+          "0.15": 0.10125291075649746,
+          "0.20": 0.1255208676075598,
+          "0.25": 0.141196277306559
+        }
+      },
+      "LT/ln-3": {
+        "flow_imbalance": 0.06091954022988506,
+        "lambda1_q0.25": 0.13990390977868686,
+        "lwcc_nodes": 1642,
+        "normalized_lambda2": 0.02249238066948611,
+        "q_sweep_lambda1": {
+          "0.00": 2.8707934134949962e-15,
+          "0.05": 0.06740068855617826,
+          "0.10": 0.08139827093586084,
+          "0.15": 0.10101447548357362,
+          "0.20": 0.1252768323457818,
+          "0.25": 0.13990390977868686
+        }
+      },
+      "LT/ln-4": {
+        "flow_imbalance": 0.08805513016845329,
+        "lambda1_q0.25": 0.05990217810179366,
+        "lwcc_nodes": 1639,
+        "normalized_lambda2": 0.013334558143624671,
+        "q_sweep_lambda1": {
+          "0.00": -2.279978932458292e-15,
+          "0.05": 0.05951299455166636,
+          "0.10": 0.05987621829086088,
+          "0.15": 0.059896491310582285,
+          "0.20": 0.0599015575712014,
+          "0.25": 0.05990217810179366
+        }
+      },
+      "LT/ln-5": {
+        "flow_imbalance": 0.0038314176245210726,
+        "lambda1_q0.25": 0.14486949772955526,
+        "lwcc_nodes": 1638,
+        "normalized_lambda2": 0.01344149582833091,
+        "q_sweep_lambda1": {
+          "0.00": 5.582940229576933e-15,
+          "0.05": 0.06756464814005646,
+          "0.10": 0.08149677497914466,
+          "0.15": 0.1011755784700619,
+          "0.20": 0.12558289140138126,
+          "0.25": 0.14486949772955526
+        }
+      },
+      "LT/pc-1": {
+        "flow_imbalance": 0.249856184084372,
+        "lambda1_q0.25": 0.12171068844455682,
+        "lwcc_nodes": 1696,
+        "normalized_lambda2": 0.013173621502179898,
+        "q_sweep_lambda1": {
+          "0.00": 5.527155700577874e-16,
+          "0.05": 0.0446738914679195,
+          "0.10": 0.0808177188019853,
+          "0.15": 0.10059097641880903,
+          "0.20": 0.12168184298376944,
+          "0.25": 0.12171068844455682
+        }
+      },
+      "LT/pc-2": {
+        "flow_imbalance": 0.1953229825570251,
+        "lambda1_q0.25": 0.08568049034935957,
+        "lwcc_nodes": 1687,
+        "normalized_lambda2": 0.02019844661710531,
+        "q_sweep_lambda1": {
+          "0.00": -4.460158514485443e-15,
+          "0.05": 0.04647333048735216,
+          "0.10": 0.0800597619077362,
+          "0.15": 0.08540653385776324,
+          "0.20": 0.08560668252554625,
+          "0.25": 0.08568049034935957
+        }
+      },
+      "LT/pc-3": {
+        "flow_imbalance": 0.08052147239263803,
+        "lambda1_q0.25": 0.12933281298006094,
+        "lwcc_nodes": 1697,
+        "normalized_lambda2": 0.021882852304014246,
+        "q_sweep_lambda1": {
+          "0.00": -5.497723009984492e-16,
+          "0.05": 0.046098383418812255,
+          "0.10": 0.07877630382666365,
+          "0.15": 0.09850788184626437,
+          "0.20": 0.1228570438870161,
+          "0.25": 0.12933281298006094
+        }
+      },
+      "LT/pc-4": {
+        "flow_imbalance": 0.12082853855005754,
+        "lambda1_q0.25": 0.09250467761609808,
+        "lwcc_nodes": 1700,
+        "normalized_lambda2": 0.01300662972036178,
+        "q_sweep_lambda1": {
+          "0.00": 6.795091451401169e-15,
+          "0.05": 0.043965033558098277,
+          "0.10": 0.0792098309471711,
+          "0.15": 0.09223121601223219,
+          "0.20": 0.09241266580233039,
+          "0.25": 0.09250467761609808
+        }
+      },
+      "LT/pc-5": {
+        "flow_imbalance": 0.04729082902546429,
+        "lambda1_q0.25": 0.13708567134165495,
+        "lwcc_nodes": 1697,
+        "normalized_lambda2": 0.013116135461386458,
+        "q_sweep_lambda1": {
+          "0.00": 3.057817947479538e-15,
+          "0.05": 0.04488086195611851,
+          "0.10": 0.07978736722708167,
+          "0.15": 0.0994507276885998,
+          "0.20": 0.12338962361742202,
+          "0.25": 0.13708567134165495
+        }
+      },
+      "LT/rn-1": {
+        "flow_imbalance": 0.01606118546845124,
+        "lambda1_q0.25": 0.12166550316987869,
+        "lwcc_nodes": 1784,
+        "normalized_lambda2": 0.1303505567485903,
+        "q_sweep_lambda1": {
+          "0.00": 9.332344136991169e-16,
+          "0.05": 0.06850353848280279,
+          "0.10": 0.12155827884132343,
+          "0.15": 0.1216382201632955,
+          "0.20": 0.1216476849550801,
+          "0.25": 0.12166550316987869
+        }
+      },
+      "LT/rn-2": {
+        "flow_imbalance": 0.041913875598086126,
+        "lambda1_q0.25": 0.1511442674393577,
+        "lwcc_nodes": 1778,
+        "normalized_lambda2": 0.1460825531349087,
+        "q_sweep_lambda1": {
+          "0.00": 2.520681962234491e-15,
+          "0.05": 0.07248699458992316,
+          "0.10": 0.15104689139103852,
+          "0.15": 0.15114116892905796,
+          "0.20": 0.1511474086200456,
+          "0.25": 0.1511442674393577
+        }
+      },
+      "LT/rn-3": {
+        "flow_imbalance": 0.028943837454475752,
+        "lambda1_q0.25": 0.14895799564224635,
+        "lwcc_nodes": 1776,
+        "normalized_lambda2": 0.13614211733772463,
+        "q_sweep_lambda1": {
+          "0.00": -2.491289011718877e-15,
+          "0.05": 0.07158366920592153,
+          "0.10": 0.14864198353481073,
+          "0.15": 0.14882107483694978,
+          "0.20": 0.14889580448341277,
+          "0.25": 0.14895799564224635
+        }
+      },
+      "LT/rn-4": {
+        "flow_imbalance": 0.029850746268656716,
+        "lambda1_q0.25": 0.1392713576520429,
+        "lwcc_nodes": 1773,
+        "normalized_lambda2": 0.16222408039329855,
+        "q_sweep_lambda1": {
+          "0.00": -6.384757963094307e-15,
+          "0.05": 0.07303130531500027,
+          "0.10": 0.13913541088812276,
+          "0.15": 0.1392416177749806,
+          "0.20": 0.13926740752623595,
+          "0.25": 0.1392713576520429
+        }
+      },
+      "LT/rn-5": {
+        "flow_imbalance": 0.052430156907768845,
+        "lambda1_q0.25": 0.12445272569223147,
+        "lwcc_nodes": 1781,
+        "normalized_lambda2": 0.13636478690558773,
+        "q_sweep_lambda1": {
+          "0.00": 1.2873273780870001e-15,
+          "0.05": 0.07211007347736405,
+          "0.10": 0.12440398465496603,
+          "0.15": 0.12447383875938968,
+          "0.20": 0.12446137968952181,
+          "0.25": 0.12445272569223147
+        }
+      }
+    },
+    "O": {
+      "flow_imbalance": 0.027340513670256836,
+      "lambda1_q0.25": 0.08630868621054655,
+      "lwcc_nodes": 844,
+      "normalized_lambda2": 0.011037979927050976,
+      "q_sweep_lambda1": {
+        "0.00": -1.0166662000382082e-15,
+        "0.05": 0.02983041418020502,
+        "0.10": 0.043767146751502874,
+        "0.15": 0.05936502305779269,
+        "0.20": 0.07915494878729855,
+        "0.25": 0.08630868621054655
+      }
+    },
+    "R0": {
+      "R0": {
+        "flow_imbalance": 0.07452725250278086,
+        "lambda1_q0.25": 0.0712672675183675,
+        "lwcc_nodes": 1182,
+        "normalized_lambda2": 0.0032235372865135766,
+        "q_sweep_lambda1": {
+          "0.00": -9.733532747291973e-15,
+          "0.05": 0.010008593012760478,
+          "0.10": 0.02186976124427575,
+          "0.15": 0.03823981427810428,
+          "0.20": 0.05582183625580696,
+          "0.25": 0.0712672675183675
+        }
+      },
+      "R0/O-prime": {
+        "flow_imbalance": 0.027340513670256836,
+        "lambda1_q0.25": 0.08630868621054655,
+        "lwcc_nodes": 844,
+        "normalized_lambda2": 0.011037979927050976,
+        "q_sweep_lambda1": {
+          "0.00": -1.0166662000382082e-15,
+          "0.05": 0.02983041418020502,
+          "0.10": 0.043767146751502874,
+          "0.15": 0.05936502305779269,
+          "0.20": 0.07915494878729855,
+          "0.25": 0.08630868621054655
+        }
+      },
+      "R0/ln-1": {
+        "flow_imbalance": 0.03298182634058784,
+        "lambda1_q0.25": 0.09109898697004618,
+        "lwcc_nodes": 1123,
+        "normalized_lambda2": 0.004816155571960485,
+        "q_sweep_lambda1": {
+          "0.00": 3.598098275150818e-16,
+          "0.05": 0.01614874321464714,
+          "0.10": 0.02876825450268813,
+          "0.15": 0.04768131260320888,
+          "0.20": 0.07009478600629708,
+          "0.25": 0.09109898697004618
+        }
+      },
+      "R0/ln-2": {
+        "flow_imbalance": 0.10011198208286674,
+        "lambda1_q0.25": 0.137186269490903,
+        "lwcc_nodes": 1123,
+        "normalized_lambda2": 0.006096123108509061,
+        "q_sweep_lambda1": {
+          "0.00": -4.323585318658894e-15,
+          "0.05": 0.021545614438580142,
+          "0.10": 0.04089317620615896,
+          "0.15": 0.06960919939737326,
+          "0.20": 0.1035098427032684,
+          "0.25": 0.137186269490903
+        }
+      },
+      "R0/ln-3": {
+        "flow_imbalance": 0.05718771024893474,
+        "lambda1_q0.25": 0.08461057647984076,
+        "lwcc_nodes": 1126,
+        "normalized_lambda2": 0.005729968256213839,
+        "q_sweep_lambda1": {
+          "0.00": 2.9224869959161614e-15,
+          "0.05": 0.019845227486516053,
+          "0.10": 0.03468032305665301,
+          "0.15": 0.05429690781511495,
+          "0.20": 0.072536409237622,
+          "0.25": 0.08461057647984076
+        }
+      },
+      "R0/ln-4": {
+        "flow_imbalance": 0.07858105074090704,
+        "lambda1_q0.25": 0.11599561433134906,
+        "lwcc_nodes": 1126,
+        "normalized_lambda2": 0.003952460048398818,
+        "q_sweep_lambda1": {
+          "0.00": -7.640136529854473e-15,
+          "0.05": 0.01547848925892064,
+          "0.10": 0.03138490547829385,
+          "0.15": 0.05556446909713481,
+          "0.20": 0.08507422446799401,
+          "0.25": 0.11599561433134906
+        }
+      },
+      "R0/ln-5": {
+        "flow_imbalance": 0.027559937261931438,
+        "lambda1_q0.25": 0.10880097242523165,
+        "lwcc_nodes": 1120,
+        "normalized_lambda2": 0.010264043179676054,
+        "q_sweep_lambda1": {
+          "0.00": 3.145711119252339e-15,
+          "0.05": 0.027691995912437085,
+          "0.10": 0.042272369453721155,
+          "0.15": 0.06276798271602735,
+          "0.20": 0.08638183496636401,
+          "0.25": 0.10880097242523165
+        }
+      },
+      "R0/pc-1": {
+        "flow_imbalance": 0.19067891552767197,
+        "lambda1_q0.25": 0.10280922049059257,
+        "lwcc_nodes": 1143,
+        "normalized_lambda2": 0.007743892655884549,
+        "q_sweep_lambda1": {
+          "0.00": 2.097447656284228e-16,
+          "0.05": 0.023128355401451996,
+          "0.10": 0.03768763385079964,
+          "0.15": 0.05824612634253456,
+          "0.20": 0.08135219043711592,
+          "0.25": 0.10280922049059257
+        }
+      },
+      "R0/pc-2": {
+        "flow_imbalance": 0.039606175878272545,
+        "lambda1_q0.25": 0.12434086990077983,
+        "lwcc_nodes": 1130,
+        "normalized_lambda2": 0.008759094822662964,
+        "q_sweep_lambda1": {
+          "0.00": -8.83751019501633e-15,
+          "0.05": 0.02600899680946164,
+          "0.10": 0.042292202802925116,
+          "0.15": 0.06615355299813486,
+          "0.20": 0.09496311092632852,
+          "0.25": 0.12434086990077983
+        }
+      },
+      "R0/pc-3": {
+        "flow_imbalance": 0.08353863381858903,
+        "lambda1_q0.25": 0.07913641409088652,
+        "lwcc_nodes": 1139,
+        "normalized_lambda2": 0.0040088755864458765,
+        "q_sweep_lambda1": {
+          "0.00": -1.2436395420028024e-14,
+          "0.05": 0.01540043396008754,
+          "0.10": 0.030227621734017475,
+          "0.15": 0.050263244222093224,
+          "0.20": 0.06859238673219496,
+          "0.25": 0.07913641409088652
+        }
+      },
+      "R0/pc-4": {
+        "flow_imbalance": 0.08202599731062304,
+        "lambda1_q0.25": 0.1219815200108799,
+        "lwcc_nodes": 1134,
+        "normalized_lambda2": 0.004515141737706153,
+        "q_sweep_lambda1": {
+          "0.00": 2.741921920708957e-15,
+          "0.05": 0.01566027735251248,
+          "0.10": 0.032636198453075735,
+          "0.15": 0.05824455701267477,
+          "0.20": 0.08926025157189135,
+          "0.25": 0.1219815200108799
+        }
+      },
+      "R0/pc-5": {
+        "flow_imbalance": 0.15264100268576544,
+        "lambda1_q0.25": 0.1251582956437837,
+        "lwcc_nodes": 1142,
+        "normalized_lambda2": 0.006012233120876837,
+        "q_sweep_lambda1": {
+          "0.00": -1.7301930697835007e-15,
+          "0.05": 0.019001844175347376,
+          "0.10": 0.03504885428711161,
+          "0.15": 0.0597284102111255,
+          "0.20": 0.0908330938040378,
+          "0.25": 0.1251582956437837
+        }
+      },
+      "R0/rn-1": {
+        "flow_imbalance": 0.0409670920080591,
+        "lambda1_q0.25": 0.11178554748351091,
+        "lwcc_nodes": 1193,
+        "normalized_lambda2": 0.11252665436842522,
+        "q_sweep_lambda1": {
+          "0.00": 2.249821484628976e-15,
+          "0.05": 0.0566257233476715,
+          "0.10": 0.11111295046038579,
+          "0.15": 0.11148705125818667,
+          "0.20": 0.1116619740122212,
+          "0.25": 0.11178554748351091
+        }
+      },
+      "R0/rn-2": {
+        "flow_imbalance": 0.08434275459847465,
+        "lambda1_q0.25": 0.11031438409199079,
+        "lwcc_nodes": 1179,
+        "normalized_lambda2": 0.11246001933173888,
+        "q_sweep_lambda1": {
+          "0.00": 3.0998597296044942e-15,
+          "0.05": 0.05758494407034863,
+          "0.10": 0.10998854590899873,
+          "0.15": 0.11019616929176743,
+          "0.20": 0.11026379337412706,
+          "0.25": 0.11031438409199079
+        }
+      },
+      "R0/rn-3": {
+        "flow_imbalance": 0.03520968827091276,
+        "lambda1_q0.25": 0.12876639911456256,
+        "lwcc_nodes": 1183,
+        "normalized_lambda2": 0.09013259552905839,
+        "q_sweep_lambda1": {
+          "0.00": -3.1950581032820194e-15,
+          "0.05": 0.058397631633582574,
+          "0.10": 0.12835470412769195,
+          "0.15": 0.12860694152804653,
+          "0.20": 0.12870249022702762,
+          "0.25": 0.12876639911456256
+        }
+      },
+      "R0/rn-4": {
+        "flow_imbalance": 0.08047522976911006,
+        "lambda1_q0.25": 0.10079533344905353,
+        "lwcc_nodes": 1184,
+        "normalized_lambda2": 0.11744672849060492,
+        "q_sweep_lambda1": {
+          "0.00": -3.737666916271005e-15,
+          "0.05": 0.055521537829773655,
+          "0.10": 0.10055990754373074,
+          "0.15": 0.10070911688973168,
+          "0.20": 0.10075816095136055,
+          "0.25": 0.10079533344905353
+        }
+      },
+      "R0/rn-5": {
+        "flow_imbalance": 0.019959632204530165,
+        "lambda1_q0.25": 0.165477288174393,
+        "lwcc_nodes": 1174,
+        "normalized_lambda2": 0.0960193816222612,
+        "q_sweep_lambda1": {
+          "0.00": 8.024126827606218e-15,
+          "0.05": 0.05821785462717365,
+          "0.10": 0.1636390213824163,
+          "0.15": 0.16519375084609458,
+          "0.20": 0.16541623975759698,
+          "0.25": 0.165477288174393
+        }
+      }
+    },
+    "S": {
+      "flow_imbalance": 0.027340513670256836,
+      "lambda1_q0.25": 0.08630868621054655,
+      "lwcc_nodes": 844,
+      "normalized_lambda2": 0.011037979927050976,
+      "q_sweep_lambda1": {
+        "0.00": -1.0166662000382082e-15,
+        "0.05": 0.02983041418020502,
+        "0.10": 0.043767146751502874,
+        "0.15": 0.05936502305779269,
+        "0.20": 0.07915494878729855,
+        "0.25": 0.08630868621054655
+      }
+    }
+  },
+  "model_calls": 0,
+  "null_count_per_type": {
+    "LT": {
+      "LN": 5,
+      "PC": 5,
+      "RN": 5
+    },
+    "R0": {
+      "LN": 5,
+      "PC": 5,
+      "RN": 5
+    }
+  },
+  "per_area_subgraph": {
+    "A01": {
+      "R0": {
+        "S": 54,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.04928430067713705,
+          "magnetic_lambda2_q0.25": 0.0035508611082784303,
+          "normalized_lambda2": -0.08828701129748917,
+          "outdegree_gini": 0.2983537188040524,
+          "reciprocal_edge_fraction": 0.11267605633802817,
+          "sinks": 20,
+          "sources": -2,
+          "subspace_polarization_v1": -0.009266586679142486
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -4.44955696748585,
+          "magnetic_lambda2_q0.25": -5.878496547837751,
+          "normalized_lambda2": -12.832748077870574,
+          "outdegree_gini": 23.567515981327272,
+          "reciprocal_edge_fraction": -6.009782991356214,
+          "sinks": 9.88362718079668,
+          "sources": 2.071729589512949,
+          "subspace_polarization_v1": 0.3778043651368704
+        }
+      }
+    },
+    "A02": {
+      "LT": {
+        "S": 152,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.12806371737813582,
+          "magnetic_lambda2_q0.25": 0.20466932502481947,
+          "normalized_lambda2": 0.09457685278319797,
+          "outdegree_gini": 0.08592855837170982,
+          "reciprocal_edge_fraction": 0.03482602590107661,
+          "sinks": 3,
+          "sources": -12,
+          "subspace_polarization_v1": -0.07580580647589896
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.7068375912018554,
+          "magnetic_lambda2_q0.25": -1.3083852655468484,
+          "normalized_lambda2": -2.299303171127309,
+          "outdegree_gini": 8.943938778997815,
+          "reciprocal_edge_fraction": -9.054527159390794,
+          "sinks": 5.962849456183121,
+          "sources": 12.271013722499774,
+          "subspace_polarization_v1": 0.7313944279760023
+        }
+      },
+      "R0": {
+        "S": 116,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.11253658282153628,
+          "magnetic_lambda2_q0.25": 0.18786465416051557,
+          "normalized_lambda2": 0.04747604830582278,
+          "outdegree_gini": 0.06510720062107783,
+          "reciprocal_edge_fraction": 0.10360975609756098,
+          "sinks": 0,
+          "sources": -13,
+          "subspace_polarization_v1": -0.33243979566612436
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.31009528781702755,
+          "magnetic_lambda2_q0.25": 1.2818301614312964,
+          "normalized_lambda2": -2.083664303985118,
+          "outdegree_gini": 5.133783767889678,
+          "reciprocal_edge_fraction": -23.89489717363231,
+          "sinks": 3.103949031985734,
+          "sources": 7.729145007029079,
+          "subspace_polarization_v1": -2.2448347347561772
+        }
+      }
+    },
+    "A03": {
+      "LT": {
+        "S": 94,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.27149773737415794,
+          "magnetic_lambda2_q0.25": 0.20245466901287865,
+          "normalized_lambda2": 0.06038717833762258,
+          "outdegree_gini": 0.03785225082902366,
+          "reciprocal_edge_fraction": 0.1614190687361419,
+          "sinks": 6,
+          "sources": -17,
+          "subspace_polarization_v1": -0.02278861660418441
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.19239989467373894,
+          "magnetic_lambda2_q0.25": -0.54905613288283,
+          "normalized_lambda2": -5.185912431946441,
+          "outdegree_gini": 4.5711970972002,
+          "reciprocal_edge_fraction": -25.860278326441883,
+          "sinks": 5.554435109869209,
+          "sources": 1.8326838676460708,
+          "subspace_polarization_v1": -0.9693163193943201
+        }
+      },
+      "R0": {
+        "S": 58,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.1898989024626757,
+          "magnetic_lambda2_q0.25": 0.22373502809891596,
+          "normalized_lambda2": 0.019436917878033477,
+          "outdegree_gini": -0.060067911870106905,
+          "reciprocal_edge_fraction": 0.49476965116775545,
+          "sinks": -1,
+          "sources": -23,
+          "subspace_polarization_v1": -0.38334416662587456
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.9432743568112731,
+          "magnetic_lambda2_q0.25": 0.37312909126977956,
+          "normalized_lambda2": -0.31025477927728184,
+          "outdegree_gini": 0.7600571587655841,
+          "reciprocal_edge_fraction": -74.82322236157715,
+          "sinks": 4.247509201664689,
+          "sources": -0.5577733510227164,
+          "subspace_polarization_v1": 3.914764585577837
+        }
+      }
+    },
+    "A04": {
+      "LT": {
+        "S": 127,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.11948157321286998,
+          "magnetic_lambda2_q0.25": 0.11334981186160184,
+          "normalized_lambda2": 0.0179686491696045,
+          "outdegree_gini": 0.035328129439760825,
+          "reciprocal_edge_fraction": -0.004333775896189784,
+          "sinks": 7,
+          "sources": -14,
+          "subspace_polarization_v1": -0.019766694665604434
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.8070034709093176,
+          "magnetic_lambda2_q0.25": 1.1222858127723119,
+          "normalized_lambda2": -2.8828010073614343,
+          "outdegree_gini": 1.706595326781607,
+          "reciprocal_edge_fraction": -0.0005863525200782884,
+          "sinks": 3.8390948553507767,
+          "sources": 1.9920476822239894,
+          "subspace_polarization_v1": -0.5950396109057041
+        }
+      },
+      "R0": {
+        "S": 85,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.038158099600784895,
+          "magnetic_lambda2_q0.25": 0.09147044241914509,
+          "normalized_lambda2": -0.08384890217145993,
+          "outdegree_gini": -0.05357080663071723,
+          "reciprocal_edge_fraction": 0.4721716712162572,
+          "sinks": 0,
+          "sources": -23,
+          "subspace_polarization_v1": -0.48446830943525865
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -2.2705125159573156,
+          "magnetic_lambda2_q0.25": -0.6715397716190795,
+          "normalized_lambda2": -4.452341319714108,
+          "outdegree_gini": 1.3079321272156226,
+          "reciprocal_edge_fraction": -73.38059869063608,
+          "sinks": 5.309386502080861,
+          "sources": -0.47809144373375717,
+          "subspace_polarization_v1": 3.968343455907749
+        }
+      }
+    },
+    "A05": {
+      "R0": {
+        "S": 87,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.06930816731876578,
+          "magnetic_lambda2_q0.25": -0.027391314411682063,
+          "normalized_lambda2": -0.14140016950125925,
+          "outdegree_gini": -0.6858444491745896,
+          "reciprocal_edge_fraction": 0.8046875,
+          "sinks": -19,
+          "sources": -6,
+          "subspace_polarization_v1": -0.5389823311219154
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.5274241462910222,
+          "magnetic_lambda2_q0.25": -1.7543173724062175,
+          "normalized_lambda2": -2.2566252501568873,
+          "outdegree_gini": -7.003856923607749,
+          "reciprocal_edge_fraction": -25.258772007704493,
+          "sinks": -0.6534629541022604,
+          "sources": 0.3984095364447979,
+          "subspace_polarization_v1": -0.893995165381016
+        }
+      }
+    },
+    "A06": {
+      "LT": {
+        "S": 169,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.07500189251974693,
+          "magnetic_lambda2_q0.25": -0.3518252457314439,
+          "normalized_lambda2": -0.9574279999484855,
+          "outdegree_gini": -0.47833801357643724,
+          "reciprocal_edge_fraction": 0.005235602094240838,
+          "sinks": -17,
+          "sources": 33,
+          "subspace_polarization_v1": 0.703884306184787
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -2.2902336490206587,
+          "magnetic_lambda2_q0.25": -1.6890036247800049,
+          "normalized_lambda2": -6.1104842858722055,
+          "outdegree_gini": 3.16454393178316,
+          "reciprocal_edge_fraction": 0.0,
+          "sinks": 1.5519745159928673,
+          "sources": 5.57773351022717,
+          "subspace_polarization_v1": -0.36247837798378013
+        }
+      },
+      "R0": {
+        "S": 69,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.06677986499838758,
+          "magnetic_lambda2_q0.25": -0.3399656518303673,
+          "normalized_lambda2": -0.9217607765012984,
+          "outdegree_gini": -0.39788285580711946,
+          "reciprocal_edge_fraction": 0.8172043010752689,
+          "sinks": -34,
+          "sources": 0,
+          "subspace_polarization_v1": -0.007293051483043739
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.969433919318173,
+          "magnetic_lambda2_q0.25": -1.2980145726124364,
+          "normalized_lambda2": -2.271189289194147,
+          "outdegree_gini": 7.739145344519334,
+          "reciprocal_edge_fraction": -11.470284741566932,
+          "sinks": 1.797023123781214,
+          "sources": 0.15936381457791915,
+          "subspace_polarization_v1": -0.006605137054217029
+        }
+      }
+    },
+    "A07": {
+      "LT": {
+        "S": 123,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.010536515621235948,
+          "magnetic_lambda2_q0.25": -0.04553193472744145,
+          "normalized_lambda2": -0.011488337091769055,
+          "outdegree_gini": 0.05056854180641651,
+          "reciprocal_edge_fraction": -0.16297368752360572,
+          "sinks": 17,
+          "sources": 6,
+          "subspace_polarization_v1": 0.09113529828453604
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.835052772635022,
+          "magnetic_lambda2_q0.25": -3.4363470117678623,
+          "normalized_lambda2": -6.70387581558852,
+          "outdegree_gini": 4.724678598644764,
+          "reciprocal_edge_fraction": -0.2524820073291641,
+          "sinks": 8.24996979554103,
+          "sources": 4.462186808181736,
+          "subspace_polarization_v1": -1.2299190791194985
+        }
+      },
+      "R0": {
+        "S": 82,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.15500405632648118,
+          "magnetic_lambda2_q0.25": 0.22134241394004442,
+          "normalized_lambda2": 0.028624048863253343,
+          "outdegree_gini": 0.02105241587419493,
+          "reciprocal_edge_fraction": 0.05353781805507146,
+          "sinks": -2,
+          "sources": -14,
+          "subspace_polarization_v1": -0.1651667425005543
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.5762434448809881,
+          "magnetic_lambda2_q0.25": 0.6950387791920688,
+          "normalized_lambda2": -4.77480976329049,
+          "outdegree_gini": 4.118566574590994,
+          "reciprocal_edge_fraction": -21.193440019186646,
+          "sinks": 2.1237546008323447,
+          "sources": -0.956182887467515,
+          "subspace_polarization_v1": -0.9984928402437327
+        }
+      }
+    },
+    "A09": {
+      "R0": {
+        "S": 135,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.025608502506698966,
+          "magnetic_lambda2_q0.25": 0.16589694358825105,
+          "normalized_lambda2": 0.024982098815694114,
+          "outdegree_gini": 0.02247734014222147,
+          "reciprocal_edge_fraction": 0.00435823241524666,
+          "sinks": 0,
+          "sources": -4,
+          "subspace_polarization_v1": 0.08627157717350076
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.857803983652225,
+          "magnetic_lambda2_q0.25": 0.3520778539501193,
+          "normalized_lambda2": -3.4447463462620718,
+          "outdegree_gini": 2.851262150384567,
+          "reciprocal_edge_fraction": -1.1470284741566956,
+          "sinks": 1.3886087774673022,
+          "sources": 3.3466401061363023,
+          "subspace_polarization_v1": 1.8091825806396173
+        }
+      }
+    },
+    "A10": {
+      "LT": {
+        "S": 175,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.05545283347457297,
+          "magnetic_lambda2_q0.25": 0.06892866003056183,
+          "normalized_lambda2": -0.037844844503334,
+          "outdegree_gini": -0.05243838243755622,
+          "reciprocal_edge_fraction": -0.06239801714344728,
+          "sinks": 5,
+          "sources": 9,
+          "subspace_polarization_v1": 0.13562105138201985
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.8754144284466319,
+          "magnetic_lambda2_q0.25": 0.11301014015824197,
+          "normalized_lambda2": -5.725756831209134,
+          "outdegree_gini": 0.3406149436696376,
+          "reciprocal_edge_fraction": -0.6081158086265431,
+          "sinks": 0.5717800848394773,
+          "sources": 7.4900992851622,
+          "subspace_polarization_v1": -0.366491334982519
+        }
+      },
+      "R0": {
+        "S": 134,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.04254737234384037,
+          "magnetic_lambda2_q0.25": 0.08241915680290979,
+          "normalized_lambda2": 0.03666628351580342,
+          "outdegree_gini": 0.0431096681096681,
+          "reciprocal_edge_fraction": 0.04317460317460317,
+          "sinks": 2,
+          "sources": -8,
+          "subspace_polarization_v1": 0.025962305803254093
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.1929251036985798,
+          "magnetic_lambda2_q0.25": 0.2150769741247868,
+          "normalized_lambda2": -2.0191776198820195,
+          "outdegree_gini": 3.947267305393286,
+          "reciprocal_edge_fraction": -0.48765096272719155,
+          "sinks": 2.9405832934601692,
+          "sources": 2.788866755113585,
+          "subspace_polarization_v1": -0.482124135669683
+        }
+      }
+    },
+    "A11": {
+      "LT": {
+        "S": 124,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.046262438734007316,
+          "magnetic_lambda2_q0.25": 0.09199154948962907,
+          "normalized_lambda2": 0.02706692958777651,
+          "outdegree_gini": 0.02356875775802858,
+          "reciprocal_edge_fraction": -0.04440877474585339,
+          "sinks": -2,
+          "sources": 1,
+          "subspace_polarization_v1": 0.04570036302849956
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.5053686397303,
+          "magnetic_lambda2_q0.25": -1.2300203288967966,
+          "normalized_lambda2": -3.1580048249746944,
+          "outdegree_gini": 3.0403677572394487,
+          "reciprocal_edge_fraction": 0.8044253323242614,
+          "sinks": 0.49009721557669494,
+          "sources": 4.940278251915494,
+          "subspace_polarization_v1": 0.1687527879628364
+        }
+      },
+      "R0": {
+        "S": 124,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.015275153441141956,
+          "magnetic_lambda2_q0.25": 0.1034386418646831,
+          "normalized_lambda2": 0.017492238264588983,
+          "outdegree_gini": 0.019236716693047162,
+          "reciprocal_edge_fraction": 0.020814202632384454,
+          "sinks": 1,
+          "sources": -1,
+          "subspace_polarization_v1": -0.011625346883786691
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.1274902061900776,
+          "magnetic_lambda2_q0.25": -0.49128537834253255,
+          "normalized_lambda2": -2.3764971970270206,
+          "outdegree_gini": 1.7251862910287594,
+          "reciprocal_edge_fraction": -5.642242543950957,
+          "sinks": 1.1435601696789546,
+          "sources": 4.063777271736938,
+          "subspace_polarization_v1": 0.9975992822921492
+        }
+      }
+    },
+    "A12": {
+      "LT": {
+        "S": 103,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.050710354322585305,
+          "magnetic_lambda2_q0.25": 0.01901020490680777,
+          "normalized_lambda2": 0.09542347094085343,
+          "outdegree_gini": 0.04446607451442819,
+          "reciprocal_edge_fraction": -0.0307728447263331,
+          "sinks": 1,
+          "sources": 3,
+          "subspace_polarization_v1": 0.022554833620009207
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.48859722794442273,
+          "magnetic_lambda2_q0.25": -0.3343659573687389,
+          "normalized_lambda2": 0.10534003237106708,
+          "outdegree_gini": 1.8189324213592395,
+          "reciprocal_edge_fraction": 1.4839996299208968,
+          "sinks": -0.7351458233650422,
+          "sources": 4.780914437337574,
+          "subspace_polarization_v1": -1.176923705251015
+        }
+      },
+      "R0": {
+        "S": 112,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.016090516402414407,
+          "magnetic_lambda2_q0.25": 0.026356444455189032,
+          "normalized_lambda2": 0.08326428831300978,
+          "outdegree_gini": 0.024609275528393204,
+          "reciprocal_edge_fraction": -0.015597147950089124,
+          "sinks": 0,
+          "sources": 23,
+          "subspace_polarization_v1": 0.04518495837404202
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.9405155275141833,
+          "magnetic_lambda2_q0.25": 1.6470936010128974,
+          "normalized_lambda2": 0.8157681466571256,
+          "outdegree_gini": 0.443267089249346,
+          "reciprocal_edge_fraction": 0.0,
+          "sinks": -1.3069259082045197,
+          "sources": 9.561828874675149,
+          "subspace_polarization_v1": -1.514349519206166
+        }
+      }
+    },
+    "A13": {
+      "LT": {
+        "S": 121,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.03786201944844064,
+          "magnetic_lambda2_q0.25": -0.02242202112715963,
+          "normalized_lambda2": -0.12323515684949113,
+          "outdegree_gini": -0.0029166192840807126,
+          "reciprocal_edge_fraction": -0.1356831485863744,
+          "sinks": 6,
+          "sources": 0,
+          "subspace_polarization_v1": 0.1510401337763353
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -2.953579972759019,
+          "magnetic_lambda2_q0.25": -1.9524921040137384,
+          "normalized_lambda2": -7.383476194946614,
+          "outdegree_gini": 5.797307169800798,
+          "reciprocal_edge_fraction": -6.919371768426343,
+          "sinks": 3.6757291168252113,
+          "sources": 2.390457218668787,
+          "subspace_polarization_v1": -0.41832573366131726
+        }
+      },
+      "R0": {
+        "S": 78,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.009835675033833202,
+          "magnetic_lambda2_q0.25": 0.04516227868412703,
+          "normalized_lambda2": 0.041019484894320585,
+          "outdegree_gini": -0.006615735784815557,
+          "reciprocal_edge_fraction": 0.003541111644300321,
+          "sinks": 0,
+          "sources": 0,
+          "subspace_polarization_v1": 0.01859966792784118
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.3942849421988535,
+          "magnetic_lambda2_q0.25": -0.5317876889673967,
+          "normalized_lambda2": -0.6546909759591367,
+          "outdegree_gini": 1.172225027277519,
+          "reciprocal_edge_fraction": -2.204326307530653,
+          "sinks": 1.3069259082045197,
+          "sources": 1.9123657749350298,
+          "subspace_polarization_v1": -1.1823287225292471
+        }
+      }
+    },
+    "A14": {
+      "LT": {
+        "S": 191,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.007783383632613744,
+          "magnetic_lambda2_q0.25": -0.04882779206054111,
+          "normalized_lambda2": 0.013730844410766128,
+          "outdegree_gini": -0.008165379293469388,
+          "reciprocal_edge_fraction": -0.06870293289704786,
+          "sinks": 4,
+          "sources": 5,
+          "subspace_polarization_v1": 0.07455374912990742
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.3289859230591077,
+          "magnetic_lambda2_q0.25": -1.2633591036960996,
+          "normalized_lambda2": -3.7325500075481144,
+          "outdegree_gini": 2.829689430371906,
+          "reciprocal_edge_fraction": -1.2791700842415588,
+          "sinks": 0.6534629541022599,
+          "sources": 5.498051602938211,
+          "subspace_polarization_v1": -0.34601163908400795
+        }
+      },
+      "R0": {
+        "S": 154,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.014724736450753811,
+          "magnetic_lambda2_q0.25": 0.06668416767283619,
+          "normalized_lambda2": 0.041920068302548394,
+          "outdegree_gini": -0.021686136161247926,
+          "reciprocal_edge_fraction": 0.06957722416597434,
+          "sinks": -4,
+          "sources": 0,
+          "subspace_polarization_v1": -0.007145890404009592
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.2649906926973424,
+          "magnetic_lambda2_q0.25": -0.19884462359461597,
+          "normalized_lambda2": -0.7719666766520022,
+          "outdegree_gini": 0.8146086596350005,
+          "reciprocal_edge_fraction": -11.57770885249455,
+          "sinks": 1.4702916467300844,
+          "sources": 6.215188768538846,
+          "subspace_polarization_v1": 1.4645281438460946
+        }
+      }
+    },
+    "A15": {
+      "LT": {
+        "S": 170,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.014322863851656709,
+          "magnetic_lambda2_q0.25": 0.11564298502316023,
+          "normalized_lambda2": -0.04734932464734347,
+          "outdegree_gini": -0.06820560873769665,
+          "reciprocal_edge_fraction": -0.08146837682441396,
+          "sinks": 1,
+          "sources": 15,
+          "subspace_polarization_v1": 0.026196838812530987
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.9285302820736094,
+          "magnetic_lambda2_q0.25": -2.3904935177136344,
+          "normalized_lambda2": -7.38360946276563,
+          "outdegree_gini": 6.734417716375827,
+          "reciprocal_edge_fraction": 6.792281266557289,
+          "sinks": 6.697995279548163,
+          "sources": 8.685327894496593,
+          "subspace_polarization_v1": 0.6381632821384895
+        }
+      },
+      "R0": {
+        "S": 146,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.07400135821880192,
+          "magnetic_lambda2_q0.25": 0.15613201678995436,
+          "normalized_lambda2": 0.024989059175922562,
+          "outdegree_gini": 0.00023099024029094029,
+          "reciprocal_edge_fraction": 0.15473002580456693,
+          "sinks": 0,
+          "sources": -11,
+          "subspace_polarization_v1": -0.32632348032292036
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.6702655294404349,
+          "magnetic_lambda2_q0.25": 1.4125890350274661,
+          "normalized_lambda2": 0.8160704159117613,
+          "outdegree_gini": 5.708807905470212,
+          "reciprocal_edge_fraction": -39.85973220405836,
+          "sinks": 8.821749880380509,
+          "sources": 0.3984095364447979,
+          "subspace_polarization_v1": 1.990263937405667
+        }
+      }
+    },
+    "A16": {
+      "LT": {
+        "S": 106,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.02312889877174304,
+          "magnetic_lambda2_q0.25": 0.04827621523493275,
+          "normalized_lambda2": -0.0036202026126941345,
+          "outdegree_gini": -0.0006088052836629165,
+          "reciprocal_edge_fraction": -0.08201491180214585,
+          "sinks": 3,
+          "sources": 2,
+          "subspace_polarization_v1": 0.07560068495195904
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.6750046378290994,
+          "magnetic_lambda2_q0.25": -0.27794762736630496,
+          "normalized_lambda2": -4.389591302881457,
+          "outdegree_gini": 2.6432679139154938,
+          "reciprocal_edge_fraction": -7.293924656175915,
+          "sinks": 0.5717800848394773,
+          "sources": 1.0358647947564745,
+          "subspace_polarization_v1": 0.3207766223850931
+        }
+      },
+      "R0": {
+        "S": 87,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.1915781443335932,
+          "magnetic_lambda2_q0.25": 0.17987100127103392,
+          "normalized_lambda2": 0.05827824369786988,
+          "outdegree_gini": 0.044879159327223916,
+          "reciprocal_edge_fraction": -0.004793863854266556,
+          "sinks": 0,
+          "sources": -3,
+          "subspace_polarization_v1": -0.03785723522831419
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 2.268022791052939,
+          "magnetic_lambda2_q0.25": 1.4118891178472386,
+          "normalized_lambda2": -2.6888861798628745,
+          "outdegree_gini": 6.229697496188028,
+          "reciprocal_edge_fraction": -11.429319438918514,
+          "sinks": 2.4504860778834745,
+          "sources": 0.7968190728895957,
+          "subspace_polarization_v1": -0.41002783717148866
+        }
+      }
+    },
+    "A18": {
+      "LT": {
+        "S": 148,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.16156707700600123,
+          "magnetic_lambda2_q0.25": 0.14416508808353787,
+          "normalized_lambda2": -0.0036473058877600426,
+          "outdegree_gini": 0.025302333395801013,
+          "reciprocal_edge_fraction": -0.19937978224963762,
+          "sinks": 12,
+          "sources": 4,
+          "subspace_polarization_v1": 0.18601566021078975
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.08865576279764216,
+          "magnetic_lambda2_q0.25": -0.1256089578334027,
+          "normalized_lambda2": -6.119825232353913,
+          "outdegree_gini": 3.668820743241976,
+          "reciprocal_edge_fraction": -2.7889353295698798,
+          "sinks": 4.574240678715818,
+          "sources": 2.470139125957747,
+          "subspace_polarization_v1": -0.29680786774905854
+        }
+      },
+      "R0": {
+        "S": 94,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.0611092359922909,
+          "magnetic_lambda2_q0.25": 0.12019324022344788,
+          "normalized_lambda2": 0.014975251740826596,
+          "outdegree_gini": 0.05422290475481967,
+          "reciprocal_edge_fraction": 0.11428571428571432,
+          "sinks": 0,
+          "sources": -2,
+          "subspace_polarization_v1": -0.07077116274893325
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.1088321122388487,
+          "magnetic_lambda2_q0.25": -1.2303103118066363,
+          "normalized_lambda2": -2.497529863943626,
+          "outdegree_gini": 4.362790509931446,
+          "reciprocal_edge_fraction": -16.411330476395815,
+          "sinks": 2.9405832934601692,
+          "sources": 3.585685828003181,
+          "subspace_polarization_v1": 1.160135925948473
+        }
+      }
+    },
+    "A19": {
+      "R0": {
+        "S": 90,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.09840617615851042,
+          "magnetic_lambda2_q0.25": 0.09101275602483598,
+          "normalized_lambda2": 0.04459194475332878,
+          "outdegree_gini": 0.0042534518309712555,
+          "reciprocal_edge_fraction": 0.033591731266149866,
+          "sinks": -1,
+          "sources": -3,
+          "subspace_polarization_v1": -0.07551406322976073
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.9327984536410171,
+          "magnetic_lambda2_q0.25": -1.7127947144323594,
+          "normalized_lambda2": -3.745232049479578,
+          "outdegree_gini": 6.695906458179847,
+          "reciprocal_edge_fraction": -6.465069581610472,
+          "sinks": 4.900972155766949,
+          "sources": 1.9920476822239894,
+          "subspace_polarization_v1": -0.17961715610971132
+        }
+      }
+    },
+    "A20": {
+      "LT": {
+        "S": 108,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.003067469719913188,
+          "magnetic_lambda2_q0.25": 0.06163878747587653,
+          "normalized_lambda2": 0.016442892570700376,
+          "outdegree_gini": -0.011802129758786029,
+          "reciprocal_edge_fraction": -0.16895179124281293,
+          "sinks": 2,
+          "sources": 1,
+          "subspace_polarization_v1": 0.11931499095295928
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -2.5002942289371872,
+          "magnetic_lambda2_q0.25": -0.4871762961527971,
+          "normalized_lambda2": -3.857430776057326,
+          "outdegree_gini": 6.832620234130604,
+          "reciprocal_edge_fraction": -4.491522025118856,
+          "sinks": 1.3886087774673022,
+          "sources": 3.107594384269423,
+          "subspace_polarization_v1": -1.4623144579304572
+        }
+      },
+      "R0": {
+        "S": 75,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.1270685935852635,
+          "magnetic_lambda2_q0.25": 0.16932292852589007,
+          "normalized_lambda2": 0.06790947169475342,
+          "outdegree_gini": -0.0034418902399050433,
+          "reciprocal_edge_fraction": 0.04177840508115738,
+          "sinks": 0,
+          "sources": 2,
+          "subspace_polarization_v1": -0.018253380002368313
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 2.218048017046762,
+          "magnetic_lambda2_q0.25": 1.3268869430617665,
+          "normalized_lambda2": -1.4421106855198835,
+          "outdegree_gini": 4.901427008426676,
+          "reciprocal_edge_fraction": -17.61583179576431,
+          "sinks": 2.205437470095127,
+          "sources": 4.541868715470696,
+          "subspace_polarization_v1": 0.3468529329147848
+        }
+      }
+    },
+    "A21": {
+      "LT": {
+        "S": 139,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.16975703932486344,
+          "magnetic_lambda2_q0.25": 0.16657920954044253,
+          "normalized_lambda2": 0.07501650204085707,
+          "outdegree_gini": 0.008836724547052976,
+          "reciprocal_edge_fraction": -0.14382109118951225,
+          "sinks": 18,
+          "sources": 6,
+          "subspace_polarization_v1": 0.08969074393026633
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.800754026975327,
+          "magnetic_lambda2_q0.25": -1.9010533447244973,
+          "normalized_lambda2": -5.565055794929922,
+          "outdegree_gini": 11.907316175792287,
+          "reciprocal_edge_fraction": 0.015961343372843665,
+          "sinks": 8.740067011117725,
+          "sources": 2.868548662402545,
+          "subspace_polarization_v1": 0.19477011093785535
+        }
+      },
+      "R0": {
+        "S": 79,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.19072276060119311,
+          "magnetic_lambda2_q0.25": 0.16805719479849274,
+          "normalized_lambda2": 0.14336944210742852,
+          "outdegree_gini": -0.036969178773463396,
+          "reciprocal_edge_fraction": 0.009656621886449501,
+          "sinks": 3,
+          "sources": -1,
+          "subspace_polarization_v1": -0.05056547704229619
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.801501399509205,
+          "magnetic_lambda2_q0.25": -2.614068126782488,
+          "normalized_lambda2": -1.9665250158374876,
+          "outdegree_gini": 4.355453062083861,
+          "reciprocal_edge_fraction": -14.278496087634645,
+          "sinks": 4.8192892865041665,
+          "sources": 3.4263220134252617,
+          "subspace_polarization_v1": 0.5295345423624552
+        }
+      }
+    },
+    "A22": {
+      "R0": {
+        "S": 118,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.06089996581321433,
+          "magnetic_lambda2_q0.25": 0.17768487690565105,
+          "normalized_lambda2": 0.006232936501861304,
+          "outdegree_gini": -0.024975186592749166,
+          "reciprocal_edge_fraction": 0.001902587519025889,
+          "sinks": -6,
+          "sources": -5,
+          "subspace_polarization_v1": 0.012018365368248518
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.6751850999248679,
+          "magnetic_lambda2_q0.25": 0.5842399462390209,
+          "normalized_lambda2": -3.258200285358918,
+          "outdegree_gini": 1.2633165042439225,
+          "reciprocal_edge_fraction": -1.1852627566285823,
+          "sinks": 0.24504860778834728,
+          "sources": 3.2669581988473424,
+          "subspace_polarization_v1": 1.3963207675696114
+        }
+      }
+    },
+    "A23": {
+      "LT": {
+        "S": 144,
+        "d": {
+          "magnetic_lambda1_q0.25": -0.1166432422394884,
+          "magnetic_lambda2_q0.25": -0.12059264443233869,
+          "normalized_lambda2": -0.012605143423936427,
+          "outdegree_gini": 0.002447198645930404,
+          "reciprocal_edge_fraction": -0.0733666944676119,
+          "sinks": 6,
+          "sources": -2,
+          "subspace_polarization_v1": 0.08386912426953541
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -1.5214783465724115,
+          "magnetic_lambda2_q0.25": -2.8857888857673157,
+          "normalized_lambda2": -4.480369110792939,
+          "outdegree_gini": 1.8925118686788098,
+          "reciprocal_edge_fraction": -5.676212467524056,
+          "sinks": 3.0222661627229517,
+          "sources": 0.557773351022717,
+          "subspace_polarization_v1": -0.44180270234644414
+        }
+      },
+      "R0": {
+        "S": 102,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.057905893324213115,
+          "magnetic_lambda2_q0.25": 0.10384405909843253,
+          "normalized_lambda2": 0.025926208733029782,
+          "outdegree_gini": -0.02630398287261032,
+          "reciprocal_edge_fraction": 0.05573192239858907,
+          "sinks": -3,
+          "sources": -7,
+          "subspace_polarization_v1": -0.07285728559904325
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.26733473703275984,
+          "magnetic_lambda2_q0.25": -0.13372441090094678,
+          "normalized_lambda2": -2.0233948253005627,
+          "outdegree_gini": 1.3081512710497933,
+          "reciprocal_edge_fraction": -8.42306208346964,
+          "sinks": 1.9603888623067793,
+          "sources": 2.310775311379828,
+          "subspace_polarization_v1": 1.8034338267105379
+        }
+      }
+    },
+    "A24": {
+      "LT": {
+        "S": 94,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.2025684663905027,
+          "magnetic_lambda2_q0.25": 0.16896275423794813,
+          "normalized_lambda2": 0.036752372895920433,
+          "outdegree_gini": -0.03525869034962814,
+          "reciprocal_edge_fraction": -0.10362694300518134,
+          "sinks": 0,
+          "sources": -2,
+          "subspace_polarization_v1": 0.045519764763760406
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -0.2404680659111795,
+          "magnetic_lambda2_q0.25": -0.2681494683226987,
+          "normalized_lambda2": -7.935612654910647,
+          "outdegree_gini": 5.351756246496437,
+          "reciprocal_edge_fraction": -6.791678633138195,
+          "sinks": 3.267314770511299,
+          "sources": -0.3187276291558383,
+          "subspace_polarization_v1": -0.32821282229193754
+        }
+      },
+      "R0": {
+        "S": 80,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.1718701733341897,
+          "magnetic_lambda2_q0.25": 0.1099313240769014,
+          "normalized_lambda2": 0.02409351547275231,
+          "outdegree_gini": -0.026995201723462592,
+          "reciprocal_edge_fraction": 0.0697463768115942,
+          "sinks": -1,
+          "sources": -4,
+          "subspace_polarization_v1": -0.06796442374328915
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.3289365298459217,
+          "magnetic_lambda2_q0.25": -1.5495537627923917,
+          "normalized_lambda2": -3.649400233733196,
+          "outdegree_gini": 2.7923723992145386,
+          "reciprocal_edge_fraction": -5.059619672564717,
+          "sinks": 2.205437470095127,
+          "sources": -0.7171371656006361,
+          "subspace_polarization_v1": -0.018789316902685923
+        }
+      }
+    },
+    "A25": {
+      "LT": {
+        "S": 36,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.10133831705245631,
+          "magnetic_lambda2_q0.25": 0.09637539445206073,
+          "normalized_lambda2": 0.12646347398536875,
+          "outdegree_gini": -0.18829201101928372,
+          "reciprocal_edge_fraction": -0.062337662337662345,
+          "sinks": 2,
+          "sources": 0,
+          "subspace_polarization_v1": 0.12218224549432094
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": -2.3609049143002054,
+          "magnetic_lambda2_q0.25": -1.9447528481544196,
+          "normalized_lambda2": 1.6161819953589216,
+          "outdegree_gini": 14.932083953972027,
+          "reciprocal_edge_fraction": 6.095637034089872,
+          "sinks": 5.554435109869209,
+          "sources": -0.47809144373375745,
+          "subspace_polarization_v1": -4.008311451626511
+        }
+      },
+      "R0": {
+        "S": 24,
+        "d": {
+          "magnetic_lambda1_q0.25": 0.048678627255588844,
+          "magnetic_lambda2_q0.25": 0.3582190960359874,
+          "normalized_lambda2": 0.12314577729245593,
+          "outdegree_gini": -0.04900629673356949,
+          "reciprocal_edge_fraction": 0.2519480519480519,
+          "sinks": 0,
+          "sources": 0,
+          "subspace_polarization_v1": -0.12291360476327576
+        },
+        "z": {
+          "magnetic_lambda1_q0.25": 0.2015184188264262,
+          "magnetic_lambda2_q0.25": 6.013722693584147,
+          "normalized_lambda2": 2.1987541053421635,
+          "outdegree_gini": 8.969828108552761,
+          "reciprocal_edge_fraction": -48.76509627271898,
+          "sinks": 3.3489976397740815,
+          "sources": 0.15936381457791915,
+          "subspace_polarization_v1": -2.8596865871407235
+        }
+      }
+    }
+  },
+  "pooled_null_sd": {
+    "magnetic_lambda1_q0.25": 0.055940940083601336,
+    "magnetic_lambda2_q0.25": 0.04860213923262624,
+    "normalized_lambda2": 0.02337157852985991,
+    "outdegree_gini": 0.019038982179902873,
+    "reciprocal_edge_fraction": 0.004687193218960176,
+    "sinks": 2.4484938127795037,
+    "sources": 2.5099800796022267,
+    "subspace_polarization_v1": 0.04680312327814696
+  },
+  "preregistration": {
+    "accepted_appends": {
+      "docs/wc-freeze-16.md": {
+        "change": "append-only author addendum, October 18",
+        "current_bytes": 4414,
+        "current_sha256": "97b464039d0f2cc0eecc9e8388dbd26554fa76c971eb2a574fb1a62c9b84f6c5",
+        "pinned_bytes": 2184,
+        "pinned_sha256": "a1fd8c2f2524b91ebec53c6d88952465c363874652320356be74b8b23cabc93c"
+      }
+    },
+    "preregistration_sha256": "a04c70c5dbde846745428dac7573b1338a08baf26fba758948c7cc56e018f542"
+  },
+  "primary_test": {
+    "areas_in_test": [
+      "A02",
+      "A03",
+      "A04",
+      "A06",
+      "A07",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A18",
+      "A20",
+      "A21",
+      "A23",
+      "A24",
+      "A25"
+    ],
+    "areas_one_arm_only": {
+      "A01": [
+        "R0"
+      ],
+      "A05": [
+        "R0"
+      ],
+      "A09": [
+        "R0"
+      ],
+      "A19": [
+        "R0"
+      ],
+      "A22": [
+        "R0"
+      ]
+    },
+    "assignments": 262144,
+    "dependence_disclosure": "areas are chained on one tree and share trunk pages; pre-registered within an exploratory run",
+    "differences": {
+      "A02": -1.3967423033848279,
+      "A03": -0.7508744621375342,
+      "A04": 3.0775159868666333,
+      "A06": -1.3207997297024856,
+      "A07": -1.258809327754034,
+      "A10": 1.0683395321452116,
+      "A11": -0.37787843354022255,
+      "A12": -0.4519182995697606,
+      "A13": -1.5592950305601656,
+      "A14": 0.9360047696382348,
+      "A15": -2.5987958115140444,
+      "A16": -2.943027428882038,
+      "A18": 1.1974878750364908,
+      "A20": -4.7183422459839495,
+      "A21": 1.000747372533878,
+      "A23": -1.2541436095396516,
+      "A24": -0.5694045957571012,
+      "A25": -2.5624233331266315
+    },
+    "f6": "the frozen helper gave every area the whole arm's edit subgraph (LT: 1,585 nodes and the same delta in every area); evidence kept in analysis-18/subgraph-frozen-literal-defect",
+    "measure": "magnetic_lambda1_q0.25",
+    "minimum_p": 7.62939453125e-06,
+    "n": 18,
+    "not_computable": {},
+    "null": "LN",
+    "p": 0.07926177978515625,
+    "sidedness": "two-sided",
+    "statistic_mean": -0.8045755041795555,
+    "threshold": 0.05,
+    "two_sided": true,
+    "view": "per-area subgraph, built from the area's own edits (F6)"
+  },
+  "records_sha256": "378eec3676a50b37ab0996701eff7af0b84a332d9515f0dc891bb8922db6f8fc",
+  "refine_plan_sha256": "fcdb91e931da3b77c5b313439ecca255ca947c659c1366b15a8e05db4a2b1838",
+  "schema_version": "docspectra.icsc.wc_spectra_18.v1",
+  "stage_seconds": {
+    "contexts": 11.7,
+    "full_spectra": 0.4,
+    "nulls": 0.3,
+    "subgraph": 3.8
+  },
+  "wall_seconds": 16.3,
+  "z_tallies": {
+    "LT": {
+      "magnetic_lambda1_q0.25": {
+        "areas": 18,
+        "negative": 13,
+        "positive": 5
+      },
+      "magnetic_lambda2_q0.25": {
+        "areas": 18,
+        "negative": 16,
+        "positive": 2
+      },
+      "normalized_lambda2": {
+        "areas": 18,
+        "negative": 16,
+        "positive": 2
+      },
+      "outdegree_gini": {
+        "areas": 18,
+        "negative": 0,
+        "positive": 18
+      },
+      "reciprocal_edge_fraction": {
+        "areas": 18,
+        "negative": 12,
+        "positive": 5
+      },
+      "sinks": {
+        "areas": 18,
+        "negative": 1,
+        "positive": 17
+      },
+      "sources": {
+        "areas": 18,
+        "negative": 2,
+        "positive": 16
+      },
+      "subspace_polarization_v1": {
+        "areas": 18,
+        "negative": 13,
+        "positive": 5
+      }
+    },
+    "R0": {
+      "magnetic_lambda1_q0.25": {
+        "areas": 23,
+        "negative": 16,
+        "positive": 7
+      },
+      "magnetic_lambda2_q0.25": {
+        "areas": 23,
+        "negative": 12,
+        "positive": 11
+      },
+      "normalized_lambda2": {
+        "areas": 23,
+        "negative": 20,
+        "positive": 3
+      },
+      "outdegree_gini": {
+        "areas": 23,
+        "negative": 1,
+        "positive": 22
+      },
+      "reciprocal_edge_fraction": {
+        "areas": 23,
+        "negative": 22,
+        "positive": 0
+      },
+      "sinks": {
+        "areas": 23,
+        "negative": 2,
+        "positive": 21
+      },
+      "sources": {
+        "areas": 23,
+        "negative": 4,
+        "positive": 19
+      },
+      "subspace_polarization_v1": {
+        "areas": 23,
+        "negative": 11,
+        "positive": 12
+      }
+    }
+  }
+}

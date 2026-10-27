@@ -1,0 +1,193 @@
+{
+ "blinding": "hidden: arms, opaque variant ids, scores, verdicts, reasons, strata, file names, conditions, replicate numbers; disclosed risks: answer content and wording, cited page names (some LT answers cite pages the edit created), author familiarity; the author is not an independent reviewer",
+ "created": "2026-10-25",
+ "files": {
+  "key": "artifacts/tier1-completeness-25-v1/review/host-private/key.json",
+  "packet_json": "artifacts/tier1-completeness-25-v1/review/packet.json",
+  "packet_md": "artifacts/tier1-completeness-25-v1/review/packet.md",
+  "references": "artifacts/tier1-completeness-25-v1/review/references",
+  "response_blank": "artifacts/tier1-completeness-25-v1/review/response-blank.json"
+ },
+ "hashes": {
+  "key": "cf0f2349bf7ab9a5e32e0b836cdce682116ebd24e6a789bdf2bafeaaa74da565",
+  "packet": "8a661140e73436223b4ddea6a1f82e9b82d4e55fe8c0261a7c0894c633d85d8e",
+  "response_blank": "4b09a810d50c924695b1f44e2c74012399efcf082aa0cd4b482bec2bf31fe3f9"
+ },
+ "human_review": "pending_optional",
+ "id": "HR-22",
+ "interpretation": "retrospective, outcome-stratified: illustrates differences and checks judgments; cannot estimate prevalence or population improvement",
+ "rules": "labels never prefilled from model output; a model never acts as the reviewer; reviewer identity/role, date, packet hash, reviewed denominator and unblinding recorded before the key is joined; partial credit stays qualitative",
+ "schema_version": "docspectra.icsc.tier1_completeness_25.review_packet.v1",
+ "selection": {
+  "contrasts": {
+   "LT-O": {
+    "complete_candidates": 118,
+    "incomplete_pairs": 2,
+    "strata": {
+     "label_agreement": {
+      "candidates": 41,
+      "selected": {
+       "condition": "s6-follow",
+       "key": "046258e5abdd76fcb845998a200417e87b1a5c3538fc05af86edf76343395ca3",
+       "replicate": 1,
+       "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219"
+      }
+     },
+     "net_gain": {
+      "candidates": 27,
+      "selected": {
+       "condition": "s6-no-follow",
+       "key": "02d85da819ff583a786325895109623d7a0ea17bca4f936c004f9dc9341f63bc",
+       "replicate": 2,
+       "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+      }
+     },
+     "net_loss": {
+      "candidates": 38,
+      "selected": {
+       "condition": "s6-follow",
+       "key": "03bcec20015685977ce83e9e97deb40cf42a1a6a6c310c09b0987143862b31f7",
+       "replicate": 2,
+       "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70"
+      }
+     },
+     "tradeoff": {
+      "candidates": 12,
+      "selected": {
+       "condition": "s1-no-follow",
+       "key": "037977ce144821f436131f9531f3670598cfd37afa764e1e23c2aa7246cf74a8",
+       "replicate": 2,
+       "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+      }
+     }
+    }
+   },
+   "LT-R0": {
+    "complete_candidates": 119,
+    "incomplete_pairs": 1,
+    "strata": {
+     "label_agreement": {
+      "candidates": 47,
+      "selected": {
+       "condition": "s6-no-follow",
+       "key": "0672b50363fffde3caa1540852642e55fb039cc596ce61198fc996060f18ed3b",
+       "replicate": 2,
+       "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635"
+      }
+     },
+     "net_gain": {
+      "candidates": 19,
+      "selected": {
+       "condition": "s6-follow",
+       "key": "0d1cafa9900c1e43afba5dd1eb90e221885ec5a21c668f8eb43e8d6859ca0e2c",
+       "replicate": 2,
+       "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+      }
+     },
+     "net_loss": {
+      "candidates": 46,
+      "selected": {
+       "condition": "s1-no-follow",
+       "key": "0130f4d13fa498e725e3f21e128e680ec393fad308c899bab09ba1be34405b32",
+       "replicate": 2,
+       "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+      }
+     },
+     "tradeoff": {
+      "candidates": 7,
+      "selected": {
+       "condition": "s1-no-follow",
+       "key": "1a7c60c6bf05ff21835269d6e51a0eff94908791e5299de4990a7360cb794a7c",
+       "replicate": 2,
+       "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2"
+      }
+     }
+    }
+   }
+  },
+  "focal": "LT",
+  "focal_sides": {
+   "LT-O|A": 2,
+   "LT-O|B": 2,
+   "LT-R0|A": 2,
+   "LT-R0|B": 2
+  },
+  "packet_sha256": "0a4ca87cb42d6865d6530e0c27772a8f41aedf56bee142623464dfad56c6a25f",
+  "pairs": [
+   {
+    "condition": "s6-follow",
+    "contrast": "LT-R0",
+    "focal_side": "B",
+    "pair_id": "P01",
+    "replicate": 2,
+    "stratum": "net_gain",
+    "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+   },
+   {
+    "condition": "s1-no-follow",
+    "contrast": "LT-R0",
+    "focal_side": "A",
+    "pair_id": "P02",
+    "replicate": 2,
+    "stratum": "tradeoff",
+    "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2"
+   },
+   {
+    "condition": "s1-no-follow",
+    "contrast": "LT-O",
+    "focal_side": "B",
+    "pair_id": "P03",
+    "replicate": 2,
+    "stratum": "tradeoff",
+    "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+   },
+   {
+    "condition": "s6-no-follow",
+    "contrast": "LT-O",
+    "focal_side": "B",
+    "pair_id": "P04",
+    "replicate": 2,
+    "stratum": "net_gain",
+    "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+   },
+   {
+    "condition": "s1-no-follow",
+    "contrast": "LT-R0",
+    "focal_side": "B",
+    "pair_id": "P05",
+    "replicate": 2,
+    "stratum": "net_loss",
+    "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+   },
+   {
+    "condition": "s6-follow",
+    "contrast": "LT-O",
+    "focal_side": "A",
+    "pair_id": "P06",
+    "replicate": 2,
+    "stratum": "net_loss",
+    "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70"
+   },
+   {
+    "condition": "s6-no-follow",
+    "contrast": "LT-R0",
+    "focal_side": "A",
+    "pair_id": "P07",
+    "replicate": 2,
+    "stratum": "label_agreement",
+    "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635"
+   },
+   {
+    "condition": "s6-follow",
+    "contrast": "LT-O",
+    "focal_side": "A",
+    "pair_id": "P08",
+    "replicate": 1,
+    "stratum": "label_agreement",
+    "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219"
+   }
+  ],
+  "salt": "25|20261025"
+ },
+ "status": "optional, ready"
+}

@@ -1,0 +1,802 @@
+{
+ "anchors": [
+  {
+   "arcs": 2414,
+   "baseline_canonical_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+   "case_card_cycle": "anchor23/docker_docs/cycle1",
+   "corpus_id": "docker_docs",
+   "nodes": 844,
+   "s22_bundle_sha256": "d902cf98d0b381089a61c3d1c019ae4135a67e1c1bcecd6181270d251aaa81a7",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "content_get_started_docker_overview__039a8050",
+       "content_manuals_desktop_index__339b39a9"
+      ],
+      [
+       "content_manuals_desktop_index__339b39a9",
+       "content_manuals_engine_index__3a6da101"
+      ],
+      [
+       "content_manuals_engine_index__3a6da101",
+       "content_get_started_docker_overview__039a8050"
+      ]
+     ],
+     [
+      [
+       "content_guides_swarm_deploy__a418bdfc",
+       "content_manuals_engine_swarm_index__ebcc2d49"
+      ],
+      [
+       "content_manuals_engine_swarm_index__ebcc2d49",
+       "content_manuals_engine_swarm_swarm_tutorial_index__656608c4"
+      ],
+      [
+       "content_manuals_engine_swarm_swarm_tutorial_index__656608c4",
+       "content_guides_swarm_deploy__a418bdfc"
+      ]
+     ],
+     [
+      [
+       "content_manuals_ai_compose_models_and_compose__22552f21",
+       "content_reference_compose_file_services__c8e812e7"
+      ],
+      [
+       "content_reference_compose_file_services__c8e812e7",
+       "content_manuals_compose_how_tos_provider_services__4464fedf"
+      ],
+      [
+       "content_manuals_compose_how_tos_provider_services__4464fedf",
+       "content_manuals_ai_compose_models_and_compose__22552f21"
+      ]
+     ],
+     [
+      [
+       "content_manuals_ai_gordon_index__d3b660cd",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ],
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_ai_gordon_index__d3b660cd"
+      ]
+     ]
+    ],
+    "cycles": [
+     [
+      "content_get_started_docker_overview__039a8050",
+      "content_manuals_desktop_index__339b39a9",
+      "content_manuals_engine_index__3a6da101"
+     ],
+     [
+      "content_guides_swarm_deploy__a418bdfc",
+      "content_manuals_engine_swarm_index__ebcc2d49",
+      "content_manuals_engine_swarm_swarm_tutorial_index__656608c4"
+     ],
+     [
+      "content_manuals_ai_compose_models_and_compose__22552f21",
+      "content_reference_compose_file_services__c8e812e7",
+      "content_manuals_compose_how_tos_provider_services__4464fedf"
+     ],
+     [
+      "content_manuals_ai_gordon_index__d3b660cd",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ]
+    ],
+    "expansions": 1397,
+    "found_per_length": {
+     "3": 4
+    },
+    "nonreciprocal_arcs": 1998,
+    "note": "a budget stop is not evidence that no further cycles exist",
+    "parameters": {
+     "budget": 100000,
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "max_cycles": 4
+    },
+    "rule": "simple directed cycles using only nonreciprocal arcs; lengths searched in the declared order; start nodes ascending; a cycle is rooted at its smallest id and every other node id is larger (canonical rotation, so each cycle is met once); successors ascending; depth-first; one expansion = one partial path created, the one-node start path included; stop at max_cycles or at the expansion budget. Reads node ids and arcs only.",
+    "status": "max_cycles_reached"
+   },
+   "variants": [
+    {
+     "canonical_graph_sha256": "e986c3561434137527fb6831776a4c25c7d5138cbe3ecc65dd03bcb03397a88b",
+     "cycle": [
+      "content_get_started_docker_overview__039a8050",
+      "content_manuals_desktop_index__339b39a9",
+      "content_manuals_engine_index__3a6da101"
+     ],
+     "graph_id": "anchor23/docker_docs/cycle1",
+     "index": 0,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "content_get_started_docker_overview__039a8050",
+       "content_manuals_desktop_index__339b39a9"
+      ],
+      [
+       "content_manuals_desktop_index__339b39a9",
+       "content_manuals_engine_index__3a6da101"
+      ],
+      [
+       "content_manuals_engine_index__3a6da101",
+       "content_get_started_docker_overview__039a8050"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "19a0b256babaab3d55a08433ae792e2ec07dbf4b4e1e7b2428a5b1810ec75db1",
+     "cycle": [
+      "content_guides_swarm_deploy__a418bdfc",
+      "content_manuals_engine_swarm_index__ebcc2d49",
+      "content_manuals_engine_swarm_swarm_tutorial_index__656608c4"
+     ],
+     "graph_id": "anchor23/docker_docs/cycle2",
+     "index": 1,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "content_guides_swarm_deploy__a418bdfc",
+       "content_manuals_engine_swarm_index__ebcc2d49"
+      ],
+      [
+       "content_manuals_engine_swarm_index__ebcc2d49",
+       "content_manuals_engine_swarm_swarm_tutorial_index__656608c4"
+      ],
+      [
+       "content_manuals_engine_swarm_swarm_tutorial_index__656608c4",
+       "content_guides_swarm_deploy__a418bdfc"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "dd7055d0d94d3335d99479ea364b7083306de96ca2da9714cc5606e2ba8f31c6",
+     "cycle": [
+      "content_manuals_ai_compose_models_and_compose__22552f21",
+      "content_reference_compose_file_services__c8e812e7",
+      "content_manuals_compose_how_tos_provider_services__4464fedf"
+     ],
+     "graph_id": "anchor23/docker_docs/cycle3",
+     "index": 2,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "content_manuals_ai_compose_models_and_compose__22552f21",
+       "content_reference_compose_file_services__c8e812e7"
+      ],
+      [
+       "content_reference_compose_file_services__c8e812e7",
+       "content_manuals_compose_how_tos_provider_services__4464fedf"
+      ],
+      [
+       "content_manuals_compose_how_tos_provider_services__4464fedf",
+       "content_manuals_ai_compose_models_and_compose__22552f21"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "49dc8b871e61795bb2587641d89b953a04689e2c5eaa69c280904288a2db65e3",
+     "cycle": [
+      "content_manuals_ai_gordon_index__d3b660cd",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+      "content_manuals_desktop_release_notes__0ffd0aaf"
+     ],
+     "graph_id": "anchor23/docker_docs/cycle4",
+     "index": 3,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "content_manuals_ai_gordon_index__d3b660cd",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ],
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_ai_gordon_index__d3b660cd"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "arcs": 1064,
+   "baseline_canonical_graph_sha256": "3c447e06dd9a2ce5c56fd33e394ce2dc2b0aec6cf84abeeaaec3925c170d3dc8",
+   "case_card_cycle": "anchor23/react_docs/cycle1",
+   "corpus_id": "react_docs",
+   "nodes": 206,
+   "s22_bundle_sha256": "1fef86df267f7ba129c0e49f6746fa2252057744867e22c683eadc0ba34c2b3a",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_client_index__6e1bc254"
+      ],
+      [
+       "reference_react_dom_client_index__6e1bc254",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      [
+       "learn_creating_a_react_app__0b4dac7e",
+       "blog_2022_03_29_react_v18__396e4232"
+      ]
+     ],
+     [
+      [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_server_index__6cf491d4"
+      ],
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      [
+       "learn_creating_a_react_app__0b4dac7e",
+       "blog_2022_03_29_react_v18__396e4232"
+      ]
+     ],
+     [
+      [
+       "learn_conditional_rendering__1d8e44ee",
+       "learn_preserving_and_resetting_state__1e1928f9"
+      ],
+      [
+       "learn_preserving_and_resetting_state__1e1928f9",
+       "learn_understanding_your_ui_as_a_tree__3c9ea0e5"
+      ],
+      [
+       "learn_understanding_your_ui_as_a_tree__3c9ea0e5",
+       "learn_conditional_rendering__1d8e44ee"
+      ]
+     ],
+     [
+      [
+       "learn_index__880c60df",
+       "learn_tutorial_tic_tac_toe__952e45c6"
+      ],
+      [
+       "learn_tutorial_tic_tac_toe__952e45c6",
+       "learn_thinking_in_react__e7b15edb"
+      ],
+      [
+       "learn_thinking_in_react__e7b15edb",
+       "learn_index__880c60df"
+      ]
+     ]
+    ],
+    "cycles": [
+     [
+      "blog_2022_03_29_react_v18__396e4232",
+      "reference_react_dom_client_index__6e1bc254",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     [
+      "blog_2022_03_29_react_v18__396e4232",
+      "reference_react_dom_server_index__6cf491d4",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     [
+      "learn_conditional_rendering__1d8e44ee",
+      "learn_preserving_and_resetting_state__1e1928f9",
+      "learn_understanding_your_ui_as_a_tree__3c9ea0e5"
+     ],
+     [
+      "learn_index__880c60df",
+      "learn_tutorial_tic_tac_toe__952e45c6",
+      "learn_thinking_in_react__e7b15edb"
+     ]
+    ],
+    "expansions": 988,
+    "found_per_length": {
+     "3": 4
+    },
+    "nonreciprocal_arcs": 880,
+    "note": "a budget stop is not evidence that no further cycles exist",
+    "parameters": {
+     "budget": 100000,
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "max_cycles": 4
+    },
+    "rule": "simple directed cycles using only nonreciprocal arcs; lengths searched in the declared order; start nodes ascending; a cycle is rooted at its smallest id and every other node id is larger (canonical rotation, so each cycle is met once); successors ascending; depth-first; one expansion = one partial path created, the one-node start path included; stop at max_cycles or at the expansion budget. Reads node ids and arcs only.",
+    "status": "max_cycles_reached"
+   },
+   "variants": [
+    {
+     "canonical_graph_sha256": "5f278ee04dbb412a3acf4b68ec8618bdf6a79b7302b77cd50185d97d4026b7b0",
+     "cycle": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "reference_react_dom_client_index__6e1bc254",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "graph_id": "anchor23/react_docs/cycle1",
+     "index": 0,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_client_index__6e1bc254"
+      ],
+      [
+       "reference_react_dom_client_index__6e1bc254",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      [
+       "learn_creating_a_react_app__0b4dac7e",
+       "blog_2022_03_29_react_v18__396e4232"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "c90caa756c1ec314d67408f46690ab225c6f0b32b535ada1624ffc4d93298dfa",
+     "cycle": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "reference_react_dom_server_index__6cf491d4",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "graph_id": "anchor23/react_docs/cycle2",
+     "index": 1,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_server_index__6cf491d4"
+      ],
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      [
+       "learn_creating_a_react_app__0b4dac7e",
+       "blog_2022_03_29_react_v18__396e4232"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "9295ec7c5de08f970e8b911dc54da05afb38efc0a173f71155e996f20e710380",
+     "cycle": [
+      "learn_conditional_rendering__1d8e44ee",
+      "learn_preserving_and_resetting_state__1e1928f9",
+      "learn_understanding_your_ui_as_a_tree__3c9ea0e5"
+     ],
+     "graph_id": "anchor23/react_docs/cycle3",
+     "index": 2,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "learn_conditional_rendering__1d8e44ee",
+       "learn_preserving_and_resetting_state__1e1928f9"
+      ],
+      [
+       "learn_preserving_and_resetting_state__1e1928f9",
+       "learn_understanding_your_ui_as_a_tree__3c9ea0e5"
+      ],
+      [
+       "learn_understanding_your_ui_as_a_tree__3c9ea0e5",
+       "learn_conditional_rendering__1d8e44ee"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "fd696ceb9f1079b3038ebb94e275e55c3883132b37c60383b6411d04b40eca00",
+     "cycle": [
+      "learn_index__880c60df",
+      "learn_tutorial_tic_tac_toe__952e45c6",
+      "learn_thinking_in_react__e7b15edb"
+     ],
+     "graph_id": "anchor23/react_docs/cycle4",
+     "index": 3,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "learn_index__880c60df",
+       "learn_tutorial_tic_tac_toe__952e45c6"
+      ],
+      [
+       "learn_tutorial_tic_tac_toe__952e45c6",
+       "learn_thinking_in_react__e7b15edb"
+      ],
+      [
+       "learn_thinking_in_react__e7b15edb",
+       "learn_index__880c60df"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "arcs": 6341,
+   "baseline_canonical_graph_sha256": "bbb379589f8039bc14cacdaa757166818876ce1861aa88b4186c96928a37e16b",
+   "case_card_cycle": "anchor23/github_docs/cycle1",
+   "corpus_id": "github_docs",
+   "nodes": 2354,
+   "s22_bundle_sha256": "6d4a33dcf4c00a9639abb8effd0fc24205b2e0bbbdf9e7e5ba0a82471ba4ee94",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+       "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd"
+      ],
+      [
+       "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+       "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+      ],
+      [
+       "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1",
+       "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1"
+      ]
+     ],
+     [
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454"
+      ],
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325"
+      ],
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2"
+      ]
+     ],
+     [
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0",
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c"
+      ],
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+       "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002"
+      ],
+      [
+       "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002",
+       "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0"
+      ]
+     ],
+     [
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca",
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c"
+      ],
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+       "rest_apps_apps__2b8a41e5"
+      ],
+      [
+       "rest_apps_apps__2b8a41e5",
+       "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca"
+      ]
+     ]
+    ],
+    "cycles": [
+     [
+      "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+      "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+      "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+     ],
+     [
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2",
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454",
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325"
+     ],
+     [
+      "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0",
+      "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+      "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002"
+     ],
+     [
+      "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca",
+      "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+      "rest_apps_apps__2b8a41e5"
+     ]
+    ],
+    "expansions": 2854,
+    "found_per_length": {
+     "3": 4
+    },
+    "nonreciprocal_arcs": 5023,
+    "note": "a budget stop is not evidence that no further cycles exist",
+    "parameters": {
+     "budget": 100000,
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "max_cycles": 4
+    },
+    "rule": "simple directed cycles using only nonreciprocal arcs; lengths searched in the declared order; start nodes ascending; a cycle is rooted at its smallest id and every other node id is larger (canonical rotation, so each cycle is met once); successors ascending; depth-first; one expansion = one partial path created, the one-node start path included; stop at max_cycles or at the expansion budget. Reads node ids and arcs only.",
+    "status": "max_cycles_reached"
+   },
+   "variants": [
+    {
+     "canonical_graph_sha256": "0908a51921f56cee92041eaa2e0aa0dad13b2854a2f31f76abe4cbd90c2b34e5",
+     "cycle": [
+      "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+      "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+      "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+     ],
+     "graph_id": "anchor23/github_docs/cycle1",
+     "index": 0,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+       "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd"
+      ],
+      [
+       "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+       "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+      ],
+      [
+       "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1",
+       "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "8324be1a9b48bc41bfa82fe96132f3da05f2b7ab11816d0322e102cae853c43c",
+     "cycle": [
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2",
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454",
+      "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325"
+     ],
+     "graph_id": "anchor23/github_docs/cycle2",
+     "index": 1,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454"
+      ],
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_searching_the_audit_log_for_your_enterprise__bdacb454",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325"
+      ],
+      [
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_identifying_audit_log_events_performed_by_an_access_token__a8475325",
+       "admin_monitoring_activity_in_your_enterprise_reviewing_audit_logs_for_your_enterprise_exporting_audit_log_activity_for_your_enterprise__29ee44e2"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "c317644e053926b44088898d1d70fd6331c752f7ef5d3d8489787ca097a0c2f2",
+     "cycle": [
+      "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0",
+      "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+      "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002"
+     ],
+     "graph_id": "anchor23/github_docs/cycle3",
+     "index": 2,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0",
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c"
+      ],
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+       "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002"
+      ],
+      [
+       "rest_guides_scripting_with_the_rest_api_and_javascript__3e001002",
+       "apps_creating_github_apps_authenticating_with_a_github_app_about_authentication_with_a_github_app__37786df0"
+      ]
+     ]
+    },
+    {
+     "canonical_graph_sha256": "0d5661806aeb759657fc2e3aaf1b0af1232170ad126b4281d2e77b24a188f92b",
+     "cycle": [
+      "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca",
+      "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+      "rest_apps_apps__2b8a41e5"
+     ],
+     "graph_id": "anchor23/github_docs/cycle4",
+     "index": 3,
+     "length": 3,
+     "reversed_arcs": [
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca",
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c"
+      ],
+      [
+       "apps_creating_github_apps_authenticating_with_a_github_app_generating_a_json_web_token_jwt_for_a_github_app__7b5a9a0c",
+       "rest_apps_apps__2b8a41e5"
+      ],
+      [
+       "rest_apps_apps__2b8a41e5",
+       "apps_creating_github_apps_authenticating_with_a_github_app_authenticating_as_a_github_app__1f16dbca"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "attribution_config": {},
+ "attribution_config_note": "RA AttributionConfig defaults at the pinned commit: cluster 1e-8, resolution max(1e-8, 10 (r_A + r_B)), identity 1e-10, trophic 1e-9, permutation eigenvalues 1e-10 and fields 1e-8",
+ "baseline_reproduction": {
+  "against": "Sprint 22 anchor receipts (historical_lwcc view): view hash, lowest three eigenvalues at q 0, 0.10, 0.25, structural descriptors, trophic incoherence",
+  "descriptors": "exact",
+  "eigenvalue_absolute": 1e-12,
+  "trophic_absolute": 1e-09
+ },
+ "case_cards": {
+  "limits": "no procedural dependency, navigation benefit or LT role is inferred from link direction or path names",
+  "pages": "at most two: the lexicographically first page of that cycle, and the lexicographically first endpoint (other than that page) of the highest-energy edge outside the cycle in the baseline ground cluster at q = 0.25 (ties by ids); this second choice is output-informed",
+  "selection": "first selected cycle per anchor, or an explicit no-eligible-cycle card",
+  "source": "frozen local snapshot at the bundle's commit via the pinned importer; page path, title and the markdown link lines of the arcs involved"
+ },
+ "cluster_rule": "ground cluster = every eigenvalue within cluster_absolute of lambda1 in the full dense spectrum; its boundary is qualified when the cluster is the whole space or the next gap exceeds max(cluster_absolute, resolution_factor * cluster residual)",
+ "control_rule": "per-pair exact assertions (RA control_checks); a failed assertion quarantines the variant; global reversal and forest pairs are negative controls, not degree-matched positive cases",
+ "created": "2026-10-25",
+ "cycle_rule": {
+  "arc_eligibility": "nonreciprocal arcs only",
+  "budget_per_anchor": 100000,
+  "coverage_rule": "fewer than four cycles is reported coverage; no widening, corpus replacement, reciprocal edges or outcome-chosen alternatives",
+  "lengths": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "max_cycles": 4,
+  "rule": "simple directed cycles using only nonreciprocal arcs; lengths searched in the declared order; start nodes ascending; a cycle is rooted at its smallest id and every other node id is larger (canonical rotation, so each cycle is met once); successors ascending; depth-first; one expansion = one partial path created, the one-node start path included; stop at max_cycles or at the expansion budget. Reads node ids and arcs only.",
+  "selection_inputs": "node ids and arcs only; no eigenvalue, energy or exposure",
+  "variant_rule": "one variant per selected cycle, all its arcs reversed from the original baseline; never chained; distinct graph hashes required"
+ },
+ "energy_rule": "f = U / sqrt(d) (zero on isolates); energy({i,j}) = W_ij sum_r |f_ir - exp(i theta_ij) f_jr|^2 / k over unordered edges i < j in view order, theta_ij = 2 pi q (A_ij - A_ji) (the magnetic_spectrum phase convention); mass_i = sum_r |U_ir|^2 / k; energies sum to the cluster mean eigenvalue",
+ "inputs": {
+  "input_manifest_sha256": "930e33764a4a9444dea74ac0d7d18fe9721b8cb5e537d39763288f5184bba1f6",
+  "s22_anchor_table_sha256": "5c9556c1a06a3e6a3d8a30e2492508f94a1542eb9c089bcad35645954dcd9710",
+  "s22_evidence_sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+  "s22_plan_sha256": "8e744e32a8d5afa280fef3da45e4e7c54657b2ab368482b30e1ac15e7fa41f6e"
+ },
+ "localization_caveat_rule": "a resolved pair carries the caveat when either ground mode is clustered, a boundary is unqualified, the permutation check fails, or either side's effective-support fraction is below 0.1",
+ "model_calls": 0,
+ "outcome_rule": {
+  "failed_controls_or_qualification": "no conclusion from the affected pair; partial results kept",
+  "no_resolved_matched_response": "no further evidence for distinctness under these controls; report aliasing, eligible-cycle coverage and resolution",
+  "resolved_matched_response": "at least one control-passing, qualified matched pair resolved at q = 0.25: these named graphs demonstrate a distinction not determined by the exactly preserved control set; no predictive generalization across corpora",
+  "resolved_with_localization_caveat": "report the scalar response with the caveat; not global organizational coherence"
+ },
+ "outputs": {
+  "artifacts": "artifacts\\magnetic-attribution-23-v1",
+  "evidence": "git\\context\\evidence\\magnetic-attribution-23-v1-2026-10-25.json",
+  "report": "git/context/reports/2026-10-25-magnetic-structural-attribution.md"
+ },
+ "permutation_check": {
+  "anchor": "react_docs",
+  "scope": "baseline side at every q (on the global-reversal pair job)",
+  "seed": 2323
+ },
+ "preserved_sha256": {
+  "artifacts/normalized-magnetic-22-v1/image/verification-image-6d277ac.json": "842e38f932b43c96730470e55e63afb6d6e9faba472a583b81fe69ef21903e9e",
+  "artifacts/normalized-magnetic-22-v1/inputs/anchors/bundles/anchor__docker_docs.json": "d902cf98d0b381089a61c3d1c019ae4135a67e1c1bcecd6181270d251aaa81a7",
+  "artifacts/normalized-magnetic-22-v1/inputs/anchors/bundles/anchor__github_docs.json": "6d4a33dcf4c00a9639abb8effd0fc24205b2e0bbbdf9e7e5ba0a82471ba4ee94",
+  "artifacts/normalized-magnetic-22-v1/inputs/anchors/bundles/anchor__react_docs.json": "1fef86df267f7ba129c0e49f6746fa2252057744867e22c683eadc0ba34c2b3a",
+  "artifacts/normalized-magnetic-22-v1/inputs/graph-input-manifest.json": "ff0d6c5c33e1f6ba461784633d12c124f56a585e84ee89143304d893486dc781",
+  "artifacts/normalized-magnetic-22-v1/runs/anchors/graph_spectra.v1.jsonl": "5c9556c1a06a3e6a3d8a30e2492508f94a1542eb9c089bcad35645954dcd9710",
+  "artifacts/normalized-magnetic-22-v1/runs/anchors/operator_receipt.v1.json": "a7805352f6689f950309b1f21331f6371a1e46c10b5b2988a07e8b99cdba1e4e",
+  "git/RetrievalArena/retrieval_arena/graph/magnetic_spectrum.py": "fb96f817feac88c47850b83555bfd44da8ecfbfe4fa4a566d9677edca546ad43",
+  "git/context/evidence/normalized-magnetic-22-plan-v1-2026-10-25.json": "8e744e32a8d5afa280fef3da45e4e7c54657b2ab368482b30e1ac15e7fa41f6e",
+  "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+  "git/context/reports/2026-10-25-normalized-magnetic-validation.md": "3c218b4e6a07a880e90997a353ffcab1463e382d97896a5ca30faadacdf3bfbc",
+  "git/context/scripts/normalized_magnetic_22.py": "d754475c0d6e6107087fe33b242143a72a062c87acb5a6c274dfcea4f127d930",
+  "git/context/scripts/normalized_magnetic_22_figures.py": "c2243426e4e46516e07b879ee57062949ddeabb4b1df6d002dd8404849074293",
+  "git/context/scripts/test_normalized_magnetic_22.py": "61f2d4c6f1c04bcbdfdd7e904237a0089d96b6b62c1eb712d026bf7a89b96e40"
+ },
+ "primary_scalar": "lowest normalized eigenvalue lambda1; lambda2 descriptive",
+ "q": {
+  "aliasing_check": 0.1,
+  "matched_ordinary_baseline": 0.0,
+  "primary": 0.25,
+  "rule": "all three reported; no best-q selection; no grid expansion after a null"
+ },
+ "question": "Can normalized magnetic lambda1 distinguish particular directed documentation graphs when the undirected graph and the selected directed summaries are exactly preserved, and can the response be explained through edge energy and mode localization?",
+ "ra": {
+  "attribution_module": "retrieval_arena/graph/magnetic_attribution.py",
+  "attribution_module_sha256": "fba88909465c360bac26e8d1069da1af801eb66113ae6ce19bcbc54079c9f364",
+  "branch": "icsc2027/downstream-case",
+  "commit": "99a7a04c9b042e84cb4217c9804e68cf06ae9ff9",
+  "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+  "focused_log": "artifacts\\magnetic-attribution-23-v1\\image\\focused-99a7a04.log",
+  "focused_log_sha256": "0f4b4f399ecc01bcbfec34d060e1ec20ef5a0533f10ace5b37e0a94b2a951d12",
+  "image": {
+   "reference": "sha256:91e9ac419128417596d5f046f0d499183c63d588ca5e2257e5fd6d1b028f0b49",
+   "tag": "retrieval-arena/verification:icsc-s23"
+  },
+  "image_build": "build-verification.ps1 -ProvisionedImage (icsc-c2 base, lock unchanged), --network none",
+  "image_receipt": "artifacts\\magnetic-attribution-23-v1\\image\\verification-image-99a7a04.json",
+  "image_receipt_sha256": "d8f93a9f19e733f785688f96f825f308404ebd770b9f5e8f9dc32445151297eb",
+  "operator_command": "measure-magnetic-attribution",
+  "platform": "linux/amd64",
+  "provisioned_base": "sha256:07c2637a3a98c386dd0e02a3370fe75d97f3c45226635a681a80898e6a4c34d5",
+  "spectrum_module": "retrieval_arena/graph/magnetic_spectrum.py",
+  "spectrum_module_sha256": "fb96f817feac88c47850b83555bfd44da8ecfbfe4fa4a566d9677edca546ad43",
+  "tree": "c2ad6f828382b6326aa5884a50d4b06262fb0f69"
+ },
+ "resolution_rule": "resolved iff |delta lambda1| > max(resolution_floor, resolution_factor * (r_A + r_B)), r = max over the ground cluster of ||L u - lambda u||_2 for unit u from the qualified dense solve",
+ "retrieval_or_answer_runs": 0,
+ "s22_historical_inputs_sha256": {
+  "artifacts/orientation-spectra-2026-10-06/analysis/analysis.json": "54c659dbebfa636c08b361cef7776b7fe958d5948f72359ae3cbaa66ef8db851",
+  "artifacts/orientation-spectra-2026-10-06/exposure/exposure.json": "6176b445d37dac1caa769a99309817faab531c3b07b1279dc895f6feb1416321",
+  "artifacts/orientation-spectra-2026-10-06/measures/measures.json": "90592d0f8a2ffcd8833e836a03b35c58ea4f4fa2864e18383ba83573de8bf1d3",
+  "git/RetrievalArena/retrieval_arena/graph/magnetic_phase.py": "d937edc46d75ac6094e5a8f21ddb0eb3156956adb73232b85aaced7d410a65fe",
+  "git/context/evidence/normalization-planning-audit-v1-2026-10-25.json": "1207410296135c8d1d63c6ab0c30a19e646db31d4063c3f36b71227afe61a3d8",
+  "git/context/evidence/orientation-spectra-analysis-plan-v1-2026-10-06.json": "0ceaa771a396773def6ecc07a27b7cadf9a85dab3ea22b3d35ad340df69d39ac",
+  "git/context/evidence/orientation-spectra-inputs-v1-2026-10-06.json": "1b5acb7dbe1cde9b11580e9b7b36e8823eabc8f62c35335218646b298ad3f72b",
+  "git/context/evidence/orientation-spectra-results-v1-2026-10-06.md": "0dc87503735f757649d7578092992cddaa48edccdaf04d942ed531aa356fad45",
+  "git/context/evidence/phase-flow-repair-v1-2026-10-06.json": "68d9275b1201f42f8799db9373bf2513bd55cf6e0f3fc12bfcd6cde94d44fc12",
+  "git/context/evidence/wc-refinement-run-v1-2026-10-18.json": "378eec3676a50b37ab0996701eff7af0b84a332d9515f0dc891bb8922db6f8fc",
+  "git/context/evidence/wc-spectra-18-v1-2026-10-19.json": "50cad12c121fac4ff7aa4e2057e1bddef47bebea05ae979df0f3519288e150bf",
+  "git/context/scripts/audit_normalization_22.py": "24fbc9d2ce083e5fc2b88d0be2f144fc7f3da22309b2506da8f40678999e108e",
+  "git/context/scripts/audit_phase_flow_v2.py": "55f78104a9a108ceafb91e3b51c15affd7ec7264f928116773bfcccebea6c272",
+  "git/context/scripts/orientation_spectra_09c.py": "477aa69d9c637991a3130954d1742193dff2e09bbd6bd5783593fb4ea66073cd",
+  "git/context/scripts/restructuring_runs.py": "c0f2bb29f5999c04c4775d2d46d96ea81c50aa09c3e93b1fb717131132d1acef",
+  "git/context/scripts/structure_forcing_12.py": "d2bc45f73b920fd31072929800277966671e5b00b4fb17612b07e7e1ecf54fe5",
+  "git/context/scripts/wc_refine_17.py": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525",
+  "git/context/scripts/wc_refinement_15.py": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2",
+  "git/context/scripts/wc_spectra_18.py": "c645cc78c8679f28f26d411aecb3b3fa017cd3bd656e1070add88b7d4adb20fa"
+ },
+ "schema_version": "icsc.magnetic_attribution_23_plan.v1",
+ "small_cases": {
+  "five": {
+   "a": "small/five",
+   "b": "small/five_triangle_reversed",
+   "control": "matched_cycle_reversal",
+   "purpose": "the triangle and the undirected four-cycle a-d-e-b share edge a-b; fixed candidate for explaining cycle-phase changes; no lowest-eigenvalue response promised",
+   "reversed_arcs": [
+    [
+     "a",
+     "b"
+    ],
+    [
+     "b",
+     "c"
+    ],
+    [
+     "c",
+     "a"
+    ]
+   ]
+  },
+  "isolate": {
+   "bundle": "small/five_plus_isolate",
+   "purpose": "separate degeneracy control; changes the node set, so it is not in the matched study",
+   "views": [
+    "full",
+    "lwcc"
+   ]
+  },
+  "path": {
+   "a": "small/path",
+   "b": "small/path_reoriented",
+   "control": "forest_reorientation",
+   "purpose": "fixed-weight forest blindness; degree matching is not claimed"
+  }
+ },
+ "spectrum_config": {
+  "solver": "dense"
+ },
+ "status": "frozen before any counterfactual spectrum; RA unit fixtures only had run",
+ "study_type": "post hoc explanatory study chosen after Sprint 22 was known; not independent confirmation; the three anchors are illustrative, not a random or representative sample"
+}

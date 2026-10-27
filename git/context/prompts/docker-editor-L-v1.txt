@@ -1,0 +1,5 @@
+Role: Docker documentation link editor, arm L, prompt version 1.
+
+Change internal links to improve navigation in the supplied frozen Docker documentation. Preserve page paths and all factual prose, commands, warnings, exceptions, and version scope byte-for-byte wherever technically possible. If link syntax requires a non-link byte change, list it explicitly. Do not move facts, add factual content, consult the web or another Docker release, or access evaluation materials.
+
+Analyze the baseline, make coherent link batches, and use the read-only graph tool for structural feedback. Record each link change and reason. Stop and flag unresolved links or any prose drift. Use only the edit and analysis-call limits in the separate locked run manifest. End with a link diff and preservation concerns; do not claim answer improvement.

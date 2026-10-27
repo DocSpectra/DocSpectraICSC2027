@@ -1,0 +1,149 @@
+{
+ "analyses": {
+  "A": {
+   "outputs": [
+    "profile table (normalized grid on historical LWCC, full view endpoints, structure, trophic incoherence, q0 and legacy comparators, unnormalized modes)",
+    "q-response curves",
+    "same-graph old (unnormalized) vs new ranks and scales"
+   ],
+   "population": "14 anchors (one graph each; not pooled with variants)",
+   "statistics": "descriptive Spearman rank correlations only (n = 14), no p-values, no predictive model"
+  },
+  "B": {
+   "comparison": "old analysis.json values under the same outcomes and graph identities",
+   "families": "main and sensitivity reported separately",
+   "label": "newly exploratory; automatic-candidate-support exposure, not verified relevance or answer quality",
+   "replay": "09c frozen_tests (orientation_spectra_09c.py, imported read-only) on the saved exposure table with normalized LWCC lambda1/lambda2 at q = 0.25 substituted for the primary measures and normalized grid values for the secondary; unchanged controls (out-degree Gini, sources, sinks, mean seed out-degree), seeds (seed_base 0 main, 100 sensitivity), 20,000 permutations, within-family Holm"
+  },
+  "C": {
+   "fixed_S_contrast": "same arithmetic on the fixed S view, reported separately",
+   "label": "normalized exploratory analogue; Sprint 18 p = 0.079 and SA1 stay the historical results",
+   "normalized_analogue": "Sprint 18 rule with normalized lambda1 q = 0.25 on each graph's own LWCC within S: d = v - O', null deltas LN - O', z = (d - mean null) / pooled within-area null SD (sqrt of mean ddof-1 variances over all area-arm rows), LT - R0 per paired area, exact two-sided sign flip; SA1 drops LT A10, A12, A21",
+   "profiles": "O, S, LT, R0, O-prime vs LN/PC/RN families: raw deltas, null mean/SD/min/max, component and node-set changes"
+  }
+ },
+ "created": "2026-10-25",
+ "historical_inputs_sha256": {
+  "artifacts/orientation-spectra-2026-10-06/analysis/analysis.json": "54c659dbebfa636c08b361cef7776b7fe958d5948f72359ae3cbaa66ef8db851",
+  "artifacts/orientation-spectra-2026-10-06/exposure/exposure.json": "6176b445d37dac1caa769a99309817faab531c3b07b1279dc895f6feb1416321",
+  "artifacts/orientation-spectra-2026-10-06/measures/measures.json": "90592d0f8a2ffcd8833e836a03b35c58ea4f4fa2864e18383ba83573de8bf1d3",
+  "git/RetrievalArena/retrieval_arena/graph/magnetic_phase.py": "d937edc46d75ac6094e5a8f21ddb0eb3156956adb73232b85aaced7d410a65fe",
+  "git/context/evidence/normalization-planning-audit-v1-2026-10-25.json": "1207410296135c8d1d63c6ab0c30a19e646db31d4063c3f36b71227afe61a3d8",
+  "git/context/evidence/orientation-spectra-analysis-plan-v1-2026-10-06.json": "0ceaa771a396773def6ecc07a27b7cadf9a85dab3ea22b3d35ad340df69d39ac",
+  "git/context/evidence/orientation-spectra-inputs-v1-2026-10-06.json": "1b5acb7dbe1cde9b11580e9b7b36e8823eabc8f62c35335218646b298ad3f72b",
+  "git/context/evidence/orientation-spectra-results-v1-2026-10-06.md": "0dc87503735f757649d7578092992cddaa48edccdaf04d942ed531aa356fad45",
+  "git/context/evidence/phase-flow-repair-v1-2026-10-06.json": "68d9275b1201f42f8799db9373bf2513bd55cf6e0f3fc12bfcd6cde94d44fc12",
+  "git/context/evidence/wc-refinement-run-v1-2026-10-18.json": "378eec3676a50b37ab0996701eff7af0b84a332d9515f0dc891bb8922db6f8fc",
+  "git/context/evidence/wc-spectra-18-v1-2026-10-19.json": "50cad12c121fac4ff7aa4e2057e1bddef47bebea05ae979df0f3519288e150bf",
+  "git/context/scripts/audit_normalization_22.py": "24fbc9d2ce083e5fc2b88d0be2f144fc7f3da22309b2506da8f40678999e108e",
+  "git/context/scripts/audit_phase_flow_v2.py": "55f78104a9a108ceafb91e3b51c15affd7ec7264f928116773bfcccebea6c272",
+  "git/context/scripts/orientation_spectra_09c.py": "477aa69d9c637991a3130954d1742193dff2e09bbd6bd5783593fb4ea66073cd",
+  "git/context/scripts/restructuring_runs.py": "c0f2bb29f5999c04c4775d2d46d96ea81c50aa09c3e93b1fb717131132d1acef",
+  "git/context/scripts/structure_forcing_12.py": "d2bc45f73b920fd31072929800277966671e5b00b4fb17612b07e7e1ecf54fe5",
+  "git/context/scripts/wc_refine_17.py": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525",
+  "git/context/scripts/wc_refinement_15.py": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2",
+  "git/context/scripts/wc_spectra_18.py": "c645cc78c8679f28f26d411aecb3b3fa017cd3bd656e1070add88b7d4adb20fa"
+ },
+ "measurement": {
+  "modes": "lowest lambda1, lambda2, lambda3, raw, with near-zero flags; no deletion, absolute value or clipping",
+  "operator": "L_q = diag(d>0) - D^+1/2 (W o exp(2 pi i q (A - A^T))) D^+1/2, W = (A + A^T)/2, binary A, self loops excluded, isolates kept",
+  "q": {
+   "continuity": 0.25,
+   "endpoint_views": "full graphs and area views: q in {0, 0.25} (normalized and unnormalized)",
+   "grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25
+   ],
+   "grid_views": "anchor LWCCs, orientation historical LWCCs, whole-corpus LWCCs (normalized and unnormalized)",
+   "rule": "every charge reported; none selected by apparent effect"
+  },
+  "q0_comparator": "same W (weighted ordinary normalized Laplacian); legacy binary-skeleton value labelled legacy",
+  "solver": "dense numpy.linalg.eigh, complex128, full spectrum, single-threaded BLAS inside the image",
+  "sparse_parity": "scipy eigsh on 2I - L for lowest 3 modes, compared on one small and one representative graph: eigenvalues within 1e-10 and projector distance < 1e-8 where the 3/4 gap > 1e-6; the corpus panels use the dense solver",
+  "tolerance_basis": "unit fixtures (20 tests) pass at these values; eigenvalue error of a dense Hermitian solver is O(n eps ||L||) <= ~1e-12 for n <= 5000, ||L|| <= 2",
+  "tolerances": {
+   "bound_absolute": 1e-10,
+   "hermitian_absolute": 1e-12,
+   "near_zero_absolute": 1e-09,
+   "orthogonality_absolute": 1e-10,
+   "residual_relative": 1e-10
+  },
+  "unnormalized_comparator": "D - W o exp(...) on the identical view (parity with magnetic_phase.magnetic_matrix)",
+  "version": "normalized_magnetic_spectrum.v1"
+ },
+ "model_calls": 0,
+ "panels": {
+  "anchors": {
+   "inputs": "14 corpora of phase-flow-repair-v1::migration",
+   "not_mixed_with": "SDM snapshots",
+   "views": [
+    "induced on the frozen historical retrieval-no-FAQ LWCC (nodes.json/selected-edges.csv)",
+    "own LWCC (deterministic: size, then smallest id); reproduction of the historical selection recorded",
+    "full retrieval graph: all non-FAQ pages by the pinned importer when the count equals the manifest; else unavailable"
+   ]
+  },
+  "area": {
+   "inputs": "18 LT and 23 R0 admitted areas; O-prime, own-area edited graph and up to five own-area LN graphs per area (F6 bucket_removed_edges, bucket_ln, subgraph_nodes_v2)",
+   "verification": "S count, edit counts, nulls built and every old measure-vector row recomputed with the pinned functions equal the saved analysis-18 summaries",
+   "views": [
+    "fixed common S induced view",
+    "each graph's own LWCC within S (historical rule)"
+   ]
+  },
+  "orientation": {
+   "association_set": "29 random/partial versions; F, R, U descriptive contrasts only",
+   "inputs": "32 versions x main and index/release-note-removed edge files (09c)",
+   "views": [
+    "induced on the historical fixed-skeleton LWCC of each family (main 844 nodes; sensitivity recomputed by 09c's rule)",
+    "full traversal graph of 1,263 pages"
+   ]
+  },
+  "wc": {
+   "inputs": "O, S, LT, R0, LT/O-prime, R0/O-prime and 30 saved LN/PC/RN nulls (36)",
+   "verification": [
+    "LT/R0 final tree ids equal wc-refinement-run-v1 records",
+    "retrieval and LWCC graph digests equal the saved Sprint 18 profiles",
+    "O and S profiles equal"
+   ],
+   "views": [
+    "full retrieval graph",
+    "own LWCC"
+   ]
+  }
+ },
+ "quarantine_rule": "a missing or mismatched graph is quarantined with its reason, never replaced; a source mismatch is kept distinct from a floating-point difference; unexpected gaps mean partial completion",
+ "ra": {
+  "branch": "icsc2027/downstream-case",
+  "commit": "6d277ac3fcae6650174f575fd744f1dd4a28f1a7",
+  "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+  "image": {
+   "reference": "sha256:49fe532b99c81208cba02042f0e28e3f0a875d66caafc1ba0fedb5cf40b1a1ff",
+   "tag": "retrieval-arena/verification:icsc-s22"
+  },
+  "image_build": "build-verification.ps1 -ProvisionedImage on icsc-c2 (lock unchanged), --network none",
+  "image_receipt": "artifacts\\normalized-magnetic-22-v1\\image\\verification-image-6d277ac.json",
+  "image_receipt_sha256": "842e38f932b43c96730470e55e63afb6d6e9faba472a583b81fe69ef21903e9e",
+  "module": "retrieval_arena/graph/magnetic_spectrum.py",
+  "module_sha256": "fb96f817feac88c47850b83555bfd44da8ecfbfe4fa4a566d9677edca546ad43",
+  "platform": "linux/amd64"
+ },
+ "schema_version": "docspectra.icsc.normalized_magnetic_22.plan.v1",
+ "status": "frozen before any corpus normalized spectrum was computed; post hoc analyses of already observed data, not independent confirmation",
+ "verdict_rule": {
+  "S1_numerical": "every required receipt qualified and parity/fixture tests pass in the container",
+  "S2_distinct": "on the 14 anchors, |Spearman| < 0.9 between normalized LWCC lambda1(q=.25) and each of: weighted q0 lambda2, reciprocal-arc fraction, trophic incoherence, out-degree Gini, log node count, isolate fraction of the full view; and the same for lambda2(q=.25)",
+  "S3_orientation": "on the main family, normalized lambda1(q=.25) range over the 32 versions > 1e-6 while the q0 spectrum is constant over F/R/random/partial versions (< 1e-9), and |Spearman| < 0.9 with each directed-degree control over the 29 association versions",
+  "S4_application": "in C, LT or R0 normalized lambda1 or lambda2 (q=.25, whole-corpus LWCC) lies outside [min, max] of its own LN family",
+  "boundary": "no verdict establishes retrieval or answer utility, an LT detector or a quality objective",
+  "verdicts": {
+   "additional utility validation needed": "S1 and S2 and S3 but not S4",
+   "partial": "S1 fails on a required panel: no verdict beyond the evidence",
+   "structural characterization supported": "S1 and S2 and S3 and S4",
+   "validity/limits contribution only": "S1 and not (S2 and S3)"
+  }
+ }
+}

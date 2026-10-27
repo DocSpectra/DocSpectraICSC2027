@@ -1,0 +1,505 @@
+{
+  "baseline": {
+    "change_from_v5": {
+      "excluded_in_main_component": [],
+      "removed_edges": [
+        [
+          "agents__c2c873be",
+          "components__4c11375d"
+        ],
+        [
+          "agents__c2c873be",
+          "style__137b172f"
+        ]
+      ],
+      "retrieval_edges": -2,
+      "retrieval_pages": -45,
+      "v5_graph_edges_sha256": "856a90d394c9756425fd436029d5de5e444e269aa5dbe1012432ae46a9242c91"
+    },
+    "faq_pages_locked": 26,
+    "full_pages": 1244,
+    "graph_edges_sha256": "96dbbe01569da75d03c15ad07c355c7e7839935bc9a8100e5c5878d01fd305e0",
+    "retrieval_edges": 2494,
+    "retrieval_pages": 1218,
+    "views": {
+      "retrieval_no_faq": {
+        "controls": {
+          "edges": 2494,
+          "indegree_gini": 0.6884259497012863,
+          "isolated": 292,
+          "nodes": 1218,
+          "outdegree_gini": 0.653312449056718,
+          "sinks": 203,
+          "sources": 196,
+          "total_degree_sha256": "c97d922a082bb1a126c7e6d274b9f9af7f8c0bf7970070b1b1573704f717f790",
+          "zero_outdegree": 495
+        },
+        "edges": 2494,
+        "graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+        "nodes": 1218,
+        "weak_components": 300
+      },
+      "retrieval_no_faq_lwcc": {
+        "controls": {
+          "edges": 2414,
+          "indegree_gini": 0.5868109409173188,
+          "isolated": 0,
+          "nodes": 844,
+          "outdegree_gini": 0.500799051347393,
+          "sinks": 138,
+          "sources": 182,
+          "total_degree_sha256": "834516e5d857d4745cd1577cd07a59c65da280892d9d559cb68e969c375debd3",
+          "zero_outdegree": 138
+        },
+        "edges": 2414,
+        "graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+        "nodes": 844
+      }
+    }
+  },
+  "code": {
+    "exporter": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraCIKM2026\\git\\DocSpectraCIKM2026\\docspectra_importer\\retrieval_arena_export.py",
+      "sha256": "1a0f16ae1d7450ed2b4613de74d090899a7bdc3dc26335d60ca0a701d70c4d7c"
+    },
+    "metrics": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraCIKM2026\\git\\DocSpectraCIKM2026\\docspectra_importer\\graph_metrics.py",
+      "sha256": "a62330645fb39d412b9f127786670b54c0aa455ad54846fda5656f463edd9ed2"
+    }
+  },
+  "editor": {
+    "edit_budget": "must_be_frozen_in_later_run_manifest",
+    "model_revision": "unavailable_until_run",
+    "planned_model_alias": "gpt-5.6-sol",
+    "prompts_sha256": {
+      "L": "5bf74e5e3958c74df42d8f847f20b3a9414dbfcb7f278d63fa55048f7039088c",
+      "R": "a54f3c02574495269f4192fd8b380eb52285dc27ab59e48d83a7861240ec4f47",
+      "X-minus": "dc4e97d9e2baf10462ff0f2e2a37c9f0a573c15fc0da3553d3f30dc339aed0c4",
+      "X-plus": "35fbebf158293921b0da6b87d6e597601bb9f6b20a0096a94b544d7784aad79f"
+    },
+    "tool_call_budget": "must_be_frozen_in_later_run_manifest"
+  },
+  "evaluation_firewall": "No questions, answers, grades, rubrics or task outcomes in editor input or analysis receipts",
+  "metric_definition": {
+    "flow": "CIKM phase flow diagnostic only; not optimization target",
+    "magnetic": "CIKM unnormalized Dq-Hq, q=0.25, binary edges",
+    "subspace_polarization": "new continuous amplitude-weighted subspace descriptor; not historical phase flow",
+    "undirected_normalized": "D^-1/2(D-A)D^-1/2; isolated diagonal zero"
+  },
+  "output_root": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1",
+  "parent_manifest_sha256": "9cc3bbdd2b50f92ae57badd5be80d0f2fe3a869bff79e736fb828d85f9b27142",
+  "phase_measurement_pin": {
+    "code_path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\git\\RetrievalArena\\retrieval_arena\\graph\\magnetic_phase.py",
+    "code_sha256": "d937edc46d75ac6094e5a8f21ddb0eb3156956adb73232b85aaced7d410a65fe",
+    "config": {
+      "amplitude_relative": 1e-08,
+      "gap_relative": 1e-08,
+      "minimum_coverage": 0.95,
+      "modes": 10,
+      "orthogonality_absolute": 1e-10,
+      "phase_absolute": 1e-07,
+      "q": 0.25,
+      "residual_relative": 1e-10
+    },
+    "config_sha256": "b22cebd5d92dd08fec6ea7a0afa31ca9335847b38a20988d08d95d321d1044be",
+    "metric_version": "magnetic_subspace_edge_polarization.v1",
+    "numerical_scope": "five_frozen_Docker_retrieval_no_faq_lwcc_graphs_only",
+    "optimization_admitted": false,
+    "orientation_validity": {
+      "construct_version": "listed_link_source_sink_consistency.v1",
+      "decision": "restricted; orientation blind on fixed forests",
+      "directional_admission": false,
+      "evidence_sha256": "544c8cb6c12a5cbb8fd4ac2884416e89891f4bc2e3623eab3f5219013d397224",
+      "new_metric_or_code_pin": false,
+      "replacement_qualified": false
+    },
+    "qualification_evidence_sha256": "68d9275b1201f42f8799db9373bf2513bd55cf6e0f3fc12bfcd6cde94d44fc12",
+    "scientific_utility": "unvalidated"
+  },
+  "recovered_export": {
+    "corpus_inventory_sha256": "b180b921a2f8d4ac6f3ed918c94383f2be3ba12c7a604c6e14193a30d7a25e08",
+    "graph_csv_sha256": "699f55e14b44b6b156b8a09c95d4e7e1c4c81df4ad627ee535f91dc66340ceca",
+    "historical_question_count": 144,
+    "historical_question_file_sha256": "1d5c060a4995a5d187a9ce4f7e7584d75b81c4a95b04d1e0da6ec9cb3ab9c181",
+    "historically_supported_count": 142,
+    "lock_sha256": "cb1054e7c492bf1c38c057d132905276ec146a09bdfe265a98d8f31335487f3c",
+    "question_material_location": "private_recovery_archive_outside_editor_input",
+    "scope_note": "the recovered export is the 1263-page repository_root dataset; under docs_scope_v1 an unedited O/S export equals its in-scope subset (corpus files of in-scope ids; graph rows with both endpoints in scope)"
+  },
+  "schema_version": "docspectra.icsc.docker_variant.v1",
+  "source_commit": "274681c49355bd951ae60c9208e854ff70f12474",
+  "source_policy": {
+    "decided": "2026-10-07 author decision (Sprint 10b)",
+    "document_ids": "cikm_lowercase_path_sha1_v1",
+    "document_root": "repository root (doc ids unchanged)",
+    "editor_input": "discovered_non_faq_in_scope_pages_only",
+    "excluded": {
+      "by_class": {
+        "agent_instructions": 18,
+        "site_build": 27
+      },
+      "count": 45,
+      "ids": [
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents__c2c873be",
+          "rel_path": "AGENTS.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_agent_readiness_audit_references_report_template__1b0ddddb",
+          "rel_path": ".agents/skills/agent-readiness-audit/references/report-template.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_agent_readiness_audit_references_rubric__689cccd6",
+          "rel_path": ".agents/skills/agent-readiness-audit/references/rubric.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_agent_readiness_audit_skill__5e274412",
+          "rel_path": ".agents/skills/agent-readiness-audit/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_check_pr_skill__51142fb9",
+          "rel_path": ".agents/skills/check-pr/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_create_lab_guide_skill__e390f3cc",
+          "rel_path": ".agents/skills/create-lab-guide/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_create_pr_skill__7947fe81",
+          "rel_path": ".agents/skills/create-pr/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_fix_issue_skill__5224199b",
+          "rel_path": ".agents/skills/fix-issue/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_migrate_content_ia_skill__302fabb3",
+          "rel_path": ".agents/skills/migrate-content-ia/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_research_skill__8ae2b2b7",
+          "rel_path": ".agents/skills/research/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_review_changes_skill__0e7340e7",
+          "rel_path": ".agents/skills/review-changes/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_testcontainers_guides_migrator_skill__5c7732ba",
+          "rel_path": ".agents/skills/testcontainers-guides-migrator/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_triage_issue_skill__5358fdbc",
+          "rel_path": ".agents/skills/triage-issue/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "agents_skills_write_skill__563a4be0",
+          "rel_path": ".agents/skills/write/SKILL.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "claude__bb2e0b36",
+          "rel_path": "CLAUDE.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "github_prompts_freshness_tier1_prompt__d29f3d4d",
+          "rel_path": ".github/prompts/freshness-tier1.prompt.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "github_prompts_freshness_tier2_prompt__7897a90f",
+          "rel_path": ".github/prompts/freshness-tier2.prompt.md"
+        },
+        {
+          "class": "agent_instructions",
+          "doc_id": "github_prompts_review_prompt__4e54e0af",
+          "rel_path": ".github/prompts/review.prompt.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_404__755da8b1",
+          "rel_path": "layouts/404.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_api__d2d2d101",
+          "rel_path": "layouts/api.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_api_markdown__7936f04f",
+          "rel_path": "layouts/api.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_baseof__be1abb0f",
+          "rel_path": "layouts/baseof.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_cli__aca46d13",
+          "rel_path": "layouts/cli.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_cli_markdown__c743571b",
+          "rel_path": "layouts/cli.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_glossary__da20649a",
+          "rel_path": "layouts/glossary.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_guides_landing__1d42e4ab",
+          "rel_path": "layouts/guides/landing.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_home__9eb46095",
+          "rel_path": "layouts/home.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_home_llms__5e95a206",
+          "rel_path": "layouts/home.llms.txt"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_home_llmsfull__13d631e0",
+          "rel_path": "layouts/home.llmsfull.txt"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_home_markdown__dce38c80",
+          "rel_path": "layouts/home.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_home_robots__17b0c9a6",
+          "rel_path": "layouts/home.robots.txt"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_list__b2f7b2c9",
+          "rel_path": "layouts/list.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_list_markdown__43d2dc8f",
+          "rel_path": "layouts/list.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_redirect_single__589dd53a",
+          "rel_path": "layouts/redirect/single.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_samples_single__07d4ad50",
+          "rel_path": "layouts/samples/single.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_samples_single_markdown__c87598dd",
+          "rel_path": "layouts/samples/single.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_sbx_cli__94f1aa51",
+          "rel_path": "layouts/sbx-cli.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_series__bb1e647f",
+          "rel_path": "layouts/series.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_single__bbfd31ad",
+          "rel_path": "layouts/single.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_single_markdown__f8203242",
+          "rel_path": "layouts/single.markdown.md"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "layouts_wide__056ee6b8",
+          "rel_path": "layouts/wide.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "static_assets_fonts_robotoflex_license__60a5824e",
+          "rel_path": "static/assets/fonts/RobotoFlex_LICENSE.txt"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "static_assets_fonts_robotomono_license__1082552e",
+          "rel_path": "static/assets/fonts/RobotoMono_LICENSE.txt"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "static_google161104f9fdea6089__e7905727",
+          "rel_path": "static/google161104f9fdea6089.html"
+        },
+        {
+          "class": "site_build",
+          "doc_id": "static_googlecbe7fee896be512c__5ffd072f",
+          "rel_path": "static/googlecbe7fee896be512c.html"
+        }
+      ],
+      "rule": {
+        "classes": {
+          "agent_instructions": {
+            "basenames_any_depth": [
+              "agents.md",
+              "claude.md"
+            ],
+            "paths": [
+              "gemini.md",
+              ".github/copilot-instructions.md"
+            ],
+            "prefixes": [
+              ".agents/",
+              ".claude/",
+              ".cursor/",
+              ".github/prompts/",
+              ".github/instructions/"
+            ]
+          },
+          "site_build": {
+            "basenames_any_depth": [],
+            "paths": [],
+            "prefixes": [
+              "layouts/",
+              "static/"
+            ]
+          }
+        },
+        "kept": "everything else: content/** product docs and root contributor docs",
+        "note": "root gemini.md, .claude/, .cursor/, .github/instructions/ and copilot-instructions.md match nothing at commit 274681c; they are refuse-on-create guards for editor trees. gemini.md is root-only because content/manuals/ai/sandboxes/agents/gemini.md is product documentation. Any-depth agents.md/claude.md match no content/ page at 274681c; a future page with such a name fails the frozen-ID check (scope-exclusion-drift) instead of being dropped silently",
+        "version": "docs_scope_v1"
+      },
+      "sha256": "92c2a2f83ac52e282a19a3a279a2bb4f0fb89c32334d7ff4c2b539c245905d74"
+    },
+    "faq_patterns": [
+      "*faq*"
+    ],
+    "scope": "docs_scope_v1"
+  },
+  "source_root": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-temporal-2026-05-01-to-05-26-v2\\s01-274681c49355\\source",
+  "source_tree_sha256": "7b54d187fa99f9acc09353f6ae114aa9bfa2579d645df3168c9bc0d2043a9445",
+  "sprint_10b": {
+    "decision": "experiment corpus = product and contributor documentation; agent-instruction and site-build files excluded",
+    "full_view": "in-scope retrieval pages plus the 26 locked FAQ pages (all under content/)",
+    "views": [
+      "full",
+      "full_lwcc",
+      "retrieval_no_faq",
+      "retrieval_no_faq_lwcc"
+    ]
+  },
+  "structural_target_pin": {
+    "admission_rule": {
+      "C0": "all baseline anchor ids (mapped through merges) present",
+      "C1": "every mapped baseline main-weak-component page and every new page in the variant main weak component",
+      "C1b": "every new page has >= 1 in-link from a different page",
+      "C2": "normalized undirected lambda2 on mapped baseline-M pages plus new pages >= 0.90 x baseline",
+      "anchors": [
+        "content_get_started_index__90ad76c0",
+        "content_guides_index__3561db99",
+        "content_index__e331c661",
+        "content_manuals_index__c570a2f7",
+        "content_reference_index__3318f552"
+      ],
+      "baseline": "locked docs_scope_v1 retrieval_no_faq graph (F restricted to 1218 in-scope pages); edge-set graph_sha256 996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959; lambda2 0.011037979927050976; |M| 844",
+      "form": "C0+C1+C1b+C2",
+      "merge_mapping_required": true,
+      "version": "structural_connectivity_constraint.v1"
+    },
+    "code": {
+      "code_sha256": "08658f1b61c6cd9d1566a1fc77abdd0b4b5e68d8de36242a48461b17d9562895",
+      "config": {
+        "depth": 3,
+        "edge_ratio_max": 1.2,
+        "lambda2_tolerance": 0.1,
+        "outdegree_floor": 30,
+        "profile_depths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "use_lambda2": true
+      },
+      "config_sha256": "7aad8fba4b6dbc9fbd684d8306645eb5a219ead151bcb2796b104e31ae531c09",
+      "path": "git/RetrievalArena/retrieval_arena/graph/structural_target.py",
+      "ra_commit": "eea1e368a8004021da0f2ffafdb6cdf37b6727dc"
+    },
+    "decided": "2026-10-07",
+    "decision": "admit_C_only",
+    "evidence": {
+      "construct": "design/structural-target-construct-v1-2026-10-07.md",
+      "erratum": "design/structural-target-construct-v1-erratum-2026-10-07.md",
+      "protocol_sha256": "a7dc05b14d2d1e69ee1be36d2a1bdad1359dbd939edb7f4b2b20a33dfba35786",
+      "results_sha256": "be8272ff427ea737fe54af5c79d9bf17cf6d06e844d0a7ad0d9adb33c2739d8d"
+    },
+    "fallback_for_v3": "E2/E1 need T and fall back to the v2 shape: O/S, L and R0 with C as an admission rule and no metric claim; E3 (R0+C vs R0) remains defined",
+    "link_guard": {
+      "admitted_as_rule": false,
+      "note": "G2 rejected one legitimate 50-pair merge and one 50-link random addition at the baseline-max tie; descriptor only",
+      "version": "structural_link_guard.v1"
+    },
+    "objective": {
+      "admitted": false,
+      "reasons": [
+        "T(F)=0.0213 < 0.05 headroom floor",
+        "anchor-outward and adversarial padding within the guard raised T by up to 0.72",
+        "V3 Luna citation enrichment not positive (0/20)"
+      ],
+      "status": "reported descriptor only; never shown to editors; not a selection rule",
+      "version": "anchored_forward_reachability.v1"
+    },
+    "optimization_admitted": false,
+    "repinned": {
+      "T_F": 0.02132701421800948,
+      "T_F_unchanged": true,
+      "code_config_anchors_unchanged": true,
+      "date": "2026-10-07",
+      "from_manifest_sha256": "9cc3bbdd2b50f92ae57badd5be80d0f2fe3a869bff79e736fb828d85f9b27142",
+      "graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+      "lambda2_bit_identical_to_v5": true,
+      "main_component_identical_to_v5": true,
+      "sprint": "10b",
+      "v5_graph_sha256": "05405ef00715fb1dd331946b36a51212b726290cc06c680df9d92af2e0774f3c"
+    },
+    "scope": "pinned Docker snapshot only; C is an admission rule, not a quality objective; optimization_admitted false; scientific utility unvalidated",
+    "sprint": "09d"
+  },
+  "views": [
+    "full",
+    "full_lwcc",
+    "retrieval_no_faq",
+    "retrieval_no_faq_lwcc"
+  ]
+}

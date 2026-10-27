@@ -1,0 +1,211 @@
+<title>HR-03 Factual Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a fact-checker's desk. A sticky ledger of 40 cells on top; one page at a time below: the edited page on the
+   left with added lines marked, its source pages on the right with dropped lines marked, then the one question and
+   four verdicts. Columns stack at phone width. */
+:root {
+  --bg: #f3f5f7; --surface: #ffffff; --ink: #18212b; --muted: #5b6875; --rule: #d6dde4;
+  --accent: #1d4f7a; --accent-soft: #e2ecf5; --passage: #f7f9fb;
+  --add: #1f6b45; --add-bg: #e1f3e8; --del: #9b2f26; --del-bg: #f8e3e0;
+  --ok: #1f7a4d; --ok-soft: #dff1e7; --loss: #a3352b; --loss-soft: #f6e1de; --err: #7a2a7a; --err-soft: #f1e1f1;
+  --unsure: #8a6400; --unsure-soft: #f6edd2;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111820; --surface: #18212b; --ink: #e5ebf1; --muted: #9aa8b5; --rule: #2c3a47;
+  --accent: #8cb8e0; --accent-soft: #1f3247; --passage: #141c25;
+  --add: #8fdcae; --add-bg: #173826; --del: #f2a197; --del-bg: #3d1e1b;
+  --ok: #6fcf9b; --ok-soft: #173826; --loss: #f08b80; --loss-soft: #3d1e1b; --err: #e3a3e3; --err-soft: #352035;
+  --unsure: #e2b84a; --unsure-soft: #3a3016; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111820; --surface: #18212b; --ink: #e5ebf1; --muted: #9aa8b5; --rule: #2c3a47;
+  --accent: #8cb8e0; --accent-soft: #1f3247; --passage: #141c25;
+  --add: #8fdcae; --add-bg: #173826; --del: #f2a197; --del-bg: #3d1e1b;
+  --ok: #6fcf9b; --ok-soft: #173826; --loss: #f08b80; --loss-soft: #3d1e1b; --err: #e3a3e3; --err-soft: #352035;
+  --unsure: #e2b84a; --unsure-soft: #3a3016; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); margin: 0 }
+.wrap { max-width: 1280px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px }
+header.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); border-bottom: 1px solid var(--rule); padding-block: 12px 10px }
+.bar-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px }
+h1 { font: 600 1.25rem/1.2 var(--display); margin: 0 }
+.tally { font-variant-numeric: tabular-nums; color: var(--muted); font-size: .85rem; display: flex; gap: 14px; flex-wrap: wrap }
+.tally b { color: var(--ink) }
+.ledger { display: grid; grid-template-columns: repeat(20, minmax(0, 1fr)); gap: 4px; margin-top: 10px }
+.cell { height: 18px; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); cursor: pointer; font: 500 .6rem var(--mono); color: var(--muted); display: grid; place-items: center }
+.cell.current { outline: 2px solid var(--accent); outline-offset: 1px }
+.cell.no_problem { background: var(--ok); color: var(--surface); border-color: var(--ok) }
+.cell.factual_loss { background: var(--loss); color: var(--surface); border-color: var(--loss) }
+.cell.factual_error { background: var(--err); color: var(--surface); border-color: var(--err) }
+.cell.unsure { background: var(--unsure); color: var(--surface); border-color: var(--unsure) }
+.intro { margin: 14px 0 0; color: var(--muted); max-width: 80ch; font-size: .9rem; display: grid; gap: 6px }
+.intro b { color: var(--ink) }
+.warn { color: var(--loss) }
+.reviewer { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px }
+.reviewer input { font: 15px var(--body); padding: 7px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); color: var(--ink); width: 16rem; max-width: 100% }
+button { font: 500 .9rem var(--body); background: transparent; color: var(--accent); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 14px; cursor: pointer }
+main { margin-top: 16px; display: grid; gap: 14px }
+.eyebrow { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600 }
+.path { font: 500 .95rem var(--mono); overflow-wrap: anywhere; margin-top: 2px }
+.kind { display: inline-block; font: 600 .7rem var(--body); letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); margin-left: 8px; vertical-align: middle }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px }
+@media (max-width: 860px) { .cols { grid-template-columns: minmax(0, 1fr) } .ledger { grid-template-columns: repeat(10, minmax(0, 1fr)) } }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; min-width: 0; display: grid; gap: 8px; align-content: start }
+.panel h3 { margin: 0; font: 600 .9rem var(--body); display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline }
+.panel h3 .loc { font: .76rem var(--mono); color: var(--muted); overflow-wrap: anywhere; font-weight: 400 }
+.legend { font-size: .8rem; color: var(--muted) }
+.legend .a { color: var(--add); background: var(--add-bg); padding: 0 4px; border-radius: 3px }
+.legend .d { color: var(--del); background: var(--del-bg); padding: 0 4px; border-radius: 3px; text-decoration: line-through }
+.text { font: .8rem/1.5 var(--mono); background: var(--passage); border-radius: 4px; padding: 8px 10px; max-height: 32rem; overflow: auto; margin: 0 }
+.text div { white-space: pre-wrap; overflow-wrap: anywhere; min-height: 1.2em }
+.text .add { background: var(--add-bg); color: var(--add); border-left: 3px solid var(--add); padding-left: 4px; margin-left: -7px }
+.text .del { background: var(--del-bg); color: var(--del); border-left: 3px solid var(--del); padding-left: 4px; margin-left: -7px }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap }
+.tabs button { font-size: .8rem; padding: 4px 10px }
+.tabs button[aria-selected="true"] { background: var(--accent-soft); border-color: var(--accent) }
+.ask { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 10px }
+.q { font: 500 1.15rem/1.35 var(--display); margin: 0 }
+.check { margin: 0; padding-left: 1.2rem; color: var(--muted); font-size: .88rem; columns: 2 18rem }
+.keys { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.verdict { font: 600 .9rem var(--body); border-radius: 6px; padding: 8px 14px; cursor: pointer; border: 2px solid; min-width: 8rem }
+.v-no_problem { color: var(--ok); border-color: var(--ok); background: var(--ok-soft) }
+.v-factual_loss { color: var(--loss); border-color: var(--loss); background: var(--loss-soft) }
+.v-factual_error { color: var(--err); border-color: var(--err); background: var(--err-soft) }
+.v-unsure { color: var(--unsure); border-color: var(--unsure); background: var(--unsure-soft) }
+.verdict.chosen { color: var(--surface) }
+.v-no_problem.chosen { background: var(--ok) } .v-factual_loss.chosen { background: var(--loss) }
+.v-factual_error.chosen { background: var(--err) } .v-unsure.chosen { background: var(--unsure) }
+.verdict:disabled { opacity: .45; cursor: not-allowed }
+.comment { font: 14px var(--body); width: 100%; min-height: 3rem; padding: 6px 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--passage); color: var(--ink) }
+.nav { display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap }
+.status { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums }
+.done { background: var(--accent-soft); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 16px }
+button:focus-visible, input:focus-visible, textarea:focus-visible, .cell:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px }
+</style>
+
+<div class="wrap">
+  <header class="bar">
+    <div class="bar-top">
+      <h1>HR-03 factual review: 40 edited pages</h1>
+      <div class="tally" id="tally" aria-live="polite"></div>
+    </div>
+    <div class="ledger" id="ledger" aria-label="Pages"></div>
+  </header>
+  <div class="intro">
+    <p>Each page was rewritten or created by one of the two editors. Which editor made it is hidden. Compare it with its source pages from the original documentation. <span class="legend"><span class="a">Green</span> lines on the edited page appear in no source; <span class="d">red</span> lines in a source don't appear on the edited page (they may have moved elsewhere in the docs, so check before calling them lost).</span></p>
+    <p><b>Only facts count.</b> Structure, wording and writing quality are out of scope. Pick a verdict; a note is needed for anything but No problem. Answers save as you click and can be changed.</p>
+  </div>
+  <div class="reviewer"><label for="reviewer-name">Reviewer name</label><input id="reviewer-name" autocomplete="name"><button id="save-name">Save name</button><span class="status" id="name-status"></span></div>
+  <p class="intro warn" id="dbnote" hidden>This view can't save answers. Open the page signed in to Claude to record them.</p>
+  <main id="main"></main>
+</div>
+
+<script>
+const PACKET = /*PACKET_JSON*/null;
+const PAGES = PACKET.pages;
+const LABEL = { no_problem: "No problem", factual_loss: "Factual loss", factual_error: "Factual error", unsure: "Unsure" };
+let reviews = {}, idx = 0, src = 0, db = null, placed = false;
+const $ = (id) => document.getElementById(id);
+const norm = (s) => s.split(/\s+/).filter(Boolean).join(" ");
+
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v; else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else if (k === "value") n.value = v; else n.setAttribute(k, v);
+  }
+  for (const k of kids) n.append(k);
+  return n;
+}
+function lines(text, marked, cls) {
+  const set = new Set(marked);
+  return el("div", { class: "text" }, ...text.split("\n").map((l) => el("div", { class: set.has(norm(l)) && norm(l) ? cls : "" }, l)));
+}
+function firstOpen() { const i = PAGES.findIndex((p) => !reviews[p.id]); return i === -1 ? 0 : i; }
+
+function renderBar() {
+  const c = Object.fromEntries(PACKET.verdicts.map((v) => [v, 0]));
+  Object.values(reviews).forEach((r) => c[r.verdict]++);
+  const done = Object.values(c).reduce((a, b) => a + b, 0);
+  $("tally").replaceChildren(el("span", {}, el("b", {}, `${done} / ${PAGES.length}`), " reviewed"),
+    ...PACKET.verdicts.map((v) => el("span", {}, `${LABEL[v].toLowerCase()} ${c[v]}`)));
+  $("ledger").replaceChildren(...PAGES.map((p, i) => el("div", {
+    class: `cell ${i === idx ? "current" : ""} ${(reviews[p.id] || {}).verdict || ""}`, role: "button", tabindex: "0",
+    "aria-label": `${p.id}${reviews[p.id] ? ", " + LABEL[reviews[p.id].verdict] : ""}`,
+    onclick: () => go(i), onkeydown: (ev) => { if (ev.key === "Enter") go(i); } }, p.id.slice(1))));
+}
+
+function renderPage() {
+  const p = PAGES[idx], r = reviews[p.id] || {};
+  const s = p.sources[Math.min(src, p.sources.length - 1)];
+  const kids = [];
+  if (Object.keys(reviews).length === PAGES.length) kids.push(el("div", { class: "done" }, "All 40 pages reviewed. Tell Claude you're done; it reads your answers from this page."));
+  kids.push(el("section", {}, el("div", { class: "eyebrow" }, `${p.id} · page ${idx + 1} of ${PAGES.length}`),
+    el("div", { class: "path" }, p.rel_path, el("span", { class: "kind" }, p.kind === "new" ? "new page" : "rewritten page"))));
+  const right = p.sources.length ? el("section", { class: "panel" },
+      el("h3", {}, "Original source", el("span", { class: "loc" }, `${s.rel_path}${s.own ? " (this page's own original)" : ""}`)),
+      p.sources.length > 1 ? el("div", { class: "tabs", role: "tablist" }, ...p.sources.map((x, i) => el("button", {
+        role: "tab", "aria-selected": String(i === src), onclick: () => { src = i; renderPage(); } },
+        x.own ? "Own original" : `Source ${i + (p.sources[0].own ? 0 : 1)}`))) : "",
+      el("div", { class: "legend" }, el("span", { class: "d" }, "red"), " = not on the edited page"),
+      lines(s.text, s.removed_lines, "del"))
+    : el("section", { class: "panel" }, el("h3", {}, "Original source"),
+        el("p", { class: "legend" }, "No original page shares distinctive text with this page. Judge whether it states anything the documentation didn't."));
+  kids.push(el("div", { class: "cols" },
+    el("section", { class: "panel" }, el("h3", {}, "Edited page", el("span", { class: "loc" }, p.rel_path)),
+      el("div", { class: "legend" }, el("span", { class: "a" }, "green"), " = in no source"),
+      lines(p.text, p.added_lines, "add")), right));
+  const note = el("textarea", { class: "comment", id: `note-${p.id}`, placeholder: "What was lost or wrong? (needed for anything but No problem)", value: r.note || "" });
+  kids.push(el("section", { class: "ask" },
+    el("p", { class: "q" }, "Did the edit lose or get wrong a fact the original stated?"),
+    el("ul", { class: "check" }, el("li", {}, "Commands and code"), el("li", {}, "Prerequisites, versions and limits"),
+      el("li", {}, "Warnings and caveats"), el("li", {}, "Unsupported added claims"), el("li", {}, "Changed link targets")),
+    note,
+    el("div", { class: "keys" }, ...PACKET.verdicts.map((v) => el("button", {
+      class: `verdict v-${v} ${r.verdict === v ? "chosen" : ""}`, ...(db ? {} : { disabled: "" }),
+      onclick: () => save(p, v, note.value) }, LABEL[v])),
+      el("span", { class: "status", id: `st-${p.id}` }, r.verdict ? `Saved: ${LABEL[r.verdict]}` : ""))));
+  kids.push(el("div", { class: "nav" }, el("button", { onclick: () => go(idx - 1) }, "← Previous page"),
+    el("button", { onclick: () => go(idx + 1) }, "Next page →")));
+  $("main").replaceChildren(...kids);
+}
+function render() { renderBar(); renderPage(); }
+function go(i) { idx = (i + PAGES.length) % PAGES.length; src = 0; render(); window.scrollTo({ top: 0 }); }
+
+async function save(p, verdict, note) {
+  if (!db) return;
+  if (verdict !== "no_problem" && !note.trim()) { $(`st-${p.id}`).textContent = "Add a note saying what was lost or wrong."; return; }
+  $(`st-${p.id}`).textContent = "Saving…";
+  try {
+    await db.collection("reviews").doc(p.id).set({ page: p.id, verdict, note: note.trim(), at: new Date().toISOString(), packet_id: PACKET.packet_id });
+    reviews[p.id] = { verdict, note: note.trim() };
+    render();
+  } catch (err) { $(`st-${p.id}`).textContent = err && err.code === "invalid_argument" ? "This view can't save answers." : "Couldn't save. Try again."; }
+}
+
+$("save-name").addEventListener("click", async () => {
+  if (!db) return;
+  const name = $("reviewer-name").value.trim();
+  if (!name) { $("name-status").textContent = "Enter a name."; return; }
+  try { await db.doc("meta/reviewer").set({ name, at: new Date().toISOString(), packet_id: PACKET.packet_id }); $("name-status").textContent = "Saved."; }
+  catch (err) { $("name-status").textContent = "Couldn't save the name."; }
+});
+
+render();
+(async () => {
+  db = window.claude && window.claude.use ? await window.claude.use("db") : null;
+  if (!db) { $("dbnote").hidden = false; render(); return; }
+  db.doc("meta/reviewer").onSnapshot((s) => { if (s.exists && s.data().packet_id === PACKET.packet_id && !$("reviewer-name").value) $("reviewer-name").value = s.data().name; }, () => {});
+  db.collection("reviews").onSnapshot((snap) => {
+    reviews = {};
+    snap.docs.forEach((d) => { const v = d.data(); if (v && v.packet_id === PACKET.packet_id) reviews[v.page] = { verdict: v.verdict, note: v.note }; });
+    if (!placed) { placed = true; idx = firstOpen(); }
+    render();
+  }, () => { $("dbnote").hidden = false; });
+})();
+</script>

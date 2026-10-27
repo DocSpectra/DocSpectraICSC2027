@@ -1,0 +1,47 @@
+You are comparing two answers to the same technical question about Docker
+documentation. Decide which answer would better serve the person who asked,
+or whether they are equally good.
+
+QUESTION
+<<QUESTION>>
+
+REFERENCE NOTES
+These points are supported by the documentation. They describe one correct
+approach. They are not a checklist: an answer may take a different route if
+that route correctly achieves what the asker said they want. An answer that
+changes the asker's stated goal or constraint is worse, even if it is
+otherwise good.
+<<REFERENCE_NOTES>>
+
+ANSWER A
+<<ANSWER_A>>
+
+ANSWER B
+<<ANSWER_B>>
+
+HOW TO DECIDE (in priority order; a higher criterion outweighs all lower ones)
+1. Correctness: Does either answer contain an instruction that is wrong,
+   unsafe, or contradicts the reference notes? An answer with a wrong or
+   harmful instruction loses to one without, unless both have such errors.
+2. Fit: Does the answer address the asker's actual situation and stated
+   constraints, without substituting a different goal?
+3. Actionable completeness: Could the asker carry out the task from this
+   answer alone? Missing required steps count against it.
+4. Failure handling and caveats: Does it cover the failures, limits, or
+   special cases the question asks about?
+5. Clarity: Only if 1-4 are equal.
+
+DO NOT prefer an answer because it is longer, more confident, more
+formatted, has more citations, or appears first. Citations in brackets are
+references to source lines you cannot see; do not reward or penalize them.
+
+Use "tie" when a careful expert would not prefer either answer.
+
+Return only this JSON:
+{
+  "errors_a": [short description of each wrong or unsafe instruction in A],
+  "errors_b": [same for B],
+  "decisive_criterion": 1 | 2 | 3 | 4 | 5 | null,
+  "preference": "A" | "B" | "tie",
+  "reason": "one or two sentences naming the decisive difference"
+}

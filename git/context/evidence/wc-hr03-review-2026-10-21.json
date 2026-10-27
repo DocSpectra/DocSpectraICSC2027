@@ -1,0 +1,568 @@
+{
+ "schema_version": "docspectra.icsc.wc_hr03.v1",
+ "packet_id": "wc-hr03-v1",
+ "packet_sha256": "8096aa316effa670c0b959c093269360e9be62a79fe0bee4ab2558baf935bf8d",
+ "reviewer": {
+  "name": "rockerd",
+  "at": "2026-10-20T05:50:52.405Z"
+ },
+ "stop_rule": ">= 3 of 20",
+ "per_arm": {
+  "LT": {
+   "pages": 20,
+   "reviewed": 20,
+   "counts": {
+    "no_problem": 20,
+    "factual_loss": 0,
+    "factual_error": 0,
+    "unsure": 0
+   },
+   "loss_or_error": 0,
+   "stop": false
+  },
+  "R0": {
+   "pages": 20,
+   "reviewed": 20,
+   "counts": {
+    "no_problem": 20,
+    "factual_loss": 0,
+    "factual_error": 0,
+    "unsure": 0
+   },
+   "loss_or_error": 0,
+   "stop": false
+  }
+ },
+ "reviews": [
+  {
+   "page": "P01",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T03:46:17.001Z",
+   "arm": "R0",
+   "doc_id": "content_guides_lab_compose_quickstart__1e48c2ac",
+   "group": "A11",
+   "rel_path": "content/guides/lab-compose-quickstart.md",
+   "sources": [
+    "content/guides/lab-compose-quickstart.md"
+   ]
+  },
+  {
+   "page": "P02",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T03:52:08.241Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_dhi_core_concepts_socket_firewall__6926e8fb",
+   "group": "A21",
+   "rel_path": "content/manuals/dhi/core-concepts/socket-firewall.md",
+   "sources": [
+    "content/guides/dhi-backstage.md"
+   ]
+  },
+  {
+   "page": "P03",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T03:52:51.292Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c",
+   "group": "A23",
+   "rel_path": "content/manuals/enterprise/security/single-sign-on/connect.md",
+   "sources": [
+    "content/manuals/enterprise/security/single-sign-on/connect.md"
+   ]
+  },
+  {
+   "page": "P04",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T03:53:17.743Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_mac_helper_running__c49c01c2",
+   "group": "A13",
+   "rel_path": "content/manuals/desktop/troubleshoot-and-support/troubleshoot/mac-helper-running.md",
+   "sources": [
+    "content/manuals/desktop/troubleshoot-and-support/troubleshoot/topics.md"
+   ]
+  },
+  {
+   "page": "P05",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:05:20.019Z",
+   "arm": "LT",
+   "doc_id": "content_guides_golang_develop_application__ba3d66c0",
+   "group": "A04",
+   "rel_path": "content/guides/golang/develop-application.md",
+   "sources": [
+    "content/guides/golang/develop.md",
+    "content/guides/golang/build-images.md",
+    "content/guides/golang/deploy.md"
+   ]
+  },
+  {
+   "page": "P06",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:49:26.390Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_engine_release_notes_17_05__bce83138",
+   "group": "A15",
+   "rel_path": "content/manuals/engine/release-notes/17.05.md",
+   "sources": [
+    "content/manuals/engine/release-notes/17.05.md"
+   ]
+  },
+  {
+   "page": "P07",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:49:51.187Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_desktop_previous_versions_2_x_mac__3e455c63",
+   "group": "A15",
+   "rel_path": "content/manuals/desktop/previous-versions/2.x-mac.md",
+   "sources": [
+    "content/manuals/desktop/previous-versions/2.x-mac.md"
+   ]
+  },
+  {
+   "page": "P08",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:50:01.995Z",
+   "arm": "R0",
+   "doc_id": "content_guides_docker_build_cloud_common_questions__29ed71a6",
+   "group": "A10",
+   "rel_path": "content/guides/docker-build-cloud/common-questions.md",
+   "sources": [
+    "content/guides/docker-build-cloud/common-questions.md"
+   ]
+  },
+  {
+   "page": "P09",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:50:09.917Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94",
+   "group": "A18",
+   "rel_path": "content/manuals/engine/swarm/swarm-tutorial/rolling-update.md",
+   "sources": [
+    "content/manuals/engine/swarm/swarm-tutorial/rolling-update.md"
+   ]
+  },
+  {
+   "page": "P10",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:50:17.854Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_engine_daemon_troubleshoot__07afc7da",
+   "group": "A16",
+   "rel_path": "content/manuals/engine/daemon/troubleshoot.md",
+   "sources": [
+    "content/manuals/engine/daemon/troubleshoot.md"
+   ]
+  },
+  {
+   "page": "P11",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:53:29.313Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_engine_swarm_swarm_tutorial_index__656608c4",
+   "group": "A18",
+   "rel_path": "content/manuals/engine/swarm/swarm-tutorial/_index.md",
+   "sources": [
+    "content/manuals/engine/swarm/swarm-tutorial/_index.md"
+   ]
+  },
+  {
+   "page": "P12",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:59:05.890Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_dhi_core_concepts_vex__de040821",
+   "group": "A21",
+   "rel_path": "content/manuals/dhi/core-concepts/vex.md",
+   "sources": [
+    "content/manuals/dhi/core-concepts/vex.md"
+   ]
+  },
+  {
+   "page": "P13",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:54:03.588Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_dhi_how_to_customize__db61f385",
+   "group": "A21",
+   "rel_path": "content/manuals/dhi/how-to/customize.md",
+   "sources": [
+    "content/manuals/dhi/how-to/customize.md",
+    "content/manuals/dhi/how-to/cli.md"
+   ]
+  },
+  {
+   "page": "P14",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:54:23.067Z",
+   "arm": "LT",
+   "doc_id": "content_guides_database_tasks_custom_image__a819bc9f",
+   "group": "A06",
+   "rel_path": "content/guides/database-tasks/custom-image.md",
+   "sources": [
+    "content/guides/databases.md"
+   ]
+  },
+  {
+   "page": "P15",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:54:34.782Z",
+   "arm": "R0",
+   "doc_id": "content_reference_compose_file_secrets__925345d8",
+   "group": "A12",
+   "rel_path": "content/reference/compose-file/secrets.md",
+   "sources": [
+    "content/reference/compose-file/secrets.md"
+   ]
+  },
+  {
+   "page": "P16",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:54:45.228Z",
+   "arm": "R0",
+   "doc_id": "content_guides_docker_scout_why__b9c1daae",
+   "group": "A20",
+   "rel_path": "content/guides/docker-scout/why.md",
+   "sources": [
+    "content/guides/docker-scout/why.md"
+   ]
+  },
+  {
+   "page": "P17",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:54:59.984Z",
+   "arm": "R0",
+   "doc_id": "content_guides_php_run_tests__2259e5a9",
+   "group": "A04",
+   "rel_path": "content/guides/php/run-tests.md",
+   "sources": [
+    "content/guides/php/run-tests.md"
+   ]
+  },
+  {
+   "page": "P18",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:55:20.981Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_enterprise_security_hardened_desktop_namespace_access__11955daf",
+   "group": "A23",
+   "rel_path": "content/manuals/enterprise/security/hardened-desktop/namespace-access.md",
+   "sources": [
+    "content/manuals/enterprise/security/hardened-desktop/namespace-access.md"
+   ]
+  },
+  {
+   "page": "P19",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:55:36.325Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_desktop_use_desktop_index__fdfff5d4",
+   "group": "A14",
+   "rel_path": "content/manuals/desktop/use-desktop/_index.md",
+   "sources": [
+    "content/manuals/desktop/use-desktop/_index.md"
+   ]
+  },
+  {
+   "page": "P20",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:55:47.746Z",
+   "arm": "LT",
+   "doc_id": "content_reference_samples_gitea__96239345",
+   "group": "A06",
+   "rel_path": "content/reference/samples/gitea.md",
+   "sources": [
+    "content/reference/samples/gitea.md"
+   ]
+  },
+  {
+   "page": "P21",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:55:57.287Z",
+   "arm": "R0",
+   "doc_id": "content_reference_samples_java__8d3884ae",
+   "group": "A06",
+   "rel_path": "content/reference/samples/java.md",
+   "sources": [
+    "content/reference/samples/java.md",
+    "content/reference/samples/_index.md"
+   ]
+  },
+  {
+   "page": "P22",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:56:15.465Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_admin_organization_manage_team_repository_permissions__105f7251",
+   "group": "ALL",
+   "rel_path": "content/manuals/admin/organization/manage/team-repository-permissions.md",
+   "sources": [
+    "content/manuals/admin/organization/manage/manage-a-team.md",
+    "content/manuals/docker-hub/repos/manage/access.md"
+   ]
+  },
+  {
+   "page": "P23",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:59:22.485Z",
+   "arm": "R0",
+   "doc_id": "content_reference_api_extensions_sdk_dockerdesktopclient__73a25193",
+   "group": "A24",
+   "rel_path": "content/reference/api/extensions-sdk/DockerDesktopClient.md",
+   "sources": [
+    "content/reference/api/extensions-sdk/DockerDesktopClient.md"
+   ]
+  },
+  {
+   "page": "P24",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T04:59:41.846Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_ai_model_runner_ide_integrations__b10a6efe",
+   "group": "A07",
+   "rel_path": "content/manuals/ai/model-runner/ide-integrations.md",
+   "sources": [
+    "content/manuals/ai/model-runner/ide-integrations.md"
+   ]
+  },
+  {
+   "page": "P25",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:01:18.117Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_extensions_extensions_sdk_build_build_install__ff37f81e",
+   "group": "A24",
+   "rel_path": "content/manuals/extensions/extensions-sdk/build/build-install.md",
+   "sources": [
+    "content/manuals/extensions/extensions-sdk/build/minimal-frontend-extension.md",
+    "content/manuals/extensions/extensions-sdk/build/frontend-extension-tutorial.md",
+    "content/manuals/extensions/extensions-sdk/build/backend-extension-tutorial.md"
+   ]
+  },
+  {
+   "page": "P26",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:01:43.685Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_engine_install_raspberry_pi_os__fb8bc431",
+   "group": "A16",
+   "rel_path": "content/manuals/engine/install/raspberry-pi-os.md",
+   "sources": [
+    "content/manuals/engine/install/raspberry-pi-os.md",
+    "content/manuals/engine/_index.md",
+    "content/manuals/engine/install/_index.md"
+   ]
+  },
+  {
+   "page": "P27",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:01:54.692Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_scout_integrations_index__9418e972",
+   "group": "A20",
+   "rel_path": "content/manuals/scout/integrations/_index.md",
+   "sources": [
+    "content/manuals/scout/integrations/_index.md"
+   ]
+  },
+  {
+   "page": "P28",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:02:06.353Z",
+   "arm": "R0",
+   "doc_id": "content_guides_testcontainers_java_jooq_flyway_run_tests__f755f64b",
+   "group": "A05",
+   "rel_path": "content/guides/testcontainers-java-jooq-flyway/run-tests.md",
+   "sources": [
+    "content/guides/testcontainers-java-jooq-flyway/run-tests.md"
+   ]
+  },
+  {
+   "page": "P29",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:02:28.994Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_build_cache_optimize__84803589",
+   "group": "A09",
+   "rel_path": "content/manuals/build/cache/optimize.md",
+   "sources": [
+    "content/manuals/build/cache/optimize.md"
+   ]
+  },
+  {
+   "page": "P30",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:02:38.385Z",
+   "arm": "R0",
+   "doc_id": "content_guides_reactjs_containerize__bdaa6fd1",
+   "group": "A03",
+   "rel_path": "content/guides/reactjs/containerize.md",
+   "sources": [
+    "content/guides/reactjs/containerize.md"
+   ]
+  },
+  {
+   "page": "P31",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:02:56.656Z",
+   "arm": "R0",
+   "doc_id": "content_manuals_ai_model_runner_ide_integrations__b10a6efe",
+   "group": "A07",
+   "rel_path": "content/manuals/ai/model-runner/ide-integrations.md",
+   "sources": [
+    "content/manuals/ai/model-runner/ide-integrations.md"
+   ]
+  },
+  {
+   "page": "P32",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:03:09.945Z",
+   "arm": "R0",
+   "doc_id": "content_reference_api_hub_changelog__59a9b915",
+   "group": "A19",
+   "rel_path": "content/reference/api/hub/changelog.md",
+   "sources": [
+    "content/reference/api/hub/changelog.md"
+   ]
+  },
+  {
+   "page": "P33",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:03:32.132Z",
+   "arm": "LT",
+   "doc_id": "content_get_started_introduction_get_docker_desktop__1f137db6",
+   "group": "A02",
+   "rel_path": "content/get-started/introduction/get-docker-desktop.md",
+   "sources": [
+    "content/get-started/introduction/get-docker-desktop.md"
+   ]
+  },
+  {
+   "page": "P34",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:03:43.773Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_engine_swarm_pki_context__a8ff0e96",
+   "group": "A18",
+   "rel_path": "content/manuals/engine/swarm/pki-context.md",
+   "sources": [
+    "content/manuals/engine/swarm/how-swarm-mode-works/pki.md"
+   ]
+  },
+  {
+   "page": "P35",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:03:56.499Z",
+   "arm": "LT",
+   "doc_id": "content_guides_angular_containerize__589692c3",
+   "group": "A03",
+   "rel_path": "content/guides/angular/containerize.md",
+   "sources": [
+    "content/guides/angular/containerize.md"
+   ]
+  },
+  {
+   "page": "P36",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:04:03.471Z",
+   "arm": "R0",
+   "doc_id": "content_get_started_docker_concepts_the_basics_index__64bbda2b",
+   "group": "A02",
+   "rel_path": "content/get-started/docker-concepts/the-basics/_index.md",
+   "sources": [
+    "content/get-started/docker-concepts/the-basics/_index.md"
+   ]
+  },
+  {
+   "page": "P37",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:04:13.817Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_compose_how_tos_production__38a0fb22",
+   "group": "A11",
+   "rel_path": "content/manuals/compose/how-tos/production.md",
+   "sources": [
+    "content/manuals/compose/how-tos/production.md"
+   ]
+  },
+  {
+   "page": "P38",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:04:29.204Z",
+   "arm": "R0",
+   "doc_id": "content_guides_testcontainers_java_lifecycle_lifecycle_callbacks__24231b39",
+   "group": "A05",
+   "rel_path": "content/guides/testcontainers-java-lifecycle/lifecycle-callbacks.md",
+   "sources": [
+    "content/guides/testcontainers-java-lifecycle/lifecycle-callbacks.md"
+   ]
+  },
+  {
+   "page": "P39",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:04:42.626Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_desktop_features_containerd__36a9c069",
+   "group": "A14",
+   "rel_path": "content/manuals/desktop/features/containerd.md",
+   "sources": [
+    "content/manuals/desktop/features/containerd.md",
+    "content/manuals/engine/storage/containerd.md"
+   ]
+  },
+  {
+   "page": "P40",
+   "verdict": "no_problem",
+   "note": "",
+   "at": "2026-10-22T05:04:50.325Z",
+   "arm": "LT",
+   "doc_id": "content_manuals_build_builders_drivers_docker_container__a402d191",
+   "group": "A10",
+   "rel_path": "content/manuals/build/builders/drivers/docker-container.md",
+   "sources": [
+    "content/manuals/build/builders/drivers/docker-container.md"
+   ]
+  }
+ ]
+}

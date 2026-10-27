@@ -1,0 +1,541 @@
+{
+ "schema_version": "docspectra.icsc.wc_tier1_review.v1",
+ "packet_id": "wc-tier1-core-elements-v1",
+ "tasks_sha256": "25b4375613695e91454434710b3c34569a69ba1e600f0bd4ff4185f4b7ce53c3",
+ "reviewer": {
+  "name": "rockerd",
+  "at": "2026-10-15T21:41:16.640Z"
+ },
+ "counts": {
+  "accept": 63,
+  "revise": 10,
+  "reject": 2
+ },
+ "reviews": [
+  {
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:58:13.741Z"
+  },
+  {
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:58:37.281Z"
+  },
+  {
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:59:20.229Z"
+  },
+  {
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:59:42.150Z"
+  },
+  {
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:00:32.545Z"
+  },
+  {
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:29:12.046Z"
+  },
+  {
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:29:20.230Z"
+  },
+  {
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "element_id": "C3",
+   "decision": "revise",
+   "note": "Doesn’t show the ‘@DynamicPropertySource’",
+   "at": "2026-10-18T20:30:11.317Z"
+  },
+  {
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:31:08.423Z"
+  },
+  {
+   "task_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:31:37.712Z"
+  },
+  {
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:45:40.107Z"
+  },
+  {
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:45:55.430Z"
+  },
+  {
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:46:01.272Z"
+  },
+  {
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:46:28.123Z"
+  },
+  {
+   "task_id": "33a7bb365f92a69197bfb9807131ab4dcc2781cae01b7d54bae883420dd75460",
+   "element_id": "C5",
+   "decision": "revise",
+   "note": "Missing validation tests must pass requirement",
+   "at": "2026-10-18T20:47:39.593Z"
+  },
+  {
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:19:52.670Z"
+  },
+  {
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:20:13.732Z"
+  },
+  {
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538",
+   "element_id": "C3",
+   "decision": "revise",
+   "note": "Answer is sufficient but there is a typo: with should be which",
+   "at": "2026-10-18T20:26:25.419Z"
+  },
+  {
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538",
+   "element_id": "C4",
+   "decision": "revise",
+   "note": "Should list the CVE name as well",
+   "at": "2026-10-18T20:27:14.760Z"
+  },
+  {
+   "task_id": "345c89ea9e4a230d82eb5f1e0f132cbc71ace8da79efa69ecde0805f228fc538",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:28:26.274Z"
+  },
+  {
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:50:05.025Z"
+  },
+  {
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:51:02.755Z"
+  },
+  {
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:51:28.441Z"
+  },
+  {
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:52:32.058Z"
+  },
+  {
+   "task_id": "37820b00f201f7df4548931e1f62f78600dceca7946bb57cd701a92dcc8b3ea2",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:52:57.404Z"
+  },
+  {
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:36:07.221Z"
+  },
+  {
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:37:21.183Z"
+  },
+  {
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9",
+   "element_id": "C3",
+   "decision": "revise",
+   "note": "This repository is not as specific as ‘docker/docs’\nNo mention of clone",
+   "at": "2026-10-18T19:39:28.342Z"
+  },
+  {
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9",
+   "element_id": "C4",
+   "decision": "reject",
+   "note": "This does not mention creating a branch",
+   "at": "2026-10-18T19:43:15.909Z"
+  },
+  {
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:43:43.201Z"
+  },
+  {
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-15T22:32:59.970Z"
+  },
+  {
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-15T22:34:18.194Z"
+  },
+  {
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-15T22:34:08.641Z"
+  },
+  {
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-15T22:35:12.865Z"
+  },
+  {
+   "task_id": "3b5890ab4c4510d13ecab1e2c24e6dc8847922084aad04dc217832486693700a",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-15T22:35:36.960Z"
+  },
+  {
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d",
+   "element_id": "C1",
+   "decision": "revise",
+   "note": "Does not talk about localhost, student name, or any validation after compose is restarted",
+   "at": "2026-10-18T20:34:18.092Z"
+  },
+  {
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d",
+   "element_id": "C2",
+   "decision": "revise",
+   "note": "Missing the step if checking for failures",
+   "at": "2026-10-18T20:36:50.043Z"
+  },
+  {
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:37:47.487Z"
+  },
+  {
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d",
+   "element_id": "C4",
+   "decision": "reject",
+   "note": "This seems like a comment in the file but doesn’t address the acceptance criteria",
+   "at": "2026-10-18T20:39:35.334Z"
+  },
+  {
+   "task_id": "42f436b5b230b7c878fd211dd2bcac0209969647757c37697262ecc0d2e3500d",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:44:31.586Z"
+  },
+  {
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T17:33:16.960Z"
+  },
+  {
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T17:34:19.173Z"
+  },
+  {
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T17:36:19.653Z"
+  },
+  {
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T17:38:24.950Z"
+  },
+  {
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T17:40:19.189Z"
+  },
+  {
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:46:37.341Z"
+  },
+  {
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:47:15.431Z"
+  },
+  {
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:47:37.182Z"
+  },
+  {
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:47:58.459Z"
+  },
+  {
+   "task_id": "babbe78033329f877450be092868f86384c61efed5a4d0c37d8d065f94174238",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:48:53.702Z"
+  },
+  {
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8",
+   "element_id": "C1",
+   "decision": "revise",
+   "note": "Needs to include selection of organization in Docker home and navigation to billing",
+   "at": "2026-10-18T20:03:21.983Z"
+  },
+  {
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:06:20.730Z"
+  },
+  {
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:07:43.409Z"
+  },
+  {
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:08:39.337Z"
+  },
+  {
+   "task_id": "d15b7bbaff38c4e8f1cda19b0d65aef99ba824bbe8d1b2f30ba5d31739d672f8",
+   "element_id": "C5",
+   "decision": "revise",
+   "note": "This does not agree with ac that Docker access management requires enforcing sign-in",
+   "at": "2026-10-18T20:10:54.973Z"
+  },
+  {
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:04:18.303Z"
+  },
+  {
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:08:57.489Z"
+  },
+  {
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:09:18.827Z"
+  },
+  {
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:11:23.300Z"
+  },
+  {
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:12:05.629Z"
+  },
+  {
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:17:30.660Z"
+  },
+  {
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:18:42.416Z"
+  },
+  {
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:20:03.964Z"
+  },
+  {
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:20:26.841Z"
+  },
+  {
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T18:20:30.315Z"
+  },
+  {
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:22:01.951Z"
+  },
+  {
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af",
+   "element_id": "C2",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:23:11.696Z"
+  },
+  {
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:28:12.439Z"
+  },
+  {
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:30:24.535Z"
+  },
+  {
+   "task_id": "f0432b9e038705301e58f67b1e59bee3c68c8ae5609a558560a827b232bc90af",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T19:31:21.654Z"
+  },
+  {
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2",
+   "element_id": "C1",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:11:43.068Z"
+  },
+  {
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2",
+   "element_id": "C2",
+   "decision": "revise",
+   "note": "This answer does not state that cloning copies all volume data ( although that may be implied)",
+   "at": "2026-10-18T20:14:10.778Z"
+  },
+  {
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2",
+   "element_id": "C3",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:15:09.570Z"
+  },
+  {
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2",
+   "element_id": "C4",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:15:44.807Z"
+  },
+  {
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2",
+   "element_id": "C5",
+   "decision": "accept",
+   "note": "",
+   "at": "2026-10-18T20:18:57.061Z"
+  }
+ ]
+}

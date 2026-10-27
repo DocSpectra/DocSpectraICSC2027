@@ -1,0 +1,185 @@
+{
+ "schema_version": "docspectra.icsc.wc_rejudge_plan.v1",
+ "decision": "D-P5 (author, 2026-10-24)",
+ "policy": "whole_page_escalation_v1",
+ "prompt_sha256": "df4424c1bd8da8e06c7de2c4ec0927031b49bcde0b73fd958839e7888d150f90",
+ "settings_sha256": "a5cd9a8d4d77d77f0bd76b5fb7756682850b4159be9496751f8d088aeac126d6",
+ "verifier_config": {
+  "schema_version": "retrieval_arena.pooled_support_verifier_config.v1",
+  "prompt_version": "pooled_support_verifier.v1",
+  "provider": "anthropic",
+  "model": "claude-haiku-5-5",
+  "revision": "claude-haiku-5-5",
+  "temperature": null,
+  "seed": null,
+  "thinking": false,
+  "generation": {
+   "thinking": "disabled",
+   "effort": "low"
+  },
+  "pricing": {
+   "currency": "USD",
+   "input_per_mtok": 0.1,
+   "output_per_mtok": 0.5,
+   "long_context": {
+    "above_input_tokens": 100000,
+    "input_per_mtok": 0.5,
+    "output_per_mtok": 2.5
+   },
+   "source": "Anthropic first-party API price list as recorded by the claude-api skill (cached 2026-10-06), rechecked 2026-10-12"
+  },
+  "spend_cap_usd": 2.0,
+  "max_input_tokens": 400000,
+  "max_output_tokens": 512,
+  "retries": 1,
+  "concurrency": 8,
+  "timeout_seconds": 120
+ },
+ "ra_source_commit": "9e68b89721d9b8e9fcd8f5126d5091da7ccd1d56",
+ "variants": {
+  "v-5d89a3217d52": {
+   "targets": 291,
+   "targets_sha256": "5e8722f517c91ba67a20444aa02bcf7d0f7cd754507ef4bcff4d63ff75279153",
+   "prior_qrels_manifest_sha256": "df2297e0a6b7f4ca22ccf027497a8f31c52c18785821290708ec98c84e012945",
+   "pool_sha256": "88c00d663eb74e98115ba8e7b671e393dec3ed6e99b583750e8ed3084ed2fb92",
+   "max_page_bytes": 272009,
+   "pages_over_cap": 0
+  },
+  "v-6337600cdc97": {
+   "targets": 307,
+   "targets_sha256": "7321aac33aa579996952ff03eafcd1b1969a88bdc580c085fa733460ba91f04e",
+   "prior_qrels_manifest_sha256": "e728748e0f8f5c60d3d67850b30e8cb906dfdef1e176a32c081b609efdce3354",
+   "pool_sha256": "38e3b98f7276e52484c791e20a764aa662db98e105fe2ca219199dddccf96f6e",
+   "max_page_bytes": 58120,
+   "pages_over_cap": 0
+  },
+  "v-9a7d7f0e7b47": {
+   "targets": 292,
+   "targets_sha256": "ae5388e406ac342a6abf416ed06e2d26e53e07ce95fafb70a85e6603c282c1a5",
+   "prior_qrels_manifest_sha256": "647be2a092b20745dbe5cf02c09131a2ff2b0263830c23a50f49bfe11a22ea5c",
+   "pool_sha256": "f9179390ccc7cfe4145ac2d53bce59a17ccc38b7ab0237600659e81ca84237bf",
+   "max_page_bytes": 272009,
+   "pages_over_cap": 0
+  },
+  "v-c2c2731d2141": {
+   "targets": 302,
+   "targets_sha256": "79365ce371a860fe8f045b28c749487f63451562650e0e0db95a6e8fcacc4e9d",
+   "prior_qrels_manifest_sha256": "f652a5513588aa6bfdca89081074f0ddde6b3b2dc5c9e2ea280c5aa4376ce522",
+   "pool_sha256": "a0ab928a75b2ed0602b0068e5923d771c3cb94603d2a7b3eb470dcdd46a581f0",
+   "max_page_bytes": 279616,
+   "pages_over_cap": 0
+  }
+ },
+ "estimate_usd": 0.484,
+ "estimate_rule": "UTF-8 bytes / 4 input tokens, 120 output tokens per page",
+ "cap_usd_total": 8.0,
+ "usd_stop": 100.0,
+ "common_set_rule": "S19-4: a tier-2 question is in the common set if it has >= 1 supported page on all four variants (escalated qrels)",
+ "replaces": "the 101-question common set of S19-4 as the tier-2 primary; the 101 become a sensitivity row",
+ "hr20_expectation": {
+  "source": "wc-hr20-verdicts-v1-2026-10-24.json",
+  "source_sha256": "74d6efa702ee9ac2b93b6ef011dee1bcdabc20b7c935fb0dda4e3c4d15dea8de",
+  "rule": "answer_present (still_answers or answer_moved) -> the escalated qrels have a supported page for that question on that variant; unsure -> they do not",
+  "items": [
+   {
+    "item": "Q01",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0115",
+    "verdict": "answer_moved",
+    "answer_present": true
+   },
+   {
+    "item": "Q02",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0115",
+    "verdict": "still_answers",
+    "answer_present": true
+   },
+   {
+    "item": "Q03",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0080",
+    "verdict": "answer_moved",
+    "answer_present": true
+   },
+   {
+    "item": "Q04",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0054",
+    "verdict": "still_answers",
+    "answer_present": true
+   },
+   {
+    "item": "Q05",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0068",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q06",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0080",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q07",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0062",
+    "verdict": "still_answers",
+    "answer_present": true
+   },
+   {
+    "item": "Q08",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0140",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q09",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0077",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q10",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0020",
+    "verdict": "answer_moved",
+    "answer_present": true
+   },
+   {
+    "item": "Q11",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0077",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q12",
+    "variant": "v-c2c2731d2141",
+    "question_id": "docker_docs_faq_0103",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q13",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0127",
+    "verdict": "unsure",
+    "answer_present": false
+   },
+   {
+    "item": "Q14",
+    "variant": "v-6337600cdc97",
+    "question_id": "docker_docs_faq_0068",
+    "verdict": "answer_moved",
+    "answer_present": true
+   }
+  ],
+  "note": "Q01 is not blind: the author saw Haiku's window verdicts on it"
+ }
+}

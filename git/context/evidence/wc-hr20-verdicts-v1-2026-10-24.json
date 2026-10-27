@@ -1,0 +1,175 @@
+{
+ "schema_version": "docspectra.icsc.wc_hr20.v1",
+ "packet_id": "wc-hr20-v1",
+ "packet_sha256": "c7ed8381dd1979b82765129c2dcba1948b81b613ef5d9ebe9365ddb54bfb24ce",
+ "reviewer": {
+  "name": "rockerd",
+  "at": "2026-10-24T20:47:49.857Z"
+ },
+ "items": 14,
+ "reviewed": 14,
+ "counts": {
+  "still_answers": 3,
+  "answer_moved": 4,
+  "answer_lost": 0,
+  "unsure": 7
+ },
+ "reviews": [
+  {
+   "item": "Q01",
+   "verdict": "answer_moved",
+   "note": "The answers moved to sso_context",
+   "at": "2026-10-24T23:21:31.838Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0115",
+   "gold": [
+    "content/guides/admin-set-up/testing.md",
+    "content/manuals/enterprise/security/single-sign-on/connect.md"
+   ]
+  },
+  {
+   "item": "Q02",
+   "verdict": "still_answers",
+   "note": "",
+   "at": "2026-10-25T00:43:33.769Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0115",
+   "gold": [
+    "content/guides/admin-set-up/testing.md",
+    "content/manuals/enterprise/security/single-sign-on/connect.md"
+   ]
+  },
+  {
+   "item": "Q03",
+   "verdict": "answer_moved",
+   "note": "The anser moved to \ncontent_manuals_enterprise_enterprise_deployment_msi_install_and_configure but doesn't exactly answer the faq. However, I don't see the orginal pages exactly answering the faq either. Both explain that users need to be added to the user group.",
+   "at": "2026-10-25T00:48:03.112Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0080",
+   "gold": [
+    "content/manuals/enterprise/enterprise-deployment/use-intune.md"
+   ]
+  },
+  {
+   "item": "Q04",
+   "verdict": "still_answers",
+   "note": "",
+   "at": "2026-10-25T00:48:58.288Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0054",
+   "gold": [
+    "content/manuals/desktop/settings-and-maintenance/settings.md"
+   ]
+  },
+  {
+   "item": "Q05",
+   "verdict": "unsure",
+   "note": "Neither doc set says \"released every week\" outside of the faq. However they both say releases will take a week to become available.",
+   "at": "2026-10-25T00:53:27.729Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0068",
+   "gold": [
+    "content/manuals/desktop/release-notes.md"
+   ]
+  },
+  {
+   "item": "Q06",
+   "verdict": "unsure",
+   "note": "The answer was not changed. Neither answers this directly",
+   "at": "2026-10-25T00:55:53.457Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0080",
+   "gold": [
+    "content/manuals/enterprise/enterprise-deployment/use-intune.md"
+   ]
+  },
+  {
+   "item": "Q07",
+   "verdict": "still_answers",
+   "note": "",
+   "at": "2026-10-25T00:56:24.202Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0062",
+   "gold": [
+    "content/manuals/desktop/settings-and-maintenance/settings.md"
+   ]
+  },
+  {
+   "item": "Q08",
+   "verdict": "unsure",
+   "note": "Neither directly explain it and they refer to: https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/",
+   "at": "2026-10-25T00:58:56.888Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0140",
+   "gold": [
+    "content/manuals/desktop/features/networking/_index.md"
+   ]
+  },
+  {
+   "item": "Q09",
+   "verdict": "unsure",
+   "note": "neither answered",
+   "at": "2026-10-25T01:00:35.089Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0077",
+   "gold": [
+    "content/manuals/enterprise/enterprise-deployment/msi-install-and-configure.md"
+   ]
+  },
+  {
+   "item": "Q10",
+   "verdict": "answer_moved",
+   "note": "content_manuals_ai_mcp_catalog_and_toolkit_cli__52ae2d5b",
+   "at": "2026-10-25T01:01:50.192Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0020",
+   "gold": [
+    "content/manuals/ai/mcp-catalog-and-toolkit/toolkit.md"
+   ]
+  },
+  {
+   "item": "Q11",
+   "verdict": "unsure",
+   "note": "This was not answered in either set",
+   "at": "2026-10-25T01:03:32.688Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0077",
+   "gold": [
+    "content/manuals/enterprise/enterprise-deployment/msi-install-and-configure.md"
+   ]
+  },
+  {
+   "item": "Q12",
+   "verdict": "unsure",
+   "note": "This question not answered directly in any of these document",
+   "at": "2026-10-25T01:04:28.905Z",
+   "variant": "v-c2c2731d2141",
+   "question_id": "docker_docs_faq_0103",
+   "gold": [
+    "content/manuals/desktop/setup/allow-list.md"
+   ]
+  },
+  {
+   "item": "Q13",
+   "verdict": "unsure",
+   "note": "I don't see this answered in either doc",
+   "at": "2026-10-25T01:05:49.200Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0127",
+   "gold": [
+    "content/manuals/enterprise/security/single-sign-on/connect.md"
+   ]
+  },
+  {
+   "item": "Q14",
+   "verdict": "answer_moved",
+   "note": "Nothing explicitly says the release cadence it but there are release history that shows it's 1 week. content_manuals_desktop_previous_versions_4_60_4_69__b353f470",
+   "at": "2026-10-25T01:08:20.520Z",
+   "variant": "v-6337600cdc97",
+   "question_id": "docker_docs_faq_0068",
+   "gold": [
+    "content/manuals/desktop/release-notes.md"
+   ]
+  }
+ ]
+}

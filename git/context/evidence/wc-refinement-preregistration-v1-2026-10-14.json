@@ -1,0 +1,297 @@
+{
+  "authorization_points": [
+    "1: Sprint 16 survey and tier-1 generation",
+    "2: Sprint 17 refinement",
+    "3: Sprint 19 answers, scoring, pool completion"
+  ],
+  "code": {
+    "prompts/docker-editor-R0-v4.txt": "d8e4019dd21d90da6a9b2cd80374817e585d479894ad26dca08b5f1665f4985a",
+    "sandbox/editor_session.py": "0ec83c4a7d5e6645e65a6476129c22fd87ce1e265df4f6bdce609aa04a14eb7b",
+    "scripts/c2_pooled_qrels.py": "00d05154fa5138058e56c0efe8e873511c602692518bdfe3bc9bb3a5950019e5",
+    "scripts/lt_locality_13.py": "e4e1adfaedb1a558d295fb9a7b67fdadd24f6d91288f46ba787c2ea4a19d162f",
+    "scripts/structure_forcing_12.py": "d2bc45f73b920fd31072929800277966671e5b00b4fb17612b07e7e1ecf54fe5",
+    "scripts/structure_forcing_12b.py": "545dd2abf707c1b74c87fc4c455b786f6f6a437c1a869bd237aabfe3bbce7872",
+    "scripts/wc_freeze_16.py": "00d7b7e2af1e199d6c8a8d65c28ed410dcf381b6337609becc05d3eb386d471b",
+    "scripts/wc_ragas_15b.py": "9d6b21e32052990e7ee26ed5c165d777e9c29d342c27e420f3308ef5f64f234d",
+    "scripts/wc_ragas_c3.py": "fada34c03182c3f7bf4e4915d86a3222308636e0a574d1f22d135fa8405828f3",
+    "scripts/wc_refinement_15.py": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2"
+  },
+  "created": "2026-10-14",
+  "documents": {
+    "design/cross-corpus-complex-task-generation-v1-2026-09-28.md": "391075933d8b6a4bc9d7cb5758ba95df57f50c405a99c158a2ea528d3c7ed06b",
+    "design/whole-corpus-leaf-and-trunk-target-2026-10-09.md": "6b56d9d1398c57b1ccd827228ddff95ffec5912fdeec3d0ef95b79270d41f729",
+    "design/whole-corpus-refinement-experiment-v1-2026-10-09.md": "f43020aebf79d77e1a03d775c617c4a48c23758d65b0bb4d44f995176155154a",
+    "docs/support-labels-literature-2026-10-11.md": "9f5bba29c756a25e7e710c89083562aeff04d1c1ceaf582f66691f5ce3b5ceae",
+    "docs/wc-freeze-16.md": "a1fd8c2f2524b91ebec53c6d88952465c363874652320356be74b8b23cabc93c",
+    "docs/wc-ragas-15b.md": "95801121f4895b13cb8a84b0a4400e7222ed51c57a9541634fb086df87d5f7e2",
+    "docs/wc-refinement-infrastructure-15.md": "a003fc9ac08865d6b130418c7d47a7bedd90ed0dc8ad0dbdb50722d3dfd7cf3e",
+    "docs/wc-review-value-map.md": "0c82f714ab2663de6bd6df2db8122f8fc2862e16dca584d6542ca54c2a754a39"
+  },
+  "editor": {
+    "area_bounds": [
+      15,
+      25
+    ],
+    "area_order_seed_label": "icsc2027-wc-area-order",
+    "arm_budget": {
+      "tokens": 250000000,
+      "wall_seconds": 259200
+    },
+    "arms": [
+      "LT",
+      "R0"
+    ],
+    "budget_rule": "an arm's tokens are the sum of editor_tokens and its seconds the sum of host seconds from launch to end over its sessions (the survey counts to LT); before each session the arm is checked; at or over either cap no new session of that arm starts and every planned item of it is recorded as skipped (unedited)",
+    "live_limits": {
+      "edits": null,
+      "model_calls": 1,
+      "tokens": null,
+      "tool_calls": null,
+      "wall_seconds": 5400
+    },
+    "model": "gpt-6.1-sol, reasoning effort medium, Codex CLI 0.161.0 in the qualified container",
+    "session_wall_seconds": 5400,
+    "survey_arm": "WS",
+    "survey_prompt_sha256": "2925104356e5b6e3293212369a42fc889df362fce6a5313f98ad418bd0662e3a"
+  },
+  "evidence": {
+    "evidence/c2-pooled-qrels-docker-tier2-2026-10-12.json": "4d77d513baa104b827fb13628de8e8d30dd5d738f52d2d7c83374d15bf11d4d0",
+    "evidence/cross-corpus-complex-task-panel-v1-2026-09-28.json": "918a4fe699cb3dd2b2ab309e69ea334bb85024169dfd68380c3e64c2b20157a7",
+    "evidence/docker-corpus-variant-input-v6-docs-scope-2026-10-07.json": "4885435f9af0d4a44bb068405d2a38441867c5b0f39a101e9d85bd02ec8ddfca",
+    "evidence/restructuring-pilot-11b-questions-2026-10-08.json": "b2431cabcd92f96a3b8c9314c101254b06c9ad7aab4e50eb4e78c3efe2f4f9cf",
+    "evidence/wc-ragas-judge-qualification-15b-2026-10-11.json": "3ffa79c712f12881480aa0bb771aa2114bb44d6a4cda65a13eae11c01879e41e",
+    "evidence/wc-ragas-judge-qualification-c3-2026-10-12.json": "5d28251fd8b7bf886122d8e2da23b7c579b046a5a85f0949e22caf8771013973",
+    "evidence/wc-refinement-15-fixture-v1-2026-10-10.json": "ff5e58026ee8289409c2941dfcc29bbf5ae3faefdac6e78916b051d6c7c0d321",
+    "evidence/wc-refinement-15-retriever-pins-v1-2026-10-10.json": "6ca84d85290a79b31e40472c24843d53835e46fd5a9e139e1afe8bb80f8725ed"
+  },
+  "hr03": {
+    "reviewer": "author",
+    "sampling": "uniform, stratified by area",
+    "size": "20 changed pages per arm",
+    "stop_rule": "3 or more of an arm's 20 pages with a factual loss or error stops the run before answers"
+  },
+  "nulls": {
+    "per_type_per_arm": 5,
+    "salts": {
+      "LN": "icsc2027-wc-ln:",
+      "PC": "icsc2027-wc-pc:",
+      "RN": "icsc2027-wc-rn:"
+    },
+    "types": {
+      "LN": "primary comparator",
+      "PC": "page-creation matched",
+      "RN": "continuity only"
+    },
+    "views": [
+      "full (LWCC, 09c pin, merge mapping)",
+      "per-area subgraph"
+    ]
+  },
+  "primary_test": {
+    "dependence_disclosure": "areas are chained on one tree and share trunk pages, so they are not independent; the result is 'pre-registered within an exploratory run'",
+    "everything_else": "descriptive",
+    "id": "D8 sign-flip",
+    "measure_key": "magnetic_lambda1_q0.25",
+    "minimum_attainable_p": "2 / 2^n for n areas with a computable difference",
+    "null": "LN, the frozen Sprint 13 locality rule; buckets it cannot compute are reported as not computable and the area is dropped from the test, never imputed",
+    "reference": "exact sign-flip permutation over areas of the mean difference (wc_refinement_15.sign_flip_test)",
+    "sidedness": "two-sided (author, October 14)",
+    "statistic": "per area: z of magnetic_lambda1_q0.25 against the LN null on the area subgraph view (pooled null SD as in wc_refinement_15), LT pass value minus R0 pass value",
+    "threshold": "p < 0.05",
+    "view": "per-area subgraph"
+  },
+  "provenance_credit": {
+    "credit": "P is derived from B if the host alignment holds (declared or not); a declared source without host alignment is reported as unconfirmed and earns no credit",
+    "distinctive_unit": "at least 30 characters and present in at most 3 baseline pages",
+    "equivalence": "support unit B on variant v = {B if B survives in v} + {B's survivor under moved_content_majority_v1 if B was removed} + {every added or changed page derived from B}",
+    "host_alignment": "baseline page B shares at least 1 distinctive new unit with variant page P",
+    "new_units": "units of the variant page that its own baseline version (if any) does not hold",
+    "scope": "computed once on each arm's final tree against O; declarations are pooled over the arm's sessions",
+    "status": "confirmed by the author October 14 (docs/wc-freeze-16.md); a sensitivity analysis, direct judgment primary (D11b)",
+    "unit": "rr.content_units (normalized non-blank line, link targets stripped, lines without alphanumerics dropped)",
+    "version": "wc_provenance_credit_v1_proposed"
+  },
+  "ragas": {
+    "c3_metrics": {
+      "controls-reference/context_recall": {
+        "checks": {
+          "parse": true,
+          "repeat": false,
+          "separation": false
+        },
+        "pass": false
+      },
+      "controls-response/factual_correctness": {
+        "checks": {
+          "parse": true,
+          "repeat": true,
+          "separation": true
+        },
+        "pass": true
+      },
+      "controls-response/faithfulness": {
+        "checks": {
+          "parse": true,
+          "repeat": false
+        },
+        "pass": false
+      },
+      "real-tier1/context_recall": {
+        "checks": {
+          "parse": true,
+          "repeat": false
+        },
+        "pass": false
+      },
+      "real-tier1/factual_correctness": {
+        "checks": {
+          "parse": true,
+          "repeat": false
+        },
+        "pass": false
+      },
+      "real-tier1/faithfulness": {
+        "checks": {
+          "parse": true,
+          "repeat": false
+        },
+        "pass": false
+      }
+    },
+    "comparison": "plain mean, paired bootstrap 95% CI; repeat shift 0.005-0.015 disclosed as the noise floor",
+    "judge": {
+      "generation": {
+        "effort": "medium",
+        "thinking": "disabled"
+      },
+      "image_receipt": ".tmp/ragas-image-c3.json",
+      "max_input_tokens": 64000,
+      "max_output_tokens": 16000,
+      "model": "claude-haiku-5-5",
+      "pricing": {
+        "currency": "USD",
+        "input_per_mtok": 0.1,
+        "long_context": {
+          "above_input_tokens": 100000,
+          "input_per_mtok": 0.5,
+          "output_per_mtok": 2.5
+        },
+        "output_per_mtok": 0.5,
+        "source": "Anthropic first-party API price list as recorded by the claude-api skill (cached 2026-10-06), rechecked 2026-10-12"
+      },
+      "revision": "claude-haiku-5-5"
+    },
+    "judge_config_sha256": "a3c935a6869aac706dceb59644e63979719494e8d10d2774b206c71730c3ab75",
+    "set": "tier 2: FactualCorrectness main; Faithfulness and ContextRecall descriptive with repeat variance; no per-answer claims"
+  },
+  "retrieval_arena": {
+    "commit": "9a0a74cc54d07f8edcf2c892ca019fd251d63ed3",
+    "origin_main_merge": "c9ac77a (PR DocSpectra/RetrievalArena#1)",
+    "tag": "ra-consolidation-2026-10",
+    "tree": "45f14c08b8ba7dd334df14b1f4c0db7fb3010906"
+  },
+  "run_id": "wc-v1",
+  "schema_version": "docspectra.icsc.wc_preregistration.v1",
+  "status": "frozen before any Sprint 16 model call; the survey and tier-1 generation follow authorization 1",
+  "tables": {
+    "intervals": "bootstrap 95% clustered by question; duplicate-text pairs clustered together",
+    "rule": "one per tier, never pooled: LT - O, R0 - O, LT - R0, with S - O beside every row"
+  },
+  "tier1": {
+    "answers": "4 conditions (1 or 6 searches x follow on/off) x 2 replicates on O, S, LT, R0 = 480",
+    "primary_score": "Luna scorer v2, k = 2 passes",
+    "quote_survival": "reported per refined corpus, not gating",
+    "ragas": "none on tier 1 (FactualCorrectness omitted, author October 14)",
+    "review": "the author reviews every core element before Sprint 17 (HR-19); until then they are proposals",
+    "secondary_score": "boolean rubric judge (qwen3:14b, thinking off, relaxed quote match)",
+    "tasks": "15: the 5 existing 11b tasks, the 2 unselected Docker panel candidates, and 8 new tasks generated after the survey from areas the existing 7 do not cover (D6a/D6b)"
+  },
+  "tier2": {
+    "answers": "1 search, follow on and follow off, 1 replicate, on O, S, LT, R0",
+    "dropped": [
+      "docker_docs_faq_0016",
+      "docker_docs_faq_0018",
+      "docker_docs_faq_0019",
+      "docker_docs_faq_0021",
+      "docker_docs_faq_0022",
+      "docker_docs_faq_0027",
+      "docker_docs_faq_0028",
+      "docker_docs_faq_0029",
+      "docker_docs_faq_0030",
+      "docker_docs_faq_0032",
+      "docker_docs_faq_0036",
+      "docker_docs_faq_0037",
+      "docker_docs_faq_0048",
+      "docker_docs_faq_0058",
+      "docker_docs_faq_0059",
+      "docker_docs_faq_0060",
+      "docker_docs_faq_0066",
+      "docker_docs_faq_0073",
+      "docker_docs_faq_0076",
+      "docker_docs_faq_0081",
+      "docker_docs_faq_0092",
+      "docker_docs_faq_0098",
+      "docker_docs_faq_0104",
+      "docker_docs_faq_0106",
+      "docker_docs_faq_0108",
+      "docker_docs_faq_0110",
+      "docker_docs_faq_0112",
+      "docker_docs_faq_0121",
+      "docker_docs_faq_0126",
+      "docker_docs_faq_0141",
+      "docker_docs_faq_0143"
+    ],
+    "gold": {
+      "judgments_sha256": "f4d672f6aae146d43790657ab0058187c0f6ade3473619e6ed9b0d461e31a275",
+      "model": "claude-haiku-5-5",
+      "pool_rule": "pooled_support_pool_v1",
+      "pool_sha256": "6844eb24f027948898604ef29060ba3bd5d58efcd81c2b0e3387d6cb0a0c7a99",
+      "prompt_sha256": "df4424c1bd8da8e06c7de2c4ec0927031b49bcde0b73fd958839e7888d150f90",
+      "prompt_version": "pooled_support_verifier.v1",
+      "qrels_manifest_sha256": "976d8457fa745380b9de977e1c2bcd5b3881fc908bb289e1dd4ea78dc757e117",
+      "qrels_sha256": "bc1c4a5c1d8563d44c4cf786708df8ba4f9c7189918f5e7f32d4a9f945a036e1",
+      "settings_sha256": "ae6a39f62f327a313a8cc4b0d65f4d73fc3561aa5e0aabc6351fa23c81047a7b"
+    },
+    "label": "LLM-verified support (Claude Haiku 5.5); author spot-check precision 0.85 (Wilson 95% 0.70-0.94, 29/34), miss rate 0.00 (0.00-0.10, 0/33)",
+    "metrics": {
+      "navigation": "support read or cited; searches to first support; follows landing on support; share of follows over editor-added edges",
+      "retrievers": "RA lexical, embedding, graph-expand (Sprint 15 pins), Recall@5, nDCG@10, MRR, score_ranked pooled"
+    },
+    "old_labels": "the automatic top-5 labels are a historical comparison only",
+    "pool_completion": "Sprint 19 judges every unjudged (query, page, page content) in the top 10 of every evaluated run on S/LT/R0 and every page a tier-2 trace read or cited, with the same frozen prompt and settings (support verify --prior); then scores",
+    "questions": 111,
+    "spot_check": {
+      "counts": {
+        "verifier_no": {
+          "no": 33,
+          "unsure": 2
+        },
+        "verifier_yes": {
+          "no": 5,
+          "unsure": 1,
+          "yes": 29
+        }
+      },
+      "date": "2026-10-14",
+      "miss_rate": {
+        "estimate": 0.0,
+        "high": 0.10426999754245206,
+        "low": 0.0,
+        "n": 33,
+        "successes": 0
+      },
+      "precision": {
+        "estimate": 0.8529411764705882,
+        "high": 0.9355055855521753,
+        "low": 0.6987194350454783,
+        "n": 34,
+        "successes": 29
+      }
+    }
+  },
+  "usd_stop": {
+    "amount": 100,
+    "from": "2026-10-14",
+    "scope": "all remaining API spend of the project (D11d)"
+  }
+}

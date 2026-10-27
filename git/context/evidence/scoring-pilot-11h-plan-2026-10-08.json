@@ -1,0 +1,204 @@
+{
+  "author_confirmations": {
+    "channel": "chat, before freezing",
+    "date": "2026-10-08",
+    "decision_rule": "author confirmed in chat 2026-10-08: 11e thresholds unchanged (sham |O-S| <= 4; stability A vs B >= 0.90 within +-1 and >= 0.80 same ranking; spread all-5 share <= 0.50; schema >= 0.95 first-attempt, <= 2 attempts); human agreement not_collected (no human graders); qualified_for_triage iff all four pass, not_usable iff sham and stability both fail, else needs_revision; final, not provisional",
+    "time_and_cost": "author approved freezing and running A, A2 and B (180 calls) on: ~35 min sequential from the smoke (11.7 s/call), ~$0.15 expected (smoke $0.00085/call), $1.08 worst-case reservation, $3 hard stop"
+  },
+  "author_decisions": {
+    "channel": "chat",
+    "date": "2026-10-08",
+    "items": [
+      "run scorer v2 (the ranked category rubric) with Luna",
+      "close the refinement experiment with no human graders",
+      "a $3 hard stop for all Luna calls in Sprint 11h"
+    ],
+    "reverses": [
+      "the earlier open-weight-judge preference for this endpoint",
+      "Sprint 12 Stage A text 'human rankers final'"
+    ]
+  },
+  "calls_planned": 180,
+  "cost": {
+    "author_time_and_cost_confirmation": "author approved freezing and running A, A2 and B (180 calls) on: ~35 min sequential from the smoke (11.7 s/call), ~$0.15 expected (smoke $0.00085/call), $1.08 worst-case reservation, $3 hard stop",
+    "authorization": "author-chat-2026-10-08-sprint-11h-luna-scorer-usd3",
+    "hard_stop_usd": 3.0,
+    "ledger": "artifacts/pilot-11b-v3-scorer-v2-luna/cost-ledger.jsonl (shared by smoke and all runs)",
+    "prices_per_million": {
+      "cache_write": 0.125,
+      "cached": 0.01,
+      "input": 0.1,
+      "output": 0.5
+    },
+    "projection_basis": "180 calls plus at most 180 retries at the reservation per call",
+    "reservation_per_call_usd": 0.003,
+    "worst_case_reserved_usd": 1.08
+  },
+  "created": "2026-10-08",
+  "criteria": {
+    "schema_validity": {
+      "measure": "packets valid on the first attempt over all 180 packets (A, A2, B); attempts per packet",
+      "procedure": "one pass, then one automatic retry pass over failed packets; still-failed packets stay unavailable and every pair with them is unavailable",
+      "threshold": ">= 0.95 first-attempt valid; at most one retry (2 attempts) per packet"
+    },
+    "sham_balance": {
+      "measure": "run A derived O-S pair outcomes over the 20 cells: |S wins - O wins| (ties and unavailable pairs count for neither)",
+      "threshold": "<= 4"
+    },
+    "spread": {
+      "measure": "share of the 60 answers scoring 5 on every measure in run A (unavailable is not all-5)",
+      "threshold": "<= 0.50"
+    },
+    "stability": {
+      "measure": "run A vs run B: share of the 300 measure scores (60 answers x 5) within +-1 (a score missing in either run counts as not within), and share of the 20 cells with the same derived ranking (tie groups included; an unranked cell is not the same)",
+      "reported_only": "run A vs run A2 (identical rerun): identical outputs, scores and rankings",
+      "threshold": ">= 0.90 scores within +-1 and >= 0.80 cells same ranking"
+    }
+  },
+  "criteria_note": "the four automated criteria and thresholds are copied unchanged from the 11e plan; schema validity counts all 180 packets",
+  "decision_rule": {
+    "human_agreement": "not_collected by author decision; the 11e rule's human conditions are dropped and the decision is final on the automated criteria (not provisional)",
+    "needs_revision": "otherwise",
+    "not_usable": "sham_balance and stability both fail",
+    "qualified_for_triage": "every automated criterion (sham_balance, stability, spread, schema_validity) passes"
+  },
+  "disclosures": {
+    "configuration": "third scorer configuration on these same 60 11b answers (11e: qwen3:14b think false, failed spread 59/60 all-5; 11f: qwen3:14b think true, failed spread 37/60 all-5). Only the scorer model changes; prompt v2, schema v2, ranking rule, criteria, thresholds, seeds and answers are unchanged. One configuration is frozen here and not adjusted after outputs are seen.",
+    "reproducibility": "closed model: no digest pin. The model string the API reports, response ids, request settings and full responses are saved; A vs A2 measures nondeterminism.",
+    "self_grading": "gpt-6-luna wrote the 60 answers it scores. Every arm is a Luna answer, so self-preference shifts all arms alike; it is reported, not corrected."
+  },
+  "endpoint": "OpenAI Responses API (gpt-6-luna)",
+  "frozen_before": "any scorer call on the 60 answers in this configuration (only the toy-schema probe, with no study data, and the one-answer smoke in artifacts/pilot-11b-v3-scorer-v2-luna-smoke with seed 3 exist; the smoke's scores were not read)",
+  "human_agreement": {
+    "authority": "author decision in chat, 2026-10-08: close the refinement experiment with no human graders; the decision rests on the automated criteria only",
+    "status": "not_collected"
+  },
+  "inputs": {
+    "answer_files": 60,
+    "answer_files_digest": "3e8bf2f11400bf53c4440d09169251ed13ecd02bbfc149fba5d940a14411f48f",
+    "answers_dir": "artifacts/pilot-11b-v3-answers",
+    "answers_scored": 60,
+    "human_key_sha256": "772346e4a72bf431285455236a5d648ff08432e9eb297ff834620a5a74651db6",
+    "judge_aliases_sha256": "d2ebc1e4bc0e60c63f9a5aae370058a30f862098f45a10a5b9ca2e60f1e660e7",
+    "plan_11e_sha256": "171fbeca2a65c0cc2b8266caeb73e0ff13c54ec84eddcb11ef4b40661b83e489",
+    "questions_sha256": "b2431cabcd92f96a3b8c9314c101254b06c9ad7aab4e50eb4e78c3efe2f4f9cf",
+    "rubric_scores_sha256": "f878b3a3a32bc9095eefe2f5239bff5ae3be180bd730f476d86e3541d9abe4c6"
+  },
+  "prohibited": [
+    "significance tests",
+    "effect claims"
+  ],
+  "ranking": {
+    "definition": "within a cell, compare two answers measure by measure in priority order; the first measure where |difference| >= margin decides; smaller or equal differences fall through; no deciding measure is a tie; per-cell ranks by net wins; cycles checked and reported; computed on opaque labels before unblinding",
+    "margin": 1,
+    "rule": "lexicographic_margin_v1",
+    "unavailable": "an answer without a valid score after one retry makes every pair with it unavailable and its cell unranked"
+  },
+  "reports": [
+    "calls, valid share, wall time",
+    "criteria",
+    "per-arm means per measure (A; B beside)",
+    "derived R0-vs-O, S-vs-O and S-vs-R0 wins/ties/losses",
+    "deciding-measure distribution",
+    "agreement with rubric_v1_strict / relaxed / raw",
+    "3b5890 s1-follow fit notes and scores",
+    "sham S-O score differences per measure for replicate sizing",
+    "no significance tests and no effect claims",
+    "A vs A2 nondeterminism",
+    "cost reserved and reported",
+    "11e and 11f numbers beside, descriptively"
+  ],
+  "runs": {
+    "A": {
+      "notes_seed": null,
+      "packets": 60,
+      "role": "base run: sham balance, spread, ranking, rubric agreement",
+      "root": "artifacts/pilot-11b-v3-scorer-v2-luna/run-A",
+      "stage": "scoring_pilot_11h.py score --run A"
+    },
+    "A2": {
+      "notes_seed": null,
+      "packets": 60,
+      "role": "identical repeat of A (same packets and order; the API has no seed): nondeterminism, reported only",
+      "root": "artifacts/pilot-11b-v3-scorer-v2-luna/run-A2",
+      "stage": "scoring_pilot_11h.py score --run A2"
+    },
+    "B": {
+      "notes_seed": 20261015,
+      "packets": 60,
+      "role": "reference notes shuffled per question: stability criterion",
+      "root": "artifacts/pilot-11b-v3-scorer-v2-luna/run-B",
+      "stage": "scoring_pilot_11h.py score --run B"
+    }
+  },
+  "schema_version": "docspectra.icsc.scoring_pilot_11h.v1.plan",
+  "scope": "exploratory: scorer v2 (designed after the frozen 11b no-go) with gpt-6-luna as the scorer; never changes the 11b decision; not answer-quality or restructuring-effect evidence for the paper",
+  "scorer": {
+    "authorization": "author-chat-2026-10-08-sprint-11h-luna-scorer-usd3",
+    "base_module_sha256": "3a51d0f605ac146d0034ee0f3924c99b2cd8908cc056050f673d61c7c2a880f9",
+    "completion_rule": "an attempt whose response status is not 'completed', or with a refusal or no output text, is failed (retry rule applies)",
+    "driver_11e_sha256": "2922b20c0af4c48cb90f273bc0a753ef806a8cb3ca952b800cac910b63062caf",
+    "driver_sha256": "8b8ad54357db095e560a14236368f7886dbaa021f05ed6dd049349a7f8891d0f",
+    "endpoint": "OpenAI Responses API",
+    "field_order": [
+      "errors",
+      "correctness",
+      "fit",
+      "completeness",
+      "caveats",
+      "clarity"
+    ],
+    "format": "json_schema strict (schema v2 as is)",
+    "input_cap": 8000,
+    "ledger_module_sha256": "14e9f2bb055646be2c6802afa9dbedac4e7c151614fe154e4971704664bbadb6",
+    "limit_usd": 3.0,
+    "luna_module_sha256": "68be066a0c0819a28ec578caa792ac374e6af48b9863faf3da44964ba171e73e",
+    "max_attempts": 2,
+    "max_output_tokens": 4000,
+    "max_retries_sdk": 0,
+    "measures_priority_order": [
+      "correctness",
+      "fit",
+      "completeness",
+      "caveats",
+      "clarity"
+    ],
+    "model": "gpt-6-luna",
+    "prompt": "answer-quality-scorer-prompt-v2.txt",
+    "prompt_sha256": "538005476fb991e62713df454ca2e3a95c0ef9e32a1d8e8e360ab19b9f8585ce",
+    "reasoning_effort": "medium",
+    "schema": "answer-quality-scorer-schema-v2.json",
+    "schema_sha256": "f781faba426dd663ea39ffba945aa8207c6494e75083025a5dd6b202a74ff082",
+    "sdk": "openai 3.20.0 (.tools/openai-sdk)",
+    "service_tier": "default",
+    "store": false,
+    "timeout_s": 300,
+    "validity": "local jsonschema validation against schema v2 (unchanged), as in 11e"
+  },
+  "seeds": {
+    "notes_rule": "run B only: per question, random.Random(int(sha256('<notes_seed>|notes|<question_id>'))) shuffles the note order, reshuffled while identity",
+    "notes_seed": 20261015,
+    "sampling": "the Responses API has no seed; A2 is an identical repeat of A",
+    "seed": 20261015,
+    "uses": "answer labels and run order, identical to 11e (packets asserted identical to the 11e packets of the same run before any call)"
+  },
+  "smoke": {
+    "calls": [
+      {
+        "cost_reported_usd": 0.0008528,
+        "field_order_ok": true,
+        "model_reported": "gpt-6-luna",
+        "usage": {
+          "cached_tokens": 0,
+          "eval_count": 1320,
+          "prompt_eval_count": 1928,
+          "reasoning_tokens": 1034,
+          "total_duration": 11691258600
+        },
+        "valid": true
+      }
+    ],
+    "root": "artifacts/pilot-11b-v3-scorer-v2-luna-smoke",
+    "seed": 3
+  }
+}

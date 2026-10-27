@@ -1,0 +1,59 @@
+{
+ "analysis_rule": "share of the 16 disputed items judged `answers` (Wilson 95%); `partly_answers` counted as answers and as not (bracket); `unsure` excluded and counted. Controls: share of the 4 judged `answers` or `partly_answers`. If most disputed pages answer, O1's credit holds where direct judgment rejected it (the verifier misses moved answers); if few do, direct judgment holds. Agreement with the 53 is estimated, never claimed per page beyond the sample",
+ "control": {
+  "answers": {
+   "estimate": 0.5,
+   "high": 0.8499610108478506,
+   "k": 2,
+   "low": 0.15003898915214947,
+   "n": 4
+  },
+  "answers_or_partly": {
+   "estimate": 0.75,
+   "high": 0.9544127391902995,
+   "k": 3,
+   "low": 0.30064184258240184,
+   "n": 4
+  },
+  "counts": {
+   "answers": 2,
+   "does_not_answer": 1,
+   "partly_answers": 1,
+   "unsure": 0
+  }
+ },
+ "created": "2026-10-24",
+ "disputed": {
+  "answers": {
+   "estimate": 0.25,
+   "high": 0.49498316535508774,
+   "k": 4,
+   "low": 0.10182067491213048,
+   "n": 16
+  },
+  "answers_or_partly": {
+   "estimate": 0.4375,
+   "high": 0.6682144360118811,
+   "k": 7,
+   "low": 0.23098652405492354,
+   "n": 16
+  },
+  "counts": {
+   "answers": 4,
+   "does_not_answer": 9,
+   "partly_answers": 3,
+   "unsure": 0
+  },
+  "population": 53,
+  "unsure_excluded": 0
+ },
+ "items": 20,
+ "plan_sha256": "a29fddf2a96ee76f38eb952a79fc0bd0453c4e40fdbd14aca62d17bde59faebd",
+ "reviewed": 20,
+ "reviewer": {
+  "at": "2026-10-25T05:35:05.437Z",
+  "name": "rockerd"
+ },
+ "schema_version": "docspectra.icsc.wc_hr21_result.v1",
+ "verdicts_sha256": "db1d49207bce2b3eecc469d34c6139f7e8182cd971b4805f71d9db3537b81ec3"
+}

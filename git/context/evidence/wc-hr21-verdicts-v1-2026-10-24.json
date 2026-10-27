@@ -1,0 +1,220 @@
+{
+ "schema_version": "docspectra.icsc.wc_hr21.v1",
+ "packet_id": "wc-hr21-v1",
+ "packet_sha256": "fc9a6cf9f43e134282c95bb29d4c776d1b7b4a528030a10af2069272ad8aaf5f",
+ "plan_sha256": "a29fddf2a96ee76f38eb952a79fc0bd0453c4e40fdbd14aca62d17bde59faebd",
+ "reviewer": {
+  "name": "rockerd",
+  "at": "2026-10-25T05:35:05.437Z"
+ },
+ "items": 20,
+ "reviewed": 20,
+ "counts": {
+  "answers": 6,
+  "partly_answers": 4,
+  "does_not_answer": 10,
+  "unsure": 0
+ },
+ "reviews": [
+  {
+   "item": "C01",
+   "verdict": "does_not_answer",
+   "note": "on topic (SCIM sync/deactivation) but doesn’t say removal is manual without SCIM; the original page doesn’t answer it directly either",
+   "at": "2026-10-25T05:22:33.198Z",
+   "question_id": "docker_docs_faq_0133",
+   "doc_id": "content_manuals_enterprise_security_provisioning_scim_role_mapping__0bba3582",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C02",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:23:13.685Z",
+   "question_id": "docker_docs_faq_0008",
+   "doc_id": "content_manuals_enterprise_security_roles_and_permissions_custom_role_permissions__8d67a54c",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C03",
+   "verdict": "partly_answers",
+   "note": "This page talks about sync of group mapping but that is not explicit if group mapping means fully sync or just one attribute.",
+   "at": "2026-10-25T05:26:06.094Z",
+   "question_id": "docker_docs_faq_0117",
+   "doc_id": "content_manuals_enterprise_security_provisioning_scim_group_mapping_reference__d0e8b1fc",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C04",
+   "verdict": "partly_answers",
+   "note": "Because the page includes dates with all the releases the release cadence can be inferred but is not explicit. \nThe original page does not include the answer either.",
+   "at": "2026-10-25T05:27:55.702Z",
+   "question_id": "docker_docs_faq_0068",
+   "doc_id": "content_manuals_desktop_previous_versions_4_30_4_39__2a92807d",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C05",
+   "verdict": "does_not_answer",
+   "note": "No list of how many or types of identity providers",
+   "at": "2026-10-25T05:28:40.869Z",
+   "question_id": "docker_docs_faq_0105",
+   "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C06",
+   "verdict": "partly_answers",
+   "note": "Tells us that containers provisioned with kubeadm are not ECI compatible but this is not the answer that the faq uses.",
+   "at": "2026-10-25T05:30:20.021Z",
+   "question_id": "docker_docs_faq_0088",
+   "doc_id": "content_manuals_desktop_use_desktop_kubernetes_provisioning__a447e411",
+   "decision": "supported",
+   "role": "control"
+  },
+  {
+   "item": "C07",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:31:10.077Z",
+   "question_id": "docker_docs_faq_0072",
+   "doc_id": "content_manuals_desktop_setup_install_windows_requirements__3bce57bd",
+   "decision": "supported",
+   "role": "control"
+  },
+  {
+   "item": "C08",
+   "verdict": "does_not_answer",
+   "note": "Does not mention switching profile effects on what servers are available. it only talks about Oauth",
+   "at": "2026-10-25T05:33:03.509Z",
+   "question_id": "docker_docs_faq_0026",
+   "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C09",
+   "verdict": "does_not_answer",
+   "note": "no mention of exe install behavoirs",
+   "at": "2026-10-25T05:33:53.358Z",
+   "question_id": "docker_docs_faq_0077",
+   "doc_id": "content_manuals_enterprise_enterprise_deployment_msi_reference__8e10c32d",
+   "decision": "supported",
+   "role": "control"
+  },
+  {
+   "item": "C10",
+   "verdict": "does_not_answer",
+   "note": "The page is relevant to sharing but doesn't answer the question",
+   "at": "2026-10-25T05:34:48.197Z",
+   "question_id": "docker_docs_faq_0051",
+   "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_windows_volume_permissions__48113da7",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C11",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:35:18.469Z",
+   "question_id": "docker_docs_faq_0133",
+   "doc_id": "content_manuals_enterprise_security_provisioning_provisioning_methods__03429356",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C12",
+   "verdict": "does_not_answer",
+   "note": "This is page only is about ECI and doesn't address this question",
+   "at": "2026-10-25T05:40:23.398Z",
+   "question_id": "docker_docs_faq_0124",
+   "doc_id": "content_manuals_desktop_setup_install_container_isolation__4d9cbd6a",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C13",
+   "verdict": "does_not_answer",
+   "note": "This mentioned profiles and MCP servers but doesn't explicitly state the required relationship.",
+   "at": "2026-10-25T05:41:41.461Z",
+   "question_id": "docker_docs_faq_0025",
+   "doc_id": "content_manuals_ai_mcp_catalog_and_toolkit_oauth__8eed299d",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C14",
+   "verdict": "does_not_answer",
+   "note": "Does not mention reboot",
+   "at": "2026-10-25T05:42:39.175Z",
+   "question_id": "docker_docs_faq_0079",
+   "doc_id": "content_manuals_desktop_setup_install_mac_command_line__561d6da9",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C15",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:42:51.229Z",
+   "question_id": "docker_docs_faq_0069",
+   "doc_id": "content_manuals_desktop_setup_install_inventory__8172963b",
+   "decision": "supported",
+   "role": "control"
+  },
+  {
+   "item": "C16",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:44:28.957Z",
+   "question_id": "docker_docs_faq_0117",
+   "doc_id": "content_manuals_enterprise_security_provisioning_jit_behavior__557c3031",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C17",
+   "verdict": "answers",
+   "note": "",
+   "at": "2026-10-25T05:44:51.861Z",
+   "question_id": "docker_docs_faq_0067",
+   "doc_id": "content_manuals_build_buildkit_registry_certificates__ecb1635b",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C18",
+   "verdict": "partly_answers",
+   "note": "This does talk about the container having access to mounts but doesn't list the specific commands like the faq.",
+   "at": "2026-10-25T05:47:27.748Z",
+   "question_id": "docker_docs_faq_0123",
+   "doc_id": "content_manuals_engine_security_kernel_security__5c68681f",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C19",
+   "verdict": "does_not_answer",
+   "note": "No mention of JIT in this page. It looks like it was a cracked off the bigger page.",
+   "at": "2026-10-25T05:48:15.253Z",
+   "question_id": "docker_docs_faq_0111",
+   "doc_id": "content_manuals_enterprise_security_provisioning_sso_prerequisites__63915fec",
+   "decision": "not_supported",
+   "role": "disputed"
+  },
+  {
+   "item": "C20",
+   "verdict": "does_not_answer",
+   "note": "Neither original or current page talk about being blocked by previous version. However they both say that it doesn't auto update in order to protect previous version.",
+   "at": "2026-10-25T05:50:32.413Z",
+   "question_id": "docker_docs_faq_0077",
+   "doc_id": "content_manuals_enterprise_enterprise_deployment_installer_updates__74d3dbdc",
+   "decision": "not_supported",
+   "role": "disputed"
+  }
+ ]
+}

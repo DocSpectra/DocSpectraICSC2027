@@ -1,0 +1,1865 @@
+{
+  "area_pages": {
+    "A01": 18,
+    "A02": 41,
+    "A03": 40,
+    "A04": 60,
+    "A05": 87,
+    "A06": 63,
+    "A07": 60,
+    "A08": 44,
+    "A09": 49,
+    "A10": 66,
+    "A11": 48,
+    "A12": 42,
+    "A13": 25,
+    "A14": 34,
+    "A15": 44,
+    "A16": 41,
+    "A17": 44,
+    "A18": 52,
+    "A19": 56,
+    "A20": 55,
+    "A21": 63,
+    "A22": 49,
+    "A23": 48,
+    "A24": 69,
+    "A25": 20
+  },
+  "areas": {
+    "A01": [
+      "README.md",
+      "STYLE.md",
+      "COMPONENTS.md",
+      "CONTRIBUTING.md",
+      ".github/pull_request_template.md",
+      "archetypes/guides.md",
+      "content/_index.md",
+      "content/guides/_index.md",
+      "content/manuals/_index.md",
+      "content/reference/_index.md",
+      "content/reference/api/_index.md",
+      "content/reference/glossary.md",
+      "content/tags/labs/",
+      "content/includes/_index.md",
+      "content/includes/experimental.md",
+      "content/includes/guides-get-docker.md",
+      "content/includes/open-terminal.md",
+      "content/includes/labspace-quickstart.md"
+    ],
+    "A02": [
+      "content/get-started/",
+      "content/guides/lab-container-getting-started.md",
+      "content/guides/lab-container-supported-development.md",
+      "content/guides/lab-containerized-sdlc.md",
+      "content/guides/container-supported-development.md"
+    ],
+    "A03": [
+      "content/guides/angular/",
+      "content/guides/reactjs/",
+      "content/guides/vuejs/",
+      "content/guides/nextjs/",
+      "content/guides/nodejs/",
+      "content/guides/bun/",
+      "content/guides/deno/"
+    ],
+    "A04": [
+      "content/guides/golang/",
+      "content/guides/java/",
+      "content/guides/dotnet/",
+      "content/guides/python/",
+      "content/guides/php/",
+      "content/guides/frameworks/",
+      "content/guides/ruby/",
+      "content/guides/rust/",
+      "content/guides/r/",
+      "content/guides/cpp/",
+      "content/guides/django.md"
+    ],
+    "A05": [
+      "content/guides/testcontainers-cloud/",
+      "content/guides/testcontainers-dotnet-aspnet-core/",
+      "content/guides/testcontainers-dotnet-getting-started/",
+      "content/guides/testcontainers-go-getting-started/",
+      "content/guides/testcontainers-java-aws-localstack/",
+      "content/guides/testcontainers-java-getting-started/",
+      "content/guides/testcontainers-java-jooq-flyway/",
+      "content/guides/testcontainers-java-keycloak-spring-boot/",
+      "content/guides/testcontainers-java-lifecycle/",
+      "content/guides/testcontainers-java-micronaut-kafka/",
+      "content/guides/testcontainers-java-micronaut-wiremock/",
+      "content/guides/testcontainers-java-mockserver/",
+      "content/guides/testcontainers-java-quarkus/",
+      "content/guides/testcontainers-java-replace-h2/",
+      "content/guides/testcontainers-java-service-configuration/",
+      "content/guides/testcontainers-java-spring-boot-kafka/",
+      "content/guides/testcontainers-java-spring-boot-rest-api/",
+      "content/guides/testcontainers-java-wiremock/",
+      "content/guides/testcontainers-nodejs-getting-started/",
+      "content/guides/testcontainers-python-getting-started/",
+      "content/guides/dex.md",
+      "content/guides/localstack.md",
+      "content/guides/wiremock.md",
+      "content/manuals/testcontainers.md",
+      "content/manuals/tcc.md"
+    ],
+    "A06": [
+      "content/reference/samples/",
+      "content/guides/databases.md",
+      "content/guides/postgresql/",
+      "content/guides/pgadmin.md",
+      "content/guides/kafka.md",
+      "content/guides/jupyter.md",
+      "content/guides/go-prometheus-monitoring/",
+      "content/guides/ros2/",
+      "content/guides/opentelemetry.md",
+      "content/guides/traefik.md",
+      "content/guides/pre-seeding.md"
+    ],
+    "A07": [
+      "content/manuals/ai-overview.md",
+      "content/manuals/ai/model-runner/",
+      "content/manuals/ai/docker-agent/",
+      "content/manuals/ai/gordon/",
+      "content/manuals/ai/compose/",
+      "content/guides/agentic-ai.md",
+      "content/guides/claude-code-model-runner.md",
+      "content/guides/opencode-model-runner.md",
+      "content/guides/genai-leveraging-rag/",
+      "content/guides/genai-pdf-bot/",
+      "content/guides/genai-video-bot/",
+      "content/guides/rag-ollama/",
+      "content/guides/tensorflowjs.md",
+      "content/guides/sentiment-analysis.md",
+      "content/guides/text-classification.md",
+      "content/guides/text-summarization.md",
+      "content/guides/language-translation.md",
+      "content/guides/named-entity-recognition.md",
+      "content/guides/lab-agentic-apps.md",
+      "content/guides/lab-ai-fundamentals.md",
+      "content/guides/lab-creating-ai-product-reviewer.md",
+      "content/guides/lab-docker-agent.md",
+      "content/guides/lab-docker-for-ai-redirect.md"
+    ],
+    "A08": [
+      "content/manuals/ai/mcp-catalog-and-toolkit/",
+      "content/manuals/ai/sandboxes/",
+      "content/guides/genai-claude-code-mcp/",
+      "content/guides/github-sonarqube-sandbox/",
+      "content/guides/lab-mcp-gateway.md"
+    ],
+    "A09": [
+      "content/manuals/build/_index.md",
+      "content/manuals/build/concepts/",
+      "content/manuals/build/building/",
+      "content/manuals/build/cache/",
+      "content/manuals/build/exporters/",
+      "content/manuals/build/metadata/",
+      "content/manuals/build/policies/",
+      "content/manuals/build/checks.md",
+      "content/guides/lab-building-images.md",
+      "content/guides/lab-attestation-basics.md",
+      "content/includes/dockerfile-labs-channel.md",
+      "content/includes/buildx-v0.10-disclaimer.md"
+    ],
+    "A10": [
+      "content/manuals/build/builders/",
+      "content/manuals/build/buildkit/",
+      "content/manuals/build/bake/",
+      "content/manuals/build/ci/",
+      "content/manuals/build/debug/",
+      "content/manuals/build/release-notes.md",
+      "content/manuals/build-cloud/",
+      "content/guides/bake/",
+      "content/guides/compose-bake/",
+      "content/guides/docker-build-cloud/",
+      "content/guides/gha.md",
+      "content/guides/azure-pipelines.md"
+    ],
+    "A11": [
+      "content/manuals/compose/",
+      "content/guides/docker-compose/",
+      "content/guides/lab-compose-quickstart.md",
+      "content/includes/compose-eol.md"
+    ],
+    "A12": [
+      "content/reference/compose-file/",
+      "content/includes/compose/"
+    ],
+    "A13": [
+      "content/manuals/desktop/_index.md",
+      "content/manuals/desktop/setup/",
+      "content/manuals/desktop/uninstall.md",
+      "content/manuals/desktop/troubleshoot-and-support/",
+      "content/manuals/desktop/cert-revoke-solution.md",
+      "content/includes/desktop-linux-launch.md"
+    ],
+    "A14": [
+      "content/manuals/desktop/use-desktop/",
+      "content/manuals/desktop/features/",
+      "content/manuals/desktop/settings-and-maintenance/",
+      "content/manuals/offload/"
+    ],
+    "A15": [
+      "content/manuals/engine/release-notes/",
+      "content/manuals/desktop/previous-versions/",
+      "content/manuals/desktop/release-notes.md",
+      "content/manuals/platform-release-notes.md",
+      "content/manuals/release-lifecycle.md",
+      "content/manuals/retired.md",
+      "content/manuals/security/security-announcements.md",
+      "content/includes/aci-ecs-eol.md",
+      "content/includes/dev-envs-changing.md"
+    ],
+    "A16": [
+      "content/manuals/engine/_index.md",
+      "content/manuals/engine/install/",
+      "content/manuals/engine/daemon/",
+      "content/manuals/engine/cli/",
+      "content/manuals/engine/containers/",
+      "content/manuals/engine/manage-resources/",
+      "content/includes/install-script.md",
+      "content/includes/root-errors.md",
+      "content/includes/engine-license.md",
+      "content/includes/daemon-cfg-desktop.md",
+      "content/reference/cli/"
+    ],
+    "A17": [
+      "content/manuals/engine/network/",
+      "content/manuals/engine/storage/",
+      "content/manuals/engine/logging/"
+    ],
+    "A18": [
+      "content/manuals/engine/security/",
+      "content/manuals/engine/swarm/",
+      "content/guides/orchestration.md",
+      "content/guides/swarm-deploy.md",
+      "content/guides/kube-deploy.md",
+      "content/includes/swarm-mode.md",
+      "content/includes/swarm-compose-compat.md",
+      "content/includes/deploy.md"
+    ],
+    "A19": [
+      "content/manuals/docker-hub/",
+      "content/reference/api/hub/",
+      "content/reference/api/dvp/",
+      "content/reference/api/registry/",
+      "content/includes/hub-categories.md"
+    ],
+    "A20": [
+      "content/manuals/scout/",
+      "content/guides/docker-scout/"
+    ],
+    "A21": [
+      "content/manuals/dhi/",
+      "content/guides/dhi-backstage.md",
+      "content/guides/dhi-from-doi.md",
+      "content/guides/dhi-from-wolfi.md",
+      "content/guides/dhi-go-example.md",
+      "content/guides/dhi-nodejs-example.md",
+      "content/guides/dhi-openshift.md",
+      "content/guides/dhi-python-example.md",
+      "content/guides/lab-dhi-node.md"
+    ],
+    "A22": [
+      "content/manuals/accounts/",
+      "content/manuals/admin/",
+      "content/manuals/billing/",
+      "content/manuals/subscription/",
+      "content/manuals/security/_index.md",
+      "content/manuals/security/access-tokens.md",
+      "content/manuals/security/2fa/",
+      "content/manuals/support/",
+      "content/manuals/unassociated-machines/",
+      "content/guides/admin-user-management/",
+      "content/includes/desktop-license-update.md"
+    ],
+    "A23": [
+      "content/manuals/enterprise/",
+      "content/manuals/desktop/enterprise/",
+      "content/guides/admin-set-up/",
+      "content/guides/zscaler/"
+    ],
+    "A24": [
+      "content/manuals/extensions/",
+      "content/reference/api/extensions-sdk/",
+      "content/includes/extensions-form.md"
+    ],
+    "A25": [
+      "content/reference/api/engine/"
+    ]
+  },
+  "base_prompts": {
+    "LT": {
+      "path": "git/context/prompts/docker-editor-LT-v1.txt",
+      "sha256": "4311688dbe2f163f7c180f1b2c2fe2b1bb51c03d384dafaef2872d0bfb5473f0"
+    },
+    "R0": {
+      "path": "git/context/prompts/docker-editor-R0-v4.txt",
+      "sha256": "d8e4019dd21d90da6a9b2cd80374817e585d479894ad26dca08b5f1665f4985a"
+    }
+  },
+  "baseline_tree_id": "4c5e0499392bb25dd9641ea191ed3e2fff075bbee27ad798fba6deeff731c43c",
+  "budget": {
+    "tokens": 250000000,
+    "wall_seconds": 259200
+  },
+  "budget_rule": "an arm's tokens are the sum of editor_tokens and its seconds the sum of host seconds from launch to end over its sessions (the survey counts to LT); before each session the arm is checked; at or over either cap no new session of that arm starts and every planned item of it is recorded as skipped (unedited)",
+  "composition": {
+    "decided": "author, October 18, before authorization 2 (no editing session had run)",
+    "r0_wording": [
+      [
+        "meets the target structure",
+        "meets the reorganization goal above"
+      ],
+      [
+        "plus any new pages your target structure needs",
+        "plus any new pages your reorganization needs"
+      ],
+      [
+        "toward the same target structure",
+        "toward the same reorganization goal"
+      ],
+      [
+        "unless the target structure requires it",
+        "unless the reorganization goal requires it"
+      ]
+    ],
+    "stale_limits_removed": "You have one session of at most 60 minutes and may change at most 150 page paths; the host enforces these limits and stops the session if they are exceeded.",
+    "version": 2
+  },
+  "controls": {
+    "O": {
+      "baseline_copy_tree_sha256": "4c5e0499392bb25dd9641ea191ed3e2fff075bbee27ad798fba6deeff731c43c",
+      "namespace": "O-r01",
+      "status": "completed"
+    },
+    "S": {
+      "baseline_copy_tree_sha256": "4c5e0499392bb25dd9641ea191ed3e2fff075bbee27ad798fba6deeff731c43c",
+      "namespace": "S-r01",
+      "status": "completed"
+    }
+  },
+  "created": "2026-10-18",
+  "kind": "refine",
+  "ledger_seed": "the WS survey end row (tokens and editor seconds count to LT, per the budget rule)",
+  "manifests": {
+    "LT-pass-A01": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A01.json",
+      "sha256": "23f21951e152bf8e8f29c378cdcea84b54739163fae4655602e08ed913bff25c"
+    },
+    "LT-pass-A02": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A02.json",
+      "sha256": "14fbaac407eb905138fc6949dcccb45264c190cbe238c1aaeb858ab337cab4f8"
+    },
+    "LT-pass-A03": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A03.json",
+      "sha256": "7eeda8096be77a8179a5771c59aae6cd50325b0ecefd2f5e0baef2bbd93a9af9"
+    },
+    "LT-pass-A04": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A04.json",
+      "sha256": "66c7cbd33828d3987648d33cb823484068a6ca380d5d4df4608de38a358df173"
+    },
+    "LT-pass-A05": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A05.json",
+      "sha256": "3fd6ad9a0979282c24ea8999e3dac177bc0c59fb99081e0eae71dd8c65c5c489"
+    },
+    "LT-pass-A06": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A06.json",
+      "sha256": "a66ba82f9b9d7e29a74f2747f1ba34eac655fa222c9cb3349c5de00b62496462"
+    },
+    "LT-pass-A07": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A07.json",
+      "sha256": "bc360833463a57f612307df3e883add147ebc8adec2672b0d2ff75610bff5d74"
+    },
+    "LT-pass-A08": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A08.json",
+      "sha256": "539bb1b925df467d35aaf555afa626724f11d3cea3cd092c37bddc01f36ff4db"
+    },
+    "LT-pass-A09": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A09.json",
+      "sha256": "d17c772334968be8661767586f4b0fc6544b01d6e0fdbfa20325538146559e7f"
+    },
+    "LT-pass-A10": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A10.json",
+      "sha256": "fd5abb7f0e1010b9cf1230d8f19a2a7b12c2616818b8156404835166a0680afb"
+    },
+    "LT-pass-A11": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A11.json",
+      "sha256": "b5a6b1a9fc3fbd4ae9910b31fc3ff2714ae5abc9b271507f148f84caec30ff9b"
+    },
+    "LT-pass-A12": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A12.json",
+      "sha256": "0fbca33a2f63270577c13c8e814618334b8833c88b5d1c7bc42e55ad6f40758d"
+    },
+    "LT-pass-A13": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A13.json",
+      "sha256": "062821c3304822db2e0a1112876e372680afa426f8cbe0a6b9d8196410f9bfa7"
+    },
+    "LT-pass-A14": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A14.json",
+      "sha256": "8a304cf6a98d6320c4d04965468f987298b28971b6e3de7eccb4da60e704d2db"
+    },
+    "LT-pass-A15": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A15.json",
+      "sha256": "4a478b79934e17928d56b155248e405d13fe9ddbec1ced38e24d1fe25c2e64ff"
+    },
+    "LT-pass-A16": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A16.json",
+      "sha256": "eafe0550d8fd644c99eecc20684a3c324ef197e0bd47f4e886ffa5bdf01d453e"
+    },
+    "LT-pass-A17": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A17.json",
+      "sha256": "9cd8f067b52fc92b51c483bab9520832665b706609ee0ebfa913418344d0d483"
+    },
+    "LT-pass-A18": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A18.json",
+      "sha256": "28a6b2477f0a19c0a8875c200f61175d4c1a162cc21e88c365c8887b5e110f63"
+    },
+    "LT-pass-A19": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A19.json",
+      "sha256": "173e6546ec7ed022362aae8fb9174ef934b7380de7e69ec55d1e6ecbfd4d69f2"
+    },
+    "LT-pass-A20": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A20.json",
+      "sha256": "1d7ebde946d21e5a376246d7dfdc2ca60849462dd8a5a075731d9e2b13adccd1"
+    },
+    "LT-pass-A21": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A21.json",
+      "sha256": "506dbf71d20db059d4529dcacf5f30dd7029d48f43ce0893ae5b87ff14ddb701"
+    },
+    "LT-pass-A22": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A22.json",
+      "sha256": "47d5a1c36308be5984c610dd15f6a25bee88383fbf1d2040bf8b4f0f5d85acde"
+    },
+    "LT-pass-A23": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A23.json",
+      "sha256": "832eac322e8809772b847cb426c64bde360249d88d6491b1d74bb3898c8293d5"
+    },
+    "LT-pass-A24": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A24.json",
+      "sha256": "81519141a7fbcaf8cec5a08dc4dfc75cfbae0ab990200ee03aed76efca90499a"
+    },
+    "LT-pass-A25": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-pass-A25.json",
+      "sha256": "c511515f5c246abdb35b1a2e14591561355453f9b391ccfa41c8087417e9a7fb"
+    },
+    "LT-reconcile-ALL": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-reconcile-ALL.json",
+      "sha256": "e3779a7cdeb4dfb0ef39142877c8e365d2abd659c1ec90d0e955e12638d04782"
+    },
+    "LT-resume-A01": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A01.json",
+      "sha256": "25395d015e7083232e81f02b7e54829f9afb2678ba8e70748f96b7bead15a751"
+    },
+    "LT-resume-A02": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A02.json",
+      "sha256": "454fe4a08c54ca9d68806356e44ae19849cec7b755e280b82e3ad24e1660d6a9"
+    },
+    "LT-resume-A03": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A03.json",
+      "sha256": "3906d1e27f841b46bb6c85f2fb37e2176e911b2755c3b384819e3916dfb566ed"
+    },
+    "LT-resume-A04": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A04.json",
+      "sha256": "a1547acb353e9c43024b6b36118e80f50094abb1bb0374b7129d0ce370403a0a"
+    },
+    "LT-resume-A05": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A05.json",
+      "sha256": "90532d105efa306e3ad24d3944fdeb0a42e29b3c630e4e35e09a4e827b826bad"
+    },
+    "LT-resume-A06": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A06.json",
+      "sha256": "e88297282adbc9fda9827d36e0dbde23017f0a5d61329fb41f7e1b63c8ce9206"
+    },
+    "LT-resume-A07": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A07.json",
+      "sha256": "af32fab5710681d6493ea68e83ab5eed7e97bd460680af7fe151cdd085814381"
+    },
+    "LT-resume-A08": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A08.json",
+      "sha256": "4194ddd118237756045d1ca2ad8676e34e6a58d41c2ed2dda7ac2cfc7de63401"
+    },
+    "LT-resume-A09": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A09.json",
+      "sha256": "6961a6e1007aebdd7f48b233c74abf4aebe0138ff845a11b6c5d21acee8a7ceb"
+    },
+    "LT-resume-A10": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A10.json",
+      "sha256": "5e8a56e077fc253441ca741b9bf2f0fe92642bbfd08c742d31e82102cc752d7f"
+    },
+    "LT-resume-A11": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A11.json",
+      "sha256": "f0e0d3cd00ea68ea84d05bbaf308bc95f3094b98f1d6d11e5e638b531fe75de5"
+    },
+    "LT-resume-A12": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A12.json",
+      "sha256": "5ea6095339dd1fb8261e41d8cfb17eb7d6dd177b9154e3dc92ae11c415f39bd9"
+    },
+    "LT-resume-A13": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A13.json",
+      "sha256": "acaf37ce1518b08f153a0c408488eafc67989ff05e62ea29c9db25ceca44baf5"
+    },
+    "LT-resume-A14": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A14.json",
+      "sha256": "b32e32f84e4b52fd72619d2b66ba21bdfe093f2709ba56a7c8e13ff1a51bbc0b"
+    },
+    "LT-resume-A15": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A15.json",
+      "sha256": "0ef1a72529d118ebfd00edad878f8d84d73ecee7a5fd58a6c8001f56b6e7127a"
+    },
+    "LT-resume-A16": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A16.json",
+      "sha256": "2c6b84fd221c7287226a0ddf59ec68b61a558f317f06723cd3959013e07ac507"
+    },
+    "LT-resume-A17": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A17.json",
+      "sha256": "67e72f9f7607ec14bb0b123037923ad96640abfa8450049729fec08a7891d9d8"
+    },
+    "LT-resume-A18": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A18.json",
+      "sha256": "70e5dd04c8961c34d644ee6a0722742c6143f8fbc323502fad7ea99e279d4e5d"
+    },
+    "LT-resume-A19": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A19.json",
+      "sha256": "613607f5f4862158744b506696fb64ec76b707c8f6c4723fda767441b03d2b6f"
+    },
+    "LT-resume-A20": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A20.json",
+      "sha256": "a203a9d5085cf962ae6fb5e9e849aa2d18fe515299f1204d3a315dcb079cbf0d"
+    },
+    "LT-resume-A21": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A21.json",
+      "sha256": "8a5b793d5f05c2d3cc7b2acc5208cc650dc55d0acb615197dcab32988cc7ed68"
+    },
+    "LT-resume-A22": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A22.json",
+      "sha256": "8b852a25933ba8dda560d7a5b10d361747e25138d7f4c4e946a319041f61d68c"
+    },
+    "LT-resume-A23": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A23.json",
+      "sha256": "153d21f0dde88ddded50d5921e71a5543dd124062e550a8a418d6f3bf29dafc8"
+    },
+    "LT-resume-A24": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A24.json",
+      "sha256": "92d4f7bb5d86890c31c980ae97f02ab291fbcf2ed48d167a8917abf75f264bfa"
+    },
+    "LT-resume-A25": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\LT-resume-A25.json",
+      "sha256": "17cf768c675abdabd4aba80f9c1071df86517938004d72cbbc658db2f1656218"
+    },
+    "R0-pass-A01": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A01.json",
+      "sha256": "97f5c1f9fc09e7e618604f970e6637baa4faf450f62c4e28dc480f55c64adaa8"
+    },
+    "R0-pass-A02": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A02.json",
+      "sha256": "f6f44b22d263bc151e8a46467b2efcc435e4eef56909c2ef4db9a827dec12d5d"
+    },
+    "R0-pass-A03": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A03.json",
+      "sha256": "742292d9f06ed1b264ed8a6238dbe407aea1371137db6807b58324be463b1405"
+    },
+    "R0-pass-A04": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A04.json",
+      "sha256": "1c155137f58f5ee305bcdf3c9bc568cd2b2488204064a0003c5ffb65a74990a1"
+    },
+    "R0-pass-A05": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A05.json",
+      "sha256": "571b78c6f4fbb81d8c606811cc7e2dfd0b3226b71e022c441486657703110fad"
+    },
+    "R0-pass-A06": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A06.json",
+      "sha256": "34776d8fbe038473ed754ae8ea7d0c530393692728029625da7f1d172dc1bbd4"
+    },
+    "R0-pass-A07": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A07.json",
+      "sha256": "e2c8f3cba0f6badfcdb9c4470030913ddc2906f15981a162578f9be0e3912c5b"
+    },
+    "R0-pass-A08": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A08.json",
+      "sha256": "b0f6154dfdfa0b6694545ed3e2ab74aefa32797441fdfc803491b0da573e026b"
+    },
+    "R0-pass-A09": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A09.json",
+      "sha256": "8cd6c9940a56e33a6416dfa2cd40f441db9cc466e415b6e58f6271729cc149ec"
+    },
+    "R0-pass-A10": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A10.json",
+      "sha256": "e5125f4a36038cabc6bfbd26945c9a8e837bdefc5cb4cb7ff07b9478374cd6dd"
+    },
+    "R0-pass-A11": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A11.json",
+      "sha256": "349de8b6c3ede29d749aa1472fa4a79332c745883a6b83268f1ee4778feea4aa"
+    },
+    "R0-pass-A12": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A12.json",
+      "sha256": "140a9bac49aeaa8e5ac037a577e64f42c64dc0f4511de22e0791c70b2795316a"
+    },
+    "R0-pass-A13": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A13.json",
+      "sha256": "7d7ab9c064f0f7616a7c5e85396b321d38013defc1da2bfe656f4f4f63413747"
+    },
+    "R0-pass-A14": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A14.json",
+      "sha256": "19dfbc68448087218fcd9e517c965e47cb3e07004d35b6646da7878b0616a7de"
+    },
+    "R0-pass-A15": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A15.json",
+      "sha256": "1af00a0a9a8adf34a0af51c1ad435b3a077c8f06b3baa118076eb7e2c0bb11f8"
+    },
+    "R0-pass-A16": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A16.json",
+      "sha256": "59f6cce77d9f5974376358e0b81cdbc4bf065b98f2366a295047e55ec3877488"
+    },
+    "R0-pass-A17": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A17.json",
+      "sha256": "6943a5d4991c7ba2bd457c7edcc30f80ac30c9c125489af29ddb1adf748c32ad"
+    },
+    "R0-pass-A18": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A18.json",
+      "sha256": "bfe941c5bcaf73b6fa2c648009351e0bdd778894b639165f7ca0a0d1bfc13a11"
+    },
+    "R0-pass-A19": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A19.json",
+      "sha256": "b251142d357665832f1c2502ad8c3693f9b8e0057cbb743839154945316d574d"
+    },
+    "R0-pass-A20": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A20.json",
+      "sha256": "4721829e4ede16e32e40b1b45e66bec99c5aee9c1403f039fd7bba3e4470836b"
+    },
+    "R0-pass-A21": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A21.json",
+      "sha256": "32da3aa2989e0747d47e2bd666c475eb1b12fc1f1590faeb1a6cc591ccc21e95"
+    },
+    "R0-pass-A22": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A22.json",
+      "sha256": "cae313f5bd419cd32a12af72d6d3b8137e7e46b7eec6cbd4015d94d05e987ca9"
+    },
+    "R0-pass-A23": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A23.json",
+      "sha256": "6294de489e43b2655a200fd085f2c920755681ec33bd47f1e32e289c1329580f"
+    },
+    "R0-pass-A24": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A24.json",
+      "sha256": "5c35ab48653e4b774223c0896eef4c9896502ac0f316b2846109c2e1ac6cf69e"
+    },
+    "R0-pass-A25": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-pass-A25.json",
+      "sha256": "eff1eb9a15b6fac199a6fdaaf018221ddf89d54ef721f392a2b5e57526801d4b"
+    },
+    "R0-reconcile-ALL": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-reconcile-ALL.json",
+      "sha256": "d9dbc8dd38f0972896521f0afc287a23bcee342d439b7e844e5e6a554cce9edf"
+    },
+    "R0-resume-A01": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A01.json",
+      "sha256": "1455e75f53cc80a35e6efa183fb91899c26c1e0224ac8221d2dde42f0a41c34c"
+    },
+    "R0-resume-A02": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A02.json",
+      "sha256": "af1d86fa0e0e95ce46b27276c480db2c45ab933df46857b672945e047dd67d38"
+    },
+    "R0-resume-A03": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A03.json",
+      "sha256": "2484fde19a86997192dae4807214424bb5dae3077be9534ca4f62d28836056cd"
+    },
+    "R0-resume-A04": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A04.json",
+      "sha256": "9ec9913394f2eedfdec22fb9ad5e94fd5ac1740fff1f6712a3194e591bcbd37e"
+    },
+    "R0-resume-A05": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A05.json",
+      "sha256": "158c9b5f55621fd6f08a6a0c26b18f3969fc6cc3c0ddcd1187259c3cb32cd238"
+    },
+    "R0-resume-A06": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A06.json",
+      "sha256": "81fc43c629d7f8760cdcc1ec05fac677fdca70f9ec15fcf631e8c3205656cfcd"
+    },
+    "R0-resume-A07": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A07.json",
+      "sha256": "0a8ee9a3e2d5f3c15ba1fbc25a8da11a1415b7e2b99e80c4468ca0e71a5cbb7c"
+    },
+    "R0-resume-A08": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A08.json",
+      "sha256": "6008f2370da2e826dab29c9d5224ee69772b9d41699a1c2180788f4aca8ea95f"
+    },
+    "R0-resume-A09": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A09.json",
+      "sha256": "ae1d866482410b1d2a9bcf38eed57d52ef5e980c993946081cc294c6c0de59ce"
+    },
+    "R0-resume-A10": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A10.json",
+      "sha256": "2a54ea85e4190f80de8986dd53e5cfcceb5135f887719f96adad111c07c230db"
+    },
+    "R0-resume-A11": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A11.json",
+      "sha256": "7992d17b0cd6f93bb21f0c4c1fd417bc6e4041cffb8f34ffa131803ec15db4c2"
+    },
+    "R0-resume-A12": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A12.json",
+      "sha256": "c2c5589d194afb6c772b9d144b8aa70a44542a1d95e09a9b70813a975d8c95e4"
+    },
+    "R0-resume-A13": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A13.json",
+      "sha256": "4e561aae4d1f16c628c0407a4365b651d5640554b3917da111eb957d05347630"
+    },
+    "R0-resume-A14": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A14.json",
+      "sha256": "d441d7b0032267ca20b674ae9f22ea7f335a30c476e75e62559d56945c36cd93"
+    },
+    "R0-resume-A15": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A15.json",
+      "sha256": "08dcfe3f037110d89faaa7aef1677bd2c05dde29c2c749079a71f7a728355851"
+    },
+    "R0-resume-A16": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A16.json",
+      "sha256": "cce9c10bab733b8416435ce238e7aece4a8a39699025f2a00fb81bf488364394"
+    },
+    "R0-resume-A17": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A17.json",
+      "sha256": "8a1ca1be34e53873538aaf2b77cde38c4b38ecd2368361803e737906c8d382dc"
+    },
+    "R0-resume-A18": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A18.json",
+      "sha256": "00e25524d7a46566556caa08bd6173748d951fe50c5005a2bbec393426e4d697"
+    },
+    "R0-resume-A19": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A19.json",
+      "sha256": "78cef13a0be6099020ba7a27c88d875f6be2d6ca5117bd439ce591f50eff9b59"
+    },
+    "R0-resume-A20": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A20.json",
+      "sha256": "a2577feef55f84f2a18f9178a1ccea594b526980e69e6fc70e5146423398237b"
+    },
+    "R0-resume-A21": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A21.json",
+      "sha256": "97ba24ee1b0b4784a2104c1109ab503e4a2b72b410ae786b6c41139184f68e54"
+    },
+    "R0-resume-A22": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A22.json",
+      "sha256": "1663ca2d3721a27ee6092db2e082a8d9e27e543396b5f2a0cc052f69143b0669"
+    },
+    "R0-resume-A23": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A23.json",
+      "sha256": "a41deef7f6bd4d33f6d60692b6b4eca7606c00a46063859967c5a4759016d243"
+    },
+    "R0-resume-A24": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A24.json",
+      "sha256": "85becfeb0489470e0b495e7b69a78c9596942064ceaa0200bb11428e0c48ed99"
+    },
+    "R0-resume-A25": {
+      "path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\manifests\\R0-resume-A25.json",
+      "sha256": "98fbe68a27e683d227aff24f393b7ad78b2c0c8a02aaa21ed150e5ce3c5fc8f2"
+    }
+  },
+  "order": [
+    "A09",
+    "A21",
+    "A19",
+    "A06",
+    "A25",
+    "A22",
+    "A01",
+    "A14",
+    "A23",
+    "A20",
+    "A05",
+    "A04",
+    "A24",
+    "A15",
+    "A13",
+    "A10",
+    "A11",
+    "A03",
+    "A08",
+    "A16",
+    "A07",
+    "A12",
+    "A18",
+    "A02",
+    "A17"
+  ],
+  "preregistration": {
+    "accepted_appends": {
+      "docs/wc-freeze-16.md": {
+        "change": "append-only author addendum, October 18",
+        "current_bytes": 4414,
+        "current_sha256": "97b464039d0f2cc0eecc9e8388dbd26554fa76c971eb2a574fb1a62c9b84f6c5",
+        "pinned_bytes": 2184,
+        "pinned_sha256": "a1fd8c2f2524b91ebec53c6d88952465c363874652320356be74b8b23cabc93c"
+      }
+    },
+    "path": "git/context/evidence/wc-refinement-preregistration-v1-2026-10-14.json",
+    "preregistration_sha256": "a04c70c5dbde846745428dac7573b1338a08baf26fba758948c7cc56e018f542"
+  },
+  "prompt_files": {
+    "LT-pass-A01": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A01.txt",
+      "sha256": "11b00b9e0c914ba4749ba5104bbfe613c9e5db0a2e569b35929d48a71b45beca"
+    },
+    "LT-pass-A02": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A02.txt",
+      "sha256": "1c4aaa1c4c21e98b3408c7d68cdba506b1a8d20b9c296aebf0868f940427f59a"
+    },
+    "LT-pass-A03": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A03.txt",
+      "sha256": "af4c1b96fd5e22221585854c44762faec97194b5c200f671fb29e0d9341cddf6"
+    },
+    "LT-pass-A04": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A04.txt",
+      "sha256": "8aabe3a8a9a75cc87a48e148e1a9af8e7d649accb18cc066cee13186b0cd5cd5"
+    },
+    "LT-pass-A05": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A05.txt",
+      "sha256": "d7966b3a6aa9884535df944977ba60c2589cf70fc96fc8472b83052e1ea63d26"
+    },
+    "LT-pass-A06": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A06.txt",
+      "sha256": "4fc27001d13921f25e33d909bacfd61be77d2125f62482b584ff98d573205e05"
+    },
+    "LT-pass-A07": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A07.txt",
+      "sha256": "31dde249e68339479ed025f8aabc1f997557b6d52a51137cabfc77cb4f4202d8"
+    },
+    "LT-pass-A08": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A08.txt",
+      "sha256": "ab9a08a90885ff2b4e40e3803b024f6a28861ca712baeb0d8be63185543e4086"
+    },
+    "LT-pass-A09": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A09.txt",
+      "sha256": "f233de17de5dc4e0918dd724ef77602bbad9d33621458456338865ca9957bc34"
+    },
+    "LT-pass-A10": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A10.txt",
+      "sha256": "496b4e414349c826b233afa46a73e6b119bfc2094719fed52f4236431e20afa8"
+    },
+    "LT-pass-A11": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A11.txt",
+      "sha256": "60059d7f51a792f71b9ddce73187b17bdc1f6c9191b6816a3ff009096aed0012"
+    },
+    "LT-pass-A12": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A12.txt",
+      "sha256": "c1de56ce0f5500731d0d6d0d17f7b51ea8407437a99282f72fa757f2cd244548"
+    },
+    "LT-pass-A13": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A13.txt",
+      "sha256": "a9d3ccbba8c53275f9886c86799c110bbc3a54005d32a73c2d0573418ec732e5"
+    },
+    "LT-pass-A14": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A14.txt",
+      "sha256": "173441a6c5b0b8fb2e28321678e41ee61222d10ce5c711d1a9c6cf8b9bf3f58a"
+    },
+    "LT-pass-A15": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A15.txt",
+      "sha256": "b28885785de3b4d5f34ad17cbf6097cd531378b9ec38cc90a44e40a48ad8f011"
+    },
+    "LT-pass-A16": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A16.txt",
+      "sha256": "f968b42ef2f793b0abaf2fc00ee37aedaba202d0adb538b9a6027d32493e41ff"
+    },
+    "LT-pass-A17": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A17.txt",
+      "sha256": "1e0b647603064e5b077d631ef1602f9c63fa1d5207687f72f40209d67ab93a87"
+    },
+    "LT-pass-A18": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A18.txt",
+      "sha256": "f005df80c95cf4e0cf60e2cdf67f1f4dd83b03ddabd95974adefb34f5e591154"
+    },
+    "LT-pass-A19": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A19.txt",
+      "sha256": "b151f88cfdc8284d24e78e80b7eab1f132de5514653caf41c7855c1ceab2bb9a"
+    },
+    "LT-pass-A20": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A20.txt",
+      "sha256": "83d0e31905b25f5795a84f3dfb7b6ed5cf2efc85fdec24743c7711ed1e6cd45d"
+    },
+    "LT-pass-A21": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A21.txt",
+      "sha256": "b9a56dfa4f49fe96bf1a2a95a0eef1b2c25a348c6c6cff1d1c6e3ecf348ca073"
+    },
+    "LT-pass-A22": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A22.txt",
+      "sha256": "57d06549f1ee88d107e53c1fee07dc648fd1dda90795754a9a80051a1f300717"
+    },
+    "LT-pass-A23": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A23.txt",
+      "sha256": "dcdda439fc189718051dae85cf679403219da89030c9ad04d863f1e4803ca128"
+    },
+    "LT-pass-A24": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A24.txt",
+      "sha256": "3dee7f266c4606975f0c8b6d4121011464fdeebb61d5ff29328f1fbd2f4f02ed"
+    },
+    "LT-pass-A25": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-pass-A25.txt",
+      "sha256": "de1e2a9694512860674e9b69fc8b2dc0773ce0a5ba30f471d3b6363e1768d719"
+    },
+    "LT-reconcile-ALL": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-reconcile-ALL.txt",
+      "sha256": "0193485ba3e622879d9dfb54087627b0bdb01e8d7ea5b6cb966aee31f3dd0742"
+    },
+    "LT-resume-A01": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A01.txt",
+      "sha256": "a947b9e087420455b7de50b46093334768365dca5b5db58e2485214312b3a2ef"
+    },
+    "LT-resume-A02": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A02.txt",
+      "sha256": "05aae24b109a0033811b0632843abe50c350655bba0b9c53c9272608e4cbef31"
+    },
+    "LT-resume-A03": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A03.txt",
+      "sha256": "591e549faae24e5faa3d8b14d8de7ccb7ce77934a20b30ef0fb44eae6fceb587"
+    },
+    "LT-resume-A04": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A04.txt",
+      "sha256": "ea215bb51563cd5d65919785842921da02d3334e59eef9852f07c6b5deaefd73"
+    },
+    "LT-resume-A05": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A05.txt",
+      "sha256": "ec2610ee92d05d0bbdbd5426315e35eab24bd64017fccf1e76afb8961ed9ac02"
+    },
+    "LT-resume-A06": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A06.txt",
+      "sha256": "1ae84ea764ef8124cdc381217fb590a3221928e2789b1fef7f6e56f4da55263a"
+    },
+    "LT-resume-A07": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A07.txt",
+      "sha256": "aaccce011478172d82eeb3706759bf51254184dcc2b3049ba822da54a070a823"
+    },
+    "LT-resume-A08": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A08.txt",
+      "sha256": "193f4d5a6224100cb59e5f55cd8fa587fc414e5d49f377c8932cdc3a30f5506b"
+    },
+    "LT-resume-A09": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A09.txt",
+      "sha256": "3801a87d0d2a8aaa0a81e0eb9bddecb8f75ded8fa6afcfa702d8f019e3a4ae0b"
+    },
+    "LT-resume-A10": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A10.txt",
+      "sha256": "7833e3bcc1beb90306dc8d6db3fd211fb60394021f115c39c3d129531da41eb7"
+    },
+    "LT-resume-A11": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A11.txt",
+      "sha256": "ed793b7aec17955b80f44b2c214b4b29c43bcdb0f718df2b2e8eaf1a6b5a0cd6"
+    },
+    "LT-resume-A12": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A12.txt",
+      "sha256": "959d91d9fdb76cf0e5b5895136c3b4047d2fda2de137cf34623a7625c874ec07"
+    },
+    "LT-resume-A13": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A13.txt",
+      "sha256": "4739f870dae59ab3015a67452fd91f31247c8e389192596f7d0f5c9812a61fb5"
+    },
+    "LT-resume-A14": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A14.txt",
+      "sha256": "e4480c736bbf19ecc283bcb542eaa1c3bcaee20e5329b747fa96f997e21e9be9"
+    },
+    "LT-resume-A15": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A15.txt",
+      "sha256": "b63c43f94021d50c5330102e7417a089ac6e737ae7a7ab4eca68ec88ed82242c"
+    },
+    "LT-resume-A16": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A16.txt",
+      "sha256": "077e535c494256f2c6cb448fe700d6f83de1f7e8921647507025f3fc661c02f9"
+    },
+    "LT-resume-A17": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A17.txt",
+      "sha256": "91c55ac90be3e9def65ef381528d9db56ee776c9ebca6f1a4c542f4248ba3aaa"
+    },
+    "LT-resume-A18": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A18.txt",
+      "sha256": "77ada73fde4e073b1876eaa0de1853e948ceec54d74b488a126f957c43c00eac"
+    },
+    "LT-resume-A19": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A19.txt",
+      "sha256": "1cae16d2f983108fe472e11820f34f2307d76fb3925e48e166e5f8f60885dac7"
+    },
+    "LT-resume-A20": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A20.txt",
+      "sha256": "f950404274e367d61864b70f4692d4cfe125cafe1cbdca7eeb98bddc49b09f61"
+    },
+    "LT-resume-A21": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A21.txt",
+      "sha256": "ca464c6628cecaf5cc40310e4f42ee17e7e076994af4b807386e2aa10896655b"
+    },
+    "LT-resume-A22": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A22.txt",
+      "sha256": "040b86926a2546b86a8d212171ccfd1fac641a1f053d6266cc39eb5e36bc40d8"
+    },
+    "LT-resume-A23": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A23.txt",
+      "sha256": "e4d0610451646f2961dd8ee1d3d5aa898d4ae851425bfb5bfbd16398c00dcf5f"
+    },
+    "LT-resume-A24": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A24.txt",
+      "sha256": "28072d16ec363c5de0620be12a4b88e61c5319cdd24ddb04440adc329e4c0445"
+    },
+    "LT-resume-A25": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/LT-resume-A25.txt",
+      "sha256": "5098b2bb74dad9c9f567f0b8700c31419df66f26498fed237c3ebff3cd74634c"
+    },
+    "R0-pass-A01": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A01.txt",
+      "sha256": "0c0df58e8f9c10c275567d52523ecf634dfb404c12206e5e869449a4f63b34b6"
+    },
+    "R0-pass-A02": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A02.txt",
+      "sha256": "c4b36f42b920a3d6d642d4ac0fcd847268c29dab27fda50031e507c5ac6b703c"
+    },
+    "R0-pass-A03": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A03.txt",
+      "sha256": "40c9b5337f9aea8c77d75a6bc8e5bb72763d0d037f4176eac2ab4ef52ae1cb44"
+    },
+    "R0-pass-A04": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A04.txt",
+      "sha256": "0a8c511a27c9ea10791e2458a3b1bea4c2a42b988b5997e3db0c67e371faa2ed"
+    },
+    "R0-pass-A05": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A05.txt",
+      "sha256": "9a908b7f4593bc65a2ced12de6805d077e540f7c795a982384257207fd10763d"
+    },
+    "R0-pass-A06": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A06.txt",
+      "sha256": "4d763bfe30c53e3879c3caf675af2de5f64e93bf36cfe7dffa5691514d13bfd1"
+    },
+    "R0-pass-A07": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A07.txt",
+      "sha256": "9b4a19d38d1d90f0a434b08f217701dd11b310ded879e32bfbcef305f7559af5"
+    },
+    "R0-pass-A08": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A08.txt",
+      "sha256": "8e4386a3314df5b56167c4e0c2093aa212bb4ed48476751f2f645c3ae178581b"
+    },
+    "R0-pass-A09": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A09.txt",
+      "sha256": "f5103c0b5a47baf1c2bd3ec1d3d1ba96841eb18469516fbfa9838047d413d4be"
+    },
+    "R0-pass-A10": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A10.txt",
+      "sha256": "7039a58f765243814852e6bb0383e14082f0b429e39520d399825beb039a87e7"
+    },
+    "R0-pass-A11": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A11.txt",
+      "sha256": "56360dc4e638c9581fbd85db655990447741aa6277f235f5229e89bdc89de062"
+    },
+    "R0-pass-A12": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A12.txt",
+      "sha256": "f0dba9892e110f258220e671f90e792c180dae689e87354ad8c3fc50891f89c2"
+    },
+    "R0-pass-A13": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A13.txt",
+      "sha256": "c9c415c620deb912a7188a33e3f124b983191c9e27c9c9a2ca28bbd6f1c7896d"
+    },
+    "R0-pass-A14": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A14.txt",
+      "sha256": "f6c6c31d2894938081082e6f6adeff6ab50ac0d8b4776a5828c0d246a06dc197"
+    },
+    "R0-pass-A15": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A15.txt",
+      "sha256": "0a61a5bb93dc3dcd44bec16878fded9e9f37a25fa2441e8aafefd327304ca3cb"
+    },
+    "R0-pass-A16": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A16.txt",
+      "sha256": "d2aeb123bec661eaa0fcfe1c156ef93676132d8aecc2c7a439405567a267a0a9"
+    },
+    "R0-pass-A17": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A17.txt",
+      "sha256": "2ad8ee28b59e505c306df41f09c199e5bf7f163f6d87dc3fe164f5fde3fab2a0"
+    },
+    "R0-pass-A18": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A18.txt",
+      "sha256": "682b72383bd0c20a47db981d93ab136dcb492bd42219e184185097b07fd080d2"
+    },
+    "R0-pass-A19": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A19.txt",
+      "sha256": "1f7dfb2b5859381cc3bbe48cc2c2d7932382c3124c7d8191db05a786c636e463"
+    },
+    "R0-pass-A20": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A20.txt",
+      "sha256": "9125eeffe5d7d915193974d230dc0c1f089157304eaf4ae56df9b9e5c898a1ac"
+    },
+    "R0-pass-A21": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A21.txt",
+      "sha256": "380872e54bb05a1adf8b102971e0c070dabc48a80e937d50d2b819618cabeeaf"
+    },
+    "R0-pass-A22": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A22.txt",
+      "sha256": "c918b7f117476fe10dec976bae5bb7425ae04935795a9220973d8c8bda297935"
+    },
+    "R0-pass-A23": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A23.txt",
+      "sha256": "a0dc5a7da5a4e6fd85e3ed82a60a66c8660b4d8cadeb3bef7f1efc2623d1bbdc"
+    },
+    "R0-pass-A24": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A24.txt",
+      "sha256": "039462e4b5302e42aff202c5cb16231433497798c70610e29dd879c09130419b"
+    },
+    "R0-pass-A25": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-pass-A25.txt",
+      "sha256": "c4949d6e4670725d167467fec51b7d0efffa7c1728267fc810c51d41c822cbdf"
+    },
+    "R0-reconcile-ALL": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-reconcile-ALL.txt",
+      "sha256": "77092e3dc88a9b3f47de4d678f35e3f26deb4c3d402c103b2ac8abd9c1cdf2c4"
+    },
+    "R0-resume-A01": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A01.txt",
+      "sha256": "3bc359ef068babd1486dbf85c5d0fd1fdedef86c50fee689520ba3cef3328374"
+    },
+    "R0-resume-A02": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A02.txt",
+      "sha256": "27b43b5dca329c8c243b4efe646ddc9f7e49a14330decfb975f596c6dc8c4b84"
+    },
+    "R0-resume-A03": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A03.txt",
+      "sha256": "46a17338db7d40ef4ac3731d63608334d19182e7adcec7578361542538fdf67f"
+    },
+    "R0-resume-A04": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A04.txt",
+      "sha256": "0dd0670497db2106a84f653239e89a58d4f5ec4e5fb9fcff46701598795dfbe4"
+    },
+    "R0-resume-A05": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A05.txt",
+      "sha256": "b96af4566b00209b91830c617a149db28d169b64374d825003d7de0d4f975bce"
+    },
+    "R0-resume-A06": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A06.txt",
+      "sha256": "d3d427facb5b88116747f2c1c3821b767c6b9aff38f4eb7f017eafe810290adc"
+    },
+    "R0-resume-A07": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A07.txt",
+      "sha256": "4cad6ca3d0aaa4eb595be046032a49fc5703c1b0f109377f38bff7d3eaf25317"
+    },
+    "R0-resume-A08": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A08.txt",
+      "sha256": "46aa24c1154caaf2dc7e4e775b94f26eb6a8b838bbd6c0d9e3da7b2fc0a7b71c"
+    },
+    "R0-resume-A09": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A09.txt",
+      "sha256": "bcba9653109d597145cdd6f71627868f9ca8a2aafb7efe484f8df5259063cacf"
+    },
+    "R0-resume-A10": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A10.txt",
+      "sha256": "9b794d55815ab24fc20a39f87db159e7c3f57e7af2223d179268b135dd743d46"
+    },
+    "R0-resume-A11": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A11.txt",
+      "sha256": "0cbca3a3ddb6f637689abea8bdea3c5870dd40130db36b93e1e5e723e1dd6bf3"
+    },
+    "R0-resume-A12": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A12.txt",
+      "sha256": "1470756aa660761854793b5df3928a6812f5bf12f06a0dc8899143abb50900af"
+    },
+    "R0-resume-A13": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A13.txt",
+      "sha256": "2418f1c736895ea2b4a69138aeb627896a89ff51c9a9303965d17717abe4c866"
+    },
+    "R0-resume-A14": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A14.txt",
+      "sha256": "5fbc1bd73b143c9a9de6d5a032bf5f988d4bea6319450e60579588cc2a5e90d3"
+    },
+    "R0-resume-A15": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A15.txt",
+      "sha256": "0414d82484917c8e4ad1f017dbf0229f5edd4171f5906702eb14fbf6e165e0a6"
+    },
+    "R0-resume-A16": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A16.txt",
+      "sha256": "6bbb59d8111b1d135f010ef9abc30f244aaa3c3724a64b84ecc782fafd64aa08"
+    },
+    "R0-resume-A17": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A17.txt",
+      "sha256": "3bb0c35b8aeaf032dcafa397f6de051ad604282d125e4a86b9718332914e208c"
+    },
+    "R0-resume-A18": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A18.txt",
+      "sha256": "4faf535a6033ad4a0b17e2dfb5d457d9c8fff6fae780379148ff7c034c3a7ab2"
+    },
+    "R0-resume-A19": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A19.txt",
+      "sha256": "c60d9b348c6dfb9d62bca2c26bc9e85e7903582a34e629208f7c7b2c1a7580e9"
+    },
+    "R0-resume-A20": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A20.txt",
+      "sha256": "854c41da2e59be98473b5409317ef5445ddf6e36dbacc206fe4643f6097b16f3"
+    },
+    "R0-resume-A21": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A21.txt",
+      "sha256": "09131edd694a3b062c1e54341828309c67245262f34ba9c82532743ff249f017"
+    },
+    "R0-resume-A22": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A22.txt",
+      "sha256": "b89101d0b33b3a027832204bd6a7523048f9dca793a7c56799928c781c9ebf8d"
+    },
+    "R0-resume-A23": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A23.txt",
+      "sha256": "62413b3b18e523aa13a3a3ca4fbf58411245149be053dc4359301f722de4515a"
+    },
+    "R0-resume-A24": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A24.txt",
+      "sha256": "c539fd4253f1cc822d2fe308ae108018da67638726a1f8f0d41848b80d16f2e3"
+    },
+    "R0-resume-A25": {
+      "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/prompts/R0-resume-A25.txt",
+      "sha256": "29fa8d8f52e8d9ce7b203431e74cf622101b5678a2982419008d3c2f2562a941"
+    }
+  },
+  "queue": [
+    {
+      "area": "A09",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A09",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A21",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A21",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A19",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A19",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A06",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A06",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A25",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A25",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A22",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A22",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A01",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A01",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A14",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A14",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A23",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A23",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A20",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A20",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A05",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A05",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A04",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A04",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A24",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A24",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A15",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A15",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A13",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A13",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A10",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A10",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A11",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A11",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A03",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A03",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A08",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A08",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A16",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A16",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A07",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A07",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A12",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A12",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A18",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A18",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A02",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "A02",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A17",
+      "arm": "LT",
+      "kind": "pass"
+    },
+    {
+      "area": "A17",
+      "arm": "R0",
+      "kind": "pass"
+    },
+    {
+      "area": "ALL",
+      "arm": "LT",
+      "kind": "reconcile"
+    },
+    {
+      "area": "ALL",
+      "arm": "R0",
+      "kind": "reconcile"
+    }
+  ],
+  "resume_rule": "a pass stopped by a limit whose residual is admitted gets one resume session; a resume is never resumed; a non-admitted residual rolls the area back (recorded unedited)",
+  "retry_rule": "no retry of an editing session; an infrastructure stop halts the run and goes to the author",
+  "run_id": "wc-v1",
+  "schedule": {
+    "checkpoint_rule": "At 48 hours of wall time from the first editing session's launch, no new session starts; the session in progress finishes and goes through admission. The run pauses and Claude reports areas completed in both arms, the projected time to finish, resumes, rollbacks, halts and any subscription throttling. The author decides: continue under the pre-registered limits, or stop (unstarted areas recorded as unedited in both arms). Without a decision the run waits. No spectra, nulls, answers or scores are computed before the decision (author, October 18).",
+    "checkpoint_seconds": 172800,
+    "projection_areas": 3,
+    "projection_rule": "After the first 3 areas of the seeded order are done in both arms (their pass sessions ended and no resume pending), project total wall time from seconds per baseline page over those areas, scaled by the remaining areas' page counts, per arm; reconciliation is shown at its 90-minute ceiling. Information only, not a stopping rule (author, October 18)."
+  },
+  "schemas": {
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/record-schemas.json",
+    "sha256": "b30c61e245ab312f6e82115e5d2cb1903f7f2388e70dc2aa6700c1cc4228b3e0"
+  },
+  "session_wall_seconds": 5400,
+  "supersedes": {
+    "path": "git/context/evidence/wc-run-plan-refine-v1-2026-10-18.json",
+    "reason": "v1 prompts kept the base prompts' 60-minute / 150-path sentence beside the 90-minute sentence, and told R0 to meet a target structure it is never given",
+    "sha256": "6b9280197a92fff70a24dc535b7ecf40e243e0a5c2371c01177f2cc8a11b4624"
+  },
+  "survey_freeze": {
+    "path": "git/context/evidence/wc-survey-freeze-v1-2026-10-14.json",
+    "sha256": "1ae536a103ba78e2bca01761274da6a36189b41950c6cd4fbb4a3cdfca5a8476"
+  },
+  "tier1": {
+    "path": "git/context/evidence/wc-tier1-tasks-v2-2026-10-18.json",
+    "sha256": "671a15da2560ef5cd387788e87fd146bf2be90a520281531666adef258136a49"
+  },
+  "tier2_freeze": {
+    "path": "git/context/evidence/wc-tier2-freeze-v1-2026-10-14.json",
+    "sha256": "e026c28d72acfca6c9f53f3a97458b1214070c0aa2c5996f7bbab7bc8351a8a9"
+  },
+  "trunk_inventory": [
+    {
+      "pages": [
+        "content/guides/angular/containerize.md",
+        "content/guides/nextjs/containerize.md",
+        "content/guides/nodejs/containerize.md",
+        "content/guides/php/containerize.md",
+        "content/guides/reactjs/containerize.md",
+        "content/guides/rust/build-images.md",
+        "content/guides/vuejs/containerize.md",
+        "content/guides/language-translation.md",
+        "content/guides/named-entity-recognition.md",
+        "content/guides/sentiment-analysis.md",
+        "content/guides/text-classification.md",
+        "content/guides/text-summarization.md"
+      ],
+      "proposed_page": "content/guides/prerequisites.md",
+      "topic": "Common tutorial prerequisites: Docker Desktop, Git and basic Docker knowledge. Centralize setup; retain project-specific versions and clone URLs.",
+      "trunk_id": "T01"
+    },
+    {
+      "pages": [
+        "content/guides/angular/containerize.md",
+        "content/guides/nextjs/containerize.md",
+        "content/guides/nodejs/containerize.md",
+        "content/guides/reactjs/containerize.md",
+        "content/guides/vuejs/containerize.md"
+      ],
+      "proposed_page": "content/guides/docker-init.md",
+      "topic": "docker init scaffolding: purpose, generated files and generic build/run verification. Keep language-specific prompt responses local.",
+      "trunk_id": "T02"
+    },
+    {
+      "pages": [
+        "content/guides/angular/configure-github-actions.md",
+        "content/guides/bun/configure-ci-cd.md",
+        "content/guides/cpp/configure-ci-cd.md",
+        "content/guides/deno/configure-ci-cd.md",
+        "content/guides/dotnet/configure-ci-cd.md",
+        "content/guides/golang/configure-ci-cd.md",
+        "content/guides/java/configure-ci-cd.md",
+        "content/guides/nextjs/configure-github-actions.md",
+        "content/guides/nodejs/configure-github-actions.md",
+        "content/guides/php/configure-ci-cd.md",
+        "content/guides/python/configure-github-actions.md",
+        "content/guides/r/configure-ci-cd.md",
+        "content/guides/reactjs/configure-github-actions.md",
+        "content/guides/ruby/configure-github-actions.md",
+        "content/guides/rust/configure-ci-cd.md",
+        "content/guides/vuejs/configure-github-actions.md"
+      ],
+      "proposed_page": "content/guides/gha.md",
+      "topic": "GitHub Actions build/publish setup: Hub token, repository variables/secrets, login/build-push actions and publication checks. Reuse the generic guide and reconcile secret-name variants.",
+      "trunk_id": "T03"
+    },
+    {
+      "pages": [
+        "content/guides/angular/deploy.md",
+        "content/guides/bun/deploy.md",
+        "content/guides/cpp/deploy.md",
+        "content/guides/deno/deploy.md",
+        "content/guides/dotnet/deploy.md",
+        "content/guides/golang/deploy.md",
+        "content/guides/java/deploy.md",
+        "content/guides/nextjs/deploy.md",
+        "content/guides/nodejs/deploy.md",
+        "content/guides/php/deploy.md",
+        "content/guides/python/deploy.md",
+        "content/guides/r/deploy.md",
+        "content/guides/reactjs/deploy.md",
+        "content/guides/ruby/deploy.md",
+        "content/guides/rust/deploy.md",
+        "content/guides/vuejs/deploy.md"
+      ],
+      "proposed_page": "content/guides/kube-deploy.md",
+      "topic": "Local Kubernetes deployment cycle: Desktop Kubernetes, Deployment/NodePort manifests, apply/get/browser checks and delete cleanup. Keep application images and ports local.",
+      "trunk_id": "T04"
+    },
+    {
+      "pages": [
+        "content/guides/bun/develop.md",
+        "content/guides/cpp/develop.md",
+        "content/guides/deno/develop.md",
+        "content/guides/dotnet/develop.md",
+        "content/guides/java/develop.md",
+        "content/guides/php/develop.md",
+        "content/guides/python/develop.md",
+        "content/guides/r/develop.md",
+        "content/guides/ruby/develop.md",
+        "content/manuals/compose/how-tos/file-watch.md",
+        "content/reference/compose-file/develop.md",
+        "content/includes/compose/watch.md",
+        "content/includes/compose/configure-watch.md"
+      ],
+      "proposed_page": "content/manuals/compose/how-tos/file-watch.md",
+      "topic": "Compose Watch development loop: watch configuration, automatic rebuild/sync and --watch startup. Retain framework reload commands and ignored paths.",
+      "trunk_id": "T05"
+    },
+    {
+      "pages": [
+        "content/guides/testcontainers-dotnet-aspnet-core/_index.md",
+        "content/guides/testcontainers-dotnet-getting-started/_index.md",
+        "content/guides/testcontainers-go-getting-started/_index.md",
+        "content/guides/testcontainers-java-aws-localstack/_index.md",
+        "content/guides/testcontainers-java-getting-started/_index.md",
+        "content/guides/testcontainers-java-jooq-flyway/_index.md",
+        "content/guides/testcontainers-java-keycloak-spring-boot/_index.md",
+        "content/guides/testcontainers-java-lifecycle/_index.md",
+        "content/guides/testcontainers-java-micronaut-kafka/_index.md",
+        "content/guides/testcontainers-java-micronaut-wiremock/_index.md",
+        "content/guides/testcontainers-java-mockserver/_index.md",
+        "content/guides/testcontainers-java-quarkus/_index.md",
+        "content/guides/testcontainers-java-replace-h2/_index.md",
+        "content/guides/testcontainers-java-service-configuration/_index.md",
+        "content/guides/testcontainers-java-spring-boot-kafka/_index.md",
+        "content/guides/testcontainers-java-spring-boot-rest-api/_index.md",
+        "content/guides/testcontainers-java-wiremock/_index.md",
+        "content/guides/testcontainers-nodejs-getting-started/_index.md",
+        "content/guides/testcontainers-python-getting-started/_index.md",
+        "content/manuals/testcontainers.md"
+      ],
+      "proposed_page": "content/manuals/testcontainers.md",
+      "topic": "Testcontainers introduction and common Docker runtime prerequisites. Reuse the product overview; retain language libraries and integration-specific fixtures.",
+      "trunk_id": "T06"
+    },
+    {
+      "pages": [
+        "content/manuals/engine/install/centos.md",
+        "content/manuals/engine/install/debian.md",
+        "content/manuals/engine/install/fedora.md",
+        "content/manuals/engine/install/raspberry-pi-os.md",
+        "content/manuals/engine/install/rhel.md",
+        "content/manuals/engine/install/ubuntu.md",
+        "content/includes/install-script.md",
+        "content/includes/root-errors.md"
+      ],
+      "proposed_page": "content/manuals/engine/install/common-installation-steps.md",
+      "topic": "Common Engine installation steps: conflicting packages, hello-world verification, non-root setup, convenience-script caveats and uninstall data cleanup. Keep distribution package/repository commands local; install-script.md already shares part of this.",
+      "trunk_id": "T07"
+    },
+    {
+      "pages": [
+        "content/get-started/docker-concepts/running-containers/persisting-container-data.md",
+        "content/get-started/workshop/05_persisting_data.md",
+        "content/get-started/workshop/06_bind_mounts.md",
+        "content/guides/databases.md",
+        "content/guides/postgresql/immediate-setup-and-data-persistence.md",
+        "content/guides/dotnet/develop.md",
+        "content/guides/java/develop.md",
+        "content/guides/php/develop.md",
+        "content/guides/python/develop.md",
+        "content/manuals/engine/storage/volumes.md",
+        "content/reference/compose-file/volumes.md"
+      ],
+      "proposed_page": "content/manuals/engine/storage/volumes.md",
+      "topic": "Persistent data and volume lifecycle: surviving container replacement, named volumes versus bind mounts and database persistence. Retain database paths, permissions and UI tasks.",
+      "trunk_id": "T08"
+    },
+    {
+      "pages": [
+        "content/get-started/docker-concepts/running-containers/publishing-ports.md",
+        "content/get-started/introduction/get-docker-desktop.md",
+        "content/get-started/workshop/02_our_app.md",
+        "content/guides/databases.md",
+        "content/guides/postgresql/networking-and-connectivity.md",
+        "content/manuals/engine/network/port-publishing.md",
+        "content/manuals/desktop/features/networking/_index.md",
+        "content/includes/compose/services-ports.md"
+      ],
+      "proposed_page": "content/get-started/docker-concepts/running-containers/publishing-ports.md",
+      "topic": "Port publishing fundamentals: host/container ports, -p/ports mapping and localhost access. Keep firewall behavior and platform limitations local.",
+      "trunk_id": "T09"
+    },
+    {
+      "pages": [
+        "content/get-started/workshop/07_multi_container.md",
+        "content/get-started/docker-concepts/running-containers/multi-container-applications.md",
+        "content/guides/golang/develop.md",
+        "content/guides/postgresql/networking-and-connectivity.md",
+        "content/guides/go-prometheus-monitoring/compose.md",
+        "content/manuals/compose/how-tos/networking.md",
+        "content/reference/compose-file/networks.md",
+        "content/includes/compose/networks.md"
+      ],
+      "proposed_page": "content/manuals/compose/how-tos/networking.md",
+      "topic": "Compose networking fundamentals: default network, service-name DNS and container versus host access. Keep connection strings and platform-specific host access in recipes.",
+      "trunk_id": "T10"
+    },
+    {
+      "pages": [
+        "content/get-started/docker-concepts/building-images/understanding-image-layers.md",
+        "content/get-started/docker-concepts/building-images/using-the-build-cache.md",
+        "content/get-started/workshop/09_image_best.md",
+        "content/manuals/build/cache/_index.md",
+        "content/manuals/build/cache/invalidation.md",
+        "content/manuals/build/cache/optimize.md",
+        "content/manuals/build/building/best-practices.md",
+        "content/guides/golang/build-images.md"
+      ],
+      "proposed_page": "content/manuals/build/cache/_index.md",
+      "topic": "Build layers/cache: reuse, invalidation, dependency-first COPY ordering and .dockerignore. Share core explanations; retain backend-specific exports.",
+      "trunk_id": "T11"
+    },
+    {
+      "pages": [
+        "content/get-started/docker-concepts/building-images/multi-stage-builds.md",
+        "content/get-started/workshop/09_image_best.md",
+        "content/manuals/build/building/multi-stage.md",
+        "content/manuals/build/building/best-practices.md",
+        "content/guides/cpp/multistage.md",
+        "content/guides/golang/build-images.md",
+        "content/guides/nodejs/containerize.md",
+        "content/guides/dotnet/containerize.md",
+        "content/manuals/dhi/how-to/use.md"
+      ],
+      "proposed_page": "content/manuals/build/building/multi-stage.md",
+      "topic": "Multi-stage builds: separate build/test/runtime stages, copy final artifacts and select named targets. Retain compiler, dependency and hardened-image details.",
+      "trunk_id": "T12"
+    },
+    {
+      "pages": [
+        "content/guides/docker-scout/sbom.md",
+        "content/guides/cpp/security.md",
+        "content/guides/gha.md",
+        "content/manuals/build/metadata/attestations/sbom.md",
+        "content/manuals/build/ci/github-actions/attestations.md",
+        "content/manuals/scout/how-tos/view-create-sboms.md",
+        "content/manuals/dhi/core-concepts/sbom.md",
+        "content/manuals/dhi/core-concepts/attestations.md"
+      ],
+      "proposed_page": "content/manuals/security/sbom.md",
+      "topic": "SBOM concepts: component/dependency inventory, versions/licenses, vulnerability analysis and SBOM versus attestation. Centralize definitions; retain generation, verification and DHI guarantees.",
+      "trunk_id": "T13"
+    },
+    {
+      "pages": [
+        "content/guides/docker-scout/attestations.md",
+        "content/guides/lab-attestation-basics.md",
+        "content/guides/gha.md",
+        "content/manuals/build/metadata/attestations/_index.md",
+        "content/manuals/build/metadata/attestations/slsa-provenance.md",
+        "content/manuals/build/ci/github-actions/attestations.md",
+        "content/manuals/dhi/core-concepts/attestations.md",
+        "content/manuals/dhi/core-concepts/provenance.md",
+        "content/manuals/dhi/core-concepts/slsa.md",
+        "content/manuals/dhi/how-to/verify.md"
+      ],
+      "proposed_page": "content/manuals/security/image-attestations.md",
+      "topic": "Image attestations/provenance: contents/build-origin metadata, signatures and supply-chain policy. Centralize definitions; distinguish BuildKit modes, CI defaults and DHI signed guarantees.",
+      "trunk_id": "T14"
+    },
+    {
+      "pages": [
+        "content/manuals/scout/how-tos/create-exceptions-vex.md",
+        "content/manuals/scout/explore/exceptions.md",
+        "content/manuals/dhi/core-concepts/vex.md",
+        "content/manuals/dhi/core-concepts/cves.md",
+        "content/manuals/dhi/explore/scanner-integrations.md",
+        "content/manuals/dhi/how-to/scan.md"
+      ],
+      "proposed_page": "content/manuals/security/vex.md",
+      "topic": "VEX versus raw CVE counts: exploitability statements, statuses, justifications and scanner filtering. Retain Scout exception handling, DHI conventions and scanner-specific behavior.",
+      "trunk_id": "T15"
+    },
+    {
+      "pages": [
+        "content/manuals/ai/model-runner/api-reference.md",
+        "content/manuals/ai/model-runner/ide-integrations.md",
+        "content/manuals/ai/model-runner/openwebui-integration.md",
+        "content/manuals/ai/model-runner/get-started.md",
+        "content/guides/claude-code-model-runner.md",
+        "content/guides/opencode-model-runner.md"
+      ],
+      "proposed_page": "content/manuals/ai/model-runner/api-reference.md",
+      "topic": "Model Runner connectivity: host TCP, host/container base URLs, compatible API paths, placeholder keys and endpoint checks. Expand the API URL reference; retain client-specific configuration and compatibility notes.",
+      "trunk_id": "T16"
+    },
+    {
+      "pages": [
+        "content/manuals/ai/mcp-catalog-and-toolkit/_index.md",
+        "content/manuals/ai/mcp-catalog-and-toolkit/catalog.md",
+        "content/manuals/ai/mcp-catalog-and-toolkit/get-started.md",
+        "content/manuals/ai/mcp-catalog-and-toolkit/profiles.md",
+        "content/manuals/ai/mcp-catalog-and-toolkit/cli.md",
+        "content/manuals/ai/mcp-catalog-and-toolkit/toolkit.md"
+      ],
+      "proposed_page": "content/manuals/ai/mcp-catalog-and-toolkit/profiles.md",
+      "topic": "MCP profiles: named server collections, catalog selection, adding servers, client connections and gateway execution. Reuse the profile explanation; retain GUI/CLI procedures.",
+      "trunk_id": "T17"
+    },
+    {
+      "pages": [
+        "content/manuals/ai/sandboxes/get-started.md",
+        "content/manuals/ai/sandboxes/security/credentials.md",
+        "content/manuals/ai/sandboxes/security/isolation.md",
+        "content/manuals/ai/sandboxes/agents/claude-code.md",
+        "content/manuals/ai/sandboxes/agents/codex.md",
+        "content/manuals/ai/sandboxes/agents/gemini.md",
+        "content/manuals/ai/sandboxes/agents/opencode.md",
+        "content/manuals/ai/sandboxes/agents/docker-agent.md"
+      ],
+      "proposed_page": "content/manuals/ai/sandboxes/security/credentials.md",
+      "topic": "Sandbox credentials: stored secrets, environment variables, proxy injection and host-side isolation. Retain provider names and API-key/OAuth differences on agent pages.",
+      "trunk_id": "T18"
+    },
+    {
+      "pages": [
+        "content/manuals/admin/_index.md",
+        "content/manuals/admin/organization/_index.md",
+        "content/manuals/admin/organization/manage/manage-a-team.md",
+        "content/manuals/admin/organization/manage/members.md",
+        "content/manuals/admin/company/manage/users.md",
+        "content/manuals/docker-hub/repos/manage/access.md",
+        "content/manuals/enterprise/security/roles-and-permissions/core-roles.md",
+        "content/guides/admin-user-management/setup.md",
+        "content/guides/admin-user-management/onboard.md"
+      ],
+      "proposed_page": "content/manuals/enterprise/security/roles-and-permissions/core-roles.md",
+      "topic": "Organization/team roles: owners versus members, invitations, role assignment and repository access. Centralize definitions; retain company/org UI differences, seat effects and provisioning.",
+      "trunk_id": "T19"
+    },
+    {
+      "pages": [
+        "content/manuals/subscription/desktop-license.md",
+        "content/includes/desktop-license-update.md",
+        "content/manuals/desktop/setup/install/mac-install.md",
+        "content/manuals/desktop/setup/install/windows-install.md",
+        "content/manuals/desktop/setup/install/linux/_index.md",
+        "content/includes/desktop-linux-launch.md"
+      ],
+      "proposed_page": "content/manuals/subscription/desktop-license.md",
+      "topic": "Desktop licensing: repeated commercial-use thresholds, paid-subscription requirements and terms. Reuse the license page and notice; retain platform installation requirements.",
+      "trunk_id": "T20"
+    },
+    {
+      "pages": [
+        "content/manuals/desktop/features/containerd.md",
+        "content/manuals/engine/storage/containerd.md",
+        "content/manuals/build/building/multi-platform.md",
+        "content/manuals/build/builders/drivers/_index.md",
+        "content/manuals/build/metadata/attestations/_index.md",
+        "content/manuals/build/ci/github-actions/attestations.md",
+        "content/manuals/scout/how-tos/view-create-sboms.md",
+        "content/manuals/scout/how-tos/create-exceptions-vex.md"
+      ],
+      "proposed_page": "content/manuals/engine/storage/image-store-capabilities.md",
+      "topic": "Image-store capabilities: containerd versus classic storage, multi-platform manifests, attestation preservation and custom-builder push/load behavior. Keep Engine/Desktop enablement differences local.",
+      "trunk_id": "T21"
+    },
+    {
+      "pages": [
+        "content/manuals/extensions/extensions-sdk/dev/api/backend.md",
+        "content/manuals/extensions/extensions-sdk/dev/api/docker.md",
+        "content/manuals/extensions/extensions-sdk/guides/invoke-host-binaries.md",
+        "content/reference/api/extensions-sdk/Exec.md",
+        "content/reference/api/extensions-sdk/ExecResult.md",
+        "content/reference/api/extensions-sdk/ExecStreamOptions.md",
+        "content/reference/api/extensions-sdk/ExtensionHost.md",
+        "content/reference/api/extensions-sdk/ExtensionVM.md"
+      ],
+      "proposed_page": "content/manuals/extensions/extensions-sdk/dev/api/backend.md",
+      "topic": "Extension command execution: Docker/VM/host contexts, asynchronous results, streaming callbacks and process lifetime. Reuse the backend guide; retain interface signatures and V0 behavior.",
+      "trunk_id": "T22"
+    }
+  ],
+  "trunk_inventory_sha256": "f01a16f4c2dcf8360bfacf12cc96251bb2bdce66f0a5083eaaa5641bb9aa4726"
+}

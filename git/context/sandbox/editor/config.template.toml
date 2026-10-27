@@ -1,0 +1,99 @@
+# Sprint 11 pinned Codex 0.161.0 config, rendered per session into a fresh
+# CODEX_HOME (tmpfs). {model} and {reasoning_effort} come from the run manifest.
+# The container, mounts and egress proxy are the boundary; Codex's own sandbox is
+# off as the Codex docs recommend for externally sandboxed containers.
+model = "{model}"
+model_reasoning_effort = "{reasoning_effort}"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+web_search = "disabled"
+check_for_update_on_startup = false
+project_root_markers = []
+project_doc_max_bytes = 0
+project_doc_fallback_filenames = []
+cli_auth_credentials_store = "file"
+
+# The working tree is never a trusted project: no project .codex/ config, hooks or rules.
+[projects."/work"]
+trust_level = "untrusted"
+
+# No skills in the model context: the four skills bundled with 0.161.0
+# (installed into CODEX_HOME/skills/.system) are disabled by path. The image has
+# no home or system skills; tree skills (.agents/) are out of corpus scope.
+
+[[skills.config]]
+path = "/codex-home/skills/.system/imagegen/SKILL.md"
+enabled = false
+
+[[skills.config]]
+path = "/codex-home/skills/.system/openai-docs/SKILL.md"
+enabled = false
+
+[[skills.config]]
+path = "/codex-home/skills/.system/skill-creator/SKILL.md"
+enabled = false
+
+[[skills.config]]
+path = "/codex-home/skills/.system/skill-installer/SKILL.md"
+enabled = false
+
+[history]
+persistence = "none"
+
+[analytics]
+enabled = false
+
+[feedback]
+enabled = false
+
+[otel]
+exporter = "none"
+trace_exporter = "none"
+metrics_exporter = "none"
+
+[shell_environment_policy]
+inherit = "core"
+ignore_default_excludes = false
+
+[features]
+# Kept: code_mode_host (0.161.0 routes the shell tool through it; disabling it
+# broke the shell in pilot-11b R0-r01), shell_tool, unified_exec, unified_exec_tty, shell_snapshot,
+# write_stdin_approval, enable_request_compression, content_item_kinds,
+# compaction_image_budget, system_proxy_fallback.
+api_key_model_discovery = false
+apps = false
+auth_elicitation = false
+browser_annotation_api = false
+browser_use = false
+browser_use_external = false
+browser_use_full_cdp_access = false
+computer_use = false
+daemon_auto_start = false
+fast_mode = false
+goals = false
+guardian_approval = false
+guardian_reuse_parent_compaction = false
+hooks = false
+image_generation = false
+in_app_browser = false
+in_app_chat = false
+in_app_dictation = false
+in_app_local_automation = false
+in_app_updates = false
+in_app_voice = false
+memories = false
+mentions_v2 = false
+multi_agent = false
+plugin_sharing = false
+plugins = false
+realtime_conversation = false
+remote_plugin = false
+skill_mcp_dependency_install = false
+skill_search = false
+sleep_tool = false
+tool_call_mcp_elicitation = false
+tool_suggest = false
+unbounded_connection_retries = false
+view_image = false
+workspace_dependencies = false
+worktrees = false

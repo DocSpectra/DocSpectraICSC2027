@@ -1,0 +1,3984 @@
+{
+ "cards": {
+  "bytes": 61839,
+  "path": "git/context/evidence/lt-trace-audit-24-cards-v1-2026-10-25.json",
+  "sha256": "b06c659632faaa7bc0ba1f46a6d12d073a751d86809da350fa097442484d69a1"
+ },
+ "cards_file": "git/context/evidence/lt-trace-audit-24-cards-v1-2026-10-25.json",
+ "case_stratum_sizes": {
+  "LT": {
+   "a": 7,
+   "b": 29,
+   "c": 6
+  },
+  "R0": {
+   "a": 1,
+   "b": 15,
+   "c": 0
+  }
+ },
+ "chain_t2_follow_all111": {
+  "LT": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 111,
+    "1_any_accepted_follow": 41,
+    "2_added_edge_follow": 28,
+    "3_first_page_text_exposure": 21,
+    "4_destination_supported": 7,
+    "5_span_in_returned_lines": 6,
+    "6_destination_cited": 7,
+    "7_cited_lines_from_this_follow": 7
+   },
+   "unique_question_destination_pairs": {
+    "2_added_edge_follow": 39,
+    "3_first_page_text_exposure": 29,
+    "4_destination_supported": 7,
+    "5_span_in_returned_lines": 6,
+    "6_destination_cited": 7,
+    "7_cited_lines_from_this_follow": 7
+   }
+  },
+  "O": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 111,
+    "1_any_accepted_follow": 40
+   },
+   "unique_question_destination_pairs": {}
+  },
+  "R0": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 111,
+    "1_any_accepted_follow": 38,
+    "2_added_edge_follow": 15,
+    "3_first_page_text_exposure": 11,
+    "4_destination_supported": 2,
+    "5_span_in_returned_lines": 1,
+    "6_destination_cited": 2,
+    "7_cited_lines_from_this_follow": 1
+   },
+   "unique_question_destination_pairs": {
+    "2_added_edge_follow": 20,
+    "3_first_page_text_exposure": 13,
+    "4_destination_supported": 2,
+    "5_span_in_returned_lines": 1,
+    "6_destination_cited": 2,
+    "7_cited_lines_from_this_follow": 1
+   }
+  },
+  "S": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 111,
+    "1_any_accepted_follow": 37
+   },
+   "unique_question_destination_pairs": {}
+  }
+ },
+ "chain_t2_follow_common105": {
+  "LT": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 105,
+    "1_any_accepted_follow": 38,
+    "2_added_edge_follow": 25,
+    "3_first_page_text_exposure": 18,
+    "4_destination_supported": 7,
+    "5_span_in_returned_lines": 6,
+    "6_destination_cited": 7,
+    "7_cited_lines_from_this_follow": 7
+   },
+   "unique_question_destination_pairs": {
+    "2_added_edge_follow": 32,
+    "3_first_page_text_exposure": 23,
+    "4_destination_supported": 7,
+    "5_span_in_returned_lines": 6,
+    "6_destination_cited": 7,
+    "7_cited_lines_from_this_follow": 7
+   }
+  },
+  "O": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 105,
+    "1_any_accepted_follow": 37
+   },
+   "unique_question_destination_pairs": {}
+  },
+  "R0": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 105,
+    "1_any_accepted_follow": 33,
+    "2_added_edge_follow": 12,
+    "3_first_page_text_exposure": 10,
+    "4_destination_supported": 2,
+    "5_span_in_returned_lines": 1,
+    "6_destination_cited": 2,
+    "7_cited_lines_from_this_follow": 1
+   },
+   "unique_question_destination_pairs": {
+    "2_added_edge_follow": 17,
+    "3_first_page_text_exposure": 12,
+    "4_destination_supported": 2,
+    "5_span_in_returned_lines": 1,
+    "6_destination_cited": 2,
+    "7_cited_lines_from_this_follow": 1
+   }
+  },
+  "S": {
+   "note": "step 5 is reported beside, not inside, steps 6-7 (a citation can follow without a located span)",
+   "traces": {
+    "0_planned_traces": 105,
+    "1_any_accepted_follow": 36
+   },
+   "unique_question_destination_pairs": {}
+  }
+ },
+ "coverage": {
+  "actions": 10915,
+  "by_tier": {
+   "t1": 480,
+   "t2": 888
+  },
+  "citations": 8019,
+  "citations_by_kind": {
+   "answer": 8002,
+   "note": 17
+  },
+  "final_context": {
+   "no_answer": 1,
+   "verified": 1367
+  },
+  "identity_failures": {},
+  "identity_ok": 1368,
+  "quarantined": 0,
+  "replay": {
+   "verified": 1368
+  },
+  "terminals": {
+   "t1:answer": 479,
+   "t1:invalid_action_limit": 1,
+   "t2:answer": 888
+  },
+  "traces": 1368
+ },
+ "created": "2026-10-25",
+ "inputs": {
+  "operator_input_inventory_sha256": "22a0102517d3d98f26ec7a5c67b4e4397958cfad9af467f5f26e3911d9cd9022",
+  "witness": {
+   "bytes": 12740,
+   "path": "artifacts/lt-trace-audit-24-v1/witness/witness.json",
+   "sha256": "a141aa62547e42644c4aa52725caa1e2d190491d0bb0acef9895c0b0271ae6f0"
+  },
+  "witness_files": {
+   "v-5d89a3217d52": {
+    "edges": {
+     "bytes": 486620,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/edges-v-5d89a3217d52.jsonl",
+     "sha256": "aacdcd7b541dc5f833d1dd236fefe848b6a84fd6f0d812effcd371e7a27649ce"
+    },
+    "legacy": {
+     "bytes": 99048,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/legacy-v-5d89a3217d52.jsonl",
+     "sha256": "ae81e7bbc9097c1f99a2084f65f357aa0d20faf38e30072345dfa77b2253636c"
+    }
+   },
+   "v-6337600cdc97": {
+    "edges": {
+     "bytes": 974929,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/edges-v-6337600cdc97.jsonl",
+     "sha256": "a14780a1f481b1413f842d7c320646e00c3dc31c585d97147078adfe7a95f740"
+    },
+    "legacy": {
+     "bytes": 105784,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/legacy-v-6337600cdc97.jsonl",
+     "sha256": "6399f11a21f0234a7c12a631d568022d5bcb9d87b80432efec689f3a0fe42da0"
+    }
+   },
+   "v-9a7d7f0e7b47": {
+    "edges": {
+     "bytes": 486620,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/edges-v-9a7d7f0e7b47.jsonl",
+     "sha256": "aacdcd7b541dc5f833d1dd236fefe848b6a84fd6f0d812effcd371e7a27649ce"
+    },
+    "legacy": {
+     "bytes": 94975,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/legacy-v-9a7d7f0e7b47.jsonl",
+     "sha256": "446299500a58a97fc183e6869ff10952f5bcbfd13427c0ed74060cd8ea37c05d"
+    }
+   },
+   "v-c2c2731d2141": {
+    "edges": {
+     "bytes": 846328,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/edges-v-c2c2731d2141.jsonl",
+     "sha256": "f2c86ac88f2c7f2f73bb13b58b2e04db4a4c692962eaf72edcea82760719ec58"
+    },
+    "legacy": {
+     "bytes": 104485,
+     "path": "artifacts/lt-trace-audit-24-v1/witness/legacy-v-c2c2731d2141.jsonl",
+     "sha256": "9b2ddd9eacf3388630578bb3bc9b6128daf84cf0dee0805bd4c68e19045336f6"
+    }
+   }
+  }
+ },
+ "magnetic_view_join": {
+  "LT": {
+   "accepted_follows_all_tiers": 228,
+   "edge_classes": {
+    "classified": 5203,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 5203
+   },
+   "graph_identity": [
+    {
+     "agent_edges": 5203,
+     "agent_graph_canonical_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+     "agent_graph_file_sha256": "83d6bcd62df873e1ea7257f5f468f90fa0d50093425c54a719ff8b9fc68a5d0c",
+     "agent_nodes": 1823,
+     "bundle_edges": 5203,
+     "bundle_nodes": 1823,
+     "edges_only_agent": 0,
+     "edges_only_bundle": 0,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/LT#full"
+    },
+    {
+     "agent_edges": 5203,
+     "agent_graph_canonical_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+     "agent_graph_file_sha256": "83d6bcd62df873e1ea7257f5f468f90fa0d50093425c54a719ff8b9fc68a5d0c",
+     "agent_nodes": 1823,
+     "bundle_edges": 2494,
+     "bundle_nodes": 1823,
+     "edges_only_agent": 3318,
+     "edges_only_bundle": 609,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/LT/O-prime#full"
+    }
+   ],
+   "membership": {
+    "wc/LT#full|edge_class=added|edge_in_view=True": 119,
+    "wc/LT#full|edge_class=mapped_baseline|edge_in_view=True": 109,
+    "wc/LT#full|edge_in_view=True": 228,
+    "wc/LT#lwcc|edge_class=added|edge_in_view=True": 119,
+    "wc/LT#lwcc|edge_class=mapped_baseline|edge_in_view=False": 8,
+    "wc/LT#lwcc|edge_class=mapped_baseline|edge_in_view=True": 101,
+    "wc/LT#lwcc|edge_in_view=False": 8,
+    "wc/LT#lwcc|edge_in_view=True": 220,
+    "wc/LT/O-prime#full|edge_class=added|edge_in_view=False": 119,
+    "wc/LT/O-prime#full|edge_class=mapped_baseline|edge_in_view=True": 109,
+    "wc/LT/O-prime#full|edge_in_view=False": 119,
+    "wc/LT/O-prime#full|edge_in_view=True": 109,
+    "wc/LT/O-prime#lwcc|edge_class=added|edge_in_view=False": 119,
+    "wc/LT/O-prime#lwcc|edge_class=mapped_baseline|edge_in_view=False": 8,
+    "wc/LT/O-prime#lwcc|edge_class=mapped_baseline|edge_in_view=True": 101,
+    "wc/LT/O-prime#lwcc|edge_in_view=False": 127,
+    "wc/LT/O-prime#lwcc|edge_in_view=True": 101
+   },
+   "views": [
+    {
+     "bundle_canonical_graph_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+     "edges": 5203,
+     "graph_id": "wc/LT",
+     "nodes": 1823,
+     "view_graph_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+     "view_id": "wc/LT#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "80548ca0e4c76eb842b4e0bb3bc852c7d9e3787b9018e1e8b114133e41c9bb5c",
+     "edges": 5195,
+     "graph_id": "wc/LT",
+     "nodes": 1671,
+     "view_graph_sha256": "d8a57fead9620af4e1a0ae693b06a2cde556ab659097d3389f5c4df42ed89ddf",
+     "view_id": "wc/LT#lwcc"
+    },
+    {
+     "bundle_canonical_graph_sha256": "21d45bf0d02feaa86c7781ed066c8ae0b676abe1c2f29246da81439c9e9a8c10",
+     "edges": 2494,
+     "graph_id": "wc/LT/O-prime",
+     "nodes": 1823,
+     "view_graph_sha256": "21d45bf0d02feaa86c7781ed066c8ae0b676abe1c2f29246da81439c9e9a8c10",
+     "view_id": "wc/LT/O-prime#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "21d45bf0d02feaa86c7781ed066c8ae0b676abe1c2f29246da81439c9e9a8c10",
+     "edges": 2414,
+     "graph_id": "wc/LT/O-prime",
+     "nodes": 844,
+     "view_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+     "view_id": "wc/LT/O-prime#lwcc"
+    }
+   ]
+  },
+  "O": {
+   "accepted_follows_all_tiers": 187,
+   "edge_classes": {
+    "classified": 2494,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 2494
+   },
+   "graph_identity": [
+    {
+     "agent_edges": 2494,
+     "agent_graph_canonical_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "agent_graph_file_sha256": "ff89ed48d6318c00c6b2bf5adf5dc0f2fc43ec56f3d11b5a45cf356fa98c3945",
+     "agent_nodes": 1218,
+     "bundle_edges": 2494,
+     "bundle_nodes": 1218,
+     "edges_only_agent": 0,
+     "edges_only_bundle": 0,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/O#full"
+    }
+   ],
+   "membership": {
+    "wc/O#full|edge_class=mapped_baseline|edge_in_view=True": 187,
+    "wc/O#full|edge_in_view=True": 187,
+    "wc/O#lwcc|edge_class=mapped_baseline|edge_in_view=False": 10,
+    "wc/O#lwcc|edge_class=mapped_baseline|edge_in_view=True": 177,
+    "wc/O#lwcc|edge_in_view=False": 10,
+    "wc/O#lwcc|edge_in_view=True": 177
+   },
+   "views": [
+    {
+     "bundle_canonical_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "edges": 2494,
+     "graph_id": "wc/O",
+     "nodes": 1218,
+     "view_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "view_id": "wc/O#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "edges": 2414,
+     "graph_id": "wc/O",
+     "nodes": 844,
+     "view_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+     "view_id": "wc/O#lwcc"
+    }
+   ]
+  },
+  "R0": {
+   "accepted_follows_all_tiers": 219,
+   "edge_classes": {
+    "classified": 4502,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 4502
+   },
+   "graph_identity": [
+    {
+     "agent_edges": 4502,
+     "agent_graph_canonical_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+     "agent_graph_file_sha256": "a77abe7a9bbdaa995b5d3edaabba89037b3f5c7e39aea1bc6f703f4ef0dd5590",
+     "agent_nodes": 1229,
+     "bundle_edges": 4502,
+     "bundle_nodes": 1229,
+     "edges_only_agent": 0,
+     "edges_only_bundle": 0,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/R0#full"
+    },
+    {
+     "agent_edges": 4502,
+     "agent_graph_canonical_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+     "agent_graph_file_sha256": "a77abe7a9bbdaa995b5d3edaabba89037b3f5c7e39aea1bc6f703f4ef0dd5590",
+     "agent_nodes": 1229,
+     "bundle_edges": 2494,
+     "bundle_nodes": 1229,
+     "edges_only_agent": 2023,
+     "edges_only_bundle": 15,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/R0/O-prime#full"
+    }
+   ],
+   "membership": {
+    "wc/R0#full|edge_class=added|edge_in_view=True": 68,
+    "wc/R0#full|edge_class=mapped_baseline|edge_in_view=True": 151,
+    "wc/R0#full|edge_in_view=True": 219,
+    "wc/R0#lwcc|edge_class=added|edge_in_view=True": 68,
+    "wc/R0#lwcc|edge_class=mapped_baseline|edge_in_view=False": 6,
+    "wc/R0#lwcc|edge_class=mapped_baseline|edge_in_view=True": 145,
+    "wc/R0#lwcc|edge_in_view=False": 6,
+    "wc/R0#lwcc|edge_in_view=True": 213,
+    "wc/R0/O-prime#full|edge_class=added|edge_in_view=False": 68,
+    "wc/R0/O-prime#full|edge_class=mapped_baseline|edge_in_view=True": 151,
+    "wc/R0/O-prime#full|edge_in_view=False": 68,
+    "wc/R0/O-prime#full|edge_in_view=True": 151,
+    "wc/R0/O-prime#lwcc|edge_class=added|edge_in_view=False": 68,
+    "wc/R0/O-prime#lwcc|edge_class=mapped_baseline|edge_in_view=False": 6,
+    "wc/R0/O-prime#lwcc|edge_class=mapped_baseline|edge_in_view=True": 145,
+    "wc/R0/O-prime#lwcc|edge_in_view=False": 74,
+    "wc/R0/O-prime#lwcc|edge_in_view=True": 145
+   },
+   "views": [
+    {
+     "bundle_canonical_graph_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+     "edges": 4502,
+     "graph_id": "wc/R0",
+     "nodes": 1229,
+     "view_graph_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+     "view_id": "wc/R0#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "af1c48d8b5f14e837d3055d1bba0cf113922adeb0456a185dc6f34f575190a85",
+     "edges": 4495,
+     "graph_id": "wc/R0",
+     "nodes": 1182,
+     "view_graph_sha256": "2f8fdecb7f6bd14fba41f204829006412da948233e3c74cf10d5c3af8f226956",
+     "view_id": "wc/R0#lwcc"
+    },
+    {
+     "bundle_canonical_graph_sha256": "fabddbb6454f03107b3e8231721dba3fbe39a34d36adb15b0941eff726cea86e",
+     "edges": 2494,
+     "graph_id": "wc/R0/O-prime",
+     "nodes": 1229,
+     "view_graph_sha256": "fabddbb6454f03107b3e8231721dba3fbe39a34d36adb15b0941eff726cea86e",
+     "view_id": "wc/R0/O-prime#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "fabddbb6454f03107b3e8231721dba3fbe39a34d36adb15b0941eff726cea86e",
+     "edges": 2414,
+     "graph_id": "wc/R0/O-prime",
+     "nodes": 844,
+     "view_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+     "view_id": "wc/R0/O-prime#lwcc"
+    }
+   ]
+  },
+  "S": {
+   "accepted_follows_all_tiers": 167,
+   "edge_classes": {
+    "classified": 2494,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 2494
+   },
+   "graph_identity": [
+    {
+     "agent_edges": 2494,
+     "agent_graph_canonical_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "agent_graph_file_sha256": "ff89ed48d6318c00c6b2bf5adf5dc0f2fc43ec56f3d11b5a45cf356fa98c3945",
+     "agent_nodes": 1218,
+     "bundle_edges": 2494,
+     "bundle_nodes": 1218,
+     "edges_only_agent": 0,
+     "edges_only_bundle": 0,
+     "nodes_only_agent": 0,
+     "nodes_only_bundle": 0,
+     "view_id": "wc/S#full"
+    }
+   ],
+   "membership": {
+    "wc/S#full|edge_class=mapped_baseline|edge_in_view=True": 167,
+    "wc/S#full|edge_in_view=True": 167,
+    "wc/S#lwcc|edge_class=mapped_baseline|edge_in_view=False": 7,
+    "wc/S#lwcc|edge_class=mapped_baseline|edge_in_view=True": 160,
+    "wc/S#lwcc|edge_in_view=False": 7,
+    "wc/S#lwcc|edge_in_view=True": 160
+   },
+   "views": [
+    {
+     "bundle_canonical_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "edges": 2494,
+     "graph_id": "wc/S",
+     "nodes": 1218,
+     "view_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "view_id": "wc/S#full"
+    },
+    {
+     "bundle_canonical_graph_sha256": "996569e9c378c02f75a7f8a910de9625c14ab7fd5829afa3855e66ffffa45959",
+     "edges": 2414,
+     "graph_id": "wc/S",
+     "nodes": 844,
+     "view_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+     "view_id": "wc/S#lwcc"
+    }
+   ]
+  }
+ },
+ "model_calls": 0,
+ "network_calls": 0,
+ "operator": {
+  "manifest": {
+   "config_sha256": "adba5dafc40d7022a76577efc62c47d455da72d1d8fa2687cce1071ff75f01a9",
+   "measure_seconds": 32.6,
+   "metric_code_sha256": "12502dcf64fe06a1c59c6e3ac6ed269ec0830857fe27eac0f73376a3bb4ac2e2",
+   "metric_version": "trace_provenance_audit.v1",
+   "outputs": {
+    "trace_provenance.actions.jsonl": "7ded75c523637969dae2cb6130ab67292a66cd6758be5dd494354dec0c94bd5a",
+    "trace_provenance.citations.jsonl": "a107d1f7abba6b6d56f86440ed55655964e86abb07f5cf0a7a31d4d36382a875",
+    "trace_provenance.summary.json": "5ff8205ac65a7797ead6d01247b1786076d9e96f63ae93bd4ce8e84811ccf72b",
+    "trace_provenance.traces.jsonl": "d2c9609a6c57183b99e963f19048fa67b000ac54db7e4a85308726b322ae3beb",
+    "trace_provenance.variants.json": "062bed24cfa44e7d5e0ed7dfd83353fc2e508c85e3fca021d101e9bb146c3662"
+   },
+   "replay_policy": "messages rebuilt from the system message file, the task template, each observation (allowed actions, budgets, search-hit pages, read pages, read ranges, follow menu, notes; json sort_keys, ASCII), each assistant action and tool result (json sort_keys, non-ASCII kept); a recorded history_compaction is rebuilt as the working-evidence snapshot for the retained-read count whose snapshot SHA-256 equals the recorded one; admitted per call only when SHA-256 of the canonical message list equals the recorded call_start and step history_sha256",
+   "rows": {
+    "trace_provenance.actions.jsonl": 10915,
+    "trace_provenance.citations.jsonl": 8019,
+    "trace_provenance.traces.jsonl": 1368
+   },
+   "schema_version": "retrieval_arena.trace_provenance_manifest.v1",
+   "span_policy": "a supporting span is a judgment row of the joined page bytes with verdict answers, status ok and a non-empty supporting_span; it is located as an exact substring of the page text (lines joined by newline) inside its window lines, else after collapsing whitespace; the first occurrence is used; a span not found is unmappable"
+  },
+  "outputs": {
+   "operator_receipt.v1.json": {
+    "bytes": 1674,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/operator_receipt.v1.json",
+    "sha256": "f2595baa202deb610d462517b00fd5473280e5c234179789a0aefc6397e2bba9"
+   },
+   "trace_provenance.actions.jsonl": {
+    "bytes": 9436726,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance.actions.jsonl",
+    "sha256": "7ded75c523637969dae2cb6130ab67292a66cd6758be5dd494354dec0c94bd5a"
+   },
+   "trace_provenance.citations.jsonl": {
+    "bytes": 5358066,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance.citations.jsonl",
+    "sha256": "a107d1f7abba6b6d56f86440ed55655964e86abb07f5cf0a7a31d4d36382a875"
+   },
+   "trace_provenance.summary.json": {
+    "bytes": 30674,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance.summary.json",
+    "sha256": "5ff8205ac65a7797ead6d01247b1786076d9e96f63ae93bd4ce8e84811ccf72b"
+   },
+   "trace_provenance.traces.jsonl": {
+    "bytes": 1202507,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance.traces.jsonl",
+    "sha256": "d2c9609a6c57183b99e963f19048fa67b000ac54db7e4a85308726b322ae3beb"
+   },
+   "trace_provenance.variants.json": {
+    "bytes": 12639,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance.variants.json",
+    "sha256": "062bed24cfa44e7d5e0ed7dfd83353fc2e508c85e3fca021d101e9bb146c3662"
+   },
+   "trace_provenance_manifest.json": {
+    "bytes": 1841,
+    "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance_manifest.json",
+    "sha256": "b66d5e0d225d830da6a9627d7cac709037336fddb783aebccd50f143fa5abf6a"
+   }
+  },
+  "receipt": {
+   "cell_count": 1368,
+   "identity": {
+    "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+    "image_reference": "sha256:b6b7260edeba71b79cca54261abdc221262589569d073b6d0c0a685fe42cfac1",
+    "platform": "linux/amd64",
+    "source_commit": "9b0f84f49d5dd8a5d6050fd5e41e6429adab4869",
+    "source_tree": "3a31dfd54afef64d7526258ad00fe68bd9ad8d10"
+   },
+   "isolation": {
+    "input_mount": "read_only",
+    "network": "none",
+    "root_filesystem": "read_only"
+   },
+   "metric_code_sha256": "12502dcf64fe06a1c59c6e3ac6ed269ec0830857fe27eac0f73376a3bb4ac2e2",
+   "metric_version": "trace_provenance_audit.v1",
+   "outputs": {
+    "trace_provenance.actions.jsonl": "7ded75c523637969dae2cb6130ab67292a66cd6758be5dd494354dec0c94bd5a",
+    "trace_provenance.citations.jsonl": "a107d1f7abba6b6d56f86440ed55655964e86abb07f5cf0a7a31d4d36382a875",
+    "trace_provenance.summary.json": "5ff8205ac65a7797ead6d01247b1786076d9e96f63ae93bd4ce8e84811ccf72b",
+    "trace_provenance.traces.jsonl": "d2c9609a6c57183b99e963f19048fa67b000ac54db7e4a85308726b322ae3beb",
+    "trace_provenance.variants.json": "062bed24cfa44e7d5e0ed7dfd83353fc2e508c85e3fca021d101e9bb146c3662",
+    "trace_provenance_manifest.json": "b66d5e0d225d830da6a9627d7cac709037336fddb783aebccd50f143fa5abf6a"
+   },
+   "receipt_sha256": "34b4c06150b1b9e4e5304172300bacfc9148e448b329b8d44b139b524c4388b3",
+   "status": "completed"
+  }
+ },
+ "plan": {
+  "bytes": 68974,
+  "path": "git/context/evidence/lt-trace-audit-24-plan-v1-2026-10-25.json",
+  "sha256": "229de8d6fffb42018886c34b502fab070eea0b3085e97041697151f3be195f4c"
+ },
+ "plan_amendments": [
+  {
+   "bytes": 3967,
+   "path": "git/context/evidence/lt-trace-audit-24-plan-amendment-1-2026-10-25.json",
+   "sha256": "40d650fd59bf97d508eec493286d96d8b2acd03579f7ba2b831d85bb7fa78a54"
+  }
+ ],
+ "reconciliation": {
+  "arms": {
+   "LT": {
+    "attempted_equals_legacy_count": true,
+    "audit_accepted_added": 39,
+    "audit_accepted_edge_classes": {
+     "added": 39,
+     "mapped_baseline": 37
+    },
+    "audit_attempted_added_by_historical_class": 39,
+    "audit_attempted_follows": 76,
+    "audit_by_status": {
+     "accepted": 76
+    },
+    "audit_rejected_errors": {},
+    "historical_recorded": {
+     "added": 39,
+     "follows": 76,
+     "landing_mean_common105": 0.17142857142857143
+    },
+    "legacy_reproduced": true,
+    "legacy_vs_page_byte_label_on_accepted_follows": {
+     "qrels_positive=False/label=not_supported": 52,
+     "qrels_positive=False/label=undetermined": 6,
+     "qrels_positive=True/label=supported": 18
+    },
+    "s20_recomputed_navigation_share": {
+     "edited_pages_cited": 133,
+     "edited_pages_opened": 190,
+     "follows": 76,
+     "follows_over_editor_added_edges": 39,
+     "pages_cited": 184,
+     "pages_opened": 267,
+     "share_edited_pages_cited": 0.7228260869565217,
+     "share_edited_pages_opened": 0.7116104868913857,
+     "share_follows_over_editor_added_edges": 0.5131578947368421,
+     "traces": 111
+    },
+    "success_qualified_landing_mean_common105": 0.17142857142857143,
+    "witness_legacy": {
+     "added": 39,
+     "follows": 76,
+     "landing_mean_common105": 0.17142857142857143,
+     "landing_traces": 105
+    }
+   },
+   "O": {
+    "attempted_equals_legacy_count": true,
+    "audit_accepted_added": 0,
+    "audit_accepted_edge_classes": {
+     "mapped_baseline": 67
+    },
+    "audit_attempted_added_by_historical_class": 0,
+    "audit_attempted_follows": 67,
+    "audit_by_status": {
+     "accepted": 67
+    },
+    "audit_rejected_errors": {},
+    "historical_recorded": {
+     "added": 0,
+     "follows": 67,
+     "landing_mean_common105": 0.11428571428571428
+    },
+    "legacy_reproduced": true,
+    "legacy_vs_page_byte_label_on_accepted_follows": {
+     "qrels_positive=False/label=not_supported": 52,
+     "qrels_positive=False/label=undetermined": 2,
+     "qrels_positive=True/label=supported": 13
+    },
+    "s20_recomputed_navigation_share": {
+     "edited_pages_cited": 0,
+     "edited_pages_opened": 0,
+     "follows": 67,
+     "follows_over_editor_added_edges": 0,
+     "pages_cited": 173,
+     "pages_opened": 255,
+     "share_edited_pages_cited": 0.0,
+     "share_edited_pages_opened": 0.0,
+     "share_follows_over_editor_added_edges": 0.0,
+     "traces": 111
+    },
+    "success_qualified_landing_mean_common105": 0.11428571428571428,
+    "witness_legacy": {
+     "added": 0,
+     "follows": 67,
+     "landing_mean_common105": 0.11428571428571428,
+     "landing_traces": 105
+    }
+   },
+   "R0": {
+    "attempted_equals_legacy_count": true,
+    "audit_accepted_added": 20,
+    "audit_accepted_edge_classes": {
+     "added": 20,
+     "mapped_baseline": 47
+    },
+    "audit_attempted_added_by_historical_class": 20,
+    "audit_attempted_follows": 68,
+    "audit_by_status": {
+     "accepted": 67,
+     "rejected": 1
+    },
+    "audit_rejected_errors": {
+     "link-not-offered-by-read-page": 1
+    },
+    "historical_recorded": {
+     "added": 20,
+     "follows": 68,
+     "landing_mean_common105": 0.12380952380952381
+    },
+    "legacy_reproduced": true,
+    "legacy_vs_page_byte_label_on_accepted_follows": {
+     "qrels_positive=False/label=not_supported": 53,
+     "qrels_positive=True/label=supported": 14
+    },
+    "s20_recomputed_navigation_share": {
+     "edited_pages_cited": 154,
+     "edited_pages_opened": 217,
+     "follows": 68,
+     "follows_over_editor_added_edges": 20,
+     "pages_cited": 174,
+     "pages_opened": 247,
+     "share_edited_pages_cited": 0.8850574712643678,
+     "share_edited_pages_opened": 0.8785425101214575,
+     "share_follows_over_editor_added_edges": 0.29411764705882354,
+     "traces": 111
+    },
+    "success_qualified_landing_mean_common105": 0.12380952380952381,
+    "witness_legacy": {
+     "added": 20,
+     "follows": 68,
+     "landing_mean_common105": 0.12380952380952381,
+     "landing_traces": 105
+    }
+   },
+   "S": {
+    "attempted_equals_legacy_count": true,
+    "audit_accepted_added": 0,
+    "audit_accepted_edge_classes": {
+     "mapped_baseline": 52
+    },
+    "audit_attempted_added_by_historical_class": 0,
+    "audit_attempted_follows": 52,
+    "audit_by_status": {
+     "accepted": 52
+    },
+    "audit_rejected_errors": {},
+    "historical_recorded": {
+     "added": 0,
+     "follows": 52,
+     "landing_mean_common105": 0.09523809523809523
+    },
+    "legacy_reproduced": true,
+    "legacy_vs_page_byte_label_on_accepted_follows": {
+     "qrels_positive=False/label=not_supported": 40,
+     "qrels_positive=False/label=undetermined": 1,
+     "qrels_positive=True/label=supported": 11
+    },
+    "s20_recomputed_navigation_share": {
+     "edited_pages_cited": 0,
+     "edited_pages_opened": 0,
+     "follows": 52,
+     "follows_over_editor_added_edges": 0,
+     "pages_cited": 170,
+     "pages_opened": 233,
+     "share_edited_pages_cited": 0.0,
+     "share_edited_pages_opened": 0.0,
+     "share_follows_over_editor_added_edges": 0.0,
+     "traces": 111
+    },
+    "success_qualified_landing_mean_common105": 0.09523809523809523,
+    "witness_legacy": {
+     "added": 0,
+     "follows": 52,
+     "landing_mean_common105": 0.09523809523809523,
+     "landing_traces": 105
+    }
+   }
+  },
+  "s20_evidence_reproduced": true,
+  "s20_recomputed_sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+ },
+ "schema_version": "docspectra.icsc.lt_trace_audit_24.v1",
+ "scope": "retrospective process audit of saved Sprint 19 traces; descriptive; no causal, reliance or benefit claim; repeated observations within a question are not independent replications",
+ "tables_all111": {
+  "t1/LT/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 86,
+    "read:accepted": 215,
+    "search:accepted": 30
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 11,
+    "first_page_text_exposure=True": 33,
+    "first_returned_lines=True": 44,
+    "label=not_applicable": 44,
+    "n": 44,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 42,
+    "returned_lines_in_final_context=all": 44
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 54,
+    "added_edge_first_exposure_mixed": 6,
+    "cited_lines_returned=True": 357,
+    "final_context=full": 357,
+    "first_exposure=follow_only": 108,
+    "first_exposure=mixed": 16,
+    "first_exposure=read_only": 233,
+    "n": 357,
+    "page_first_route=follow": 164,
+    "page_first_route=read": 193,
+    "page_listed_by_search=False": 113,
+    "page_listed_by_search=True": 244,
+    "page_reached_by_follow=False": 193,
+    "page_reached_by_follow=True": 164,
+    "page_reached_by_read=False": 52,
+    "page_reached_by_read=True": 305,
+    "t1_rubric_page_by_id=False": 194,
+    "t1_rubric_page_by_id=True": 163
+   },
+   "follow_accepted": {
+    "edge_class=added": 44,
+    "edge_class=mapped_baseline": 42,
+    "edge_in_menu=True": 86,
+    "file_identity=True": 86,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 67,
+    "first_returned_lines=True": 86,
+    "label=not_applicable": 86,
+    "listed_by_prior_search=False": 67,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 86,
+    "n": 86,
+    "new_page_incident=False": 44,
+    "new_page_incident=True": 42,
+    "recorded_newly_observed_agrees=True": 86,
+    "returned_lines_in_final_context=all": 86,
+    "source_opened_before=True": 86,
+    "text_identity=True": 86
+   },
+   "opportunity": {
+    "decisions": 86
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 513,
+    "menu_added_share_x1e6": 40315934,
+    "menu_edges": 966,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.5116279069767442,
+    "follow_decisions_with_menu": 86,
+    "mean_menu_added_share": 0.4687899302325581,
+    "pooled_menu_added_share": 0.531055900621118
+   },
+   "traces": {
+    "compacted": 18,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 29,
+    "zero_follow=True": 1
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 30,
+    "first_follow_edge_class=mapped_baseline": 25,
+    "label=not_applicable": 55,
+    "pairs": 55
+   }
+  },
+  "t1/LT/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 232,
+    "read:rejected": 7,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 276,
+    "final_context=full": 276,
+    "first_exposure=read_only": 276,
+    "n": 276,
+    "page_first_route=read": 276,
+    "page_listed_by_search=True": 276,
+    "page_reached_by_follow=False": 276,
+    "page_reached_by_read=True": 276,
+    "t1_rubric_page_by_id=False": 131,
+    "t1_rubric_page_by_id=True": 145
+   },
+   "traces": {
+    "compacted": 9,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/LT/s6-follow": {
+   "actions": {
+    "answer:accepted": 29,
+    "answer:rejected": 2,
+    "follow:accepted": 66,
+    "read:accepted": 216,
+    "read:rejected": 4,
+    "search:accepted": 91
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 7,
+    "first_page_text_exposure=True": 29,
+    "first_returned_lines=True": 36,
+    "label=not_applicable": 36,
+    "n": 36,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 34,
+    "returned_lines_in_final_context=all": 36
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 37,
+    "added_edge_first_exposure_mixed": 2,
+    "cited_lines_returned=True": 332,
+    "final_context=full": 332,
+    "first_exposure=follow_only": 72,
+    "first_exposure=mixed": 11,
+    "first_exposure=read_only": 249,
+    "n": 332,
+    "page_first_route=follow": 106,
+    "page_first_route=read": 226,
+    "page_listed_by_search=False": 56,
+    "page_listed_by_search=True": 276,
+    "page_reached_by_follow=False": 226,
+    "page_reached_by_follow=True": 106,
+    "page_reached_by_read=False": 42,
+    "page_reached_by_read=True": 290,
+    "t1_rubric_page_by_id=False": 169,
+    "t1_rubric_page_by_id=True": 163
+   },
+   "follow_accepted": {
+    "edge_class=added": 36,
+    "edge_class=mapped_baseline": 30,
+    "edge_in_menu=True": 66,
+    "file_identity=True": 66,
+    "first_page_text_exposure=False": 17,
+    "first_page_text_exposure=True": 49,
+    "first_returned_lines=True": 66,
+    "label=not_applicable": 66,
+    "listed_by_prior_search=False": 49,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 66,
+    "n": 66,
+    "new_page_incident=False": 32,
+    "new_page_incident=True": 34,
+    "recorded_newly_observed_agrees=True": 66,
+    "returned_lines_in_final_context=all": 66,
+    "source_opened_before=True": 66,
+    "text_identity=True": 66
+   },
+   "opportunity": {
+    "decisions": 66
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 403,
+    "menu_added_share_x1e6": 29351390,
+    "menu_edges": 836,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.5454545454545454,
+    "follow_decisions_with_menu": 66,
+    "mean_menu_added_share": 0.44471803030303025,
+    "pooled_menu_added_share": 0.4820574162679426
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=no_answer": 1,
+    "final_context=verified": 29,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 29,
+    "terminal=invalid_action_limit": 1,
+    "zero_follow=False": 23,
+    "zero_follow=True": 7
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 26,
+    "first_follow_edge_class=mapped_baseline": 20,
+    "label=not_applicable": 46,
+    "pairs": 46
+   }
+  },
+  "t1/LT/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 259,
+    "read:rejected": 2,
+    "search:accepted": 121
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 358,
+    "final_context=full": 358,
+    "first_exposure=read_only": 358,
+    "n": 358,
+    "page_first_route=read": 358,
+    "page_listed_by_search=True": 358,
+    "page_reached_by_follow=False": 358,
+    "page_reached_by_read=True": 358,
+    "t1_rubric_page_by_id=False": 177,
+    "t1_rubric_page_by_id=True": 181
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/O/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 70,
+    "follow:rejected": 2,
+    "read:accepted": 235,
+    "read:rejected": 3,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 338,
+    "final_context=full": 338,
+    "first_exposure=follow_only": 85,
+    "first_exposure=mixed": 17,
+    "first_exposure=read_only": 236,
+    "n": 338,
+    "page_first_route=follow": 142,
+    "page_first_route=read": 196,
+    "page_listed_by_search=False": 89,
+    "page_listed_by_search=True": 249,
+    "page_reached_by_follow=False": 196,
+    "page_reached_by_follow=True": 142,
+    "page_reached_by_read=False": 46,
+    "page_reached_by_read=True": 292,
+    "t1_rubric_page_by_id=False": 146,
+    "t1_rubric_page_by_id=True": 192
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 70,
+    "edge_in_menu=True": 70,
+    "file_identity=True": 70,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 51,
+    "first_returned_lines=True": 70,
+    "label=not_applicable": 70,
+    "listed_by_prior_search=False": 51,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 70,
+    "n": 70,
+    "new_page_incident=False": 70,
+    "recorded_newly_observed_agrees=True": 70,
+    "returned_lines_in_final_context=all": 70,
+    "source_opened_before=True": 70,
+    "text_identity=True": 70
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 70
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 760,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 70,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 22,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 27,
+    "zero_follow=True": 3
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 46,
+    "label=not_applicable": 46,
+    "pairs": 46
+   }
+  },
+  "t1/O/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "note:rejected": 1,
+    "read:accepted": 292,
+    "read:rejected": 8,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 301,
+    "final_context=full": 301,
+    "first_exposure=read_only": 301,
+    "n": 301,
+    "page_first_route=read": 301,
+    "page_listed_by_search=True": 301,
+    "page_reached_by_follow=False": 301,
+    "page_reached_by_read=True": 301,
+    "t1_rubric_page_by_id=False": 96,
+    "t1_rubric_page_by_id=True": 205
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/O/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 50,
+    "follow:rejected": 2,
+    "note:rejected": 1,
+    "read:accepted": 225,
+    "read:rejected": 1,
+    "search:accepted": 75
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 336,
+    "final_context=full": 336,
+    "first_exposure=follow_only": 65,
+    "first_exposure=mixed": 10,
+    "first_exposure=read_only": 261,
+    "n": 336,
+    "page_first_route=follow": 94,
+    "page_first_route=read": 242,
+    "page_listed_by_search=False": 56,
+    "page_listed_by_search=True": 280,
+    "page_reached_by_follow=False": 242,
+    "page_reached_by_follow=True": 94,
+    "page_reached_by_read=False": 36,
+    "page_reached_by_read=True": 300,
+    "t1_rubric_page_by_id=False": 109,
+    "t1_rubric_page_by_id=True": 227
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 50,
+    "edge_in_menu=True": 50,
+    "file_identity=True": 50,
+    "first_page_text_exposure=False": 17,
+    "first_page_text_exposure=True": 33,
+    "first_returned_lines=True": 50,
+    "label=not_applicable": 50,
+    "listed_by_prior_search=False": 33,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 50,
+    "n": 50,
+    "new_page_incident=False": 50,
+    "recorded_newly_observed_agrees=True": 50,
+    "returned_lines_in_final_context=all": 50,
+    "source_opened_before=True": 50,
+    "text_identity=True": 50
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 50
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 536,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 50,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 21,
+    "zero_follow=True": 9
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 34,
+    "label=not_applicable": 34,
+    "pairs": 34
+   }
+  },
+  "t1/O/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 273,
+    "read:rejected": 5,
+    "search:accepted": 119
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 346,
+    "final_context=full": 346,
+    "first_exposure=read_only": 346,
+    "n": 346,
+    "page_first_route=read": 346,
+    "page_listed_by_search=True": 346,
+    "page_reached_by_follow=False": 346,
+    "page_reached_by_read=True": 346,
+    "t1_rubric_page_by_id=False": 131,
+    "t1_rubric_page_by_id=True": 215
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/R0/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 88,
+    "follow:rejected": 2,
+    "read:accepted": 210,
+    "read:rejected": 2,
+    "search:accepted": 30
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 13,
+    "first_page_text_exposure=True": 16,
+    "first_returned_lines=True": 29,
+    "label=not_applicable": 29,
+    "n": 29,
+    "new_page_incident=False": 25,
+    "new_page_incident=True": 4,
+    "returned_lines_in_final_context=all": 29
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 38,
+    "added_edge_first_exposure_mixed": 5,
+    "cited_lines_returned=True": 355,
+    "final_context=full": 355,
+    "first_exposure=follow_only": 108,
+    "first_exposure=mixed": 19,
+    "first_exposure=read_only": 228,
+    "n": 355,
+    "page_first_route=follow": 186,
+    "page_first_route=read": 169,
+    "page_listed_by_search=False": 115,
+    "page_listed_by_search=True": 240,
+    "page_reached_by_follow=False": 169,
+    "page_reached_by_follow=True": 186,
+    "page_reached_by_read=False": 51,
+    "page_reached_by_read=True": 304,
+    "t1_rubric_page_by_id=False": 132,
+    "t1_rubric_page_by_id=True": 223
+   },
+   "follow_accepted": {
+    "edge_class=added": 29,
+    "edge_class=mapped_baseline": 59,
+    "edge_in_menu=True": 88,
+    "file_identity=True": 88,
+    "first_page_text_exposure=False": 31,
+    "first_page_text_exposure=True": 57,
+    "first_returned_lines=True": 88,
+    "label=not_applicable": 88,
+    "listed_by_prior_search=False": 57,
+    "listed_by_prior_search=True": 31,
+    "menu_status=reconstructed": 88,
+    "n": 88,
+    "new_page_incident=False": 84,
+    "new_page_incident=True": 4,
+    "recorded_newly_observed_agrees=True": 88,
+    "returned_lines_in_final_context=all": 88,
+    "source_opened_before=True": 88,
+    "text_identity=True": 88
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 88
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 331,
+    "menu_added_share_x1e6": 26240788,
+    "menu_edges": 1240,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.32954545454545453,
+    "follow_decisions_with_menu": 88,
+    "mean_menu_added_share": 0.29819077272727273,
+    "pooled_menu_added_share": 0.2669354838709677
+   },
+   "traces": {
+    "compacted": 21,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 30
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 18,
+    "first_follow_edge_class=mapped_baseline": 36,
+    "label=not_applicable": 54,
+    "pairs": 54
+   }
+  },
+  "t1/R0/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "note:accepted": 1,
+    "read:accepted": 272,
+    "read:rejected": 13,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 306,
+    "final_context=full": 306,
+    "first_exposure=read_only": 306,
+    "n": 306,
+    "page_first_route=read": 306,
+    "page_listed_by_search=True": 306,
+    "page_reached_by_follow=False": 306,
+    "page_reached_by_read=True": 306,
+    "t1_rubric_page_by_id=False": 91,
+    "t1_rubric_page_by_id=True": 215
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 5,
+    "first_exposure=read_only": 5,
+    "n": 5,
+    "page_first_route=read": 5,
+    "page_listed_by_search=True": 5,
+    "page_reached_by_follow=False": 5,
+    "page_reached_by_read=True": 5
+   },
+   "traces": {
+    "compacted": 13,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/R0/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 64,
+    "read:accepted": 223,
+    "search:accepted": 61
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 11,
+    "first_page_text_exposure=True": 8,
+    "first_returned_lines=False": 1,
+    "first_returned_lines=True": 18,
+    "label=not_applicable": 19,
+    "n": 19,
+    "new_page_incident=False": 17,
+    "new_page_incident=True": 2,
+    "returned_lines_in_final_context=all": 19
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 25,
+    "added_edge_first_exposure_mixed": 6,
+    "cited_lines_returned=True": 352,
+    "final_context=full": 352,
+    "first_exposure=follow_only": 84,
+    "first_exposure=mixed": 18,
+    "first_exposure=read_only": 250,
+    "n": 352,
+    "page_first_route=follow": 141,
+    "page_first_route=read": 211,
+    "page_listed_by_search=False": 79,
+    "page_listed_by_search=True": 273,
+    "page_reached_by_follow=False": 204,
+    "page_reached_by_follow=True": 148,
+    "page_reached_by_read=False": 39,
+    "page_reached_by_read=True": 313,
+    "t1_rubric_page_by_id=False": 135,
+    "t1_rubric_page_by_id=True": 217
+   },
+   "follow_accepted": {
+    "edge_class=added": 19,
+    "edge_class=mapped_baseline": 45,
+    "edge_in_menu=True": 64,
+    "file_identity=True": 64,
+    "first_page_text_exposure=False": 26,
+    "first_page_text_exposure=True": 38,
+    "first_returned_lines=False": 2,
+    "first_returned_lines=True": 62,
+    "label=not_applicable": 64,
+    "listed_by_prior_search=False": 38,
+    "listed_by_prior_search=True": 26,
+    "menu_status=reconstructed": 64,
+    "n": 64,
+    "new_page_incident=False": 62,
+    "new_page_incident=True": 2,
+    "recorded_newly_observed_agrees=True": 64,
+    "returned_lines_in_final_context=all": 64,
+    "source_opened_before=True": 64,
+    "text_identity=True": 64
+   },
+   "opportunity": {
+    "decisions": 64
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 146,
+    "menu_added_share_x1e6": 15597637,
+    "menu_edges": 818,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.296875,
+    "follow_decisions_with_menu": 64,
+    "mean_menu_added_share": 0.243713078125,
+    "pooled_menu_added_share": 0.1784841075794621
+   },
+   "traces": {
+    "compacted": 21,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 26,
+    "zero_follow=True": 4
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 13,
+    "first_follow_edge_class=mapped_baseline": 29,
+    "label=not_applicable": 42,
+    "pairs": 42
+   }
+  },
+  "t1/R0/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 2,
+    "read:accepted": 286,
+    "read:rejected": 7,
+    "search:accepted": 110
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 325,
+    "final_context=full": 325,
+    "first_exposure=read_only": 325,
+    "n": 325,
+    "page_first_route=read": 325,
+    "page_listed_by_search=True": 325,
+    "page_reached_by_follow=False": 325,
+    "page_reached_by_read=True": 325,
+    "t1_rubric_page_by_id=False": 123,
+    "t1_rubric_page_by_id=True": 202
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/S/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 63,
+    "follow:rejected": 1,
+    "read:accepted": 227,
+    "read:rejected": 1,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 349,
+    "final_context=full": 349,
+    "first_exposure=follow_only": 74,
+    "first_exposure=mixed": 12,
+    "first_exposure=read_only": 263,
+    "n": 349,
+    "page_first_route=follow": 119,
+    "page_first_route=read": 230,
+    "page_listed_by_search=False": 79,
+    "page_listed_by_search=True": 270,
+    "page_reached_by_follow=False": 230,
+    "page_reached_by_follow=True": 119,
+    "page_reached_by_read=False": 47,
+    "page_reached_by_read=True": 302,
+    "t1_rubric_page_by_id=False": 141,
+    "t1_rubric_page_by_id=True": 208
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 63,
+    "edge_in_menu=True": 63,
+    "file_identity=True": 63,
+    "first_page_text_exposure=False": 16,
+    "first_page_text_exposure=True": 47,
+    "first_returned_lines=True": 63,
+    "label=not_applicable": 63,
+    "listed_by_prior_search=False": 47,
+    "listed_by_prior_search=True": 16,
+    "menu_status=reconstructed": 63,
+    "n": 63,
+    "new_page_incident=False": 63,
+    "recorded_newly_observed_agrees=True": 63,
+    "returned_lines_in_final_context=all": 63,
+    "source_opened_before=True": 63,
+    "text_identity=True": 63
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 63
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 696,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 63,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 18,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 26,
+    "zero_follow=True": 4
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 42,
+    "label=not_applicable": 42,
+    "pairs": 42
+   }
+  },
+  "t1/S/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "note:accepted": 1,
+    "read:accepted": 270,
+    "read:rejected": 6,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 297,
+    "final_context=full": 297,
+    "first_exposure=read_only": 297,
+    "n": 297,
+    "page_first_route=read": 297,
+    "page_listed_by_search=True": 297,
+    "page_reached_by_follow=False": 297,
+    "page_reached_by_read=True": 297,
+    "t1_rubric_page_by_id=False": 96,
+    "t1_rubric_page_by_id=True": 201
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 4,
+    "first_exposure=read_only": 4,
+    "n": 4,
+    "page_first_route=read": 4,
+    "page_listed_by_search=True": 4,
+    "page_reached_by_follow=False": 4,
+    "page_reached_by_read=True": 4
+   },
+   "traces": {
+    "compacted": 13,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/S/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 52,
+    "follow:rejected": 1,
+    "read:accepted": 224,
+    "read:rejected": 1,
+    "search:accepted": 83
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 343,
+    "final_context=full": 343,
+    "first_exposure=follow_only": 69,
+    "first_exposure=mixed": 12,
+    "first_exposure=read_only": 262,
+    "n": 343,
+    "page_first_route=follow": 103,
+    "page_first_route=read": 240,
+    "page_listed_by_search=False": 57,
+    "page_listed_by_search=True": 286,
+    "page_reached_by_follow=False": 240,
+    "page_reached_by_follow=True": 103,
+    "page_reached_by_read=False": 33,
+    "page_reached_by_read=True": 310,
+    "t1_rubric_page_by_id=False": 122,
+    "t1_rubric_page_by_id=True": 221
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 52,
+    "edge_in_menu=True": 52,
+    "file_identity=True": 52,
+    "first_page_text_exposure=False": 18,
+    "first_page_text_exposure=True": 34,
+    "first_returned_lines=False": 1,
+    "first_returned_lines=True": 51,
+    "label=not_applicable": 52,
+    "listed_by_prior_search=False": 35,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 52,
+    "n": 52,
+    "new_page_incident=False": 52,
+    "recorded_newly_observed_agrees=True": 52,
+    "returned_lines_in_final_context=all": 52,
+    "source_opened_before=True": 52,
+    "text_identity=True": 52
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 52
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 473,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 52,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 20,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 20,
+    "zero_follow=True": 10
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 29,
+    "label=not_applicable": 29,
+    "pairs": 29
+   }
+  },
+  "t1/S/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 265,
+    "read:rejected": 2,
+    "search:accepted": 102
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 347,
+    "final_context=full": 347,
+    "first_exposure=read_only": 347,
+    "n": 347,
+    "page_first_route=read": 347,
+    "page_listed_by_search=True": 347,
+    "page_reached_by_follow=False": 347,
+    "page_reached_by_read=True": 347,
+    "t1_rubric_page_by_id=False": 119,
+    "t1_rubric_page_by_id=True": 228
+   },
+   "traces": {
+    "compacted": 16,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t2/LT/s1-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "follow:accepted": 76,
+    "read:accepted": 318,
+    "read:rejected": 1,
+    "search:accepted": 111
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 10,
+    "first_page_text_exposure=True": 29,
+    "first_returned_lines=True": 39,
+    "label=not_supported": 24,
+    "label=supported": 11,
+    "label=undetermined": 4,
+    "n": 39,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 37,
+    "returned_lines_in_final_context=all": 39,
+    "span_exposure_this_call=full": 8,
+    "span_exposure_this_call=none": 3,
+    "span_exposure_this_call=not_applicable": 28
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 33,
+    "added_edge_first_exposure_mixed": 3,
+    "cited_lines_returned=True": 330,
+    "final_context=full": 330,
+    "first_exposure=follow_only": 49,
+    "first_exposure=mixed": 5,
+    "first_exposure=read_only": 276,
+    "label=not_supported": 117,
+    "label=supported": 203,
+    "label=undetermined": 10,
+    "n": 330,
+    "page_first_route=follow": 66,
+    "page_first_route=read": 264,
+    "page_listed_by_search=False": 42,
+    "page_listed_by_search=True": 288,
+    "page_reached_by_follow=False": 264,
+    "page_reached_by_follow=True": 66,
+    "page_reached_by_read=False": 40,
+    "page_reached_by_read=True": 290,
+    "span_overlap_cited=full": 95,
+    "span_overlap_cited=none": 108
+   },
+   "follow_accepted": {
+    "edge_class=added": 39,
+    "edge_class=mapped_baseline": 37,
+    "edge_in_menu=True": 76,
+    "file_identity=True": 76,
+    "first_page_text_exposure=False": 20,
+    "first_page_text_exposure=True": 56,
+    "first_returned_lines=True": 76,
+    "label=not_supported": 52,
+    "label=supported": 18,
+    "label=undetermined": 6,
+    "legacy_qrels_positive=False": 58,
+    "legacy_qrels_positive=True": 18,
+    "listed_by_prior_search=False": 56,
+    "listed_by_prior_search=True": 20,
+    "menu_status=reconstructed": 76,
+    "n": 76,
+    "new_page_incident=False": 39,
+    "new_page_incident=True": 37,
+    "recorded_newly_observed_agrees=True": 76,
+    "returned_lines_in_final_context=all": 76,
+    "source_opened_before=True": 76,
+    "span_exposure_final_context=full": 17,
+    "span_exposure_final_context=none": 1,
+    "span_exposure_new_lines=full": 13,
+    "span_exposure_new_lines=none": 5,
+    "span_exposure_this_call=full": 13,
+    "span_exposure_this_call=none": 5,
+    "span_exposure_this_call=not_applicable": 58,
+    "text_identity=True": 76
+   },
+   "opportunity": {
+    "decisions": 76
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 358,
+    "menu_added_share_x1e6": 33680311,
+    "menu_edges": 902,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.5131578947368421,
+    "follow_decisions_with_menu": 76,
+    "mean_menu_added_share": 0.4431619868421053,
+    "pooled_menu_added_share": 0.3968957871396896
+   },
+   "traces": {
+    "compacted": 5,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=False": 41,
+    "zero_follow=True": 70
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 39,
+    "first_follow_edge_class=mapped_baseline": 37,
+    "label=not_supported": 52,
+    "label=supported": 18,
+    "label=undetermined": 6,
+    "pairs": 76
+   }
+  },
+  "t2/LT/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "read:accepted": 345,
+    "read:rejected": 1,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 331,
+    "final_context=full": 331,
+    "first_exposure=read_only": 331,
+    "label=never_judged": 1,
+    "label=not_supported": 114,
+    "label=supported": 208,
+    "label=undetermined": 8,
+    "n": 331,
+    "page_first_route=read": 331,
+    "page_listed_by_search=True": 331,
+    "page_reached_by_follow=False": 331,
+    "page_reached_by_read=True": 331,
+    "span_overlap_cited=full": 90,
+    "span_overlap_cited=none": 118
+   },
+   "traces": {
+    "compacted": 0,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=True": 111
+   }
+  },
+  "t2/O/s1-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "follow:accepted": 67,
+    "note:accepted": 1,
+    "read:accepted": 361,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 349,
+    "final_context=full": 349,
+    "first_exposure=follow_only": 37,
+    "first_exposure=mixed": 4,
+    "first_exposure=read_only": 308,
+    "label=not_supported": 128,
+    "label=supported": 211,
+    "label=undetermined": 10,
+    "n": 349,
+    "page_first_route=follow": 61,
+    "page_first_route=read": 288,
+    "page_listed_by_search=False": 39,
+    "page_listed_by_search=True": 310,
+    "page_reached_by_follow=False": 288,
+    "page_reached_by_follow=True": 61,
+    "page_reached_by_read=False": 24,
+    "page_reached_by_read=True": 325,
+    "span_overlap_cited=full": 91,
+    "span_overlap_cited=none": 120
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 1,
+    "first_exposure=read_only": 1,
+    "label=not_supported": 1,
+    "n": 1,
+    "page_first_route=read": 1,
+    "page_listed_by_search=True": 1,
+    "page_reached_by_follow=False": 1,
+    "page_reached_by_read=True": 1
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 67,
+    "edge_in_menu=True": 67,
+    "file_identity=True": 67,
+    "first_page_text_exposure=False": 20,
+    "first_page_text_exposure=True": 47,
+    "first_returned_lines=True": 67,
+    "label=not_supported": 52,
+    "label=supported": 13,
+    "label=undetermined": 2,
+    "legacy_qrels_positive=False": 54,
+    "legacy_qrels_positive=True": 13,
+    "listed_by_prior_search=False": 47,
+    "listed_by_prior_search=True": 20,
+    "menu_status=reconstructed": 67,
+    "n": 67,
+    "new_page_incident=False": 67,
+    "recorded_newly_observed_agrees=True": 67,
+    "returned_lines_in_final_context=all": 67,
+    "source_opened_before=True": 67,
+    "span_exposure_final_context=full": 10,
+    "span_exposure_final_context=none": 3,
+    "span_exposure_new_lines=full": 7,
+    "span_exposure_new_lines=none": 6,
+    "span_exposure_this_call=full": 7,
+    "span_exposure_this_call=none": 6,
+    "span_exposure_this_call=not_applicable": 54,
+    "text_identity=True": 67
+   },
+   "opportunity": {
+    "decisions": 67
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 880,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 67,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 6,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=False": 40,
+    "zero_follow=True": 71
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 67,
+    "label=not_supported": 52,
+    "label=supported": 13,
+    "label=undetermined": 2,
+    "pairs": 67
+   }
+  },
+  "t2/O/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "note:accepted": 1,
+    "read:accepted": 345,
+    "read:rejected": 1,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 334,
+    "final_context=full": 334,
+    "first_exposure=read_only": 334,
+    "label=not_supported": 117,
+    "label=supported": 210,
+    "label=undetermined": 7,
+    "n": 334,
+    "page_first_route=read": 334,
+    "page_listed_by_search=True": 334,
+    "page_reached_by_follow=False": 334,
+    "page_reached_by_read=True": 334,
+    "span_overlap_cited=full": 93,
+    "span_overlap_cited=none": 117
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 2,
+    "first_exposure=read_only": 2,
+    "label=supported": 2,
+    "n": 2,
+    "page_first_route=read": 2,
+    "page_listed_by_search=True": 2,
+    "page_reached_by_follow=False": 2,
+    "page_reached_by_read=True": 2,
+    "span_overlap_cited=full": 2
+   },
+   "traces": {
+    "compacted": 0,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=True": 111
+   }
+  },
+  "t2/R0/s1-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "answer:rejected": 1,
+    "follow:accepted": 67,
+    "follow:rejected": 1,
+    "note:accepted": 1,
+    "read:accepted": 379,
+    "search:accepted": 111
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 7,
+    "first_page_text_exposure=True": 13,
+    "first_returned_lines=True": 20,
+    "label=not_supported": 16,
+    "label=supported": 4,
+    "n": 20,
+    "new_page_incident=False": 20,
+    "returned_lines_in_final_context=all": 20,
+    "span_exposure_this_call=full": 1,
+    "span_exposure_this_call=none": 3,
+    "span_exposure_this_call=not_applicable": 16
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 7,
+    "added_edge_first_exposure_mixed": 1,
+    "cited_lines_returned=True": 343,
+    "final_context=full": 343,
+    "first_exposure=follow_only": 27,
+    "first_exposure=mixed": 4,
+    "first_exposure=read_only": 312,
+    "label=not_supported": 156,
+    "label=supported": 180,
+    "label=undetermined": 7,
+    "n": 343,
+    "page_first_route=follow": 74,
+    "page_first_route=read": 269,
+    "page_listed_by_search=False": 27,
+    "page_listed_by_search=True": 316,
+    "page_reached_by_follow=False": 269,
+    "page_reached_by_follow=True": 74,
+    "page_reached_by_read=False": 13,
+    "page_reached_by_read=True": 330,
+    "span_overlap_cited=full": 80,
+    "span_overlap_cited=none": 100
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 4,
+    "first_exposure=read_only": 4,
+    "label=not_supported": 4,
+    "n": 4,
+    "page_first_route=read": 4,
+    "page_listed_by_search=True": 4,
+    "page_reached_by_follow=False": 4,
+    "page_reached_by_read=True": 4
+   },
+   "follow_accepted": {
+    "edge_class=added": 20,
+    "edge_class=mapped_baseline": 47,
+    "edge_in_menu=True": 67,
+    "file_identity=True": 67,
+    "first_page_text_exposure=False": 22,
+    "first_page_text_exposure=True": 45,
+    "first_returned_lines=True": 67,
+    "label=not_supported": 53,
+    "label=supported": 14,
+    "legacy_qrels_positive=False": 53,
+    "legacy_qrels_positive=True": 14,
+    "listed_by_prior_search=False": 45,
+    "listed_by_prior_search=True": 22,
+    "menu_status=reconstructed": 67,
+    "n": 67,
+    "new_page_incident=False": 67,
+    "recorded_newly_observed_agrees=True": 67,
+    "returned_lines_in_final_context=all": 67,
+    "source_opened_before=True": 67,
+    "span_exposure_final_context=full": 6,
+    "span_exposure_final_context=none": 8,
+    "span_exposure_new_lines=full": 4,
+    "span_exposure_new_lines=none": 10,
+    "span_exposure_this_call=full": 4,
+    "span_exposure_this_call=none": 10,
+    "span_exposure_this_call=not_applicable": 53,
+    "text_identity=True": 67
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 67
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 310,
+    "menu_added_share_x1e6": 20320543,
+    "menu_edges": 903,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.29850746268656714,
+    "follow_decisions_with_menu": 67,
+    "mean_menu_added_share": 0.3032916865671642,
+    "pooled_menu_added_share": 0.3433001107419712
+   },
+   "traces": {
+    "compacted": 9,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=False": 38,
+    "zero_follow=True": 73
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 20,
+    "first_follow_edge_class=mapped_baseline": 47,
+    "label=not_supported": 53,
+    "label=supported": 14,
+    "pairs": 67
+   }
+  },
+  "t2/R0/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "answer:rejected": 2,
+    "read:accepted": 372,
+    "read:rejected": 1,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 338,
+    "final_context=full": 338,
+    "first_exposure=read_only": 338,
+    "label=not_supported": 123,
+    "label=supported": 206,
+    "label=undetermined": 9,
+    "n": 338,
+    "page_first_route=read": 338,
+    "page_listed_by_search=True": 338,
+    "page_reached_by_follow=False": 338,
+    "page_reached_by_read=True": 338,
+    "span_overlap_cited=full": 88,
+    "span_overlap_cited=none": 118
+   },
+   "traces": {
+    "compacted": 3,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=True": 111
+   }
+  },
+  "t2/S/s1-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "follow:accepted": 52,
+    "note:accepted": 1,
+    "read:accepted": 340,
+    "read:rejected": 1,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 321,
+    "final_context=full": 321,
+    "first_exposure=follow_only": 28,
+    "first_exposure=mixed": 5,
+    "first_exposure=read_only": 288,
+    "label=not_supported": 117,
+    "label=supported": 199,
+    "label=undetermined": 5,
+    "n": 321,
+    "page_first_route=follow": 49,
+    "page_first_route=read": 272,
+    "page_listed_by_search=False": 22,
+    "page_listed_by_search=True": 299,
+    "page_reached_by_follow=False": 272,
+    "page_reached_by_follow=True": 49,
+    "page_reached_by_read=False": 17,
+    "page_reached_by_read=True": 304,
+    "span_overlap_cited=full": 91,
+    "span_overlap_cited=none": 108
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 1,
+    "first_exposure=read_only": 1,
+    "label=not_supported": 1,
+    "n": 1,
+    "page_first_route=read": 1,
+    "page_listed_by_search=True": 1,
+    "page_reached_by_follow=False": 1,
+    "page_reached_by_read=True": 1
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 52,
+    "edge_in_menu=True": 52,
+    "file_identity=True": 52,
+    "first_page_text_exposure=False": 18,
+    "first_page_text_exposure=True": 34,
+    "first_returned_lines=True": 52,
+    "label=not_supported": 40,
+    "label=supported": 11,
+    "label=undetermined": 1,
+    "legacy_qrels_positive=False": 41,
+    "legacy_qrels_positive=True": 11,
+    "listed_by_prior_search=False": 34,
+    "listed_by_prior_search=True": 18,
+    "menu_status=reconstructed": 52,
+    "n": 52,
+    "new_page_incident=False": 52,
+    "recorded_newly_observed_agrees=True": 52,
+    "returned_lines_in_final_context=all": 52,
+    "source_opened_before=True": 52,
+    "span_exposure_final_context=full": 9,
+    "span_exposure_final_context=none": 2,
+    "span_exposure_new_lines=full": 6,
+    "span_exposure_new_lines=none": 5,
+    "span_exposure_this_call=full": 6,
+    "span_exposure_this_call=none": 5,
+    "span_exposure_this_call=not_applicable": 41,
+    "text_identity=True": 52
+   },
+   "opportunity": {
+    "decisions": 52
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 519,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 52,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 4,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=False": 37,
+    "zero_follow=True": 74
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 52,
+    "label=not_supported": 40,
+    "label=supported": 11,
+    "label=undetermined": 1,
+    "pairs": 52
+   }
+  },
+  "t2/S/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 111,
+    "read:accepted": 371,
+    "read:rejected": 2,
+    "search:accepted": 111
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 338,
+    "final_context=full": 338,
+    "first_exposure=read_only": 338,
+    "label=never_judged": 2,
+    "label=not_supported": 127,
+    "label=supported": 204,
+    "label=undetermined": 5,
+    "n": 338,
+    "page_first_route=read": 338,
+    "page_listed_by_search=True": 338,
+    "page_reached_by_follow=False": 338,
+    "page_reached_by_read=True": 338,
+    "span_overlap_cited=full": 87,
+    "span_overlap_cited=none": 117
+   },
+   "traces": {
+    "compacted": 1,
+    "final_context=verified": 111,
+    "identity_ok=True": 111,
+    "planned": 111,
+    "replay=verified": 111,
+    "terminal=answer": 111,
+    "zero_follow=True": 111
+   }
+  }
+ },
+ "tables_common105": {
+  "t1/LT/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 86,
+    "read:accepted": 215,
+    "search:accepted": 30
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 11,
+    "first_page_text_exposure=True": 33,
+    "first_returned_lines=True": 44,
+    "label=not_applicable": 44,
+    "n": 44,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 42,
+    "returned_lines_in_final_context=all": 44
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 54,
+    "added_edge_first_exposure_mixed": 6,
+    "cited_lines_returned=True": 357,
+    "final_context=full": 357,
+    "first_exposure=follow_only": 108,
+    "first_exposure=mixed": 16,
+    "first_exposure=read_only": 233,
+    "n": 357,
+    "page_first_route=follow": 164,
+    "page_first_route=read": 193,
+    "page_listed_by_search=False": 113,
+    "page_listed_by_search=True": 244,
+    "page_reached_by_follow=False": 193,
+    "page_reached_by_follow=True": 164,
+    "page_reached_by_read=False": 52,
+    "page_reached_by_read=True": 305,
+    "t1_rubric_page_by_id=False": 194,
+    "t1_rubric_page_by_id=True": 163
+   },
+   "follow_accepted": {
+    "edge_class=added": 44,
+    "edge_class=mapped_baseline": 42,
+    "edge_in_menu=True": 86,
+    "file_identity=True": 86,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 67,
+    "first_returned_lines=True": 86,
+    "label=not_applicable": 86,
+    "listed_by_prior_search=False": 67,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 86,
+    "n": 86,
+    "new_page_incident=False": 44,
+    "new_page_incident=True": 42,
+    "recorded_newly_observed_agrees=True": 86,
+    "returned_lines_in_final_context=all": 86,
+    "source_opened_before=True": 86,
+    "text_identity=True": 86
+   },
+   "opportunity": {
+    "decisions": 86
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 513,
+    "menu_added_share_x1e6": 40315934,
+    "menu_edges": 966,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.5116279069767442,
+    "follow_decisions_with_menu": 86,
+    "mean_menu_added_share": 0.4687899302325581,
+    "pooled_menu_added_share": 0.531055900621118
+   },
+   "traces": {
+    "compacted": 18,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 29,
+    "zero_follow=True": 1
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 30,
+    "first_follow_edge_class=mapped_baseline": 25,
+    "label=not_applicable": 55,
+    "pairs": 55
+   }
+  },
+  "t1/LT/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 232,
+    "read:rejected": 7,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 276,
+    "final_context=full": 276,
+    "first_exposure=read_only": 276,
+    "n": 276,
+    "page_first_route=read": 276,
+    "page_listed_by_search=True": 276,
+    "page_reached_by_follow=False": 276,
+    "page_reached_by_read=True": 276,
+    "t1_rubric_page_by_id=False": 131,
+    "t1_rubric_page_by_id=True": 145
+   },
+   "traces": {
+    "compacted": 9,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/LT/s6-follow": {
+   "actions": {
+    "answer:accepted": 29,
+    "answer:rejected": 2,
+    "follow:accepted": 66,
+    "read:accepted": 216,
+    "read:rejected": 4,
+    "search:accepted": 91
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 7,
+    "first_page_text_exposure=True": 29,
+    "first_returned_lines=True": 36,
+    "label=not_applicable": 36,
+    "n": 36,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 34,
+    "returned_lines_in_final_context=all": 36
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 37,
+    "added_edge_first_exposure_mixed": 2,
+    "cited_lines_returned=True": 332,
+    "final_context=full": 332,
+    "first_exposure=follow_only": 72,
+    "first_exposure=mixed": 11,
+    "first_exposure=read_only": 249,
+    "n": 332,
+    "page_first_route=follow": 106,
+    "page_first_route=read": 226,
+    "page_listed_by_search=False": 56,
+    "page_listed_by_search=True": 276,
+    "page_reached_by_follow=False": 226,
+    "page_reached_by_follow=True": 106,
+    "page_reached_by_read=False": 42,
+    "page_reached_by_read=True": 290,
+    "t1_rubric_page_by_id=False": 169,
+    "t1_rubric_page_by_id=True": 163
+   },
+   "follow_accepted": {
+    "edge_class=added": 36,
+    "edge_class=mapped_baseline": 30,
+    "edge_in_menu=True": 66,
+    "file_identity=True": 66,
+    "first_page_text_exposure=False": 17,
+    "first_page_text_exposure=True": 49,
+    "first_returned_lines=True": 66,
+    "label=not_applicable": 66,
+    "listed_by_prior_search=False": 49,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 66,
+    "n": 66,
+    "new_page_incident=False": 32,
+    "new_page_incident=True": 34,
+    "recorded_newly_observed_agrees=True": 66,
+    "returned_lines_in_final_context=all": 66,
+    "source_opened_before=True": 66,
+    "text_identity=True": 66
+   },
+   "opportunity": {
+    "decisions": 66
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 403,
+    "menu_added_share_x1e6": 29351390,
+    "menu_edges": 836,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.5454545454545454,
+    "follow_decisions_with_menu": 66,
+    "mean_menu_added_share": 0.44471803030303025,
+    "pooled_menu_added_share": 0.4820574162679426
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=no_answer": 1,
+    "final_context=verified": 29,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 29,
+    "terminal=invalid_action_limit": 1,
+    "zero_follow=False": 23,
+    "zero_follow=True": 7
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 26,
+    "first_follow_edge_class=mapped_baseline": 20,
+    "label=not_applicable": 46,
+    "pairs": 46
+   }
+  },
+  "t1/LT/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 259,
+    "read:rejected": 2,
+    "search:accepted": 121
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 358,
+    "final_context=full": 358,
+    "first_exposure=read_only": 358,
+    "n": 358,
+    "page_first_route=read": 358,
+    "page_listed_by_search=True": 358,
+    "page_reached_by_follow=False": 358,
+    "page_reached_by_read=True": 358,
+    "t1_rubric_page_by_id=False": 177,
+    "t1_rubric_page_by_id=True": 181
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/O/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 70,
+    "follow:rejected": 2,
+    "read:accepted": 235,
+    "read:rejected": 3,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 338,
+    "final_context=full": 338,
+    "first_exposure=follow_only": 85,
+    "first_exposure=mixed": 17,
+    "first_exposure=read_only": 236,
+    "n": 338,
+    "page_first_route=follow": 142,
+    "page_first_route=read": 196,
+    "page_listed_by_search=False": 89,
+    "page_listed_by_search=True": 249,
+    "page_reached_by_follow=False": 196,
+    "page_reached_by_follow=True": 142,
+    "page_reached_by_read=False": 46,
+    "page_reached_by_read=True": 292,
+    "t1_rubric_page_by_id=False": 146,
+    "t1_rubric_page_by_id=True": 192
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 70,
+    "edge_in_menu=True": 70,
+    "file_identity=True": 70,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 51,
+    "first_returned_lines=True": 70,
+    "label=not_applicable": 70,
+    "listed_by_prior_search=False": 51,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 70,
+    "n": 70,
+    "new_page_incident=False": 70,
+    "recorded_newly_observed_agrees=True": 70,
+    "returned_lines_in_final_context=all": 70,
+    "source_opened_before=True": 70,
+    "text_identity=True": 70
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 70
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 760,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 70,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 22,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 27,
+    "zero_follow=True": 3
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 46,
+    "label=not_applicable": 46,
+    "pairs": 46
+   }
+  },
+  "t1/O/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "note:rejected": 1,
+    "read:accepted": 292,
+    "read:rejected": 8,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 301,
+    "final_context=full": 301,
+    "first_exposure=read_only": 301,
+    "n": 301,
+    "page_first_route=read": 301,
+    "page_listed_by_search=True": 301,
+    "page_reached_by_follow=False": 301,
+    "page_reached_by_read=True": 301,
+    "t1_rubric_page_by_id=False": 96,
+    "t1_rubric_page_by_id=True": 205
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/O/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 50,
+    "follow:rejected": 2,
+    "note:rejected": 1,
+    "read:accepted": 225,
+    "read:rejected": 1,
+    "search:accepted": 75
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 336,
+    "final_context=full": 336,
+    "first_exposure=follow_only": 65,
+    "first_exposure=mixed": 10,
+    "first_exposure=read_only": 261,
+    "n": 336,
+    "page_first_route=follow": 94,
+    "page_first_route=read": 242,
+    "page_listed_by_search=False": 56,
+    "page_listed_by_search=True": 280,
+    "page_reached_by_follow=False": 242,
+    "page_reached_by_follow=True": 94,
+    "page_reached_by_read=False": 36,
+    "page_reached_by_read=True": 300,
+    "t1_rubric_page_by_id=False": 109,
+    "t1_rubric_page_by_id=True": 227
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 50,
+    "edge_in_menu=True": 50,
+    "file_identity=True": 50,
+    "first_page_text_exposure=False": 17,
+    "first_page_text_exposure=True": 33,
+    "first_returned_lines=True": 50,
+    "label=not_applicable": 50,
+    "listed_by_prior_search=False": 33,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 50,
+    "n": 50,
+    "new_page_incident=False": 50,
+    "recorded_newly_observed_agrees=True": 50,
+    "returned_lines_in_final_context=all": 50,
+    "source_opened_before=True": 50,
+    "text_identity=True": 50
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 50
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 536,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 50,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 21,
+    "zero_follow=True": 9
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 34,
+    "label=not_applicable": 34,
+    "pairs": 34
+   }
+  },
+  "t1/O/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 273,
+    "read:rejected": 5,
+    "search:accepted": 119
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 346,
+    "final_context=full": 346,
+    "first_exposure=read_only": 346,
+    "n": 346,
+    "page_first_route=read": 346,
+    "page_listed_by_search=True": 346,
+    "page_reached_by_follow=False": 346,
+    "page_reached_by_read=True": 346,
+    "t1_rubric_page_by_id=False": 131,
+    "t1_rubric_page_by_id=True": 215
+   },
+   "traces": {
+    "compacted": 17,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/R0/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "follow:accepted": 88,
+    "follow:rejected": 2,
+    "read:accepted": 210,
+    "read:rejected": 2,
+    "search:accepted": 30
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 13,
+    "first_page_text_exposure=True": 16,
+    "first_returned_lines=True": 29,
+    "label=not_applicable": 29,
+    "n": 29,
+    "new_page_incident=False": 25,
+    "new_page_incident=True": 4,
+    "returned_lines_in_final_context=all": 29
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 38,
+    "added_edge_first_exposure_mixed": 5,
+    "cited_lines_returned=True": 355,
+    "final_context=full": 355,
+    "first_exposure=follow_only": 108,
+    "first_exposure=mixed": 19,
+    "first_exposure=read_only": 228,
+    "n": 355,
+    "page_first_route=follow": 186,
+    "page_first_route=read": 169,
+    "page_listed_by_search=False": 115,
+    "page_listed_by_search=True": 240,
+    "page_reached_by_follow=False": 169,
+    "page_reached_by_follow=True": 186,
+    "page_reached_by_read=False": 51,
+    "page_reached_by_read=True": 304,
+    "t1_rubric_page_by_id=False": 132,
+    "t1_rubric_page_by_id=True": 223
+   },
+   "follow_accepted": {
+    "edge_class=added": 29,
+    "edge_class=mapped_baseline": 59,
+    "edge_in_menu=True": 88,
+    "file_identity=True": 88,
+    "first_page_text_exposure=False": 31,
+    "first_page_text_exposure=True": 57,
+    "first_returned_lines=True": 88,
+    "label=not_applicable": 88,
+    "listed_by_prior_search=False": 57,
+    "listed_by_prior_search=True": 31,
+    "menu_status=reconstructed": 88,
+    "n": 88,
+    "new_page_incident=False": 84,
+    "new_page_incident=True": 4,
+    "recorded_newly_observed_agrees=True": 88,
+    "returned_lines_in_final_context=all": 88,
+    "source_opened_before=True": 88,
+    "text_identity=True": 88
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 2
+   },
+   "opportunity": {
+    "decisions": 88
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 331,
+    "menu_added_share_x1e6": 26240788,
+    "menu_edges": 1240,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.32954545454545453,
+    "follow_decisions_with_menu": 88,
+    "mean_menu_added_share": 0.29819077272727273,
+    "pooled_menu_added_share": 0.2669354838709677
+   },
+   "traces": {
+    "compacted": 21,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 30
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 18,
+    "first_follow_edge_class=mapped_baseline": 36,
+    "label=not_applicable": 54,
+    "pairs": 54
+   }
+  },
+  "t1/R0/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "note:accepted": 1,
+    "read:accepted": 272,
+    "read:rejected": 13,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 306,
+    "final_context=full": 306,
+    "first_exposure=read_only": 306,
+    "n": 306,
+    "page_first_route=read": 306,
+    "page_listed_by_search=True": 306,
+    "page_reached_by_follow=False": 306,
+    "page_reached_by_read=True": 306,
+    "t1_rubric_page_by_id=False": 91,
+    "t1_rubric_page_by_id=True": 215
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 5,
+    "first_exposure=read_only": 5,
+    "n": 5,
+    "page_first_route=read": 5,
+    "page_listed_by_search=True": 5,
+    "page_reached_by_follow=False": 5,
+    "page_reached_by_read=True": 5
+   },
+   "traces": {
+    "compacted": 13,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/R0/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 64,
+    "read:accepted": 223,
+    "search:accepted": 61
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 11,
+    "first_page_text_exposure=True": 8,
+    "first_returned_lines=False": 1,
+    "first_returned_lines=True": 18,
+    "label=not_applicable": 19,
+    "n": 19,
+    "new_page_incident=False": 17,
+    "new_page_incident=True": 2,
+    "returned_lines_in_final_context=all": 19
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 25,
+    "added_edge_first_exposure_mixed": 6,
+    "cited_lines_returned=True": 352,
+    "final_context=full": 352,
+    "first_exposure=follow_only": 84,
+    "first_exposure=mixed": 18,
+    "first_exposure=read_only": 250,
+    "n": 352,
+    "page_first_route=follow": 141,
+    "page_first_route=read": 211,
+    "page_listed_by_search=False": 79,
+    "page_listed_by_search=True": 273,
+    "page_reached_by_follow=False": 204,
+    "page_reached_by_follow=True": 148,
+    "page_reached_by_read=False": 39,
+    "page_reached_by_read=True": 313,
+    "t1_rubric_page_by_id=False": 135,
+    "t1_rubric_page_by_id=True": 217
+   },
+   "follow_accepted": {
+    "edge_class=added": 19,
+    "edge_class=mapped_baseline": 45,
+    "edge_in_menu=True": 64,
+    "file_identity=True": 64,
+    "first_page_text_exposure=False": 26,
+    "first_page_text_exposure=True": 38,
+    "first_returned_lines=False": 2,
+    "first_returned_lines=True": 62,
+    "label=not_applicable": 64,
+    "listed_by_prior_search=False": 38,
+    "listed_by_prior_search=True": 26,
+    "menu_status=reconstructed": 64,
+    "n": 64,
+    "new_page_incident=False": 62,
+    "new_page_incident=True": 2,
+    "recorded_newly_observed_agrees=True": 64,
+    "returned_lines_in_final_context=all": 64,
+    "source_opened_before=True": 64,
+    "text_identity=True": 64
+   },
+   "opportunity": {
+    "decisions": 64
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 146,
+    "menu_added_share_x1e6": 15597637,
+    "menu_edges": 818,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.296875,
+    "follow_decisions_with_menu": 64,
+    "mean_menu_added_share": 0.243713078125,
+    "pooled_menu_added_share": 0.1784841075794621
+   },
+   "traces": {
+    "compacted": 21,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 26,
+    "zero_follow=True": 4
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 13,
+    "first_follow_edge_class=mapped_baseline": 29,
+    "label=not_applicable": 42,
+    "pairs": 42
+   }
+  },
+  "t1/R0/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 2,
+    "read:accepted": 286,
+    "read:rejected": 7,
+    "search:accepted": 110
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 325,
+    "final_context=full": 325,
+    "first_exposure=read_only": 325,
+    "n": 325,
+    "page_first_route=read": 325,
+    "page_listed_by_search=True": 325,
+    "page_reached_by_follow=False": 325,
+    "page_reached_by_read=True": 325,
+    "t1_rubric_page_by_id=False": 123,
+    "t1_rubric_page_by_id=True": 202
+   },
+   "traces": {
+    "compacted": 19,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/S/s1-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 63,
+    "follow:rejected": 1,
+    "read:accepted": 227,
+    "read:rejected": 1,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 349,
+    "final_context=full": 349,
+    "first_exposure=follow_only": 74,
+    "first_exposure=mixed": 12,
+    "first_exposure=read_only": 263,
+    "n": 349,
+    "page_first_route=follow": 119,
+    "page_first_route=read": 230,
+    "page_listed_by_search=False": 79,
+    "page_listed_by_search=True": 270,
+    "page_reached_by_follow=False": 230,
+    "page_reached_by_follow=True": 119,
+    "page_reached_by_read=False": 47,
+    "page_reached_by_read=True": 302,
+    "t1_rubric_page_by_id=False": 141,
+    "t1_rubric_page_by_id=True": 208
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 63,
+    "edge_in_menu=True": 63,
+    "file_identity=True": 63,
+    "first_page_text_exposure=False": 16,
+    "first_page_text_exposure=True": 47,
+    "first_returned_lines=True": 63,
+    "label=not_applicable": 63,
+    "listed_by_prior_search=False": 47,
+    "listed_by_prior_search=True": 16,
+    "menu_status=reconstructed": 63,
+    "n": 63,
+    "new_page_incident=False": 63,
+    "recorded_newly_observed_agrees=True": 63,
+    "returned_lines_in_final_context=all": 63,
+    "source_opened_before=True": 63,
+    "text_identity=True": 63
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 63
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 696,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 63,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 18,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 26,
+    "zero_follow=True": 4
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 42,
+    "label=not_applicable": 42,
+    "pairs": 42
+   }
+  },
+  "t1/S/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "note:accepted": 1,
+    "read:accepted": 270,
+    "read:rejected": 6,
+    "search:accepted": 30
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 297,
+    "final_context=full": 297,
+    "first_exposure=read_only": 297,
+    "n": 297,
+    "page_first_route=read": 297,
+    "page_listed_by_search=True": 297,
+    "page_reached_by_follow=False": 297,
+    "page_reached_by_read=True": 297,
+    "t1_rubric_page_by_id=False": 96,
+    "t1_rubric_page_by_id=True": 201
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 4,
+    "first_exposure=read_only": 4,
+    "n": 4,
+    "page_first_route=read": 4,
+    "page_listed_by_search=True": 4,
+    "page_reached_by_follow=False": 4,
+    "page_reached_by_read=True": 4
+   },
+   "traces": {
+    "compacted": 13,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t1/S/s6-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "follow:accepted": 52,
+    "follow:rejected": 1,
+    "read:accepted": 224,
+    "read:rejected": 1,
+    "search:accepted": 83
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 343,
+    "final_context=full": 343,
+    "first_exposure=follow_only": 69,
+    "first_exposure=mixed": 12,
+    "first_exposure=read_only": 262,
+    "n": 343,
+    "page_first_route=follow": 103,
+    "page_first_route=read": 240,
+    "page_listed_by_search=False": 57,
+    "page_listed_by_search=True": 286,
+    "page_reached_by_follow=False": 240,
+    "page_reached_by_follow=True": 103,
+    "page_reached_by_read=False": 33,
+    "page_reached_by_read=True": 310,
+    "t1_rubric_page_by_id=False": 122,
+    "t1_rubric_page_by_id=True": 221
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 52,
+    "edge_in_menu=True": 52,
+    "file_identity=True": 52,
+    "first_page_text_exposure=False": 18,
+    "first_page_text_exposure=True": 34,
+    "first_returned_lines=False": 1,
+    "first_returned_lines=True": 51,
+    "label=not_applicable": 52,
+    "listed_by_prior_search=False": 35,
+    "listed_by_prior_search=True": 17,
+    "menu_status=reconstructed": 52,
+    "n": 52,
+    "new_page_incident=False": 52,
+    "recorded_newly_observed_agrees=True": 52,
+    "returned_lines_in_final_context=all": 52,
+    "source_opened_before=True": 52,
+    "text_identity=True": 52
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 52
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 473,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 52,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 20,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=False": 20,
+    "zero_follow=True": 10
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 29,
+    "label=not_applicable": 29,
+    "pairs": 29
+   }
+  },
+  "t1/S/s6-no-follow": {
+   "actions": {
+    "answer:accepted": 30,
+    "answer:rejected": 1,
+    "read:accepted": 265,
+    "read:rejected": 2,
+    "search:accepted": 102
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 347,
+    "final_context=full": 347,
+    "first_exposure=read_only": 347,
+    "n": 347,
+    "page_first_route=read": 347,
+    "page_listed_by_search=True": 347,
+    "page_reached_by_follow=False": 347,
+    "page_reached_by_read=True": 347,
+    "t1_rubric_page_by_id=False": 119,
+    "t1_rubric_page_by_id=True": 228
+   },
+   "traces": {
+    "compacted": 16,
+    "final_context=verified": 30,
+    "identity_ok=True": 30,
+    "planned": 30,
+    "replay=verified": 30,
+    "terminal=answer": 30,
+    "zero_follow=True": 30
+   }
+  },
+  "t2/LT/s1-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "follow:accepted": 67,
+    "read:accepted": 283,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 9,
+    "first_page_text_exposure=True": 23,
+    "first_returned_lines=True": 32,
+    "label=not_supported": 17,
+    "label=supported": 11,
+    "label=undetermined": 4,
+    "n": 32,
+    "new_page_incident=False": 2,
+    "new_page_incident=True": 30,
+    "returned_lines_in_final_context=all": 32,
+    "span_exposure_this_call=full": 8,
+    "span_exposure_this_call=none": 3,
+    "span_exposure_this_call=not_applicable": 21
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 32,
+    "added_edge_first_exposure_mixed": 3,
+    "cited_lines_returned=True": 310,
+    "final_context=full": 310,
+    "first_exposure=follow_only": 48,
+    "first_exposure=mixed": 5,
+    "first_exposure=read_only": 257,
+    "label=not_supported": 107,
+    "label=supported": 194,
+    "label=undetermined": 9,
+    "n": 310,
+    "page_first_route=follow": 65,
+    "page_first_route=read": 245,
+    "page_listed_by_search=False": 42,
+    "page_listed_by_search=True": 268,
+    "page_reached_by_follow=False": 245,
+    "page_reached_by_follow=True": 65,
+    "page_reached_by_read=False": 39,
+    "page_reached_by_read=True": 271,
+    "span_overlap_cited=full": 88,
+    "span_overlap_cited=none": 106
+   },
+   "follow_accepted": {
+    "edge_class=added": 32,
+    "edge_class=mapped_baseline": 35,
+    "edge_in_menu=True": 67,
+    "file_identity=True": 67,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 48,
+    "first_returned_lines=True": 67,
+    "label=not_supported": 43,
+    "label=supported": 18,
+    "label=undetermined": 6,
+    "legacy_qrels_positive=False": 49,
+    "legacy_qrels_positive=True": 18,
+    "listed_by_prior_search=False": 48,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 67,
+    "n": 67,
+    "new_page_incident=False": 37,
+    "new_page_incident=True": 30,
+    "recorded_newly_observed_agrees=True": 67,
+    "returned_lines_in_final_context=all": 67,
+    "source_opened_before=True": 67,
+    "span_exposure_final_context=full": 17,
+    "span_exposure_final_context=none": 1,
+    "span_exposure_new_lines=full": 13,
+    "span_exposure_new_lines=none": 5,
+    "span_exposure_this_call=full": 13,
+    "span_exposure_this_call=none": 5,
+    "span_exposure_this_call=not_applicable": 49,
+    "text_identity=True": 67
+   },
+   "opportunity": {
+    "decisions": 67
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 249,
+    "menu_added_share_x1e6": 27863941,
+    "menu_edges": 730,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.47761194029850745,
+    "follow_decisions_with_menu": 67,
+    "mean_menu_added_share": 0.41587971641791044,
+    "pooled_menu_added_share": 0.3410958904109589
+   },
+   "traces": {
+    "compacted": 3,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=False": 38,
+    "zero_follow=True": 67
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 32,
+    "first_follow_edge_class=mapped_baseline": 35,
+    "label=not_supported": 43,
+    "label=supported": 18,
+    "label=undetermined": 6,
+    "pairs": 67
+   }
+  },
+  "t2/LT/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "read:accepted": 317,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 310,
+    "final_context=full": 310,
+    "first_exposure=read_only": 310,
+    "label=never_judged": 1,
+    "label=not_supported": 109,
+    "label=supported": 194,
+    "label=undetermined": 6,
+    "n": 310,
+    "page_first_route=read": 310,
+    "page_listed_by_search=True": 310,
+    "page_reached_by_follow=False": 310,
+    "page_reached_by_read=True": 310,
+    "span_overlap_cited=full": 82,
+    "span_overlap_cited=none": 112
+   },
+   "traces": {
+    "compacted": 0,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=True": 105
+   }
+  },
+  "t2/O/s1-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "follow:accepted": 64,
+    "note:accepted": 1,
+    "read:accepted": 328,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 327,
+    "final_context=full": 327,
+    "first_exposure=follow_only": 33,
+    "first_exposure=mixed": 4,
+    "first_exposure=read_only": 290,
+    "label=not_supported": 121,
+    "label=supported": 196,
+    "label=undetermined": 10,
+    "n": 327,
+    "page_first_route=follow": 52,
+    "page_first_route=read": 275,
+    "page_listed_by_search=False": 34,
+    "page_listed_by_search=True": 293,
+    "page_reached_by_follow=False": 275,
+    "page_reached_by_follow=True": 52,
+    "page_reached_by_read=False": 24,
+    "page_reached_by_read=True": 303,
+    "span_overlap_cited=full": 85,
+    "span_overlap_cited=none": 111
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 1,
+    "first_exposure=read_only": 1,
+    "label=not_supported": 1,
+    "n": 1,
+    "page_first_route=read": 1,
+    "page_listed_by_search=True": 1,
+    "page_reached_by_follow=False": 1,
+    "page_reached_by_read=True": 1
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 64,
+    "edge_in_menu=True": 64,
+    "file_identity=True": 64,
+    "first_page_text_exposure=False": 18,
+    "first_page_text_exposure=True": 46,
+    "first_returned_lines=True": 64,
+    "label=not_supported": 50,
+    "label=supported": 12,
+    "label=undetermined": 2,
+    "legacy_qrels_positive=False": 52,
+    "legacy_qrels_positive=True": 12,
+    "listed_by_prior_search=False": 46,
+    "listed_by_prior_search=True": 18,
+    "menu_status=reconstructed": 64,
+    "n": 64,
+    "new_page_incident=False": 64,
+    "recorded_newly_observed_agrees=True": 64,
+    "returned_lines_in_final_context=all": 64,
+    "source_opened_before=True": 64,
+    "span_exposure_final_context=full": 9,
+    "span_exposure_final_context=none": 3,
+    "span_exposure_new_lines=full": 7,
+    "span_exposure_new_lines=none": 5,
+    "span_exposure_this_call=full": 7,
+    "span_exposure_this_call=none": 5,
+    "span_exposure_this_call=not_applicable": 52,
+    "text_identity=True": 64
+   },
+   "opportunity": {
+    "decisions": 64
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 854,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 64,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 5,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=False": 37,
+    "zero_follow=True": 68
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 64,
+    "label=not_supported": 50,
+    "label=supported": 12,
+    "label=undetermined": 2,
+    "pairs": 64
+   }
+  },
+  "t2/O/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "note:accepted": 1,
+    "read:accepted": 317,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 315,
+    "final_context=full": 315,
+    "first_exposure=read_only": 315,
+    "label=not_supported": 112,
+    "label=supported": 196,
+    "label=undetermined": 7,
+    "n": 315,
+    "page_first_route=read": 315,
+    "page_listed_by_search=True": 315,
+    "page_reached_by_follow=False": 315,
+    "page_reached_by_read=True": 315,
+    "span_overlap_cited=full": 86,
+    "span_overlap_cited=none": 110
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 2,
+    "first_exposure=read_only": 2,
+    "label=supported": 2,
+    "n": 2,
+    "page_first_route=read": 2,
+    "page_listed_by_search=True": 2,
+    "page_reached_by_follow=False": 2,
+    "page_reached_by_read=True": 2,
+    "span_overlap_cited=full": 2
+   },
+   "traces": {
+    "compacted": 0,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=True": 105
+   }
+  },
+  "t2/R0/s1-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "answer:rejected": 1,
+    "follow:accepted": 60,
+    "follow:rejected": 1,
+    "note:accepted": 1,
+    "read:accepted": 340,
+    "search:accepted": 105
+   },
+   "added_follow": {
+    "first_page_text_exposure=False": 5,
+    "first_page_text_exposure=True": 12,
+    "first_returned_lines=True": 17,
+    "label=not_supported": 13,
+    "label=supported": 4,
+    "n": 17,
+    "new_page_incident=False": 17,
+    "returned_lines_in_final_context=all": 17,
+    "span_exposure_this_call=full": 1,
+    "span_exposure_this_call=none": 3,
+    "span_exposure_this_call=not_applicable": 13
+   },
+   "citation_answer": {
+    "added_edge_first_exposure_follow_only": 7,
+    "added_edge_first_exposure_mixed": 1,
+    "cited_lines_returned=True": 323,
+    "final_context=full": 323,
+    "first_exposure=follow_only": 27,
+    "first_exposure=mixed": 3,
+    "first_exposure=read_only": 293,
+    "label=not_supported": 140,
+    "label=supported": 179,
+    "label=undetermined": 4,
+    "n": 323,
+    "page_first_route=follow": 63,
+    "page_first_route=read": 260,
+    "page_listed_by_search=False": 23,
+    "page_listed_by_search=True": 300,
+    "page_reached_by_follow=False": 260,
+    "page_reached_by_follow=True": 63,
+    "page_reached_by_read=False": 13,
+    "page_reached_by_read=True": 310,
+    "span_overlap_cited=full": 79,
+    "span_overlap_cited=none": 100
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 4,
+    "first_exposure=read_only": 4,
+    "label=not_supported": 4,
+    "n": 4,
+    "page_first_route=read": 4,
+    "page_listed_by_search=True": 4,
+    "page_reached_by_follow=False": 4,
+    "page_reached_by_read=True": 4
+   },
+   "follow_accepted": {
+    "edge_class=added": 17,
+    "edge_class=mapped_baseline": 43,
+    "edge_in_menu=True": 60,
+    "file_identity=True": 60,
+    "first_page_text_exposure=False": 19,
+    "first_page_text_exposure=True": 41,
+    "first_returned_lines=True": 60,
+    "label=not_supported": 47,
+    "label=supported": 13,
+    "legacy_qrels_positive=False": 47,
+    "legacy_qrels_positive=True": 13,
+    "listed_by_prior_search=False": 41,
+    "listed_by_prior_search=True": 19,
+    "menu_status=reconstructed": 60,
+    "n": 60,
+    "new_page_incident=False": 60,
+    "recorded_newly_observed_agrees=True": 60,
+    "returned_lines_in_final_context=all": 60,
+    "source_opened_before=True": 60,
+    "span_exposure_final_context=full": 5,
+    "span_exposure_final_context=none": 8,
+    "span_exposure_new_lines=full": 4,
+    "span_exposure_new_lines=none": 9,
+    "span_exposure_this_call=full": 4,
+    "span_exposure_this_call=none": 9,
+    "span_exposure_this_call=not_applicable": 47,
+    "text_identity=True": 60
+   },
+   "follow_rejected_errors": {
+    "link-not-offered-by-read-page": 1
+   },
+   "opportunity": {
+    "decisions": 60
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 284,
+    "menu_added_share_x1e6": 19046758,
+    "menu_edges": 766,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.2833333333333333,
+    "follow_decisions_with_menu": 60,
+    "mean_menu_added_share": 0.3174459666666667,
+    "pooled_menu_added_share": 0.370757180156658
+   },
+   "traces": {
+    "compacted": 7,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=False": 33,
+    "zero_follow=True": 72
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=added": 17,
+    "first_follow_edge_class=mapped_baseline": 43,
+    "label=not_supported": 47,
+    "label=supported": 13,
+    "pairs": 60
+   }
+  },
+  "t2/R0/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "answer:rejected": 2,
+    "read:accepted": 339,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 322,
+    "final_context=full": 322,
+    "first_exposure=read_only": 322,
+    "label=not_supported": 112,
+    "label=supported": 204,
+    "label=undetermined": 6,
+    "n": 322,
+    "page_first_route=read": 322,
+    "page_listed_by_search=True": 322,
+    "page_reached_by_follow=False": 322,
+    "page_reached_by_read=True": 322,
+    "span_overlap_cited=full": 87,
+    "span_overlap_cited=none": 117
+   },
+   "traces": {
+    "compacted": 2,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=True": 105
+   }
+  },
+  "t2/S/s1-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "follow:accepted": 50,
+    "note:accepted": 1,
+    "read:accepted": 316,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 304,
+    "final_context=full": 304,
+    "first_exposure=follow_only": 26,
+    "first_exposure=mixed": 5,
+    "first_exposure=read_only": 273,
+    "label=not_supported": 114,
+    "label=supported": 185,
+    "label=undetermined": 5,
+    "n": 304,
+    "page_first_route=follow": 44,
+    "page_first_route=read": 260,
+    "page_listed_by_search=False": 17,
+    "page_listed_by_search=True": 287,
+    "page_reached_by_follow=False": 260,
+    "page_reached_by_follow=True": 44,
+    "page_reached_by_read=False": 17,
+    "page_reached_by_read=True": 287,
+    "span_overlap_cited=full": 84,
+    "span_overlap_cited=none": 101
+   },
+   "citation_note": {
+    "cited_lines_returned=True": 1,
+    "first_exposure=read_only": 1,
+    "label=not_supported": 1,
+    "n": 1,
+    "page_first_route=read": 1,
+    "page_listed_by_search=True": 1,
+    "page_reached_by_follow=False": 1,
+    "page_reached_by_read=True": 1
+   },
+   "follow_accepted": {
+    "edge_class=mapped_baseline": 50,
+    "edge_in_menu=True": 50,
+    "file_identity=True": 50,
+    "first_page_text_exposure=False": 18,
+    "first_page_text_exposure=True": 32,
+    "first_returned_lines=True": 50,
+    "label=not_supported": 39,
+    "label=supported": 10,
+    "label=undetermined": 1,
+    "legacy_qrels_positive=False": 40,
+    "legacy_qrels_positive=True": 10,
+    "listed_by_prior_search=False": 32,
+    "listed_by_prior_search=True": 18,
+    "menu_status=reconstructed": 50,
+    "n": 50,
+    "new_page_incident=False": 50,
+    "recorded_newly_observed_agrees=True": 50,
+    "returned_lines_in_final_context=all": 50,
+    "source_opened_before=True": 50,
+    "span_exposure_final_context=full": 8,
+    "span_exposure_final_context=none": 2,
+    "span_exposure_new_lines=full": 6,
+    "span_exposure_new_lines=none": 4,
+    "span_exposure_this_call=full": 6,
+    "span_exposure_this_call=none": 4,
+    "span_exposure_this_call=not_applicable": 40,
+    "text_identity=True": 50
+   },
+   "opportunity": {
+    "decisions": 50
+   },
+   "opportunity_sum": {
+    "menu_added_edges": 0,
+    "menu_added_share_x1e6": 0,
+    "menu_edges": 493,
+    "menu_unknown_edges": 0
+   },
+   "opportunity_summary": {
+    "added_share_of_accepted_follows": 0.0,
+    "follow_decisions_with_menu": 50,
+    "mean_menu_added_share": 0.0,
+    "pooled_menu_added_share": 0.0
+   },
+   "traces": {
+    "compacted": 4,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=False": 36,
+    "zero_follow=True": 69
+   },
+   "unique_q_dest": {
+    "first_follow_edge_class=mapped_baseline": 50,
+    "label=not_supported": 39,
+    "label=supported": 10,
+    "label=undetermined": 1,
+    "pairs": 50
+   }
+  },
+  "t2/S/s1-no-follow": {
+   "actions": {
+    "answer:accepted": 105,
+    "read:accepted": 342,
+    "read:rejected": 1,
+    "search:accepted": 105
+   },
+   "citation_answer": {
+    "cited_lines_returned=True": 321,
+    "final_context=full": 321,
+    "first_exposure=read_only": 321,
+    "label=never_judged": 2,
+    "label=not_supported": 121,
+    "label=supported": 193,
+    "label=undetermined": 5,
+    "n": 321,
+    "page_first_route=read": 321,
+    "page_listed_by_search=True": 321,
+    "page_reached_by_follow=False": 321,
+    "page_reached_by_read=True": 321,
+    "span_overlap_cited=full": 81,
+    "span_overlap_cited=none": 112
+   },
+   "traces": {
+    "compacted": 0,
+    "final_context=verified": 105,
+    "identity_ok=True": 105,
+    "planned": 105,
+    "replay=verified": 105,
+    "terminal=answer": 105,
+    "zero_follow=True": 105
+   }
+  }
+ },
+ "variants": {
+  "LT": {
+   "admitted_edges": 5203,
+   "corpus_inventory_sha256": "dea9a4b146f26e75cac9143588c917495b65d5173b5e49246daff5f6af6860a5",
+   "documents": 1823,
+   "edge_classes": {
+    "classified": 5203,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 5203
+   },
+   "graph_file_sha256": "83d6bcd62df873e1ea7257f5f468f90fa0d50093425c54a719ff8b9fc68a5d0c",
+   "graph_rows": 5203,
+   "variant_id": "v-6337600cdc97"
+  },
+  "O": {
+   "admitted_edges": 2494,
+   "corpus_inventory_sha256": "7f24d91fafc2589076fd22696dd7e1b1f8db6e1ad50ebfd850282c611d0d2d23",
+   "documents": 1218,
+   "edge_classes": {
+    "classified": 2494,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 2494
+   },
+   "graph_file_sha256": "ff89ed48d6318c00c6b2bf5adf5dc0f2fc43ec56f3d11b5a45cf356fa98c3945",
+   "graph_rows": 2494,
+   "variant_id": "v-5d89a3217d52"
+  },
+  "R0": {
+   "admitted_edges": 4502,
+   "corpus_inventory_sha256": "7649ccda775a1164d3f0cc31cb27da8ad254ce5417869a19cb4d7d75952d9235",
+   "documents": 1229,
+   "edge_classes": {
+    "classified": 4502,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 4502
+   },
+   "graph_file_sha256": "a77abe7a9bbdaa995b5d3edaabba89037b3f5c7e39aea1bc6f703f4ef0dd5590",
+   "graph_rows": 4502,
+   "variant_id": "v-c2c2731d2141"
+  },
+  "S": {
+   "admitted_edges": 2494,
+   "corpus_inventory_sha256": "7f24d91fafc2589076fd22696dd7e1b1f8db6e1ad50ebfd850282c611d0d2d23",
+   "documents": 1218,
+   "edge_classes": {
+    "classified": 2494,
+    "rows_outside_variant_graph": 0,
+    "unclassified": 0,
+    "variant_edges": 2494
+   },
+   "graph_file_sha256": "ff89ed48d6318c00c6b2bf5adf5dc0f2fc43ec56f3d11b5a45cf356fa98c3945",
+   "graph_rows": 2494,
+   "variant_id": "v-9a7d7f0e7b47"
+  }
+ },
+ "witness_edges": {
+  "LT": {
+   "added_edges": 3318,
+   "arm": "LT",
+   "edges_equal_export_graph": true,
+   "edges_only_export": 0,
+   "edges_only_variant_context": 0,
+   "legacy_added_t2_follow": 39,
+   "legacy_follows_t2_follow": 76,
+   "legacy_landing_mean_common105": 0.17142857142857143,
+   "legacy_landing_traces_common105": 105,
+   "mapped_baseline_edges": 1885,
+   "new_page_incident_added": 2627,
+   "new_page_incident_mapped": 0,
+   "new_pages": 605,
+   "nodes_equal_export_stems": true,
+   "unclassified": 0,
+   "variant_edges": 5203,
+   "variant_nodes": 1823
+  },
+  "O": {
+   "added_edges": 0,
+   "arm": "O",
+   "edges_equal_export_graph": true,
+   "edges_only_export": 0,
+   "edges_only_variant_context": 0,
+   "legacy_added_t2_follow": 0,
+   "legacy_follows_t2_follow": 67,
+   "legacy_landing_mean_common105": 0.11428571428571428,
+   "legacy_landing_traces_common105": 105,
+   "mapped_baseline_edges": 2494,
+   "new_page_incident_added": 0,
+   "new_page_incident_mapped": 0,
+   "new_pages": 0,
+   "nodes_equal_export_stems": true,
+   "unclassified": 0,
+   "variant_edges": 2494,
+   "variant_nodes": 1218
+  },
+  "R0": {
+   "added_edges": 2023,
+   "arm": "R0",
+   "edges_equal_export_graph": true,
+   "edges_only_export": 0,
+   "edges_only_variant_context": 0,
+   "legacy_added_t2_follow": 20,
+   "legacy_follows_t2_follow": 68,
+   "legacy_landing_mean_common105": 0.12380952380952381,
+   "legacy_landing_traces_common105": 105,
+   "mapped_baseline_edges": 2479,
+   "new_page_incident_added": 152,
+   "new_page_incident_mapped": 0,
+   "new_pages": 11,
+   "nodes_equal_export_stems": true,
+   "unclassified": 0,
+   "variant_edges": 4502,
+   "variant_nodes": 1229
+  },
+  "S": {
+   "added_edges": 0,
+   "arm": "S",
+   "edges_equal_export_graph": true,
+   "edges_only_export": 0,
+   "edges_only_variant_context": 0,
+   "legacy_added_t2_follow": 0,
+   "legacy_follows_t2_follow": 52,
+   "legacy_landing_mean_common105": 0.09523809523809523,
+   "legacy_landing_traces_common105": 105,
+   "mapped_baseline_edges": 2494,
+   "new_page_incident_added": 0,
+   "new_page_incident_mapped": 0,
+   "new_pages": 0,
+   "nodes_equal_export_stems": true,
+   "unclassified": 0,
+   "variant_edges": 2494,
+   "variant_nodes": 1218
+  }
+ }
+}

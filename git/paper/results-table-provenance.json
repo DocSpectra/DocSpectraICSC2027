@@ -1,0 +1,2038 @@
+{
+  "purpose": "Presentation of existing recorded results; no new scientific analysis",
+  "sources": {
+    "S18": {
+      "path": "git/context/evidence/wc-spectra-18-v1-2026-10-19.json",
+      "sha256": "50cad12c121fac4ff7aa4e2057e1bddef47bebea05ae979df0f3519288e150bf"
+    },
+    "S20": {
+      "path": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+    },
+    "S22": {
+      "path": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e"
+    },
+    "S23": {
+      "path": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "sha256": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df"
+    },
+    "S24": {
+      "path": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+      "sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65"
+    }
+  },
+  "values": [
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "delta_lambda1"
+      ],
+      "exact": -8.557527352130723e-05,
+      "display": "-8.56\\!\\times\\!10^{-5}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        4,
+        "delta_lambda1"
+      ],
+      "exact": -3.363870516720491e-07,
+      "display": "-3.36\\!\\times\\!10^{-7}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        8,
+        "delta_lambda1"
+      ],
+      "exact": -0.00011184728676656708,
+      "display": "-1.12\\!\\times\\!10^{-4}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        7,
+        "delta_lambda1"
+      ],
+      "exact": -3.111672390483655e-06,
+      "display": "-3.11\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        8,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        11,
+        "delta_lambda1"
+      ],
+      "exact": -2.993961485675545e-08,
+      "display": "-2.99\\!\\times\\!10^{-8}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        10,
+        "delta_lambda1"
+      ],
+      "exact": 3.1001371525313237e-06,
+      "display": "+3.10\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        11,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        14,
+        "delta_lambda1"
+      ],
+      "exact": -1.1701844115780125e-06,
+      "display": "-1.17\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        13,
+        "delta_lambda1"
+      ],
+      "exact": 7.462683745879106e-06,
+      "display": "+7.46\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        14,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "a",
+        "effective_support_fraction"
+      ],
+      "exact": 0.00591630153420611,
+      "display": "0.0059",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "a",
+        "degree_mass_tv_distance"
+      ],
+      "exact": 0.9618440857559136,
+      "display": "0.962",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        8,
+        "relative_to_baseline"
+      ],
+      "exact": -0.0013288088296875887,
+      "display": "0.133",
+      "format": "3 decimals, half away from zero",
+      "scale": 100,
+      "absolute": true
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        20,
+        "delta_lambda1"
+      ],
+      "exact": 0.002129424134208885,
+      "display": "+2.13\\!\\times\\!10^{-3}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        19,
+        "delta_lambda1"
+      ],
+      "exact": -6.958259878467321e-06,
+      "display": "-6.96\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        20,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        23,
+        "delta_lambda1"
+      ],
+      "exact": 0.0009125409300483889,
+      "display": "+9.13\\!\\times\\!10^{-4}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        22,
+        "delta_lambda1"
+      ],
+      "exact": -0.0001319712499032455,
+      "display": "-1.32\\!\\times\\!10^{-4}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        23,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        26,
+        "delta_lambda1"
+      ],
+      "exact": -5.934883501867994e-07,
+      "display": "-5.93\\!\\times\\!10^{-7}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        25,
+        "delta_lambda1"
+      ],
+      "exact": 3.9648464424252294e-06,
+      "display": "+3.96\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        26,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        29,
+        "delta_lambda1"
+      ],
+      "exact": 5.515025590818734e-06,
+      "display": "+5.52\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        28,
+        "delta_lambda1"
+      ],
+      "exact": -9.382406872968097e-06,
+      "display": "-9.38\\!\\times\\!10^{-6}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        29,
+        "resolved"
+      ],
+      "exact": true,
+      "display": "yes",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        20,
+        "a",
+        "effective_support_fraction"
+      ],
+      "exact": 0.09065358828446478,
+      "display": "0.0907",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        20,
+        "a",
+        "degree_mass_tv_distance"
+      ],
+      "exact": 0.7303442815123706,
+      "display": "0.730",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        20,
+        "relative_to_baseline"
+      ],
+      "exact": 0.01014292526603314,
+      "display": "1.014",
+      "format": "3 decimals, half away from zero",
+      "scale": 100,
+      "absolute": true
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        35,
+        "delta_lambda1"
+      ],
+      "exact": -6.96470180139297e-10,
+      "display": "-6.96\\!\\times\\!10^{-10}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        34,
+        "delta_lambda1"
+      ],
+      "exact": -6.3302709497892184e-09,
+      "display": "-6.33\\!\\times\\!10^{-9}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        35,
+        "resolved"
+      ],
+      "exact": false,
+      "display": "no",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        38,
+        "delta_lambda1"
+      ],
+      "exact": 1.0611563537599178e-10,
+      "display": "+1.06\\!\\times\\!10^{-10}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        37,
+        "delta_lambda1"
+      ],
+      "exact": 7.31072948706446e-10,
+      "display": "+7.31\\!\\times\\!10^{-10}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        38,
+        "resolved"
+      ],
+      "exact": false,
+      "display": "no",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        41,
+        "delta_lambda1"
+      ],
+      "exact": 2.5870052627885443e-12,
+      "display": "+2.59\\!\\times\\!10^{-12}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        40,
+        "delta_lambda1"
+      ],
+      "exact": 1.5533771300507704e-09,
+      "display": "+1.55\\!\\times\\!10^{-9}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        41,
+        "resolved"
+      ],
+      "exact": false,
+      "display": "no",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        44,
+        "delta_lambda1"
+      ],
+      "exact": -9.350481326719784e-11,
+      "display": "-9.35\\!\\times\\!10^{-11}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        43,
+        "delta_lambda1"
+      ],
+      "exact": -1.874288849124106e-10,
+      "display": "-1.87\\!\\times\\!10^{-10}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        44,
+        "resolved"
+      ],
+      "exact": false,
+      "display": "no",
+      "format": "boolean",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        35,
+        "a",
+        "effective_support_fraction"
+      ],
+      "exact": 0.0028910090779977215,
+      "display": "0.0029",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        35,
+        "a",
+        "degree_mass_tv_distance"
+      ],
+      "exact": 0.9966939938644472,
+      "display": "0.997",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        47,
+        "a",
+        "lambda1"
+      ],
+      "exact": 0.2046663545568723,
+      "display": "0.2047",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        47,
+        "b",
+        "lambda1"
+      ],
+      "exact": 0.06848780047863083,
+      "display": "0.0685",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "finite_change",
+        "fixed_mode_term"
+      ],
+      "exact": 0.00188067604393966,
+      "display": "+1.88\\!\\times\\!10^{-3}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        5,
+        "finite_change",
+        "relaxation_term"
+      ],
+      "exact": -0.001966251317460796,
+      "display": "-1.97\\!\\times\\!10^{-3}",
+      "format": "3 significant figures",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        50,
+        "finite_change",
+        "fixed_mode_term"
+      ],
+      "exact": 1.333333333333334,
+      "display": "+1.33",
+      "format": "2 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S23",
+      "path": [
+        "table",
+        50,
+        "finite_change",
+        "relaxation_term"
+      ],
+      "exact": -1.333333333333334,
+      "display": "-1.33",
+      "format": "2 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "weighted_q0_lambda2"
+      ],
+      "exact": 0.3274725274725274,
+      "display": "0.327",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "weighted_q0_lambda2"
+      ],
+      "exact": 0.8637362637362638,
+      "display": "0.864",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "mean_weighted_degree"
+      ],
+      "exact": 0.6791208791208792,
+      "display": "0.679",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "mean_weighted_degree"
+      ],
+      "exact": 0.1384615384615385,
+      "display": "0.138",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "outdegree_gini"
+      ],
+      "exact": -0.6043956043956044,
+      "display": "-0.604",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "outdegree_gini"
+      ],
+      "exact": -0.03736263736263736,
+      "display": "-0.037",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "trophic_incoherence"
+      ],
+      "exact": 0.44175824175824174,
+      "display": "0.442",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "trophic_incoherence"
+      ],
+      "exact": -0.1384615384615385,
+      "display": "-0.138",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "reciprocal_arc_fraction"
+      ],
+      "exact": 0.20088496007425613,
+      "display": "0.201",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "reciprocal_arc_fraction"
+      ],
+      "exact": -0.30684625769584184,
+      "display": "-0.307",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "rho"
+      ],
+      "exact": 0.02372727995821142,
+      "display": "0.024",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.904454777261137,
+      "display": "0.904",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "rho"
+      ],
+      "exact": -0.22343188627315752,
+      "display": "-0.223",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.49077546122693866,
+      "display": "0.491",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "rho"
+      ],
+      "exact": 0.03433437135097301,
+      "display": "0.034",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.8587070646467677,
+      "display": "0.859",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "rho"
+      ],
+      "exact": 0.2438237965503881,
+      "display": "0.244",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.3940802959852007,
+      "display": "0.394",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "lwcc_nodes"
+      ],
+      "exact": 844,
+      "display": "844",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "nodes"
+      ],
+      "exact": 1218,
+      "display": "1218",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.08417108937548456,
+      "display": "0.0842",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "trophic_incoherence"
+      ],
+      "exact": 0.4123089019177151,
+      "display": "0.412",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "lwcc_nodes"
+      ],
+      "exact": 1671,
+      "display": "1671",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "nodes"
+      ],
+      "exact": 1823,
+      "display": "1823",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.04617122826369738,
+      "display": "0.0462",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "trophic_incoherence"
+      ],
+      "exact": 0.31376156684862216,
+      "display": "0.314",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "lwcc_nodes"
+      ],
+      "exact": 1182,
+      "display": "1182",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "nodes"
+      ],
+      "exact": 1229,
+      "display": "1229",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.025279809248129788,
+      "display": "0.0253",
+      "format": "4 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "trophic_incoherence"
+      ],
+      "exact": 0.5718083757861503,
+      "display": "0.572",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "primary_test",
+        "n"
+      ],
+      "exact": 18,
+      "display": "18",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "primary_test",
+        "statistic_mean"
+      ],
+      "exact": -0.8045755041795555,
+      "display": "-0.80",
+      "format": "2 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "primary_test",
+        "p"
+      ],
+      "exact": 0.07926177978515625,
+      "display": "0.079",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "SA1",
+        "n"
+      ],
+      "exact": 15,
+      "display": "15",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "SA1",
+        "statistic_mean"
+      ],
+      "exact": -1.0733018453560883,
+      "display": "-1.07",
+      "format": "2 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S18",
+      "path": [
+        "SA1",
+        "p"
+      ],
+      "exact": 0.04364013671875,
+      "display": "0.044",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "normalized_exploratory_analogue",
+        "test",
+        "n"
+      ],
+      "exact": 18,
+      "display": "18",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "normalized_exploratory_analogue",
+        "test",
+        "statistic_mean"
+      ],
+      "exact": -2.9482120302580674,
+      "display": "-2.95",
+      "format": "2 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "normalized_exploratory_analogue",
+        "test",
+        "p"
+      ],
+      "exact": 0.00061798095703125,
+      "display": "0.000618",
+      "format": "6 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "follow_accepted",
+        "edge_class=added"
+      ],
+      "exact": 39,
+      "display": "39",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "follow_accepted",
+        "n"
+      ],
+      "exact": 76,
+      "display": "76",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "follow_accepted",
+        "edge_class=added"
+      ],
+      "exact": 20,
+      "display": "20",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "follow_accepted",
+        "n"
+      ],
+      "exact": 67,
+      "display": "67",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "opportunity_summary",
+        "mean_menu_added_share"
+      ],
+      "exact": 0.4431619868421053,
+      "display": "0.443",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "opportunity_summary",
+        "mean_menu_added_share"
+      ],
+      "exact": 0.3032916865671642,
+      "display": "0.303",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "opportunity_summary",
+        "added_share_of_accepted_follows"
+      ],
+      "exact": 0.5131578947368421,
+      "display": "0.513",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "opportunity_summary",
+        "added_share_of_accepted_follows"
+      ],
+      "exact": 0.29850746268656714,
+      "display": "0.299",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "2_added_edge_follow"
+      ],
+      "exact": 28,
+      "display": "28",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "2_added_edge_follow"
+      ],
+      "exact": 15,
+      "display": "15",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "3_first_page_text_exposure"
+      ],
+      "exact": 21,
+      "display": "21",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "3_first_page_text_exposure"
+      ],
+      "exact": 11,
+      "display": "11",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "4_destination_supported"
+      ],
+      "exact": 7,
+      "display": "7",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "4_destination_supported"
+      ],
+      "exact": 2,
+      "display": "2",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "7_cited_lines_from_this_follow"
+      ],
+      "exact": 7,
+      "display": "7",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S24",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "7_cited_lines_from_this_follow"
+      ],
+      "exact": 1,
+      "display": "1",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.07916666666666666,
+      "display": "-0.079",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.22916666666666666,
+      "display": "-0.229",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.0625,
+      "display": "+0.063",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "R0 - O",
+        "estimate"
+      ],
+      "exact": 0.025,
+      "display": "+0.025",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "R0 - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.15416666666666667,
+      "display": "-0.154",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "R0 - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.19583333333333333,
+      "display": "+0.196",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - R0",
+        "estimate"
+      ],
+      "exact": -0.10416666666666667,
+      "display": "-0.104",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - R0",
+        "ci95",
+        0
+      ],
+      "exact": -0.30416666666666664,
+      "display": "-0.304",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - R0",
+        "ci95",
+        1
+      ],
+      "exact": 0.1,
+      "display": "+0.100",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "S - O",
+        "estimate"
+      ],
+      "exact": 0.008333333333333333,
+      "display": "+0.008",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "S - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.12083333333333333,
+      "display": "-0.121",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "S - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.14166666666666666,
+      "display": "+0.142",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.0046396396396396426,
+      "display": "-0.005",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.026091789516789518,
+      "display": "-0.026",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.01615149792969066,
+      "display": "+0.016",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "R0 - O",
+        "estimate"
+      ],
+      "exact": 0.004279279279279281,
+      "display": "+0.004",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "R0 - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.018244020569241803,
+      "display": "-0.018",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "R0 - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.026636383748994366,
+      "display": "+0.027",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - R0",
+        "estimate"
+      ],
+      "exact": -0.00891891891891892,
+      "display": "-0.009",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - R0",
+        "ci95",
+        0
+      ],
+      "exact": -0.03250057339449542,
+      "display": "-0.033",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - R0",
+        "ci95",
+        1
+      ],
+      "exact": 0.014549845898530102,
+      "display": "+0.015",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "S - O",
+        "estimate"
+      ],
+      "exact": 0.004504504504504506,
+      "display": "+0.005",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "S - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.016518105158730156,
+      "display": "-0.017",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "S - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.02606571738022425,
+      "display": "+0.026",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.06729780801209373,
+      "display": "-0.067",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.11813196352258853,
+      "display": "-0.118",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": -0.021877725723413052,
+      "display": "-0.022",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "estimate"
+      ],
+      "exact": -0.004761904761904762,
+      "display": "-0.005",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.014563106796116505,
+      "display": "-0.015",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.0,
+      "display": "+0.000",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.008991133991133991,
+      "display": "-0.009",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.04333834730221161,
+      "display": "-0.043",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S20",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.026389581139581106,
+      "display": "+0.026",
+      "format": "3 decimals, half away from zero",
+      "scale": 1,
+      "absolute": false
+    }
+  ],
+  "table_sha256": {
+    "tables/w02-matched.tex": "0570aeab3cc0bbb0ca00f78aad77a1d109ffaffa00217040816c72e4abb2cfde",
+    "tables/w02-correlations.tex": "338095da303ce15720ea99f7b41285f6cae0863838b8276685847476f7e6cf1c",
+    "tables/w02-refinement-summary.tex": "2165948600d8350d0fdb433db3e9a10608cbcf6841ee44616cda212c5b49cd75",
+    "tables/w02-link-use.tex": "c361799617d19115f492c6fca0f9d476fdb06f5b4c1a5734c447d62aacf37342",
+    "tables/w02-answers.tex": "ad2d841a9d174c1c295ac5941cf476c8430147a53c674cdbea7b359287d52f65"
+  },
+  "selection": "All prior matched pairs and answer contrasts retained. Five existing corpus comparators shown for both magnetic modes; additional second-mode coefficients, test means and replay interval are copied from frozen fields."
+}

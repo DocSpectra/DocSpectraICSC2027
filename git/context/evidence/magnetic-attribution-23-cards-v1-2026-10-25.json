@@ -1,0 +1,313 @@
+[
+ {
+  "arcs": [
+   {
+    "arc": [
+     "content_get_started_docker_overview__039a8050",
+     "content_manuals_desktop_index__339b39a9"
+    ],
+    "link_lines_in_source": [
+     {
+      "line": 110,
+      "link_text": "Docker Desktop",
+      "target": "/manuals/desktop/_index.md"
+     }
+    ],
+    "source_page": "content/get-started/docker-overview.md",
+    "target_page": "content/manuals/desktop/_index.md"
+   },
+   {
+    "arc": [
+     "content_manuals_desktop_index__339b39a9",
+     "content_manuals_engine_index__3a6da101"
+    ],
+    "link_lines_in_source": "not inspected (page budget)",
+    "source_page": "content/manuals/desktop/_index.md",
+    "target_page": "content/manuals/engine/_index.md"
+   },
+   {
+    "arc": [
+     "content_manuals_engine_index__3a6da101",
+     "content_get_started_docker_overview__039a8050"
+    ],
+    "link_lines_in_source": [
+     {
+      "line": 71,
+      "link_text": "Docker Architecture",
+      "target": "/get-started/docker-overview.md#docker-architecture"
+     }
+    ],
+    "source_page": "content/manuals/engine/_index.md",
+    "target_page": "content/get-started/docker-overview.md"
+   }
+  ],
+  "commit": "274681c49355bd951ae60c9208e854ff70f12474",
+  "corpus_id": "docker_docs",
+  "cycle": [
+   "content_get_started_docker_overview__039a8050",
+   "content_manuals_desktop_index__339b39a9",
+   "content_manuals_engine_index__3a6da101"
+  ],
+  "cycle_pages": [
+   {
+    "doc_id": "content_get_started_docker_overview__039a8050",
+    "rel_path": "content/get-started/docker-overview.md",
+    "title": "What is Docker?",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "content_manuals_desktop_index__339b39a9",
+    "rel_path": "content/manuals/desktop/_index.md",
+    "title": "Docker Desktop",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "content_manuals_engine_index__3a6da101",
+    "rel_path": "content/manuals/engine/_index.md",
+    "title": "Docker Engine",
+    "title_source": "front matter title"
+   }
+  ],
+  "highest_energy_edge_outside_cycle": {
+   "edge": [
+    "content_manuals_engine_index__3a6da101",
+    "content_reference_api_engine_index__6dd2a778"
+   ],
+   "energy": 0.012523652339713868,
+   "fraction": 0.1487880510117469
+  },
+  "hot_edge_links": {
+   "lines_to_other": [
+    {
+     "line": 65,
+     "link_text": "Docker APIs",
+     "target": "/reference/api/engine/_index.md"
+    }
+   ],
+   "note": "only the inspected page's own outgoing link lines are read",
+   "other_endpoint": "content_reference_api_engine_index__6dd2a778",
+   "page": "content_manuals_engine_index__3a6da101"
+  },
+  "inspected_pages": [
+   {
+    "doc_id": "content_get_started_docker_overview__039a8050",
+    "rel_path": "content/get-started/docker-overview.md",
+    "title": "What is Docker?",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "content_manuals_engine_index__3a6da101",
+    "rel_path": "content/manuals/engine/_index.md",
+    "title": "Docker Engine",
+    "title_source": "front matter title"
+   }
+  ],
+  "length": 3,
+  "selection_note": "first page is topology-selected; the second is output-informed (highest-energy edge outside the cycle, baseline q = 0.25)"
+ },
+ {
+  "arcs": [
+   {
+    "arc": [
+     "blog_2022_03_29_react_v18__396e4232",
+     "reference_react_dom_client_index__6e1bc254"
+    ],
+    "link_lines_in_source": [
+     {
+      "line": 185,
+      "link_text": "See docs for React DOM Client here",
+      "target": "/reference/react-dom/client"
+     }
+    ],
+    "source_page": "blog/2022/03/29/react-v18.md",
+    "target_page": "reference/react-dom/client/index.md"
+   },
+   {
+    "arc": [
+     "reference_react_dom_client_index__6e1bc254",
+     "learn_creating_a_react_app__0b4dac7e"
+    ],
+    "link_lines_in_source": "not inspected (page budget)",
+    "source_page": "reference/react-dom/client/index.md",
+    "target_page": "learn/creating-a-react-app.md"
+   },
+   {
+    "arc": [
+     "learn_creating_a_react_app__0b4dac7e",
+     "blog_2022_03_29_react_v18__396e4232"
+    ],
+    "link_lines_in_source": "not inspected (page budget)",
+    "source_page": "learn/creating-a-react-app.md",
+    "target_page": "blog/2022/03/29/react-v18.md"
+   }
+  ],
+  "commit": "40ea071c846b3ab1232391bab15d31f508913bf4",
+  "corpus_id": "react_docs",
+  "cycle": [
+   "blog_2022_03_29_react_v18__396e4232",
+   "reference_react_dom_client_index__6e1bc254",
+   "learn_creating_a_react_app__0b4dac7e"
+  ],
+  "cycle_pages": [
+   {
+    "doc_id": "blog_2022_03_29_react_v18__396e4232",
+    "rel_path": "blog/2022/03/29/react-v18.md",
+    "title": "React v18.0",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "reference_react_dom_client_index__6e1bc254",
+    "rel_path": "reference/react-dom/client/index.md",
+    "title": "Client React DOM APIs",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "learn_creating_a_react_app__0b4dac7e",
+    "rel_path": "learn/creating-a-react-app.md",
+    "title": "Creating a React App",
+    "title_source": "front matter title"
+   }
+  ],
+  "highest_energy_edge_outside_cycle": {
+   "edge": [
+    "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+    "reference_rsc_server_functions__f1b928e2"
+   ],
+   "energy": 0.017514617532980874,
+   "fraction": 0.08342605582714417
+  },
+  "hot_edge_links": {
+   "lines_to_other": [
+    {
+     "line": 55,
+     "link_text": "React Server Functions",
+     "target": "https://react.dev/reference/rsc/server-functions"
+    }
+   ],
+   "note": "only the inspected page's own outgoing link lines are read",
+   "other_endpoint": "reference_rsc_server_functions__f1b928e2",
+   "page": "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e"
+  },
+  "inspected_pages": [
+   {
+    "doc_id": "blog_2022_03_29_react_v18__396e4232",
+    "rel_path": "blog/2022/03/29/react-v18.md",
+    "title": "React v18.0",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+    "rel_path": "blog/2025/12/03/critical-security-vulnerability-in-react-server-components.md",
+    "title": "Critical Security Vulnerability in React Server Components",
+    "title_source": "front matter title"
+   }
+  ],
+  "length": 3,
+  "selection_note": "first page is topology-selected; the second is output-informed (highest-energy edge outside the cycle, baseline q = 0.25)"
+ },
+ {
+  "arcs": [
+   {
+    "arc": [
+     "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+     "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd"
+    ],
+    "link_lines_in_source": [
+     {
+      "line": 755,
+      "link_text": "AUTOTITLE",
+      "target": "/admin/monitoring-and-managing-your-instance/configuring-clustering/configuring-high-availability-replication-for-a-cluster"
+     },
+     {
+      "line": 763,
+      "link_text": "AUTOTITLE",
+      "target": "/admin/monitoring-and-managing-your-instance/configuring-clustering/configuring-high-availability-replication-for-a-cluster#disabling-high-availability-replication-for-a-cluster"
+     }
+    ],
+    "source_page": "admin/administering-your-instance/administering-your-instance-from-the-command-line/command-line-utilities.md",
+    "target_page": "admin/monitoring-and-managing-your-instance/configuring-clustering/configuring-high-availability-replication-for-a-cluster.md"
+   },
+   {
+    "arc": [
+     "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+     "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+    ],
+    "link_lines_in_source": "not inspected (page budget)",
+    "source_page": "admin/monitoring-and-managing-your-instance/configuring-clustering/configuring-high-availability-replication-for-a-cluster.md",
+    "target_page": "admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode.md"
+   },
+   {
+    "arc": [
+     "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1",
+     "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1"
+    ],
+    "link_lines_in_source": "not inspected (page budget)",
+    "source_page": "admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode.md",
+    "target_page": "admin/administering-your-instance/administering-your-instance-from-the-command-line/command-line-utilities.md"
+   }
+  ],
+  "commit": "945b78ebf7892e0eaec742fff8872b30aef33790",
+  "corpus_id": "github_docs",
+  "cycle": [
+   "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+   "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+   "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1"
+  ],
+  "cycle_pages": [
+   {
+    "doc_id": "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+    "rel_path": "admin/administering-your-instance/administering-your-instance-from-the-command-line/command-line-utilities.md",
+    "title": "Command-line utilities",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "admin_monitoring_and_managing_your_instance_configuring_clustering_configuring_high_availability_replication_for_a_cluster__a589f8fd",
+    "rel_path": "admin/monitoring-and-managing-your-instance/configuring-clustering/configuring-high-availability-replication-for-a-cluster.md",
+    "title": "Configuring high availability replication for a cluster",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "admin_administering_your_instance_configuring_maintenance_mode_enabling_and_scheduling_maintenance_mode__f6535df1",
+    "rel_path": "admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode.md",
+    "title": "Enabling and scheduling maintenance mode",
+    "title_source": "front matter title"
+   }
+  ],
+  "highest_energy_edge_outside_cycle": {
+   "edge": [
+    "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+    "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+   ],
+   "energy": 0.002888530832131858,
+   "fraction": 0.20715858583676397
+  },
+  "hot_edge_links": {
+   "lines_to_other": [
+    {
+     "line": 15,
+     "link_text": "AUTOTITLE",
+     "target": "/enterprise-onboarding/support-for-your-enterprise/understanding-support"
+    }
+   ],
+   "note": "only the inspected page's own outgoing link lines are read",
+   "other_endpoint": "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202",
+   "page": "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39"
+  },
+  "inspected_pages": [
+   {
+    "doc_id": "admin_administering_your_instance_administering_your_instance_from_the_command_line_command_line_utilities__088a79f1",
+    "rel_path": "admin/administering-your-instance/administering-your-instance-from-the-command-line/command-line-utilities.md",
+    "title": "Command-line utilities",
+    "title_source": "front matter title"
+   },
+   {
+    "doc_id": "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+    "rel_path": "enterprise-onboarding/setting-up-organizations-and-teams/use-innersource.md",
+    "title": "Using innersource in your enterprise",
+    "title_source": "front matter title"
+   }
+  ],
+  "length": 3,
+  "selection_note": "first page is topology-selected; the second is output-informed (highest-energy edge outside the cycle, baseline q = 0.25)"
+ }
+]

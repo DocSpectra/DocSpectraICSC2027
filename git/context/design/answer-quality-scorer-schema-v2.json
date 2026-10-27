@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "answer-quality-scorer-v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["errors", "correctness", "fit", "completeness", "caveats", "clarity"],
+  "properties": {
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "correctness": {"type": "object", "additionalProperties": false, "required": ["note", "score"], "properties": {"note": {"type": "string", "minLength": 1}, "score": {"type": "integer", "enum": [1, 2, 3, 4, 5]}}},
+    "fit": {"type": "object", "additionalProperties": false, "required": ["note", "score"], "properties": {"note": {"type": "string", "minLength": 1}, "score": {"type": "integer", "enum": [1, 2, 3, 4, 5]}}},
+    "completeness": {"type": "object", "additionalProperties": false, "required": ["note", "score"], "properties": {"note": {"type": "string", "minLength": 1}, "score": {"type": "integer", "enum": [1, 2, 3, 4, 5]}}},
+    "caveats": {"type": "object", "additionalProperties": false, "required": ["note", "score"], "properties": {"note": {"type": "string", "minLength": 1}, "score": {"type": "integer", "enum": [1, 2, 3, 4, 5]}}},
+    "clarity": {"type": "object", "additionalProperties": false, "required": ["note", "score"], "properties": {"note": {"type": "string", "minLength": 1}, "score": {"type": "integer", "enum": [1, 2, 3, 4, 5]}}}
+  }
+}

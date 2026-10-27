@@ -1,0 +1,1308 @@
+{
+ "audit_evidence": {
+  "bytes": 118938,
+  "path": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+  "sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65"
+ },
+ "counts": {
+  "LT": 7,
+  "R0": 1
+ },
+ "created": "2026-10-25",
+ "model_calls": 0,
+ "nature": "author-requested addendum after the results; a listing of the traces at chain step 7 (accepted added-edge follow, first page text exposure, supported destination, answer citation intersecting the follow's returned lines). Existing scores are joined, not recomputed. Counterparts differ in more than one link (O and S lack the edited pages and links; the follow-off cell lacks follows). Not a sample, an effect estimate or evidence of reliance.",
+ "plan": {
+  "bytes": 68974,
+  "path": "git/context/evidence/lt-trace-audit-24-plan-v1-2026-10-25.json",
+  "sha256": "229de8d6fffb42018886c34b502fab070eea0b3085e97041697151f3be195f4c"
+ },
+ "schema_version": "docspectra.icsc.lt_trace_audit_24.chain_listing.v1",
+ "sources": {
+  "operator_output_manifest": {
+   "bytes": 1841,
+   "path": "artifacts/lt-trace-audit-24-v1/operator-output/trace_provenance_manifest.json",
+   "sha256": "b66d5e0d225d830da6a9627d7cac709037336fddb783aebccd50f143fa5abf6a"
+  },
+  "ragas_scores": {
+   "LT": {
+    "bytes": 14093101,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-6337600cdc97/run/scores.json",
+    "sha256": "a8cfd28c44a305325f1ac892132f513a73f01dd122bac86554ec2092b0562c90"
+   },
+   "O": {
+    "bytes": 14399612,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-5d89a3217d52/run/scores.json",
+    "sha256": "6a98f9de8be7f457b732f58c16e5c854d0adbef3019ed316155f4a204bf69d47"
+   },
+   "R0": {
+    "bytes": 14509827,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-c2c2731d2141/run/scores.json",
+    "sha256": "9c1fa6964fc75f7fa9bebc4201bf1d075bc80e24b35402cab20af505ed0cae57"
+   },
+   "S": {
+    "bytes": 14238255,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-9a7d7f0e7b47/run/scores.json",
+    "sha256": "df0d0104c0f6ab81ba7daa1bf48da99557ab5bd1c84450c534328e870fe6d2c2"
+   }
+  },
+  "script": {
+   "bytes": 7444,
+   "path": "git/context/scripts/lt_trace_audit_24_chain_listing.py",
+   "sha256": "a0fa9b3f8aee1816a4fe01ec8214b20cfffbd0fa534c09e210db7b6dd1119965"
+  }
+ },
+ "traces": {
+  "LT": [
+   {
+    "answer_citations": 8,
+    "answer_cited_pages": 3,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0045-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0045-s1-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.25
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "d124e0e45cecff682e4e3074c28cdf2aa833f7a7de902dd4d32ee3468c904551"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0045-s1-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.14285714285714285
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.8571428571428571
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "8bf6c21f0edf3992dfd20dbe7b1fb09efe06402cb28d3eed305825e737074f1e"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0045-s1-no-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 3,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": true
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_engine_security_connect_ssh__caf1eb40": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.14285714285714285
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.9411764705882353
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "caf57d44a36d26137b6a0c3da60e847672c0f88d31c6d9b3d40397a8c7906029"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.14285714285714285
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.0
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.75
+     }
+    },
+    "follows_accepted": 3,
+    "follows_accepted_added": 2,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 4,
+      "destination_answer_citations": [
+       {
+        "end_line": 17,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "full",
+        "start_line": 11
+       },
+       {
+        "end_line": 38,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 19
+       },
+       {
+        "end_line": 57,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 41
+       }
+      ],
+      "doc_id": "content_manuals_engine_security_connect_ssh__caf1eb40",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 4,
+      "menu_edges": 7,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        69
+       ]
+      ],
+      "returned_text_sha256": "156f35cbbae121686b0dcf67d34ea57dc6d636b4b2179ad6784ae39cde8d7fef",
+      "source_doc_id": "content_manuals_engine_security_protect_access__8b0e812b",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "How do I connect to the remote Docker Engine API?",
+    "question_id": "docker_docs_faq_0045",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "be72d06b9ecc008991e18a95be694aac0ca13e9ef7262557082d5396b2cbced8"
+   },
+   {
+    "answer_citations": 5,
+    "answer_cited_pages": 3,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0049-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0049-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 3,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": true
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.36363636363636365
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "de2fccce8d3f0f26030ff68e15db3b290a7d9db06544e45ace3bda8de9442fa6"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0049-s1-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.2
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.27
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.8181818181818182
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "823dd7adf996b5ef6b2ab4065dac374100f1b2a3c3238e755f6b54809a10cec0"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0049-s1-no-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 2,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.2727272727272727
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.46
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.8
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "2d9d65345b6e25e45729af700d37b1d5fe86dc882c60ec487d92eae8d30a4bbb"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.4
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.3
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.9166666666666666
+     }
+    },
+    "follows_accepted": 1,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 4,
+      "destination_answer_citations": [
+       {
+        "end_line": 40,
+        "final_context": "full",
+        "first_exposure": "mixed",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "full",
+        "start_line": 31
+       },
+       {
+        "end_line": 48,
+        "final_context": "full",
+        "first_exposure": "read_only",
+        "intersects_this_follow": false,
+        "span_overlap_cited": "none",
+        "start_line": 46
+       }
+      ],
+      "doc_id": "content_manuals_desktop_setup_install_mac_permission_requirements__36ee8a7e",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 4,
+      "menu_edges": 4,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        34
+       ]
+      ],
+      "returned_text_sha256": "a1067199c87811f5ddf9d51226ceffa678e0b51f8077c70824752ee540ec1a12",
+      "source_doc_id": "content_manuals_desktop_setup_install_installer_options__cc45e0c1",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "How do I run Docker Desktop without administrator privileges?",
+    "question_id": "docker_docs_faq_0049",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "dcb770b2b283aed927835149d6369e54e40eac77d6ca754adbe369497792261e"
+   },
+   {
+    "answer_citations": 3,
+    "answer_cited_pages": 2,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0064-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0064-s1-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": true
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.25
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.15
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.7777777777777778
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "a66ccbcd007f754d8e22a55419b38db2380e46c5663268fe404e782590767963"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0064-s1-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 0,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.5
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "7464c4adbfd20955b9c562d8f041321ca99be4c1296a351492766fc65deeae76"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0064-s1-no-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 1,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.5714285714285714
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "cdff1e97cde8d744ccbe993df8cae0f4aa3c4109fe962a1e3afaf7ae0d5f4d39"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.25
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.38
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.9
+     }
+    },
+    "follows_accepted": 1,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 5,
+      "destination_answer_citations": [
+       {
+        "end_line": 20,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 17
+       },
+       {
+        "end_line": 69,
+        "final_context": "full",
+        "first_exposure": "read_only",
+        "intersects_this_follow": false,
+        "span_overlap_cited": "full",
+        "start_line": 57
+       }
+      ],
+      "doc_id": "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 3,
+      "menu_edges": 3,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        38
+       ]
+      ],
+      "returned_text_sha256": "caf149b9363c6737fb311e3fc30d24bde329e30559663680a6c9eb384610c6fd",
+      "source_doc_id": "content_manuals_engine_daemon_configuration__b53cd946",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "none"
+     }
+    ],
+    "question": "How do I move the file to a bigger drive?",
+    "question_id": "docker_docs_faq_0064",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "7361aa83c89bfb65d5222419a4a85f10f0dd1ef9f9eee12722a3a5304d5bf7a2"
+   },
+   {
+    "answer_citations": 8,
+    "answer_cited_pages": 2,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0078-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0078-s1-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.07
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.9545454545454546
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "3724b65323a996e03e797a24a816f957fc1d5287249ae5b4e36459b51a81dcf6"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0078-s1-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.9375
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "726e1f6908b6d72c0ec906de4a8d343fbcf5165943f74a1b7d67166320b5986b"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0078-s1-no-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 0,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.11
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.75
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "4a84c81a0aea1a69a1a78f0fc7461e27e7bdab4bd5d6115209e59883ef3ef96d"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.0
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.0
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.7727272727272727
+     }
+    },
+    "follows_accepted": 2,
+    "follows_accepted_added": 2,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 7,
+      "destination_answer_citations": [
+       {
+        "end_line": 19,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 11
+       },
+       {
+        "end_line": 47,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 39
+       },
+       {
+        "end_line": 72,
+        "final_context": "full",
+        "first_exposure": "mixed",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 57
+       }
+      ],
+      "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_logs__c66e4e36",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 10,
+      "menu_edges": 18,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        60
+       ]
+      ],
+      "returned_text_sha256": "ca172e1e1674f853542eeb9218b6417aa6c83c8b5e7b7a01ed9527dd63dff6b4",
+      "source_doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "My installation failed, how do I find out what happened?",
+    "question_id": "docker_docs_faq_0078",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "e65510f4f66c6ca052b2e26688d9fa422fab331f26c7dce74bc840ed876b364e"
+   },
+   {
+    "answer_citations": 3,
+    "answer_cited_pages": 3,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0100-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0100-s1-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 1.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.29
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "1953912e16a3b2b77701b5ab62bf7fe627c9a5f8621d420ee5a490b443898c3d"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0100-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 1.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 1,
+      "terminal": "answer",
+      "trace_sha256": "613eca9dab2e1e16c291571947fb92cc504ed3fa2f9df95abf3ebbec379ac4f7"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0100-s1-no-follow-r1",
+      "cited_pages": 1,
+      "cited_supported_pages": 0,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.0
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.75
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "1cc9b5020bb376cf243c4c42cef01df9936e5fc70557cc58bc193dcf2126612b"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 1.0
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.53
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.8333333333333334
+     }
+    },
+    "follows_accepted": 1,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 4,
+      "destination_answer_citations": [
+       {
+        "end_line": 10,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "full",
+        "start_line": 7
+       }
+      ],
+      "doc_id": "content_manuals_enterprise_security_single_sign_on_sso_context__0f4023fc",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 6,
+      "menu_edges": 13,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        25
+       ]
+      ],
+      "returned_text_sha256": "42f2f9e943590d033f5836be8f7f2b95e92a94c27677169f47a5d3dfecf697c7",
+      "source_doc_id": "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "What SSO flows does Docker support?",
+    "question_id": "docker_docs_faq_0100",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "50d8978584cea6fdaf3184476e1bc236e7fa46c9cfa84a605f7495ef1b173f72"
+   },
+   {
+    "answer_citations": 2,
+    "answer_cited_pages": 2,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0109-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0109-s1-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.6666666666666666
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.46
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.7272727272727273
+       }
+      },
+      "follows_accepted": 2,
+      "terminal": "answer",
+      "trace_sha256": "2fb94a8691f70cb2c037f2ef498d9390f192456909445c6f6e83f40178eab08a"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0109-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 1,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.6666666666666666
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.4
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.6
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "68ae3110dff996e123046da3fa72bb6cffcf68245db7ce087a7207efe7dc2a4c"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0109-s1-no-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 0,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.3333333333333333
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.67
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.7
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "8236879ee3b7ebf83f690a9bcf5fa4f629f70abd7398ef6178f78045bb7d7a99"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.6666666666666666
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.46
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.875
+     }
+    },
+    "follows_accepted": 1,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 5,
+      "destination_answer_citations": [
+       {
+        "end_line": 7,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "full",
+        "start_line": 5
+       }
+      ],
+      "doc_id": "content_manuals_enterprise_security_single_sign_on_enforce_sso__08ab58fb",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 7,
+      "menu_edges": 14,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        18
+       ]
+      ],
+      "returned_text_sha256": "ad0474d4d95b4ad230eeab9ddca447326b465f25e230c1dffa15396268f3cc85",
+      "source_doc_id": "content_manuals_enterprise_security_single_sign_on_connect__0cee1b8c",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "What happens if my IdP goes down when SSO is turned on?",
+    "question_id": "docker_docs_faq_0109",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "1e9de715c5cb0425b3253b44c95a24dd622ac87421aacf7a61f296091011e49e"
+   },
+   {
+    "answer_citations": 4,
+    "answer_cited_pages": 4,
+    "cell_id": "v-6337600cdc97-docker_docs_faq_0117-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0117-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.3333333333333333
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.32
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.7368421052631579
+       }
+      },
+      "follows_accepted": 2,
+      "terminal": "answer",
+      "trace_sha256": "f6e9f31ef39434990e59c52e66fe43b28608ccde9d39a46153aa22eda7d7c8e4"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0117-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": false
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.8333333333333334
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.5
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "5ef715a97b654607bfa1ed031f761d95b79f3877c8f16be05f3f6910c29fa048"
+     },
+     {
+      "arm": "LT",
+      "cell_id": "v-6337600cdc97-docker_docs_faq_0117-s1-no-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.5
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.45
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "b9c01b28527fbbbdbd3dc0fe2636d17e7aac04b2b946b486cd7a6534867e0d6a"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.5
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.38
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.7857142857142857
+     }
+    },
+    "follows_accepted": 1,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 5,
+      "destination_answer_citations": [
+       {
+        "end_line": 32,
+        "final_context": "full",
+        "first_exposure": "follow_only",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "full",
+        "start_line": 18
+       }
+      ],
+      "doc_id": "content_manuals_enterprise_security_provisioning_scim_scim_context__eb661050",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 6,
+      "menu_edges": 8,
+      "new_page_incident": true,
+      "returned_ranges": [
+       [
+        1,
+        34
+       ]
+      ],
+      "returned_text_sha256": "52eb72d3de4cb7685a88185cea74cd8cb78867803fb44ff53e00351af93bf85f",
+      "source_doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "Is Docker SSO fully synced with the IdP?",
+    "question_id": "docker_docs_faq_0117",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "d2beaf89bf069efac1792c0161ffdb2486441a2e49ccb6a208e0787abdcca0d9"
+   }
+  ],
+  "R0": [
+   {
+    "answer_citations": 4,
+    "answer_cited_pages": 3,
+    "cell_id": "v-c2c2731d2141-docker_docs_faq_0117-s1-follow-r1",
+    "condition": "s1-follow",
+    "counterparts": [
+     {
+      "arm": "O",
+      "cell_id": "v-5d89a3217d52-docker_docs_faq_0117-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.3333333333333333
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.32
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.7368421052631579
+       }
+      },
+      "follows_accepted": 2,
+      "terminal": "answer",
+      "trace_sha256": "f6e9f31ef39434990e59c52e66fe43b28608ccde9d39a46153aa22eda7d7c8e4"
+     },
+     {
+      "arm": "S",
+      "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0117-s1-follow-r1",
+      "cited_pages": 3,
+      "cited_supported_pages": 2,
+      "condition": "s1-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.8333333333333334
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.5
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 1.0
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "5ef715a97b654607bfa1ed031f761d95b79f3877c8f16be05f3f6910c29fa048"
+     },
+     {
+      "arm": "R0",
+      "cell_id": "v-c2c2731d2141-docker_docs_faq_0117-s1-no-follow-r1",
+      "cited_pages": 2,
+      "cited_supported_pages": 2,
+      "condition": "s1-no-follow",
+      "destination_cited": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": false
+      },
+      "destination_in_variant_corpus": {
+       "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a": true
+      },
+      "existing_ragas": {
+       "context_recall": {
+        "status": "ok",
+        "value": 0.6666666666666666
+       },
+       "factual_correctness": {
+        "status": "ok",
+        "value": 0.29
+       },
+       "faithfulness": {
+        "status": "ok",
+        "value": 0.8461538461538461
+       }
+      },
+      "follows_accepted": 0,
+      "terminal": "answer",
+      "trace_sha256": "ad34a75ca9011c8c1286885a53fc9bdb19f092ee6135a288ac002cc490a766db"
+     }
+    ],
+    "existing_ragas": {
+     "context_recall": {
+      "status": "ok",
+      "value": 0.6666666666666666
+     },
+     "factual_correctness": {
+      "status": "ok",
+      "value": 0.18
+     },
+     "faithfulness": {
+      "status": "ok",
+      "value": 0.9375
+     }
+    },
+    "follows_accepted": 2,
+    "follows_accepted_added": 1,
+    "in_common105": true,
+    "qualifying_follows": [
+     {
+      "call": 5,
+      "destination_answer_citations": [
+       {
+        "end_line": 57,
+        "final_context": "full",
+        "first_exposure": "mixed",
+        "intersects_this_follow": true,
+        "span_overlap_cited": "none",
+        "start_line": 39
+       }
+      ],
+      "doc_id": "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a",
+      "listed_by_prior_search": false,
+      "menu_added_edges": 2,
+      "menu_edges": 8,
+      "new_page_incident": false,
+      "returned_ranges": [
+       [
+        1,
+        40
+       ]
+      ],
+      "returned_text_sha256": "0b92e790a9a99d6cd997401d2072de5bb153481b0ac6598b5d95c4d4eea63fff",
+      "source_doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+      "span_exposure_final_context": "full",
+      "span_exposure_this_call": "full"
+     }
+    ],
+    "question": "Is Docker SSO fully synced with the IdP?",
+    "question_id": "docker_docs_faq_0117",
+    "replicate": 1,
+    "terminal": "answer",
+    "trace_sha256": "543b1e9afc92db7c35f558ca0d5a4120aa1c894276d58d28a416297a7366cc3d"
+   }
+  ]
+ }
+}

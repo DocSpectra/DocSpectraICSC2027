@@ -1,0 +1,1684 @@
+{
+  "areas": {
+    "A01": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 357,
+        "edges_removed_raw": 23,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "introduced-unresolved:1"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 3,
+          "changed": 8,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 352.9,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 1,
+            "touched": 0
+          }
+        },
+        "tokens": 741454
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 487,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 12,
+        "pass_diff": {
+          "added": 0,
+          "changed": 12,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 195.9,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 1,
+            "touched": 1
+          }
+        },
+        "tokens": 383290
+      },
+      "baseline_pages": 18
+    },
+    "A02": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2956,
+        "edges_removed_raw": 539,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 69,
+        "pass_diff": {
+          "added": 30,
+          "changed": 39,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 957.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 4473686
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1951,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 38,
+        "pass_diff": {
+          "added": 0,
+          "changed": 38,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 459.6,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 2264890
+      },
+      "baseline_pages": 41
+    },
+    "A03": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2267,
+        "edges_removed_raw": 461,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 66,
+        "pass_diff": {
+          "added": 26,
+          "changed": 40,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 682.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 4131586
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1553,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 42,
+        "pass_diff": {
+          "added": 2,
+          "changed": 40,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 489.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 3360653
+      },
+      "baseline_pages": 40
+    },
+    "A04": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 1023,
+        "edges_removed_raw": 190,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 76,
+        "pass_diff": {
+          "added": 16,
+          "changed": 60,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 722.7,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 4767920
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1091,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 60,
+        "pass_diff": {
+          "added": 0,
+          "changed": 60,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 377.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 2560767
+      },
+      "baseline_pages": 60
+    },
+    "A05": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 1249,
+        "edges_removed_raw": 189,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 16,
+          "changed": 87,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 658.0,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 0,
+            "touched": 0
+          }
+        },
+        "tokens": 2906104
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 945,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 86,
+        "pass_diff": {
+          "added": 0,
+          "changed": 86,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 503.3,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 0,
+            "touched": 0
+          }
+        },
+        "tokens": 2388717
+      },
+      "baseline_pages": 87
+    },
+    "A06": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 282,
+        "edges_removed_raw": 6,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 127,
+        "pass_diff": {
+          "added": 64,
+          "changed": 63,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 827.1,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 0,
+            "touched": 0
+          }
+        },
+        "tokens": 4261132
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 393,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 63,
+        "pass_diff": {
+          "added": 0,
+          "changed": 63,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 495.6,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 0,
+            "touched": 0
+          }
+        },
+        "tokens": 2449777
+      },
+      "baseline_pages": 63
+    },
+    "A07": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2535,
+        "edges_removed_raw": 490,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 86,
+        "pass_diff": {
+          "added": 40,
+          "changed": 46,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 890.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 1
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 3
+          }
+        },
+        "tokens": 7078120
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1728,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 56,
+        "pass_diff": {
+          "added": 2,
+          "changed": 54,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 609.0,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 3
+          }
+        },
+        "tokens": 3961887
+      },
+      "baseline_pages": 60
+    },
+    "A08": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 2441,
+        "edges_removed_raw": 504,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "protected-lines-missing:3"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 46,
+          "changed": 41,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 893.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 20,
+            "touched": 4
+          }
+        },
+        "tokens": 3397435
+      },
+      "R0": {
+        "admission": "rollback",
+        "edges_added_raw": 1646,
+        "edges_removed_raw": 14,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed",
+          "protected-lines-missing:1"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 7,
+          "changed": 44,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 544.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 20,
+            "touched": 1
+          }
+        },
+        "tokens": 3027339
+      },
+      "baseline_pages": 44
+    },
+    "A09": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 282,
+        "edges_removed_raw": 62,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 59,
+          "changed": 45,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 724.9,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 5,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 2,
+            "touched": 0
+          }
+        },
+        "tokens": 4488545
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 70,
+        "edges_removed_raw": 0,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 44,
+        "pass_diff": {
+          "added": 0,
+          "changed": 44,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 416.3,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 5,
+            "touched": 5
+          },
+          "tier2": {
+            "pages": 2,
+            "touched": 2
+          }
+        },
+        "tokens": 3464585
+      },
+      "baseline_pages": 49
+    },
+    "A10": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 3188,
+        "edges_removed_raw": 580,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 101,
+        "pass_diff": {
+          "added": 61,
+          "changed": 40,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 1893.5,
+        "sessions": 2,
+        "superseded_attempts": 1,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 2,
+            "touched": 2
+          }
+        },
+        "tokens": 11081775
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1387,
+        "edges_removed_raw": 6,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 56,
+        "pass_diff": {
+          "added": 0,
+          "changed": 56,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 526.7,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 2,
+            "touched": 2
+          }
+        },
+        "tokens": 2470268
+      },
+      "baseline_pages": 66
+    },
+    "A11": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2053,
+        "edges_removed_raw": 453,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 48,
+        "pass_diff": {
+          "added": 9,
+          "changed": 39,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 697.1,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 4
+          }
+        },
+        "tokens": 2927586
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1452,
+        "edges_removed_raw": 6,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 43,
+        "pass_diff": {
+          "added": 0,
+          "changed": 43,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 512.3,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 1647493
+      },
+      "baseline_pages": 48
+    },
+    "A12": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 3251,
+        "edges_removed_raw": 582,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 32,
+        "pass_diff": {
+          "added": 11,
+          "changed": 21,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 1175.7,
+        "sessions": 2,
+        "superseded_attempts": 1,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 2
+          }
+        },
+        "tokens": 3984091
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1788,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 42,
+        "pass_diff": {
+          "added": 0,
+          "changed": 42,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 442.0,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 3
+          }
+        },
+        "tokens": 1800883
+      },
+      "baseline_pages": 42
+    },
+    "A13": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 1951,
+        "edges_removed_raw": 435,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 67,
+        "pass_diff": {
+          "added": 44,
+          "changed": 23,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 812.3,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 11,
+            "touched": 10
+          }
+        },
+        "tokens": 2749411
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1307,
+        "edges_removed_raw": 6,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 25,
+        "pass_diff": {
+          "added": 0,
+          "changed": 25,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 369.6,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 11,
+            "touched": 11
+          }
+        },
+        "tokens": 1511436
+      },
+      "baseline_pages": 25
+    },
+    "A14": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 502,
+        "edges_removed_raw": 67,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 74,
+        "pass_diff": {
+          "added": 41,
+          "changed": 33,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 725.4,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 2591715
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 567,
+        "edges_removed_raw": 3,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 35,
+        "pass_diff": {
+          "added": 1,
+          "changed": 34,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 459.7,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 1762134
+      },
+      "baseline_pages": 34
+    },
+    "A15": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 1765,
+        "edges_removed_raw": 402,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 69,
+        "pass_diff": {
+          "added": 27,
+          "changed": 42,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 935.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 7,
+            "touched": 7
+          }
+        },
+        "tokens": 6398341
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1258,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 44,
+        "pass_diff": {
+          "added": 1,
+          "changed": 43,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 976.7,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 7,
+            "touched": 7
+          }
+        },
+        "tokens": 4867859
+      },
+      "baseline_pages": 44
+    },
+    "A16": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2371,
+        "edges_removed_raw": 473,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 59,
+        "pass_diff": {
+          "added": 22,
+          "changed": 37,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 716.1,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 3021781
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1618,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 38,
+        "pass_diff": {
+          "added": 0,
+          "changed": 38,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 414.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 2023272
+      },
+      "baseline_pages": 41
+    },
+    "A17": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 3136,
+        "edges_removed_raw": 581,
+        "not_admitted_because": [
+          "introduced-unresolved:6"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 33,
+          "changed": 45,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 870.0,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 8,
+            "touched": 1
+          }
+        },
+        "tokens": 4738992
+      },
+      "R0": {
+        "admission": "rollback",
+        "edges_added_raw": 2008,
+        "edges_removed_raw": 15,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 0,
+          "changed": 44,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 647.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 8,
+            "touched": 1
+          }
+        },
+        "tokens": 5895904
+      },
+      "baseline_pages": 44
+    },
+    "A18": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 2738,
+        "edges_removed_raw": 527,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 102,
+        "pass_diff": {
+          "added": 57,
+          "changed": 45,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 973.6,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 8091843
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1866,
+        "edges_removed_raw": 7,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 52,
+        "pass_diff": {
+          "added": 0,
+          "changed": 52,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 611.9,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 0,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 6,
+            "touched": 6
+          }
+        },
+        "tokens": 4367402
+      },
+      "baseline_pages": 52
+    },
+    "A19": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 160,
+        "edges_removed_raw": 19,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 50,
+          "changed": 41,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 659.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 7,
+            "touched": 1
+          }
+        },
+        "tokens": 2644749
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 260,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 39,
+        "pass_diff": {
+          "added": 0,
+          "changed": 39,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 626.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 7,
+            "touched": 5
+          }
+        },
+        "tokens": 2636546
+      },
+      "baseline_pages": 56
+    },
+    "A20": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 841,
+        "edges_removed_raw": 170,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 79,
+        "pass_diff": {
+          "added": 24,
+          "changed": 55,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 751.9,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 4,
+            "touched": 4
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 3
+          }
+        },
+        "tokens": 4294115
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 718,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 40,
+        "pass_diff": {
+          "added": 0,
+          "changed": 40,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 309.4,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 4,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 2
+          }
+        },
+        "tokens": 1470855
+      },
+      "baseline_pages": 55
+    },
+    "A21": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 1510,
+        "edges_removed_raw": 312,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 109,
+        "pass_diff": {
+          "added": 66,
+          "changed": 43,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 2180.8,
+        "sessions": 2,
+        "superseded_attempts": 1,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 3
+          }
+        },
+        "tokens": 13910091
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 191,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 57,
+        "pass_diff": {
+          "added": 3,
+          "changed": 54,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 538.6,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 4,
+            "touched": 4
+          }
+        },
+        "tokens": 4691674
+      },
+      "baseline_pages": 63
+    },
+    "A22": {
+      "LT": {
+        "admission": "rollback",
+        "edges_added_raw": 521,
+        "edges_removed_raw": 94,
+        "not_admitted_because": [
+          "status:c_rejected",
+          "C-failed"
+        ],
+        "pages_edited_attributed": 0,
+        "pass_diff": {
+          "added": 35,
+          "changed": 49,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 1,
+        "seconds": 847.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 0
+          },
+          "tier2": {
+            "pages": 25,
+            "touched": 5
+          }
+        },
+        "tokens": 2872331
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 474,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 35,
+        "pass_diff": {
+          "added": 0,
+          "changed": 35,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 391.0,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 3,
+            "touched": 3
+          },
+          "tier2": {
+            "pages": 25,
+            "touched": 23
+          }
+        },
+        "tokens": 1351867
+      },
+      "baseline_pages": 49
+    },
+    "A23": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 661,
+        "edges_removed_raw": 120,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 84,
+        "pass_diff": {
+          "added": 38,
+          "changed": 46,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 923.5,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 39,
+            "touched": 37
+          }
+        },
+        "tokens": 4339979
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 630,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 47,
+        "pass_diff": {
+          "added": 0,
+          "changed": 47,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 391.3,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 2,
+            "touched": 2
+          },
+          "tier2": {
+            "pages": 39,
+            "touched": 39
+          }
+        },
+        "tokens": 1894839
+      },
+      "baseline_pages": 48
+    },
+    "A24": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 1167,
+        "edges_removed_raw": 238,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 70,
+        "pass_diff": {
+          "added": 13,
+          "changed": 57,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 783.1,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 4,
+            "touched": 4
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 3
+          }
+        },
+        "tokens": 2783314
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 1152,
+        "edges_removed_raw": 5,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 38,
+        "pass_diff": {
+          "added": 0,
+          "changed": 38,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 401.4,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 4,
+            "touched": 4
+          },
+          "tier2": {
+            "pages": 3,
+            "touched": 1
+          }
+        },
+        "tokens": 2200761
+      },
+      "baseline_pages": 69
+    },
+    "A25": {
+      "LT": {
+        "admission": "advance",
+        "edges_added_raw": 346,
+        "edges_removed_raw": 22,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 17,
+        "pass_diff": {
+          "added": 14,
+          "changed": 3,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 249.7,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 1,
+            "touched": 1
+          },
+          "tier2": {
+            "pages": 1,
+            "touched": 1
+          }
+        },
+        "tokens": 675365
+      },
+      "R0": {
+        "admission": "advance",
+        "edges_added_raw": 406,
+        "edges_removed_raw": 2,
+        "not_admitted_because": [],
+        "pages_edited_attributed": 5,
+        "pass_diff": {
+          "added": 2,
+          "changed": 3,
+          "removed": 0
+        },
+        "resumes": 0,
+        "rollbacks": 0,
+        "seconds": 163.2,
+        "sessions": 1,
+        "superseded_attempts": 0,
+        "support_overlap": {
+          "tier1": {
+            "pages": 1,
+            "touched": 1
+          },
+          "tier2": {
+            "pages": 1,
+            "touched": 1
+          }
+        },
+        "tokens": 286700
+      },
+      "baseline_pages": 20
+    }
+  },
+  "arms": {
+    "LT": {
+      "areas_admitted": [
+        "A02",
+        "A03",
+        "A04",
+        "A06",
+        "A07",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A20",
+        "A21",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "areas_unedited": [
+        "A01",
+        "A05",
+        "A08",
+        "A09",
+        "A17",
+        "A19",
+        "A22"
+      ],
+      "budget": {
+        "tokens": 250000000,
+        "wall_seconds": 259200
+      },
+      "edges_added_vs_O": 3318,
+      "edges_removed_vs_O": 609,
+      "final_admission": "advance",
+      "final_tree_id": "d4cdf7f7d3f9ddc27696ae397487cd335b70e8ab8687f1e7086bfb1b0d115f74",
+      "final_tree_path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\LT-r30\\host\\checkpoints\\d4cdf7f7d3f9ddc27696ae397487cd335b70e8ab8687f1e7086bfb1b0d115f74\\source",
+      "pages_added": 605,
+      "pages_changed": 773,
+      "pages_merged": 0,
+      "pages_removed": 0,
+      "partial_unit_loss": 339,
+      "quote_survival": {
+        "anywhere": 57,
+        "elements": 57,
+        "in_credited_page": 57
+      },
+      "quote_survival_lost": [],
+      "resumes": 0,
+      "rollbacks": 10,
+      "session_seconds": 22730.8,
+      "sessions": 29,
+      "support_touched": {
+        "tier1": {
+          "pages": 42,
+          "touched": 23
+        },
+        "tier2": {
+          "pages": 175,
+          "touched": 116
+        }
+      },
+      "survey_tokens_counted": 1370520,
+      "tokens": 121778927,
+      "unmapped_removals": 0
+    },
+    "R0": {
+      "areas_admitted": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "areas_unedited": [
+        "A08",
+        "A17"
+      ],
+      "budget": {
+        "tokens": 250000000,
+        "wall_seconds": 259200
+      },
+      "edges_added_vs_O": 2023,
+      "edges_removed_vs_O": 15,
+      "final_admission": "advance",
+      "final_tree_id": "a01b9cedb040a7f7c52845a1ea7bd66a5da8f26dc6b78889b21f87a5e3d658d1",
+      "final_tree_path": "C:\\Users\\rocke\\Documents\\ResearchProjects\\DocSpectraICSC2027\\artifacts\\docker-corpus-variants-v1\\runs\\wc-v1\\R0-r27\\host\\checkpoints\\a01b9cedb040a7f7c52845a1ea7bd66a5da8f26dc6b78889b21f87a5e3d658d1\\source",
+      "pages_added": 11,
+      "pages_changed": 1006,
+      "pages_merged": 0,
+      "pages_removed": 0,
+      "partial_unit_loss": 187,
+      "quote_survival": {
+        "anywhere": 57,
+        "elements": 57,
+        "in_credited_page": 57
+      },
+      "quote_survival_lost": [],
+      "resumes": 0,
+      "rollbacks": 2,
+      "session_seconds": 12512.3,
+      "sessions": 26,
+      "support_touched": {
+        "tier1": {
+          "pages": 42,
+          "touched": 40
+        },
+        "tier2": {
+          "pages": 175,
+          "touched": 142
+        }
+      },
+      "survey_tokens_counted": 0,
+      "tokens": 71633507,
+      "unmapped_removals": 0
+    }
+  },
+  "created": "2026-10-18",
+  "deviations": "docs/manuscript-deviations-wc-refinement.md",
+  "fixes": {
+    "C1B_EXEMPTION": "C1b ignores a new page under content/includes/ that a variant page references with an include shortcode, and a new section _index.md whose folder holds another page (author, October 19)",
+    "C2_FIX": "on a C2 failure, lambda2 is recomputed on the v1 evaluation set plus the baseline pages outside the baseline main component that the variant joined to its main component; C2 passes if that value meets the v1 threshold",
+    "HUGO_FIX": "root-relative link /<p>/ resolves if content/manuals/<p> or content/<p> exists as <p>.md, <p>/_index.md or <p>/index.md in the variant tree (fragment and query ignored); applied to introduced_unresolved_v3 only; the baseline set, C v1 and the reported v1 count are unchanged",
+    "PROMPT_FIX": "a baseline protected line counts as present if it equals a variant protected line once a leading \"$\" prompt marker and its following whitespace are removed from both, and (fix 5b, LT A18) runs of internal whitespace are collapsed to one space; (fix 5c, LT reconciliation) a code-fence opener whose only change is a completed closing attribute brace is present"
+  },
+  "ledger_rows": 136,
+  "ledger_sha256": "8b75ec0fe4edc9b30c56823dfc6da980a6dad257a64e76f2e4f078ac4deb4a3a",
+  "new_or_rewritten_pages": {
+    "counts": {
+      "LT": {
+        "added": 605,
+        "rewritten": 773
+      },
+      "R0": {
+        "added": 11,
+        "rewritten": 1006
+      }
+    },
+    "path": "artifacts/wc-refine-17-records/new-or-rewritten-pages.json",
+    "role": "D11b: Sprint 19 pool completion judges these pages directly",
+    "sha256": "0202649283172d819519e393ed0514a4ca6c85d28cb2434ccc6bcff7750996cf"
+  },
+  "preregistration_sha256": "a04c70c5dbde846745428dac7573b1338a08baf26fba758948c7cc56e018f542",
+  "refine_plan_sha256": "fcdb91e931da3b77c5b313439ecca255ca947c659c1366b15a8e05db4a2b1838",
+  "run_id": "wc-v1",
+  "schema_version": "docspectra.icsc.wc_refinement_run.v1",
+  "tier1": {
+    "quotes": 57,
+    "support_pages": 42,
+    "tasks": 15
+  },
+  "tier2": {
+    "questions": 111,
+    "verified_pages": 175
+  }
+}

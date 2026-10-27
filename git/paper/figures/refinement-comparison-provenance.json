@@ -1,0 +1,13 @@
+{
+  "purpose": "Presentation only; same 102 recorded arm/control/mapped-baseline values, plus three original baselines.",
+  "source": "git\\context\\evidence\\normalized-magnetic-22-v1-2026-10-25.json",
+  "source_sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+  "csv": "artifacts\\normalized-magnetic-22-v1\\figures\\fig-c-refinement.csv",
+  "csv_sha256": "4f1324a037934eb41603a08a47603b05e2879012b5127d8604f04f04d3cce1ab",
+  "records_checked": 102,
+  "control_points_drawn": 90,
+  "refined_points_drawn": 6,
+  "baseline": "Original O equals both mapped O-prime values exactly for every plotted measure; one dashed line per panel.",
+  "encoding": "Directly labelled rows; common 0\u20130.20 horizontal scale; 5 controls per row; vertical offsets only distinguish points; range segment is min\u2013max, not uncertainty.",
+  "output_sha256": "e4d5814e00162522e9094139516ea2a9f60ec5e70bc4cc12443699c3d4e41b1d"
+}

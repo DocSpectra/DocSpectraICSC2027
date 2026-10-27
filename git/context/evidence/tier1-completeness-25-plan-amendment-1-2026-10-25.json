@@ -1,0 +1,39 @@
+{
+ "amendment": 1,
+ "amends": {
+  "bytes": 13001,
+  "path": "git/context/evidence/tier1-completeness-25-plan-v1-2026-10-25.json",
+  "sha256": "88623e6885746e61e6e7bef88ece799e6f5984fac6191a9f3ddd77e51d0607b7"
+ },
+ "change": "RA c813511: a judge reason counts as a forbidden string only when it is not part of the frozen task text (question, requirements, acceptance), the reference pages or the selected answers. Structural key checks and configured forbidden strings are unchanged. Image rebuilt offline: icsc-s25 sha256:0a3b58ad..., focused suite 456 OK (skipped 2).",
+ "created": "2026-10-25",
+ "image_receipt": {
+  "bytes": 526,
+  "path": "artifacts/tier1-completeness-25-v1/image/verification-image.json",
+  "sha256": "c8ed49896835eb893bf85b32f8cace7bf870bf0d008964b3e49d9c098ae8c2e5"
+ },
+ "ra": {
+  "commit": "c8135116767ca669fcd766e5aa349405bb5b1ae1",
+  "module": {
+   "bytes": 41693,
+   "path": "git/RetrievalArena/retrieval_arena/answer_element_comparison.py",
+   "sha256": "4e7d8ae3ba789f87a868a33493ab3fc603fada3e1b337b39ad9bb7188f58a8ad"
+  },
+  "tree": "4b17954ad0fa3c457e8355df7937937aacade67b"
+ },
+ "reason": "The first operator run (RA f596da9, image sha256:b0641188...) refused to publish: the packet leak check treated three judge reasons as leaked because they are verbatim copies of rubric acceptance criteria, which the packet shows by design. The operator wrote only a failed receipt; no table, summary or selection was published or seen.",
+ "schema_version": "docspectra.icsc.tier1_completeness_25.plan_amendment.v1",
+ "superseded": {
+  "failed_receipt": {
+   "bytes": 1945,
+   "path": "artifacts/tier1-completeness-25-v1/operator-output.failed-1/operator_receipt.v1.json",
+   "sha256": "f03ac8657bebc622c22edcb48259cd6b085700250570243868ae830bbee38ce4"
+  },
+  "image_receipt": {
+   "bytes": 526,
+   "path": "artifacts/tier1-completeness-25-v1/image/verification-image-f596da9.json",
+   "sha256": "98e3e875b6da906564614dd9a8615d71e25eb373b8c4c2f93e69fcbb0ac8763d"
+  }
+ },
+ "unchanged": "joins, populations, score rules, aggregation, contrasts, selection rule, salt, packet contents and hiding rules"
+}

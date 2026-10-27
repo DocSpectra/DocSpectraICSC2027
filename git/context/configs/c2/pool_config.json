@@ -1,0 +1,17 @@
+{
+ "schema_version": "retrieval_arena.pooled_support_pool_config.v1",
+ "pool_id": "c2-docker-docs-scope-v1-tier2",
+ "corpus_id": "docker_docs_scope_v1_O_ebce0bcead737137cce154bf6415413cc60d58e371432ac6c046a312cc1bcadc",
+ "generator_depth": 20,
+ "run_depth": 10,
+ "window_lines": 12,
+ "stride_lines": 6,
+ "windows_per_generator": 2,
+ "query_field": "answer",
+ "runs": [
+  {"run_id": "wc15-O-lexical", "path": "lexical.jsonl", "format": "legacy_predictions"},
+  {"run_id": "wc15-O-embedding", "path": "embedding.jsonl", "format": "legacy_predictions"},
+  {"run_id": "wc15-O-graph_expand", "path": "graph_expand.jsonl", "format": "legacy_predictions"}
+ ],
+ "embedding_model_id": "sentence-transformers/all-MiniLM-L6-v2@c9745ed1d9f207416be6d2e6f8de32d1f16199bf"
+}

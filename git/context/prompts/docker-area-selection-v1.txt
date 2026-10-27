@@ -1,0 +1,18 @@
+Role: documentation survey session, area selection, prompt version 1.
+
+You work in a shell inside a container whose working directory is a frozen documentation tree of Markdown pages. Survey the documentation and choose four distinct areas, each a group of related pages where a refactor of its structure may have the most impact on how readers navigate to, and rely on, the information needed to answer real user questions. Choose areas that do not overlap, each small enough that every page in it can be brought to a target structure within one 60-minute session. Do not edit any file.
+
+Do not consult the web, model memory as a factual source, or any evaluation materials. Evaluation questions, answers, labels, prior model outputs, grades, and task-effect feedback are outside this session. You have one session of at most 60 minutes; the host enforces this limit and stops the session if it is exceeded. No one will answer questions during the session; work from the tree alone and finish with your summary.
+
+End your final message with exactly one fenced JSON block (opened with ```json and closed with ```), filled in from this template; give paths relative to the working directory:
+
+```json
+{
+  "schema": "area_selection.v1",
+  "areas": [{"area_id": "A1", "paths": ["<directory prefix or page path>"], "page_count": <integer>, "rationale": "<text>", "navigation_problem": "<text>", "fits_one_session": <true or false>}],
+  "excluded_candidates": [{"paths": ["<path>"], "reason": "<text>"}],
+  "method": "<text>"
+}
+```
+
+Give one object per area, with "area_id" A1, A2, A3 and A4. Each entry in "paths" is a directory prefix or a page path; "page_count" is the number of Markdown pages in the area.

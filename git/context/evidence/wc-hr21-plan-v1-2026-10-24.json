@@ -1,0 +1,29 @@
+{
+ "analysis_rule": "share of the 16 disputed items judged `answers` (Wilson 95%); `partly_answers` counted as answers and as not (bracket); `unsure` excluded and counted. Controls: share of the 4 judged `answers` or `partly_answers`. If most disputed pages answer, O1's credit holds where direct judgment rejected it (the verifier misses moved answers); if few do, direct judgment holds. Agreement with the 53 is estimated, never claimed per page beyond the sample",
+ "blinding": "verifier decision and variant id hidden; all items from one edited variant (not blind to arm)",
+ "created": "2026-10-24",
+ "decision": "W-A4 spot-check (author, 2026-10-24)",
+ "key_sha256": "fcbce0526cfa8dbdf672a25e161fed4a5da804e6c3a0deef12cb6cf06965826e",
+ "model_calls": 0,
+ "packet_id": "wc-hr21-v1",
+ "packet_sha256": "fc9a6cf9f43e134282c95bb29d4c776d1b7b4a528030a10af2069272ad8aaf5f",
+ "page_sha256": "9b000c9e964d3c10ca3eb47476c0ef2f02875805ce3c8f07de182522d274d41e",
+ "population": {
+  "control_pool": 51,
+  "disputed": 53
+ },
+ "population_sha256": "34865ade76644d11cb3505f452ffe403766ba0a652214151585809468f5bb127",
+ "sample": {
+  "control": 4,
+  "disputed": 16,
+  "rule": "random.sample per stratum, seeded by sha256(seed_label:stratum); order seeded likewise",
+  "seed_label": "icsc2027-hr21-v1"
+ },
+ "schema_version": "docspectra.icsc.wc_hr21_plan.v1",
+ "verdicts": [
+  "answers",
+  "partly_answers",
+  "does_not_answer",
+  "unsure"
+ ]
+}

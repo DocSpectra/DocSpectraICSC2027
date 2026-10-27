@@ -1,0 +1,54 @@
+You are assessing one answer to a technical question about Docker
+documentation. Judge how well it would serve the person who asked.
+
+QUESTION
+<<QUESTION>>
+
+REFERENCE NOTES
+These points are supported by the documentation. They describe one correct
+approach. They are not a checklist: an answer may take a different route if
+that route correctly achieves what the asker said they want. If the asker
+names a tool or service to perform a step, an answer that moves that step to
+a different tool changes a constraint; a different route within the named
+tools does not. If no tool is named for a step, any correct tool may perform
+it.
+<<REFERENCE_NOTES>>
+
+ANSWER
+<<ANSWER>>
+
+Score the answer on each measure below from 1 to 5. For each measure, first
+write a short note naming the specific evidence in the answer, then the
+score. Judge only what the answer says. Length, confidence, formatting and
+citation count are not quality: a longer answer scores higher only if the
+extra content is needed. Citations in brackets refer to source lines you
+cannot see; do not reward or penalize them.
+
+1. Correctness: wrong, unsafe, or contradicting instructions.
+   5 = no wrong or unsafe instruction and nothing contradicts the notes
+   4 = a minor inaccuracy that would not stop the task
+   3 = one error the asker would have to notice and correct
+   2 = an error likely to make the task fail
+   1 = several such errors, or an unsafe instruction
+2. Fit: the asker's situation and stated constraints.
+   5 = addresses the stated goal and every stated constraint
+   3 = addresses the goal but ignores or weakens one stated constraint
+   1 = substitutes a different goal or drops the main constraint
+3. Actionable completeness: could the asker do the task from this answer alone?
+   5 = every required step is present and specific enough to carry out
+   3 = the main path is present but one required step is missing or vague
+   1 = the asker could not carry out the task from this answer
+4. Failure handling and caveats asked about in the question.
+   5 = every failure or special case the question raises is covered with handling
+   3 = some are covered, or covered without handling
+   1 = none are covered
+   If the question raises no failure or special case, score 5.
+5. Clarity.
+   5 = easy to follow in order
+   3 = followable with effort
+   1 = confusing or self-contradictory
+Use 2 and 4 for answers between the described levels.
+
+Return only JSON: "errors" (each wrong or unsafe instruction, short; an
+empty list if none), then "correctness", "fit", "completeness", "caveats"
+and "clarity" in that order, each with a "note" followed by a "score".

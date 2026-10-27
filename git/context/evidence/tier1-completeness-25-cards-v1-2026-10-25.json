@@ -1,0 +1,4078 @@
+{
+ "cards": [
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-c2c2731d2141-4fcc92145464-s6-follow-r2",
+     "arm": "R0",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-c2c2731d2141-4fcc92145464-s6-follow-r2.txt",
+     "sha256": "5e2ac40b0dbd34d999b67f7c412ec5d0d66011b5a7920de2d29945f77c6c456b"
+    },
+    "B": {
+     "answer_id": "v-6337600cdc97-4fcc92145464-s6-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-4fcc92145464-s6-follow-r2.txt",
+     "sha256": "7e7c089fc306f34b476cab79aa9fc4618c479c6be1404797736ed0745ded7592"
+    }
+   },
+   "condition": "s6-follow",
+   "contrast": "LT-R0",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "same label",
+     "requirement": "Check that the installed Buildx and BuildKit versions support build policies before proceeding.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "R0",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not mention checking the experimental status or verifying Buildx and BuildKit versions.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly state the experimental status or check for Buildx 0.31.0 or later and BuildKit 0.27.0 or later using the documented version and inspect commands.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Place the policy where Buildx will load it for the Dockerfile.",
+     "sides": {
+      "A": {
+       "answer_span": "Create `Dockerfile.rego` beside the Dockerfile.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 47,
+        "char_start": 0,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that `Dockerfile.rego` should be placed beside the Dockerfile.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Use a Rego policy named `Dockerfile.rego` beside the Dockerfile (or `<name>.Dockerfile.rego` for a custom-named Dockerfile).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 124,
+        "char_start": 0,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly names `Dockerfile.rego` beside `Dockerfile` and explains the corresponding `app.Dockerfile.rego` name if the Dockerfile is named `app.Dockerfile`.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "gain for LT",
+     "requirement": "Give the policy a valid deny-by-default decision while allowing local input.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "R0",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not include `allow if input.local` or explain why local access is needed.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "default allow := false\n\n# Keep this only if local build contexts should also be permitted.\nallow if input.local",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 332,
+        "char_start": 221,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer includes `package docker`, `default allow := false`, `allow if input.local`, and a `decision` object returning the allow result; it also explains why local access is needed.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "same label",
+     "requirement": "Restrict image inputs to the team's chosen registry hosts.",
+     "sides": {
+      "A": {
+       "answer_span": "allowed_registries := {\"docker.io\", \"ghcr.io\", \"registry.company.com\"}\n\nallow if input.image.host in allowed_registries",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 413,
+        "char_start": 294,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly shows an image rule using `input.image.host` and makes the approved host values explicit customization points.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "allowed_registries := {\"registry.company.com\", \"docker.io\"} # replace with your approved hosts\nallow if {\n  input.image.host in allowed_registries\n}",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 482,
+        "char_start": 334,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows an image rule using `input.image.host` and makes the approved host values explicit customization points.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Allow HTTP download inputs only when they use HTTPS.",
+     "sides": {
+      "A": {
+       "answer_span": "allow if input.http.schema == \"https\"",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 451,
+        "char_start": 414,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly shows a rule checking `input.http.schema == \"https\"` and applies it to remote downloads referenced by the Dockerfile.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "allow if {\n  input.http.schema == \"https\"\n}",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 597,
+        "char_start": 554,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows a rule checking `input.http.schema == \"https\"` and applies it to remote downloads referenced by the Dockerfile.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [
+     "C3"
+    ],
+    "losses": []
+   },
+   "lt_side": "B",
+   "pair_id": "P01",
+   "provenance": {
+    "A": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "edge_class": "added",
+       "new_page_incident": false
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        88,
+        100
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        103,
+        119
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        9,
+        22
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        65,
+        70
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        174,
+        196
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        338,
+        363
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "mixed",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        365,
+        375
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow",
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        306,
+        329
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_build_policies_intro__69332bb3": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 2,
+      "follows_accepted_added": 1,
+      "follows_attempted": 2,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        55,
+        83
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        95,
+        116
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        9,
+        22
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_testing__18acf5d3",
+       "first_exposure": "mixed",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        40,
+        64
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow",
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        15,
+        17
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        24,
+        28
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        39,
+        44
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        356,
+        364
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        460,
+        465
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_build_policies_intro__69332bb3": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 2,
+      "follows_accepted_added": 0,
+      "follows_attempted": 2,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "net_gain",
+   "task": 2,
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-6337600cdc97-fd3eec3159d8-s1-no-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-fd3eec3159d8-s1-no-follow-r2.txt",
+     "sha256": "073c235af4a3d6f5a051500e82c90c3bf0b48d19d69e102943a1010d048a9e4f"
+    },
+    "B": {
+     "answer_id": "v-c2c2731d2141-fd3eec3159d8-s1-no-follow-r2",
+     "arm": "R0",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-c2c2731d2141-fd3eec3159d8-s1-no-follow-r2.txt",
+     "sha256": "0737851cb044bb58a267dbde69724049661fa6d7cdc5f9676ed8b77a52b685e6"
+    }
+   },
+   "condition": "s1-no-follow",
+   "contrast": "LT-R0",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "loss for LT",
+     "requirement": "Identify the source volume and the containers that depend on it before copying.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly explain how to select the volume and use its Container in-use tab to identify its consumers and mounted target.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "identify every container using the source volume; for the safest consistent copy, stop those consumers first and plan for their downtime.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 444,
+        "char_start": 307,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that containers using the source volume should be identified before copying.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "gain for LT",
+     "requirement": "Use volume cloning to obtain a separate copy, including the sign-in prerequisite.",
+     "sides": {
+      "A": {
+       "answer_span": "Clone, don’t empty or import. Sign in to Docker Desktop, open Volumes, choose Clone for the app’s volume",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "status": "located_exact_normalized"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that cloning copies all volume data into a new volume, requires signing in, and starts through the volume's Clone icon.",
+       "relaxed_rule": "exact_normalized",
+       "strict_verdict": "uncertain"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "R0",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not mention cloning, the Clone icon, or the sign-in prerequisite.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "gain for LT",
+     "requirement": "Account for interruption during cloning.",
+     "sides": {
+      "A": {
+       "answer_span": "if containers are using the source volume, Docker temporarily stops them during the copy and restarts them afterward",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 379,
+        "char_start": 263,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly explains that running containers using the source volume are temporarily stopped and restarted after cloning completes.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "R0",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly state that running containers using the source volume are temporarily stopped and restarted after cloning completes.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "same label",
+     "requirement": "Launch a separate test container with the copied volume.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly direct the developer to Run in the Images view and Optional settings to specify the test container's name, ports, copied volume, and any required environment variables.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "R0",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not mention the Images view, Optional settings, or specifying the test container's name, ports, or environment variables.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "loss for LT",
+     "requirement": "Verify the test container configuration and begin observing its behavior.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly explain how to select the container, use Inspect to verify image version and port mapping, and use Logs to observe its real-time output.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "select the test container and open Logs to watch output in real time; search entries with Ctrl/Cmd+F, show timestamps, and copy the log output for comparison. Use the Containers view’s CPU and memory monitoring to see whether the test instance is resource constrained.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "status": "located_exact_normalized"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly explains how to select the container, use Logs to observe real-time output, and use resource monitoring.",
+       "relaxed_rule": "exact_normalized",
+       "strict_verdict": "uncertain"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [
+     "C2",
+     "C3"
+    ],
+    "losses": [
+     "C1",
+     "C5"
+    ]
+   },
+   "lt_side": "A",
+   "pair_id": "P02",
+   "provenance": {
+    "A": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_volume_data__147eb045",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        9,
+        20
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_volume_data__147eb045",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        22,
+        27
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_volume_data__147eb045",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        36,
+        42
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_container_logs__526c1fdd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        9,
+        25
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_build_inspection_reference__6d9d7951",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        5,
+        23
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_build_inspection_reference__6d9d7951",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        42,
+        57
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_build_inspection_reference__6d9d7951",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        74,
+        103
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_desktop_use_desktop_container__fc9b41af": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      },
+      "content_manuals_desktop_use_desktop_volumes__234877e0": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_index__fdfff5d4",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        15,
+        24
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_compose_gettingstarted__7ae78cf6",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        347,
+        374
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_compose_gettingstarted__7ae78cf6",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        452,
+        474
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_container__fc9b41af",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        31,
+        56
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_builds__eac842dd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        11,
+        19
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_builds__eac842dd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        30,
+        37
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_builds__eac842dd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        45,
+        55
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_builds__eac842dd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        57,
+        82
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_desktop_use_desktop_builds__eac842dd",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        99,
+        126
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_desktop_use_desktop_container__fc9b41af": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      },
+      "content_manuals_desktop_use_desktop_volumes__234877e0": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "tradeoff",
+   "task": 11,
+   "task_id": "fd3eec3159d882462d7c13087fa083c8bf77d3a2d711b1aa2a3e4bccd800fee2"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-5d89a3217d52-3799b9691ad1-s1-no-follow-r2",
+     "arm": "O",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-5d89a3217d52-3799b9691ad1-s1-no-follow-r2.txt",
+     "sha256": "6c02c778f3ef29c2c4e918c712499d60a3dec651c9ccb513478678aa6aa9bb37"
+    },
+    "B": {
+     "answer_id": "v-6337600cdc97-3799b9691ad1-s1-no-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-3799b9691ad1-s1-no-follow-r2.txt",
+     "sha256": "8c85f6f2dbe09b9c0be8e1fe999c97e9a371781f5c772fb6169045f62dcf106b"
+    }
+   },
+   "condition": "s1-no-follow",
+   "contrast": "LT-O",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "gain for LT",
+     "requirement": "Treat the reported gap as a documentation contribution and identify the requested content change.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "O",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly tie the proposed guide to an issue requesting missing or improved documentation.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "Use the community issue to agree what the guide covers; documentation issues are an appropriate place to request or suggest missing content (contributing guide, lines 18–22).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 281,
+        "char_start": 107,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that the community issue is used to agree on the guide's content and that documentation issues are appropriate for requesting or suggesting missing content.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Locate the editable Markdown source under the repository's content directory.",
+     "sides": {
+      "A": {
+       "answer_span": "Put Markdown content in `/content`",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 356,
+        "char_start": 322,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly identifies `/content` as the primary Markdown source.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "The site’s Markdown is primarily under `/content`, and section hierarchy affects sidebar navigation (lines 26–35).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 396,
+        "char_start": 282,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly identifies `/content` as the primary Markdown source.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "loss for LT",
+     "requirement": "Work from a fork and local clone.",
+     "sides": {
+      "A": {
+       "answer_span": "Fork `docker/docs`, clone your fork",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 828,
+        "char_start": 793,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly directs the contributor to fork `docker/docs` and clone that fork.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly mention forking `docker/docs` and cloning the fork before preparing changes.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Write the guide to be accurate, succinct, sufficient to complete the task, and understandable.",
+     "sides": {
+      "A": {
+       "answer_span": "Be accurate, concise, complete enough to perform the task, and clear.",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 693,
+        "char_start": 624,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly applies the four stated writing principles to the proposed instructions.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Draft platform-specific instructions clearly. Use the documented `tabs`/`tab` shortcodes for platform variations, with platform names and the appropriate command formatting (components guide, lines 94–122). Keep shared material outside the tabs so each platform section is focused. Link to existing product documentation rather than duplicating it. Add relevant links where they help readers continue, using the documented linked-page syntax as a pattern (components guide, lines 229–233).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "status": "located_word_order_90"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer applies principles of clarity, platform-specific instructions, and linking to existing documentation, which align with the requirement to write the guide accurately, succinctly, sufficiently, and understandably.",
+       "relaxed_rule": "word_order_90",
+       "strict_verdict": "uncertain"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [
+     "C1"
+    ],
+    "losses": [
+     "C3"
+    ]
+   },
+   "lt_side": "B",
+   "pair_id": "P03",
+   "provenance": {
+    "A": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        39,
+        50
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        84,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        24,
+        35
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        9,
+        25
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        94,
+        122
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        13,
+        18
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        31,
+        37
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        128,
+        131
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        56,
+        90
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        100,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        37,
+        50
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        126,
+        127
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "contributing__b8334458": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        18,
+        35
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        94,
+        122
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        229,
+        233
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        9,
+        25
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        29,
+        32
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        6,
+        11
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        37,
+        50
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        102,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "contributing__b8334458": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "tradeoff",
+   "task": 6,
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-5d89a3217d52-3799b9691ad1-s6-no-follow-r2",
+     "arm": "O",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-5d89a3217d52-3799b9691ad1-s6-no-follow-r2.txt",
+     "sha256": "5d028d249968f8279dd3f36a86bb307b8f7f972dc10b67698dd299b6a06f4d1a"
+    },
+    "B": {
+     "answer_id": "v-6337600cdc97-3799b9691ad1-s6-no-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-3799b9691ad1-s6-no-follow-r2.txt",
+     "sha256": "1ba4153d4601b1a1f588b66417a4c5fc3306c79e571da9e945e0df7be195c284"
+    }
+   },
+   "condition": "s6-no-follow",
+   "contrast": "LT-O",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "same label",
+     "requirement": "Treat the reported gap as a documentation contribution and identify the requested content change.",
+     "sides": {
+      "A": {
+       "answer_span": "Treat the community issue as the request for missing content; the issue tracker is explicitly for suggesting new content (Contributing, lines 18–22).",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 240,
+        "char_start": 91,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that the community issue is treated as a request for missing content, aligning with the requirement to identify the requested content change.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Use the requested platform-specific steps and link readers to existing product documentation for material that the new guide need not repeat. Keep the guide focused: the style guide advises filling genuine gaps, matching a document’s character, and avoiding unnecessary expansion (style guide, lines 86–110).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 409,
+        "char_start": 101,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly ties the proposed guide to an issue requesting missing or improved documentation by mentioning platform-specific steps and linking to existing product documentation.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "gain for LT",
+     "requirement": "Locate the editable Markdown source under the repository's content directory.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "O",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly mention the `/content` directory as the primary Markdown source or check whether the relevant content is edited there.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "Docker docs content is primarily Markdown in `/content`; the `contents` hierarchy defines sidebar navigation, and front matter `title`/`linkTitle` controls page and sidebar titles (contributing guide, lines 26–35).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 671,
+        "char_start": 457,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly identifies `/content` as the primary Markdown source and checks whether the relevant content is edited there.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "same label",
+     "requirement": "Work from a fork and local clone.",
+     "sides": {
+      "A": {
+       "answer_span": "Fork `docker/docs`, clone your fork, create a branch, and submit the PR from the fork (Contributing, lines 37, 60–80).",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1270,
+        "char_start": 1152,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly directs the contributor to fork `docker/docs` and clone that fork, satisfying the requirement to work from a fork and local clone.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Fork the repository, work on a branch, and avoid touching unrelated files or reformatting untouched portions (contributing guide, lines 37–46; lines 60–80).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1132,
+        "char_start": 976,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly directs the contributor to fork `docker/docs` and clone that fork before preparing changes.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Write the guide to be accurate, succinct, sufficient to complete the task, and understandable.",
+     "sides": {
+      "A": {
+       "answer_span": "Keep the guide focused: fill the gap without turning it into an exhaustive tutorial (Style, lines 86–110).",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 456,
+        "char_start": 350,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly mentions keeping the guide focused, which aligns with the requirement to write the guide to be accurate, succinct, sufficient to complete the task, and understandable.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Keep the guide focused: the style guide advises filling genuine gaps, matching a document’s character, and avoiding unnecessary expansion (style guide, lines 86–110).",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 409,
+        "char_start": 243,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer applies the four stated writing principles to the proposed instructions by emphasizing accuracy, succinctness, sufficiency, and understandability.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [
+     "C2"
+    ],
+    "losses": []
+   },
+   "lt_side": "B",
+   "pair_id": "P04",
+   "provenance": {
+    "A": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        18,
+        22
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        599,
+        609
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        86,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        94,
+        121
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        614,
+        616
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        630,
+        632
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        509,
+        530
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        37,
+        37
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        60,
+        80
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        41,
+        46
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        102,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        47,
+        50
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "contributing__b8334458": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        86,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        26,
+        35
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "components__4c11375d",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        94,
+        122
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "style__137b172f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        379,
+        386
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        37,
+        46
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        60,
+        80
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        83,
+        90
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        102,
+        110
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "contributing__b8334458",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        47,
+        50
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "contributing__b8334458": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "net_gain",
+   "task": 6,
+   "task_id": "3799b9691ad17b5504febc0f92bba5e7638a3ca2f454b03730169a07ba8295b9"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-c2c2731d2141-4fcc92145464-s1-no-follow-r2",
+     "arm": "R0",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-c2c2731d2141-4fcc92145464-s1-no-follow-r2.txt",
+     "sha256": "604233031d91f0e881da9cb4f9c560dcd4bf1abf169e8c22ba344fa717f52e88"
+    },
+    "B": {
+     "answer_id": "v-6337600cdc97-4fcc92145464-s1-no-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-4fcc92145464-s1-no-follow-r2.txt",
+     "sha256": "345dad93d734960fbc1cb375840986e066337c8fd229d2b55f229bcb4d832acb"
+    }
+   },
+   "condition": "s1-no-follow",
+   "contrast": "LT-R0",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "loss for LT",
+     "requirement": "Check that the installed Buildx and BuildKit versions support build policies before proceeding.",
+     "sides": {
+      "A": {
+       "answer_span": "Build policies are experimental in this documentation: it lists Buildx 0.31.0 or later and BuildKit 0.27.0 or later as prerequisites, so verify your versions before relying on this workflow.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2067,
+        "char_start": 1877,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states the experimental status and checks for Buildx 0.31.0 or later and BuildKit 0.27.0 or later.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not mention the experimental status or check for Buildx 0.31.0 or later and BuildKit 0.27.0 or later.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Place the policy where Buildx will load it for the Dockerfile.",
+     "sides": {
+      "A": {
+       "answer_span": "Put a `Dockerfile.rego` next to the Dockerfile",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 46,
+        "char_start": 0,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly names `Dockerfile.rego` beside `Dockerfile`.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Create `Dockerfile.rego` beside the Dockerfile.",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 47,
+        "char_start": 0,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly names `Dockerfile.rego` beside `Dockerfile`.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "same label",
+     "requirement": "Give the policy a valid deny-by-default decision while allowing local input.",
+     "sides": {
+      "A": {
+       "answer_span": "default allow := false\n\n# Optional: permit local build contexts.\nallow if input.local",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 303,
+        "char_start": 218,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer includes `package docker`, `default allow := false`, `allow if input.local`, and explains the need for local access.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "default allow := false\n\nallow if input.local",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 348,
+        "char_start": 304,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer includes `package docker`, `default allow := false`, `allow if input.local`, and a `decision` object returning the allow result.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "same label",
+     "requirement": "Restrict image inputs to the team's chosen registry hosts.",
+     "sides": {
+      "A": {
+       "answer_span": "allowed_registries := [\"docker.io\", \"ghcr.io\", \"registry.company.com\"]\nallow if {\n  input.image.host in allowed_registries\n}",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 429,
+        "char_start": 305,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows an image rule using `input.image.host` and makes the approved host values explicit customization points.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "allowed_registries := [\"docker.io\", \"ghcr.io\", \"dhi.io\", \"registry.company.com\"]\nallow if {\n  input.image.host in allowed_registries\n}",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 503,
+        "char_start": 369,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows an image rule using `input.image.host` and makes the approved host values explicit customization points.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Allow HTTP download inputs only when they use HTTPS.",
+     "sides": {
+      "A": {
+       "answer_span": "allow if {\n  input.http.schema == \"https\"\n}",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 539,
+        "char_start": 496,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows a rule checking `input.http.schema == \"https\"` and applies it to remote downloads referenced by the Dockerfile.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "allow if input.http.schema == \"https\"",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 542,
+        "char_start": 505,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows a rule checking `input.http.schema == \"https\"` and applies it to remote downloads referenced by the Dockerfile.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [],
+    "losses": [
+     "C1"
+    ]
+   },
+   "lt_side": "B",
+   "pair_id": "P05",
+   "provenance": {
+    "A": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        88,
+        98
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        110,
+        119
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        137,
+        143
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_debugging__5ce95293",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        26,
+        40
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_debugging__5ce95293",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        44,
+        65
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        35,
+        45
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_index__0d5e2f82",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        47,
+        54
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_build_policies_index__0d5e2f82": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        55,
+        83
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        95,
+        104
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_examples__526d2b0b",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        122,
+        128
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        348,
+        364
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        407,
+        408
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        435,
+        436
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_build_policies_usage__43829299",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        447,
+        465
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_build_policies_index__0d5e2f82": {
+       "cited": false,
+       "first_exposure_routes": [],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "net_loss",
+   "task": 2,
+   "task_id": "4fcc921454644620e49c5c619e0d5cac0b8afdee533dfc65bbfb5f94d7cd7ebb"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-6337600cdc97-ec6fdb1c0596-s6-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-ec6fdb1c0596-s6-follow-r2.txt",
+     "sha256": "877d00db59bcae4e0b3457c533b326ece8dc638e82b11be2d079179ca6a63968"
+    },
+    "B": {
+     "answer_id": "v-5d89a3217d52-ec6fdb1c0596-s6-follow-r2",
+     "arm": "O",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-5d89a3217d52-ec6fdb1c0596-s6-follow-r2.txt",
+     "sha256": "b5fedbd52980d7d1b0d796a9f6fe7e9ea49d0bae8ac38751c1b17a48b988b8fd"
+    }
+   },
+   "condition": "s6-follow",
+   "contrast": "LT-O",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "same label",
+     "requirement": "Check subscription and organizational authority before mirroring.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly state that mirroring requires a Select or Enterprise subscription or that an organization owner, editor, or authorized PAT/OAT is needed.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": null,
+       "arm": "O",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly state that mirroring requires Select or Enterprise or that an organization owner or editor, or an authorized PAT/OAT, is needed.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Find a Python repository with a FIPS variant.",
+     "sides": {
+      "A": {
+       "answer_span": "filter for Python and FIPS, then check the repository’s Images variants. Or run `docker dhi catalog list --filter python --fips`",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "status": "located_exact_normalized"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly describes using the catalog's FIPS filter or the `docker dhi catalog list --filter python --fips` command to find a FIPS variant of a Python image.",
+       "relaxed_rule": "exact_normalized",
+       "strict_verdict": "uncertain"
+      },
+      "B": {
+       "answer_span": "query the catalog with `docker dhi catalog list --filter python --fips`",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 125,
+        "char_start": 54,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly describes using the catalog's FIPS filter or `docker dhi catalog list --filter python --fips` to narrow the choice.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "same label",
+     "requirement": "Start mirroring the selected repository to the organization.",
+     "sides": {
+      "A": {
+       "answer_span": "run `docker dhi mirror start --org <org> -r dhi/python,<org>/dhi-python`",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 684,
+        "char_start": 612,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer provides the documented `docker dhi mirror start --org <your-org> -r dhi/python,<your-org>/dhi-python` pattern with placeholders identified.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "`docker dhi mirror start --org <your-org> -r dhi/python,<your-org>/dhi-python`",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 700,
+        "char_start": 622,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer provides the documented `docker dhi mirror start --org <your-org> -r dhi/python,<your-org>/dhi-python` pattern, with placeholders identified.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "loss for LT",
+     "requirement": "Verify that the mirror is available before customization.",
+     "sides": {
+      "A": {
+       "answer_span": null,
+       "arm": "LT",
+       "outcome": "judged_not_satisfied",
+       "quote_location": null,
+       "raw_verdict": "missing",
+       "reason": "The answer does not explicitly tell the engineer to wait for mirroring and confirm a `dhi-` prefixed repository in the organization namespace.",
+       "relaxed_rule": null,
+       "strict_verdict": "missing"
+      },
+      "B": {
+       "answer_span": "check the mirrored repository in your organization",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 785,
+        "char_start": 735,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer tells the engineer to wait for mirroring and confirm a `dhi-` prefixed repository in the organization namespace.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Create the certificate customization from the mirrored repository.",
+     "sides": {
+      "A": {
+       "answer_span": "add the OCI artifact. Explicitly include the certificate bundle path—artifact paths are not included by default.",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2104,
+        "char_start": 1992,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer describes customizing the mirrored DHI image by adding an OCI artifact for the company certificate and states the owner-first mirroring dependency.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Build and push an artifact image containing the certificate to a repository in the same namespace as the mirrored DHI. In the customization, choose the FIPS Python image/version, select that artifact repository and tag, and explicitly include the certificate file path",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1281,
+        "char_start": 1013,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer describes customizing the mirrored DHI image by adding an OCI artifact for the company certificate and states the owner-first mirroring dependency.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [],
+    "losses": [
+     "C4"
+    ]
+   },
+   "lt_side": "A",
+   "pair_id": "P06",
+   "provenance": {
+    "A": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "edge_class": "added",
+       "new_page_incident": true
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        10,
+        13
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        37,
+        69
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_use_fips__763fc7ae",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        13,
+        25
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_mirror_hub__d71697c0",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        10,
+        12
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_mirror_hub__d71697c0",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        27,
+        38
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_mirror_hub__d71697c0",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        43,
+        60
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_mirror_hub__d71697c0",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        63,
+        85
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        10,
+        20
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        22,
+        36
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        44,
+        59
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        68,
+        70
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_create_oci_artifacts__fe2a083e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        84,
+        96
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize_image__30c8070e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        10,
+        13
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize_image__30c8070e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        22,
+        32
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize_image__30c8070e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        57,
+        85
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize_image__30c8070e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        133,
+        139
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_use_fips__763fc7ae",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        27,
+        51
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify_tests__4af30aee",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        10,
+        24
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify_tests__4af30aee",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        40,
+        56
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify_tests__4af30aee",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        63,
+        71
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_dhi_how_to_select_enterprise__d6b4e655": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 1,
+      "follows_accepted_added": 1,
+      "follows_attempted": 1,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify__6b740341",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_mirror__819fcf55",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_manuals_dhi_core_concepts_fips__6575c069",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        40,
+        48
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_core_concepts_fips__6575c069",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        66,
+        76
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        59,
+        69
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        77,
+        82
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_select_enterprise__d6b4e655",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        98,
+        108
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize__db61f385",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        74,
+        96
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize__db61f385",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        138,
+        148
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize__db61f385",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        49,
+        59
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_customize__db61f385",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        150,
+        156
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_explore_build_process__d80113eb",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        158,
+        174
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_core_concepts_fips__6575c069",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        83,
+        107
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify__6b740341",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        9,
+        23
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify__6b740341",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        34,
+        40
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_how_to_verify__6b740341",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        54,
+        58
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_dhi_core_concepts_fips__6575c069",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        58,
+        62
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {
+      "content_manuals_dhi_how_to_select_enterprise__d6b4e655": {
+       "cited": true,
+       "first_exposure_routes": [
+        "read"
+       ],
+       "follow_edge_classes": [],
+       "mapping": "unresolved: page-level co-occurrence only; tier 1 has no line-level support labels",
+       "reached_by_follow": false
+      }
+     },
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 2,
+      "follows_accepted_added": 0,
+      "follows_attempted": 3,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "net_loss",
+   "task": 4,
+   "task_id": "ec6fdb1c059644bfc695cd6b4e32095a852b6044f579c98f2483de6bfc4bec70"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-6337600cdc97-d5686022be2b-s6-no-follow-r2",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-d5686022be2b-s6-no-follow-r2.txt",
+     "sha256": "4219da49c56b5fdeb882c9ea90e5f199d82cfc7c0285dd187ffa2a4b166cb59b"
+    },
+    "B": {
+     "answer_id": "v-c2c2731d2141-d5686022be2b-s6-no-follow-r2",
+     "arm": "R0",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-c2c2731d2141-d5686022be2b-s6-no-follow-r2.txt",
+     "sha256": "a097471d1f7b3bd2e84b0819bec9d6484ca6231916204778deca8ca580ec1c7d"
+    }
+   },
+   "condition": "s6-no-follow",
+   "contrast": "LT-R0",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "same label",
+     "requirement": "Configure a RAG source over code paths.",
+     "sides": {
+      "A": {
+       "answer_span": "docs: [./src, ./pkg]\n    strategies:\n      - type: semantic-embeddings\n        embedding_model: openai/text-embedding-3-small\n        chat_model: openai/gpt-5-mini\n        vector_dimensions: 1536\n        database: ./code.db\n        ast_context: true\n        chunking:\n          size: 2000\n          code_aware: true\n\nagents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\nSemantic summaries can find code by what it does even when names differ, but cost more and take longer to index because they use an LLM per chunk plus embeddings. `code_aware` uses AST-based chunking; the guide says tree-sitter support is currently only for Go, so don't assume AST-aware splitting for other languages. For a faster, less costly baseline, use `chunked-embeddings`; consider adding BM25 as a second strategy if you also need exact identifier searches. The guide recommends RRF fusion for combining strategies without score-scale tuning. (RAG guide, lines 168–221, 223–263, 334–347; configuration reference, lines 489–504)\n\nFor Zed, add an ACP server entry to `settings.json` and point it at the agent YAML:\n```json\n{\n  \"agent_servers\": {\n    \"codebase-agent\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\nUse the desired server name and the correct config-file path; then open a new external agent thread and select it. Docker Agent needs to be installed, the agent config must exist, the editor must support ACP, and provider API keys must be present in the shell environment before launching the editor. ACP provides editor filesystem context and file operations; it is the editor integration, while RAG supplies semantic code search. (ACP guide, lines 9–12, 22–34, 38–62)\n\nCheck it by starting the ACP server through the editor, sending a test prompt, confirming a response, and asking it to read a file. Then ask a meaning-oriented question about a behavior whose implementation uses different terminology (for example, where retry/backoff is implemented) and verify that the returned code is relevant. If it starts but cannot access files, check that the editor's working directory is the project root, the config path is correct relative to that directory or absolute, and the editor/plugin implements the needed ACP features. (ACP guide, lines 147–160; RAG guide, lines 186–216)",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2938,
+        "char_start": 526,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states the required RAG source with docs paths, a chunked-embeddings strategy, embedding model, vector dimensions, and local database path consistent with the supplied example.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "docs: [./src, ./pkg]\n    strategies:\n      - type: semantic-embeddings\n        embedding_model: openai/text-embedding-3-small\n        vector_dimensions: 1536\n        database: ./code.db\n        ast_context: true\n        chunking:\n          size: 1000\n          code_aware: true\n\nagents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\n\nKeep the indexed paths focused on relevant code rather than the entire repository; excluding tests, vendor, and generated files where they are not useful can reduce startup/indexing time. Docker Agent indexes on first use, respects `.gitignore` by default, reuses the index, and detects and re-indexes changed files. For semantic-embeddings, configure both the embedding and chat models; its trade-off is slower indexing and higher API cost because it calls both models. If results miss relevant code, increase the strategy `limit`, lower its `threshold`, enlarge chunks, or add another retrieval strategy; if results are noisy, do the reverse or add reranking.\n\nFor an ACP-capable editor, Zed’s built-in ACP support can launch the agent with this entry in `settings.json` (replace the name and config path):\n\n```json\n{\n  \"agent_servers\": {\n    \"code-assistant\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\n\nSet the model-provider API key in the shell environment before launching the editor. In Zed, start a new external-agent thread and select the configured agent. For Neovim, use CodeCompanion’s built-in Docker Agent adapter, configure its command as `docker agent serve acp agent.yml`, restart Neovim, run `:CodeCompanion`, then switch to the Docker Agent adapter. Note that CodeCompanion does not support terminal operations, so shell/script-shell toolsets are unavailable through that integration.\n\nCheck the setup by sending a prompt in the editor, confirming the agent responds, and asking it to read a file. For a retrieval-specific smoke test, ask for a behavior whose implementation uses different wording (for example, “where is retry/backoff handled?”), then verify the returned chunk points to the relevant function; also try an exact identifier query. If the agent starts but cannot access files, check the editor working directory is the project root, the config path is valid relative to it (or absolute), and the editor/plugin implements ACP features. ACP provides editor filesystem context and file operations, while RAG supplies targeted search results—so this combines editor access with retrieval rather than loading the whole repository into the prompt.\n\nChoose options by need: `semantic-embeddings` for behavior/functionality searches; `bm25` for fast local exact identifier, endpoint, or error-text search; use both with RRF hybrid fusion when you need both kinds of retrieval. Direct `chunked-embeddings` is a simpler semantic option, but the docs characterize it as useful for intent/paraphrases and note that it may miss exact technical terms. Start with defaults and tune after testing; chunk sizes and overlap are measured in characters, not tokens.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "status": "located_word_order_90"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states the RAG source with docs paths, a chunked-embeddings strategy, embedding model, vector dimensions, and local database path consistent with the supplied example.",
+       "relaxed_rule": "word_order_90",
+       "strict_verdict": "uncertain"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Attach the named RAG source to the agent.",
+     "sides": {
+      "A": {
+       "answer_span": "agents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\nSemantic summaries can find code by what it does even when names differ, but cost more and take longer to index because they use an LLM per chunk plus embeddings. `code_aware` uses AST-based chunking; the guide says tree-sitter support is currently only for Go, so don't assume AST-aware splitting for other languages. For a faster, less costly baseline, use `chunked-embeddings`; consider adding BM25 as a second strategy if you also need exact identifier searches. The guide recommends RRF fusion for combining strategies without score-scale tuning. (RAG guide, lines 168–221, 223–263, 334–347; configuration reference, lines 489–504)\n\nFor Zed, add an ACP server entry to `settings.json` and point it at the agent YAML:\n```json\n{\n  \"agent_servers\": {\n    \"codebase-agent\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\nUse the desired server name and the correct config-file path; then open a new external agent thread and select it. Docker Agent needs to be installed, the agent config must exist, the editor must support ACP, and provider API keys must be present in the shell environment before launching the editor. ACP provides editor filesystem context and file operations; it is the editor integration, while RAG supplies semantic code search. (ACP guide, lines 9–12, 22–34, 38–62)\n\nCheck it by starting the ACP server through the editor, sending a test prompt, confirming a response, and asking it to read a file. Then ask a meaning-oriented question about a behavior whose implementation uses different terminology (for example, where retry/backoff is implemented) and verify that the returned code is relevant. If it starts but cannot access files, check that the editor's working directory is the project root, the config path is correct relative to that directory or absolute, and the editor/plugin implements the needed ACP features. (ACP guide, lines 147–160; RAG guide, lines 186–216)",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2938,
+        "char_start": 843,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly states that the agent's rag array references the defined source and includes an instruction to search the codebase when needed.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "agents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\n\nKeep the indexed paths focused on relevant code rather than the entire repository; excluding tests, vendor, and generated files where they are not useful can reduce startup/indexing time. Docker Agent indexes on first use, respects `.gitignore` by default, reuses the index, and detects and re-indexes changed files. For semantic-embeddings, configure both the embedding and chat models; its trade-off is slower indexing and higher API cost because it calls both models. If results miss relevant code, increase the strategy `limit`, lower its `threshold`, enlarge chunks, or add another retrieval strategy; if results are noisy, do the reverse or add reranking.\n\nFor an ACP-capable editor, Zed’s built-in ACP support can launch the agent with this entry in `settings.json` (replace the name and config path):\n\n```json\n{\n  \"agent_servers\": {\n    \"code-assistant\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\n\nSet the model-provider API key in the shell environment before launching the editor. In Zed, start a new external-agent thread and select the configured agent. For Neovim, use CodeCompanion’s built-in Docker Agent adapter, configure its command as `docker agent serve acp agent.yml`, restart Neovim, run `:CodeCompanion`, then switch to the Docker Agent adapter. Note that CodeCompanion does not support terminal operations, so shell/script-shell toolsets are unavailable through that integration.\n\nCheck the setup by sending a prompt in the editor, confirming the agent responds, and asking it to read a file. For a retrieval-specific smoke test, ask for a behavior whose implementation uses different wording (for example, “where is retry/backoff handled?”), then verify the returned chunk points to the relevant function; also try an exact identifier query. If the agent starts but cannot access files, check the editor working directory is the project root, the config path is valid relative to it (or absolute), and the editor/plugin implements ACP features. ACP provides editor filesystem context and file operations, while RAG supplies targeted search results—so this combines editor access with retrieval rather than loading the whole repository into the prompt.\n\nChoose options by need: `semantic-embeddings` for behavior/functionality searches; `bm25` for fast local exact identifier, endpoint, or error-text search; use both with RRF hybrid fusion when you need both kinds of retrieval. Direct `chunked-embeddings` is a simpler semantic option, but the docs characterize it as useful for intent/paraphrases and note that it may miss exact technical terms. Start with defaults and tune after testing; chunk sizes and overlap are measured in characters, not tokens.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 3657,
+        "char_start": 778,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly shows the agent's rag array referencing the defined source and an instruction to search the codebase when needed.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "same label",
+     "requirement": "Use a valid agent configuration structure.",
+     "sides": {
+      "A": {
+       "answer_span": "agents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\nSemantic summaries can find code by what it does even when names differ, but cost more and take longer to index because they use an LLM per chunk plus embeddings. `code_aware` uses AST-based chunking; the guide says tree-sitter support is currently only for Go, so don't assume AST-aware splitting for other languages. For a faster, less costly baseline, use `chunked-embeddings`; consider adding BM25 as a second strategy if you also need exact identifier searches. The guide recommends RRF fusion for combining strategies without score-scale tuning. (RAG guide, lines 168–221, 223–263, 334–347; configuration reference, lines 489–504)\n\nFor Zed, add an ACP server entry to `settings.json` and point it at the agent YAML:\n```json\n{\n  \"agent_servers\": {\n    \"codebase-agent\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\nUse the desired server name and the correct config-file path; then open a new external agent thread and select it. Docker Agent needs to be installed, the agent config must exist, the editor must support ACP, and provider API keys must be present in the shell environment before launching the editor. ACP provides editor filesystem context and file operations; it is the editor integration, while RAG supplies semantic code search. (ACP guide, lines 9–12, 22–34, 38–62)\n\nCheck it by starting the ACP server through the editor, sending a test prompt, confirming a response, and asking it to read a file. Then ask a meaning-oriented question about a behavior whose implementation uses different terminology (for example, where retry/backoff is implemented) and verify that the returned code is relevant. If it starts but cannot access files, check that the editor's working directory is the project root, the config path is correct relative to that directory or absolute, and the editor/plugin implements the needed ACP features. (ACP guide, lines 147–160; RAG guide, lines 186–216)",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2938,
+        "char_start": 843,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly places agent definitions under the required agents top-level section and the RAG source under rag.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "rag:\n  codebase:\n    docs: [./src, ./pkg]\n    strategies:\n      - type: semantic-embeddings\n        embedding_model: openai/text-embedding-3-small\n        vector_dimensions: 1536\n        chat_model: openai/gpt-5-mini\n        database: ./code.db\n        ast_context: true\n        chunking:\n          size: 1000\n          code_aware: true\n\nagents:\n  root:\n    model: openai/gpt-5\n    instruction: You are a coding assistant. Search the codebase when needed.\n    rag: [codebase]\n```\n\nKeep the indexed paths focused on relevant code rather than the entire repository; excluding tests, vendor, and generated files where they are not useful can reduce startup/indexing time. Docker Agent indexes on first use, respects `.gitignore` by default, reuses the index, and detects and re-indexes changed files. For semantic-embeddings, configure both the embedding and chat models; its trade-off is slower indexing and higher API cost because it calls both models. If results miss relevant code, increase the strategy `limit`, lower its `threshold`, enlarge chunks, or add another retrieval strategy; if results are noisy, do the reverse or add reranking.\n\nFor an ACP-capable editor, Zed’s built-in ACP support can launch the agent with this entry in `settings.json` (replace the name and config path):\n\n```json\n{\n  \"agent_servers\": {\n    \"code-assistant\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\n\nSet the model-provider API key in the shell environment before launching the editor. In Zed, start a new external-agent thread and select the configured agent. For Neovim, use CodeCompanion’s built-in Docker Agent adapter, configure its command as `docker agent serve acp agent.yml`, restart Neovim, run `:CodeCompanion`, then switch to the Docker Agent adapter. Note that CodeCompanion does not support terminal operations, so shell/script-shell toolsets are unavailable through that integration.\n\nCheck the setup by sending a prompt in the editor, confirming the agent responds, and asking it to read a file. For a retrieval-specific smoke test, ask for a behavior whose implementation uses different wording (for example, “where is retry/backoff handled?”), then verify the returned chunk points to the relevant function; also try an exact identifier query. If the agent starts but cannot access files, check the editor working directory is the project root, the config path is valid relative to it (or absolute), and the editor/plugin implements ACP features. ACP provides editor filesystem context and file operations, while RAG supplies targeted search results—so this combines editor access with retrieval rather than loading the whole repository into the prompt.\n\nChoose options by need: `semantic-embeddings` for behavior/functionality searches; `bm25` for fast local exact identifier, endpoint, or error-text search; use both with RRF hybrid fusion when you need both kinds of retrieval. Direct `chunked-embeddings` is a simpler semantic option, but the docs characterize it as useful for intent/paraphrases and note that it may miss exact technical terms. Start with defaults and tune after testing; chunk sizes and overlap are measured in characters, not tokens.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 3657,
+        "char_start": 440,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer places agent definitions under the required agents top-level section and the RAG source under rag.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "same label",
+     "requirement": "Identify ACP prerequisites.",
+     "sides": {
+      "A": {
+       "answer_span": "Use the desired server name and the correct config-file path; then open a new external agent thread and select it. Docker Agent needs to be installed, the agent config must exist, the editor must support ACP, and provider API keys must be present in the shell environment before launching the editor. ACP provides editor filesystem context and file operations; it is the editor integration, while RAG supplies semantic code search. (ACP guide, lines 9–12, 22–34, 38–62)\n\nCheck it by starting the ACP server through the editor, sending a test prompt, confirming a response, and asking it to read a file. Then ask a meaning-oriented question about a behavior whose implementation uses different terminology (for example, where retry/backoff is implemented) and verify that the returned code is relevant. If it starts but cannot access files, check that the editor's working directory is the project root, the config path is correct relative to that directory or absolute, and the editor/plugin implements the needed ACP features. (ACP guide, lines 147–160; RAG guide, lines 186–216)",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2938,
+        "char_start": 1858,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly calls for Docker Agent, an agent YAML configuration, an ACP-capable editor, and the chosen model provider's API key in the editor's shell environment.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "For an ACP-capable editor, Zed’s built-in ACP support can launch the agent with this entry in `settings.json` (replace the name and config path):\n\n```json\n{\n  \"agent_servers\": {\n    \"code-assistant\": {\n      \"command\": \"docker\",\n      \"args\": [\"agent\", \"serve\", \"acp\", \"agent.yml\"]\n    }\n  }\n}\n```\n\nSet the model-provider API key in the shell environment before launching the editor. In Zed, start a new external-agent thread and select the configured agent. For Neovim, use CodeCompanion’s built-in Docker Agent adapter, configure its command as `docker agent serve acp agent.yml`, restart Neovim, run `:CodeCompanion`, then switch to the Docker Agent adapter. Note that CodeCompanion does not support terminal operations, so shell/script-shell toolsets are unavailable through that integration.\n\nCheck the setup by sending a prompt in the editor, confirming the agent responds, and asking it to read a file. For a retrieval-specific smoke test, ask for a behavior whose implementation uses different wording (for example, “where is retry/backoff handled?”), then verify the returned chunk points to the relevant function; also try an exact identifier query. If the agent starts but cannot access files, check the editor working directory is the project root, the config path is valid relative to it (or absolute), and the editor/plugin implements ACP features. ACP provides editor filesystem context and file operations, while RAG supplies targeted search results—so this combines editor access with retrieval rather than loading the whole repository into the prompt.\n\nChoose options by need: `semantic-embeddings` for behavior/functionality searches; `bm25` for fast local exact identifier, endpoint, or error-text search; use both with RRF hybrid fusion when you need both kinds of retrieval. Direct `chunked-embeddings` is a simpler semantic option, but the docs characterize it as useful for intent/paraphrases and note that it may miss exact technical terms. Start with defaults and tune after testing; chunk sizes and overlap are measured in characters, not tokens.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 3657,
+        "char_start": 1584,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer calls for Docker Agent, an agent YAML configuration, an ACP-capable editor, and the chosen model provider's API key in the editor's shell environment.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Validate the editor integration.",
+     "sides": {
+      "A": {
+       "answer_span": "Check it by starting the ACP server through the editor, sending a test prompt, confirming a response, and asking it to read a file. Then ask a meaning-oriented question about a behavior whose implementation uses different terminology (for example, where retry/backoff is implemented) and verify that the returned code is relevant. If it starts but cannot access files, check that the editor's working directory is the project root, the config path is correct relative to that directory or absolute, and the editor/plugin implements the needed ACP features. (ACP guide, lines 147–160; RAG guide, lines 186–216)",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 2938,
+        "char_start": 2329,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly describes starting the ACP server through the editor, sending a test prompt, checking the reply, and asking it to read a file.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "Check the setup by sending a prompt in the editor, confirming the agent responds, and asking it to read a file. For a retrieval-specific smoke test, ask for a behavior whose implementation uses different wording (for example, “where is retry/backoff handled?”), then verify the returned chunk points to the relevant function; also try an exact identifier query. If the agent starts but cannot access files, check the editor working directory is the project root, the config path is valid relative to it (or absolute), and the editor/plugin implements ACP features. ACP provides editor filesystem context and file operations, while RAG supplies targeted search results—so this combines editor access with retrieval rather than loading the whole repository into the prompt.\n\nChoose options by need: `semantic-embeddings` for behavior/functionality searches; `bm25` for fast local exact identifier, endpoint, or error-text search; use both with RRF hybrid fusion when you need both kinds of retrieval. Direct `chunked-embeddings` is a simpler semantic option, but the docs characterize it as useful for intent/paraphrases and note that it may miss exact technical terms. Start with defaults and tune after testing; chunk sizes and overlap are measured in characters, not tokens.",
+       "arm": "R0",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 3657,
+        "char_start": 2382,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer describes starting the ACP server through the editor, sending a test prompt, checking the reply, and asking it to read a file.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [],
+    "losses": []
+   },
+   "lt_side": "A",
+   "pair_id": "P07",
+   "provenance": {
+    "A": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        8,
+        11
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        42,
+        69
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        168,
+        221
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        223,
+        263
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        334,
+        347
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_reference_config__fb52747e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        489,
+        504
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        9,
+        12
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        22,
+        34
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        38,
+        62
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        147,
+        160
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        186,
+        216
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {},
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [],
+     "citations": [
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        122,
+        163
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        248,
+        301
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        303,
+        343
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        88,
+        118
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_reference_config__fb52747e",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        345,
+        364
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        50,
+        83
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        86,
+        134
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_integrations_acp__e9622a17",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        167,
+        180
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_rag__ee9ce84f",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        38,
+        49
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_manuals_ai_docker_agent_best_practices__396cad09",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        133,
+        154
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {},
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 0,
+      "follows_accepted_added": 0,
+      "follows_attempted": 0,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 2,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "label_agreement",
+   "task": 3,
+   "task_id": "d5686022be2b6824e0d348f753a1e5ec1b08b07ea50240e782e07be928669635"
+  },
+  {
+   "answers": {
+    "A": {
+     "answer_id": "v-6337600cdc97-0daa1729fe47-s6-follow-r1",
+     "arm": "LT",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-6337600cdc97-0daa1729fe47-s6-follow-r1.txt",
+     "sha256": "56967131497b5eae90ee7dd01134f8b9fda693e3324f31b2d1080c8feba60648"
+    },
+    "B": {
+     "answer_id": "v-5d89a3217d52-0daa1729fe47-s6-follow-r1",
+     "arm": "O",
+     "path": "artifacts/tier1-completeness-25-v1/operator-input/answers/v-5d89a3217d52-0daa1729fe47-s6-follow-r1.txt",
+     "sha256": "e671ef17e149aa93ebaee8a5b8cb5b2ecc05db4c92579cfea634fe74cb3de237"
+    }
+   },
+   "condition": "s6-follow",
+   "contrast": "LT-O",
+   "elements": [
+    {
+     "element_id": "C1",
+     "judge_label": "same label",
+     "requirement": "Initialize the Go Docker client using environment-derived configuration and handle initialization failure.",
+     "sides": {
+      "A": {
+       "answer_span": "apiClient, err := client.New(client.FromEnv)\nif err != nil { panic(err) }",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 475,
+        "char_start": 402,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly shows client.New with client.FromEnv and checks the returned error before proceeding.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "apiClient, err := client.New(client.FromEnv, client.WithAPIVersionNegotiation())\n    if err != nil { log.Fatal(err) }",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 954,
+        "char_start": 837,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer explicitly shows client.New with client.FromEnv and checks the returned error before proceeding.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C2",
+     "judge_label": "same label",
+     "requirement": "Pull Alpine and consume the pull response completely before creating the container.",
+     "sides": {
+      "A": {
+       "answer_span": "reader, err := apiClient.ImagePull(ctx, \"docker.io/library/alpine\", client.ImagePullOptions{})\nif err != nil { panic(err) }\nif _, err := io.Copy(os.Stdout, reader); err != nil { panic(err) }",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 691,
+        "char_start": 501,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer uses ImagePull for docker.io/library/alpine, handles its error, and drains the returned reader before container creation.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "reader, err := apiClient.ImagePull(ctx, \"docker.io/library/alpine\", client.ImagePullOptions{})\n    if err != nil { log.Fatal(err) }\n    if _, err := io.Copy(os.Stdout, reader); err != nil { log.Fatal(err) }\n    reader.Close()",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1213,
+        "char_start": 988,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer uses ImagePull for docker.io/library/alpine, handles its error, and drains the returned reader before container creation.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C3",
+     "judge_label": "same label",
+     "requirement": "Create an Alpine container configured to execute the requested command.",
+     "sides": {
+      "A": {
+       "answer_span": "Config: &container.Config{Cmd: []string{\"echo\", \"hello world\"}}",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 856,
+        "char_start": 793,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows ContainerCreate with Image set to alpine, Cmd set to echo, hello world, and an error check.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "created, err := apiClient.ContainerCreate(ctx, client.ContainerCreateOptions{\n        Image: \"alpine\",\n        Config: &container.Config{Cmd: []string{\"echo\", \"hello world\"}, Tty: false},\n    })\n    if err != nil { log.Fatal(err) }",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1450,
+        "char_start": 1219,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer shows ContainerCreate with Image set to alpine, Cmd set to echo, hello world, Tty false, and an error check.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C4",
+     "judge_label": "same label",
+     "requirement": "Start the newly created container and handle start failure.",
+     "sides": {
+      "A": {
+       "answer_span": "if _, err := apiClient.ContainerStart(ctx, resp.ID, client.ContainerStartOptions{}); err != nil { panic(err) }",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1000,
+        "char_start": 890,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer passes the creation response's ID to ContainerStart and checks the returned error.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "if _, err := apiClient.ContainerStart(ctx, created.ID, client.ContainerStartOptions{}); err != nil {\n        log.Fatal(err)\n    }",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1584,
+        "char_start": 1455,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer passes the creation response's ID to ContainerStart and checks the returned error.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    },
+    {
+     "element_id": "C5",
+     "judge_label": "same label",
+     "requirement": "Wait for container completion and handle the wait error channel.",
+     "sides": {
+      "A": {
+       "answer_span": "case err := <-wait.Error:\n    if err != nil { panic(err) }",
+       "arm": "LT",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1145,
+        "char_start": 1087,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer uses ContainerWait with the created container ID and selects between wait.Error and wait.Result, handling a non-nil error.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      },
+      "B": {
+       "answer_span": "case err := <-wait.Error:\n        if err != nil { log.Fatal(err) }",
+       "arm": "O",
+       "outcome": "relaxed_satisfied",
+       "quote_location": {
+        "char_end": 1774,
+        "char_start": 1708,
+        "status": "verbatim"
+       },
+       "raw_verdict": "satisfied",
+       "reason": "The answer uses ContainerWait with the created container ID and selects between wait.Error and wait.Result, handling a non-nil error.",
+       "relaxed_rule": "exact",
+       "strict_verdict": "satisfied"
+      }
+     }
+    }
+   ],
+   "judge_labelled": {
+    "gains": [],
+    "losses": []
+   },
+   "lt_side": "A",
+   "pair_id": "P08",
+   "provenance": {
+    "A": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+       "edge_class": "added",
+       "new_page_incident": true
+      },
+      {
+       "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+       "edge_class": "added",
+       "new_page_incident": true
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        19,
+        75
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        12,
+        22
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        35,
+        46
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        7,
+        27
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        29,
+        32
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "added"
+       ],
+       "lines": [
+        56,
+        71
+       ],
+       "page_in_original_corpus": false,
+       "routes": [
+        "follow"
+       ]
+      }
+     ],
+     "element_reference_pages": {},
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 2,
+      "follows_accepted_added": 2,
+      "follows_attempted": 2,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    },
+    "B": {
+     "accepted_follows": [
+      {
+       "doc_id": "content_reference_api_engine_index__6dd2a778",
+       "edge_class": "mapped_baseline",
+       "new_page_incident": false
+      }
+     ],
+     "citations": [
+      {
+       "doc_id": "content_reference_api_engine_sdk_index__8b9020be",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        26,
+        34
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        50,
+        67
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        69,
+        99
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_index__6dd2a778",
+       "first_exposure": "follow_only",
+       "follow_edge_classes": [
+        "mapped_baseline"
+       ],
+       "lines": [
+        117,
+        145
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "follow"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_index__8b9020be",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        64,
+        80
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_index__8b9020be",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        47,
+        56
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      },
+      {
+       "doc_id": "content_reference_api_engine_sdk_examples__eb819a43",
+       "first_exposure": "read_only",
+       "follow_edge_classes": [],
+       "lines": [
+        120,
+        126
+       ],
+       "page_in_original_corpus": true,
+       "routes": [
+        "read"
+       ]
+      }
+     ],
+     "element_reference_pages": {},
+     "trace": {
+      "final_context": "verified",
+      "follows_accepted": 1,
+      "follows_accepted_added": 0,
+      "follows_attempted": 1,
+      "identity_ok": true,
+      "replay": "verified",
+      "terminal": "answer"
+     },
+     "trace_found": true
+    }
+   },
+   "provenance_note": "analyst-side, from saved Sprint 24 tables; a cited or followed page shows co-occurrence, not reliance or support; text and link edits are coupled",
+   "replicate": 1,
+   "status": "legacy model labels; no human verdict recorded",
+   "stratum": "label_agreement",
+   "task": 9,
+   "task_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219"
+  }
+ ],
+ "created": "2026-10-25",
+ "note": "analyst-side cards for the selected packet pairs only; never shown to a reviewer before verdicts are recorded; labels are legacy model verdicts",
+ "schema_version": "docspectra.icsc.tier1_completeness_25.cards.v1"
+}

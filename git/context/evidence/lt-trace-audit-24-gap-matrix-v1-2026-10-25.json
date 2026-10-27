@@ -1,0 +1,115 @@
+{
+ "conclusions": {
+  "causal": "reliance and benefit remain unresolved despite adequate logs; better logging alone cannot settle them",
+  "descriptive_process_chain": "recoverable for tier 2 (all steps, with weak and null counts); tier 1 lacks page labels",
+  "partly_unrecoverable": "only request payload details (function definitions, presentation) and tier-1 page support; neither blocks the descriptive chain"
+ },
+ "created": "2026-10-25",
+ "evidence_sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65",
+ "model_calls": 0,
+ "nature": "interpretive matrix authored after the results from the recorded fields; every number points to the audit evidence",
+ "rerun_assessment": "no rerun is needed to recover the process chain; a future study would be a different causal design, for the author to evaluate; nothing is authorized by Sprint 24",
+ "rows": [
+  {
+   "fields": "steps[].action + result (lines/error); actions.status",
+   "new_run_needed": false,
+   "offline_recoverable": "yes, complete",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json reconciliation.arms; tables_all111.*.actions",
+   "question": "Did the follow succeed?",
+   "result": "t2 263 attempted, 262 accepted, 1 rejected (R0, link-not-offered-by-read-page); t1 547 attempted, 539 accepted, 8 rejected",
+   "smallest_addition": null,
+   "unresolved": null
+  },
+  {
+   "fields": "historical variant_context (o_mapped, added_edges), exported graph_edges.csv",
+   "new_run_needed": false,
+   "offline_recoverable": "yes, complete",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json witness_edges; magnetic_view_join",
+   "question": "Was the followed arc editor-added?",
+   "result": "every arc classified (O 2494, S 2494, LT 5203, R0 4502; 0 unknown); variant_context edges = exported graph; Sprint 22 O-prime bundles exclude all 119 added and include all 109 mapped LT follow arcs",
+   "smallest_addition": "immutable edge ids in the export (convenience only)",
+   "unresolved": null
+  },
+  {
+   "fields": "replayed observation follow_edges on hash-verified calls",
+   "new_run_needed": false,
+   "offline_recoverable": "yes for eligibility (the whole outgoing set of opened pages)",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json tables_all111.*.opportunity_summary",
+   "question": "Which arcs were on offer at the decision?",
+   "result": "menu reconstructed for 801/801 accepted follows; t2 mean added share of the menu LT .443 vs added share of uses .513; R0 .303 vs .299",
+   "smallest_addition": "log the exact request payload (or the presented menu with order and anchor text) per call",
+   "unresolved": "which anchors were visible in returned windows and in what order the tool schema presented targets"
+  },
+  {
+   "fields": "search hits/snippets, earlier returned lines",
+   "new_run_needed": false,
+   "offline_recoverable": "yes, route-relative",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json tables_all111.t2/*/s1-follow.added_follow",
+   "question": "Was the destination new to the agent?",
+   "result": "t2 LT added follows: 29/39 first page text exposure, 10 had an earlier search snippet; R0 13/20",
+   "smallest_addition": "none by logging; a counterfactual needs a designed comparison",
+   "unresolved": "whether another route (e.g. a different query) would have exposed it"
+  },
+  {
+   "fields": "same-variant pool/decision rows joined on page bytes",
+   "new_run_needed": false,
+   "offline_recoverable": "yes for tier 2; tier 1 has rubric page references only",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json tables_all111.t2/*/s1-follow.follow_accepted",
+   "question": "Did the destination page answer the question?",
+   "result": "t2 accepted follows, supported/not/undetermined: O 13/52/2, S 11/40/1, LT 18/52/6, R0 14/53/0; LT added 11/24/4; R0 added 4/16/0; no identity mismatch or never-judged destination",
+   "smallest_addition": "tier-1 page judgments (new labels: outside Sprint 24)",
+   "unresolved": "tier-1 page-level support; undetermined LT pages"
+  },
+  {
+   "fields": "verdict=answers supporting_span located in the page, compared with returned lines",
+   "new_run_needed": false,
+   "offline_recoverable": "yes, for the judge's spans (one verbatim span per answering window; not exhaustive)",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json tables_all111.*.follow_accepted.span_exposure_this_call",
+   "question": "Did the returned window contain the judged answer?",
+   "result": "supported follow destinations with a located span in the returned lines: O 7/13, S 6/11, LT 13/18, R0 4/14; LT added 8/11, R0 added 1/4; no unmappable span",
+   "smallest_addition": null,
+   "unresolved": "answer content outside judged spans"
+  },
+  {
+   "fields": "history_sha256 per call, compaction snapshot_sha256, replay",
+   "new_run_needed": false,
+   "offline_recoverable": "yes, exact message lists",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json coverage; tables_all111.*.returned_lines_in_final_context",
+   "question": "Was the text in the answer-generating request?",
+   "result": "1368/1368 traces hash-verified at every call; 1367 answering requests recovered; 307 compacted traces evicted 0 reads; every accepted follow's lines and every answer citation's lines present in the final request",
+   "smallest_addition": "persist request payloads or their deterministic builder inputs",
+   "unresolved": "tool/function definitions and provider parameters of the request (request_sha256 not reproduced)"
+  },
+  {
+   "fields": "answer citations, first route per cited line",
+   "new_run_needed": false,
+   "offline_recoverable": "yes",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json chain_t2_follow_all111; tables_all111.*.citation_answer",
+   "question": "Did the answer cite lines that the follow exposed first?",
+   "result": "t2 chain: LT 7 traces (7 pairs) cite lines returned by an added-edge first-exposure follow to a supported page; R0 1; t2 follow-condition citations first exposed only by follow: O 37/349, S 28/321, LT 49/330, R0 27/343",
+   "smallest_addition": null,
+   "unresolved": null
+  },
+  {
+   "fields": "none can: exposure, citation and label overlap are not reliance; hidden reasoning is encrypted and was not inspected",
+   "new_run_needed": true,
+   "offline_recoverable": "no",
+   "pointer": "evidence/lt-trace-audit-24-cards-v1-2026-10-25.json",
+   "question": "Did the model rely on the followed evidence, or did it improve the answer?",
+   "result": "unresolved; the LT (a) card scores FactualCorrectness 0.0 and its LT no-follow counterpart also cites the destination page",
+   "smallest_addition": "a designed study: fixed-content link on/off or evidence withholding/substitution on navigation-dependent tasks (answer content reachable only beyond initial search), equal budgets, repeated runs per item, answer-level claim/citation scoring",
+   "unresolved": "causal reliance and benefit"
+  },
+  {
+   "fields": "Sprint 22 bundles, unchanged RA select_view",
+   "new_run_needed": false,
+   "offline_recoverable": "yes (membership)",
+   "pointer": "evidence/lt-trace-audit-24-v1-2026-10-25.json magnetic_view_join",
+   "question": "Do followed arcs sit in the measured magnetic view?",
+   "result": "all accepted follow arcs are in each arm's full view (agent graph = bundle, canonical hashes equal); LWCC excludes O 10, S 7, LT 8, R0 6 follow arcs (all mapped baseline); every LT added follow arc is in the LT LWCC",
+   "smallest_addition": "not a logging question",
+   "unresolved": "any predictive or causal link between the spectrum and navigation"
+  }
+ ],
+ "schema_version": "docspectra.icsc.lt_trace_audit_24.gap_matrix.v1"
+}

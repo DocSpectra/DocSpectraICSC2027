@@ -1,0 +1,1840 @@
+{
+ "cards": [
+  {
+   "answer_text": "For most remote Docker Engine access, use SSH rather than exposing an unauthenticated TCP API. The remote account must be allowed to access the Docker socket. Create and select a context, then test it:\n\n```console\ndocker context create --docker host=ssh://docker-user@host1.example.com --description=\"Remote engine\" my-remote-engine\ndocker context use my-remote-engine\ndocker info\n```\n\n`docker info` should show information from the remote engine. Switch back with `docker context use default`. For a temporary connection without a context, use `export DOCKER_HOST=ssh://docker-user@host1.example.com` and then run a Docker CLI command such as `docker info`.\n\nIf you specifically need TCP/HTTPS, configure the daemon for TLS verification with a trusted CA, server certificate/key, and a TCP listener (the docs use port 2376); connect with client certificates and verify the server certificate. Protect those keys carefully. Remote access without TLS is not recommended: the daemon documentation warns that unsecured access can allow remote users to gain host root access. Don't configure the systemd unit and `daemon.json` to set the same listener, as that conflict prevents Docker from starting.",
+   "arm": "LT",
+   "attribution_breaks": null,
+   "call": 4,
+   "caveat": "outcome-stratified illustration; exposure, label overlap and citation do not establish reliance, necessity of the link or answer improvement; counterparts differ in more than one link",
+   "cell_id": "v-6337600cdc97-docker_docs_faq_0045-s1-follow-r1",
+   "condition": "s1-follow",
+   "counterparts": [
+    {
+     "arm": "O",
+     "cell_id": "v-5d89a3217d52-docker_docs_faq_0045-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_engine_daemon_remote_access__df7c55bf",
+      "content_manuals_engine_security_protect_access__8b0e812b"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "d124e0e45cecff682e4e3074c28cdf2aa833f7a7de902dd4d32ee3468c904551"
+    },
+    {
+     "arm": "LT",
+     "cell_id": "v-6337600cdc97-docker_docs_faq_0045-s1-no-follow-r1",
+     "cited_pages": [
+      "content_manuals_engine_daemon_remote_access__df7c55bf",
+      "content_manuals_engine_security_connect_ssh__caf1eb40",
+      "content_manuals_engine_security_connect_tls__055d281e"
+     ],
+     "condition": "s1-no-follow",
+     "destination_cited": true,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "caf57d44a36d26137b6a0c3da60e847672c0f88d31c6d9b3d40397a8c7906029"
+    },
+    {
+     "arm": "S",
+     "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0045-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_engine_daemon_remote_access__df7c55bf",
+      "content_manuals_engine_security_protect_access__8b0e812b"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "8bf6c21f0edf3992dfd20dbe7b1fb09efe06402cb28d3eed305825e737074f1e"
+    }
+   ],
+   "destination_citations": [
+    {
+     "end_line": 17,
+     "excerpt": [
+      {
+       "line": 11,
+       "text": "> The given `USERNAME` must have permissions to access the docker socket on the"
+      },
+      {
+       "line": 12,
+       "text": "> remote machine. Refer to [manage Docker as a non-root user](../install/linux-postinstall.md#manage-docker-as-a-non-root-user)"
+      },
+      {
+       "line": 13,
+       "text": "> to learn how to give a non-root user access to the docker socket."
+      },
+      {
+       "line": 14,
+       "text": ""
+      },
+      {
+       "line": 15,
+       "text": "The following example creates a [`docker context`](/manuals/engine/manage-resources/contexts.md)"
+      },
+      {
+       "line": 16,
+       "text": "to connect with a remote `dockerd` daemon on `host1.example.com` using SSH, and"
+      }
+     ],
+     "final_context": "full",
+     "first_exposure": "follow_only",
+     "kind": "answer",
+     "span_overlap_cited": "full",
+     "start_line": 11
+    },
+    {
+     "end_line": 38,
+     "excerpt": [
+      {
+       "line": 19,
+       "text": "```console"
+      },
+      {
+       "line": 20,
+       "text": "$ docker context create \\"
+      },
+      {
+       "line": 21,
+       "text": "    --docker host=ssh://docker-user@host1.example.com \\"
+      },
+      {
+       "line": 22,
+       "text": "    --description=\"Remote engine\" \\"
+      },
+      {
+       "line": 23,
+       "text": "    my-remote-engine"
+      },
+      {
+       "line": 24,
+       "text": ""
+      }
+     ],
+     "final_context": "full",
+     "first_exposure": "follow_only",
+     "kind": "answer",
+     "span_overlap_cited": "none",
+     "start_line": 19
+    },
+    {
+     "end_line": 57,
+     "excerpt": [
+      {
+       "line": 41,
+       "text": "Use the `default` context to switch back to the default (local) daemon:"
+      },
+      {
+       "line": 42,
+       "text": ""
+      },
+      {
+       "line": 43,
+       "text": "```console"
+      },
+      {
+       "line": 44,
+       "text": "$ docker context use default"
+      },
+      {
+       "line": 45,
+       "text": "default"
+      },
+      {
+       "line": 46,
+       "text": "Current context is now \"default\""
+      }
+     ],
+     "final_context": "full",
+     "first_exposure": "follow_only",
+     "kind": "answer",
+     "span_overlap_cited": "none",
+     "start_line": 41
+    }
+   ],
+   "empty": false,
+   "event_path": [
+    {
+     "action": "search",
+     "call": 1,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": "Docker Engine API remote access SSH TLS tcp daemon configure client DOCKER_HOST",
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 2,
+     "doc_id": "content_manuals_engine_daemon_remote_access__df7c55bf",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       70
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 3,
+     "doc_id": "content_manuals_engine_security_protect_access__8b0e812b",
+     "edge_class": "mapped_baseline",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       53
+      ]
+     ],
+     "source_doc_id": "content_manuals_engine_daemon_remote_access__df7c55bf",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 4,
+     "doc_id": "content_manuals_engine_security_connect_ssh__caf1eb40",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       69
+      ]
+     ],
+     "source_doc_id": "content_manuals_engine_security_protect_access__8b0e812b",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 5,
+     "doc_id": "content_manuals_engine_security_connect_tls__055d281e",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       79
+      ]
+     ],
+     "source_doc_id": "content_manuals_engine_security_protect_access__8b0e812b",
+     "status": "accepted"
+    },
+    {
+     "action": "answer",
+     "call": 6,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": null,
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    }
+   ],
+   "existing_score": {
+    "factual_correctness": {
+     "status": "ok",
+     "value": 0.0
+    },
+    "source": {
+     "bytes": 14093101,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-6337600cdc97/run/scores.json",
+     "sha256": "a8cfd28c44a305325f1ac892132f513a73f01dd122bac86554ec2092b0562c90"
+    },
+    "unit": [
+     "docker_docs_faq_0045",
+     "s1-follow",
+     "wc19-v-6337600cdc97",
+     "answer"
+    ]
+   },
+   "follow": {
+    "doc_id": "content_manuals_engine_security_connect_ssh__caf1eb40",
+    "edge_class": "added",
+    "file_sha256": "dce31b921e8f99ab4cc9877f450a239b0abd713174b481e2feb10b3bb2f24320",
+    "first_page_text_exposure": true,
+    "label": "supported",
+    "legacy_qrels_positive": true,
+    "listed_by_prior_search": false,
+    "menu_added_edges": 4,
+    "menu_edges": 7,
+    "new_page_incident": true,
+    "returned_lines_in_final_context": "all",
+    "returned_ranges": [
+     [
+      1,
+      69
+     ]
+    ],
+    "returned_text_sha256": "156f35cbbae121686b0dcf67d34ea57dc6d636b4b2179ad6784ae39cde8d7fef",
+    "snippet_lines_prior": 0,
+    "source_doc_id": "content_manuals_engine_security_protect_access__8b0e812b",
+    "source_opened_before": true,
+    "span_exposure_final_context": "full",
+    "span_exposure_this_call": "full",
+    "spans": 1,
+    "spans_mapped": 1,
+    "views": {
+     "wc/LT#full": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT#lwcc": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#full": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#lwcc": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": false
+     }
+    }
+   },
+   "question": "How do I connect to the remote Docker Engine API?",
+   "question_id": "docker_docs_faq_0045",
+   "replicate": 1,
+   "returned_excerpt": [
+    {
+     "line": 1,
+     "text": "---"
+    },
+    {
+     "line": 2,
+     "text": "title: Connect to the Docker daemon with SSH"
+    },
+    {
+     "line": 3,
+     "text": "---"
+    },
+    {
+     "line": 4,
+     "text": ""
+    },
+    {
+     "line": 5,
+     "text": "See [Docker daemon attack surface](daemon-security.md) for access context."
+    },
+    {
+     "line": 6,
+     "text": ""
+    },
+    {
+     "line": 7,
+     "text": "## Use SSH to protect the Docker daemon socket"
+    },
+    {
+     "line": 8,
+     "text": ""
+    },
+    {
+     "line": 9,
+     "text": "> [!NOTE]"
+    },
+    {
+     "line": 10,
+     "text": ">"
+    },
+    {
+     "line": 11,
+     "text": "> The given `USERNAME` must have permissions to access the docker socket on the"
+    },
+    {
+     "line": 12,
+     "text": "> remote machine. Refer to [manage Docker as a non-root user](../install/linux-postinstall.md#manage-docker-as-a-non-root-user)"
+    }
+   ],
+   "rule": "accepted added-edge follow with first page text exposure (no earlier returned lines or snippet line), a `supported` same-variant direct label for the destination, and a final-answer citation of the destination whose cited lines intersect the lines this follow returned",
+   "stratum": "a",
+   "terminal": "answer",
+   "tier": "t2",
+   "trace": {
+    "bytes": 62959,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/t2/v-6337600cdc97-docker_docs_faq_0045-s1-follow-r1.json",
+    "sha256": "be72d06b9ecc008991e18a95be694aac0ca13e9ef7262557082d5396b2cbced8"
+   }
+  },
+  {
+   "answer_text": "Install/use the Go Engine SDK (`github.com/moby/moby/client`; the docs show `go get github.com/moby/moby/client`) and run the program with Docker available. The quickstart flow pulls Alpine, creates a container whose command is `echo hello world`, starts it, waits for completion, then reads stdout logs. Here is that flow with basic error checks and API negotiation enabled:\n\n```go\npackage main\n\nimport (\n\t\"context\"\n\t\"io\"\n\t\"os\"\n\n\t\"github.com/moby/moby/api/pkg/stdcopy\"\n\t\"github.com/moby/moby/api/types/container\"\n\t\"github.com/moby/moby/client\"\n)\n\nfunc must(err error) {\n\tif err != nil {\n\t\tpanic(err)\n\t}\n}\n\nfunc main() {\n\tctx := context.Background()\n\tcli, err := client.New(client.FromEnv, client.WithAPIVersionNegotiation())\n\tmust(err)\n\tdefer cli.Close()\n\n\tpull, err := cli.ImagePull(ctx, \"docker.io/library/alpine\", client.ImagePullOptions{})\n\tmust(err)\n\t_, err = io.Copy(os.Stdout, pull)\n\tmust(err)\n\tmust(pull.Close())\n\n\tcreated, err := cli.ContainerCreate(ctx, client.ContainerCreateOptions{\n\t\tImage: \"alpine\",\n\t\tConfig: &container.Config{\n\t\t\tCmd: []string{\"echo\", \"hello world\"},\n\t\t},\n\t})\n\tmust(err)\n\t_, err = cli.ContainerStart(ctx, created.ID, client.ContainerStartOptions{})\n\tmust(err)\n\n\twait := cli.ContainerWait(ctx, created.ID, client.ContainerWaitOptions{})\n\tselect {\n\tcase err := <-wait.Error:\n\t\tmust(err)\n\tcase <-wait.Result:\n\t}\n\n\tlogs, err := cli.ContainerLogs(ctx, created.ID, client.ContainerLogsOptions{ShowStdout: true})\n\tmust(err)\n\tdefer logs.Close()\n\t_, err = stdcopy.StdCopy(os.Stdout, os.Stderr, logs)\n\tmust(err)\n}\n```\n\n`client.FromEnv` reads the Docker connection configuration; for Docker Desktop for Linux, set `DOCKER_HOST=unix://$HOME/.docker/desktop/docker.sock` in the process environment. Desktop for Linux uses this per-user socket rather than the system-wide `/var/run/docker.sock`. The SDK install page also says to use a recent, currently supported Go version. [SDK quickstart, lines 22–40, 46–60, 62–74](content_reference_api_engine_sdk_quickstart__e94c7e9c); [SDK install, lines 10–20, 35–44](content_reference_api_engine_sdk_install__7cca9109)\n\nFor differing client and daemon versions, check `docker version` to see each side's API support. The guidance is to use the latest SDK and enable API negotiation: it selects the highest API version supported by both client and daemon. Downgrading disables later API features, and compatibility is best-effort, so verify your smoke test on the actual daemon(s). Avoid setting `DOCKER_API_VERSION` unless you need to force a particular version: it disables negotiation. [Version guidance and check, lines 29–32, 61–66](content_reference_api_engine_versioning__f9c03b91); [negotiation and forced-version behavior, lines 75–97, 106–118](content_reference_api_engine_versioning__f9c03b91)\n\nThe Go sample follows the documented quickstart, which waits for the container and then fetches logs. It does not inspect the wait result's exit status; if the test must assert a successful exit (not just completion and output), additionally check the returned wait status code before treating the smoke test as passed. The cited quickstart demonstrates receiving the result but does not document that assertion. [Quickstart, lines 60–74](content_reference_api_engine_sdk_quickstart__e94c7e9c)",
+   "arm": "LT",
+   "attribution_breaks": null,
+   "call": 4,
+   "caveat": "outcome-stratified illustration; exposure, label overlap and citation do not establish reliance, necessity of the link or answer improvement; counterparts differ in more than one link",
+   "cell_id": "v-6337600cdc97-0daa1729fe47-s1-follow-r1",
+   "condition": "s1-follow",
+   "counterparts": [
+    {
+     "arm": "O",
+     "cell_id": "v-5d89a3217d52-0daa1729fe47-s1-follow-r1",
+     "cited_pages": [
+      "content_reference_api_engine_index__6dd2a778",
+      "content_reference_api_engine_sdk_examples__eb819a43",
+      "content_reference_api_engine_sdk_index__8b9020be"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "fa994673e7536e6a7935a25989ff9180227bb4ee90fe242e0e363f8162ae5103"
+    },
+    {
+     "arm": "LT",
+     "cell_id": "v-6337600cdc97-0daa1729fe47-s1-no-follow-r1",
+     "cited_pages": [
+      "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+      "content_reference_api_engine_sdk_run_container__27e91b9d"
+     ],
+     "condition": "s1-no-follow",
+     "destination_cited": false,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "61d60268d3921bf4f07c65a7e54d3e368993c22c9e902d9451b788c53d5b7047"
+    },
+    {
+     "arm": "S",
+     "cell_id": "v-9a7d7f0e7b47-0daa1729fe47-s1-follow-r1",
+     "cited_pages": [
+      "content_reference_api_engine_index__6dd2a778",
+      "content_reference_api_engine_sdk_examples__eb819a43",
+      "content_reference_api_engine_sdk_index__8b9020be"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "d9b59a0179b626577ad7b3733b634a39a1fac630606761ab8666f962028eabe4"
+    }
+   ],
+   "destination_citations": [],
+   "empty": false,
+   "event_path": [
+    {
+     "action": "search",
+     "call": 1,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": "Go Docker SDK run container Alpine echo hello world wait completion Docker Desktop Linux client daemon version negotiation",
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 2,
+     "doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       80
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 3,
+     "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       72
+      ]
+     ],
+     "source_doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 4,
+     "doc_id": "content_reference_api_engine_http_socket__e0b0b353",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       14
+      ]
+     ],
+     "source_doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 5,
+     "doc_id": "content_reference_api_engine_sdk_install__7cca9109",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       46
+      ]
+     ],
+     "source_doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 6,
+     "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       68,
+       107
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 7,
+     "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       104,
+       130
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 8,
+     "doc_id": "content_reference_api_engine_versioning__f9c03b91",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       90,
+       126
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "answer",
+     "call": 9,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": null,
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    }
+   ],
+   "existing_score": {
+    "source": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/luna-t1 (tier-1 Luna rubric scores; not joined by this audit)"
+   },
+   "follow": {
+    "doc_id": "content_reference_api_engine_http_socket__e0b0b353",
+    "edge_class": "added",
+    "file_sha256": "fc63841e98b52b7310df9bcc1f618a3269516e09120fbe27b2ce5ec9011fde73",
+    "first_page_text_exposure": true,
+    "label": "not_applicable",
+    "legacy_qrels_positive": null,
+    "listed_by_prior_search": false,
+    "menu_added_edges": 19,
+    "menu_edges": 19,
+    "new_page_incident": true,
+    "returned_lines_in_final_context": "all",
+    "returned_ranges": [
+     [
+      1,
+      14
+     ]
+    ],
+    "returned_text_sha256": "d94fc9789242cc8cdc60b9944264ac851b61e3a55823c92b419b53ae73c18b12",
+    "snippet_lines_prior": 0,
+    "source_doc_id": "content_reference_api_engine_sdk_quickstart__e94c7e9c",
+    "source_opened_before": true,
+    "span_exposure_final_context": null,
+    "span_exposure_this_call": null,
+    "spans": null,
+    "spans_mapped": null,
+    "views": {
+     "wc/LT#full": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT#lwcc": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#full": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#lwcc": {
+      "edge_in_view": false,
+      "source_in_view": false,
+      "target_in_view": false
+     }
+    }
+   },
+   "question": "I'm replacing a shell-based Docker smoke test with a Go application that runs Alpine's `echo hello world` command and waits for completion. How should I implement it and prepare the SDK connection, including on Docker Desktop for Linux, when the Docker client and daemon may have different versions?",
+   "question_id": "0daa1729fe47a031f0a74a172e1c9f9970e4b86e4ba2b7b1f17317f1be6f7219",
+   "replicate": 1,
+   "returned_excerpt": [
+    {
+     "line": 1,
+     "text": "---"
+    },
+    {
+     "line": 2,
+     "text": "title: Connect to the API over a Unix socket"
+    },
+    {
+     "line": 3,
+     "text": "---"
+    },
+    {
+     "line": 4,
+     "text": ""
+    },
+    {
+     "line": 5,
+     "text": "When using cURL to connect over a Unix socket, the hostname is not important. The examples use `localhost`, but any hostname would work."
+    },
+    {
+     "line": 6,
+     "text": ""
+    },
+    {
+     "line": 7,
+     "text": "> [!IMPORTANT]"
+    },
+    {
+     "line": 8,
+     "text": ">"
+    },
+    {
+     "line": 9,
+     "text": "> The run-a-container and quickstart examples assume you're using cURL 7.50.0 or above. Older versions of"
+    },
+    {
+     "line": 10,
+     "text": "> cURL used a [non-standard URL notation](https://github.com/moby/moby/issues/17960)"
+    },
+    {
+     "line": 11,
+     "text": "> when using a socket connection."
+    },
+    {
+     "line": 12,
+     "text": ">"
+    }
+   ],
+   "rule": "accepted added-edge follow whose destination page is not cited in the final answer",
+   "stratum": "b",
+   "terminal": "answer",
+   "tier": "t1",
+   "trace": {
+    "bytes": 87586,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/t1/v-6337600cdc97-0daa1729fe47-s1-follow-r1.json",
+    "sha256": "b7c8388f9bdfecd9ed89112a73afd1b79eb3fae9afe3cd6f89d2b40b8d73b1a0"
+   }
+  },
+  {
+   "answer_text": "Yes. Docker Desktop sign-in enforcement can require members to authenticate as members of your Docker organization before using Desktop. By default, organization members can use Desktop without signing in; non-member sign-ins are automatically rejected, and signing out makes Desktop unusable until they sign back in. This enforcement is separate from SSO: use SSO enforcement too if you want to require identity-provider authentication. (It does not restrict Docker CLI access unless your organization enforces SSO.)\n\nFor a cross-platform deployment, use `registry.json`: create the file at the platform’s documented location (Windows: `/ProgramData/DockerDesktop/registry.json`; Mac: `/Library/Application Support/com.docker.docker/registry.json`; Linux: `/usr/share/docker-desktop/registry/registry.json`), add `{\"allowedOrgs\":[\"your-org\"]}`, set permissions to prevent user editing, then restart Docker Desktop. Confirm the `Sign in required!` prompt appears. Windows-only registry-key and Mac-only configuration-profile or `.plist` methods are also documented; configuration profiles are recommended for Mac.\n\nBenefits include ensuring users receive subscription benefits, applying organization security features, and gaining insight into user activity. Without member sign-in, users may miss subscription benefits and circumvent security features. For SSO enforcement, the documented additional benefits are centralized authentication and identity-provider policies.",
+   "arm": "LT",
+   "attribution_breaks": [
+    "label_undetermined"
+   ],
+   "call": 5,
+   "caveat": "outcome-stratified illustration; exposure, label overlap and citation do not establish reliance, necessity of the link or answer improvement; counterparts differ in more than one link",
+   "cell_id": "v-6337600cdc97-docker_docs_faq_0011-s1-follow-r1",
+   "condition": "s1-follow",
+   "counterparts": [
+    {
+     "arm": "O",
+     "cell_id": "v-5d89a3217d52-docker_docs_faq_0011-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d",
+      "content_manuals_enterprise_security_enforce_sign_in_methods__bad0ddea"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "a8fe5340c26bb898ac85811a58b8baa36f78b6326a7b23a874f369020a0294e6"
+    },
+    {
+     "arm": "LT",
+     "cell_id": "v-6337600cdc97-docker_docs_faq_0011-s1-no-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d",
+      "content_manuals_enterprise_security_enforce_sign_in_method_reference__41f5a069"
+     ],
+     "condition": "s1-no-follow",
+     "destination_cited": false,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "03190e4c1280f527407a2fad81c09a0eae9fd7e9e154fe687b15564c62d6d529"
+    },
+    {
+     "arm": "S",
+     "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0011-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_enforce_sign_in_index__f15bee2d",
+      "content_manuals_enterprise_security_enforce_sign_in_methods__bad0ddea"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "91c2d4cdad6cff6d6d49323e6f3f1b814e3759ca3604b8645eb7c9ace0ed2654"
+    }
+   ],
+   "destination_citations": [
+    {
+     "end_line": 34,
+     "excerpt": [
+      {
+       "line": 11,
+       "text": "Create the `registry.json` file (UTF-8 without BOM) at the appropriate location:"
+      },
+      {
+       "line": 12,
+       "text": ""
+      },
+      {
+       "line": 13,
+       "text": "| Platform | Location |"
+      },
+      {
+       "line": 14,
+       "text": "| --- | --- |"
+      },
+      {
+       "line": 15,
+       "text": "| Windows | `/ProgramData/DockerDesktop/registry.json` |"
+      },
+      {
+       "line": 16,
+       "text": "| Mac | `/Library/Application Support/com.docker.docker/registry.json` |"
+      }
+     ],
+     "final_context": "full",
+     "first_exposure": "follow_only",
+     "kind": "answer",
+     "span_overlap_cited": null,
+     "start_line": 11
+    }
+   ],
+   "empty": false,
+   "event_path": [
+    {
+     "action": "search",
+     "call": 1,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": "Docker Desktop enforce organization members authenticate benefits sign-in enforcement",
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 2,
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       32
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 3,
+     "doc_id": "content_manuals_admin_organization_setup_onboard__0d66a7b1",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       135,
+       174
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 4,
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_methods__bad0ddea",
+     "edge_class": "mapped_baseline",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       51
+      ]
+     ],
+     "source_doc_id": "content_manuals_admin_organization_setup_onboard__0d66a7b1",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 5,
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_registry_json__f6514a33",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "undetermined",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       60
+      ]
+     ],
+     "source_doc_id": "content_manuals_enterprise_security_enforce_sign_in_methods__bad0ddea",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 6,
+     "doc_id": "content_manuals_enterprise_security_enforce_sign_in_enforcement_model__58149b0b",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       29,
+       34
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "answer",
+     "call": 7,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": null,
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    }
+   ],
+   "existing_score": {
+    "factual_correctness": {
+     "status": "ok",
+     "value": 0.32
+    },
+    "source": {
+     "bytes": 14093101,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-6337600cdc97/run/scores.json",
+     "sha256": "a8cfd28c44a305325f1ac892132f513a73f01dd122bac86554ec2092b0562c90"
+    },
+    "unit": [
+     "docker_docs_faq_0011",
+     "s1-follow",
+     "wc19-v-6337600cdc97",
+     "answer"
+    ]
+   },
+   "follow": {
+    "doc_id": "content_manuals_enterprise_security_enforce_sign_in_registry_json__f6514a33",
+    "edge_class": "added",
+    "file_sha256": "ad1068d1b87103be181e2d3934f7e11a76fc955f49502a7776aecfc8e380fbc8",
+    "first_page_text_exposure": false,
+    "label": "undetermined",
+    "legacy_qrels_positive": false,
+    "listed_by_prior_search": true,
+    "menu_added_edges": 6,
+    "menu_edges": 21,
+    "new_page_incident": true,
+    "returned_lines_in_final_context": "all",
+    "returned_ranges": [
+     [
+      1,
+      60
+     ]
+    ],
+    "returned_text_sha256": "a100fec3ebd3cbe01b77dcd59f6525249d38257868bfcec4a5b69ebc3333ee05",
+    "snippet_lines_prior": 2,
+    "source_doc_id": "content_manuals_enterprise_security_enforce_sign_in_methods__bad0ddea",
+    "source_opened_before": true,
+    "span_exposure_final_context": null,
+    "span_exposure_this_call": "not_applicable",
+    "spans": null,
+    "spans_mapped": null,
+    "views": {
+     "wc/LT#full": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT#lwcc": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#full": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/LT/O-prime#lwcc": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": false
+     }
+    }
+   },
+   "question": "Can I force my organization's members to authenticate before using Docker Desktop and are there any benefits?",
+   "question_id": "docker_docs_faq_0011",
+   "replicate": 1,
+   "returned_excerpt": [
+    {
+     "line": 1,
+     "text": "---"
+    },
+    {
+     "line": 2,
+     "text": "title: Enforce sign-in with registry.json"
+    },
+    {
+     "line": 3,
+     "text": "---"
+    },
+    {
+     "line": 4,
+     "text": ""
+    },
+    {
+     "line": 5,
+     "text": "Review [sign-in enforcement behavior](enforcement-model.md) and [method precedence and troubleshooting](method-reference.md)."
+    },
+    {
+     "line": 6,
+     "text": ""
+    },
+    {
+     "line": 7,
+     "text": "The registry.json method works across all platforms and offers flexible deployment options."
+    },
+    {
+     "line": 8,
+     "text": ""
+    },
+    {
+     "line": 9,
+     "text": "## File locations"
+    },
+    {
+     "line": 10,
+     "text": ""
+    },
+    {
+     "line": 11,
+     "text": "Create the `registry.json` file (UTF-8 without BOM) at the appropriate location:"
+    },
+    {
+     "line": 12,
+     "text": ""
+    }
+   ],
+   "rule": "accepted follow with an attribution-breaking missing or ambiguous record: edge class unknown, replay not verified, file or text identity false, offered menu unknown, a tier-2 destination label of identity_mismatch, never_judged or undetermined, or a supported destination whose spans are all unmappable",
+   "stratum": "c",
+   "terminal": "answer",
+   "tier": "t2",
+   "trace": {
+    "bytes": 59515,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/t2/v-6337600cdc97-docker_docs_faq_0011-s1-follow-r1.json",
+    "sha256": "97d0140ed709d4d4562153776483bdfbaaaedae8e615ca55057ebce65b3d8860"
+   }
+  },
+  {
+   "answer_text": "No—not completely by SSO alone. Docker’s default SSO provisioning is JIT; SCIM is the mechanism for ongoing user provisioning/deprovisioning, profile updates, and group mapping. With SCIM enabled, Docker syncs users provisioned through the IdP, but it does not remove users who were manually added before SCIM was set up (those must be removed manually). [SCIM overview, lines 39–57](content_manuals_enterprise_security_provisioning_scim_index__b0957a6a)\n\nFor ongoing sync, configure SCIM in Docker and your IdP, and ensure the relevant users/groups are assigned. Also check JIT attribute mappings: JIT values take precedence over SCIM values, so keep them aligned or disable JIT to rely solely on SCIM. [SCIM setup, lines 47–64](content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e)\n\nGroup/team changes sync only when group mapping is configured correctly; the IdP must send group information, and the setup should be tested. [Group mapping, lines 40–58](content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024) You can test provisioning on demand in the IdP and confirm the user appears under Docker Admin Console → Members; check the IdP provisioning logs if it does not. [SCIM test steps, lines 341–365](content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e)",
+   "arm": "R0",
+   "attribution_breaks": null,
+   "call": 5,
+   "caveat": "outcome-stratified illustration; exposure, label overlap and citation do not establish reliance, necessity of the link or answer improvement; counterparts differ in more than one link",
+   "cell_id": "v-c2c2731d2141-docker_docs_faq_0117-s1-follow-r1",
+   "condition": "s1-follow",
+   "counterparts": [
+    {
+     "arm": "O",
+     "cell_id": "v-5d89a3217d52-docker_docs_faq_0117-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_provisioning_index__32360fe6",
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 2,
+     "terminal": "answer",
+     "trace_sha256": "f6e9f31ef39434990e59c52e66fe43b28608ccde9d39a46153aa22eda7d7c8e4"
+    },
+    {
+     "arm": "S",
+     "cell_id": "v-9a7d7f0e7b47-docker_docs_faq_0117-s1-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_provisioning_index__32360fe6",
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "5ef715a97b654607bfa1ed031f761d95b79f3877c8f16be05f3f6910c29fa048"
+    },
+    {
+     "arm": "R0",
+     "cell_id": "v-c2c2731d2141-docker_docs_faq_0117-s1-no-follow-r1",
+     "cited_pages": [
+      "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+      "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e"
+     ],
+     "condition": "s1-no-follow",
+     "destination_cited": false,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "ad34a75ca9011c8c1286885a53fc9bdb19f092ee6135a288ac002cc490a766db"
+    }
+   ],
+   "destination_citations": [
+    {
+     "end_line": 57,
+     "excerpt": [
+      {
+       "line": 39,
+       "text": "In addition to provisioning and removal, SCIM also syncs profile updates like"
+      },
+      {
+       "line": 40,
+       "text": "name changes made in your identity provider. You can use SCIM alongside Docker's"
+      },
+      {
+       "line": 41,
+       "text": "default Just-in-Time (JIT) provisioning or on its own with JIT disabled."
+      },
+      {
+       "line": 42,
+       "text": ""
+      },
+      {
+       "line": 43,
+       "text": "SCIM automates:"
+      },
+      {
+       "line": 44,
+       "text": ""
+      }
+     ],
+     "final_context": "full",
+     "first_exposure": "mixed",
+     "kind": "answer",
+     "span_overlap_cited": "none",
+     "start_line": 39
+    }
+   ],
+   "empty": false,
+   "event_path": [
+    {
+     "action": "search",
+     "call": 1,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": "Docker SSO IdP synchronization synced users groups provisioning SCIM",
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 2,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       35,
+       79
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 3,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       10,
+       36
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 4,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       250,
+       294
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 5,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       40
+      ]
+     ],
+     "source_doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 6,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       39,
+       69
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 7,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_group_mapping__a9ca0024",
+     "edge_class": "mapped_baseline",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       35,
+       62
+      ]
+     ],
+     "source_doc_id": "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 8,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       295,
+       344
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 9,
+     "doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "supported",
+     "query": null,
+     "returned_ranges": [
+      [
+       341,
+       375
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "answer",
+     "call": 10,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": null,
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    }
+   ],
+   "existing_score": {
+    "factual_correctness": {
+     "status": "ok",
+     "value": 0.18
+    },
+    "source": {
+     "bytes": 14509827,
+     "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/ragas-t2/v-c2c2731d2141/run/scores.json",
+     "sha256": "9c1fa6964fc75f7fa9bebc4201bf1d075bc80e24b35402cab20af505ed0cae57"
+    },
+    "unit": [
+     "docker_docs_faq_0117",
+     "s1-follow",
+     "wc19-v-c2c2731d2141",
+     "answer"
+    ]
+   },
+   "follow": {
+    "doc_id": "content_manuals_enterprise_security_provisioning_scim_index__b0957a6a",
+    "edge_class": "added",
+    "file_sha256": "407773aba68c4eb8b92ebc809b32afa2e48af11a03ae76abbaac3da21140485c",
+    "first_page_text_exposure": true,
+    "label": "supported",
+    "legacy_qrels_positive": true,
+    "listed_by_prior_search": false,
+    "menu_added_edges": 2,
+    "menu_edges": 8,
+    "new_page_incident": false,
+    "returned_lines_in_final_context": "all",
+    "returned_ranges": [
+     [
+      1,
+      40
+     ]
+    ],
+    "returned_text_sha256": "0b92e790a9a99d6cd997401d2072de5bb153481b0ac6598b5d95c4d4eea63fff",
+    "snippet_lines_prior": 0,
+    "source_doc_id": "content_manuals_enterprise_security_provisioning_scim_provision_scim__55cf107e",
+    "source_opened_before": true,
+    "span_exposure_final_context": "full",
+    "span_exposure_this_call": "full",
+    "spans": 1,
+    "spans_mapped": 1,
+    "views": {
+     "wc/R0#full": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0#lwcc": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0/O-prime#full": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0/O-prime#lwcc": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     }
+    }
+   },
+   "question": "Is Docker SSO fully synced with the IdP?",
+   "question_id": "docker_docs_faq_0117",
+   "replicate": 1,
+   "returned_excerpt": [
+    {
+     "line": 1,
+     "text": "---"
+    },
+    {
+     "line": 2,
+     "text": "title: SCIM overview"
+    },
+    {
+     "line": 3,
+     "text": "linkTitle: SCIM"
+    },
+    {
+     "line": 4,
+     "text": "weight: 10"
+    },
+    {
+     "line": 5,
+     "text": "description: Learn how System for Cross-domain Identity Management works and how to set it up."
+    },
+    {
+     "line": 6,
+     "text": "keywords: SCIM, SSO, user provisioning, de-provisioning, role mapping, assign users"
+    },
+    {
+     "line": 7,
+     "text": "aliases:"
+    },
+    {
+     "line": 8,
+     "text": "  - /security/for-admins/scim/"
+    },
+    {
+     "line": 9,
+     "text": "  - /docker-hub/scim/"
+    },
+    {
+     "line": 10,
+     "text": "  - /security/for-admins/provisioning/scim/"
+    },
+    {
+     "line": 11,
+     "text": "---"
+    },
+    {
+     "line": 12,
+     "text": ""
+    }
+   ],
+   "rule": "accepted added-edge follow with first page text exposure (no earlier returned lines or snippet line), a `supported` same-variant direct label for the destination, and a final-answer citation of the destination whose cited lines intersect the lines this follow returned",
+   "stratum": "a",
+   "terminal": "answer",
+   "tier": "t2",
+   "trace": {
+    "bytes": 82621,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/t2/v-c2c2731d2141-docker_docs_faq_0117-s1-follow-r1.json",
+    "sha256": "543b1e9afc92db7c35f558ca0d5a4120aa1c894276d58d28a416297a7366cc3d"
+   }
+  },
+  {
+   "answer_text": "Use LocalStack in a Testcontainers-managed test container so the Spring AWS clients target the emulator, not AWS. Add the Spring Cloud AWS S3 and SQS starters, the Testcontainers LocalStack module, and Awaitility for asynchronous SQS assertions; the guide’s sample uses Java 17, Testcontainers 2.0.4, and Spring Cloud AWS 3.0.3 (treat those as sample versions, and align them with your project’s compatibility requirements). [Project setup](content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd:28-33) [Sample versions](content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd:35-42)\n\nIn the test harness, declare a static `LocalStackContainer` with `@Container` and `@Testcontainers`, then use `@DynamicPropertySource` to supply Spring’s S3 and SQS endpoints from `localStack.getEndpointOverride(S3/SQS)`, along with the container’s region and credentials. This runtime wiring is important for parallel CI: do not rely on the guide’s illustrative fixed `localhost:4566` endpoint when the container is mapped to a random port. The guide explicitly recommends ephemeral containers on random available ports to avoid conflicts between parallel builds. [Container and dynamic endpoint wiring](content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f:57-93) [Illustrative properties and random-port guidance](content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f:16-29)\n\nGive each test run unique bucket and queue names (the sample uses UUIDs), create those resources in LocalStack, then publish a message and poll until the expected S3 object content is present. That checks the SQS-to-application-to-S3 integration rather than merely checking that Spring starts. [Unique names and resource setup](content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f:61-105) [Publish and assert with Awaitility](content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f:116-131)\n\nRun `./mvnw test` or `./gradlew test`. Verify in the test output that LocalStack starts and the test passes; the guide says the container stops and is removed automatically afterward. It also describes these tests as using ephemeral containers on random ports with no external setup. [Run and cleanup check](content_guides_testcontainers_java_aws_localstack_run_tests__51513771:10-23) [Ephemeral/random-port summary](content_guides_testcontainers_java_aws_localstack_run_tests__51513771:27-30)\n\nIf local container workloads strain developer machines, evaluate Testcontainers Cloud as an option for offloading container management. The documentation says it frees local resources and offers isolated, consistent environments and scalability; its local setup walkthrough describes using Testcontainers Desktop and the CLI, and monitoring cloud containers. Try the same integration suite locally and with Cloud, comparing test duration, local resource use, and whether cleanup/monitoring meet your needs. The cited material describes benefits and setup at a high level; it does not establish pricing or a guarantee for your workload. [Cloud benefits](content_guides_testcontainers_cloud_why__f60529db:11-20) [Local setup and monitoring overview](content_guides_testcontainers_cloud_demo_local__a44d93c1:15-25)",
+   "arm": "R0",
+   "attribution_breaks": null,
+   "call": 6,
+   "caveat": "outcome-stratified illustration; exposure, label overlap and citation do not establish reliance, necessity of the link or answer improvement; counterparts differ in more than one link",
+   "cell_id": "v-c2c2731d2141-2bc9f0446ace-s1-follow-r1",
+   "condition": "s1-follow",
+   "counterparts": [
+    {
+     "arm": "O",
+     "cell_id": "v-5d89a3217d52-2bc9f0446ace-s1-follow-r1",
+     "cited_pages": [
+      "content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd",
+      "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+      "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+      "content_manuals_testcontainers__d4fac978"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": false,
+     "follows_accepted": 1,
+     "terminal": "answer",
+     "trace_sha256": "e82909776ebc3041de419a269953b4c0190fc181a05b640a7bf64a83acc41cc2"
+    },
+    {
+     "arm": "S",
+     "cell_id": "v-9a7d7f0e7b47-2bc9f0446ace-s1-follow-r1",
+     "cited_pages": [
+      "content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd",
+      "content_guides_testcontainers_java_aws_localstack_index__ba5da23c",
+      "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+      "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f"
+     ],
+     "condition": "s1-follow",
+     "destination_cited": true,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "ebcdb19e2209c9837035bd7cd6dae3b167a40003ea117131c5e601e0f8cbc471"
+    },
+    {
+     "arm": "R0",
+     "cell_id": "v-c2c2731d2141-2bc9f0446ace-s1-no-follow-r1",
+     "cited_pages": [
+      "content_guides_localstack__874a4f75",
+      "content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd",
+      "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+      "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+      "content_manuals_testcontainers__d4fac978"
+     ],
+     "condition": "s1-no-follow",
+     "destination_cited": false,
+     "follows_accepted": 0,
+     "terminal": "answer",
+     "trace_sha256": "c1317af1212079b59a081ebdaa54abde6ec9b93d25e6e2114e97cb9f89452a9c"
+    }
+   ],
+   "destination_citations": [],
+   "empty": false,
+   "event_path": [
+    {
+     "action": "search",
+     "call": 1,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": "Spring Boot S3 SQS integration tests LocalStack parallel CI random ports Testcontainers cloud runtime container workloads",
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 2,
+     "doc_id": "content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       60
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 3,
+     "doc_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       60
+      ]
+     ],
+     "source_doc_id": "content_guides_testcontainers_java_aws_localstack_create_project__e8f06dfd",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 4,
+     "doc_id": "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       43
+      ]
+     ],
+     "source_doc_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 5,
+     "doc_id": "content_guides_testcontainers_java_lifecycle_singleton_containers__348a556e",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       60
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 6,
+     "doc_id": "content_guides_testcontainers_java_aws_localstack_index__ba5da23c",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       42
+      ]
+     ],
+     "source_doc_id": "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 7,
+     "doc_id": "content_manuals_testcontainers__d4fac978",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       70,
+       107
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 8,
+     "doc_id": "content_guides_testcontainers_cloud_index__1d5aaa14",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       32
+      ]
+     ],
+     "source_doc_id": "content_manuals_testcontainers__d4fac978",
+     "status": "accepted"
+    },
+    {
+     "action": "read",
+     "call": 9,
+     "doc_id": "content_guides_testcontainers_java_aws_localstack_write_tests__a973eb0f",
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": false,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       57,
+       136
+      ]
+     ],
+     "source_doc_id": null,
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 10,
+     "doc_id": "content_guides_testcontainers_cloud_why__f60529db",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       24
+      ]
+     ],
+     "source_doc_id": "content_guides_testcontainers_cloud_index__1d5aaa14",
+     "status": "accepted"
+    },
+    {
+     "action": "follow",
+     "call": 11,
+     "doc_id": "content_guides_testcontainers_cloud_demo_local__a44d93c1",
+     "edge_class": "added",
+     "error": null,
+     "first_page_text_exposure": true,
+     "label": "not_applicable",
+     "query": null,
+     "returned_ranges": [
+      [
+       1,
+       29
+      ]
+     ],
+     "source_doc_id": "content_guides_testcontainers_cloud_why__f60529db",
+     "status": "accepted"
+    },
+    {
+     "action": "answer",
+     "call": 12,
+     "doc_id": null,
+     "edge_class": null,
+     "error": null,
+     "first_page_text_exposure": null,
+     "label": null,
+     "query": null,
+     "returned_ranges": null,
+     "source_doc_id": null,
+     "status": "accepted"
+    }
+   ],
+   "existing_score": {
+    "source": "artifacts/docker-corpus-variants-v1/runs/wc-v1/scoring-19/luna-t1 (tier-1 Luna rubric scores; not joined by this audit)"
+   },
+   "follow": {
+    "doc_id": "content_guides_testcontainers_java_aws_localstack_index__ba5da23c",
+    "edge_class": "added",
+    "file_sha256": "c18d13f2e3ecc2b94f09c83cd58551f3e50677beffba4e5081a6f971b54e9509",
+    "first_page_text_exposure": false,
+    "label": "not_applicable",
+    "legacy_qrels_positive": null,
+    "listed_by_prior_search": true,
+    "menu_added_edges": 9,
+    "menu_edges": 10,
+    "new_page_incident": false,
+    "returned_lines_in_final_context": "all",
+    "returned_ranges": [
+     [
+      1,
+      42
+     ]
+    ],
+    "returned_text_sha256": "9e1cd14054fc94295468aa24d71e6d3f7f82e0402e81b9adc7b088898b3e307a",
+    "snippet_lines_prior": 2,
+    "source_doc_id": "content_guides_testcontainers_java_aws_localstack_run_tests__51513771",
+    "source_opened_before": true,
+    "span_exposure_final_context": null,
+    "span_exposure_this_call": null,
+    "spans": null,
+    "spans_mapped": null,
+    "views": {
+     "wc/R0#full": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0#lwcc": {
+      "edge_in_view": true,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0/O-prime#full": {
+      "edge_in_view": false,
+      "source_in_view": true,
+      "target_in_view": true
+     },
+     "wc/R0/O-prime#lwcc": {
+      "edge_in_view": false,
+      "source_in_view": false,
+      "target_in_view": false
+     }
+    }
+   },
+   "question": "I'm preparing a Spring Boot application's S3 and SQS integration-test environment for parallel CI builds. How should I configure the project and test harness to avoid real AWS calls and conflicting ports, verify that the environment runs and cleans up, and evaluate a cloud runtime if container workloads strain our development machines?",
+   "question_id": "2bc9f0446acef48a689dd6dec61d3b44ce1ba8260df91e2f105bf0c68fec04a1",
+   "replicate": 1,
+   "returned_excerpt": [
+    {
+     "line": 1,
+     "text": "---"
+    },
+    {
+     "line": 2,
+     "text": "title: Testing AWS service integrations using LocalStack"
+    },
+    {
+     "line": 3,
+     "text": "linkTitle: AWS LocalStack"
+    },
+    {
+     "line": 4,
+     "text": "description: Learn how to test Spring Cloud AWS applications using LocalStack and Testcontainers."
+    },
+    {
+     "line": 5,
+     "text": "keywords: testcontainers, java, spring boot, testing, aws, localstack, s3, sqs, spring cloud aws"
+    },
+    {
+     "line": 6,
+     "text": "summary: |"
+    },
+    {
+     "line": 7,
+     "text": "  Learn how to create a Spring Boot application with Spring Cloud AWS,"
+    },
+    {
+     "line": 8,
+     "text": "  then test S3 and SQS integrations using Testcontainers and LocalStack."
+    },
+    {
+     "line": 9,
+     "text": "toc_min: 1"
+    },
+    {
+     "line": 10,
+     "text": "toc_max: 2"
+    },
+    {
+     "line": 11,
+     "text": "tags: [testing-with-docker]"
+    },
+    {
+     "line": 12,
+     "text": "languages: [java]"
+    }
+   ],
+   "rule": "accepted added-edge follow whose destination page is not cited in the final answer",
+   "stratum": "b",
+   "terminal": "answer",
+   "tier": "t1",
+   "trace": {
+    "bytes": 118348,
+    "path": "artifacts/docker-corpus-variants-v1/runs/wc-v1/answers-19/t1/v-c2c2731d2141-2bc9f0446ace-s1-follow-r1.json",
+    "sha256": "a257ff3b7a438a4fca28e2f2a6008c577226f077bc46e11af9ac0f6ee1099854"
+   }
+  },
+  {
+   "arm": "R0",
+   "empty": true,
+   "rule": "accepted follow with an attribution-breaking missing or ambiguous record: edge class unknown, replay not verified, file or text identity false, offered menu unknown, a tier-2 destination label of identity_mismatch, never_judged or undetermined, or a supported destination whose spans are all unmappable",
+   "stratum": "c"
+  }
+ ],
+ "order": "lexicographically first (tier, question_id, condition, replicate, call), per arm (LT, R0) and stratum",
+ "strata": {
+  "a": "accepted added-edge follow with first page text exposure (no earlier returned lines or snippet line), a `supported` same-variant direct label for the destination, and a final-answer citation of the destination whose cited lines intersect the lines this follow returned",
+  "b": "accepted added-edge follow whose destination page is not cited in the final answer",
+  "c": "accepted follow with an attribution-breaking missing or ambiguous record: edge class unknown, replay not verified, file or text identity false, offered menu unknown, a tier-2 destination label of identity_mismatch, never_judged or undetermined, or a supported destination whose spans are all unmappable"
+ },
+ "stratum_sizes": {
+  "LT": {
+   "a": 7,
+   "b": 29,
+   "c": 6
+  },
+  "R0": {
+   "a": 1,
+   "b": 15,
+   "c": 0
+  }
+ }
+}

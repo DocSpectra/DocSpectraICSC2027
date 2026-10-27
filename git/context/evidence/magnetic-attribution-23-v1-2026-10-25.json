@@ -1,0 +1,4744 @@
+{
+ "baseline_reproduction": {
+  "docker_docs": {
+   "descriptors_equal": true,
+   "eigenvalue_max_abs_diff": 0.0,
+   "eigenvalues": {
+    "0.00": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      3.185960913421952e-16,
+      0.01006184994784384,
+      0.010996634092816603
+     ],
+     "s23": [
+      3.185960913421952e-16,
+      0.01006184994784384,
+      0.010996634092816603
+     ]
+    },
+    "0.10": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.03950267664461051,
+      0.0416413299666322,
+      0.04639080737310549
+     ],
+     "s23": [
+      0.03950267664461051,
+      0.0416413299666322,
+      0.04639080737310549
+     ]
+    },
+    "0.25": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.08417108937548456,
+      0.09692275498738123,
+      0.0988485494460338
+     ],
+     "s23": [
+      0.08417108937548456,
+      0.09692275498738123,
+      0.0988485494460338
+     ]
+    }
+   },
+   "passed": true,
+   "trophic_abs_diff": 0.0,
+   "view_hash_equal": null
+  },
+  "github_docs": {
+   "descriptors_equal": true,
+   "eigenvalue_max_abs_diff": 0.0,
+   "eigenvalues": {
+    "0.00": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      -6.53929317035496e-16,
+      0.0030097154968946964,
+      0.01377352023434322
+     ],
+     "s23": [
+      -6.53929317035496e-16,
+      0.0030097154968946964,
+      0.01377352023434322
+     ]
+    },
+    "0.10": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.013815493359007943,
+      0.017358431737023103,
+      0.03774730751722336
+     ],
+     "s23": [
+      0.013815493359007943,
+      0.017358431737023103,
+      0.03774730751722336
+     ]
+    },
+    "0.25": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.013943572845237794,
+      0.039579428654252374,
+      0.04066694956324422
+     ],
+     "s23": [
+      0.013943572845237794,
+      0.039579428654252374,
+      0.04066694956324422
+     ]
+    }
+   },
+   "passed": true,
+   "trophic_abs_diff": 0.0,
+   "view_hash_equal": null
+  },
+  "react_docs": {
+   "descriptors_equal": true,
+   "eigenvalue_max_abs_diff": 0.0,
+   "eigenvalues": {
+    "0.00": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      4.15382412692631e-17,
+      0.13323494189540197,
+      0.17791943401191593
+     ],
+     "s23": [
+      4.15382412692631e-17,
+      0.13323494189540197,
+      0.17791943401191593
+     ]
+    },
+    "0.10": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.06263673122632965,
+      0.1646863897940326,
+      0.20197499867049623
+     ],
+     "s23": [
+      0.06263673122632965,
+      0.1646863897940326,
+      0.20197499867049623
+     ]
+    },
+    "0.25": {
+     "max_abs_diff": 0.0,
+     "s22": [
+      0.2099418144526756,
+      0.22370461144131487,
+      0.24056779981523962
+     ],
+     "s23": [
+      0.2099418144526756,
+      0.22370461144131487,
+      0.24056779981523962
+     ]
+    }
+   },
+   "passed": true,
+   "trophic_abs_diff": 0.0,
+   "view_hash_equal": null
+  }
+ },
+ "controls": {
+  "docker_docs/cycle1": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "docker_docs/cycle2": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "docker_docs/cycle3": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "docker_docs/cycle4": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "docker_docs/global_reversal": {
+   "arc_count_equal": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_out_degrees_swapped": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "scc_partition_equal": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true
+  },
+  "github_docs/cycle1": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "github_docs/cycle2": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "github_docs/cycle3": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "github_docs/cycle4": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "github_docs/global_reversal": {
+   "arc_count_equal": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_out_degrees_swapped": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "scc_partition_equal": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true
+  },
+  "react_docs/cycle1": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "react_docs/cycle2": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "react_docs/cycle3": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "react_docs/cycle4": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "react_docs/global_reversal": {
+   "arc_count_equal": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_out_degrees_swapped": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "scc_partition_equal": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true
+  },
+  "small/five_triangle": {
+   "arc_count_equal": true,
+   "changed_arcs_form_directed_cycle": true,
+   "changed_arcs_nonreciprocal_in_a": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "in_degree_equal": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "out_degree_equal": true,
+   "outdegree_gini_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "reciprocal_arc_count_equal": true,
+   "scc_partition_equal": true,
+   "sink_count_equal": true,
+   "source_count_equal": true,
+   "trophic_incoherence_within_tolerance": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true,
+   "weighted_degree_equal": true
+  },
+  "small/path_forest": {
+   "arc_count_equal": true,
+   "declared_change_reproduces_b": true,
+   "distinct_graph_hashes": true,
+   "node_count_equal": true,
+   "ordered_nodes_equal": true,
+   "q0_normalized_matrix_equal": true,
+   "scc_partition_equal": true,
+   "undirected_graph_is_forest": true,
+   "undirected_w_equal": true,
+   "weak_partition_equal": true
+  }
+ },
+ "coverage": {
+  "docker_docs": {
+   "cycles": 4,
+   "expansions": 1397,
+   "found_per_length": {
+    "3": 4
+   },
+   "lengths": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "nonreciprocal_arcs": 1998,
+   "status": "max_cycles_reached"
+  },
+  "github_docs": {
+   "cycles": 4,
+   "expansions": 2854,
+   "found_per_length": {
+    "3": 4
+   },
+   "lengths": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "nonreciprocal_arcs": 5023,
+   "status": "max_cycles_reached"
+  },
+  "react_docs": {
+   "cycles": 4,
+   "expansions": 988,
+   "found_per_length": {
+    "3": 4
+   },
+   "lengths": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "nonreciprocal_arcs": 880,
+   "status": "max_cycles_reached"
+  }
+ },
+ "created": "2026-10-25",
+ "degeneracy": {
+  "full": {
+   "0.00": {
+    "cluster_rank": 2,
+    "isolate_mass": 0.5,
+    "lambda1": -7.45931094670027e-17,
+    "lowest": [
+     -7.45931094670027e-17,
+     0.0,
+     0.6666666666666665,
+     1.0000000000000002,
+     1.5000000000000004,
+     1.833333333333333
+    ]
+   },
+   "0.10": {
+    "cluster_rank": 1,
+    "isolate_mass": 1.0,
+    "lambda1": 0.0,
+    "lowest": [
+     0.0,
+     0.1625499663936195,
+     0.4252149041464988,
+     1.1213286981750188,
+     1.3488771459859643,
+     1.9420292852988983
+    ]
+   },
+   "0.25": {
+    "cluster_rank": 1,
+    "isolate_mass": 1.0,
+    "lambda1": 0.0,
+    "lowest": [
+     0.0,
+     0.2046663545568723,
+     0.37133302122353906,
+     1.0000000000000002,
+     1.6286669787764614,
+     1.7953336454431275
+    ]
+   }
+  },
+  "lwcc": {
+   "0.00": {
+    "cluster_rank": 1,
+    "isolate_mass": 0.0,
+    "lambda1": -7.45931094670027e-17,
+    "lowest": [
+     -7.45931094670027e-17,
+     0.6666666666666665,
+     1.0000000000000002,
+     1.5000000000000004,
+     1.833333333333333
+    ]
+   },
+   "0.10": {
+    "cluster_rank": 1,
+    "isolate_mass": 0.0,
+    "lambda1": 0.1625499663936195,
+    "lowest": [
+     0.1625499663936195,
+     0.4252149041464988,
+     1.1213286981750188,
+     1.3488771459859643,
+     1.9420292852988983
+    ]
+   },
+   "0.25": {
+    "cluster_rank": 1,
+    "isolate_mass": 0.0,
+    "lambda1": 0.2046663545568723,
+    "lowest": [
+     0.2046663545568723,
+     0.37133302122353906,
+     1.0000000000000002,
+     1.6286669787764614,
+     1.7953336454431275
+    ]
+   }
+  }
+ },
+ "image": {
+  "reference": "sha256:91e9ac419128417596d5f046f0d499183c63d588ca5e2257e5fd6d1b028f0b49",
+  "tag": "retrieval-arena/verification:icsc-s23"
+ },
+ "model_calls": 0,
+ "numerical": {
+  "account_all_ok": true,
+  "energy_identity_all_ok": true,
+  "permutation_checks": [
+   {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.3322676295501878e-15,
+    "energy_max_abs_diff": 9.889650264428456e-32,
+    "mass_max_abs_diff": 6.591949208711867e-17,
+    "passed": true,
+    "projector_distance": 2.313666747933805e-15,
+    "q": 0.0,
+    "seed": 2323,
+    "status": "computed"
+   },
+   {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.0547118733938987e-15,
+    "energy_max_abs_diff": 3.577867169202165e-18,
+    "mass_max_abs_diff": 9.020562075079397e-17,
+    "passed": true,
+    "projector_distance": 2.2049652113468815e-15,
+    "q": 0.1,
+    "seed": 2323,
+    "status": "computed"
+   },
+   {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.3322676295501878e-15,
+    "energy_max_abs_diff": 3.452099717193846e-16,
+    "mass_max_abs_diff": 1.4016565685892601e-15,
+    "passed": true,
+    "projector_distance": 1.3595330051157887e-14,
+    "q": 0.25,
+    "seed": 2323,
+    "status": "computed"
+   }
+  ],
+  "qualified": 102,
+  "relaxation_all_nonpositive": true,
+  "sides": 102,
+  "worst_residual_abs": 5.82978036982361e-15
+ },
+ "plan_sha256": "bbf0717cfea5f758167e513aec5ad1aa062acf3b44e3f8c9cc307a7310d67fa2",
+ "ra_commit": "99a7a04c9b042e84cb4217c9804e68cf06ae9ff9",
+ "runs": {
+  "anchors": {
+   "artifact_inventory_sha256": "a0ead797005d45bdb99371b2d2f8f6cc886aa3b79607978523ee7e18f3374e67",
+   "artifacts": 162,
+   "jobs": 18,
+   "manifest_sha256": "0b7ad650ab5ac20eebc836ad6744424fd6b310f498f02c6b91406bcffe7c12e6",
+   "measure_seconds": 296.6,
+   "receipt_sha256": "59459aba95eba3326d0ee76e4eef101bd9a741d38c7bc21202fb989a1d4b14f8",
+   "runtime": {
+    "machine": "x86_64",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "python": "3.12.11",
+    "scipy": "1.18.0",
+    "threads": {
+     "MKL_NUM_THREADS": "1",
+     "OMP_NUM_THREADS": "1",
+     "OPENBLAS_NUM_THREADS": "1"
+    }
+   },
+   "table_sha256": "c17757676324e4218bff245d1b33c93833071be4aa8704ffc464e11c972586c7"
+  },
+  "small": {
+   "artifact_inventory_sha256": "adbdc46421c482c36d1fc7d54f359e6cbaec01f32137180dba63822db4254cb6",
+   "artifacts": 45,
+   "jobs": 3,
+   "manifest_sha256": "da240a840fd42e1c0824130906df1eeb9fa52474ac92bd235f9be2cdf613abf8",
+   "measure_seconds": 0.4,
+   "receipt_sha256": "daed8716ea59fe856f8dfbd4c7d3cd6a4888409bb00741429d4cac62ff4d1fd3",
+   "runtime": {
+    "machine": "x86_64",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "python": "3.12.11",
+    "scipy": "1.18.0",
+    "threads": {
+     "MKL_NUM_THREADS": "1",
+     "OMP_NUM_THREADS": "1",
+     "OPENBLAS_NUM_THREADS": "1"
+    }
+   },
+   "table_sha256": "9e388ceb1f2884ecc50af89e26df1d823339cfa9a5e16f908fdee673579396af"
+  }
+ },
+ "schema_version": "icsc.magnetic_attribution_23_evidence.v1",
+ "selection_replay_matches_plan": {
+  "docker_docs": true,
+  "github_docs": true,
+  "react_docs": true
+ },
+ "table": [
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "case": "docker_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "docker_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "case": "docker_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "docker_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "case": "docker_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "docker_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.006420878210439065,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.006420878210439065,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "case": "docker_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.5518714671057006e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 3.5518714671057006e-16,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": 0.0026886093474899615,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.0069672117002368816,
+     "fraction": 0.1763731547337438
+    },
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": 0.00244563712409643,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.6072608057364025,
+    "effective_support_fraction": 0.01537283745080553,
+    "energy_fraction_on_changed_edges": 0.002691638330437128,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.006974634794631755,
+     "fraction": 0.176562571968054
+    },
+    "lambda1": 0.03950234025755884,
+    "lambda2": 0.04164424454257224,
+    "mass_on_cycle_nodes": 0.002444019531221786,
+    "next_gap": 0.002141904285013402,
+    "numerics": "qualified",
+    "residual_abs": 1.8165005885005353e-15
+   },
+   "case": "docker_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -3.363870516720491e-07,
+   "delta_lambda2": 2.914575940038411e-06,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.063476765828837e-16,
+    "fixed_mode_term": 1.2651999864662183e-06,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.6015870378319197e-06,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -8.51555084984206e-06,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": 0.025134071155667195,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012523652339713868,
+     "fraction": 0.1487880510117469
+    },
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": 0.007796309289528998,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.006420878210439105,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9602280637718539,
+    "effective_support_fraction": 0.005938527155321227,
+    "energy_fraction_on_changed_edges": 0.02507750601422862,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012435192448629222,
+     "fraction": 0.14788745221382837
+    },
+    "lambda1": 0.08408551410196326,
+    "lambda2": 0.09692193316190793,
+    "mass_on_cycle_nodes": 0.008001133021348432,
+    "next_gap": 0.012836419059944676,
+    "numerics": "qualified",
+    "residual_abs": 1.690676376082421e-15
+   },
+   "case": "docker_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -8.557527352130723e-05,
+   "delta_lambda2": -8.218254732988983e-07,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.713039432527097e-16,
+    "fixed_mode_term": 0.00188067604393966,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.001966251317460796,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -0.001016682499374086,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.007456503728251801,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.007456503728251801,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "case": "docker_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.5518714671057006e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 3.5518714671057006e-16,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": 0.0038021091751334547,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.0069672117002368816,
+     "fraction": 0.1763731547337438
+    },
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": 0.004290523860296381,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.6160795901802157,
+    "effective_support_fraction": 0.014939034669420514,
+    "energy_fraction_on_changed_edges": 0.0037802574394611333,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.007075465448456692,
+     "fraction": 0.17912768035376703
+    },
+    "lambda1": 0.03949956497222003,
+    "lambda2": 0.04165885247379557,
+    "mass_on_cycle_nodes": 0.004257904542724523,
+    "next_gap": 0.002159287501575541,
+    "numerics": "qualified",
+    "residual_abs": 2.1641757244865213e-15
+   },
+   "case": "docker_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -3.111672390483655e-06,
+   "delta_lambda2": 1.752250716336584e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.004120932049992e-16,
+    "fixed_mode_term": -1.8229981383525033e-08,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -3.093442408799718e-06,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -7.877117843122643e-05,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": 0.001403151973442552,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012523652339713868,
+     "fraction": 0.1487880510117469
+    },
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": 0.0006733359109274708,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.007456503728251864,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.960163154360929,
+    "effective_support_fraction": 0.005953435362363923,
+    "energy_fraction_on_changed_edges": 0.0008203759402135678,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012461691631986977,
+     "fraction": 0.14824891733897202
+    },
+    "lambda1": 0.084059242088718,
+    "lambda2": 0.09691652960351592,
+    "mass_on_cycle_nodes": 0.0010423407528768287,
+    "next_gap": 0.012857287514797922,
+    "numerics": "qualified",
+    "residual_abs": 1.1817146932706514e-15
+   },
+   "case": "docker_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -0.00011184728676656708,
+   "delta_lambda2": -6.225383865313128e-06,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.7663008642504474e-16,
+    "fixed_mode_term": -2.425171436743928e-06,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.00010942211532964652,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -0.0013288088296875887,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.012220381110190357,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.012220381110190357,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "case": "docker_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.5518714671057006e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 3.5518714671057006e-16,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": 0.0018405458157565373,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.0069672117002368816,
+     "fraction": 0.1763731547337438
+    },
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": 0.0033499708653703057,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.6093560849227095,
+    "effective_support_fraction": 0.01526881677463235,
+    "energy_fraction_on_changed_edges": 0.001791792355804896,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.00699987896036338,
+     "fraction": 0.1771862125134742
+    },
+    "lambda1": 0.03950577678176304,
+    "lambda2": 0.04165230333564893,
+    "mass_on_cycle_nodes": 0.0033177221185803113,
+    "next_gap": 0.0021465265538858844,
+    "numerics": "qualified",
+    "residual_abs": 1.7143067531308665e-15
+   },
+   "case": "docker_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 3.1001371525313237e-06,
+   "delta_lambda2": 1.0973369016724355e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.0525712166329377e-16,
+    "fixed_mode_term": 4.833634159311041e-06,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.7334970064744604e-06,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 7.847916687828511e-05,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": 1.6189145686961499e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012523652339713868,
+     "fraction": 0.1487880510117469
+    },
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": 1.7020389504532903e-06,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.012220381110190555,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618393413816735,
+    "effective_support_fraction": 0.005916375923393542,
+    "energy_fraction_on_changed_edges": 8.710085896597863e-07,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.01252366040922188,
+     "fraction": 0.14878819980594082
+    },
+    "lambda1": 0.08417105943586971,
+    "lambda2": 0.09692274925439168,
+    "mass_on_cycle_nodes": 1.8874045681798348e-06,
+    "next_gap": 0.012751689818521969,
+    "numerics": "qualified",
+    "residual_abs": 1.9802821288760305e-15
+   },
+   "case": "docker_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -2.993961485675545e-08,
+   "delta_lambda2": -5.7329895553071e-09,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.71631486922946e-16,
+    "fixed_mode_term": 4.592490563347862e-08,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -7.586452031860258e-08,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -3.55699505363365e-07,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.020712510356255053,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 7.121012763830481e-15,
+    "effective_support_fraction": 0.4911960751489902,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_build_metadata_attestations_index__799dfbe5",
+      "content_manuals_build_policies_validate_images__fcc4c57a"
+     ],
+     "energy": 2.2186712959340957e-31,
+     "fraction": null
+    },
+    "lambda1": 3.185960913421952e-16,
+    "lambda2": 0.01006184994784384,
+    "mass_on_cycle_nodes": 0.020712510356255053,
+    "next_gap": 0.01006184994784352,
+    "numerics": "qualified",
+    "residual_abs": 1.0582802288656587e-15
+   },
+   "case": "docker_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.5518714671057006e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 3.5518714671057006e-16,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.606723693436562,
+    "effective_support_fraction": 0.015405601161635979,
+    "energy_fraction_on_changed_edges": 0.002242731700869319,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.0069672117002368816,
+     "fraction": 0.1763731547337438
+    },
+    "lambda1": 0.03950267664461051,
+    "lambda2": 0.0416413299666322,
+    "mass_on_cycle_nodes": 0.005636088028357842,
+    "next_gap": 0.0021386533220216913,
+    "numerics": "qualified",
+    "residual_abs": 1.9536352737360164e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.6108237089848035,
+    "effective_support_fraction": 0.01519074887722518,
+    "energy_fraction_on_changed_edges": 0.002311912770120603,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_swarm_admin_guide__f1ee5a90",
+      "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94"
+     ],
+     "energy": 0.007019654127542957,
+     "fraction": 0.1776671570101236
+    },
+    "lambda1": 0.03951013932835639,
+    "lambda2": 0.04165338480123456,
+    "mass_on_cycle_nodes": 0.005549391838364485,
+    "next_gap": 0.002143245472878169,
+    "numerics": "qualified",
+    "residual_abs": 1.917968204939589e-15
+   },
+   "case": "docker_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 7.462683745879106e-06,
+   "delta_lambda2": 1.2054834602356901e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.0783210182294685e-16,
+    "fixed_mode_term": 1.2754254989251224e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -5.291571243064286e-06,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 0.0001889159008899025,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618440857559136,
+    "effective_support_fraction": 0.00591630153420611,
+    "energy_fraction_on_changed_edges": 3.334872620377909e-05,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012523652339713868,
+     "fraction": 0.1487880510117469
+    },
+    "lambda1": 0.08417108937548456,
+    "lambda2": 0.09692275498738123,
+    "mass_on_cycle_nodes": 9.741597780386446e-05,
+    "next_gap": 0.012751665611896668,
+    "numerics": "qualified",
+    "residual_abs": 1.5022032458511687e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.0012427506213753107,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.020712510356255178,
+    "cycle_node_share": 0.0035545023696682463,
+    "degree_mass_tv_distance": 0.9618035613561056,
+    "effective_support_fraction": 0.0059168419356161765,
+    "energy_fraction_on_changed_edges": 2.516231942745688e-05,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "content_manuals_engine_index__3a6da101",
+      "content_reference_api_engine_index__6dd2a778"
+     ],
+     "energy": 0.012522650323212975,
+     "fraction": 0.14877821487253115
+    },
+    "lambda1": 0.08416991919107299,
+    "lambda2": 0.09692274810536149,
+    "mass_on_cycle_nodes": 0.0001004407279818306,
+    "next_gap": 0.0127528289142885,
+    "numerics": "qualified",
+    "residual_abs": 1.6904494036440434e-15
+   },
+   "case": "docker_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -1.1701844115780125e-06,
+   "delta_lambda2": -6.882019745746426e-09,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.6716978719539827e-16,
+    "fixed_mode_term": 2.2642918071144392e-07,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.3966135921222866e-06,
+    "status": "computed"
+   },
+   "job_id": "docker_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -1.390245059509515e-05,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "case": "react_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "react_docs#global_reversal",
+   "permutation_check": {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.3322676295501878e-15,
+    "energy_max_abs_diff": 9.889650264428456e-32,
+    "mass_max_abs_diff": 6.591949208711867e-17,
+    "passed": true,
+    "projector_distance": 2.313666747933805e-15,
+    "q": 0.0,
+    "seed": 2323,
+    "status": "computed"
+   },
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "case": "react_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "react_docs#global_reversal",
+   "permutation_check": {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.0547118733938987e-15,
+    "energy_max_abs_diff": 3.577867169202165e-18,
+    "mass_max_abs_diff": 9.020562075079397e-17,
+    "passed": true,
+    "projector_distance": 2.2049652113468815e-15,
+    "q": 0.1,
+    "seed": 2323,
+    "status": "computed"
+   },
+   "q": 0.1,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "case": "react_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "react_docs#global_reversal",
+   "permutation_check": {
+    "cluster_rank": 1,
+    "edge_sets_equal": true,
+    "eigenvalue_max_abs_diff": 1.3322676295501878e-15,
+    "energy_max_abs_diff": 3.452099717193846e-16,
+    "mass_max_abs_diff": 1.4016565685892601e-15,
+    "passed": true,
+    "projector_distance": 1.3595330051157887e-14,
+    "q": 0.25,
+    "seed": 2323,
+    "status": "computed"
+   },
+   "q": 0.25,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.02208646616541354,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.02208646616541354,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "case": "react_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 5.741780272541827e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 5.741780272541827e-17,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": 0.01643553214172801,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_eslint_plugin_react_hooks_index__7f7b357a",
+      "reference_react_useeffectevent__cdb9c76f"
+     ],
+     "energy": 0.0006496809648883084,
+     "fraction": 0.010372204171076017
+    },
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": 0.023404836068829975,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06344866864546567,
+    "effective_support_fraction": 0.6477455673384054,
+    "energy_fraction_on_changed_edges": 0.015770211253606083,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_eslint_plugin_react_hooks_index__7f7b357a",
+      "reference_react_useeffectevent__cdb9c76f"
+     ],
+     "energy": 0.0006495518507458498,
+     "fraction": 0.01037129499245976
+    },
+    "lambda1": 0.06262977296645118,
+    "lambda2": 0.16479550471266305,
+    "mass_on_cycle_nodes": 0.02336745152973667,
+    "next_gap": 0.10216573174621187,
+    "numerics": "qualified",
+    "residual_abs": 1.5897275567089655e-15
+   },
+   "case": "react_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -6.958259878467321e-06,
+   "delta_lambda2": 0.00010911491863044298,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 4.123898488320177e-16,
+    "fixed_mode_term": 9.514512923554769e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.0001021033891144274,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -0.00011108912841132398,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": 0.004089010994037061,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.017514617532980874,
+     "fraction": 0.08342605582714417
+    },
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": 0.029370479746456943,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.022086466165413533,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7301224904694286,
+    "effective_support_fraction": 0.07597445869888263,
+    "energy_fraction_on_changed_edges": 0.008610758782088503,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.02060107410298923,
+     "fraction": 0.09714223503508745
+    },
+    "lambda1": 0.21207123858688448,
+    "lambda2": 0.22335046190176353,
+    "mass_on_cycle_nodes": 0.018784568685488463,
+    "next_gap": 0.011279223314879044,
+    "numerics": "qualified",
+    "residual_abs": 8.622828250224982e-16
+   },
+   "case": "react_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.002129424134208885,
+   "delta_lambda2": -0.0003541495395513461,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.5525775109992423e-16,
+    "fixed_mode_term": 0.004787931008247742,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.0026585068740390128,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 0.01014292526603314,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.028665413533834602,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.028665413533834602,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "case": "react_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 5.741780272541827e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 5.741780272541827e-17,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": 0.016510181421143886,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_eslint_plugin_react_hooks_index__7f7b357a",
+      "reference_react_useeffectevent__cdb9c76f"
+     ],
+     "energy": 0.0006496809648883084,
+     "fraction": 0.010372204171076017
+    },
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": 0.027037468311337666,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06483185551661394,
+    "effective_support_fraction": 0.6482662642131597,
+    "energy_fraction_on_changed_edges": 0.015194424403752507,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_eslint_plugin_react_hooks_index__7f7b357a",
+      "reference_react_useeffectevent__cdb9c76f"
+     ],
+     "energy": 0.0006475117122653627,
+     "fraction": 0.010359398428368879
+    },
+    "lambda1": 0.0625047599764264,
+    "lambda2": 0.1647297042445423,
+    "mass_on_cycle_nodes": 0.02756980809652876,
+    "next_gap": 0.1022249442681159,
+    "numerics": "qualified",
+    "residual_abs": 1.1747345890414244e-15
+   },
+   "case": "react_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -0.0001319712499032455,
+   "delta_lambda2": 4.331445050970162e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 3.9768535686768303e-16,
+    "fixed_mode_term": -8.437585939911419e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -4.759539050452899e-05,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -0.002106930667029616,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": 0.007587589443891738,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.017514617532980874,
+     "fraction": 0.08342605582714417
+    },
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": 0.02792545101233258,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.028665413533834585,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7235727022246674,
+    "effective_support_fraction": 0.08707221146729205,
+    "energy_fraction_on_changed_edges": 0.010266502953313494,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.018406644759371,
+     "fraction": 0.08729553973860735
+    },
+    "lambda1": 0.21085435538272398,
+    "lambda2": 0.2230213797765122,
+    "mass_on_cycle_nodes": 0.02417855413275792,
+    "next_gap": 0.012167024393788223,
+    "numerics": "qualified",
+    "residual_abs": 8.598166802408347e-16
+   },
+   "case": "react_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0009125409300483889,
+   "delta_lambda2": -0.0006832316648026637,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.5785983631388945e-16,
+    "fixed_mode_term": 0.002187242425792638,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.001274701495744407,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 0.004346637340576528,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.013627819548872192,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.013627819548872192,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "case": "react_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 5.741780272541827e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 5.741780272541827e-17,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": 0.008353278264892818,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "energy": 0.0009692829116508715,
+     "fraction": 0.015474672650916078
+    },
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": 0.011906430167543443,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06251147996726251,
+    "effective_support_fraction": 0.6480688503450235,
+    "energy_fraction_on_changed_edges": 0.008217515407694833,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "energy": 0.0009699150089011117,
+     "fraction": 0.015483784020763804
+    },
+    "lambda1": 0.06264069607277208,
+    "lambda2": 0.1646842954444631,
+    "mass_on_cycle_nodes": 0.01183469495588805,
+    "next_gap": 0.10204359937169104,
+    "numerics": "qualified",
+    "residual_abs": 1.1304715398812138e-15
+   },
+   "case": "react_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 3.9648464424252294e-06,
+   "delta_lambda2": -2.094349569492504e-06,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 4.02411800713362e-16,
+    "fixed_mode_term": 1.593738997783538e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.1972543535812563e-05,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 6.329906374103039e-05,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": 0.0003616174660886372,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.017514617532980874,
+     "fraction": 0.08342605582714417
+    },
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": 0.0005184486670500356,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.01362781954887218,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7302977829037662,
+    "effective_support_fraction": 0.09062529408819939,
+    "energy_fraction_on_changed_edges": 0.00032838203175173574,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.017522825485284627,
+     "fraction": 0.08346538809671031
+    },
+    "lambda1": 0.2099412209643254,
+    "lambda2": 0.22372972466371085,
+    "mass_on_cycle_nodes": 0.0005147648029039834,
+    "next_gap": 0.013788503699385446,
+    "numerics": "qualified",
+    "residual_abs": 8.764125053806589e-16
+   },
+   "case": "react_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -5.934883501867994e-07,
+   "delta_lambda2": 2.5113222395983792e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.5752102313498773e-16,
+    "fixed_mode_term": 2.9374085868098107e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -2.9967574218442428e-05,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -2.8269182665399017e-06,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.01174812030075189,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 1.2138727523147708e-15,
+    "effective_support_fraction": 0.6280340152546067,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "reference_react_compiler_directives_use_memo__b8884173",
+      "reference_react_compiler_directives_use_no_memo__cb5adbd4"
+     ],
+     "energy": 1.3270861023043297e-31,
+     "fraction": null
+    },
+    "lambda1": 4.15382412692631e-17,
+    "lambda2": 0.13323494189540197,
+    "mass_on_cycle_nodes": 0.01174812030075189,
+    "next_gap": 0.13323494189540194,
+    "numerics": "qualified",
+    "residual_abs": 1.5566550309524313e-15
+   },
+   "case": "react_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 5.741780272541827e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 5.741780272541827e-17,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.06224643839358146,
+    "effective_support_fraction": 0.6482795922153479,
+    "energy_fraction_on_changed_edges": 0.006808568219375722,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "energy": 0.0009692829116508715,
+     "fraction": 0.015474672650916078
+    },
+    "lambda1": 0.06263673122632965,
+    "lambda2": 0.1646863897940326,
+    "mass_on_cycle_nodes": 0.008562943687839594,
+    "next_gap": 0.10204965856770296,
+    "numerics": "qualified",
+    "residual_abs": 7.789327175204723e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.0622997120494138,
+    "effective_support_fraction": 0.6483221415746253,
+    "energy_fraction_on_changed_edges": 0.00670886426662414,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2022_03_29_react_v18__396e4232",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     "energy": 0.0009693607016178029,
+     "fraction": 0.015478233070543766
+    },
+    "lambda1": 0.06262734881945668,
+    "lambda2": 0.16459505748663203,
+    "mass_on_cycle_nodes": 0.008565921043057112,
+    "next_gap": 0.10196770866717535,
+    "numerics": "qualified",
+    "residual_abs": 1.0285377844554163e-15
+   },
+   "case": "react_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -9.382406872968097e-06,
+   "delta_lambda2": -9.133230740057674e-05,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 4.0566779536260755e-16,
+    "fixed_mode_term": -2.241144336948434e-06,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -7.14126253642533e-06,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -0.00014979081266335554,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7303442815123706,
+    "effective_support_fraction": 0.09065358828446478,
+    "energy_fraction_on_changed_edges": 5.092106572915239e-05,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.017514617532980874,
+     "fraction": 0.08342605582714417
+    },
+    "lambda1": 0.2099418144526756,
+    "lambda2": 0.22370461144131487,
+    "mass_on_cycle_nodes": 5.657092149397639e-05,
+    "next_gap": 0.013762796988639275,
+    "numerics": "qualified",
+    "residual_abs": 7.129166145727332e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.002819548872180451,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.011748120300751879,
+    "cycle_node_share": 0.014563106796116505,
+    "degree_mass_tv_distance": 0.7304525917469076,
+    "effective_support_fraction": 0.0906137274060764,
+    "energy_fraction_on_changed_edges": 5.508352050048101e-05,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "blog_2025_12_03_critical_security_vulnerability_in_react_server_components__8605d41e",
+      "reference_rsc_server_functions__f1b928e2"
+     ],
+     "energy": 0.01751652378409574,
+     "fraction": 0.08343294400374378
+    },
+    "lambda1": 0.20994732947826641,
+    "lambda2": 0.22371011449719666,
+    "mass_on_cycle_nodes": 4.010411802166418e-05,
+    "next_gap": 0.013762785018930246,
+    "numerics": "qualified",
+    "residual_abs": 1.1389718866722752e-15
+   },
+   "case": "react_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 5.515025590818734e-06,
+   "delta_lambda2": 5.503055881789232e-06,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.7582201699336414e-16,
+    "fixed_mode_term": 1.2523302559510212e-05,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -7.0082769688673e-06,
+    "status": "computed"
+   },
+   "job_id": "react_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 2.6269305165321952e-05,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "case": "github_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "github_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "case": "github_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "github_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": null,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": null,
+    "cycle_node_share": null,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": null,
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": null,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "case": "github_docs/global_reversal",
+   "control": "global_reversal",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": null,
+    "account_residual": null,
+    "fixed_mode_term": null,
+    "reasons": [
+     "every_edge_changes"
+    ],
+    "relaxation_nonpositive": null,
+    "relaxation_term": null,
+    "status": "unavailable"
+   },
+   "job_id": "github_docs#global_reversal",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 0.0,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.002759817063554688,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.002759817063554688,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "case": "github_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.305649561224527e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.305649561224527e-16,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": 7.052152625953901e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835633776715062,
+     "fraction": 0.2052502725041056
+    },
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": 3.059756974427194e-06,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949212483260477,
+    "effective_support_fraction": 0.002918489028546263,
+    "energy_fraction_on_changed_edges": 6.733586674720792e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028356300661290697,
+     "fraction": 0.20525009796837815
+    },
+    "lambda1": 0.013815487028736993,
+    "lambda2": 0.017358428085943966,
+    "mass_on_cycle_nodes": 3.0673756385316766e-06,
+    "next_gap": 0.0035429410572069726,
+    "numerics": "qualified",
+    "residual_abs": 3.5490080245406455e-15
+   },
+   "case": "github_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -6.3302709497892184e-09,
+   "delta_lambda2": -3.651079136940405e-09,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.266405826632845e-17,
+    "fixed_mode_term": 3.784827726862999e-10,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.708753785139576e-09,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -4.582008608228074e-07,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": 3.231083978804277e-07,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002888530832131858,
+     "fraction": 0.20715858583676397
+    },
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": 6.3894960348681e-08,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0027598170635546445,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939764067322,
+    "effective_support_fraction": 0.0028910092709777033,
+    "energy_fraction_on_changed_edges": 3.0040537179665044e-07,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028885305213464225,
+     "fraction": 0.2071585738954106
+    },
+    "lambda1": 0.013943572148767614,
+    "lambda2": 0.039579428348847694,
+    "mass_on_cycle_nodes": 6.874981159045909e-08,
+    "next_gap": 0.02563585620008008,
+    "numerics": "qualified",
+    "residual_abs": 4.363145977147805e-15
+   },
+   "case": "github_docs/cycle1",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -6.96470180139297e-10,
+   "delta_lambda2": -3.054046807116073e-10,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.4099490437955275e-15,
+    "fixed_mode_term": 3.941583245138244e-09,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -4.638055835226584e-09,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle1",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -4.994919077553106e-08,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.001419334489828119,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.001419334489828119,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "case": "github_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.305649561224527e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.305649561224527e-16,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": 1.922887264201137e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835633776715062,
+     "fraction": 0.2052502725041056
+    },
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": 3.989778876375805e-07,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217591656626,
+    "effective_support_fraction": 0.002918485093365003,
+    "energy_fraction_on_changed_edges": 1.927198799177669e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835634144517298,
+     "fraction": 0.2052502882653434
+    },
+    "lambda1": 0.013815494090080892,
+    "lambda2": 0.017358432663400005,
+    "mass_on_cycle_nodes": 3.9799937554742585e-07,
+    "next_gap": 0.0035429385733191134,
+    "numerics": "qualified",
+    "residual_abs": 3.377935330117825e-15
+   },
+   "case": "github_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 7.31072948706446e-10,
+   "delta_lambda2": 9.263769022715973e-10,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.272090439276978e-17,
+    "fixed_mode_term": 1.3286880048352453e-09,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -5.976151188497036e-10,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 5.2916890458332686e-08,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": 5.073607901476203e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002888530832131858,
+     "fraction": 0.20715858583676397
+    },
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": 3.647978332721002e-09,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0014193344898281027,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939915959443,
+    "effective_support_fraction": 0.0028910090838148257,
+    "energy_fraction_on_changed_edges": 5.54863024288578e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028885308618776025,
+     "fraction": 0.20715858639353418
+    },
+    "lambda1": 0.01394357295135343,
+    "lambda2": 0.03957942867746376,
+    "mass_on_cycle_nodes": 3.41405397431515e-09,
+    "next_gap": 0.02563585572611033,
+    "numerics": "qualified",
+    "residual_abs": 3.3432467524418533e-15
+   },
+   "case": "github_docs/cycle2",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 1.0611563537599178e-10,
+   "delta_lambda2": 2.321138420358082e-11,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.4088515060240016e-15,
+    "fixed_mode_term": 7.481542666492602e-10,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.420410401247745e-10,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle2",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 7.610361888863649e-09,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.003311780476265569,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.003311780476265569,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "case": "github_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.305649561224527e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.305649561224527e-16,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": 1.0923143244750023e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835633776715062,
+     "fraction": 0.2052502725041056
+    },
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": 5.142129360812531e-07,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949218375963031,
+    "effective_support_fraction": 0.0029184845178199786,
+    "energy_fraction_on_changed_edges": 1.1554037561810913e-06,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028356346764395685,
+     "fraction": 0.20525031455062212
+    },
+    "lambda1": 0.013815494912385073,
+    "lambda2": 0.01735843294494715,
+    "mass_on_cycle_nodes": 5.104485939749436e-07,
+    "next_gap": 0.0035429380325620752,
+    "numerics": "qualified",
+    "residual_abs": 3.687675007137971e-15
+   },
+   "case": "github_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 1.5533771300507704e-09,
+   "delta_lambda2": 1.207924045509845e-09,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.130834067521731e-17,
+    "fixed_mode_term": 1.9287832297608176e-09,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -3.7540616101838786e-10,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 1.1243732595607535e-07,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": 1.5179503772938298e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002888530832131858,
+     "fraction": 0.20715858583676397
+    },
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": 1.985706665627283e-09,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0033117804762655733,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939944048945,
+    "effective_support_fraction": 0.00289100907411297,
+    "energy_fraction_on_changed_edges": 1.6206578540088108e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028885308348687317,
+     "fraction": 0.20715858599464956
+    },
+    "lambda1": 0.0139435728478248,
+    "lambda2": 0.039579428785695585,
+    "mass_on_cycle_nodes": 1.957097061117584e-09,
+    "next_gap": 0.025635855937870787,
+    "numerics": "qualified",
+    "residual_abs": 3.542718536742802e-15
+   },
+   "case": "github_docs/cycle3",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 2.5870052627885443e-12,
+   "delta_lambda2": 1.3144321048264018e-10,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.408704646413495e-15,
+    "fixed_mode_term": 6.679053399986134e-11,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.420593744171921e-11,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle3",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": 1.8553388658001632e-10,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.002286705566945273,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 9.036865765248148e-15,
+    "effective_support_fraction": 0.47825376032835915,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "account_and_profile_concepts_username_changes__a77e55f2",
+      "get_started_git_basics_managing_remote_repositories__b5f505ff"
+     ],
+     "energy": 9.65373889256871e-31,
+     "fraction": null
+    },
+    "lambda1": -6.53929317035496e-16,
+    "lambda2": 0.0030097154968946964,
+    "mass_on_cycle_nodes": 0.002286705566945273,
+    "next_gap": 0.0030097154968953504,
+    "numerics": "qualified",
+    "residual_abs": 4.189896346978879e-15
+   },
+   "case": "github_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.305649561224527e-16,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -6.305649561224527e-16,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217242122645,
+    "effective_support_fraction": 0.0029184853887413826,
+    "energy_fraction_on_changed_edges": 8.361560443939955e-07,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835633776715062,
+     "fraction": 0.2052502725041056
+    },
+    "lambda1": 0.013815493359007943,
+    "lambda2": 0.017358431737023103,
+    "mass_on_cycle_nodes": 2.8573173057060897e-07,
+    "next_gap": 0.00354293837801516,
+    "numerics": "qualified",
+    "residual_abs": 3.6333368207403915e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9949217080369059,
+    "effective_support_fraction": 0.002918485508220401,
+    "energy_fraction_on_changed_edges": 8.308099814822884e-07,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002835633661162351,
+     "fraction": 0.205250266924655
+    },
+    "lambda1": 0.013815493171579058,
+    "lambda2": 0.017358431408761203,
+    "mass_on_cycle_nodes": 2.86349486402412e-07,
+    "next_gap": 0.0035429382371821444,
+    "numerics": "qualified",
+    "residual_abs": 3.4140386895016024e-15
+   },
+   "case": "github_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -1.874288849124106e-10,
+   "delta_lambda2": -3.2826190030088576e-10,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.113397126058508e-17,
+    "fixed_mode_term": -1.4039108285855532e-10,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -4.7037863187826545e-11,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": -1.3566571966842119e-08,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.9966939938644472,
+    "effective_support_fraction": 0.0028910090779977215,
+    "energy_fraction_on_changed_edges": 1.56343473533036e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.002888530832131858,
+     "fraction": 0.20715858583676397
+    },
+    "lambda1": 0.013943572845237794,
+    "lambda2": 0.039579428654252374,
+    "mass_on_cycle_nodes": 1.1670667436956818e-09,
+    "next_gap": 0.02563585580901458,
+    "numerics": "qualified",
+    "residual_abs": 5.82978036982361e-15
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.00047311149660936763,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.0022867055669452767,
+    "cycle_node_share": 0.001274426508071368,
+    "degree_mass_tv_distance": 0.996693991557468,
+    "effective_support_fraction": 0.0028910091032691067,
+    "energy_fraction_on_changed_edges": 1.1679048170330524e-08,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "enterprise_onboarding_setting_up_organizations_and_teams_use_innersource__ce364c39",
+      "enterprise_onboarding_support_for_your_enterprise_understanding_support__9ae1c202"
+     ],
+     "energy": 0.0028885307907256554,
+     "fraction": 0.20715858425643158
+    },
+    "lambda1": 0.013943572751732981,
+    "lambda2": 0.03957942854135429,
+    "mass_on_cycle_nodes": 1.4050861308590679e-09,
+    "next_gap": 0.025635855789621305,
+    "numerics": "qualified",
+    "residual_abs": 3.7390822457864734e-15
+   },
+   "case": "github_docs/cycle4",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -9.350481326719784e-11,
+   "delta_lambda2": -1.1289808671266499e-10,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.4106771881154417e-15,
+    "fixed_mode_term": 3.999925979350817e-12,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -9.750714992373677e-11,
+    "status": "computed"
+   },
+   "job_id": "github_docs#cycle4",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -6.705943613234891e-09,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 6.38378239159465e-16,
+    "effective_support_fraction": 0.9600000000000024,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "a",
+      "d"
+     ],
+     "energy": 3.8518598887744717e-32,
+     "fraction": null
+    },
+    "lambda1": -7.45931094670027e-17,
+    "lambda2": 0.6666666666666665,
+    "mass_on_cycle_nodes": 0.6666666666666659,
+    "next_gap": 0.6666666666666666,
+    "numerics": "qualified",
+    "residual_abs": 4.09762117193458e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 6.38378239159465e-16,
+    "effective_support_fraction": 0.9600000000000024,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "a",
+      "d"
+     ],
+     "energy": 3.8518598887744717e-32,
+     "fraction": null
+    },
+    "lambda1": -7.45931094670027e-17,
+    "lambda2": 0.6666666666666665,
+    "mass_on_cycle_nodes": 0.6666666666666659,
+    "next_gap": 0.6666666666666666,
+    "numerics": "qualified",
+    "residual_abs": 4.09762117193458e-16
+   },
+   "case": "small/five_triangle",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 1.9747522660605575e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": 1.9747522660605575e-17,
+    "status": "computed"
+   },
+   "job_id": "small/five#triangle",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 0.11734403683007993,
+    "effective_support_fraction": 0.9187231416199915,
+    "energy_fraction_on_changed_edges": 0.6231495874724521,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "e"
+     ],
+     "energy": 0.022661666593623578,
+     "fraction": 0.13941354216430693
+    },
+    "lambda1": 0.1625499663936195,
+    "lambda2": 0.4252149041464988,
+    "mass_on_cycle_nodes": 0.5493226298365868,
+    "next_gap": 0.26266493775287936,
+    "numerics": "qualified",
+    "residual_abs": 3.777596869472441e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 0.0806988687894122,
+    "effective_support_fraction": 0.9964902031706503,
+    "energy_fraction_on_changed_edges": 0.6568423000182048,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "a",
+      "d"
+     ],
+     "energy": 0.02098671407939754,
+     "fraction": 0.12675022994892565
+    },
+    "lambda1": 0.16557535310077265,
+    "lambda2": 0.49999999999999967,
+    "mass_on_cycle_nodes": 0.5966606926441809,
+    "next_gap": 0.334424646899227,
+    "numerics": "qualified",
+    "residual_abs": 3.038490854175196e-16
+   },
+   "case": "small/five_triangle",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": 0.0030253867071531604,
+   "delta_lambda2": 0.07478509585350085,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 8.326672684688674e-17,
+    "fixed_mode_term": 0.024980062337068287,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.02195467562991521,
+    "status": "computed"
+   },
+   "job_id": "small/five#triangle",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": 0.018612041418865004,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 0.07300765453000145,
+    "effective_support_fraction": 0.9392054283540133,
+    "energy_fraction_on_changed_edges": 0.5066712905956471,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "d",
+      "e"
+     ],
+     "energy": 0.03571068840892118,
+     "fraction": 0.17448245700295573
+    },
+    "lambda1": 0.2046663545568723,
+    "lambda2": 0.37133302122353906,
+    "mass_on_cycle_nodes": 0.7246149903944111,
+    "next_gap": 0.16666666666666677,
+    "numerics": "qualified",
+    "residual_abs": 3.7956764469896225e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.5,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 0.6666666666666666,
+    "cycle_node_share": 0.6,
+    "degree_mass_tv_distance": 0.0745173533864551,
+    "effective_support_fraction": 0.9593286126227326,
+    "energy_fraction_on_changed_edges": 0.8940500294793375,
+    "energy_fractions_available": true,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "e"
+     ],
+     "energy": 0.0029989935850829336,
+     "fraction": 0.043788726811553186
+    },
+    "lambda1": 0.06848780047863083,
+    "lambda2": 0.5999215078004836,
+    "mass_on_cycle_nodes": 0.5921493132802115,
+    "next_gap": 0.5314337073218528,
+    "numerics": "qualified",
+    "residual_abs": 3.1660604446324765e-16
+   },
+   "case": "small/five_triangle",
+   "control": "matched_cycle_reversal",
+   "controls_passed": true,
+   "degree_matched": true,
+   "delta_lambda1": -0.13617855407824148,
+   "delta_lambda2": 0.22858848657694453,
+   "descriptors_that_change": [],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.7755575615628914e-16,
+    "fixed_mode_term": 0.9185390693139868,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.054717623392228,
+    "status": "computed"
+   },
+   "job_id": "small/five#triangle",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": -0.6653685427342697,
+   "resolved": true,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 2.7755575615628914e-16,
+    "effective_support_fraction": 0.8999999999999992,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 6.162975822039155e-33,
+     "fraction": null
+    },
+    "lambda1": 6.871155916462549e-18,
+    "lambda2": 0.49999999999999994,
+    "mass_on_cycle_nodes": 1.0000000000000004,
+    "next_gap": 0.49999999999999994,
+    "numerics": "qualified",
+    "residual_abs": 3.7083941381977187e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 2.7755575615628914e-16,
+    "effective_support_fraction": 0.8999999999999992,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 6.162975822039155e-33,
+     "fraction": null
+    },
+    "lambda1": 6.871155916462549e-18,
+    "lambda2": 0.49999999999999994,
+    "mass_on_cycle_nodes": 1.0000000000000004,
+    "next_gap": 0.49999999999999994,
+    "numerics": "qualified",
+    "residual_abs": 3.7083941381977187e-16
+   },
+   "case": "small/path_forest",
+   "control": "forest_reorientation",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 0.0,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 7.988993288816498e-17,
+    "fixed_mode_term": 0.0,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -7.988993288816498e-17,
+    "status": "computed"
+   },
+   "job_id": "small/path#forest",
+   "permutation_check": null,
+   "q": 0.0,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 5.967448757360216e-16,
+    "effective_support_fraction": 0.8999999999999999,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 1.925929944387236e-31,
+     "fraction": null
+    },
+    "lambda1": -9.107298248878237e-17,
+    "lambda2": 0.4999999999999999,
+    "mass_on_cycle_nodes": 1.0,
+    "next_gap": 0.5,
+    "numerics": "qualified",
+    "residual_abs": 3.802430075275473e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 3.3306690738754696e-16,
+    "effective_support_fraction": 0.8999999999999999,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 6.162975822039155e-33,
+     "fraction": null
+    },
+    "lambda1": -2.5084370000592836e-16,
+    "lambda2": 0.49999999999999956,
+    "mass_on_cycle_nodes": 0.9999999999999998,
+    "next_gap": 0.49999999999999983,
+    "numerics": "qualified",
+    "residual_abs": 5.758245866010649e-16
+   },
+   "case": "small/path_forest",
+   "control": "forest_reorientation",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": -1.59770717517146e-16,
+   "delta_lambda2": -3.3306690738754696e-16,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 6.227388740788532e-17,
+    "fixed_mode_term": 0.4606553370833684,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -0.46065533708336864,
+    "status": "computed"
+   },
+   "job_id": "small/path#forest",
+   "permutation_check": null,
+   "q": 0.1,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  },
+  {
+   "a": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 2.7755575615628914e-16,
+    "effective_support_fraction": 0.8999999999999992,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 6.787875731481595e-33,
+     "fraction": null
+    },
+    "lambda1": 6.871155916462549e-18,
+    "lambda2": 0.49999999999999994,
+    "mass_on_cycle_nodes": 1.0000000000000004,
+    "next_gap": 0.49999999999999994,
+    "numerics": "qualified",
+    "residual_abs": 3.725206982988689e-16
+   },
+   "b": {
+    "attribution_status": "available",
+    "boundary_qualified": true,
+    "changed_edges_w_share": 0.6666666666666666,
+    "cluster_rank": 1,
+    "cycle_degree_volume_share": 1.0,
+    "cycle_node_share": 1.0,
+    "degree_mass_tv_distance": 2.498001805406602e-16,
+    "effective_support_fraction": 0.8999999999999992,
+    "energy_fraction_on_changed_edges": null,
+    "energy_fractions_available": false,
+    "energy_sum_identity_ok": true,
+    "highest_energy_edge_outside_changed": {
+     "edge": [
+      "b",
+      "c"
+     ],
+     "energy": 4.131733943773412e-34,
+     "fraction": null
+    },
+    "lambda1": 3.137412501463416e-17,
+    "lambda2": 0.49999999999999994,
+    "mass_on_cycle_nodes": 1.0000000000000004,
+    "next_gap": 0.4999999999999999,
+    "numerics": "qualified",
+    "residual_abs": 1.9784060476915291e-16
+   },
+   "case": "small/path_forest",
+   "control": "forest_reorientation",
+   "controls_passed": true,
+   "degree_matched": false,
+   "delta_lambda1": 2.450296909817161e-17,
+   "delta_lambda2": 0.0,
+   "descriptors_that_change": [
+    "outdegree_gini",
+    "sink_fraction",
+    "sinks",
+    "source_fraction",
+    "sources"
+   ],
+   "finite_change": {
+    "account_ok": true,
+    "account_residual": 2.450296909817161e-17,
+    "fixed_mode_term": 1.333333333333334,
+    "reasons": null,
+    "relaxation_nonpositive": true,
+    "relaxation_term": -1.333333333333334,
+    "status": "computed"
+   },
+   "job_id": "small/path#forest",
+   "permutation_check": null,
+   "q": 0.25,
+   "relative_to_baseline": null,
+   "resolved": false,
+   "tolerance": 1e-08
+  }
+ ],
+ "verdict": {
+  "caveats": {
+   "docker_docs#cycle1": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "docker_docs#cycle2": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "docker_docs#cycle3": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "docker_docs#cycle4": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "react_docs#cycle1": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "react_docs#cycle2": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "react_docs#cycle3": [
+    "a_concentrated",
+    "b_concentrated"
+   ],
+   "react_docs#cycle4": [
+    "a_concentrated",
+    "b_concentrated"
+   ]
+  },
+  "failed_controls_or_qualification": [],
+  "matched_pairs": 13,
+  "outcome": "resolved_matched_response",
+  "q0_all_unresolved": true,
+  "resolved": 9,
+  "resolved_at_alias_q": [
+   "docker_docs#cycle1",
+   "docker_docs#cycle2",
+   "docker_docs#cycle3",
+   "docker_docs#cycle4",
+   "react_docs#cycle1",
+   "react_docs#cycle2",
+   "react_docs#cycle3",
+   "react_docs#cycle4",
+   "small/five#triangle"
+  ],
+  "resolved_jobs": [
+   "docker_docs#cycle1",
+   "docker_docs#cycle2",
+   "docker_docs#cycle3",
+   "docker_docs#cycle4",
+   "react_docs#cycle1",
+   "react_docs#cycle2",
+   "react_docs#cycle3",
+   "react_docs#cycle4",
+   "small/five#triangle"
+  ],
+  "usable": 13
+ }
+}

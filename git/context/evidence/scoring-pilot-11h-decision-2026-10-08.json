@@ -1,0 +1,101 @@
+{
+  "analysis": "scoring-pilot-11h-analysis-2026-10-08.json",
+  "analysis_sha256": "8bc3b006871f6b9bfea99899ae5d743ad8284d25e909313655eb348d37ce7b0e",
+  "cost": {
+    "A": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1682,
+      "reasoning_tokens_median": 706.0,
+      "reported_missing": 0,
+      "reported_usd": 0.0394701,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    },
+    "A2": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1983,
+      "reasoning_tokens_median": 747.0,
+      "reported_missing": 0,
+      "reported_usd": 0.03084031,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    },
+    "B": {
+      "attempts": 60,
+      "models_reported": [
+        "gpt-6-luna"
+      ],
+      "reasoning_tokens_max": 1895,
+      "reasoning_tokens_median": 810.0,
+      "reported_missing": 0,
+      "reported_usd": 0.0415686,
+      "reserved_usd": 0.18,
+      "service_tiers": [
+        "default"
+      ]
+    }
+  },
+  "created": "2026-10-08",
+  "criteria": {
+    "human_agreement": {
+      "authority": "author decision in chat, 2026-10-08: close the refinement experiment with no human graders; the decision rests on the automated criteria only",
+      "status": "not_collected"
+    },
+    "schema_validity": {
+      "first_attempt_share": 1.0,
+      "first_attempt_valid": 180,
+      "max_attempts": 1,
+      "packets": 180,
+      "status": "pass"
+    },
+    "sham_balance": {
+      "O_wins": 6,
+      "S_wins": 7,
+      "abs_difference": 1,
+      "status": "pass",
+      "ties": 7,
+      "unavailable": 0
+    },
+    "spread": {
+      "all_5_share": 0.35,
+      "status": "pass"
+    },
+    "stability": {
+      "reported_only_A_vs_A2": {
+        "identical_score_vectors": 34,
+        "same_ranking_share": 0.45,
+        "within_1_share": 0.9866666666666667
+      },
+      "same_ranking_share": 0.55,
+      "status": "fail",
+      "within_1_share": 0.9766666666666667
+    }
+  },
+  "decision": "needs_revision",
+  "decision_rule": {
+    "human_agreement": "not_collected by author decision; the 11e rule's human conditions are dropped and the decision is final on the automated criteria (not provisional)",
+    "needs_revision": "otherwise",
+    "not_usable": "sham_balance and stability both fail",
+    "qualified_for_triage": "every automated criterion (sham_balance, stability, spread, schema_validity) passes"
+  },
+  "disclosures": {
+    "configuration": "third scorer configuration on these same 60 11b answers (11e: qwen3:14b think false, failed spread 59/60 all-5; 11f: qwen3:14b think true, failed spread 37/60 all-5). Only the scorer model changes; prompt v2, schema v2, ranking rule, criteria, thresholds, seeds and answers are unchanged. One configuration is frozen here and not adjusted after outputs are seen.",
+    "reproducibility": "closed model: no digest pin. The model string the API reports, response ids, request settings and full responses are saved; A vs A2 measures nondeterminism.",
+    "self_grading": "gpt-6-luna wrote the 60 answers it scores. Every arm is a Luna answer, so self-preference shifts all arms alike; it is reported, not corrected."
+  },
+  "model_time_s": 1572.3883208,
+  "plan_sha256": "61acadb9940548645317067d2072f8c68723ac0a1bebbd1846fcd184f82171f3",
+  "provisional": false,
+  "schema_version": "docspectra.icsc.scoring_pilot_11h.v1.decision",
+  "scope": "exploratory: scorer v2 (designed after the frozen 11b no-go) with gpt-6-luna as the scorer; never changes the 11b decision; not answer-quality or restructuring-effect evidence for the paper"
+}

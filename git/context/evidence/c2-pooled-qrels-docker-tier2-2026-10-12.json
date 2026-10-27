@@ -1,0 +1,299 @@
+{
+ "corpus": {
+  "corpus_inventory_sha256": "7f24d91fafc2589076fd22696dd7e1b1f8db6e1ad50ebfd850282c611d0d2d23",
+  "export": "artifacts/docker-corpus-variants-v1/runs/wc-15-fixture-v1/exports/O/corpus",
+  "id": "docker_docs_scope_v1_O_ebce0bcead737137cce154bf6415413cc60d58e371432ac6c046a312cc1bcadc",
+  "pages": 1218
+ },
+ "cost": {
+  "full_extension": {
+   "failed_calls": 1,
+   "input_tokens": 19315734,
+   "output_tokens": 1261244,
+   "reported_calls": 17808,
+   "reported_usd": 2.5621954000000002,
+   "stopped": false
+  },
+  "pilot": {
+   "failed_calls": 0,
+   "input_tokens": 1367340,
+   "output_tokens": 94970,
+   "reported_calls": 1368,
+   "reported_usd": 0.18421900000000002,
+   "stopped": false
+  },
+  "total_usd": 2.7464144000000004
+ },
+ "coverage": {
+  "decisions": {
+   "not_supported": 5140,
+   "supported": 381,
+   "undetermined": 326
+  },
+  "dropped_ids": [
+   "docker_docs_faq_0016",
+   "docker_docs_faq_0018",
+   "docker_docs_faq_0019",
+   "docker_docs_faq_0021",
+   "docker_docs_faq_0022",
+   "docker_docs_faq_0027",
+   "docker_docs_faq_0028",
+   "docker_docs_faq_0029",
+   "docker_docs_faq_0030",
+   "docker_docs_faq_0032",
+   "docker_docs_faq_0036",
+   "docker_docs_faq_0037",
+   "docker_docs_faq_0048",
+   "docker_docs_faq_0058",
+   "docker_docs_faq_0059",
+   "docker_docs_faq_0060",
+   "docker_docs_faq_0066",
+   "docker_docs_faq_0073",
+   "docker_docs_faq_0076",
+   "docker_docs_faq_0081",
+   "docker_docs_faq_0092",
+   "docker_docs_faq_0098",
+   "docker_docs_faq_0104",
+   "docker_docs_faq_0106",
+   "docker_docs_faq_0108",
+   "docker_docs_faq_0110",
+   "docker_docs_faq_0112",
+   "docker_docs_faq_0121",
+   "docker_docs_faq_0126",
+   "docker_docs_faq_0141",
+   "docker_docs_faq_0143"
+  ],
+  "dropped_no_verified_page": 31,
+  "kept_with_verified_page": 111,
+  "qrels_positive": 381,
+  "qrels_rows": 4209,
+  "questions": 142
+ },
+ "created": "2026-10-12",
+ "judgment_statuses": {
+  "ok": 19157,
+  "span_invalid": 19
+ },
+ "label": "LLM-verified support (Claude Haiku 5.5); author spot-check precision 0.85 (Wilson 95% 0.70-0.94, 29/34), miss rate 0.00 (0.00-0.10, 0/33)",
+ "old_label_overlap": {
+  "verified_pages": 381,
+  "verified_pages_in_old_top5": 121
+ },
+ "pool": {
+  "config": {
+   "corpus_id": "docker_docs_scope_v1_O_ebce0bcead737137cce154bf6415413cc60d58e371432ac6c046a312cc1bcadc",
+   "embedding_model_id": "sentence-transformers/all-MiniLM-L6-v2@c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+   "generator_depth": 20,
+   "pool_id": "c2-docker-docs-scope-v1-tier2",
+   "query_field": "answer",
+   "run_depth": 10,
+   "runs": [
+    {
+     "format": "legacy_predictions",
+     "path": "lexical.jsonl",
+     "run_id": "wc15-O-lexical"
+    },
+    {
+     "format": "legacy_predictions",
+     "path": "embedding.jsonl",
+     "run_id": "wc15-O-embedding"
+    },
+    {
+     "format": "legacy_predictions",
+     "path": "graph_expand.jsonl",
+     "run_id": "wc15-O-graph_expand"
+    }
+   ],
+   "schema_version": "retrieval_arena.pooled_support_pool_config.v1",
+   "stride_lines": 6,
+   "window_lines": 12,
+   "windows_per_generator": 2
+  },
+  "embed_image": "sha256:eac5614e9d9e887bf4457d2bd40396a1a338b95e4b3cdd3a3b681eaf1d511569",
+  "pool_sha256": "6844eb24f027948898604ef29060ba3bd5d58efcd81c2b0e3387d6cb0a0c7a99",
+  "rule": "pooled_support_pool_v1",
+  "runs": {
+   "wc15-O-embedding": {
+    "path": "embedding.jsonl",
+    "queries": 142,
+    "sha256": "ca4658359f83c1655b8e12a5998dc22b2b16260fb222446e9e68647384120861"
+   },
+   "wc15-O-graph_expand": {
+    "path": "graph_expand.jsonl",
+    "queries": 142,
+    "sha256": "ccbb961f3a4f270fda51961719672b8584dba75ea6f0822c0855115936080bb3"
+   },
+   "wc15-O-lexical": {
+    "path": "lexical.jsonl",
+    "queries": 142,
+    "sha256": "2fb7815d7ede3ee6aefb02d3106c8a0b9c037573f98dcb537f06f69a9d5e0bab"
+   }
+  },
+  "summary": {
+   "pages_per_query_mean": 41.17605633802817,
+   "pairs_by_source_count": {
+    "1": 3569,
+    "2": 1238,
+    "3": 498,
+    "4": 309,
+    "5": 233
+   },
+   "pool_pairs": 5847,
+   "queries": 142,
+   "unknown_run_pages": {},
+   "windows_referenced": 7920
+  },
+  "windows_sha256": "4fbd1272240d9875ac3eb2a294d080b47f7e7e59c531dbdc479e5a325227ab2e"
+ },
+ "qrels": {
+  "judgment_provenance_sha256": "920b4268bd312dbcc6fed97af4a36908dc13a0352648dd3ffbf2d2e566ee7bd7",
+  "judgments_sha256": "f4d672f6aae146d43790657ab0058187c0f6ade3473619e6ed9b0d461e31a275",
+  "location": "artifacts/c2-pooled-qrels/verify-full",
+  "page_decisions_sha256": "7badb20863f438d07d1483411d82dc33ad45f23969f943ab70bf57353c7ab6c9",
+  "pilot_qrels_manifest_sha256": "e6da944d41d87165f62e2b5114e3e92ddd2c13ad2d645fd674f3de5a319243e2",
+  "qrels_manifest_sha256": "976d8457fa745380b9de977e1c2bcd5b3881fc908bb289e1dd4ea78dc757e117",
+  "qrels_sha256": "bc1c4a5c1d8563d44c4cf786708df8ba4f9c7189918f5e7f32d4a9f945a036e1",
+  "version": 2
+ },
+ "receipts": {
+  "full": "b46a46a2f5cf7bbe2dfe5dd013f5003b6d11fea86573fe25e01bd0f74a32df87",
+  "pilot": "a54d3b26ee466cab49fecb4181839ce0f043f729d3685dd193bb56bf4e7e3681",
+  "pool": "54249abd92df87124196b0ea928cf745bcc843384ad8314bb1fc43495aea14ba"
+ },
+ "release_notes_share": {
+  "old_label_top5_pages": 0.5535211267605634,
+  "old_questions_with_release_notes_in_top5": 136,
+  "questions_with_release_notes_verified": 15,
+  "verified_pages": 0.049868766404199474
+ },
+ "schema_version": "docspectra.icsc.c2_pooled_qrels.v1",
+ "spot_check": {
+  "counts": {
+   "verifier_no": {
+    "no": 33,
+    "unsure": 2
+   },
+   "verifier_yes": {
+    "no": 5,
+    "unsure": 1,
+    "yes": 29
+   }
+  },
+  "date": "2026-10-14",
+  "disagreements": [
+   {
+    "doc_id": "content_manuals_admin_organization_setup_onboard__0d66a7b1",
+    "query_id": "docker_docs_faq_0014",
+    "response": "no",
+    "stratum": "verifier_yes"
+   },
+   {
+    "doc_id": "content_manuals_build_cache_garbage_collection__a57c1e1c",
+    "query_id": "docker_docs_faq_0063",
+    "response": "no",
+    "stratum": "verifier_yes"
+   },
+   {
+    "doc_id": "content_manuals_compose_how_tos_networking__73f63921",
+    "query_id": "docker_docs_faq_0041",
+    "response": "no",
+    "stratum": "verifier_yes"
+   },
+   {
+    "doc_id": "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+    "query_id": "docker_docs_faq_0062",
+    "response": "no",
+    "stratum": "verifier_yes"
+   },
+   {
+    "doc_id": "content_manuals_desktop_troubleshoot_and_support_troubleshoot_topics__18f358b2",
+    "query_id": "docker_docs_faq_0067",
+    "response": "no",
+    "stratum": "verifier_yes"
+   }
+  ],
+  "limits": [
+   "misses outside the pool are not measured (pages no generator or run retrieved stay unjudged)",
+   "the reviewer sees one window, not the whole page",
+   "strata are sampled separately; a pooled error rate must weight each stratum by its size",
+   "a single reviewer; no inter-annotator agreement"
+  ],
+  "miss_rate": {
+   "estimate": 0.0,
+   "high": 0.10426999754245206,
+   "low": 0.0,
+   "n": 33,
+   "successes": 0
+  },
+  "packet_id": "c2-docker-tier2-spotcheck-v1",
+  "packet_sha256": "a83a7b3cde8b2bce3ecf5c6ba338ce00532c2bb0a8d7bf4fa97cc089b5dd8914",
+  "population_sizes": {
+   "verifier_no": 5140,
+   "verifier_yes": 381
+  },
+  "precision": {
+   "estimate": 0.8529411764705882,
+   "high": 0.9355055855521753,
+   "low": 0.6987194350454783,
+   "n": 34,
+   "successes": 29
+  },
+  "reading": "all five disagreements are verifier-yes pages the author rejected: adjacent or partial passages accepted (lenient verifier); no misses found",
+  "responses_sha256": "4cafbfe293f6e7247696c4dc65a74280d2ec20d9a3e03894dc8ef2b6af844e01",
+  "review_result_sha256": "dc70b20bbf2685460db86fdbb7e1351d5e57e8cb4c82ee707941b74cbdedd216",
+  "reviewer": "author",
+  "unsure": {
+   "verifier_no": 2,
+   "verifier_yes": 1
+  }
+ },
+ "supported_by_source": {
+  "bm25_passage": 326,
+  "embedding_passage": 296,
+  "run:wc15-O-embedding": 156,
+  "run:wc15-O-graph_expand": 196,
+  "run:wc15-O-lexical": 195
+ },
+ "supported_only_from_runs": 17,
+ "verified_pages_per_kept_question": {
+  "histogram": {
+   "1": 38,
+   "10": 1,
+   "11": 2,
+   "12": 1,
+   "15": 1,
+   "2": 16,
+   "22": 1,
+   "3": 16,
+   "4": 13,
+   "5": 11,
+   "6": 6,
+   "7": 2,
+   "8": 2,
+   "9": 1
+  },
+  "max": 22,
+  "mean": 3.4324324324324325,
+  "median": 3,
+  "min": 1
+ },
+ "verifier": {
+  "generation": {
+   "effort": "low",
+   "thinking": "disabled"
+  },
+  "image": "retrieval-arena/ragas:icsc-c1",
+  "max_output_tokens": 512,
+  "model": "claude-haiku-5-5",
+  "prompt_sha256": "df4424c1bd8da8e06c7de2c4ec0927031b49bcde0b73fd958839e7888d150f90",
+  "prompt_version": "pooled_support_verifier.v1",
+  "provider": "anthropic",
+  "revision": "claude-haiku-5-5",
+  "settings_sha256": "ae6a39f62f327a313a8cc4b0d65f4d73fc3561aa5e0aabc6351fa23c81047a7b"
+ },
+ "window_verdicts": {
+  "answers": 609,
+  "insufficient": 559,
+  "not_answer": 18008
+ }
+}

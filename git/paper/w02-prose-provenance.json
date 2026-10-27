@@ -1,0 +1,1562 @@
+{
+  "kind": "W02 transcription ledger, not a new analysis",
+  "sources": {
+    "S17": {
+      "path": "git/context/evidence/wc-refinement-run-v1-2026-10-18.json",
+      "sha256": "378eec3676a50b37ab0996701eff7af0b84a332d9515f0dc891bb8922db6f8fc"
+    },
+    "S18": {
+      "path": "git/context/evidence/wc-spectra-18-v1-2026-10-19.json",
+      "sha256": "50cad12c121fac4ff7aa4e2057e1bddef47bebea05ae979df0f3519288e150bf"
+    },
+    "S20": {
+      "path": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+    },
+    "S22": {
+      "path": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e"
+    },
+    "S23": {
+      "path": "git/context/evidence/magnetic-attribution-23-v1-2026-10-25.json",
+      "sha256": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df"
+    },
+    "S24": {
+      "path": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+      "sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65"
+    },
+    "S25": {
+      "path": "git/context/evidence/tier1-completeness-25-v1-2026-10-25.json",
+      "sha256": "1861e348f4d84af59feb9c57da3bd08f5bccea2d2fff22bff945a1f4c15c2fb6"
+    }
+  },
+  "prose_fields": [
+    {
+      "source": "S22",
+      "location": "IV-A",
+      "path": [
+        "numerical",
+        "jobs"
+      ],
+      "exact": 802,
+      "display": 802,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "IV-A",
+      "path": [
+        "numerical",
+        "qualified"
+      ],
+      "exact": 802,
+      "display": 802,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "IV-A",
+      "path": [
+        "numerical",
+        "not_qualified"
+      ],
+      "exact": {},
+      "display": {},
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV",
+      "path": [
+        "numerical",
+        "sides"
+      ],
+      "exact": 102,
+      "display": 102,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV",
+      "path": [
+        "numerical",
+        "qualified"
+      ],
+      "exact": 102,
+      "display": 102,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV",
+      "path": [
+        "numerical",
+        "account_all_ok"
+      ],
+      "exact": true,
+      "display": true,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV",
+      "path": [
+        "numerical",
+        "energy_identity_all_ok"
+      ],
+      "exact": true,
+      "display": true,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV",
+      "path": [
+        "numerical",
+        "relaxation_all_nonpositive"
+      ],
+      "exact": true,
+      "display": true,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-A",
+      "path": [
+        "baseline_reproduction",
+        "docker_docs",
+        "eigenvalue_max_abs_diff"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-A",
+      "path": [
+        "baseline_reproduction",
+        "react_docs",
+        "eigenvalue_max_abs_diff"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-A",
+      "path": [
+        "baseline_reproduction",
+        "github_docs",
+        "eigenvalue_max_abs_diff"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "verdict",
+        "matched_pairs"
+      ],
+      "exact": 13,
+      "display": 13,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "verdict",
+        "resolved"
+      ],
+      "exact": 9,
+      "display": 9,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "verdict",
+        "resolved_jobs"
+      ],
+      "exact": [
+        "docker_docs#cycle1",
+        "docker_docs#cycle2",
+        "docker_docs#cycle3",
+        "docker_docs#cycle4",
+        "react_docs#cycle1",
+        "react_docs#cycle2",
+        "react_docs#cycle3",
+        "react_docs#cycle4",
+        "small/five#triangle"
+      ],
+      "display": [
+        "docker_docs#cycle1",
+        "docker_docs#cycle2",
+        "docker_docs#cycle3",
+        "docker_docs#cycle4",
+        "react_docs#cycle1",
+        "react_docs#cycle2",
+        "react_docs#cycle3",
+        "react_docs#cycle4",
+        "small/five#triangle"
+      ],
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "verdict",
+        "resolved_at_alias_q"
+      ],
+      "exact": [
+        "docker_docs#cycle1",
+        "docker_docs#cycle2",
+        "docker_docs#cycle3",
+        "docker_docs#cycle4",
+        "react_docs#cycle1",
+        "react_docs#cycle2",
+        "react_docs#cycle3",
+        "react_docs#cycle4",
+        "small/five#triangle"
+      ],
+      "display": [
+        "docker_docs#cycle1",
+        "docker_docs#cycle2",
+        "docker_docs#cycle3",
+        "docker_docs#cycle4",
+        "react_docs#cycle1",
+        "react_docs#cycle2",
+        "react_docs#cycle3",
+        "react_docs#cycle4",
+        "small/five#triangle"
+      ],
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "verdict",
+        "q0_all_unresolved"
+      ],
+      "exact": true,
+      "display": true,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        5,
+        "finite_change",
+        "fixed_mode_term"
+      ],
+      "exact": 0.00188067604393966,
+      "display": 0.00188067604393966,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        5,
+        "finite_change",
+        "relaxation_term"
+      ],
+      "exact": -0.001966251317460796,
+      "display": -0.001966251317460796,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        5,
+        "finite_change",
+        "account_residual"
+      ],
+      "exact": 1.713039432527097e-16,
+      "display": 1.713039432527097e-16,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B relative percent",
+      "path": [
+        "table",
+        8,
+        "relative_to_baseline"
+      ],
+      "exact": -0.0013288088296875887,
+      "display": "-0.133",
+      "rounding": "3 decimals, half away from zero; scale 100"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B relative percent",
+      "path": [
+        "table",
+        20,
+        "relative_to_baseline"
+      ],
+      "exact": 0.01014292526603314,
+      "display": "1.014",
+      "rounding": "3 decimals, half away from zero; scale 100"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "table",
+        47,
+        "a",
+        "lambda1"
+      ],
+      "exact": 0.2046663545568723,
+      "display": "0.2047",
+      "rounding": "4 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S23",
+      "location": "IV-B",
+      "path": [
+        "table",
+        47,
+        "b",
+        "lambda1"
+      ],
+      "exact": 0.06848780047863083,
+      "display": "0.0685",
+      "rounding": "4 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        50,
+        "finite_change",
+        "fixed_mode_term"
+      ],
+      "exact": 1.333333333333334,
+      "display": 1.333333333333334,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        50,
+        "finite_change",
+        "relaxation_term"
+      ],
+      "exact": -1.333333333333334,
+      "display": -1.333333333333334,
+      "rounding": "exact"
+    },
+    {
+      "source": "S23",
+      "location": "IV-C",
+      "path": [
+        "table",
+        50,
+        "finite_change",
+        "account_residual"
+      ],
+      "exact": 2.450296909817161e-17,
+      "display": 2.450296909817161e-17,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "weighted_q0_lambda2"
+      ],
+      "exact": 0.3274725274725274,
+      "display": "0.327",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "reciprocal_arc_fraction"
+      ],
+      "exact": 0.20088496007425613,
+      "display": "0.201",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "trophic_incoherence"
+      ],
+      "exact": 0.44175824175824174,
+      "display": "0.442",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "outdegree_gini"
+      ],
+      "exact": -0.6043956043956044,
+      "display": "-0.604",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda1_q0.25",
+        "mean_weighted_degree"
+      ],
+      "exact": 0.6791208791208792,
+      "display": "0.679",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-A",
+      "path": [
+        "A_characterization",
+        "spearman",
+        "lambda2_q0.25",
+        "weighted_q0_lambda2"
+      ],
+      "exact": 0.8637362637362638,
+      "display": "0.864",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "rho"
+      ],
+      "exact": 0.02372727995821142,
+      "display": "0.024",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.904454777261137,
+      "display": "0.904",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "rho"
+      ],
+      "exact": -0.22343188627315752,
+      "display": "-0.223",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.49077546122693866,
+      "display": "0.491",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "F_R_normalized_max_abs_difference"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "main",
+        "normalized_q0_spectrum_range_non_U"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "rho"
+      ],
+      "exact": 0.03433437135097301,
+      "display": "0.034",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda1_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.8587070646467677,
+      "display": "0.859",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "rho"
+      ],
+      "exact": 0.2438237965503881,
+      "display": "0.244",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "tests_normalized",
+        "primary",
+        "lambda2_q0.25",
+        "holm_p"
+      ],
+      "exact": 0.3940802959852007,
+      "display": "0.394",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "F_R_normalized_max_abs_difference"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "V-B",
+      "path": [
+        "B_orientation",
+        "families",
+        "sensitivity",
+        "normalized_q0_spectrum_range_non_U"
+      ],
+      "exact": 0.0,
+      "display": 0.0,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "nodes"
+      ],
+      "exact": 1218,
+      "display": 1218,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "lwcc_nodes"
+      ],
+      "exact": 844,
+      "display": 844,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.08417108937548456,
+      "display": "0.0842",
+      "rounding": "4 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "trophic_incoherence"
+      ],
+      "exact": 0.4123089019177151,
+      "display": "0.412",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "nodes"
+      ],
+      "exact": 1823,
+      "display": 1823,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "lwcc_nodes"
+      ],
+      "exact": 1671,
+      "display": 1671,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.04617122826369738,
+      "display": "0.0462",
+      "rounding": "4 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "trophic_incoherence"
+      ],
+      "exact": 0.31376156684862216,
+      "display": "0.314",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "nodes"
+      ],
+      "exact": 1229,
+      "display": 1229,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "lwcc_nodes"
+      ],
+      "exact": 1182,
+      "display": 1182,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "lambda1_q0.25"
+      ],
+      "exact": 0.025279809248129788,
+      "display": "0.0253",
+      "rounding": "4 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C / Fig. 3",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "trophic_incoherence"
+      ],
+      "exact": 0.5718083757861503,
+      "display": "0.572",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S18",
+      "location": "VI-C",
+      "path": [
+        "primary_test",
+        "n"
+      ],
+      "exact": 18,
+      "display": 18,
+      "rounding": "exact"
+    },
+    {
+      "source": "S18",
+      "location": "VI-C",
+      "path": [
+        "primary_test",
+        "p"
+      ],
+      "exact": 0.07926177978515625,
+      "display": "0.079",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S18",
+      "location": "VI-C",
+      "path": [
+        "primary_test",
+        "statistic_mean"
+      ],
+      "exact": -0.8045755041795555,
+      "display": "-0.80",
+      "rounding": "2 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S18",
+      "location": "VI-C",
+      "path": [
+        "SA1",
+        "n"
+      ],
+      "exact": 15,
+      "display": 15,
+      "rounding": "exact"
+    },
+    {
+      "source": "S18",
+      "location": "VI-C",
+      "path": [
+        "SA1",
+        "p"
+      ],
+      "exact": 0.04364013671875,
+      "display": "0.044",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C exploratory",
+      "path": [
+        "C_refinement",
+        "normalized_exploratory_analogue",
+        "test",
+        "n"
+      ],
+      "exact": 18,
+      "display": 18,
+      "rounding": "exact"
+    },
+    {
+      "source": "S22",
+      "location": "VI-C exploratory",
+      "path": [
+        "C_refinement",
+        "normalized_exploratory_analogue",
+        "test",
+        "p"
+      ],
+      "exact": 0.00061798095703125,
+      "display": "0.000618",
+      "rounding": "6 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D",
+      "path": [
+        "coverage",
+        "traces"
+      ],
+      "exact": 1368,
+      "display": 1368,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D",
+      "path": [
+        "coverage",
+        "identity_ok"
+      ],
+      "exact": 1368,
+      "display": 1368,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "0_planned_traces"
+      ],
+      "exact": 111,
+      "display": 111,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "2_added_edge_follow"
+      ],
+      "exact": 28,
+      "display": 28,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "3_first_page_text_exposure"
+      ],
+      "exact": 21,
+      "display": 21,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "4_destination_supported"
+      ],
+      "exact": 7,
+      "display": 7,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "LT",
+        "traces",
+        "7_cited_lines_from_this_follow"
+      ],
+      "exact": 7,
+      "display": 7,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D follows",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "follow_accepted",
+        "n"
+      ],
+      "exact": 76,
+      "display": 76,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D follows",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "follow_accepted",
+        "edge_class=added"
+      ],
+      "exact": 39,
+      "display": 39,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D opportunity",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "opportunity_summary",
+        "mean_menu_added_share"
+      ],
+      "exact": 0.4431619868421053,
+      "display": "0.443",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D opportunity",
+      "path": [
+        "tables_all111",
+        "t2/LT/s1-follow",
+        "opportunity_summary",
+        "added_share_of_accepted_follows"
+      ],
+      "exact": 0.5131578947368421,
+      "display": "0.513",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S17",
+      "location": "VI-B",
+      "path": [
+        "arms",
+        "LT",
+        "areas_admitted"
+      ],
+      "exact": [
+        "A02",
+        "A03",
+        "A04",
+        "A06",
+        "A07",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A20",
+        "A21",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "display": [
+        "A02",
+        "A03",
+        "A04",
+        "A06",
+        "A07",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A20",
+        "A21",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "rounding": "exact"
+    },
+    {
+      "source": "S17",
+      "location": "VI-B",
+      "path": [
+        "arms",
+        "LT",
+        "final_admission"
+      ],
+      "exact": "advance",
+      "display": "advance",
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "0_planned_traces"
+      ],
+      "exact": 111,
+      "display": 111,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "2_added_edge_follow"
+      ],
+      "exact": 15,
+      "display": 15,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "3_first_page_text_exposure"
+      ],
+      "exact": 11,
+      "display": 11,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "4_destination_supported"
+      ],
+      "exact": 2,
+      "display": 2,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D trace chain",
+      "path": [
+        "chain_t2_follow_all111",
+        "R0",
+        "traces",
+        "7_cited_lines_from_this_follow"
+      ],
+      "exact": 1,
+      "display": 1,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D follows",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "follow_accepted",
+        "n"
+      ],
+      "exact": 67,
+      "display": 67,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D follows",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "follow_accepted",
+        "edge_class=added"
+      ],
+      "exact": 20,
+      "display": 20,
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D opportunity",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "opportunity_summary",
+        "mean_menu_added_share"
+      ],
+      "exact": 0.3032916865671642,
+      "display": "0.303",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S24",
+      "location": "VI-D opportunity",
+      "path": [
+        "tables_all111",
+        "t2/R0/s1-follow",
+        "opportunity_summary",
+        "added_share_of_accepted_follows"
+      ],
+      "exact": 0.29850746268656714,
+      "display": "0.299",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S17",
+      "location": "VI-B",
+      "path": [
+        "arms",
+        "R0",
+        "areas_admitted"
+      ],
+      "exact": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "display": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A23",
+        "A24",
+        "A25"
+      ],
+      "rounding": "exact"
+    },
+    {
+      "source": "S17",
+      "location": "VI-B",
+      "path": [
+        "arms",
+        "R0",
+        "final_admission"
+      ],
+      "exact": "advance",
+      "display": "advance",
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-B",
+      "path": [
+        "tier1",
+        "questions"
+      ],
+      "exact": 15,
+      "display": 15,
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-B",
+      "path": [
+        "tier1",
+        "disclosures"
+      ],
+      "exact": [
+        "Luna scorer grades answers Luna wrote",
+        "no model snapshot",
+        "scorer chosen on the original 5 questions; 10 tasks are out of sample for it",
+        "1 tier-1 answer ended invalid_action_limit (kept, unscored)",
+        "1 rubric packet failed on a local TimeoutError (kept as a failure)",
+        "11 archived answer attempts rerun under the frozen rule (7 model behaviour)",
+        "no RAGAS on tier 1 (pre-registration: FactualCorrectness omitted, author October 14)"
+      ],
+      "display": [
+        "Luna scorer grades answers Luna wrote",
+        "no model snapshot",
+        "scorer chosen on the original 5 questions; 10 tasks are out of sample for it",
+        "1 tier-1 answer ended invalid_action_limit (kept, unscored)",
+        "1 rubric packet failed on a local TimeoutError (kept as a failure)",
+        "11 archived answer attempts rerun under the frozen rule (7 model behaviour)",
+        "no RAGAS on tier 1 (pre-registration: FactualCorrectness omitted, author October 14)"
+      ],
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-B",
+      "path": [
+        "tier2",
+        "label"
+      ],
+      "exact": "LLM-verified support (Claude Haiku 5.5); author spot-check precision 0.85 (Wilson 95% 0.70-0.94, 29/34), miss rate 0.00 (0.00-0.10, 0/33); C2 spot-check (D11a) on O only; the pool-completion and re-judge labels were not spot-checked",
+      "display": "LLM-verified support (Claude Haiku 5.5); author spot-check precision 0.85 (Wilson 95% 0.70-0.94, 29/34), miss rate 0.00 (0.00-0.10, 0/33); C2 spot-check (D11a) on O only; the pool-completion and re-judge labels were not spot-checked",
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-B",
+      "path": [
+        "coverage",
+        "by_tier"
+      ],
+      "exact": {
+        "t1": 480,
+        "t2": 888
+      },
+      "display": {
+        "t1": 480,
+        "t2": 888
+      },
+      "rounding": "exact"
+    },
+    {
+      "source": "S24",
+      "location": "VI-B",
+      "path": [
+        "coverage",
+        "terminals"
+      ],
+      "exact": {
+        "t1:answer": 479,
+        "t1:invalid_action_limit": 1,
+        "t2:answer": 888
+      },
+      "display": {
+        "t1:answer": 479,
+        "t1:invalid_action_limit": 1,
+        "t2:answer": 888
+      },
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.06729780801209373,
+      "display": "-0.067",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.11813196352258853,
+      "display": "-0.118",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": -0.021877725723413052,
+      "display": "-0.022",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "n"
+      ],
+      "exact": 105,
+      "display": 105,
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "estimate"
+      ],
+      "exact": -0.008991133991133991,
+      "display": "-0.009",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.04333834730221161,
+      "display": "-0.043",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.026389581139581106,
+      "display": "0.026",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O",
+        "n"
+      ],
+      "exact": 111,
+      "display": 111,
+      "rounding": "exact"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "estimate"
+      ],
+      "exact": -0.004761904761904762,
+      "display": "-0.005",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "ci95",
+        0
+      ],
+      "exact": -0.014563106796116505,
+      "display": "-0.015",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "ci95",
+        1
+      ],
+      "exact": 0.0,
+      "display": "0.000",
+      "rounding": "3 decimals, half away from zero; scale 1"
+    },
+    {
+      "source": "S20",
+      "location": "VI-D retrieval",
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O",
+        "n"
+      ],
+      "exact": 105,
+      "display": 105,
+      "rounding": "exact"
+    },
+    {
+      "source": "S25",
+      "location": "W-P25",
+      "path": [
+        "review_packet",
+        "human_review"
+      ],
+      "exact": "pending_optional",
+      "display": "pending_optional",
+      "rounding": "exact"
+    }
+  ],
+  "approved_intro_prefix_bytes": 1671
+}

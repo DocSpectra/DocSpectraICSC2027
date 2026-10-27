@@ -1,0 +1,466 @@
+{
+ "answer_set": {
+  "pool_size": 114,
+  "question_ids": [
+   "docker_docs_faq_0098",
+   "docker_docs_faq_0141",
+   "docker_docs_faq_0124",
+   "docker_docs_faq_0016",
+   "docker_docs_faq_0100",
+   "docker_docs_faq_0109",
+   "docker_docs_faq_0072",
+   "docker_docs_faq_0008",
+   "docker_docs_faq_0034",
+   "docker_docs_faq_0092",
+   "docker_docs_faq_0019",
+   "docker_docs_faq_0002",
+   "docker_docs_faq_0075",
+   "docker_docs_faq_0126",
+   "docker_docs_faq_0129",
+   "docker_docs_faq_0047",
+   "docker_docs_faq_0096",
+   "docker_docs_faq_0001",
+   "docker_docs_faq_0142",
+   "docker_docs_faq_0115"
+  ],
+  "rule": "sha256('icsc2027-09c-answer-set-v1:' + question_id) ascending over the 142 eligible IDs minus the 30 v3 proposed main exclusions; first 20",
+  "selected_before_exposure": true,
+  "selection_v3_sha256": "6cd599ec8be817f6e17c7b90a2fa4a2ac6eec293feba7fdca4a0ecaa443103cf"
+ },
+ "artifact_root": "artifacts/orientation-spectra-2026-10-06",
+ "corpus_inventory_sha256": "b180b921a2f8d4ac6f3ed918c94383f2be3ba12c7a604c6e14193a30d7a25e08",
+ "dataset_files": {
+  "faq_support_audit.jsonl": "1d2cbfb366446246170b0f1da5fa18c33d244a1a3edb9127b8cd9eba8ae59e4f",
+  "graph_edges.csv": "699f55e14b44b6b156b8a09c95d4e7e1c4c81df4ad627ee535f91dc66340ceca",
+  "questions.jsonl": "1d5c060a4995a5d187a9ce4f7e7584d75b81c4a95b04d1e0da6ec9cb3ab9c181"
+ },
+ "dataset_lock_sha256": "cb1054e7c492bf1c38c057d132905276ec146a09bdfe265a98d8f31335487f3c",
+ "e009": {
+  "direction": "outgoing",
+  "image": "sha256:41b1789256a4a91e2e0d83e0d3bc69aa606a4b85e0299e9e59ab8a73bfc43a85",
+  "parameter_source": "evidence/e2e-pilot-matrix-provenance-2026-09-25.json",
+  "parameters": {
+   "candidate_budget": 40,
+   "distance_penalty": 0.02,
+   "final_top_k": 4,
+   "graph_hops": 1,
+   "max_context_chars_per_doc": 1200,
+   "neighbor_budget": 20,
+   "seed_top_k": 1
+  },
+  "policy": "semantic_seeded_directional_pilot_v1",
+  "runner_sha256": "df171fce2b3f855a00fb7f136a9007690c8db9179d4d0225e8402dff562ece7f"
+ },
+ "embedding": {
+  "lock_sha256": "96cce460b8729f761146f72c0544313a1e02a2bbe2ce2eee9dc4725f22908fdd",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf"
+ },
+ "frozen_at": "2026-10-06T21:45:56.305801-07:00",
+ "graph": {
+  "directed_edges": 2496,
+  "lwcc_node_list_sha256": "21ceccd38a66785b1705de8e3c1ebfd3e074ff298a94c786b8a2137851ad00d2",
+  "lwcc_nodes": 844,
+  "nodes": 1263,
+  "one_way_links": 2078,
+  "reciprocal_pairs": 209,
+  "skeleton_pairs": 2287,
+  "views": {
+   "retrieval_no_faq": "all 1263 retrieval pages; the edge set E009 traverses",
+   "retrieval_no_faq_lwcc": "largest weak component of the fixed skeleton; primary spectral view"
+  },
+  "weak_components": 344
+ },
+ "orientation_rules": {
+  "R": "every one-way link reversed",
+  "U": "both directions of every skeleton pair",
+  "partial": "exactly round(f*n) one-way links of F reversed, numpy default_rng(seed).choice(n, k, replace=False)",
+  "random": "each one-way link independently reversed with probability 1/2, numpy default_rng(seed).random(n) < .5 over the sorted one-way list",
+  "reciprocal_pairs": "kept reciprocal in every version"
+ },
+ "questions": {
+  "count": 142,
+  "excluded_partial_ids": [
+   "docker_docs_faq_0003",
+   "docker_docs_faq_0042"
+  ],
+  "ids_sha256": "d033dd53226614f774a9a7d1fbb30fbd1100ab12cba1195cbe88b6319a493e23",
+  "support_definition": "automatic candidate support: the five historical lexical top_docs of faq_support_audit.jsonl; not qrels",
+  "support_sha256": "d4356df01f0becb538546e108c9843a95a14b300d52f822d6da8ce0c679c9d63"
+ },
+ "schema_version": "docspectra.icsc.orientation_spectra.v1.inputs",
+ "sensitivity": {
+  "by_kind": {
+   "release_notes": 36,
+   "underscore_index": 203
+  },
+  "excluded_page_list_sha256": "30f128b3ff63cf0a28c0e4c0928073d60fdfae9fe3dc9965d3f41f33928bd2ac",
+  "excluded_pages": 239,
+  "rule": "drop every edge incident to a page whose source file is named _index.* or whose path contains release-notes; nodes retained"
+ },
+ "source_commit": "274681c49355bd951ae60c9208e854ff70f12474",
+ "staged_retrieval_input": {
+  "files": [
+   "questions.jsonl",
+   "corpus/",
+   "graph_edges.csv"
+  ],
+  "questions_sha256": "bca27db166362d5719daf9957d6bf1df3f1fe2e7ef279948fad4fa257cb51a83",
+  "reference_assets_present": false
+ },
+ "status": "frozen_before_measures_and_exposure",
+ "versions": [
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "599163fb2d3fcc3cf596110011351a620538d4e906179833e42b48dbb0a61c6d",
+   "family": "as_written",
+   "flipped_one_way": 0,
+   "seed": null,
+   "sensitivity_edge_file_sha256": "6e4c45277055ba1b7d074dd173d72d51655dc0b87ab215643449e48b4824bea6",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "F"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "879d4b07c29d042e823fc5e6cd4618c65a28e03e22c769b028801fa2df68295d",
+   "family": "all_one_way_reversed",
+   "flipped_one_way": 2078,
+   "seed": null,
+   "sensitivity_edge_file_sha256": "975944bfd5487bf84d29f8eb185cf4eedd0a425c6f884841098771842b93708b",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "R"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "a597471b9d2ee95d91e6119286826b4475762b4f2fcc8dd40e2a9b3e39ef750b",
+   "family": "random_half",
+   "flipped_one_way": 1029,
+   "seed": 90901,
+   "sensitivity_edge_file_sha256": "32e0996057d17de5d0f9634b2c11ce307d7585926c4775d96f6a0c100caaa792",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90901"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "b628f9a041135f72b7c346eab40b512ba20cbb57656c23efc7486f960433b772",
+   "family": "random_half",
+   "flipped_one_way": 1018,
+   "seed": 90902,
+   "sensitivity_edge_file_sha256": "b278af06f6c0a3e4bdf5be8630db11f79ebf2bb1d47be4e09192bbddfea6057d",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90902"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "5cf41cf3d218127ca10b0db36ee647bb1021a452c514d73a31bb7e4c6b1b74a4",
+   "family": "random_half",
+   "flipped_one_way": 1023,
+   "seed": 90903,
+   "sensitivity_edge_file_sha256": "053ceb427062746f00fafa8c45a7f4d581d482f18db496228a80a64f7cd4ca56",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90903"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "6b2d26e9cdadf3701e50fbd268e3702e34577ec6f028868b77522eb03854c65f",
+   "family": "random_half",
+   "flipped_one_way": 1038,
+   "seed": 90904,
+   "sensitivity_edge_file_sha256": "657a2980d6486a6b638a13c78a35280375275fb52a3c88646b8449261e14b9d0",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90904"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "356a89833727238b1e757b6635feb38550dcc4a3b804365bd3f8951c2ce60f78",
+   "family": "random_half",
+   "flipped_one_way": 1041,
+   "seed": 90905,
+   "sensitivity_edge_file_sha256": "2c474260e2f9fce1d8efe8a1f5861a0776c5868ffcb030b7d1e2ca9aa294516e",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90905"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "04da212185541065e4e3483400c034ab10ef4a0972b7e2697caf935b6af5aa52",
+   "family": "random_half",
+   "flipped_one_way": 1076,
+   "seed": 90906,
+   "sensitivity_edge_file_sha256": "7f57a245212386799fe1d7bbdd2dec287bb90191d79e9bf4dfbe3571e7d6ce2c",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90906"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "e53712404f81660005b9a06686e73a30b4c34fd25ae541b668abdfed4d26e9a5",
+   "family": "random_half",
+   "flipped_one_way": 1072,
+   "seed": 90907,
+   "sensitivity_edge_file_sha256": "057187b186c1cb22d92278770cd9930f96a2660b708d33feb98986dbd295787a",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90907"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "61279321f99904054d8b2a8fbac82d77928522ea0bcb7703a04f57d27300ffb4",
+   "family": "random_half",
+   "flipped_one_way": 1081,
+   "seed": 90908,
+   "sensitivity_edge_file_sha256": "2f2b41834c26c51041823de615596184bd3924c8649ddffba52656386475f58d",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90908"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "4664a01cdc34d08233a7c7c7bb386df26891f7ec8ea3d941286c0883fe4e28d5",
+   "family": "random_half",
+   "flipped_one_way": 1009,
+   "seed": 90909,
+   "sensitivity_edge_file_sha256": "e673a60b75f239ad1f0f65f631019f839d8dfe85b75dcfa7312c02d8f1092cf9",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90909"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "f1be12fb50d0c8bae836b6bafdbbafc0abb8cccf232df2f8cba1732d7d7a5e9c",
+   "family": "random_half",
+   "flipped_one_way": 1061,
+   "seed": 90910,
+   "sensitivity_edge_file_sha256": "e3be019c264aceb4178088fe5e3c3131b131502bb2e8c782fd94bdbbfd0002f0",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90910"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "57317e32b3dd7ecbf4e23da66b2224d3a09fd8cf2adc289d65716689ba5dd7b8",
+   "family": "random_half",
+   "flipped_one_way": 1055,
+   "seed": 90911,
+   "sensitivity_edge_file_sha256": "e5b5b2adb6f469dad3317526e2ee66fa20d4e462392d708907ff456ae17f8149",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90911"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "5deab3ab1ed8f268b438273682a0ba99a4f26957fe92bb09058283203292472f",
+   "family": "random_half",
+   "flipped_one_way": 1063,
+   "seed": 90912,
+   "sensitivity_edge_file_sha256": "3dbc257f710d179832f89f2cdf9152d2ee67602b6fb67e06257a32be6015a460",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90912"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "a6b4fac2e3d1887cb36b11e8428dde3408435ed4202155cb9e9a8da329b719e3",
+   "family": "random_half",
+   "flipped_one_way": 1041,
+   "seed": 90913,
+   "sensitivity_edge_file_sha256": "765ed5f7dbb2ed834aecca1362b8d44bcd3ad4c3f3ac8b35ea4f17a67c3bce11",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90913"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "a43e20a3579a74a0c74236c55b37d48066ed42db7979ad3797d7438d51f71b04",
+   "family": "random_half",
+   "flipped_one_way": 1058,
+   "seed": 90914,
+   "sensitivity_edge_file_sha256": "140a42a03e5b85a12922be6c339e4a3fe5c269abff65a4076abc3c860fbf3d3f",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90914"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "f38fab82e913f779158776662e21d49676eb951f613064ddddaea7c76faa07c8",
+   "family": "random_half",
+   "flipped_one_way": 1064,
+   "seed": 90915,
+   "sensitivity_edge_file_sha256": "a365b4e73d8fb002e2794ad84e301ee1a96767ed3734c3fb917b83099faa01bf",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90915"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "e9b380759bc1cee033ed48ecd3104d15866c66f9e78b414b21801c50588337d0",
+   "family": "random_half",
+   "flipped_one_way": 999,
+   "seed": 90916,
+   "sensitivity_edge_file_sha256": "7f93f5c69ff288203fffaa80a34cce8f7ea63ab34bdc0c1de1fb479c3d33f541",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90916"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "cd3a90361375191ffde1775f46f54e87208ad5e650b4a91b51320e4b85c1e4cf",
+   "family": "random_half",
+   "flipped_one_way": 1029,
+   "seed": 90917,
+   "sensitivity_edge_file_sha256": "b4defb8eb071d16edb8a37b8c55791b11540adbdf86e7e8c34c3ab41046e3778",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90917"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "7548b7dbbc30da485ede59f81c9b6b9c6c7fe6ff3244a728be33af775290788e",
+   "family": "random_half",
+   "flipped_one_way": 1039,
+   "seed": 90918,
+   "sensitivity_edge_file_sha256": "197e9732a9652dfd3878e8ad9598a1c60f98eb553618a7ab06254b50bfe0c9d2",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90918"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "112f948623ed7806e00056870b05c2e5ffcd64b6bbfb15494ccb11725a639f23",
+   "family": "random_half",
+   "flipped_one_way": 1012,
+   "seed": 90919,
+   "sensitivity_edge_file_sha256": "448abad56e05fea5cb0f1ea6838f0c549336a9d8f8351fce54a92837d7dce935",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90919"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "90029a638d9b0f5dae2a1a5001d1b74884fa1da3f738b62494c65baaf318cede",
+   "family": "random_half",
+   "flipped_one_way": 1031,
+   "seed": 90920,
+   "sensitivity_edge_file_sha256": "fcc8c9a79b332f2fe62326eb16cabd4853902d0ead469106ddfd13de42dab896",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "RND90920"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "ff5b3584d024d90beaabbc03149dd4c124e469235ab8d6927f5802c4cba5da3d",
+   "family": "partial_0.10",
+   "flipped_one_way": 208,
+   "seed": 91010,
+   "sensitivity_edge_file_sha256": "25d3052d52ba037bae51ed914f247e91adee716536f8008a87eeef629904d2e1",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P10-91010"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "108fdcfe60f68903a983d9a990caad0fb1590437a1af8d9342394328e95d7c76",
+   "family": "partial_0.10",
+   "flipped_one_way": 208,
+   "seed": 91011,
+   "sensitivity_edge_file_sha256": "15655d4a5c1726744c1c4789027f2c1960e9401a4620342ee81d3bd1e42b5aeb",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P10-91011"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "645501ae2bfbbfbb944bade5aff2f88edaacfa1f1a09b69d34b9185129be0305",
+   "family": "partial_0.10",
+   "flipped_one_way": 208,
+   "seed": 91012,
+   "sensitivity_edge_file_sha256": "399838bad1f44ff3e9b75b64d236e7ea067cc7ad78476973ee612bdcd493c062",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P10-91012"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "5ece7bccbc27b582c59c32a54c396a389c7b1ab0f5742d2ff13b5013babe8b09",
+   "family": "partial_0.25",
+   "flipped_one_way": 520,
+   "seed": 91025,
+   "sensitivity_edge_file_sha256": "ae9ba0941a273b2ff5708557ef130b29818dbbed6c7207d3e0d3a2e2671cfff5",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P25-91025"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "99e18cc48b3a01881226751db16e2dd1f55a0b83d19ef7112a05165ace0f3bda",
+   "family": "partial_0.25",
+   "flipped_one_way": 520,
+   "seed": 91026,
+   "sensitivity_edge_file_sha256": "7e4955e96ad12fe03aa48f768fa3f43565e2db26159bcedce5bf69b9de38800f",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P25-91026"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "9e8870f0b7f0afa7304dfa5ed7eedf3fafe310c77bfff86edc990d9f73a1ead6",
+   "family": "partial_0.25",
+   "flipped_one_way": 520,
+   "seed": 91027,
+   "sensitivity_edge_file_sha256": "1d5b9c29a3d359bd186984dc4d778d7a34434ebc7d28036b370173be0aa16053",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P25-91027"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "5f980a9bb954e7330d4472d267fe8153dc6ee62063860fdc185a68335dc00d7a",
+   "family": "partial_0.50",
+   "flipped_one_way": 1039,
+   "seed": 91050,
+   "sensitivity_edge_file_sha256": "0d568bf5ee445b0fa55796e40374038e9582b9364e5611f054a709a637f5d594",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P50-91050"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "2418a7b88f5d29873be767c3adf48a6dea16ec368213686c8a7f0408e822e7b5",
+   "family": "partial_0.50",
+   "flipped_one_way": 1039,
+   "seed": 91051,
+   "sensitivity_edge_file_sha256": "e4c9e64632a5b408a8093b92ebedfa14d078c3f24e2329f6a9d23f83fcf1ef6f",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P50-91051"
+  },
+  {
+   "directed_edges": 2496,
+   "edge_file_sha256": "3dc30379e52998bb562cce55e339cd60a8986d9f1f8fe90558be015f813365ae",
+   "family": "partial_0.50",
+   "flipped_one_way": 1039,
+   "seed": 91052,
+   "sensitivity_edge_file_sha256": "3d9b1129e9f3cb7cbad2f01c4394fc44b91facad2d938bfdd5ec781e1f01f7ed",
+   "sensitivity_edges": 1450,
+   "skeleton_pairs": 2287,
+   "version_id": "P50-91052"
+  },
+  {
+   "directed_edges": 4574,
+   "edge_file_sha256": "6f36d3e28efbfffbe214a6fdf7948cfbc751330e2ce30636bb59048264ead018",
+   "family": "two_way",
+   "flipped_one_way": null,
+   "seed": null,
+   "sensitivity_edge_file_sha256": "61d80fc424052033d480b896a82e778b100fd66bafcb08d0c01a29a472d6a2fd",
+   "sensitivity_edges": 2594,
+   "skeleton_pairs": 2287,
+   "version_id": "U"
+  }
+ ]
+}

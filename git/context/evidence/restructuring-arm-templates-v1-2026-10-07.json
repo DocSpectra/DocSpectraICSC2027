@@ -1,0 +1,73 @@
+{
+  "arms": {
+    "L": {
+      "change_reason": "L v1 also references the graph tool; v2 matches R0-v2 sentence for sentence except the editing scope (links only, no split/merge/rename).",
+      "editor": "links",
+      "optional": true,
+      "prompt": {
+        "path": "git/context/prompts/docker-editor-L-v2.txt",
+        "sha256": "9f146289362209ca2c8cf37e7ba42198740de4fa6ed0c732fc05aa3cc812ec0d",
+        "version": "L-v2"
+      },
+      "scope": "links_only_existing_paths",
+      "supersedes": {
+        "path": "git/context/prompts/docker-editor-L-v1.txt",
+        "sha256": "5bf74e5e3958c74df42d8f847f20b3a9414dbfcb7f278d63fa55048f7039088c"
+      }
+    },
+    "O": {
+      "editor": null,
+      "pipeline": [
+        "fresh copy",
+        "spectral profile",
+        "export"
+      ],
+      "prompt": null,
+      "role": "original documentation"
+    },
+    "R0": {
+      "change_reason": "R v1 instructs the editor to use a read-only graph tool whose metrics are feedback; R0 never sees any metric, so v2 removes the tool and says no structural feedback exists. Objective, preservation rules and stopping text are otherwise unchanged; 'rename pages' and per-batch checkpoints are made explicit.",
+      "editor": "restructuring",
+      "prompt": {
+        "path": "git/context/prompts/docker-editor-R0-v2.txt",
+        "sha256": "808351ea06aac221ce82f5aaff1ae026ebd1d9e352ffb68865bfd7a9d30ed688",
+        "version": "R0-v2"
+      },
+      "scope": "restructure",
+      "supersedes": {
+        "path": "git/context/prompts/docker-editor-R-v1.txt",
+        "sha256": "a54f3c02574495269f4192fd8b380eb52285dc27ab59e48d83a7861240ec4f47"
+      }
+    },
+    "S": {
+      "committed": false,
+      "editor": null,
+      "pipeline": [
+        "fresh copy",
+        "checkpoint (noop)",
+        "terminal selection",
+        "spectral profile",
+        "review",
+        "export"
+      ],
+      "prompt": null,
+      "role": "unedited sham through the same pipeline"
+    }
+  },
+  "created": "2026-10-07",
+  "schema_version": "docspectra.icsc.restructuring_run.v1.arm_templates",
+  "shared": {
+    "content_rule": "templates contain no questions, rubrics, metric names or graph numbers",
+    "metric_tool": null,
+    "model_runtime_and_limits": "identical for R0 and L; taken from the one run manifest editor/limits blocks",
+    "tools": [
+      "list_files",
+      "read_file",
+      "write_file",
+      "delete_file",
+      "checkpoint",
+      "finish"
+    ]
+  },
+  "sprint": "10"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "answer-pairwise-ranker-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["errors_a", "errors_b", "decisive_criterion", "preference", "reason"],
+  "properties": {
+    "errors_a": {"type": "array", "items": {"type": "string"}},
+    "errors_b": {"type": "array", "items": {"type": "string"}},
+    "decisive_criterion": {"type": ["integer", "null"], "enum": [1, 2, 3, 4, 5, null]},
+    "preference": {"type": "string", "enum": ["A", "B", "tie"]},
+    "reason": {"type": "string", "minLength": 1}
+  }
+}
