@@ -1,0 +1,56 @@
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\review}[2]{\par\noindent\textit{[HUMAN REVIEW REQUIRED: #1] #2}\par}
+\title{Measuring Directed Documentation Structure with Normalized Magnetic Spectra}
+\author{\IEEEauthorblockN{Rocker D'Antonio\IEEEauthorrefmark{1}, Dimitrios Michael Manias\IEEEauthorrefmark{2}}
+\IEEEauthorblockA{Mississippi State University, Mississippi State, MS 39762, USA\quad
+\IEEEauthorrefmark{1}\href{mailto:rd1174@msstate.edu}{rd1174@msstate.edu}\quad
+\IEEEauthorrefmark{2}\href{mailto:dmanias@cse.msstate.edu}{dmanias@cse.msstate.edu}\\
+ORCID: \IEEEauthorrefmark{1}\href{https://orcid.org/0009-0001-8444-1772}{0009-0001-8444-1772}\quad
+\IEEEauthorrefmark{2}\href{https://orcid.org/0000-0003-4390-3093}{0000-0003-4390-3093}}}
+\hypersetup{pdftitle={Measuring Directed Documentation Structure with Normalized Magnetic Spectra},
+pdfauthor={Rocker D'Antonio; Dimitrios Michael Manias},pdfsubject={W02 measurement paper; internal draft awaiting author review}}
+\begin{document}
+\maketitle
+\begin{abstract}
+Answering procedural questions can require information from several documentation
+pages. Hyperlink direction shapes the routes available to readers and retrieval
+agents seeking the semantic context needed to answer. This work evaluates
+an established symmetric normalized magnetic Laplacian as a documentation
+measurement profile, with explicit graph views, ordinary connectivity comparators
+and numerical qualification, implemented in the reusable RetrievalArena
+framework introduced in this work. Across fourteen corpus snapshots, component profiles
+reveal structural differences whose interpretation depends on connected coverage,
+charge and topology.
+Controlled directed-cycle reversals preserve the weighted undirected graph,
+degrees, reciprocity, connectivity partitions and trophic incoherence. They produce
+numerically resolved changes in ten corpora (54 of 77 selected reversals),
+with magnitudes and localization varying by corpus. A whole-corpus Docker refinement application changes the profiles and
+supplies observed use of editor-added links, without establishing improved retrieval
+or answer quality. The study establishes orientation sensitivity, blind spots and the coverage
+and localization checks needed for interpretation.
+\end{abstract}
+\begin{IEEEkeywords}
+technical documentation, directed graphs, magnetic Laplacian, spectral measurement,
+information access
+\end{IEEEkeywords}
+\input{sections/01-introduction}
+\input{sections/02-related-work}
+\input{sections/03-evaluation-design}
+\input{sections/04-structural-validation}
+\input{sections/04-cross-corpus-results}
+\input{sections/05-downstream-case}
+\input{sections/06-discussion}
+\input{sections/07-conclusion}
+\input{sections/08-review-appendix}
+\input{sections/09-acknowledgments}
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography/references}
+\end{document}

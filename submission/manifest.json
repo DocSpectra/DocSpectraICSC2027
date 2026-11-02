@@ -1,0 +1,157 @@
+{
+  "authors": [
+    {
+      "email": "rd1174@msstate.edu",
+      "name": "Rocker D'Antonio",
+      "orcid": "0009-0001-8444-1772"
+    },
+    {
+      "email": "dmanias@cse.msstate.edu",
+      "name": "Dimitrios Michael Manias",
+      "orcid": "0000-0003-4390-3093"
+    }
+  ],
+  "date": "2026-11-02",
+  "dependencies": {
+    "RA_release_and_example_verifier": "e77f87b313a151483c0900c57a18cd45440290cd",
+    "dataset": {
+      "classification": "already_packaged_and_verified",
+      "main": "ab4fb5636e71aa82ada557a8b0f7a27d1d02563a",
+      "version": "1.0.0"
+    },
+    "study": "1.1.0"
+  },
+  "historical_pins": "Unchanged in original evidence; release HEAD is not substituted for producing commits.",
+  "immutable_identity_note": "Package commit and archive hashes are in the external receipt to avoid a self-referential hash cycle.",
+  "limitations": [
+    "No human validity or independent replication for the curated AI-supported example.",
+    "One competitive changed group of four; eight tied minima; exposed method development.",
+    "No tested utility for the link-only example; finite stationary estimates do not certify global optima.",
+    "Historical LT text/page/link changes are coupled; one realization per arm.",
+    "Saved-record checking differs from new model generation and eigenproblem solving."
+  ],
+  "not_exported": [
+    {
+      "classification": "intentionally_internal",
+      "items": [
+        "professor annotations/correspondence",
+        "private planning and tracker history",
+        "unadopted later studies",
+        "camera-ready personal thanks",
+        "credentials and authorization quotes"
+      ]
+    },
+    {
+      "classification": "unavailable",
+      "items": [
+        "fresh public-reader visibility check",
+        "hosted immutable container availability",
+        "deterministic regeneration of stochastic model judgments"
+      ]
+    }
+  ],
+  "paper": {
+    "cited_works": 27,
+    "companion_manuscript": false,
+    "figures": 2,
+    "pages": 8,
+    "pdf_name": "docspectra-icsc-2026-11-02-submission-artifacts-42b-final.pdf",
+    "pdf_sha256": "2ee9d01db5ba9fa2659ddcd2fa3c7bd4adead4fb7650eda5318caf291f4871fe",
+    "source_commit": "eb0f93b47050902d1810b170d2b366ee2f768bb6",
+    "tables": 5
+  },
+  "publication_reconciliation": {
+    "RA_repository_citation": "retained at author direction; repository remains private until author switches visibility",
+    "actual_published_study_v1.0.0": "572c66599f146473028c5732640cd814ae232840",
+    "actual_published_tag_object": "895ec5db4a0e66d412e2db2cfee3ebf64e75a045",
+    "dataset_authorship_followup": "ab4fb5636e71aa82ada557a8b0f7a27d1d02563a",
+    "prepared_candidate": "0c9e3a417f2d18a7021b5c7a16f5273b17c2b977",
+    "scientific_payload_changed": false
+  },
+  "reader_access": "Private release per author instruction; author will enable public visibility at paper submission. Actual checks are in the external publication receipt.",
+  "results": [
+    {
+      "classification": "updated",
+      "evidence": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "evidence_sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+      "id": "measurement",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Section III",
+      "producer": "6d277ac",
+      "verify": "python tools/verify_submission.py historical"
+    },
+    {
+      "classification": "newly_required",
+      "evidence": "git/context/evidence/magnetic-attribution-23b-run-v1-2026-10-31.json",
+      "evidence_sha256": "934ee3a187d9fb5e50696637d14c0d4c7e1be2e1dc9992d90b9844ff81fb8be7",
+      "id": "reversals",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Section IV; Table I",
+      "producer": "38c8ed5",
+      "verify": "python tools/verify_submission.py saved"
+    },
+    {
+      "classification": "updated",
+      "evidence": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "evidence_sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+      "id": "characterization",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Section V; Tables II/III",
+      "producer": "6d277ac",
+      "verify": "python tools/verify_submission.py displays"
+    },
+    {
+      "classification": "updated",
+      "evidence": "git/context/evidence/normalized-magnetic-22-v1-2026-10-25.json",
+      "evidence_sha256": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+      "id": "refinement-spectra",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Table IV; Figure 1",
+      "producer": "6d277ac",
+      "verify": "python tools/verify_submission.py historical"
+    },
+    {
+      "classification": "updated",
+      "evidence": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+      "evidence_sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23",
+      "id": "downstream",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Section VI-C; Figure 2",
+      "producer": "historical per-stage pins in evidence",
+      "verify": "python tools/verify_submission.py historical"
+    },
+    {
+      "classification": "updated",
+      "evidence": "git/context/evidence/lt-trace-audit-24-v1-2026-10-25.json",
+      "evidence_sha256": "9ce25cdcb48d979a2107a91ea62bc21a3a1cfc60df5859f2ddb7a6ed1f91ef65",
+      "id": "link-use",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Table V; Section VI-C",
+      "producer": "historical per-stage pins in evidence",
+      "verify": "python tools/verify_submission.py historical"
+    },
+    {
+      "classification": "newly_required",
+      "evidence": "git/context/evidence/blinded-support-review-41c-real-v1-2026-11-02.json",
+      "evidence_sha256": "0dc67bbf0d7261f7a5e9e39c5f6c5a60736c096ac92dbfec7b2cfc42586e3e80",
+      "id": "worked-example",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Section VI-D; equation 6",
+      "producer": "e77f87b313a151483c0900c57a18cd45440290cd",
+      "verify": "python tools/verify_submission.py example --output NEW_DIRECTORY"
+    },
+    {
+      "classification": "updated",
+      "evidence": "git/paper/review-calibration-provenance.json",
+      "evidence_sha256": "2ab2cab2ac401de09fc157e21b5213aaa82894d426d30c4ed604a97fdb81a937",
+      "id": "evaluation-checks",
+      "owner": "DocSpectra/DocSpectraICSC2027",
+      "paper": "Appendix; Section VI-B",
+      "producer": "historical per-stage pins in evidence",
+      "verify": "python tools/verify_submission.py manifest"
+    }
+  ],
+  "schema_version": "docspectra.submission.v1",
+  "title": "Measuring Directed Documentation Structure with Normalized Magnetic Spectra",
+  "version": "1.1.0"
+}

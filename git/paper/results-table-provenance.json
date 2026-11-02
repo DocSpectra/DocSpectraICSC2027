@@ -995,6 +995,34 @@
         "C_refinement",
         "profiles",
         "wc/O",
+        "arcs"
+      ],
+      "exact": 2494,
+      "display": "2494",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
+        "isolates"
+      ],
+      "exact": 292,
+      "display": "292",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/O",
         "lambda1_q0.25"
       ],
       "exact": 0.08417108937548456,
@@ -1051,6 +1079,34 @@
         "C_refinement",
         "profiles",
         "wc/LT",
+        "arcs"
+      ],
+      "exact": 5203,
+      "display": "5203",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
+        "isolates"
+      ],
+      "exact": 146,
+      "display": "146",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/LT",
         "lambda1_q0.25"
       ],
       "exact": 0.04617122826369738,
@@ -1097,6 +1153,34 @@
       ],
       "exact": 1229,
       "display": "1229",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "arcs"
+      ],
+      "exact": 4502,
+      "display": "4502",
+      "format": "exact",
+      "scale": 1,
+      "absolute": false
+    },
+    {
+      "source": "S22",
+      "path": [
+        "C_refinement",
+        "profiles",
+        "wc/R0",
+        "isolates"
+      ],
+      "exact": 43,
+      "display": "43",
       "format": "exact",
       "scale": 1,
       "absolute": false
@@ -2027,12 +2111,164 @@
       "absolute": false
     }
   ],
+  "derived_values": [
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/O",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/O",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 2494,
+        "nodes": 1218
+      },
+      "formula": "m/N",
+      "exact_decimal": "2.047619047619047619047619048",
+      "display": "2.05",
+      "format": "2 decimals, half away from zero"
+    },
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/O",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/O",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 2494,
+        "nodes": 1218
+      },
+      "formula": "100*m/[N*(N-1)]",
+      "exact_decimal": "0.1682513597057557616308643425",
+      "display": "0.168",
+      "format": "3 decimals, half away from zero"
+    },
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/LT",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/LT",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 5203,
+        "nodes": 1823
+      },
+      "formula": "m/N",
+      "exact_decimal": "2.854086670323642347778387274",
+      "display": "2.85",
+      "format": "2 decimals, half away from zero"
+    },
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/LT",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/LT",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 5203,
+        "nodes": 1823
+      },
+      "formula": "100*m/[N*(N-1)]",
+      "exact_decimal": "0.1566458106654029828637973257",
+      "display": "0.157",
+      "format": "3 decimals, half away from zero"
+    },
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/R0",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/R0",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 4502,
+        "nodes": 1229
+      },
+      "formula": "m/N",
+      "exact_decimal": "3.663140764849471114727420667",
+      "display": "3.66",
+      "format": "2 decimals, half away from zero"
+    },
+    {
+      "source": "S22",
+      "paths": [
+        [
+          "C_refinement",
+          "profiles",
+          "wc/R0",
+          "arcs"
+        ],
+        [
+          "C_refinement",
+          "profiles",
+          "wc/R0",
+          "nodes"
+        ]
+      ],
+      "inputs": {
+        "arcs": 4502,
+        "nodes": 1229
+      },
+      "formula": "100*m/[N*(N-1)]",
+      "exact_decimal": "0.2983013652157549767693339306",
+      "display": "0.298",
+      "format": "3 decimals, half away from zero"
+    }
+  ],
   "table_sha256": {
     "tables/w02-matched.tex": "0570aeab3cc0bbb0ca00f78aad77a1d109ffaffa00217040816c72e4abb2cfde",
     "tables/w02-correlations.tex": "338095da303ce15720ea99f7b41285f6cae0863838b8276685847476f7e6cf1c",
-    "tables/w02-refinement-summary.tex": "2165948600d8350d0fdb433db3e9a10608cbcf6841ee44616cda212c5b49cd75",
+    "tables/w02-refinement-summary.tex": "2f0b6d598841ec17796e29efcbd085d892b04a848d4d64928a13a0dab73d6aef",
     "tables/w02-link-use.tex": "c361799617d19115f492c6fca0f9d476fdb06f5b4c1a5734c447d62aacf37342",
-    "tables/w02-answers.tex": "ad2d841a9d174c1c295ac5941cf476c8430147a53c674cdbea7b359287d52f65"
+    "tables/w02-answers.tex": "350e2997f0180904276db4bedff315a87569673706e892ae4820750c8464e88b"
   },
   "selection": "All prior matched pairs and answer contrasts retained. Five existing corpus comparators shown for both magnetic modes; additional second-mode coefficients, test means and replay interval are copied from frozen fields."
 }

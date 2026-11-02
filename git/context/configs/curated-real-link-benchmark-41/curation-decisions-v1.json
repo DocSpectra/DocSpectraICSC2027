@@ -1,0 +1,327 @@
+[
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-01",
+    "checklist": [
+      "Step one: repository, DOCKER_USERNAME variable, DOCKERHUB_TOKEN secret, git push",
+      "Step two: workflow YAML with target build and final push",
+      "Step three: commit, Actions view and Docker Hub verification"
+    ],
+    "counterargument": "External accounts and previous containerization are required; commands are source evidence, not an executed tutorial test. Historical Sol uncertainty applies only to the old bounded view.",
+    "reason": "The explicit next step names the CI/CD action; the complete destination supplies repository setup and build-test-push YAML.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-02",
+    "checklist": [
+      "Step one: repository and Docker Hub credential configuration",
+      "Step two: workflow login, Buildx and build/push YAML",
+      "Step three: run workflow and inspect Docker Hub repository"
+    ],
+    "counterargument": "The prose promises testing but the provided workflow has no explicit Deno test command. Link claim is setting up the CI/CD pipeline, not proof of test coverage. Prior sections and accounts remain prerequisites.",
+    "prior_host_attempts": [
+      {
+        "anchor": "CI/CD pipeline using GitHub Actions",
+        "diagnosis": "Curator transcription added testing to a target sentence that says building and pushing. No response was repaired; same pair, pre-score source correction.",
+        "rejection": "fixture-nonunique-anchor-or-quote",
+        "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+      }
+    ],
+    "reason": "The source explicitly announces the next CI/CD procedure; the destination gives concrete setup and publication steps.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building and pushing the image"
+  },
+  {
+    "anchor": "run unit tests in Docker",
+    "audit_id": "41-03",
+    "checklist": [
+      "Multi-stage Dockerfile for testing: base/test/deps/package stages",
+      "test stage runs ./mvnw test",
+      "docker build --target=test and expected BUILD SUCCESS"
+    ],
+    "counterargument": "The sample Maven project and previous containerization are needed; source code and image correctness have not been executed here. Historical Sol uncertainty remains attached to the older excerpts.",
+    "reason": "The next-step action matches a concrete test stage and build command in the destination.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "$ docker build -t java-docker-image-test --progress=plain --no-cache --target=test ."
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-04",
+    "checklist": [
+      "Step one: repository and Docker Hub credentials",
+      "Step two: login/Buildx/build-push workflow YAML",
+      "Step three: commit, workflow status and pushed image"
+    ],
+    "counterargument": "No explicit Bun test command appears in the YAML despite broader testing prose. The proposed anchor names pipeline setup only; external accounts and prior application remain dependencies.",
+    "reason": "The source's next step names CI/CD setup and the destination supplies the complete setup workflow.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-05",
+    "checklist": [
+      "Integrate GitHub and Docker Hub: PAT, repository and secrets",
+      "Step 2: workflow builds Dockerfile.dev, runs test scripts and pushes production image",
+      "Step 3: trigger, inspect Actions and verify image tags"
+    ],
+    "counterargument": "Destination mixes Vitest and Jest terminology and requires the sample project/accounts. This is curator support, not execution validation; old two-model acceptance is not a fresh label.",
+    "reason": "The next-step statement leads to explicit build/test/push steps and a test-running workflow.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "name: Build, Test and Push Docker Image"
+  },
+  {
+    "anchor": "run unit tests using Docker",
+    "audit_id": "41-06",
+    "checklist": [
+      "Run tests when developing locally: Compose dotnet test command",
+      "Run tests when building: Dockerfile RUN dotnet test /source/tests",
+      "docker build --target build with expected test output"
+    ],
+    "counterargument": "Requires development SDK stage and sample tests; no tests are actually run during curation.",
+    "reason": "Explicit next testing step is delivered by local and build-time test procedures.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "$ docker compose run --build --rm server dotnet test /source/tests"
+  },
+  {
+    "anchor": "CI/CD pipeline",
+    "audit_id": "41-07",
+    "checklist": [
+      "Step one: create repository and set Docker Hub credentials",
+      "Step two: test-target build and final build/push workflow YAML",
+      "Step three: run and inspect workflow"
+    ],
+    "counterargument": "Existing maven-build workflow is optional to disable; prior Dockerfile test stage and accounts are prerequisites.",
+    "prior_host_attempts": [
+      {
+        "anchor": "CI/CD pipeline using\nGitHub Actions",
+        "diagnosis": "Newline is forbidden within editable anchor. Use contiguous CI/CD pipeline in the same sentence before freeze; no pair or semantic outcome changed.",
+        "rejection": "anchor-syntax"
+      }
+    ],
+    "reason": "Exact multiline next-step anchor names the workflow delivered by the destination.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "run unit tests using Docker",
+    "audit_id": "41-08",
+    "checklist": [
+      "Run tests when developing locally: PHPUnit Compose invocation",
+      "Run tests when building: development-as-test Dockerfile",
+      "docker build --target test and expected PHPUnit output"
+    ],
+    "counterargument": "Sample Composer dev dependencies and tests are required; container commands are not executed here.",
+    "reason": "The explicit next-step anchor is fulfilled by containerized unit-test instructions.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "$ docker compose run --build --rm server ./vendor/bin/phpunit tests/HelloWorldTest.php"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-09",
+    "checklist": [
+      "Step one: repository and Docker Hub credentials",
+      "Step two: test-target image build then final push YAML",
+      "Step three: commit and verify workflow"
+    ],
+    "counterargument": "Requires previous sample Dockerfile stages and working accounts; no operational validation performed.",
+    "reason": "The next CI/CD action is backed by complete setup and test-target workflow instructions.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "audit_id": "41-10",
+    "reject": "The source promises functional tests of its extended database application, while the destination teaches unit tests on the earlier docker-gs-ping project. The mismatch is substantive; do not replace the anchor to hide it."
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-11",
+    "checklist": [
+      "Step one: repository, Docker Hub variable and token",
+      "Step two: login, Buildx and multi-platform build/push YAML",
+      "Step three: run workflow and check published repository"
+    ],
+    "counterargument": "Unlike Java/PHP, this workflow has no explicit Go test command. It supports pipeline setup, not automatic verification of unit tests; prior sample and accounts remain dependencies.",
+    "reason": "The explicit next-step action is pipeline setup; the destination gives the concrete procedure.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-12",
+    "checklist": [
+      "Step one: repository and Docker Hub credentials",
+      "Step two: Buildx and multi-platform build/push YAML",
+      "Step three: run and verify workflow"
+    ],
+    "counterargument": "No explicit C++ test command is present despite overview wording; this anchor claims pipeline setup only.",
+    "reason": "Explicit next CI/CD setup action maps to complete setup steps.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-13",
+    "checklist": [
+      "Step one: repository and credentials",
+      "Step two: login/Buildx/build-push YAML",
+      "Step three: commit, inspect workflow and verify image"
+    ],
+    "counterargument": "The development chapter switches sample repositories and workflow contains no explicit R test command. Prior app state and external accounts remain necessary.",
+    "reason": "Explicit next CI/CD action is delivered by setup and publication procedure.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "Set up your GitHub Actions workflow for building, testing, and pushing the image"
+  },
+  {
+    "anchor": "run unit tests for your Next.js application inside Docker containers",
+    "audit_id": "41-14",
+    "checklist": [
+      "Install/configure Vitest or use sample project",
+      "Step 3: nextjs-test and nextjs-lint Compose services",
+      "Steps 4/5: run test and lint tools-profile commands"
+    ],
+    "counterargument": "Requires Dockerfile.dev and sample or configured project; test-source dependencies are external and not executed.",
+    "reason": "The source names unit tests in Docker; the destination includes setup, services and exact execution commands.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "$ docker compose --profile tools run --rm nextjs-test"
+  },
+  {
+    "anchor": "develop your application using Docker containers",
+    "audit_id": "41-15",
+    "checklist": [
+      "Step 1: Dockerfile.dev and lockfile-based install",
+      "Step 2: separate production/development services and watch configuration",
+      "Steps 4/5: start Compose Watch and verify live update"
+    ],
+    "counterargument": "The destination already links back to containerize; host reverse-edge exclusion may reject the otherwise sensible continuation.",
+    "reason": "Explicit next development action matches complete dev-container and watch instructions.",
+    "relation": "source_continues_to_target",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "$ docker compose watch nextjs-dev"
+  },
+  {
+    "audit_id": "41-16",
+    "reject": "The deploy page already explicitly links to the GitHub Actions guide twice, including the named prerequisite for its image. A new link cannot add a new directed pair; do not duplicate it."
+  },
+  {
+    "audit_id": "41-17",
+    "reject": "The about page already links to the quickstart and the quickstart links back to about. Existing-pair and reverse-edge exclusions apply."
+  },
+  {
+    "audit_id": "41-18",
+    "reject": "Optimize addresses transfer latency/build performance, whereas usage addresses activity analytics. No unlinked source prose names the analytics reading action closely enough; broad product overlap is insufficient."
+  },
+  {
+    "audit_id": "41-19",
+    "reject": "The configuration page already links to Docker Offload usage. No new pair can be added."
+  },
+  {
+    "audit_id": "41-20",
+    "reject": "The quickstart already links to configuration in its access troubleshooting step. No new pair can be added."
+  },
+  {
+    "anchor": "Extensions Marketplace within Docker Desktop",
+    "audit_id": "41-21",
+    "checklist": [
+      "Install an extension: open Desktop, Extensions tab, browse/filter and Install",
+      "Update an extension: Manage tab and Update button",
+      "Uninstall an extension: Manage, ellipsis, Uninstall; security caveat retained"
+    ],
+    "counterargument": "Source also offers Docker Hub as an alternative. An image caption has the shorter phrase; selected longer prose anchor uniquely identifies the actual reading location. Past review exposure is disclosed.",
+    "reason": "The source tells readers where to explore extensions; destination supplies browsing and installation steps with review/trust distinctions.",
+    "relation": "target_elaborates_source",
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "target_quote": "4. Choose an extension and select **Install**."
+  },
+  {
+    "audit_id": "41-22",
+    "reject": "The source's publication/design requirements address extension authors. The marketplace destination explains consumer trust and installation, not the required publication assets or authoring process. Do not equate shared Marketplace terminology with procedural support."
+  },
+  {
+    "audit_id": "41-23",
+    "reject": "The scale tutorial already links back to deploy-service. Reverse-original exclusion disallows deploy-service to scale-service. Its explicit next action is inspection, not scaling."
+  },
+  {
+    "audit_id": "41-24",
+    "reject": "The scale page's next action is deleting helloworld. Drain uses a separate Redis maintenance scenario. No substantive editable prose in scale names the drain-node action; do not make task-placement output imply a maintenance instruction."
+  },
+  {
+    "audit_id": "41-25",
+    "reject": "The inspect page's explicit next action is scaling. UpdateConfig occurs only in code/output; no editable prose anchor names rolling updates. Do not turn output fields into prose edits."
+  }
+]

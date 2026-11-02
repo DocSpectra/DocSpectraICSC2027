@@ -1,0 +1,44 @@
+\begin{table}[!ht]
+\caption{Single-author reviews and judge checks; HR denotes review packets.
+These checks do not validate final generated answers.}
+\label{tab:review-calibration}
+\centering
+\begin{tabular}{@{}p{.17\columnwidth}p{.78\columnwidth}@{}}
+\toprule
+Check & Recorded result and scope\\
+\midrule
+Calibration &
+70 constructed answers, 154 author labels. Qwen, Gemma and GPT-oss with the
+same v2 prompt failed admission.\\
+\addlinespace
+HR-19\newline Tasks &
+15 tasks: 63 requirements accepted, 10 revised, 2 rejected; 73 frozen.
+\\
+\addlinespace
+HR-03\newline Content &
+20 pages/arm; all 40 marked no problem. Fixed stop rule: at least 3 errors/losses
+in 20/arm. Reviewed after structural results; arm labels hidden, LT could be recognized.\\
+\addlinespace
+HR-18\newline Support &
+70 sampled windows: precision 29/34; misses 0/33; 3 unsure excluded.
+Original-corpus check; no out-of-pool or edited-page calibration.\\
+\addlinespace
+HR-20\newline Loss &
+14 cases: 3 still answer, 4 moved, 0 lost, 7 unsure.
+One case unblinded; rejudgment agreement 7/14.\\
+\addlinespace
+HR-21\newline Disputes &
+16 disputed pages: 4 answer, 3 partly, 9 do not; 4 controls: 2/1/1.
+Verifier verdict hidden, arm visible. No calibrated corrected retrieval score.\\
+\addlinespace
+Luna scorer &
+60 answers: 293/300 scores within $\pm1$, but only 11/20 rankings stable
+(required $\geq .80$). Spread/sham checks pass; human agreement uncollected.\\
+\addlinespace
+Haiku\newline RAGAS &
+40 control pairs: only FactualCorrectness passes (78/80 repeats within $.1$).
+All three metrics fail repeatability on 40 development answers; real-FAQ
+validity remains unestablished.\\
+\bottomrule
+\end{tabular}
+\end{table}

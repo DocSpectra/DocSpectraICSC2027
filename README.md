@@ -1,60 +1,92 @@
-# DocSpectraICSC2027
+# DocSpectraICSC2027 1.1.0
 
-Study code, configurations and evidence records for *Measuring Directed Documentation Structure with Normalized Magnetic Spectra* (Rocker D'Antonio, Mississippi State University), prepared for ICSC 2027. The repository holds the drivers that ran each analysis, the prompts and configurations they used, and the evidence files that record every number the paper reports, each with its SHA-256.
+Reproduction sources for *Measuring Directed Documentation Structure with
+Normalized Magnetic Spectra*, by Rocker D'Antonio and Dimitrios Michael Manias,
+Mississippi State University, prepared for ICSC 2027. The submitted scientific
+account is one eight-page paper. No companion manuscript is required.
 
-Three repositories make up the study's artifacts:
+This version supersedes 1.0.0 for reproducing the November 2 manuscript. It adds
+the adopted fourteen-corpus cycle-reversal study (23b), the thirteen-candidate
+blinded AI-supported link-selection example (41c), current paper sources and
+displays, and saved inputs for the previously incomplete offline verification.
+It preserves the earlier producing-code identities and release history.
 
-| Repository | Role |
-| --- | --- |
-| [DocSpectra/RetrievalArena](https://github.com/DocSpectra/RetrievalArena) | reusable framework: graph operators, magnetic spectra, pooled support verification, scoring |
-| [DocSpectra/DockerDocsSet2026](https://github.com/DocSpectra/DockerDocsSet2026) | the Docker documentation versions (original, LT, R0), question sets and support judgments |
-| DocSpectra/DocSpectraICSC2027 (this repository) | study-specific drivers, configurations, protocol notes and evidence records |
+## Start here
 
-## Layout
+Use the source bundle or source ZIP together with
+`DocSpectraICSC2027-1.1.0-saved-inputs.zip`, extracted into the same root. Their
+checksums and the precise manuscript PDF identity are in the external release
+receipt. Extract `RetrievalArena-icsc2027-submission-1.1.0.bundle` to
+`git/RetrievalArena` at `e77f87b313a151483c0900c57a18cd45440290cd`.
+Do not substitute a globally installed package with the same name.
 
-Files are copied byte for byte from the study workspace and keep their workspace paths. Evidence records pin the exact bytes of the scripts and prompts they used, and every driver locates the workspace root from its own path (`git/context/scripts/x.py` → repository root), so moving or editing a file would break both. `.gitattributes` disables line-ending conversion.
-
-| Path | Contents |
-| --- | --- |
-| `git/context/scripts/` | drivers and their tests |
-| `git/context/evidence/` | evidence records: inputs, plans, results, author-review verdicts; most have a `.sha256` sidecar |
-| `git/context/configs/`, `git/context/prompts/`, `git/context/design/` | configurations, editor prompts, generator, scorer and judge prompts and schemas |
-| `git/context/sandbox/` | the editor session and container runtime used for the refinement run |
-| `git/context/reports/` | generated result tables that the drivers' `verify` steps compare byte for byte |
-| `git/paper/` | display generators and their provenance ledgers |
-| `artifacts/` | two figure inputs read by the display generators |
-| `vendor/docspectra_importer/` | the historical exporter used for page discovery, document IDs, FAQ extraction and links, byte-identical to its pinned SHA-256 values |
-| [`docs/protocol-notes.md`](docs/protocol-notes.md) | the refinement run as it was run: amendments, fixes, departures and sensitivity analyses |
-| [`docs/results-map.md`](docs/results-map.md) | which driver and evidence file stand behind each reported result |
-
-Some workspace paths and internal names carry labels from earlier internal projects (for example the directory `docker-cikm-2026-05-14` holding the recovered Docker export). Files named `*-preregistration-*` hold the study protocol as frozen internally before each run; nothing was registered publicly.
-
-## Checking the records
-
-```bash
-python tools/check_manifest.py
+```sh
+git clone DocSpectraICSC2027-1.1.0.bundle study
+cd study
+git config core.longpaths true
+# Extract saved-inputs.zip here using an archive tool.
+git -c core.autocrlf=false clone /path/to/RetrievalArena-icsc2027-submission-1.1.0.bundle git/RetrievalArena
+python tools/verify_submission.py manifest
+python tools/verify_submission.py saved
+python tools/verify_submission.py historical
+python tools/verify_submission.py example --output /path/to/new-output
 ```
 
-This checks every file against `MANIFEST.sha256` and every `.sha256` sidecar in `git/context/evidence/`, using only the standard library. The paper's tables can be regenerated from the evidence alone:
+`manifest` uses the standard library. `historical` replays the saved whole-corpus
+analysis, trace audit, element comparison and normalized-profile preservation
+checks. `example` checks all source copies and anchored edit ledgers and reruns
+the changed candidate tier's finite numerical estimates. It creates a fresh
+output directory. Run the example's numerical replay in the recorded verification image
+with `--network none`, single-thread BLAS and the study mounted read-only; see
+[reproduction](docs/reproduction.md). Historical analysis uses the declared host
+requirements; the recorded image lacks its `jsonschema` dependency. These
+verification commands never invoke provider clients.
 
-```bash
-mkdir -p git/paper/tables
-python git/paper/scripts/prepare_results_tables.py
-git diff --stat git/paper/results-table-provenance.json
-```
+[Results map](docs/results-map.md) connects every paper display/result family to
+evidence and commands. [Submission manifest](submission/manifest.json) records
+authorship, versions, evidence, historical/replay pins and limitations.
+[Protocol notes](docs/protocol-notes.md) describe the historical refinement as run.
+[Worked-example methods](docs/worked-example.md) retain the full candidate
+inventory and methodology as reproduction documentation.
 
-It asserts the SHA-256 of its five source records, writes five tables to `git/paper/tables/` and rewrites `results-table-provenance.json`, which records each table's SHA-256; an empty `git diff` means the regenerated tables match the recorded ones.
+## Data and licenses
 
-Several drivers also have a `verify` or `check` step that recomputes a result from saved run records with no model calls (`wc_analysis_20.py verify`, `lt_trace_audit_24.py verify`, `tier1_completeness_25.py verify`, `normalized_magnetic_22.py check`, `magnetic_attribution_23.py check`, `wc_spectra_18.py check`). Those steps read the run records under `artifacts/` (answers, scores, traces and analysis intermediates) and the RetrievalArena checkout at the pinned commits; the run records are not part of this repository. Steps that answer, judge or edit (`wc_answers_19.py`, `wc_rejudge_19.py escalate`, `c2_pooled_qrels.py`, `wc_refine_17.py run`) call models or editing sessions and are documented for provenance, not for offline reruns.
+DockerDocsSet2026 remains version **1.0.0**, main
+`ab4fb5636e71aa82ada557a8b0f7a27d1d02563a`, with unchanged `docs-original`,
+`docs-lt`, `docs-r0`, questions and labels. This release's saved-input asset
+additionally carries the actual graph bundles, masked example source view,
+recorded AI assessments, patches, answers and scientific blinding maps needed by
+the supported offline commands. The word `private` in an old scientific
+blinding-map path describes its original experimental role; it is not an API
+credential. No credentials, author correspondence or internal review PDFs are
+included.
 
-## Dependencies
+Study-authored code and documentation use [MIT](LICENSE). Docker documentation,
+its excerpts and derived copies retain Apache-2.0; see [NOTICE](NOTICE.md) and
+[Docker license](LICENSES/Docker-Apache-2.0.txt). The legacy importer is the
+author's MIT code. Other corpus graph bundles contain document identifiers and
+link topology, not redistributed documentation bodies. Upstream repository
+identities and source/license boundaries are listed in the recorded input
+manifests; no blanket license is asserted over third-party documentation.
 
-Python 3.12 was used. [`requirements.txt`](requirements.txt) lists the third-party packages: NumPy, SciPy and jsonschema at the versions installed on the build workstation; Matplotlib and ReportLab for figures, whose versions were not recorded; and the OpenAI client for the live answering and scoring stages only. RetrievalArena is used at the commits recorded in each evidence file.
+## Limits
 
-## License
+The cycle study is topology-selected exploratory evidence, with incomplete
+coverage and numerical-resolution qualifications. The worked example has one
+competitive changed group of four, exposed method development, eight tied
+minima and blinded AI reference support. It supplies no human validation,
+independent replication or tested access/answer benefit. Historical LT changes
+text, page boundaries and links together, with one realization per arm. Failed
+judging qualifications, retries, missing attempts and conditional intervals
+remain recorded. Saved judgments are verifiable observations, not deterministic
+regenerations of stochastic providers. Numerical stationarity is not a global
+optimality certificate. See the result-specific qualifications in the paper.
 
-The study code, configurations, tools and documentation are released under the [MIT License](LICENSE) (Copyright 2026 Rocker D'Antonio). Some evidence records, prompts and generation records quote Docker documentation, which remains under Docker's Apache License 2.0; the files under `vendor/docspectra_importer/` are the author's own code, also under the MIT License.
+Release identities and checksums are recorded in the external publication
+receipt. Reader access depends on the repository visibility at retrieval.
+The author controls the switch to public access at paper submission; private
+releases require authorized repository access. No conference submission is
+performed by these artifact tools.
 
-## Citation
-
-Cite this repository (version 1.0.0, Git tag `v1.0.0`) with [`CITATION.cff`](CITATION.cff). Cite the dataset as DockerDocsSet2026 and the framework as RetrievalArena separately.
+Cite [CITATION.cff](CITATION.cff); cite DockerDocsSet2026 and RetrievalArena
+separately. Paper authorship and software authorship are recorded separately.

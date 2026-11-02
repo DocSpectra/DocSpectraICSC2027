@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or these records, please cite them as below."
 type: software
 title: "DocSpectraICSC2027: study code and evidence for normalized magnetic characterization of documentation structure"
-version: "1.0.0"
-date-released: "2026-10-27"
+version: "1.1.0"
+date-released: "2026-11-02"
 license: MIT
 authors:
   - family-names: "D'Antonio"
@@ -14,8 +14,8 @@ repository-code: "https://github.com/DocSpectra/DocSpectraICSC2027"
 url: "https://github.com/DocSpectra/DocSpectraICSC2027"
 identifiers:
   - type: url
-    value: "https://github.com/DocSpectra/DocSpectraICSC2027/tree/v1.0.0"
-    description: "Version 1.0.0, Git tag v1.0.0"
+    value: "https://github.com/DocSpectra/DocSpectraICSC2027/tree/v1.1.0"
+    description: "Version 1.1.0, Git tag v1.1.0"
 references:
   - type: dataset
     title: "DockerDocsSet2026: Docker documentation variants, question sets and support judgments"
@@ -36,6 +36,10 @@ references:
     authors:
       - family-names: "D'Antonio"
         given-names: "Rocker"
+        affiliation: "Mississippi State University"
+      - family-names: "Manias"
+        given-names: "Dimitrios Michael"
+        orcid: "https://orcid.org/0000-0003-4390-3093"
         affiliation: "Mississippi State University"
     status: in-preparation
     conference:

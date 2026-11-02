@@ -1,0 +1,205 @@
+{
+  "all_audit_pairs": 25,
+  "files": [
+    {
+      "bytes": 4664,
+      "path": "content/guides/bun/configure-ci-cd.md",
+      "sha256": "cca71dd8cd4295f7ae3e25a0e7735bf6febe567326e4f175ec68258b5795489c"
+    },
+    {
+      "bytes": 2507,
+      "path": "content/guides/bun/develop.md",
+      "sha256": "61fccc388fbdd67cdd4cdf0e77868ac345ab679e34f2c81d1a548f4273fe9dd6"
+    },
+    {
+      "bytes": 4709,
+      "path": "content/guides/cpp/configure-ci-cd.md",
+      "sha256": "ffc2242cc40c8e1a4a02b55a98d8f85b28ab6ea53d08662b326b48c38f7fa276"
+    },
+    {
+      "bytes": 2579,
+      "path": "content/guides/cpp/develop.md",
+      "sha256": "46f899590b8cc1099778a60d4a20b428dcefb79afa8044e99b7e8a8667dd78fc"
+    },
+    {
+      "bytes": 4650,
+      "path": "content/guides/deno/configure-ci-cd.md",
+      "sha256": "52641751311c96a40855e56110c4484a6069d53d6941460d7a576fff91a87581"
+    },
+    {
+      "bytes": 2515,
+      "path": "content/guides/deno/develop.md",
+      "sha256": "56e82d36ab2a5841fc81b5fc63c2c10b9cb028fe57f0655ae01c05870bad0c21"
+    },
+    {
+      "bytes": 5024,
+      "path": "content/guides/dotnet/configure-ci-cd.md",
+      "sha256": "2edb14553086f2dbec1dac9a86a51a35eac2d6d145ca1a8a515e3213f9369287"
+    },
+    {
+      "bytes": 13491,
+      "path": "content/guides/dotnet/develop.md",
+      "sha256": "0ba48d975957584c937a4dc7aa8e190311b7186cf48183a476b5cb31852f234e"
+    },
+    {
+      "bytes": 5002,
+      "path": "content/guides/dotnet/run-tests.md",
+      "sha256": "131a5207982da2181e091b7e8af06a15471e737d6cdb615c7706a24544844759"
+    },
+    {
+      "bytes": 4649,
+      "path": "content/guides/golang/configure-ci-cd.md",
+      "sha256": "d8ce2aab154a9edd607510773b6a3a8fd3e314c000643dbcae2623ff11c7afce"
+    },
+    {
+      "bytes": 29281,
+      "path": "content/guides/golang/develop.md",
+      "sha256": "d9b95030baf3b58bc4442b977ee0f4be475ba5337bcf87b2052b7f83b578fec4"
+    },
+    {
+      "bytes": 2999,
+      "path": "content/guides/golang/run-tests.md",
+      "sha256": "7c1d0811e2c06224a1c7c476b636b5ac83af659aa8883f18a32753ebd49eba88"
+    },
+    {
+      "bytes": 5147,
+      "path": "content/guides/java/configure-ci-cd.md",
+      "sha256": "24132f6b24e0b122668f654a4b4ba8d10c4526bd734bd5ad74502f344828dadf"
+    },
+    {
+      "bytes": 13623,
+      "path": "content/guides/java/develop.md",
+      "sha256": "1b6ed7176792948fa8871c42bf5ddca8dd7ba236bef8fda23ab9fb6a20edf0d0"
+    },
+    {
+      "bytes": 4779,
+      "path": "content/guides/java/run-tests.md",
+      "sha256": "424c81db9bcaa7e506b46bc4e12b9f87c30a649500517b10b1ec98e24b313ae6"
+    },
+    {
+      "bytes": 13078,
+      "path": "content/guides/nextjs/configure-github-actions.md",
+      "sha256": "960ac42f33914833fc2edef48f006ffa98206e090922d3679baf3555cb9e4587"
+    },
+    {
+      "bytes": 36620,
+      "path": "content/guides/nextjs/containerize.md",
+      "sha256": "c1a57bcfba1c1387d31096917b6d81b7a88a41cd5355ad6c81e15cf536ac8869"
+    },
+    {
+      "bytes": 6994,
+      "path": "content/guides/nextjs/deploy.md",
+      "sha256": "366b81a139173c1555d57272ec1488e960b7650627c2c3f1584f318aa44134b9"
+    },
+    {
+      "bytes": 7713,
+      "path": "content/guides/nextjs/develop.md",
+      "sha256": "b17efd9de44c9c2e3131317df09de9dfdc425ec74911854aaa8db0fb90a677bc"
+    },
+    {
+      "bytes": 9523,
+      "path": "content/guides/nextjs/run-tests.md",
+      "sha256": "602eba60f865b1219662432493b60bb3229480935dda83130c8d23806586a9a6"
+    },
+    {
+      "bytes": 5013,
+      "path": "content/guides/php/configure-ci-cd.md",
+      "sha256": "8e0218f2b4ae75d662d2f613a2d1174ea079f635ba45b7fc4825f58a2024d762"
+    },
+    {
+      "bytes": 14245,
+      "path": "content/guides/php/develop.md",
+      "sha256": "dac4a9404f33648859a638e2cadecf7a85813df9a1da9a54f5110d36a90f31e2"
+    },
+    {
+      "bytes": 3821,
+      "path": "content/guides/php/run-tests.md",
+      "sha256": "f1f46b65f8427b504350520f58da5ca46cd21575cb3706983033ada4be7d4e6e"
+    },
+    {
+      "bytes": 4672,
+      "path": "content/guides/r/configure-ci-cd.md",
+      "sha256": "b22167e0efcfc39d244edf23dad7db8da20ee9f314ab2bd913163ee3e3bffa63"
+    },
+    {
+      "bytes": 6038,
+      "path": "content/guides/r/develop.md",
+      "sha256": "77d6b20c41c5ee8f08812b390752350e15b32fdcdfc0a46eff5546941ab75181"
+    },
+    {
+      "bytes": 1381,
+      "path": "content/manuals/engine/swarm/swarm-tutorial/deploy-service.md",
+      "sha256": "165fd09b8ff9647ce7d8e714c6944ff8040f7b5106b7155822fe03e7f08c1bc6"
+    },
+    {
+      "bytes": 4725,
+      "path": "content/manuals/engine/swarm/swarm-tutorial/drain-node.md",
+      "sha256": "c1773b345de08903e40baf58ee6f1066f2ebfcb6db4b4e3220d23822962d0546"
+    },
+    {
+      "bytes": 3902,
+      "path": "content/manuals/engine/swarm/swarm-tutorial/inspect-service.md",
+      "sha256": "ac136503dfc621af5096d01b2ba48c935c286cf268a5461220790e4da03bbdc5"
+    },
+    {
+      "bytes": 5384,
+      "path": "content/manuals/engine/swarm/swarm-tutorial/rolling-update.md",
+      "sha256": "1af686c29af2259ba4d0450ae5c19bbc491fdf7ea2468aa5f9e84f733fef61b7"
+    },
+    {
+      "bytes": 2573,
+      "path": "content/manuals/engine/swarm/swarm-tutorial/scale-service.md",
+      "sha256": "f5f071a7988c9f548067dc288692be16f3993a67c15b4bcf6426c1ec5a60f7b5"
+    },
+    {
+      "bytes": 1656,
+      "path": "content/manuals/extensions/_index.md",
+      "sha256": "bb207edbbd51c6b42925193427739aea1c7b36c9a7dcfa5521058ad70ef97214"
+    },
+    {
+      "bytes": 4016,
+      "path": "content/manuals/extensions/extensions-sdk/design/design-guidelines.md",
+      "sha256": "a1940850865ed0a89343d95ac4f913d2529e055da0f2cdfcbe04d45bf9522074"
+    },
+    {
+      "bytes": 2538,
+      "path": "content/manuals/extensions/marketplace.md",
+      "sha256": "937d13906423f4716c6f43eeff0d6e38fd0f472f565098fec031524d20cbc8da"
+    },
+    {
+      "bytes": 4636,
+      "path": "content/manuals/offload/about.md",
+      "sha256": "ea87db0f1357f87643afebc08aa7fde16fd0efd765aa510092229e278bce5c10"
+    },
+    {
+      "bytes": 1261,
+      "path": "content/manuals/offload/configuration.md",
+      "sha256": "1ac0ce6bf598e03c67cf76bb6217822e7f3821fb7c57ba8bbc436412f91e68f9"
+    },
+    {
+      "bytes": 3122,
+      "path": "content/manuals/offload/optimize.md",
+      "sha256": "cd084c387e5bb0312b36c6d666b3c438aef26f3d6cab2659a23cadbc6e463593"
+    },
+    {
+      "bytes": 4752,
+      "path": "content/manuals/offload/quickstart.md",
+      "sha256": "1b595d4fe9732b87d9d37a39f04cf5862f55d3d2b6485dfc4db3e53e1ad4e690"
+    },
+    {
+      "bytes": 2687,
+      "path": "content/manuals/offload/usage.md",
+      "sha256": "fab3e3f4fdad8b996525073357a6e37d074330d4d931931b7539c5fb88fb7e11"
+    }
+  ],
+  "final_admitted": 13,
+  "first_ingress": {
+    "admitted": 11,
+    "retained_artifact": "artifacts/embedded-link-refinement-34-36/s41-v1/prepare-output",
+    "technical_corrections": 2
+  },
+  "new_provider_calls": 0,
+  "prior_exposure": "All are treated as potentially exposed development cases, no fresh/unexposed outcome claim.",
+  "real_magnetic_calculations": 0,
+  "scope": "Agent read complete frozen source files, including all listed procedural/code/list content; no live site or external dependency execution."
+}

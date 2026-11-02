@@ -1,0 +1,65 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Technical documentation supports software configuration, operation and
+troubleshooting for human operators and agentic systems. Hyperlinks connect
+material across pages, representing a documentation corpus as a directed graph
+with pages as vertices and links as directed edges.
+
+This work investigates normalized magnetic spectra as candidate measurements of
+directed link structure. Its objective is to determine which changes in link
+organization the profile distinguishes, under which graph conditions it is
+informative, and how it describes a documentation refinement whose retrieval
+behavior is observed separately.
+
+This investigation extends a prior study of a human-in-the-loop runbook
+assistant using retrieval-augmented generation (RAG) and incident
+review~\cite{dantonio2025runbook}. That study observed that retrieving relevant material
+could still leave a human operator or agent without a route to sufficient context,
+even when that context existed in the documentation corpus. While the study did not
+isolate documentation navigation as an experimental factor, these observations
+provide anecdotal motivation for examining documentation structure.
+
+Procedural documentation makes this concern concrete. A troubleshooting page may
+require configuration details, prerequisites or explanatory context from other
+pages to answer an operational question. The motivating hypothesis is that authors
+intend directional routes through this material, although a reader entering from
+search may start partway through such a route. A table of contents can join
+otherwise separate pages into one weakly connected graph without providing an
+outgoing path from a particular landing page to the support it needs. Undirected
+connectivity can therefore suggest navigability without establishing task-relevant
+directed access.
+
+% Author-approved detailed exposition; placement updated October 26 by author request.
+The magnetic Laplacian encodes link orientation through complex phases. Euler's formula, $e^{i\theta}=\cos\theta+i\sin\theta$, represents these phases as rotations in the complex plane. Combining symmetric edge weights with conjugate phase factors for opposite orientations produces a Hermitian operator---a matrix equal to its conjugate transpose. Although its eigenvectors can contain complex-valued components, its eigenvalues are real and can be ordered, providing a spectral description of the corpus's directed linking structure.
+
+This work uses the symmetric normalized magnetic Laplacian, which scales edge interactions by the inverse square roots of their endpoints' weighted degrees. This accounts for degree differences and places the eigenvalues on a common bounded scale, $[0,2]$, supporting comparisons across documentation corpora. Meaningful comparison requires consistent graph construction, phase parameters, graph views, and treatment of isolated pages, and normalization does not remove every influence of graph size or topology. These values are inspected to compare structural characteristics without interpreting them as a ranking of documentation quality. The operator and its spectral properties follow the established formulation described in MagNet, \S2~\cite{magnet2021}.
+
+An additional contribution is RetrievalArena~\cite{retrievalarena}, a reusable
+framework for documentation import, link extraction, provenance and configurable
+experiments with containerized retrieval providers. It measures ranked retrieval
+against explicit support judgments and retains configurations, outputs and
+execution records for replay. Corpus/evaluation policies remain separate.
+This study adds normalized magnetic-spectrum and structural-attribution operators.
+
+The main contributions are summarized as follows:\nopagebreak[4]
+\begin{itemize}
+\item A reproducible measurement protocol with explicit graph views and numerical
+checks.
+\item Empirical characterization across fourteen snapshots and controlled
+orientations: spectral blind spots and selected cycle-reversal distinctions
+beyond preserved undirected structure and directed summaries.
+\item A Docker documentation refinement application linking structural
+observations to bounded retrieval and answer evidence.
+\item A public artifact release comprising RetrievalArena~\cite{retrievalarena}
+for reusable experiments, DockerDocsSet2026~\cite{dockerdocsset2026} for
+documentation variants and question sets, and DocSpectraICSC2027~\cite{docspectraicsc2027}
+for study reproduction.
+\end{itemize}
+
+The remainder of this paper is organized as follows.
+Section~\ref{sec:related-work} reviews related work;
+Section~\ref{sec:design} defines the measurement protocol;
+Sections~\ref{sec:validation} and~\ref{sec:corpus} report validation and corpus
+characterization. Section~\ref{sec:application} presents the Docker application,
+followed by discussion and future work. The appendix summarizes evaluation checks.

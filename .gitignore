@@ -1,0 +1,7 @@
+/artifacts/
+/git/RetrievalArena/
+/git/paper/build/
+/SAVED-INPUTS.sha256
+/.tmp/
+__pycache__/
+*.pyc

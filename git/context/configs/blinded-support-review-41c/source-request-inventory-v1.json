@@ -1,0 +1,483 @@
+[
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-01",
+    "packet_sha256": "4a0a3cde09ebd6cd50f4f9fdf27fc0fc346d19f7e42d005d673f610ae92680b7",
+    "pages": [
+      {
+        "doc_id": "content_guides_dotnet_run_tests__df5b8b95",
+        "passage_id": "full-page:b5eb4aba1ff246a1e33d8685b120eadea06adf95582fe4c09845ecd9f0e1afce",
+        "raw_span": [
+          0,
+          5002
+        ],
+        "role": "source",
+        "sha256": "131a5207982da2181e091b7e8af06a15471e737d6cdb615c7706a24544844759"
+      },
+      {
+        "doc_id": "content_guides_dotnet_configure_ci_cd__9ad09014",
+        "passage_id": "full-page:01f58fa19683a7750b8ea1447c77a5e38bf2454db46148cddfea2d919772968c",
+        "raw_span": [
+          0,
+          5024
+        ],
+        "role": "target",
+        "sha256": "2edb14553086f2dbec1dac9a86a51a35eac2d6d145ca1a8a515e3213f9369287"
+      }
+    ],
+    "proposal_id": "proposal:bba4f1f3167d8310de273c5b7f07f16ee306836f7b846d9df7cf38b5beb24da4",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/dotnet/run-tests.md",
+    "source_sentence": "Next, you’ll learn how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      4965,
+      5000
+    ],
+    "target_path": "content/guides/dotnet/configure-ci-cd.md",
+    "tie_id": "3624709bf6ba4be594c1d7a24b2ef07266991d86187c174c48218acaf2b6c34c"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-02",
+    "packet_sha256": "6b3700f8413086c4ca8a2f91cbacaccc7f1e31d1375c8000d9d9d4b9cda7ed7e",
+    "pages": [
+      {
+        "doc_id": "content_guides_deno_develop__bd8d1835",
+        "passage_id": "full-page:8d6478ffe1b45fd3d2c36b754007c2580d98b26228124fbc3c74833cb9b9a719",
+        "raw_span": [
+          0,
+          2515
+        ],
+        "role": "source",
+        "sha256": "56e82d36ab2a5841fc81b5fc63c2c10b9cb028fe57f0655ae01c05870bad0c21"
+      },
+      {
+        "doc_id": "content_guides_deno_configure_ci_cd__6901b8f0",
+        "passage_id": "full-page:260ed25b3dbd3e9d034d6a5328ed53f33f5cb91e4d53784f5c8b5d5b4a2ab768",
+        "raw_span": [
+          0,
+          4650
+        ],
+        "role": "target",
+        "sha256": "52641751311c96a40855e56110c4484a6069d53d6941460d7a576fff91a87581"
+      }
+    ],
+    "proposal_id": "proposal:4538f0fc83302caaf14c3597ac29dc031a91782c30f76d109c12682be528871b",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/deno/develop.md",
+    "source_sentence": "In the next section, you'll take a look at how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      2478,
+      2513
+    ],
+    "target_path": "content/guides/deno/configure-ci-cd.md",
+    "tie_id": "99bff3d3f93efd31026a473288fc961f82c37049723ddd30890bcc6e0ada5c78"
+  },
+  {
+    "anchor": "run unit tests in Docker",
+    "audit_id": "41-03",
+    "packet_sha256": "7eae89150bb7f3c48d5319b6d76fe8be14dab2e9e280f420a9e5ef44b8a868d9",
+    "pages": [
+      {
+        "doc_id": "content_guides_java_develop__b872b1f0",
+        "passage_id": "full-page:45e062bd016bc626c1c393d0263a8b276c067b147976a4de5a08e080f3d7fb91",
+        "raw_span": [
+          0,
+          13623
+        ],
+        "role": "source",
+        "sha256": "1b6ed7176792948fa8871c42bf5ddca8dd7ba236bef8fda23ab9fb6a20edf0d0"
+      },
+      {
+        "doc_id": "content_guides_java_run_tests__e79ed2ef",
+        "passage_id": "full-page:a20b0ba5dbe908886637ce43f3df1cf7ee995cd58e551e0bd62dcb3fd10b3598",
+        "raw_span": [
+          0,
+          4779
+        ],
+        "role": "target",
+        "sha256": "424c81db9bcaa7e506b46bc4e12b9f87c30a649500517b10b1ec98e24b313ae6"
+      }
+    ],
+    "proposal_id": "proposal:c9c3d7719e680464ecee28a9f5520f5c1e78f8c4827ad897f2cee210b792d319",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/java/develop.md",
+    "source_sentence": "In the next section, you’ll take a look at how to run unit tests in Docker.",
+    "source_span": [
+      13597,
+      13621
+    ],
+    "target_path": "content/guides/java/run-tests.md",
+    "tie_id": "335a2b9233c87d4488ec519a329bd91efe523ce66bcf6c295dee72f97863715a"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-04",
+    "packet_sha256": "81328999e5d07a4a1203034772a7cd223a7209fd803d40e3e949685fd25149a2",
+    "pages": [
+      {
+        "doc_id": "content_guides_bun_develop__7d231d40",
+        "passage_id": "full-page:397cd12bdc7766b343526f61b7f46aa8641336cf652089ef7c68b038eaa577cd",
+        "raw_span": [
+          0,
+          2507
+        ],
+        "role": "source",
+        "sha256": "61fccc388fbdd67cdd4cdf0e77868ac345ab679e34f2c81d1a548f4273fe9dd6"
+      },
+      {
+        "doc_id": "content_guides_bun_configure_ci_cd__df823a5d",
+        "passage_id": "full-page:94484a5578bccf09681662e073284c718ff6fe902bf9b51da51615c934c53fd6",
+        "raw_span": [
+          0,
+          4664
+        ],
+        "role": "target",
+        "sha256": "cca71dd8cd4295f7ae3e25a0e7735bf6febe567326e4f175ec68258b5795489c"
+      }
+    ],
+    "proposal_id": "proposal:0c98579541f69de592287036417c8c96ccf55aab274cb96f4fdea8b9f86021fe",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/bun/develop.md",
+    "source_sentence": "In the next section, you'll take a look at how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      2470,
+      2505
+    ],
+    "target_path": "content/guides/bun/configure-ci-cd.md",
+    "tie_id": "6f8072d3c750e61cff971fc8ab2d3c5f063463aa342077c3a13025c5ae0534ac"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-05",
+    "packet_sha256": "445a99e72e8bbcf756ef59afdc3e3f18e48a54251292abea25e8241fd7f71c8f",
+    "pages": [
+      {
+        "doc_id": "content_guides_nextjs_run_tests__c2119b59",
+        "passage_id": "full-page:729bf0e9948112670b6539d4a768aea899d31c7f330a6fd5dfb0987e375ad583",
+        "raw_span": [
+          0,
+          9523
+        ],
+        "role": "source",
+        "sha256": "602eba60f865b1219662432493b60bb3229480935dda83130c8d23806586a9a6"
+      },
+      {
+        "doc_id": "content_guides_nextjs_configure_github_actions__84c7bac3",
+        "passage_id": "full-page:b1b1fa4b0081eeb1cc78286d98909b4fa90e84e960fc7825b335cd85a63c0b87",
+        "raw_span": [
+          0,
+          13078
+        ],
+        "role": "target",
+        "sha256": "960ac42f33914833fc2edef48f006ffa98206e090922d3679baf3555cb9e4587"
+      }
+    ],
+    "proposal_id": "proposal:a98b9087bea48758208bae311396d3b463078e51907a517f9e59f62850509817",
+    "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+    "source_path": "content/guides/nextjs/run-tests.md",
+    "source_sentence": "Next, you'll learn how to set up a CI/CD pipeline using GitHub Actions to automatically build and test your Next.js application in a containerized environment.",
+    "source_span": [
+      9257,
+      9292
+    ],
+    "target_path": "content/guides/nextjs/configure-github-actions.md",
+    "tie_id": "f4f1df8ea6c919358e89e4db7883a6b17400cce7ab3fd89290b973c5e53a5f77"
+  },
+  {
+    "anchor": "run unit tests using Docker",
+    "audit_id": "41-06",
+    "packet_sha256": "310d41ea19dbf29231cdbdc4e7ca3bd4b8fba17ee89c63d164313548a2691cda",
+    "pages": [
+      {
+        "doc_id": "content_guides_dotnet_develop__b9588047",
+        "passage_id": "full-page:ae8a1e4c35affe57548c594bb2b9c1f2e71dfa37550ffef5707fabcfbc483946",
+        "raw_span": [
+          0,
+          13491
+        ],
+        "role": "source",
+        "sha256": "0ba48d975957584c937a4dc7aa8e190311b7186cf48183a476b5cb31852f234e"
+      },
+      {
+        "doc_id": "content_guides_dotnet_run_tests__df5b8b95",
+        "passage_id": "full-page:e9428b0bbc9be95070d40ffe457a7065f928d67d9bc4feac78a543784031d385",
+        "raw_span": [
+          0,
+          5002
+        ],
+        "role": "target",
+        "sha256": "131a5207982da2181e091b7e8af06a15471e737d6cdb615c7706a24544844759"
+      }
+    ],
+    "proposal_id": "proposal:6f735c0c1c5a0e489fb9682b34cccb315c9d65bc4b78bc63d2240655871177fd",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/dotnet/develop.md",
+    "source_sentence": "In the next section, you'll learn how to run unit tests using Docker.",
+    "source_span": [
+      13462,
+      13489
+    ],
+    "target_path": "content/guides/dotnet/run-tests.md",
+    "tie_id": "086b73427105a8858de91c5d70e23ed95fbf2771b482e748eb1c529e6c1ac770"
+  },
+  {
+    "anchor": "CI/CD pipeline",
+    "audit_id": "41-07",
+    "packet_sha256": "491ac39d46cd01ce986f3cccc7798dcdcb81a58cc0b749e8a3c5680e35308abc",
+    "pages": [
+      {
+        "doc_id": "content_guides_java_run_tests__e79ed2ef",
+        "passage_id": "full-page:8a2ecf309a71c0dc00a42ae0f0bf7d500eedd7c50467ebdfa4bbf8ab7c5b82b3",
+        "raw_span": [
+          0,
+          4779
+        ],
+        "role": "source",
+        "sha256": "424c81db9bcaa7e506b46bc4e12b9f87c30a649500517b10b1ec98e24b313ae6"
+      },
+      {
+        "doc_id": "content_guides_java_configure_ci_cd__9e825d49",
+        "passage_id": "full-page:93039c58874082eaa18dd15c16e6e01aa37d817bb74e4f177cff594bc761f30a",
+        "raw_span": [
+          0,
+          5147
+        ],
+        "role": "target",
+        "sha256": "24132f6b24e0b122668f654a4b4ba8d10c4526bd734bd5ad74502f344828dadf"
+      }
+    ],
+    "proposal_id": "proposal:1342c0fcdf918a126a459d332b42061499be720e674f18e0544cdbaf292acb34",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/java/run-tests.md",
+    "source_sentence": "In the next section, you’ll take a look at how to set up a CI/CD pipeline using\n",
+    "source_span": [
+      4742,
+      4756
+    ],
+    "target_path": "content/guides/java/configure-ci-cd.md",
+    "tie_id": "96c1417753f883d2ed81a72dd8582844c4903801c2680203a5b5403f58a2a629"
+  },
+  {
+    "anchor": "run unit tests using Docker",
+    "audit_id": "41-08",
+    "packet_sha256": "b0e1f02a4615951b354ad31792362d7c062b98a84aa39a7a6b0b959eaa734b6a",
+    "pages": [
+      {
+        "doc_id": "content_guides_php_develop__08e2c054",
+        "passage_id": "full-page:623cdb43523b7cca1c42e52ae83bf1642899ddde5c9739b809c9e5ea75aac4a6",
+        "raw_span": [
+          0,
+          14245
+        ],
+        "role": "source",
+        "sha256": "dac4a9404f33648859a638e2cadecf7a85813df9a1da9a54f5110d36a90f31e2"
+      },
+      {
+        "doc_id": "content_guides_php_run_tests__2259e5a9",
+        "passage_id": "full-page:d87733f954498fb77894174890741648ec83f847501792d8e8b44a1df8909cea",
+        "raw_span": [
+          0,
+          3821
+        ],
+        "role": "target",
+        "sha256": "f1f46b65f8427b504350520f58da5ca46cd21575cb3706983033ada4be7d4e6e"
+      }
+    ],
+    "proposal_id": "proposal:74f8585d46837fb894f8f5ce95624c313e670f77c1650a9f8e03289c2bf4d95e",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/php/develop.md",
+    "source_sentence": "In the next section, you'll learn how to run unit tests using Docker.",
+    "source_span": [
+      14216,
+      14243
+    ],
+    "target_path": "content/guides/php/run-tests.md",
+    "tie_id": "b89f61f49f816c7c9922a9f6d542e752f8960b570682f88d992120288c249719"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-09",
+    "packet_sha256": "95339db1d75911a450b80905cb7ffe65691b95013a195daff6c8354c2a9e63b3",
+    "pages": [
+      {
+        "doc_id": "content_guides_php_run_tests__2259e5a9",
+        "passage_id": "full-page:5e7db15ee7eecf10552556bde72feb9c590003826b5e47117410b67aed8d7742",
+        "raw_span": [
+          0,
+          3821
+        ],
+        "role": "source",
+        "sha256": "f1f46b65f8427b504350520f58da5ca46cd21575cb3706983033ada4be7d4e6e"
+      },
+      {
+        "doc_id": "content_guides_php_configure_ci_cd__d8e10536",
+        "passage_id": "full-page:1171c446ae81585556aef13c574505f0d7f38340a30e1d39231ff6b466675c76",
+        "raw_span": [
+          0,
+          5013
+        ],
+        "role": "target",
+        "sha256": "8e0218f2b4ae75d662d2f613a2d1174ea079f635ba45b7fc4825f58a2024d762"
+      }
+    ],
+    "proposal_id": "proposal:5d7186cf4db39dfffc070c23901ebf3ebef9e3a971e73a29e5ba4491d5f1ba15",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/php/run-tests.md",
+    "source_sentence": "Next, you’ll learn how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      3784,
+      3819
+    ],
+    "target_path": "content/guides/php/configure-ci-cd.md",
+    "tie_id": "7cca17923a0d5436e92c68c8b3ec066826dfa5031caa413ff599fddd1961b4cd"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-11",
+    "packet_sha256": "de232d1f6317f34bc61f210ad71f598e9492d15c18fc856764d62952504573b4",
+    "pages": [
+      {
+        "doc_id": "content_guides_golang_run_tests__ec5a3bf0",
+        "passage_id": "full-page:3891ef175eedbbd8307546b108a81c051ba9a49431ac40962ad5a4abff8340d9",
+        "raw_span": [
+          0,
+          2999
+        ],
+        "role": "source",
+        "sha256": "7c1d0811e2c06224a1c7c476b636b5ac83af659aa8883f18a32753ebd49eba88"
+      },
+      {
+        "doc_id": "content_guides_golang_configure_ci_cd__e1163fe4",
+        "passage_id": "full-page:cc538932e01457138d58f98e963c1d342412e00c52fecd3e144b1befdc58c1f4",
+        "raw_span": [
+          0,
+          4649
+        ],
+        "role": "target",
+        "sha256": "d8ce2aab154a9edd607510773b6a3a8fd3e314c000643dbcae2623ff11c7afce"
+      }
+    ],
+    "proposal_id": "proposal:5d62bb52e5ccbaa206a5aabf933af6796eef5e9d885a9e624588be43f7c6f2de",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/golang/run-tests.md",
+    "source_sentence": "you’ll learn how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      2962,
+      2997
+    ],
+    "target_path": "content/guides/golang/configure-ci-cd.md",
+    "tie_id": "71b4e023a3a714003317a90356c16729c3553f8d431bf047fac70db992897839"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-12",
+    "packet_sha256": "1c90739f373ed4a74ee96fcecfd559b4f9a7150d4c6c4a188401581f4ea22967",
+    "pages": [
+      {
+        "doc_id": "content_guides_cpp_develop__8c0cb6f9",
+        "passage_id": "full-page:f9699f365e179e0150b38332cdb81ca8ea900ad5d0ba2bcc1440e68aabdbc392",
+        "raw_span": [
+          0,
+          2579
+        ],
+        "role": "source",
+        "sha256": "46f899590b8cc1099778a60d4a20b428dcefb79afa8044e99b7e8a8667dd78fc"
+      },
+      {
+        "doc_id": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "passage_id": "full-page:204a8a68d4142ad5bb55d0fb45f62d3f6259e44822a91198aeff3559ba358549",
+        "raw_span": [
+          0,
+          4709
+        ],
+        "role": "target",
+        "sha256": "ffc2242cc40c8e1a4a02b55a98d8f85b28ab6ea53d08662b326b48c38f7fa276"
+      }
+    ],
+    "proposal_id": "proposal:d888a3dc53b9d5c192f58d7a6109e910e30a75dee72f7f1ff643122545fb8dc1",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/cpp/develop.md",
+    "source_sentence": "In the next section, you'll take a look at how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      2542,
+      2577
+    ],
+    "target_path": "content/guides/cpp/configure-ci-cd.md",
+    "tie_id": "35edaee848764602449451c07972465ee6889dbb830c333a6cd2bd50d9a62d6b"
+  },
+  {
+    "anchor": "CI/CD pipeline using GitHub Actions",
+    "audit_id": "41-13",
+    "packet_sha256": "5ad4c1ae9396101ac3ea537e4c02d7432654c4533bcc66828f5e7cb20a41396b",
+    "pages": [
+      {
+        "doc_id": "content_guides_r_develop__9e8f6fa5",
+        "passage_id": "full-page:a0ee223500b184b62ea950c8f21670fc5cdfc7c25564e9ff280e027f73254229",
+        "raw_span": [
+          0,
+          6038
+        ],
+        "role": "source",
+        "sha256": "77d6b20c41c5ee8f08812b390752350e15b32fdcdfc0a46eff5546941ab75181"
+      },
+      {
+        "doc_id": "content_guides_r_configure_ci_cd__ea2482b3",
+        "passage_id": "full-page:a591ff1aea868049449b2f46cacb50edc842a4f969872c4635e5c483c7d314f3",
+        "raw_span": [
+          0,
+          4672
+        ],
+        "role": "target",
+        "sha256": "b22167e0efcfc39d244edf23dad7db8da20ee9f314ab2bd913163ee3e3bffa63"
+      }
+    ],
+    "proposal_id": "proposal:da38bd3e9c83127b888e13602e46a4723916a103f48ed84fb174169f803171c0",
+    "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+    "source_path": "content/guides/r/develop.md",
+    "source_sentence": "In the next section, you'll take a look at how to set up a CI/CD pipeline using GitHub Actions.",
+    "source_span": [
+      6001,
+      6036
+    ],
+    "target_path": "content/guides/r/configure-ci-cd.md",
+    "tie_id": "82334d056cac30cf129e5d5e8ddf4c71a5d0931390b6ea95404b4f42deb2de1f"
+  },
+  {
+    "anchor": "Extensions Marketplace within Docker Desktop",
+    "audit_id": "41-21",
+    "packet_sha256": "0eb992335a92a1e8e342485930afba6bf70df9c55bc272dec708e7a675e17b51",
+    "pages": [
+      {
+        "doc_id": "content_manuals_extensions_index__0272c25f",
+        "passage_id": "full-page:4e7b352c7f9e1c079a96cf9682282555fd35bd572fcfeb3d3f8e305e72e317aa",
+        "raw_span": [
+          0,
+          1656
+        ],
+        "role": "source",
+        "sha256": "bb207edbbd51c6b42925193427739aea1c7b36c9a7dcfa5521058ad70ef97214"
+      },
+      {
+        "doc_id": "content_manuals_extensions_marketplace__bb372e8f",
+        "passage_id": "full-page:47597990f2484ac7eb01e1412c58a4b43505a8e36543bc311a2949c97093df35",
+        "raw_span": [
+          0,
+          2538
+        ],
+        "role": "target",
+        "sha256": "937d13906423f4716c6f43eeff0d6e38fd0f472f565098fec031524d20cbc8da"
+      }
+    ],
+    "proposal_id": "proposal:ddb283a2701f21852a0cab7191758fc79423d02226fd53a1f554c1d1f7274497",
+    "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+    "source_path": "content/manuals/extensions/_index.md",
+    "source_sentence": "You can explore the list of available extensions in [Docker Hub](https://hub.docker.com/search?q=&type=extension) or in the Extensions Marketplace within Docker Desktop.",
+    "source_span": [
+      999,
+      1043
+    ],
+    "target_path": "content/manuals/extensions/marketplace.md",
+    "tie_id": "3b12da5e364c72969bc1660ea1e55c9fe337701c4af5da9cd7c4388e9686c1f5"
+  }
+]

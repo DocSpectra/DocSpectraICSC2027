@@ -1,0 +1,99 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "assessment": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "contradiction": {
+      "type": "boolean"
+    },
+    "placement": {
+      "maximum": 2,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "relation": {
+      "enum": [
+        "source_requires_target",
+        "source_continues_to_target",
+        "target_elaborates_source",
+        "target_exemplifies_source",
+        "target_diagnoses_source",
+        "related_context",
+        "insufficient_evidence"
+      ]
+    },
+    "relationship_support": {
+      "maximum": 2,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "source_evidence": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "passage_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "quote": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "passage_id",
+          "quote"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 1,
+      "type": "array"
+    },
+    "target_evidence": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "passage_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "quote": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "passage_id",
+          "quote"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 1,
+      "type": "array"
+    },
+    "target_support": {
+      "maximum": 2,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "uncertainty": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "relation",
+    "relationship_support",
+    "target_support",
+    "placement",
+    "uncertainty",
+    "contradiction",
+    "source_evidence",
+    "target_evidence",
+    "assessment"
+  ],
+  "type": "object"
+}

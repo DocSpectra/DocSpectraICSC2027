@@ -1,0 +1,18 @@
+[
+  {
+    "anchor": "validation rules",
+    "expected_pass": true,
+    "key": "positive",
+    "sentence": "Next, learn validation rules.",
+    "source": "Next, learn validation rules.\n",
+    "target": "Validation rules: run validation before publishing.\n"
+  },
+  {
+    "anchor": "validation rules",
+    "expected_pass": false,
+    "key": "negative",
+    "sentence": "Next, learn validation rules.",
+    "source": "Next, learn validation rules.\n",
+    "target": "Release notes list unrelated past announcements.\n"
+  }
+]

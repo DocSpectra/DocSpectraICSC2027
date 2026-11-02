@@ -1,0 +1,52 @@
+\section{Related Work}
+\label{sec:related-work}
+\textit{From undirected connectivity to directional structure.}
+A prior study characterized documentation connectivity and fragmentation
+with undirected spectra~\cite{11476418}. The present study adds magnetic phases
+that distinguish some link orientations at identical weighted undirected structure.
+
+\textit{Magnetic structure and hierarchy.}
+Magnetic Eigenmaps connect the lowest normalized magnetic mode to a relaxation
+of angular synchronization~\cite{fanuel2018}. MagNet uses a Hermitian magnetic
+operator for directed graph learning and establishes its normalized spectral
+bounds~\cite{magnet2021}. Both precede the present application, including the use
+of directed webpage networks. The present contribution concerns measurement and
+interpretation in documentation. Gong et al. distinguish periodic organization
+associated with magnetic frustration from linear organization associated with
+trophic incoherence~\cite{gong2021}. Generalized trophic levels apply without
+requiring basal nodes~\cite{mackay2020}; their incoherence serves as a comparator,
+not a reference label for documentation hierarchy.
+
+\textit{Documentation and evidence access.}
+TechQA grounds technical-support questions in documents~\cite{techqa2020}.
+FreshStack builds technical-document retrieval benchmarks from community
+questions, pooling retrieval candidates and assessing support at the nugget
+level~\cite{freshstack2025}. These settings motivate evaluating information access
+against an explicit question and support policy. The corpus panel characterizes
+link graphs; the Docker application separately evaluates access and answers.
+Procedural-text models track entity states and reason about dependencies between
+entities and events~\cite{tang2020ien,zhang2023crepe}. These semantic relations
+differ from the authored hyperlinks measured here: a link can provide access to
+supporting material without establishing the procedural dependency itself.
+
+RAPTOR constructs summary trees for retrieval~\cite{raptor2024}, while HippoRAG
+uses extracted knowledge graphs~\cite{hipporag2024}. The present study measures authored
+hyperlinks between documentation pages.
+
+\textit{Evaluation infrastructure.}
+RerankArena supports retrieval, reranking and RAG comparisons with human and LLM
+feedback~\cite{abdallah2025rerankarena}. RetrievalArena's role in this study is to
+connect documentation snapshots, transformations and evaluation records with
+graph measurement and provenance.
+
+\textit{Judgments and changed collections.}
+Pooling supports retrieval evaluation but can favor the systems that supply its
+candidates~\cite{poolbias2007}. LLM assessors can approximate human preferences
+or system rankings~\cite{thomas2024,umbrela2025}, yet those results do not remove
+item-level error, circularity or susceptibility to evaluation
+gaming~\cite{faggioli2023,clarke2025}. Transferred judgments can introduce
+noise~\cite{frobe2022,wowseval2025}; LongEval evaluates changing collections with
+snapshot-specific judgments~\cite{longeval2023}. These findings motivate
+direct judgments of edited pages with content-provenance credit retained as a
+sensitivity analysis. Retrieval support, answer
+correctness and citation quality remain distinct, as in RAGAs and ALCE~\cite{ragas2024,alce2023}.

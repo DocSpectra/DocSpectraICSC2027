@@ -1,0 +1,135 @@
+{
+ "attribution_config": {
+  "report_modes": 3
+ },
+ "calls": {
+  "model": 0,
+  "outbound": 0,
+  "retrieval": 0
+ },
+ "cluster_rule": "ground cluster = every eigenvalue within cluster_absolute of lambda1 in the full dense spectrum; its boundary is qualified when the cluster is the whole space or the next gap exceeds max(cluster_absolute, resolution_factor * cluster residual)",
+ "context_source_sha256": {
+  "magnetic_attribution_23b.py": "8601f8f07da91489bab3095acf8ab607cc21244a002683155eeec2b6fd0f818b",
+  "magnetic_attribution_23b_report.py": "bfa94a2243713ab30293108a0e707e8259d191f749f60465a073c86c4a388b12"
+ },
+ "created": "2026-10-31",
+ "energy_rule": "f = U / sqrt(d) (zero on isolates); energy({i,j}) = W_ij sum_r |f_ir - exp(i theta_ij) f_jr|^2 / k over unordered edges i < j in view order, theta_ij = 2 pi q (A_ij - A_ji) (the magnetic_spectrum phase convention); mass_i = sum_r |U_ir|^2 / k; energies sum to the cluster mean eigenvalue",
+ "focused_log_sha256": "eb3a879de6bcf92619388fe39eadb5cc907f795feffeca486a924e1d4dd539fc",
+ "image": {
+  "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+  "image": {
+   "reference": "sha256:1535e4af8b2514e64e2acccdfac96426f63bb7093c4ea2c145af59b20a78f4d6",
+   "tag": "retrieval-arena/verification:icsc23b-v1"
+  },
+  "platform": "linux/amd64",
+  "receipt_sha256": "b6cc3a570f866ee49e56816826e9c9600a79ba235b4d92a9518c92d3545d4a8a",
+  "schema_version": "retrieval_arena.verification_image_receipt.v2",
+  "source_commit": "38c8ed55c645a3a67761969c566d625d626634a3",
+  "source_tree": "9cc25e499042d510293af2ccaa7b41ba8bbe9d4b"
+ },
+ "image_receipt_sha256": "aae4a1cc58e466716e14ac6e00789772e5a2b196d5904c961a408b7941f69f61",
+ "preserved_sha256": {
+  "artifacts/orientation-spectra-2026-10-06/analysis/analysis.json": "54c659dbebfa636c08b361cef7776b7fe958d5948f72359ae3cbaa66ef8db851",
+  "artifacts/orientation-spectra-2026-10-06/exposure/exposure.json": "6176b445d37dac1caa769a99309817faab531c3b07b1279dc895f6feb1416321",
+  "artifacts/orientation-spectra-2026-10-06/measures/measures.json": "90592d0f8a2ffcd8833e836a03b35c58ea4f4fa2864e18383ba83573de8bf1d3",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__agopengps.json": "ee92d0695691bda78cc09c6221eaa683010eacfb1b395fb53a5168ba6a1cc5ee",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__ansible_docs.json": "c798d09bc3695446cbcb77bbeedaacb29456825c4d4273124525f6ee883844ea",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__argo_cd_docs.json": "b2ddb946b4557d7c97d863286e8f88027411cea2ff521291a1841995c06017b6",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__django_docs.json": "b36c53938613b2b522db2f698631e6e2b654b93b50291b90bf4f2682236a4b4e",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__docker_docs.json": "d902cf98d0b381089a61c3d1c019ae4135a67e1c1bcecd6181270d251aaa81a7",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__elasticsearch_docs.json": "0a6b275dc80e08cd179d72df6c5ccebe92bebca029e1a7e0601bb52589c593e7",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__express_docs.json": "478c9e5a9685e6fb4922b84a4b4c6e923fc70922990e24e944f0aad1fe481d92",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__github_docs.json": "6d4a33dcf4c00a9639abb8effd0fc24205b2e0bbbdf9e7e5ba0a82471ba4ee94",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__kubernetes_website_docs.json": "888a53eefd2fe7582ac42c09573051bc0704cece63d8239600baea4e5c0f1803",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__nextjs_docs.json": "b97c9c8592fa7aa04dd723eb36c4c3c984832b0fb0d3b322ff51796ec9cfcd8c",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__pytorch_docs.json": "c1e4210c8eb67c27374f55f2fb0bee0dc01c4e2a4be0872e710cfc5518b7282e",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__react_docs.json": "1fef86df267f7ba129c0e49f6746fa2252057744867e22c683eadc0ba34c2b3a",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__redis_docs.json": "7be180b2084f939b3298cdc9ef2c8e50726f2ebc4c9371eaab473733c59a394e",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__vscode_docs.json": "9e190acdbe435b296bcb59258d0e6b15a7df556f42edbe31764be549e18d2f07",
+  "artifacts\\normalized-magnetic-22-v1\\inputs\\graph-input-manifest.json": "ff0d6c5c33e1f6ba461784633d12c124f56a585e84ee89143304d893486dc781",
+  "git/RetrievalArena/retrieval_arena/graph/magnetic_phase.py": "d937edc46d75ac6094e5a8f21ddb0eb3156956adb73232b85aaced7d410a65fe",
+  "git/context/evidence/normalization-planning-audit-v1-2026-10-25.json": "1207410296135c8d1d63c6ab0c30a19e646db31d4063c3f36b71227afe61a3d8",
+  "git/context/evidence/orientation-spectra-analysis-plan-v1-2026-10-06.json": "0ceaa771a396773def6ecc07a27b7cadf9a85dab3ea22b3d35ad340df69d39ac",
+  "git/context/evidence/orientation-spectra-inputs-v1-2026-10-06.json": "1b5acb7dbe1cde9b11580e9b7b36e8823eabc8f62c35335218646b298ad3f72b",
+  "git/context/evidence/orientation-spectra-results-v1-2026-10-06.md": "0dc87503735f757649d7578092992cddaa48edccdaf04d942ed531aa356fad45",
+  "git/context/evidence/phase-flow-repair-v1-2026-10-06.json": "68d9275b1201f42f8799db9373bf2513bd55cf6e0f3fc12bfcd6cde94d44fc12",
+  "git/context/evidence/wc-refinement-run-v1-2026-10-18.json": "378eec3676a50b37ab0996701eff7af0b84a332d9515f0dc891bb8922db6f8fc",
+  "git/context/evidence/wc-spectra-18-v1-2026-10-19.json": "50cad12c121fac4ff7aa4e2057e1bddef47bebea05ae979df0f3519288e150bf",
+  "git/context/scripts/audit_normalization_22.py": "24fbc9d2ce083e5fc2b88d0be2f144fc7f3da22309b2506da8f40678999e108e",
+  "git/context/scripts/audit_phase_flow_v2.py": "55f78104a9a108ceafb91e3b51c15affd7ec7264f928116773bfcccebea6c272",
+  "git/context/scripts/orientation_spectra_09c.py": "477aa69d9c637991a3130954d1742193dff2e09bbd6bd5783593fb4ea66073cd",
+  "git/context/scripts/restructuring_runs.py": "c0f2bb29f5999c04c4775d2d46d96ea81c50aa09c3e93b1fb717131132d1acef",
+  "git/context/scripts/structure_forcing_12.py": "d2bc45f73b920fd31072929800277966671e5b00b4fb17612b07e7e1ecf54fe5",
+  "git/context/scripts/wc_refine_17.py": "b8c21f98ea4873db2932c05c6a2b93ee45a149e190477cdece15510d33600525",
+  "git/context/scripts/wc_refinement_15.py": "2ba348f4966249dd370398936f6b4e787ce91c0d5ef1db24312734853e5fb0e2",
+  "git/context/scripts/wc_spectra_18.py": "c645cc78c8679f28f26d411aecb3b3fa017cd3bd656e1070add88b7d4adb20fa",
+  "git\\RetrievalArena\\retrieval_arena\\graph\\magnetic_spectrum.py": "fb96f817feac88c47850b83555bfd44da8ecfbfe4fa4a566d9677edca546ad43",
+  "git\\context\\evidence\\magnetic-attribution-23-plan-v1-2026-10-25.json": "bbf0717cfea5f758167e513aec5ad1aa062acf3b44e3f8c9cc307a7310d67fa2",
+  "git\\context\\evidence\\magnetic-attribution-23-v1-2026-10-25.json": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df",
+  "git\\context\\evidence\\normalized-magnetic-22-plan-v1-2026-10-25.json": "8e744e32a8d5afa280fef3da45e4e7c54657b2ab368482b30e1ac15e7fa41f6e",
+  "git\\context\\evidence\\normalized-magnetic-22-v1-2026-10-25.json": "47bad4ea0a8132ef0e37b6a09a0627a2bdb5e139e35bf171f8097397b8431e3e",
+  "git\\context\\scripts\\magnetic_attribution_23.py": "ab8401ba608aa46adc58f86b5995f670593f4bcc9abaef797e346bed9590e86d",
+  "git\\context\\scripts\\normalized_magnetic_22.py": "d754475c0d6e6107087fe33b242143a72a062c87acb5a6c274dfcea4f127d930"
+ },
+ "primary_q": 0.25,
+ "q": [
+  0.0,
+  0.1,
+  0.25
+ ],
+ "qualification": {
+  "cycle_forest_isolate_fixtures_qualified": true,
+  "image_receipt_sha256": "aae4a1cc58e466716e14ac6e00789772e5a2b196d5904c961a408b7941f69f61",
+  "old_pair_controls_equal": true,
+  "old_pair_eigenvalue_max_abs_diff": 0.0,
+  "old_selection_replay": true,
+  "paired_q_blocks": 45,
+  "qualified_all": true,
+  "replay_anchor_seconds": 213.6
+ },
+ "ra_branch": "icsc2027/sprint-31c-ai-purpose",
+ "reporting": {
+  "adoption": "proposal only; no manuscript or release changes",
+  "aggregate": "eligible corpora equally weighted",
+  "all_fourteen": true,
+  "case_card": "first by length then selection hash; no effect selection",
+  "independence_unit": "corpus; no pooled significance tests",
+  "lambda2": "descriptive, with ordering/multiplicity caveat",
+  "quantiles": "linear interpolation (numpy default)"
+ },
+ "resolution_rule": "resolved iff |delta lambda1| > max(resolution_floor, resolution_factor * (r_A + r_B)), r = max over the ground cluster of ||L u - lambda u||_2 for unit u from the qualified dense solve",
+ "resources": {
+  "aggregate_production_seconds_max": 28800,
+  "blas_threads": 1,
+  "container_cpus": 2,
+  "container_memory_gib": 4,
+  "estimated_output_bytes": 207057736,
+  "estimated_seconds_with_4x_margin": 2762.204531088283,
+  "output_target_gib": 6,
+  "quota_reduced": false,
+  "storage_estimate_basis": "250 bytes per arc and 200 per node per distinct solve, plus two candidate ledgers; no dense eigenbases"
+ },
+ "schema_version": "icsc.magnetic_attribution_23b_plan.v1",
+ "selected_manifest_sha256": "538794486a8f9de1b4d0a436f297aa86a12702e1a6579ee2135820f52e604579",
+ "selection_policy": {
+  "budget": 250000,
+  "lengths": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "quota": 2,
+  "seed": 231031
+ },
+ "source_sha256": {
+  "retrieval_arena\\graph\\cycle_sampling.py": "eb1d2081e8d48ec0f36f8a2f6823692c72d11992c47fd666288e7b85b7213d9c",
+  "retrieval_arena\\graph\\magnetic_attribution.py": "225825137b3e5969b0f140ece7c8331e29f8a892df349dd43cd8e5f58164f46e",
+  "retrieval_arena\\graph\\magnetic_spectrum.py": "fb96f817feac88c47850b83555bfd44da8ecfbfe4fa4a566d9677edca546ad43"
+ },
+ "spectrum_config": {
+  "solver": "dense"
+ },
+ "status": "frozen before new intervention spectra",
+ "study": "exploratory convenience snapshots; known S22/S23 outcomes"
+}

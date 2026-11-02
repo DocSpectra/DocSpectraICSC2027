@@ -1,0 +1,23 @@
+[
+  {
+    "commit": "b695a952fd7bf1d2d050c3660392c3a64f1d2f72",
+    "git_blob": "f3b744c4ada8851ed46f0f23f8c7510169c6cef1",
+    "path": "git/context/evidence/magnetic-attribution-23b-plan-v1-2026-10-31.json",
+    "sha256": "31a4f45bc699f7bcaf2c4f485a696b7e17e40ba9cf145b622e77324269b7f4cc",
+    "unix_timestamp": 1793495208
+  },
+  {
+    "commit": "b695a952fd7bf1d2d050c3660392c3a64f1d2f72",
+    "git_blob": "62bd9693be9542e7d1bc565e2454e012a3731283",
+    "path": "git/context/evidence/magnetic-attribution-23b-selection-v1-2026-10-31.json",
+    "sha256": "538794486a8f9de1b4d0a436f297aa86a12702e1a6579ee2135820f52e604579",
+    "unix_timestamp": 1793495208
+  },
+  {
+    "commit": "81c1e883be4f2f97c6e29e9348d4ecefa5f6c503",
+    "git_blob": "889ec703f21e071a44c81501cd74f19bf26f1b39",
+    "path": "git/context/configs/blinded-support-review-41c/support-pool-v1.json",
+    "sha256": "2385fed0f4821245d97647df244e04ce158482bf0a5a63efe408dc9d82bd8589",
+    "unix_timestamp": 1793613722
+  }
+]
