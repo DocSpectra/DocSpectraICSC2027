@@ -25,7 +25,7 @@ git clone DocSpectraICSC2027-1.1.0.bundle study
 cd study
 git config core.longpaths true
 # Extract saved-inputs.zip here using an archive tool.
-git clone /path/to/RetrievalArena-icsc2027-submission-1.1.0.bundle git/RetrievalArena
+git -c core.autocrlf=false clone /path/to/RetrievalArena-icsc2027-submission-1.1.0.bundle git/RetrievalArena
 python tools/verify_submission.py manifest
 python tools/verify_submission.py saved
 python tools/verify_submission.py historical
@@ -36,9 +36,11 @@ python tools/verify_submission.py example --output /path/to/new-output
 analysis, trace audit, element comparison and normalized-profile preservation
 checks. `example` checks all source copies and anchored edit ledgers and reruns
 the changed candidate tier's finite numerical estimates. It creates a fresh
-output directory. Run the numerical commands in the recorded verification image
+output directory. Run the example's numerical replay in the recorded verification image
 with `--network none`, single-thread BLAS and the study mounted read-only; see
-[reproduction](docs/reproduction.md). They never invoke provider clients.
+[reproduction](docs/reproduction.md). Historical analysis uses the declared host
+requirements; the recorded image lacks its `jsonschema` dependency. These
+verification commands never invoke provider clients.
 
 [Results map](docs/results-map.md) connects every paper display/result family to
 evidence and commands. [Submission manifest](submission/manifest.json) records

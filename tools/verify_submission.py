@@ -36,19 +36,28 @@ def checked_path(name):
 
 def manifest():
     counts = {}
+    verified = {}
     for name in ('MANIFEST.sha256','SAVED-INPUTS.sha256'):
         rows = (ROOT/name).read_text(encoding='utf-8').splitlines()
         for row in rows:
             digest, path = row.split('  ', 1)
+            assert path not in verified, path
             assert sha(checked_path(path)) == digest, path
+            verified[path]=digest
         counts[name] = len(rows)
     sidecars = 0
     for p in (ROOT/'git/context/evidence').glob('*.sha256'):
-        text=p.read_text(encoding='ascii').strip().split()
-        assert sha(p.with_suffix('.json')) == text[0], p.name
-        sidecars += 1
+        for line in p.read_text(encoding='ascii').splitlines():
+            if not line.strip():continue
+            fields=line.split(None,1);digest=fields[0]
+            name=fields[1].lstrip('*').strip() if len(fields)>1 else p.with_suffix('.json').name
+            target=p.parent/name
+            if not target.is_file():target=checked_path(name)
+            assert target.resolve().is_relative_to(ROOT.resolve())
+            assert verified[target.relative_to(ROOT).as_posix()]==digest,p.name
+            sidecars += 1
     for row in read(ROOT/'submission/input-allowlist.json')['files']:
-        assert sha(checked_path(row['path'])) == row['sha256'], row['path']
+        assert verified[row['path']] == row['sha256'], row['path']
     print(json.dumps({'manifests':counts,'sidecars':sidecars,'passed':True}))
 
 
@@ -129,8 +138,11 @@ def portable_paths():
     prefix='C:/Users/rocke/Documents/ResearchProjects/DocSpectraICSC2027/'
     importer='C:/Users/rocke/Documents/ResearchProjects/DocSpectraCIKM2026/git/DocSpectraCIKM2026/docspectra_importer/'
     vendor=ROOT/'vendor/docspectra_importer'
+    current=str(ROOT).replace('\\','/').rstrip('/')+'/'
     def initialize(self,*parts):
         value='/'.join(os.fspath(p) for p in parts).replace('\\','/')
+        if value==current[:-1] or value.startswith(current):
+            return original(self,*parts)
         # Windows absolute paths remain absolute when interpreted on Linux.
         for old,base in ((prefix,ROOT),(importer,vendor)):
             at=value.find(old)

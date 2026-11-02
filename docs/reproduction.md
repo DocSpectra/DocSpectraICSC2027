@@ -5,6 +5,9 @@ checksums against the external release receipt before extraction. The source
 bundle preserves v1.0.0 history; no old release tag is moved. The separate RA
 bundle contains the exact release/verifying commit and its historical ancestors.
 The dataset v1.0.0 bundle and assets remain unchanged dependencies.
+On Windows clone RA with `git -c core.autocrlf=false clone ...` so byte-pinned
+historical modules retain their exact line endings. The study repository's own
+`.gitattributes` preserves all source bytes.
 
 ## Supported commands
 
@@ -48,6 +51,10 @@ source and lock using RA's documented image builder; downloading dependencies
 is separate from the offline verification. No hosted image availability is
 promised. The host route uses Python 3.12, NumPy, SciPy, jsonschema and RA's
 requirements; it is a convenience route, not the historical environment.
+The recorded verification image supports the example and the RA focused suite;
+it does not contain `jsonschema`, which the legacy whole-corpus answer analysis
+imports. Run `historical` under the declared Python host dependencies. The
+release receipt distinguishes these host replays from pinned-image checks.
 
 ## Paper displays and build
 

@@ -61,6 +61,34 @@ def pack_zip(path, files):
             assert hashlib.sha256(archive.read(name)).hexdigest() == sha(src), name
 
 
+def augment_saved_archive(previous, path, rows):
+    """Extend a verified saved-input ZIP in a new file, preserving its old bytes.
+
+    Every member is checked against the frozen file-list hash, rather than a
+    second reading of a potentially changing source workstation file.
+    """
+    by_path={r['path']:r for r in rows}
+    assert len(by_path)==len(rows)
+    done=set()
+    with zipfile.ZipFile(previous) as old, zipfile.ZipFile(path,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as new:
+        def member(name,raw):
+            assert name not in done
+            assert hashlib.sha256(raw).hexdigest()==by_path[name]['sha256'],name
+            info=zipfile.ZipInfo(name,(2026,11,2,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+            new.writestr(info,raw);done.add(name)
+        for name in old.namelist():
+            if name=='SAVED-INPUTS.sha256':continue
+            member(name,old.read(name))
+        for name in sorted(set(by_path)-done):member(name,safe_path(ROOT,by_path[name]['source']).read_bytes())
+        assert done==set(by_path)
+        manifest=''.join(f"{by_path[n]['sha256']}  {n}\n" for n in sorted(by_path)).encode()
+        new.writestr('SAVED-INPUTS.sha256',manifest)
+    with zipfile.ZipFile(path) as archive:
+        assert archive.testzip() is None
+        assert set(archive.namelist())==done|{'SAVED-INPUTS.sha256'}
+        for name,row in by_path.items():assert hashlib.sha256(archive.read(name)).hexdigest()==row['sha256'],name
+
+
 def build(allowlist, out):
     if out.exists():
         raise ValueError('output root must be new')
