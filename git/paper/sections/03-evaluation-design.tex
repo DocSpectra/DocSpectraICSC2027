@@ -1,0 +1,112 @@
+\section{Measurement and Evaluation Design}
+\label{sec:design}
+\subsection{Graph Construction and Views}
+Graph construction defines which pages and links enter each measurement.
+A node is a retained documentation page, and an arc is a resolved in-text link.
+Duplicate arcs and self-loops are excluded. The binary adjacency matrix $A$ has
+$A_{ij}=1$ when page $i$ links to page $j$. Graphs retain their frozen importer
+and page inventories, including isolates; graph identity includes both nodes and
+arcs. The corpus panel uses fourteen recovered non-FAQ snapshots.
+Its extraction surface excludes website
+navigation that the importer does not resolve. In Docker, for example, Hugo menus
+and include shortcodes are outside the Markdown-link graph.
+
+Measurements cover the full graph and its largest weakly connected component
+(LWCC), where pages connect when link direction is ignored. Strong connectivity requires
+directed paths in both directions. Ties in LWCC size are resolved by smallest node
+identifier. The measured component's node count is reported beside the full
+inventory, because selecting a component changes the object being described.
+Each refined graph and null uses its own LWCC. The area comparison first induces
+a graph on a common area node set and then selects that graph's LWCC; a common
+input set does not imply identical measured nodes.
+
+\subsection{Normalized Magnetic Profile}
+\label{sec:magnetic-profile}
+The magnetic profile retains link direction alongside structural comparators.
+Let $W$ encode undirected interaction strength and $d_i$ its weighted degree:
+\begin{equation}
+ W=\tfrac12(A+A^{\mathsf T}),\qquad d_i=\sum_j W_{ij}.
+\end{equation}
+A one-way pair has weight $1/2$ and a reciprocal pair weight $1$.
+Charge $q$ determines the rotation associated with orientation. With
+$\theta_{ij}=2\pi q(A_{ij}-A_{ji})$ and
+$H_{q,ij}=W_{ij}e^{i\theta_{ij}}$, define
+\begin{equation}
+ \mathcal L_q=\operatorname{diag}(\mathbf1_{d_i>0})-R H_q R,
+ \quad R_{ii}=\begin{cases}d_i^{-1/2},&d_i>0,\\0,&d_i=0.\end{cases}
+ \label{eq:operator}
+\end{equation}
+An isolate has a zero row and column, hence a zero eigenvalue. The diagonal is
+not an unconditional identity. Eigenvalues are ordered increasingly,
+$\lambda_1(q)\leq\lambda_2(q)\leq\cdots$; the profile retains the first magnetic
+mode, which can be positive. At $q=0$, Eq.~\ref{eq:operator} uses the same $W$ and
+becomes the weighted ordinary normalized Laplacian. On a connected view its
+second eigenvalue measures weighted undirected connectivity.
+
+The profile reports $\lambda_1$ and $\lambda_2$ at $q=.25$, with the grid
+$q\in\{0,.05,.10,.15,.20,.25\}$ for sensitivity. This setting is held fixed
+across comparisons. The structural comparators are matched $q=0$ connectivity, reciprocity,
+out-degree Gini, size, fragmentation and generalized trophic incoherence.
+The last quantity fits levels $h$ to unit increases along directed arcs:
+\begin{equation}
+ F_0=\min_h\frac{\sum_{ij}A_{ij}(h_j-h_i-1)^2}{\sum_{ij}A_{ij}}.
+ \label{eq:trophic}
+\end{equation}
+Edgeless components do not enter this objective~\cite{mackay2020}.
+For the separately identified historical refinement
+test, the unnormalized operator is $L_q=D-H_q$, where $D=\operatorname{diag}(d)$.
+
+\subsection{Ground-Mode Interpretation}
+\label{sec:ground-mode}
+Page mass and edge energy locate ground modes across the graph.
+Let $U$ have orthonormal columns ($U^*U=I_k$) spanning the complete cluster of lowest-eigenvalue (ground) modes, of rank $k$.
+Define page mass and edge energy by
+\begin{align}
+ m_i&=k^{-1}\sum_{r=1}^k|U_{ir}|^2,\\
+ \varepsilon_{ij}&=\frac{W_{ij}}{k}\sum_{r=1}^k
+ \left|\frac{U_{ir}}{\sqrt{d_i}}-
+ e^{i\theta_{ij}}\frac{U_{jr}}{\sqrt{d_j}}\right|^2.
+ \label{eq:energy}
+\end{align}
+The second expression applies to positive-degree endpoints, counting each
+unordered edge once. Mass sums to one; energy sums to the cluster's mean
+eigenvalue. Both are invariant to basis choice within the cluster. Effective
+support $1/\sum_i m_i^2$ measures concentration, not the number of pages with
+nonzero mass. Reproduction sources retain full pairwise results, the synthetic mechanism
+and finite-change diagnostics.
+
+\subsection{Panels and Numerical Qualification}
+Graph comparisons and numerical checks distinguish structural responses from computation error.
+The characterization panel contains one snapshot per corpus. A fixed-text Docker
+panel has 32 orientation versions in each of two edge families: as written,
+globally reversed, fully reciprocal, twenty random orientations and nine partial
+reversals. The sensitivity family removes index and release-note scaffolding.
+Except for the reciprocal version, these interventions preserve $W$. They need
+not preserve directed degrees. Version-level exposure associations use the 29
+random and partial variants, with 20,000 permutations, within-family Holm
+correction, and partial correlations controlling sources, sinks, out-degree Gini
+and mean seed out-degree.
+
+An exploratory matched study searches the fourteen frozen LWCCs for simple
+nonreciprocal directed cycles of lengths 3--6. Seeded hash ordering selects up
+to two per length from encountered candidates, with 250,000 search expansions
+per length and corpus. Selection precedes reversal spectra; capped searches
+are not uniform samples of all cycles. Each reversal starts from its original
+baseline, preserving nodes, $W$, directed and weighted degrees, reciprocity,
+sources, sinks, Gini and weak/strong partitions. Fixed $W$ and in-minus-out
+degrees also preserve trophic incoherence. The study uses $q=.25$ and a fixed $.10$
+companion, with $q=0$ equality and global-reversal controls for every corpus.
+Separate five-node, path and isolate fixtures test mechanism and blind spots.
+
+The implementation uses complex double precision. Acceptance requires relative
+residual and orthogonality errors at most $10^{-10}$, Hermitian error at most
+$10^{-12}$, and computed modes within $[0,2]$ to $10^{-10}$. The near-zero
+tolerance is $10^{-9}$. Dense and sparse solvers retain raw values; failed
+qualification is not an observation. For attribution, a change is resolved when
+$|\Delta\lambda_1|>\max(10^{-8},10(r_A+r_B))$, using the absolute ground residuals.
+Complete ground clusters and separated boundaries are required.
+
+DocSpectraICSC2027 v1.1.0~\cite{docspectraicsc2027} records the original measurement
+and attribution implementations; the extended matched study uses RetrievalArena
+revision \texttt{38c8ed5}.
+Execution was verified on Linux/amd64; other platforms have not been tested.

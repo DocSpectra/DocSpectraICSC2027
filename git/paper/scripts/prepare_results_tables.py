@@ -18,6 +18,7 @@ for key, source in sources.items():
     assert hashlib.sha256(p.read_bytes()).hexdigest() == source['sha256'], key
     data[key] = json.loads(p.read_text(encoding='utf-8'))
 ledger = []
+derived_ledger = []
 outputs = {}
 def read(source,path):
     v=data[source]
@@ -47,6 +48,21 @@ def write(name,text):
     p=PAPER/'tables'/name
     p.write_text(text,encoding='utf-8',newline='\n')
     outputs[str(p.relative_to(PAPER)).replace('\\','/')]=hashlib.sha256(p.read_bytes()).hexdigest()
+
+def graph_ratio(path, density=False):
+    """Present elementary ratios of frozen full-graph counts; no graph rerun."""
+    m = read('S22',path+['arcs'])
+    n = read('S22',path+['nodes'])
+    value = Decimal(m) / Decimal(n*(n-1) if density else n)
+    shown = value * (100 if density else 1)
+    digits = 3 if density else 2
+    rendered = format(shown.quantize(Decimal(10)**-digits,rounding=ROUND_HALF_UP),'f')
+    derived_ledger.append(dict(source='S22',paths=[path+['arcs'],path+['nodes']],
+                               inputs={'arcs':m,'nodes':n},
+                               formula='100*m/[N*(N-1)]' if density else 'm/N',
+                               exact_decimal=str(shown),display=rendered,
+                               format=f'{digits} decimals, half away from zero'))
+    return rendered
 def table(caption,label,columns,body):
     return (r'\begin{table}[t]'+'\n'+r'\caption{'+caption+'}\n'+r'\label{'+label+'}\n'+
             r'\centering'+'\n'+r'\begin{tabular}{@{}'+columns+r'@{}}'+'\n'+r'\toprule'+'\n'+
@@ -107,22 +123,24 @@ write('w02-correlations.tex',table(
     'tab:correlations','lrr','\n'.join(lines)))
 
 # Whole-corpus profiles and clearly separated historical/sensitivity/exploratory tests.
-lines=[row('Arm','LWCC/full',r'$\lambda_1(.25)$',r'$F_0$'),r'\midrule']
+lines=[row('Arm',r'$n/N$',r'$m$',r'$I$',r'$\bar{k}$',r'$d$ (\%)',r'$\lambda_1$',r'$F_0$'),r'\midrule']
 for arm in ['O','LT','R0']:
     p=['C_refinement','profiles','wc/'+arm]
     coverage=show('S22',p+['lwcc_nodes'],None)+'/'+show('S22',p+['nodes'],None)
-    lines.append(row(arm,coverage,show('S22',p+['lambda1_q0.25'],4),show('S22',p+['trophic_incoherence'])))
-lines += [r'\addlinespace',panel(r'Area-paired LT--R0 tests',4),
-          row('Test',r'$n$','Mean',r'$p$')]
+    lines.append(row(arm,coverage,show('S22',p+['arcs'],None),show('S22',p+['isolates'],None),
+                     graph_ratio(p),graph_ratio(p,density=True),
+                     show('S22',p+['lambda1_q0.25'],4),show('S22',p+['trophic_incoherence'])))
+lines += [r'\addlinespace',panel(r'Area-paired tests: sample size, mean, $p$',8)]
 for label,source,p,precision in [
-    ('Historical','S18',['primary_test'],3),
-    ('Exclusion sensitivity','S18',['SA1'],3),
+    ('Historical (unnormalized)','S18',['primary_test'],3),
+    ('Exclude three second-chance areas (unnormalized)','S18',['SA1'],3),
     ('Normalized (exploratory)','S22',['C_refinement','normalized_exploratory_analogue','test'],6)]:
-    lines.append(row(label,show(source,p+['n'],None),math(show(source,p+['statistic_mean'],2,signed=True)),
-                     math(show(source,p+['p'],precision))))
+    values=', '.join([show(source,p+['n'],None),math(show(source,p+['statistic_mean'],2,signed=True)),
+                      math(show(source,p+['p'],precision))])
+    lines.append(r'\multicolumn{8}{@{}l@{}}{'+label+': '+values+r'}\\')
 write('w02-refinement-summary.tex',table(
-    r'LWCC profiles and area tests (mean LT--R0 standardized against LN). Historical/exclusion tests are unnormalized; exclusion drops the three LT areas given additional editing passes. Rejection threshold: $.05$.',
-    'tab:refinement-summary','lrrr','\n'.join(lines)))
+    r'Full-graph pages $N$, links $m$, isolates $I$, mean out-degree $\bar{k}=m/N$ and density $d=m/[N(N-1)]$. LWCC: $n$, $\lambda_1(.25)$ and $F_0$. Area means are LN-standardized LT--R0; rejection threshold $.05$.',
+    'tab:refinement-summary','lrrrrrrr','\n'.join(lines)))
 
 # Conditional follow counts and trace-level chain stay visibly separate.
 lines=[row('Measure','LT','R0'),r'\midrule',panel('Accepted follows')]
@@ -145,7 +163,7 @@ write('w02-link-use.tex',table(
     'tab:link-use','lrr','\n'.join(lines)))
 
 # Preserve all answer contrasts and append the lexical scoring-view comparison.
-lines=[row('Contrast','Estimate','95\\% interval'),r'\midrule']
+lines=[row('Contrast',r'\shortstack{Mean score\\difference}','95\\% interval'),r'\midrule']
 groups=[('Completeness (1--5), 15 tasks',['tier1','tables','completeness'],['LT - O','R0 - O','LT - R0','S - O']),
         ('FactualCorrectness (0--1), 111 FAQs',['tier2','ragas','full_111','tables','factual_correctness/pooled'],['LT - O','R0 - O','LT - R0','S - O']),
         ('Lexical RR@10: direct judgment, common 105',['tier2','rows','primary','retrieval','lexical/rr'],['LT - O','S - O']),
@@ -159,11 +177,11 @@ for title,p,contrasts in groups:
         lines.append(row(contrast.replace(' - ','--'),math(est),math('['+','.join(ci)+']')))
     lines.append(r'\addlinespace')
 write('w02-answers.tex',table(
-    r'Answer and lexical-retrieval contrasts. Answer scores pool conditions; all five primary task measures have arm--O intervals spanning zero. Paired intervals do not test equivalence; S--O is replay, not a noise bound.',
+    r'Answer and lexical-retrieval differences in score units (first arm minus second). Positive favors the first arm; intervals spanning zero indicate no clear difference, not equivalence. Answer scores pool conditions; S--O is replay, not a noise bound.',
     'tab:answers','lrr','\n'.join(lines)))
 
 manifest={'purpose':'Presentation of existing recorded results; no new scientific analysis',
-          'sources':sources,'values':ledger,'table_sha256':outputs,
+          'sources':sources,'values':ledger,'derived_values':derived_ledger,'table_sha256':outputs,
           'selection':'All prior matched pairs and answer contrasts retained. Five existing corpus comparators shown for both magnetic modes; additional second-mode coefficients, test means and replay interval are copied from frozen fields.'}
 (PAPER/'results-table-provenance.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(f'{len(outputs)} tables; {len(ledger)} source-field transcriptions; all source hashes verified.')

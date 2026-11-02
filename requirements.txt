@@ -1,10 +1,6 @@
-# Observed on the build workstation (Python 3.12.10).
 numpy==2.2.4
 scipy==1.18.0
 jsonschema==4.26.0
-# Figure generation; versions were not recorded.
+reportlab==4.4.9
 matplotlib
-reportlab
-# Live answering and scoring stages only.
-openai
-# RetrievalArena: use the commits recorded in each evidence file (https://github.com/DocSpectra/RetrievalArena).
+# Use the bundled RA source and its lock for the recorded numerical environment.

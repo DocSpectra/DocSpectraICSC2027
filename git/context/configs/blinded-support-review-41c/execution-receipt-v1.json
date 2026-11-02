@@ -1,0 +1,30 @@
+{
+  "accounting": {
+    "completion_attempts": 30,
+    "count_attempts": 32,
+    "count_contingency_usd": 1.3391664999999995,
+    "open_projection_usd": 0,
+    "other_failed_projection_usd": 0.0,
+    "reported_completion_usd": 0.1668565,
+    "spent_or_reserved_usd": 1.5060229999999997,
+    "technical_completion_failures": 0,
+    "technical_count_failures": 0,
+    "unknown_count_attempts": 2
+  },
+  "approved_input_inventory_sha256": "91ad16d134029b8fb57e0008abc85160f5453feccd65965f56067c9aa4c0acee",
+  "authorization_commit": "a32f364",
+  "card_inspection_sha256": "4d953eae57ac886a19caf1c3dc2e89260861187d84d75ca67f8b875009bf1d1f",
+  "evidence_sha256": "0dc67bbf0d7261f7a5e9e39c5f6c5a60736c096ac92dbfec7b2cfc42586e3e80",
+  "last_review_elapsed_seconds": 266.58925700187683,
+  "manifest_sha256": "f351446c020c86cdda3aab3ab2b9c4fabc64aa967d155095c41cce1659c7e494",
+  "pool_commit": "81c1e88",
+  "provider_capacity_closed": true,
+  "selection_file_count": 3641,
+  "selection_inventory_canonical_sha256": "57a6556400ab30af5234232259a9b0f23398d6778dffcacd389a91fec5b6feaf",
+  "selection_inventory_file": "artifacts/embedded-link-refinement-34-36/s41c-v1/selection-inventory-v1.json",
+  "selection_inventory_sha256": "e059055dd719442a767a484889055f9b1a3b601b8520a6771e6ed3f0666fe7c9",
+  "source_commit": "e77f87b313a151483c0900c57a18cd45440290cd",
+  "status": "complete",
+  "support_sha256": "bdb73309862c2069f0660648670d48fa0bd7a42e0eb103af4b12b3f8ae5e1d3a",
+  "verification_manifest_sha256": "2dfc03bae985f200c22477af46043ea7581a0567a8e850a7918d32e06c9f6f75"
+}

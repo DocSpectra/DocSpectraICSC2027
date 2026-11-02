@@ -1,0 +1,59 @@
+\section{Corpus and Orientation Characterization}
+\label{sec:corpus}
+The comparison asks how documentation serving different purposes organizes
+explicit cross-references, and which additional distinctions appear when link
+direction is retained.
+
+\input{tables/w02-corpora}
+\subsection{Documentation Purposes and Connected Coverage}
+The panel comprises fourteen frozen retrieval-evaluation collections with
+available questions and recoverable supporting documentation.
+Table~\ref{tab:corpora} groups their overlapping purposes descriptively;
+these are neither measured style classes nor a sample stratified by authoring style.
+
+Connected coverage determines how much of each collection a spectral profile
+describes (Table~\ref{tab:corpora}). Django and React have nearly all retained
+pages in one component, whereas Docker and GitHub leave substantial portions
+outside it. PyTorch's measured component contains only nine of 244 pages and
+is a tree, giving a zero lowest eigenvalue at every tested charge. This zero
+describes that small extracted component, not the library's documentation as
+a whole. Coverage thus distinguishes a broadly connected body from a limited
+linked fragment before their eigenvalues are compared. It concerns resolved
+in-text links; rendered navigation can connect pages outside this graph.
+
+\subsection{What Retaining Direction Reveals}
+Magnetic and undirected measurements describe complementary aspects of each collection.
+\input{tables/w02-correlations}
+Within those components, Docker's second magnetic eigenvalue is substantially
+above its matched undirected value, while Argo CD's two values are nearly equal
+(Table~\ref{tab:corpora}). Retaining direction therefore changes the low-end
+description unevenly across collections. Across charge, React and Next.js rise
+comparatively steeply, while Argo CD and Ansible remain low. The matched
+reversals in Section~\ref{sec:validation} isolate an orientation response;
+these cross-corpus contrasts also involve differences in topology and do not
+attribute a response to documentation style.
+
+Similar scores can also conceal different organizations: Ansible and GitHub
+have close first eigenvalues despite different sizes and degree concentration.
+Across the panel, the second magnetic mode tracks ordinary connectivity more
+closely than the first (Table~\ref{tab:correlations}). The first tends to be
+higher with greater mean weighted degree and lower with more concentrated
+out-degree; reciprocity is more weakly associated. These descriptive pairwise
+comparisons support reading the spectrum alongside coverage and simpler
+structural measures, rather than assigning a documentation type from one score.
+
+\subsection{Fixed Text, Changed Orientation}
+With page content fixed, the orientation analysis compares spectra and evidence access.
+With $W$ fixed, the main Docker orientation family has little variation in
+$\lambda_1(.25)$; removing scaffolding broadens the response. Full reciprocation makes the ground eigenvalue zero
+but changes $W$. Unlike the matched study (Section~\ref{sec:validation}),
+the comparisons excluding the fully reciprocal version preserve $W$ but allow directed summaries to change.
+
+The exposure diagnostic expands a fixed semantic seed along outgoing links
+into a bounded context, counting added exposure over 142 Docker questions.
+This tests whether the orientation differences accompany changes in access to
+candidate supporting material.
+With automatic, size-biased lexical support candidates, the first mode's
+association is close to zero in both families; the second's changes sign
+(Table~\ref{tab:correlations}). Neither passes the multiplicity-adjusted screen
+for incremental-information analysis.

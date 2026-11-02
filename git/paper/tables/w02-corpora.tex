@@ -1,0 +1,34 @@
+\begin{table}[t]
+\caption{Corpus profiles by documentation purpose. Read LWCC/full-inventory coverage ($n/N$) before comparing magnetic and undirected modes. All eigenvalues use the same LWCC and $W$. Purpose groups overlap; they are descriptive, not measured classes. Similar eigenvalues need not imply similar organization. Numerical zeros are printed as zero.}
+\label{tab:corpora}
+\centering
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& & & \multicolumn{2}{c}{Second-mode comparison}\\
+\cmidrule(l){4-5}
+Corpus & $n/N$ & $\lambda_1(.25)$ & Magnetic & Undirected\\
+& & & $\lambda_2(.25)$ & $\lambda_2(0)$\\
+\midrule
+\multicolumn{5}{@{}l@{}}{\textit{Operational setup and configuration}}\\
+Docker & 844/1263 & 0.0842 & 0.0969 & 0.0101 \\
+Kubernetes & 1146/1572 & 0.0504 & 0.1257 & 0.0394 \\
+Ansible & 391/492 & 0.0132 & 0.0150 & 0.0037 \\
+Argo CD & 393/470 & 0.0038 & 0.0051 & 0.0050 \\
+\multicolumn{5}{@{}l@{}}{\textit{Framework learning and reference}}\\
+Django & 649/651 & 0.0533 & 0.1873 & 0.0638 \\
+Express & 44/52 & 0.0591 & 0.0924 & 0.0854 \\
+React & 206/218 & 0.2099 & 0.2237 & 0.1332 \\
+Next.js & 295/418 & 0.1296 & 0.1311 & 0.1134 \\
+\multicolumn{5}{@{}l@{}}{\textit{Data management and administration}}\\
+Elasticsearch & 2257/2364 & 0.0966 & 0.1188 & 0.0271 \\
+Redis & 45/97 & 0.0124 & 0.0746 & 0.0161 \\
+\multicolumn{5}{@{}l@{}}{\textit{Product workflows and development}}\\
+GitHub & 2354/3515 & 0.0139 & 0.0396 & 0.0030 \\
+VS Code & 658/770 & 0.0620 & 0.1164 & 0.0611 \\
+\multicolumn{5}{@{}l@{}}{\textit{Library APIs and usage}}\\
+PyTorch & 9/244 & 0.0000 & 0.2929 & 0.2929 \\
+\multicolumn{5}{@{}l@{}}{\textit{Hardware assembly and software setup}}\\
+AgOpenGPS & 23/59 & 0.0762 & 0.1527 & 0.1474 \\
+\bottomrule
+\end{tabular}
+\end{table}

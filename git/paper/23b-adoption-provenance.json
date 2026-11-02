@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-31",
+  "purpose": "Author-approved adoption of frozen Sprint 23b evidence; no new scientific analysis.",
+  "evidence": {
+    "path": "git/context/evidence/magnetic-attribution-23b-run-v1-2026-10-31.json",
+    "sha256": "934ee3a187d9fb5e50696637d14c0d4c7e1be2e1dc9992d90b9844ff81fb8be7"
+  },
+  "table_ledger": "cycle-summary-provenance.json",
+  "source_hashes": {
+    "main.tex": "a9b9610d230e35475edd163a12aba5dce7f04deb8bedbfbe7abbd9fec25ff08d",
+    "sections/03-evaluation-design.tex": "bd105f508decbb308911b1902b4f006955803bde644b46659df8c75e6e461b4f",
+    "sections/04-structural-validation.tex": "4ad8928e269dfbf41851d332b9b8d9ccc9a3a6b0d5bb284eb0bcc608c06dd996",
+    "sections/04-cross-corpus-results.tex": "18958cf4a6c25951b63b5a46bb995d9d45d1743e567239ded8946c036541c770",
+    "sections/06-discussion.tex": "2b6279c71d25382ccf3b40e5cbb52e4dd1b077c285826731eb3c8130cbdb58c6",
+    "tables/w02-matched-summary.tex": "9d21fc6574a860d53bc63ab4df2ca90ff217d9008cb6172eadd50df6cea57efa",
+    "scripts/prepare_cycle_summary.py": "57e80ecccfe080303a48ba9e7f7ae3c8032bdb64a2686f18e277695a88a27346"
+  },
+  "prose_values": {
+    "corpora": 14,
+    "corpora_with_selected_cycles": 12,
+    "selected_pairs": 77,
+    "resolved_primary_pairs": 54,
+    "resolved_primary_corpora": 10,
+    "both_q_resolved_pairs": 54,
+    "q_sign_disagreements_both_resolved": 22
+  },
+  "companion_q_0_10": {
+    "resolved_pairs": 66,
+    "resolved_corpora": 11
+  },
+  "magnitude_fields": {
+    "agopengps_max_relative": [
+      "corpora",
+      0,
+      "per_q",
+      "0.25",
+      "absolute_relative_delta",
+      "max"
+    ],
+    "other_responding_max_relative": [
+      "corpora",
+      3,
+      "per_q",
+      "0.25",
+      "absolute_relative_delta",
+      "max"
+    ]
+  },
+  "preserved_sha256": {
+    "sections/01-introduction.tex": "3aadf9b419b6191c96f535df6ca1df492eff5aba3ec2438303c6d2a9bc92cad5",
+    "sections/07-conclusion.tex": "54c5227b926e54eb22eef9125dd5978a429e0a2a0ed11e74379c6e9a7a242b33",
+    "sections/05-downstream-case.tex": "1f4b07861d343bf02d6abb3cc918ee874922b3fd5180d83f0b2169e9c0351af2",
+    "supporting/refinement-protocol-details.md": "9005f68083ec378c2a9d3300dd960b320db592e369e6b5952b3fa04164c0a711",
+    "bibliography/references.bib": "6b84611ed6dee6a4538c5d3f021df93661f647ac2d2606853803934a38c63906",
+    "../context/evidence/magnetic-attribution-23b-run-v1-2026-10-31.json": "934ee3a187d9fb5e50696637d14c0d4c7e1be2e1dc9992d90b9844ff81fb8be7",
+    "../context/evidence/magnetic-attribution-23b-plan-v1-2026-10-31.json": "31a4f45bc699f7bcaf2c4f485a696b7e17e40ba9cf145b622e77324269b7f4cc",
+    "../context/evidence/magnetic-attribution-23b-selection-v1-2026-10-31.json": "538794486a8f9de1b4d0a436f297aa86a12702e1a6579ee2135820f52e604579"
+  },
+  "validation": {
+    "pages": 8,
+    "all_pages_visually_inspected": true,
+    "final_render_matches_inspected_pages": true,
+    "table_rows_checked": 14,
+    "table_regeneration_byte_identical": true,
+    "citation_sequence_unchanged": true,
+    "undefined_references_or_citations": false,
+    "overfull_boxes": 0,
+    "underfull_notices": 4
+  },
+  "pdf": {
+    "path": "drafts/docspectra-icsc-2026-10-31-23b-adopted.pdf",
+    "sha256": "3d63c5bd76ebf872fe3aabec3f83e1f4d1d2081464acbae106c41bcda7399690"
+  },
+  "release": "Public package and tag unchanged; synchronization pending.",
+  "build_command": "./git/paper/scripts/build.ps1",
+  "limits": "No new experiment, model call, source-reference audit, publication or submission. Existing bibliography unchanged. MiKTeX update reminder persists."
+}

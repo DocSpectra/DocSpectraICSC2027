@@ -1,49 +1,246 @@
 {
-  "source": "git\\context\\evidence\\magnetic-attribution-23-v1-2026-10-25.json",
-  "source_sha256": "0d3bc262d7592b33524442aa6b6b0b87cc02a86016b955dab2d09bc7977995df",
-  "summary": "Counts and maxima over all four topology-selected cycles per corpus, not means or population estimates.",
+  "source": "git/context/evidence/magnetic-attribution-23b-run-v1-2026-10-31.json",
+  "source_sha256": "934ee3a187d9fb5e50696637d14c0d4c7e1be2e1dc9992d90b9844ff81fb8be7",
+  "summary": "Frozen per-corpus primary-charge summaries, including unresolved pairs and both empty frames; no new inference.",
+  "table_sha256": "9d21fc6574a860d53bc63ab4df2ca90ff217d9008cb6172eadd50df6cea57efa",
   "rows": [
     {
-      "corpus": "Docker",
-      "table_indices": [
+      "corpus_id": "agopengps",
+      "evidence_path": [
+        "corpora",
+        0,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 1,
+      "resolved": 1,
+      "median_absolute_delta": 0.005360879107653357,
+      "median_display": "0.00536",
+      "maximum_absolute_relative_delta": 0.07032667374884007,
+      "maximum_display": "7.03\\%",
+      "baseline_effective_support_fraction": 0.5029592519484056,
+      "support_display": "50.30\\%"
+    },
+    {
+      "corpus_id": "ansible_docs",
+      "evidence_path": [
+        "corpora",
+        1,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 5,
+      "resolved": 1,
+      "median_absolute_delta": 1.219319419737408e-09,
+      "median_display": "1.22e-9",
+      "maximum_absolute_relative_delta": 7.2820553668016415e-06,
+      "maximum_display": "0.000728\\%",
+      "baseline_effective_support_fraction": 0.021393436845515874,
+      "support_display": "2.14\\%"
+    },
+    {
+      "corpus_id": "argo_cd_docs",
+      "evidence_path": [
+        "corpora",
+        2,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 5,
+      "resolved": 5,
+      "median_absolute_delta": 1.4810897485139675e-06,
+      "median_display": "1.48e-6",
+      "maximum_absolute_relative_delta": 0.0006747413764516385,
+      "maximum_display": "0.0675\\%",
+      "baseline_effective_support_fraction": 0.07476840329338234,
+      "support_display": "7.48\\%"
+    },
+    {
+      "corpus_id": "django_docs",
+      "evidence_path": [
+        "corpora",
+        3,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 8,
+      "median_absolute_delta": 1.2559613379523049e-05,
+      "median_display": "1.26e-5",
+      "maximum_absolute_relative_delta": 0.005542497408529568,
+      "maximum_display": "0.554\\%",
+      "baseline_effective_support_fraction": 0.0067892364082542496,
+      "support_display": "0.68\\%"
+    },
+    {
+      "corpus_id": "docker_docs",
+      "evidence_path": [
+        "corpora",
+        4,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 8,
+      "median_absolute_delta": 1.0926090408397426e-06,
+      "median_display": "1.09e-6",
+      "maximum_absolute_relative_delta": 0.0001546137719372437,
+      "maximum_display": "0.0155\\%",
+      "baseline_effective_support_fraction": 0.00591630153420611,
+      "support_display": "0.59\\%"
+    },
+    {
+      "corpus_id": "elasticsearch_docs",
+      "evidence_path": [
+        "corpora",
         5,
-        8,
-        11,
-        14
+        "per_q",
+        "0.25"
       ],
+      "selected": 8,
       "resolved": 4,
-      "maximum_index": 8,
-      "maximum_absolute_percent": 0.13288088296875888,
-      "maximum_display": "0.133\\%",
-      "baseline_support_percent": 0.591630153420611
+      "median_absolute_delta": 5.976336509005975e-09,
+      "median_display": "5.98e-9",
+      "maximum_absolute_relative_delta": 5.726595401038743e-07,
+      "maximum_display": "5.73e-5\\%",
+      "baseline_effective_support_fraction": 0.0018107369250209902,
+      "support_display": "0.18\\%"
     },
     {
-      "corpus": "React",
-      "table_indices": [
-        20,
-        23,
-        26,
-        29
+      "corpus_id": "express_docs",
+      "evidence_path": [
+        "corpora",
+        6,
+        "per_q",
+        "0.25"
       ],
-      "resolved": 4,
-      "maximum_index": 20,
-      "maximum_absolute_percent": 1.014292526603314,
-      "maximum_display": "1.014\\%",
-      "baseline_support_percent": 9.065358828446477
-    },
-    {
-      "corpus": "GitHub",
-      "table_indices": [
-        35,
-        38,
-        41,
-        44
-      ],
+      "selected": 0,
       "resolved": 0,
-      "maximum_index": 35,
-      "maximum_absolute_percent": 4.994919077553106e-06,
+      "median_absolute_delta": null,
+      "median_display": "---",
+      "maximum_absolute_relative_delta": null,
       "maximum_display": "---",
-      "baseline_support_percent": 0.28910090779977216
+      "baseline_effective_support_fraction": 0.12970006512235152,
+      "support_display": "12.97\\%"
+    },
+    {
+      "corpus_id": "github_docs",
+      "evidence_path": [
+        "corpora",
+        7,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 0,
+      "median_absolute_delta": 1.9618007131988469e-10,
+      "median_display": "1.96e-10",
+      "maximum_absolute_relative_delta": 4.0633604705498306e-07,
+      "maximum_display": "4.06e-5\\%",
+      "baseline_effective_support_fraction": 0.0028910090779977215,
+      "support_display": "0.29\\%"
+    },
+    {
+      "corpus_id": "kubernetes_website_docs",
+      "evidence_path": [
+        "corpora",
+        8,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 8,
+      "median_absolute_delta": 1.1886104754610383e-06,
+      "median_display": "1.19e-6",
+      "maximum_absolute_relative_delta": 8.856545868340783e-05,
+      "maximum_display": "0.00886\\%",
+      "baseline_effective_support_fraction": 0.011093720505900082,
+      "support_display": "1.11\\%"
+    },
+    {
+      "corpus_id": "nextjs_docs",
+      "evidence_path": [
+        "corpora",
+        9,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 8,
+      "median_absolute_delta": 3.6240713225943466e-06,
+      "median_display": "3.62e-6",
+      "maximum_absolute_relative_delta": 0.0001346922631958077,
+      "maximum_display": "0.0135\\%",
+      "baseline_effective_support_fraction": 0.02454725349287765,
+      "support_display": "2.45\\%"
+    },
+    {
+      "corpus_id": "pytorch_docs",
+      "evidence_path": [
+        "corpora",
+        10,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 0,
+      "resolved": 0,
+      "median_absolute_delta": null,
+      "median_display": "---",
+      "maximum_absolute_relative_delta": null,
+      "maximum_display": "---",
+      "baseline_effective_support_fraction": 0.6206896551724149,
+      "support_display": "62.07\\%"
+    },
+    {
+      "corpus_id": "react_docs",
+      "evidence_path": [
+        "corpora",
+        11,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 8,
+      "median_absolute_delta": 5.2075871309190114e-05,
+      "median_display": "5.21e-5",
+      "maximum_absolute_relative_delta": 0.0040977244835437125,
+      "maximum_display": "0.41\\%",
+      "baseline_effective_support_fraction": 0.09065358828446478,
+      "support_display": "9.07\\%"
+    },
+    {
+      "corpus_id": "redis_docs",
+      "evidence_path": [
+        "corpora",
+        12,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 2,
+      "resolved": 0,
+      "median_absolute_delta": 7.979727989493313e-17,
+      "median_display": "7.98e-17",
+      "maximum_absolute_relative_delta": 1.2490698298946208e-14,
+      "maximum_display": "1.25e-12\\%",
+      "baseline_effective_support_fraction": 0.17680086311123278,
+      "support_display": "17.68\\%"
+    },
+    {
+      "corpus_id": "vscode_docs",
+      "evidence_path": [
+        "corpora",
+        13,
+        "per_q",
+        "0.25"
+      ],
+      "selected": 8,
+      "resolved": 3,
+      "median_absolute_delta": 6.3967709115764215e-09,
+      "median_display": "6.4e-9",
+      "maximum_absolute_relative_delta": 6.850744388143527e-05,
+      "maximum_display": "0.00685\\%",
+      "baseline_effective_support_fraction": 0.005458673749666756,
+      "support_display": "0.55\\%"
     }
   ]
 }

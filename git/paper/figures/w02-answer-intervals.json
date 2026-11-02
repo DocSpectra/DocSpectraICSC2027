@@ -1,0 +1,224 @@
+{
+  "source": {
+    "path": "git/context/evidence/wc-analysis-20-v1-2026-10-24.json",
+    "sha256": "aeaac4758eaa6a66f9fa68ea6ee3cd398fe87f23b9456700f8a02e420aa12a23"
+  },
+  "rows": [
+    {
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - O"
+      ],
+      "estimate": -0.07916666666666666,
+      "ci95": [
+        -0.22916666666666666,
+        0.0625
+      ],
+      "display": [
+        "-0.079",
+        "-0.229",
+        "+0.063"
+      ]
+    },
+    {
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "R0 - O"
+      ],
+      "estimate": 0.025,
+      "ci95": [
+        -0.15416666666666667,
+        0.19583333333333333
+      ],
+      "display": [
+        "+0.025",
+        "-0.154",
+        "+0.196"
+      ]
+    },
+    {
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "LT - R0"
+      ],
+      "estimate": -0.10416666666666667,
+      "ci95": [
+        -0.30416666666666664,
+        0.1
+      ],
+      "display": [
+        "-0.104",
+        "-0.304",
+        "+0.100"
+      ]
+    },
+    {
+      "path": [
+        "tier1",
+        "tables",
+        "completeness",
+        "S - O"
+      ],
+      "estimate": 0.008333333333333333,
+      "ci95": [
+        -0.12083333333333333,
+        0.14166666666666666
+      ],
+      "display": [
+        "+0.008",
+        "-0.121",
+        "+0.142"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - O"
+      ],
+      "estimate": -0.0046396396396396426,
+      "ci95": [
+        -0.026091789516789518,
+        0.01615149792969066
+      ],
+      "display": [
+        "-0.005",
+        "-0.026",
+        "+0.016"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "R0 - O"
+      ],
+      "estimate": 0.004279279279279281,
+      "ci95": [
+        -0.018244020569241803,
+        0.026636383748994366
+      ],
+      "display": [
+        "+0.004",
+        "-0.018",
+        "+0.027"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "LT - R0"
+      ],
+      "estimate": -0.00891891891891892,
+      "ci95": [
+        -0.03250057339449542,
+        0.014549845898530102
+      ],
+      "display": [
+        "-0.009",
+        "-0.033",
+        "+0.015"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "ragas",
+        "full_111",
+        "tables",
+        "factual_correctness/pooled",
+        "S - O"
+      ],
+      "estimate": 0.004504504504504506,
+      "ci95": [
+        -0.016518105158730156,
+        0.02606571738022425
+      ],
+      "display": [
+        "+0.005",
+        "-0.017",
+        "+0.026"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "LT - O"
+      ],
+      "estimate": -0.06729780801209373,
+      "ci95": [
+        -0.11813196352258853,
+        -0.021877725723413052
+      ],
+      "display": [
+        "-0.067",
+        "-0.118",
+        "-0.022"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "rows",
+        "primary",
+        "retrieval",
+        "lexical/rr",
+        "S - O"
+      ],
+      "estimate": -0.004761904761904762,
+      "ci95": [
+        -0.014563106796116505,
+        0.0
+      ],
+      "display": [
+        "-0.005",
+        "-0.015",
+        "+0.000"
+      ]
+    },
+    {
+      "path": [
+        "tier2",
+        "rows",
+        "lenient_o1_111",
+        "retrieval",
+        "lexical/rr",
+        "LT - O"
+      ],
+      "estimate": -0.008991133991133991,
+      "ci95": [
+        -0.04333834730221161,
+        0.026389581139581106
+      ],
+      "display": [
+        "-0.009",
+        "-0.043",
+        "+0.026"
+      ]
+    }
+  ],
+  "pdf_sha256": "8a2037b87fade077c37f4dedcb1029dffb3a4a13c1ca787d1b5962697e0c3496",
+  "table_sha256": "350e2997f0180904276db4bedff315a87569673706e892ae4820750c8464e88b",
+  "status": "Manuscript figure; no scientific recomputation",
+  "script_sha256": "5f4a0257fbe61a2a1a8076282bb06e70b39ddc91351dfa95bb33cfba3c7c7662"
+}

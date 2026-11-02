@@ -1,5 +1,15 @@
 {
   "purpose": "Selected completed author reviews and judge qualification; no new judgments or analyses.",
+  "manuscript_presentation": {
+    "updated": "2026-10-27",
+    "previous_deviations_sha256": "b6e5c812d760ac53622e4d7eec71c9ce8a29b49e425e82b885d3a0490b2e103c",
+    "source": "sections/08-review-appendix.tex",
+    "format": "One short paragraph: judgments performed, scoped agreement/repeatability figures, reproduction-artifact citation",
+    "prior_table": "tables/review-calibration.tex (retained, no longer included)",
+    "scope": "Explain what was checked, how, and what it supports; no general claim that all judges passed calibration or final generated answers were human-validated.",
+    "details_retained_in_artifacts": "Development answer-element judge comparison and full HR-19/03/18/20/21 verdict counts remain in the pinned sources and reproduction package.",
+    "method_details": "Luna shuffled-reference-note test: luna_plan.runs.B and criteria.stability; Haiku controlled positive/negative comparisons and uncached repeats: ragas.metrics and conventions. Existing verified fields retain the numerical provenance."
+  },
   "sources": {
     "calibration": {
       "path": "validations/rockerd-answer-variant-labels-adjudicated-v1.json",
@@ -59,10 +69,12 @@
     },
     "deviations": {
       "path": "git/context/docs/manuscript-deviations-wc-refinement.md",
-      "sha256": "b6e5c812d760ac53622e4d7eec71c9ce8a29b49e425e82b885d3a0490b2e103c"
+      "sha256": "dfea4c6ae7bc5736b102a02a6173646c27bf869c6bd77798653fc3a66ca808d4"
     }
   },
   "verified_fields": [
+    {"source": "ragas", "path": ["metrics", "real-tier1/factual_correctness", "repeat", "within_0_1"], "transform": null, "exact": 30},
+    {"source": "ragas", "path": ["thresholds", "repeat_share_min"], "transform": null, "exact": 0.9},
     {
       "source": "calibration",
       "path": [

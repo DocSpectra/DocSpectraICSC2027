@@ -1,0 +1,1183 @@
+{
+  "bulk_record_note": "Large singleton block edge tables/maps and every phase/start remain in the hash-bound ignored source export.",
+  "candidates": [
+    {
+      "added_arc": [
+        "content_manuals_extensions_index__0272c25f",
+        "content_manuals_extensions_marketplace__bb372e8f"
+      ],
+      "audit_id": "41-21",
+      "class": 0,
+      "directed_arc_weight": 1,
+      "proposal_id": "proposal:ddb283a2701f21852a0cab7191758fc79423d02226fd53a1f554c1d1f7274497",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "simple_cycle": false,
+      "status": "nonstationary"
+    },
+    {
+      "added_arc": [
+        "content_guides_dotnet_develop__b9588047",
+        "content_guides_dotnet_run_tests__df5b8b95"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_dotnet_develop__b9588047",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_develop__b9588047",
+          "content_guides_dotnet_run_tests__df5b8b95"
+        ],
+        [
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ]
+      ],
+      "audit_id": "41-06",
+      "before_arcs": [
+        [
+          "content_guides_dotnet_develop__b9588047",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ]
+      ],
+      "class": 1,
+      "cycle": {
+        "certified_global_optimum": false,
+        "equal_residual_stationary_energy": 0.4019237886466839,
+        "flux": 1.5707963267948966,
+        "length": 3,
+        "nodes": [
+          "content_guides_dotnet_develop__b9588047",
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        "signed_arcs": 1,
+        "wrapped_flux": 1.5707963267948966
+      },
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_dotnet_containerize__df8c5bec": "content_guides_dotnet_containerize__df8c5bec",
+        "content_guides_dotnet_develop__b9588047": "content_guides_dotnet_develop__b9588047",
+        "content_guides_dotnet_run_tests__df5b8b95": "content_guides_dotnet_run_tests__df5b8b95"
+      },
+      "proposal_id": "proposal:6f735c0c1c5a0e489fb9682b34cccb315c9d65bc4b78bc63d2240655871177fd",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": true,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_java_develop__b872b1f0",
+        "content_guides_java_run_tests__e79ed2ef"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_java_develop__b872b1f0",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_develop__b872b1f0",
+          "content_guides_java_run_tests__e79ed2ef"
+        ],
+        [
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_containerize__7f36650a"
+        ]
+      ],
+      "audit_id": "41-03",
+      "before_arcs": [
+        [
+          "content_guides_java_develop__b872b1f0",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_containerize__7f36650a"
+        ]
+      ],
+      "class": 1,
+      "cycle": {
+        "certified_global_optimum": false,
+        "equal_residual_stationary_energy": 0.4019237886466839,
+        "flux": -1.5707963267948966,
+        "length": 3,
+        "nodes": [
+          "content_guides_java_containerize__7f36650a",
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_develop__b872b1f0"
+        ],
+        "signed_arcs": -1,
+        "wrapped_flux": -1.5707963267948966
+      },
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_java_containerize__7f36650a": "content_guides_dotnet_containerize__df8c5bec",
+        "content_guides_java_develop__b872b1f0": "content_guides_dotnet_develop__b9588047",
+        "content_guides_java_run_tests__e79ed2ef": "content_guides_dotnet_run_tests__df5b8b95"
+      },
+      "proposal_id": "proposal:c9c3d7719e680464ecee28a9f5520f5c1e78f8c4827ad897f2cee210b792d319",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": true,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_cpp_develop__8c0cb6f9",
+        "content_guides_cpp_configure_ci_cd__a181fa64"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_cpp_configure_ci_cd__a181fa64",
+          "content_guides_cpp_containerize__87a0c70e"
+        ],
+        [
+          "content_guides_cpp_deploy__8a7e4894",
+          "content_guides_cpp_configure_ci_cd__a181fa64"
+        ],
+        [
+          "content_guides_cpp_deploy__8a7e4894",
+          "content_guides_cpp_containerize__87a0c70e"
+        ],
+        [
+          "content_guides_cpp_develop__8c0cb6f9",
+          "content_guides_cpp_configure_ci_cd__a181fa64"
+        ],
+        [
+          "content_guides_cpp_develop__8c0cb6f9",
+          "content_guides_cpp_containerize__87a0c70e"
+        ]
+      ],
+      "audit_id": "41-12",
+      "before_arcs": [
+        [
+          "content_guides_cpp_configure_ci_cd__a181fa64",
+          "content_guides_cpp_containerize__87a0c70e"
+        ],
+        [
+          "content_guides_cpp_deploy__8a7e4894",
+          "content_guides_cpp_configure_ci_cd__a181fa64"
+        ],
+        [
+          "content_guides_cpp_deploy__8a7e4894",
+          "content_guides_cpp_containerize__87a0c70e"
+        ],
+        [
+          "content_guides_cpp_develop__8c0cb6f9",
+          "content_guides_cpp_containerize__87a0c70e"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_cpp_configure_ci_cd__a181fa64": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_cpp_containerize__87a0c70e": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_cpp_deploy__8a7e4894": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_cpp_develop__8c0cb6f9": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:d888a3dc53b9d5c192f58d7a6109e910e30a75dee72f7f1ff643122545fb8dc1",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_dotnet_run_tests__df5b8b95",
+        "content_guides_dotnet_configure_ci_cd__9ad09014"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_dotnet_configure_ci_cd__9ad09014",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_deploy__a508745b",
+          "content_guides_dotnet_configure_ci_cd__9ad09014"
+        ],
+        [
+          "content_guides_dotnet_deploy__a508745b",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_configure_ci_cd__9ad09014"
+        ],
+        [
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ]
+      ],
+      "audit_id": "41-01",
+      "before_arcs": [
+        [
+          "content_guides_dotnet_run_tests__df5b8b95",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_configure_ci_cd__9ad09014",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ],
+        [
+          "content_guides_dotnet_deploy__a508745b",
+          "content_guides_dotnet_configure_ci_cd__9ad09014"
+        ],
+        [
+          "content_guides_dotnet_deploy__a508745b",
+          "content_guides_dotnet_containerize__df8c5bec"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_dotnet_configure_ci_cd__9ad09014": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_dotnet_containerize__df8c5bec": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_dotnet_deploy__a508745b": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_dotnet_run_tests__df5b8b95": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:bba4f1f3167d8310de273c5b7f07f16ee306836f7b846d9df7cf38b5beb24da4",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_bun_develop__7d231d40",
+        "content_guides_bun_configure_ci_cd__df823a5d"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_bun_configure_ci_cd__df823a5d",
+          "content_guides_bun_containerize__6872b268"
+        ],
+        [
+          "content_guides_bun_deploy__329b581d",
+          "content_guides_bun_configure_ci_cd__df823a5d"
+        ],
+        [
+          "content_guides_bun_deploy__329b581d",
+          "content_guides_bun_containerize__6872b268"
+        ],
+        [
+          "content_guides_bun_develop__7d231d40",
+          "content_guides_bun_configure_ci_cd__df823a5d"
+        ],
+        [
+          "content_guides_bun_develop__7d231d40",
+          "content_guides_bun_containerize__6872b268"
+        ]
+      ],
+      "audit_id": "41-04",
+      "before_arcs": [
+        [
+          "content_guides_bun_configure_ci_cd__df823a5d",
+          "content_guides_bun_containerize__6872b268"
+        ],
+        [
+          "content_guides_bun_deploy__329b581d",
+          "content_guides_bun_configure_ci_cd__df823a5d"
+        ],
+        [
+          "content_guides_bun_deploy__329b581d",
+          "content_guides_bun_containerize__6872b268"
+        ],
+        [
+          "content_guides_bun_develop__7d231d40",
+          "content_guides_bun_containerize__6872b268"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_bun_configure_ci_cd__df823a5d": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_bun_containerize__6872b268": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_bun_deploy__329b581d": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_bun_develop__7d231d40": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:0c98579541f69de592287036417c8c96ccf55aab274cb96f4fdea8b9f86021fe",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_golang_run_tests__ec5a3bf0",
+        "content_guides_golang_configure_ci_cd__e1163fe4"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_golang_configure_ci_cd__e1163fe4",
+          "content_guides_golang_build_images__68431fa3"
+        ],
+        [
+          "content_guides_golang_deploy__1af0af97",
+          "content_guides_golang_build_images__68431fa3"
+        ],
+        [
+          "content_guides_golang_deploy__1af0af97",
+          "content_guides_golang_configure_ci_cd__e1163fe4"
+        ],
+        [
+          "content_guides_golang_run_tests__ec5a3bf0",
+          "content_guides_golang_build_images__68431fa3"
+        ],
+        [
+          "content_guides_golang_run_tests__ec5a3bf0",
+          "content_guides_golang_configure_ci_cd__e1163fe4"
+        ]
+      ],
+      "audit_id": "41-11",
+      "before_arcs": [
+        [
+          "content_guides_golang_configure_ci_cd__e1163fe4",
+          "content_guides_golang_build_images__68431fa3"
+        ],
+        [
+          "content_guides_golang_deploy__1af0af97",
+          "content_guides_golang_build_images__68431fa3"
+        ],
+        [
+          "content_guides_golang_deploy__1af0af97",
+          "content_guides_golang_configure_ci_cd__e1163fe4"
+        ],
+        [
+          "content_guides_golang_run_tests__ec5a3bf0",
+          "content_guides_golang_build_images__68431fa3"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_golang_build_images__68431fa3": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_golang_configure_ci_cd__e1163fe4": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_golang_deploy__1af0af97": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_golang_run_tests__ec5a3bf0": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:5d62bb52e5ccbaa206a5aabf933af6796eef5e9d885a9e624588be43f7c6f2de",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_php_run_tests__2259e5a9",
+        "content_guides_php_configure_ci_cd__d8e10536"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_php_configure_ci_cd__d8e10536",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_deploy__3875e7a7",
+          "content_guides_php_configure_ci_cd__d8e10536"
+        ],
+        [
+          "content_guides_php_deploy__3875e7a7",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_configure_ci_cd__d8e10536"
+        ],
+        [
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_containerize__fd88cf46"
+        ]
+      ],
+      "audit_id": "41-09",
+      "before_arcs": [
+        [
+          "content_guides_php_configure_ci_cd__d8e10536",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_deploy__3875e7a7",
+          "content_guides_php_configure_ci_cd__d8e10536"
+        ],
+        [
+          "content_guides_php_deploy__3875e7a7",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_containerize__fd88cf46"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_php_configure_ci_cd__d8e10536": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_php_containerize__fd88cf46": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_php_deploy__3875e7a7": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_php_run_tests__2259e5a9": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:5d7186cf4db39dfffc070c23901ebf3ebef9e3a971e73a29e5ba4491d5f1ba15",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_r_develop__9e8f6fa5",
+        "content_guides_r_configure_ci_cd__ea2482b3"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_r_configure_ci_cd__ea2482b3",
+          "content_guides_r_containerize__892d7e9b"
+        ],
+        [
+          "content_guides_r_deploy__9f82592d",
+          "content_guides_r_configure_ci_cd__ea2482b3"
+        ],
+        [
+          "content_guides_r_deploy__9f82592d",
+          "content_guides_r_containerize__892d7e9b"
+        ],
+        [
+          "content_guides_r_develop__9e8f6fa5",
+          "content_guides_r_configure_ci_cd__ea2482b3"
+        ],
+        [
+          "content_guides_r_develop__9e8f6fa5",
+          "content_guides_r_containerize__892d7e9b"
+        ]
+      ],
+      "audit_id": "41-13",
+      "before_arcs": [
+        [
+          "content_guides_r_configure_ci_cd__ea2482b3",
+          "content_guides_r_containerize__892d7e9b"
+        ],
+        [
+          "content_guides_r_deploy__9f82592d",
+          "content_guides_r_configure_ci_cd__ea2482b3"
+        ],
+        [
+          "content_guides_r_deploy__9f82592d",
+          "content_guides_r_containerize__892d7e9b"
+        ],
+        [
+          "content_guides_r_develop__9e8f6fa5",
+          "content_guides_r_containerize__892d7e9b"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_r_configure_ci_cd__ea2482b3": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_r_containerize__892d7e9b": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_r_deploy__9f82592d": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_r_develop__9e8f6fa5": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:da38bd3e9c83127b888e13602e46a4723916a103f48ed84fb174169f803171c0",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_java_run_tests__e79ed2ef",
+        "content_guides_java_configure_ci_cd__9e825d49"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_java_configure_ci_cd__9e825d49",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_deploy__71bf11ee",
+          "content_guides_java_configure_ci_cd__9e825d49"
+        ],
+        [
+          "content_guides_java_deploy__71bf11ee",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_configure_ci_cd__9e825d49"
+        ],
+        [
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_containerize__7f36650a"
+        ]
+      ],
+      "audit_id": "41-07",
+      "before_arcs": [
+        [
+          "content_guides_java_configure_ci_cd__9e825d49",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_deploy__71bf11ee",
+          "content_guides_java_configure_ci_cd__9e825d49"
+        ],
+        [
+          "content_guides_java_deploy__71bf11ee",
+          "content_guides_java_containerize__7f36650a"
+        ],
+        [
+          "content_guides_java_run_tests__e79ed2ef",
+          "content_guides_java_containerize__7f36650a"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_java_configure_ci_cd__9e825d49": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_java_containerize__7f36650a": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_java_deploy__71bf11ee": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_java_run_tests__e79ed2ef": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:1342c0fcdf918a126a459d332b42061499be720e674f18e0544cdbaf292acb34",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_deno_develop__bd8d1835",
+        "content_guides_deno_configure_ci_cd__6901b8f0"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_deno_configure_ci_cd__6901b8f0",
+          "content_guides_deno_containerize__91ad6baf"
+        ],
+        [
+          "content_guides_deno_deploy__2c09b51e",
+          "content_guides_deno_configure_ci_cd__6901b8f0"
+        ],
+        [
+          "content_guides_deno_deploy__2c09b51e",
+          "content_guides_deno_containerize__91ad6baf"
+        ],
+        [
+          "content_guides_deno_develop__bd8d1835",
+          "content_guides_deno_configure_ci_cd__6901b8f0"
+        ],
+        [
+          "content_guides_deno_develop__bd8d1835",
+          "content_guides_deno_containerize__91ad6baf"
+        ]
+      ],
+      "audit_id": "41-02",
+      "before_arcs": [
+        [
+          "content_guides_deno_configure_ci_cd__6901b8f0",
+          "content_guides_deno_containerize__91ad6baf"
+        ],
+        [
+          "content_guides_deno_deploy__2c09b51e",
+          "content_guides_deno_configure_ci_cd__6901b8f0"
+        ],
+        [
+          "content_guides_deno_deploy__2c09b51e",
+          "content_guides_deno_containerize__91ad6baf"
+        ],
+        [
+          "content_guides_deno_develop__bd8d1835",
+          "content_guides_deno_containerize__91ad6baf"
+        ]
+      ],
+      "class": 2,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_deno_configure_ci_cd__6901b8f0": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "content_guides_deno_containerize__91ad6baf": "content_guides_cpp_containerize__87a0c70e",
+        "content_guides_deno_deploy__2c09b51e": "content_guides_cpp_deploy__8a7e4894",
+        "content_guides_deno_develop__bd8d1835": "content_guides_cpp_develop__8c0cb6f9"
+      },
+      "proposal_id": "proposal:4538f0fc83302caaf14c3597ac29dc031a91782c30f76d109c12682be528871b",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_php_develop__08e2c054",
+        "content_guides_php_run_tests__2259e5a9"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_php_develop__08e2c054",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_develop__08e2c054",
+          "content_guides_php_run_tests__2259e5a9"
+        ],
+        [
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_containerize__fd88cf46"
+        ]
+      ],
+      "audit_id": "41-08",
+      "before_arcs": [
+        [
+          "content_guides_php_develop__08e2c054",
+          "content_guides_php_containerize__fd88cf46"
+        ],
+        [
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_containerize__fd88cf46"
+        ]
+      ],
+      "class": 1,
+      "cycle": {
+        "certified_global_optimum": false,
+        "equal_residual_stationary_energy": 0.4019237886466839,
+        "flux": -1.5707963267948966,
+        "length": 3,
+        "nodes": [
+          "content_guides_php_containerize__fd88cf46",
+          "content_guides_php_run_tests__2259e5a9",
+          "content_guides_php_develop__08e2c054"
+        ],
+        "signed_arcs": -1,
+        "wrapped_flux": -1.5707963267948966
+      },
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_php_containerize__fd88cf46": "content_guides_dotnet_containerize__df8c5bec",
+        "content_guides_php_develop__08e2c054": "content_guides_dotnet_develop__b9588047",
+        "content_guides_php_run_tests__2259e5a9": "content_guides_dotnet_run_tests__df5b8b95"
+      },
+      "proposal_id": "proposal:74f8585d46837fb894f8f5ce95624c313e670f77c1650a9f8e03289c2bf4d95e",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "simple_cycle": true,
+      "status": "finite_estimate"
+    },
+    {
+      "added_arc": [
+        "content_guides_nextjs_run_tests__c2119b59",
+        "content_guides_nextjs_configure_github_actions__84c7bac3"
+      ],
+      "after_arcs": [
+        [
+          "content_guides_nextjs_configure_github_actions__84c7bac3",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_deploy__77f2e75f",
+          "content_guides_nextjs_configure_github_actions__84c7bac3"
+        ],
+        [
+          "content_guides_nextjs_deploy__77f2e75f",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_develop__8b508da8",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_run_tests__c2119b59",
+          "content_guides_nextjs_configure_github_actions__84c7bac3"
+        ],
+        [
+          "content_guides_nextjs_run_tests__c2119b59",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_run_tests__c2119b59",
+          "content_guides_nextjs_develop__8b508da8"
+        ]
+      ],
+      "audit_id": "41-05",
+      "before_arcs": [
+        [
+          "content_guides_nextjs_develop__8b508da8",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_run_tests__c2119b59",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_run_tests__c2119b59",
+          "content_guides_nextjs_develop__8b508da8"
+        ],
+        [
+          "content_guides_nextjs_configure_github_actions__84c7bac3",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ],
+        [
+          "content_guides_nextjs_deploy__77f2e75f",
+          "content_guides_nextjs_configure_github_actions__84c7bac3"
+        ],
+        [
+          "content_guides_nextjs_deploy__77f2e75f",
+          "content_guides_nextjs_containerize__2ddfb5de"
+        ]
+      ],
+      "class": 3,
+      "directed_arc_weight": 1,
+      "mapping_to_representative": {
+        "content_guides_nextjs_configure_github_actions__84c7bac3": "content_guides_nextjs_configure_github_actions__84c7bac3",
+        "content_guides_nextjs_containerize__2ddfb5de": "content_guides_nextjs_containerize__2ddfb5de",
+        "content_guides_nextjs_deploy__77f2e75f": "content_guides_nextjs_deploy__77f2e75f",
+        "content_guides_nextjs_develop__8b508da8": "content_guides_nextjs_develop__8b508da8",
+        "content_guides_nextjs_run_tests__c2119b59": "content_guides_nextjs_run_tests__c2119b59"
+      },
+      "proposal_id": "proposal:a98b9087bea48758208bae311396d3b463078e51907a517f9e59f62850509817",
+      "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+      "simple_cycle": false,
+      "status": "finite_estimate"
+    }
+  ],
+  "classes": [
+    {
+      "member_audit_ids": [
+        "41-21"
+      ],
+      "members": [
+        "proposal:ddb283a2701f21852a0cab7191758fc79423d02226fd53a1f554c1d1f7274497"
+      ],
+      "representative": "proposal:ddb283a2701f21852a0cab7191758fc79423d02226fd53a1f554c1d1f7274497",
+      "representative_audit_id": "41-21"
+    },
+    {
+      "member_audit_ids": [
+        "41-06",
+        "41-03",
+        "41-08"
+      ],
+      "members": [
+        "proposal:6f735c0c1c5a0e489fb9682b34cccb315c9d65bc4b78bc63d2240655871177fd",
+        "proposal:c9c3d7719e680464ecee28a9f5520f5c1e78f8c4827ad897f2cee210b792d319",
+        "proposal:74f8585d46837fb894f8f5ce95624c313e670f77c1650a9f8e03289c2bf4d95e"
+      ],
+      "representative": "proposal:6f735c0c1c5a0e489fb9682b34cccb315c9d65bc4b78bc63d2240655871177fd",
+      "representative_audit_id": "41-06"
+    },
+    {
+      "member_audit_ids": [
+        "41-12",
+        "41-01",
+        "41-04",
+        "41-11",
+        "41-09",
+        "41-13",
+        "41-07",
+        "41-02"
+      ],
+      "members": [
+        "proposal:d888a3dc53b9d5c192f58d7a6109e910e30a75dee72f7f1ff643122545fb8dc1",
+        "proposal:bba4f1f3167d8310de273c5b7f07f16ee306836f7b846d9df7cf38b5beb24da4",
+        "proposal:0c98579541f69de592287036417c8c96ccf55aab274cb96f4fdea8b9f86021fe",
+        "proposal:5d62bb52e5ccbaa206a5aabf933af6796eef5e9d885a9e624588be43f7c6f2de",
+        "proposal:5d7186cf4db39dfffc070c23901ebf3ebef9e3a971e73a29e5ba4491d5f1ba15",
+        "proposal:da38bd3e9c83127b888e13602e46a4723916a103f48ed84fb174169f803171c0",
+        "proposal:1342c0fcdf918a126a459d332b42061499be720e674f18e0544cdbaf292acb34",
+        "proposal:4538f0fc83302caaf14c3597ac29dc031a91782c30f76d109c12682be528871b"
+      ],
+      "representative": "proposal:d888a3dc53b9d5c192f58d7a6109e910e30a75dee72f7f1ff643122545fb8dc1",
+      "representative_audit_id": "41-12"
+    },
+    {
+      "member_audit_ids": [
+        "41-05"
+      ],
+      "members": [
+        "proposal:a98b9087bea48758208bae311396d3b463078e51907a517f9e59f62850509817"
+      ],
+      "representative": "proposal:a98b9087bea48758208bae311396d3b463078e51907a517f9e59f62850509817",
+      "representative_audit_id": "41-05"
+    }
+  ],
+  "q": 0.25,
+  "representative_edge_tables": {
+    "41-05": {
+      "baseline": [
+        {
+          "arcs": [
+            [
+              "content_guides_nextjs_develop__8b508da8",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_run_tests__c2119b59",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_run_tests__c2119b59",
+              "content_guides_nextjs_develop__8b508da8"
+            ]
+          ],
+          "nodes": [
+            "content_guides_nextjs_containerize__2ddfb5de",
+            "content_guides_nextjs_develop__8b508da8",
+            "content_guides_nextjs_run_tests__c2119b59"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_develop__8b508da8",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_run_tests__c2119b59",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_develop__8b508da8",
+              "t": "content_guides_nextjs_run_tests__c2119b59",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        },
+        {
+          "arcs": [
+            [
+              "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_deploy__77f2e75f",
+              "content_guides_nextjs_configure_github_actions__84c7bac3"
+            ],
+            [
+              "content_guides_nextjs_deploy__77f2e75f",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ]
+          ],
+          "nodes": [
+            "content_guides_nextjs_configure_github_actions__84c7bac3",
+            "content_guides_nextjs_containerize__2ddfb5de",
+            "content_guides_nextjs_deploy__77f2e75f"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "t": "content_guides_nextjs_containerize__2ddfb5de",
+              "theta": 1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "t": "content_guides_nextjs_deploy__77f2e75f",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_deploy__77f2e75f",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ],
+      "edited": [
+        {
+          "arcs": [
+            [
+              "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_deploy__77f2e75f",
+              "content_guides_nextjs_configure_github_actions__84c7bac3"
+            ],
+            [
+              "content_guides_nextjs_deploy__77f2e75f",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_develop__8b508da8",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_run_tests__c2119b59",
+              "content_guides_nextjs_configure_github_actions__84c7bac3"
+            ],
+            [
+              "content_guides_nextjs_run_tests__c2119b59",
+              "content_guides_nextjs_containerize__2ddfb5de"
+            ],
+            [
+              "content_guides_nextjs_run_tests__c2119b59",
+              "content_guides_nextjs_develop__8b508da8"
+            ]
+          ],
+          "nodes": [
+            "content_guides_nextjs_configure_github_actions__84c7bac3",
+            "content_guides_nextjs_containerize__2ddfb5de",
+            "content_guides_nextjs_deploy__77f2e75f",
+            "content_guides_nextjs_develop__8b508da8",
+            "content_guides_nextjs_run_tests__c2119b59"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "t": "content_guides_nextjs_containerize__2ddfb5de",
+              "theta": 1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "t": "content_guides_nextjs_deploy__77f2e75f",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_configure_github_actions__84c7bac3",
+              "t": "content_guides_nextjs_run_tests__c2119b59",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_deploy__77f2e75f",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_develop__8b508da8",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_containerize__2ddfb5de",
+              "t": "content_guides_nextjs_run_tests__c2119b59",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_nextjs_develop__8b508da8",
+              "t": "content_guides_nextjs_run_tests__c2119b59",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "41-06": {
+      "baseline": [
+        {
+          "arcs": [
+            [
+              "content_guides_dotnet_develop__b9588047",
+              "content_guides_dotnet_containerize__df8c5bec"
+            ]
+          ],
+          "nodes": [
+            "content_guides_dotnet_containerize__df8c5bec",
+            "content_guides_dotnet_develop__b9588047"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_dotnet_containerize__df8c5bec",
+              "t": "content_guides_dotnet_develop__b9588047",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        },
+        {
+          "arcs": [
+            [
+              "content_guides_dotnet_run_tests__df5b8b95",
+              "content_guides_dotnet_containerize__df8c5bec"
+            ]
+          ],
+          "nodes": [
+            "content_guides_dotnet_containerize__df8c5bec",
+            "content_guides_dotnet_run_tests__df5b8b95"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_dotnet_containerize__df8c5bec",
+              "t": "content_guides_dotnet_run_tests__df5b8b95",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ],
+      "edited": [
+        {
+          "arcs": [
+            [
+              "content_guides_dotnet_develop__b9588047",
+              "content_guides_dotnet_containerize__df8c5bec"
+            ],
+            [
+              "content_guides_dotnet_develop__b9588047",
+              "content_guides_dotnet_run_tests__df5b8b95"
+            ],
+            [
+              "content_guides_dotnet_run_tests__df5b8b95",
+              "content_guides_dotnet_containerize__df8c5bec"
+            ]
+          ],
+          "nodes": [
+            "content_guides_dotnet_containerize__df8c5bec",
+            "content_guides_dotnet_develop__b9588047",
+            "content_guides_dotnet_run_tests__df5b8b95"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_dotnet_containerize__df8c5bec",
+              "t": "content_guides_dotnet_develop__b9588047",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_dotnet_containerize__df8c5bec",
+              "t": "content_guides_dotnet_run_tests__df5b8b95",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_dotnet_develop__b9588047",
+              "t": "content_guides_dotnet_run_tests__df5b8b95",
+              "theta": 1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "41-12": {
+      "baseline": [
+        {
+          "arcs": [
+            [
+              "content_guides_cpp_configure_ci_cd__a181fa64",
+              "content_guides_cpp_containerize__87a0c70e"
+            ],
+            [
+              "content_guides_cpp_deploy__8a7e4894",
+              "content_guides_cpp_configure_ci_cd__a181fa64"
+            ],
+            [
+              "content_guides_cpp_deploy__8a7e4894",
+              "content_guides_cpp_containerize__87a0c70e"
+            ]
+          ],
+          "nodes": [
+            "content_guides_cpp_configure_ci_cd__a181fa64",
+            "content_guides_cpp_containerize__87a0c70e",
+            "content_guides_cpp_deploy__8a7e4894"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_cpp_configure_ci_cd__a181fa64",
+              "t": "content_guides_cpp_containerize__87a0c70e",
+              "theta": 1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_configure_ci_cd__a181fa64",
+              "t": "content_guides_cpp_deploy__8a7e4894",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_containerize__87a0c70e",
+              "t": "content_guides_cpp_deploy__8a7e4894",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        },
+        {
+          "arcs": [
+            [
+              "content_guides_cpp_develop__8c0cb6f9",
+              "content_guides_cpp_containerize__87a0c70e"
+            ]
+          ],
+          "nodes": [
+            "content_guides_cpp_containerize__87a0c70e",
+            "content_guides_cpp_develop__8c0cb6f9"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_cpp_containerize__87a0c70e",
+              "t": "content_guides_cpp_develop__8c0cb6f9",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ],
+      "edited": [
+        {
+          "arcs": [
+            [
+              "content_guides_cpp_configure_ci_cd__a181fa64",
+              "content_guides_cpp_containerize__87a0c70e"
+            ],
+            [
+              "content_guides_cpp_deploy__8a7e4894",
+              "content_guides_cpp_configure_ci_cd__a181fa64"
+            ],
+            [
+              "content_guides_cpp_deploy__8a7e4894",
+              "content_guides_cpp_containerize__87a0c70e"
+            ],
+            [
+              "content_guides_cpp_develop__8c0cb6f9",
+              "content_guides_cpp_configure_ci_cd__a181fa64"
+            ],
+            [
+              "content_guides_cpp_develop__8c0cb6f9",
+              "content_guides_cpp_containerize__87a0c70e"
+            ]
+          ],
+          "nodes": [
+            "content_guides_cpp_configure_ci_cd__a181fa64",
+            "content_guides_cpp_containerize__87a0c70e",
+            "content_guides_cpp_deploy__8a7e4894",
+            "content_guides_cpp_develop__8c0cb6f9"
+          ],
+          "terms": [
+            {
+              "s": "content_guides_cpp_configure_ci_cd__a181fa64",
+              "t": "content_guides_cpp_containerize__87a0c70e",
+              "theta": 1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_configure_ci_cd__a181fa64",
+              "t": "content_guides_cpp_deploy__8a7e4894",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_configure_ci_cd__a181fa64",
+              "t": "content_guides_cpp_develop__8c0cb6f9",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_containerize__87a0c70e",
+              "t": "content_guides_cpp_deploy__8a7e4894",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            },
+            {
+              "s": "content_guides_cpp_containerize__87a0c70e",
+              "t": "content_guides_cpp_develop__8c0cb6f9",
+              "theta": -1.5707963267948966,
+              "weight": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "schema_version": "icsc.minimum_cost_set.41b.structure.v1",
+  "source_export_sha256": "d24471ca24865179e0c26aa9f9e9fb2d955334c7a5cdd185ed3282bae97a20bd"
+}

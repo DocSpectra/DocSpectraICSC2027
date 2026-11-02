@@ -1,0 +1,5021 @@
+{
+ "anchors": [
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\agopengps.jsonl",
+   "config_sha256": "c7ff62de81db0de3bb498ce691c384012fd6f64ed8e69b8179047975fef3b862",
+   "corpus_id": "agopengps",
+   "full_arcs": 32,
+   "full_nodes": 59,
+   "node_coverage": 0.3898305084745763,
+   "previously_examined": [
+    false
+   ],
+   "request_sha256": "d77e84e0d9eaa0aa78519ff6ef84bc12854f390c6bbe1709394c79491905d3cb",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "content_getting_started_index__21509b4d",
+       "content_hardware_other_components_gps_modules_standard_or_micro__60a369e1"
+      ],
+      [
+       "content_hardware_other_components_gps_modules_standard_or_micro__60a369e1",
+       "content_hardware_hardware_quickstart_guide__60da5da6"
+      ],
+      [
+       "content_hardware_hardware_quickstart_guide__60da5da6",
+       "content_getting_started_index__21509b4d"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "fbe7e701f3dc267796b60745794b85ced1881baed82cb0511efb68d37372a69d",
+      "candidates": 1,
+      "empty_interpretation": null,
+      "expansions": 56,
+      "selected": [
+       {
+        "cycle": [
+         "content_getting_started_index__21509b4d",
+         "content_hardware_other_components_gps_modules_standard_or_micro__60a369e1",
+         "content_hardware_hardware_quickstart_guide__60da5da6"
+        ],
+        "length": 3,
+        "selection_hash": "c1f38389cd4d5b516b8f648052ffbc37760223e68a078d9fe7c90f14de492431"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 60,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 70,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 72,
+      "selected": [],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "content_getting_started_index__21509b4d",
+      "content_hardware_other_components_gps_modules_standard_or_micro__60a369e1",
+      "content_hardware_hardware_quickstart_guide__60da5da6"
+     ]
+    ],
+    "ledger_sha256": "fbe7e701f3dc267796b60745794b85ced1881baed82cb0511efb68d37372a69d",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 30,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "agopengps",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "content_getting_started_index__21509b4d",
+       "content_hardware_other_components_gps_modules_standard_or_micro__60a369e1",
+       "content_hardware_hardware_quickstart_guide__60da5da6"
+      ],
+      "length": 3,
+      "selection_hash": "c1f38389cd4d5b516b8f648052ffbc37760223e68a078d9fe7c90f14de492431"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "10a682e32c352f1ee4bf4d1ae89bf91da791bd01",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__agopengps.json",
+   "source_bundle_sha256": "ee92d0695691bda78cc09c6221eaa683010eacfb1b395fb53a5168ba6a1cc5ee",
+   "source_provenance": {
+    "commit": "10a682e32c352f1ee4bf4d1ae89bf91da791bd01",
+    "corpus_id": "agopengps",
+    "edge_csv_rows": 32,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "531c54d2dafe3bd6ca12ec530bed6374907ca81e71e73a6d6ba5f3acc68e4b6b",
+    "frozen_selected_edges_sha256": "0ffd64bdd56e011b58b1b570ea0c1ff20f4bfd20275ed63223728d6ee15b2c02",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 59,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "dc71819a32d40f7a76cf07e3612012fc9a618560fd4b7ec441eed04f9ca2cb86"
+   },
+   "view_arcs": 30,
+   "view_graph_sha256": "58fc318b6d93938f153f13d4d1ba9753592e9558cf906f8b7f21f3b3b0b5a6ab",
+   "view_nodes": 23
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\ansible_docs.jsonl",
+   "config_sha256": "5f394336485237ea58d675b3a495290429ea56393cc7fb9289177e68d14c71ed",
+   "corpus_id": "ansible_docs",
+   "full_arcs": 659,
+   "full_nodes": 492,
+   "node_coverage": 0.7947154471544715,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "233c7a22cf0c232a68ba98b73b1259b13efc765b15e979e348459dfecc74e344",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "playbook_guide_playbooks_error_handling__a1b5249f",
+       "playbook_guide_playbooks_intro__3be30040"
+      ],
+      [
+       "playbook_guide_playbooks_intro__3be30040",
+       "playbook_guide_playbooks_strategies__739d79ff"
+      ],
+      [
+       "playbook_guide_playbooks_strategies__739d79ff",
+       "playbook_guide_playbooks_error_handling__a1b5249f"
+      ]
+     ],
+     [
+      [
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120"
+      ],
+      [
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_general__4ab09e41"
+      ],
+      [
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_best_practices__ae68aeef"
+      ]
+     ],
+     [
+      [
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120"
+      ],
+      [
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_general__4ab09e41"
+      ],
+      [
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      [
+       "dev_guide_developing_modules_checklist__9e30b326",
+       "dev_guide_developing_modules_best_practices__ae68aeef"
+      ]
+     ],
+     [
+      [
+       "dev_guide_developing_locally__7bc88e0e",
+       "dev_guide_developing_plugins__0a051a61"
+      ],
+      [
+       "dev_guide_developing_plugins__0a051a61",
+       "dev_guide_developing_modules_general__4ab09e41"
+      ],
+      [
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      [
+       "dev_guide_developing_modules_checklist__9e30b326",
+       "dev_guide_developing_locally__7bc88e0e"
+      ]
+     ],
+     [
+      [
+       "dev_guide_developing_locally__7bc88e0e",
+       "dev_guide_developing_plugins__0a051a61"
+      ],
+      [
+       "dev_guide_developing_plugins__0a051a61",
+       "dev_guide_developing_modules_general__4ab09e41"
+      ],
+      [
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_best_practices__ae68aeef"
+      ],
+      [
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120"
+      ],
+      [
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      [
+       "dev_guide_developing_modules_checklist__9e30b326",
+       "dev_guide_developing_locally__7bc88e0e"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "5adfbf50c67d3f2ac4d02271b1e98b06ebee725cfebc057ee8eb22e18cb29c07",
+      "candidates": 3,
+      "empty_interpretation": null,
+      "expansions": 1453,
+      "selected": [
+       {
+        "cycle": [
+         "playbook_guide_playbooks_error_handling__a1b5249f",
+         "playbook_guide_playbooks_intro__3be30040",
+         "playbook_guide_playbooks_strategies__739d79ff"
+        ],
+        "length": 3,
+        "selection_hash": "50bde5d7bcb7e52cc8307b1b807b9e18763e907873cfcd08e7009fbae06ba59b"
+       },
+       {
+        "cycle": [
+         "dev_guide_developing_modules_best_practices__ae68aeef",
+         "dev_guide_developing_modules_in_groups__b46d9120",
+         "dev_guide_developing_modules_general__4ab09e41"
+        ],
+        "length": 3,
+        "selection_hash": "988ede0c6d35551b77c71600b5b5a255c28a3e59e269d341baaaffb9476a1004"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "d0ae34ed763e91fbdea4dcbd280b3a57e1afebdb406dd61590b8a40d88465699",
+      "candidates": 3,
+      "empty_interpretation": null,
+      "expansions": 2265,
+      "selected": [
+       {
+        "cycle": [
+         "dev_guide_developing_modules_best_practices__ae68aeef",
+         "dev_guide_developing_modules_in_groups__b46d9120",
+         "dev_guide_developing_modules_general__4ab09e41",
+         "dev_guide_developing_modules_checklist__9e30b326"
+        ],
+        "length": 4,
+        "selection_hash": "4ebff0e3f709070a5f6c72c04b9422f4fb3ada04b2f8f4d8a384c9fdc86a6b61"
+       },
+       {
+        "cycle": [
+         "dev_guide_developing_locally__7bc88e0e",
+         "dev_guide_developing_plugins__0a051a61",
+         "dev_guide_developing_modules_general__4ab09e41",
+         "dev_guide_developing_modules_checklist__9e30b326"
+        ],
+        "length": 4,
+        "selection_hash": "adc36866078c9f2cf47ca632d2b7cee4b63522fd6edd14840610b4484f3ad1d2"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 3281,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "fda92914c164c9f81b2b028e993ecbb2345b375279dcfec745dd55213149cace",
+      "candidates": 1,
+      "empty_interpretation": null,
+      "expansions": 4494,
+      "selected": [
+       {
+        "cycle": [
+         "dev_guide_developing_locally__7bc88e0e",
+         "dev_guide_developing_plugins__0a051a61",
+         "dev_guide_developing_modules_general__4ab09e41",
+         "dev_guide_developing_modules_best_practices__ae68aeef",
+         "dev_guide_developing_modules_in_groups__b46d9120",
+         "dev_guide_developing_modules_checklist__9e30b326"
+        ],
+        "length": 6,
+        "selection_hash": "c4322c22e8c83f3706f41d546522fe6477384e6d706f00879c7631ade358209a"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "playbook_guide_playbooks_error_handling__a1b5249f",
+      "playbook_guide_playbooks_intro__3be30040",
+      "playbook_guide_playbooks_strategies__739d79ff"
+     ],
+     [
+      "dev_guide_developing_modules_best_practices__ae68aeef",
+      "dev_guide_developing_modules_in_groups__b46d9120",
+      "dev_guide_developing_modules_general__4ab09e41"
+     ],
+     [
+      "dev_guide_developing_modules_best_practices__ae68aeef",
+      "dev_guide_developing_modules_in_groups__b46d9120",
+      "dev_guide_developing_modules_general__4ab09e41",
+      "dev_guide_developing_modules_checklist__9e30b326"
+     ],
+     [
+      "dev_guide_developing_locally__7bc88e0e",
+      "dev_guide_developing_plugins__0a051a61",
+      "dev_guide_developing_modules_general__4ab09e41",
+      "dev_guide_developing_modules_checklist__9e30b326"
+     ],
+     [
+      "dev_guide_developing_locally__7bc88e0e",
+      "dev_guide_developing_plugins__0a051a61",
+      "dev_guide_developing_modules_general__4ab09e41",
+      "dev_guide_developing_modules_best_practices__ae68aeef",
+      "dev_guide_developing_modules_in_groups__b46d9120",
+      "dev_guide_developing_modules_checklist__9e30b326"
+     ]
+    ],
+    "ledger_sha256": "d3bcda80bbf8f9b4f007eec0adf925cb7a7c25f57510eef673c1407c2b6808ce",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 586,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "ansible_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "playbook_guide_playbooks_error_handling__a1b5249f",
+       "playbook_guide_playbooks_intro__3be30040",
+       "playbook_guide_playbooks_strategies__739d79ff"
+      ],
+      "length": 3,
+      "selection_hash": "50bde5d7bcb7e52cc8307b1b807b9e18763e907873cfcd08e7009fbae06ba59b"
+     },
+     {
+      "cycle": [
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_general__4ab09e41"
+      ],
+      "length": 3,
+      "selection_hash": "988ede0c6d35551b77c71600b5b5a255c28a3e59e269d341baaaffb9476a1004"
+     },
+     {
+      "cycle": [
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      "length": 4,
+      "selection_hash": "4ebff0e3f709070a5f6c72c04b9422f4fb3ada04b2f8f4d8a384c9fdc86a6b61"
+     },
+     {
+      "cycle": [
+       "dev_guide_developing_locally__7bc88e0e",
+       "dev_guide_developing_plugins__0a051a61",
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      "length": 4,
+      "selection_hash": "adc36866078c9f2cf47ca632d2b7cee4b63522fd6edd14840610b4484f3ad1d2"
+     },
+     {
+      "cycle": [
+       "dev_guide_developing_locally__7bc88e0e",
+       "dev_guide_developing_plugins__0a051a61",
+       "dev_guide_developing_modules_general__4ab09e41",
+       "dev_guide_developing_modules_best_practices__ae68aeef",
+       "dev_guide_developing_modules_in_groups__b46d9120",
+       "dev_guide_developing_modules_checklist__9e30b326"
+      ],
+      "length": 6,
+      "selection_hash": "c4322c22e8c83f3706f41d546522fe6477384e6d706f00879c7631ade358209a"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "02adbd3a6f6778f2a05a1c846c614fad49a00765",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__ansible_docs.json",
+   "source_bundle_sha256": "c798d09bc3695446cbcb77bbeedaacb29456825c4d4273124525f6ee883844ea",
+   "source_provenance": {
+    "commit": "02adbd3a6f6778f2a05a1c846c614fad49a00765",
+    "corpus_id": "ansible_docs",
+    "edge_csv_rows": 659,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "4dce0227bfc58765a168a7bb2b490da704dba222864ccc20437841b1d9ec0ce3",
+    "frozen_selected_edges_sha256": "b1c3f65d5e2d6fa0c1a58746c340b1f5ab6d46602ac273d7be5d226f16ff0b27",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 492,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "2418104585fb8a3e2fbaf38a382968bbca88f717d83a9f7bf6f1c7a5ade4c1f0"
+   },
+   "view_arcs": 658,
+   "view_graph_sha256": "f888723ed128fcc3293ed8e9417e4097edb604ee22c58ae1fe24a0887fa4478f",
+   "view_nodes": 391
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\argo_cd_docs.jsonl",
+   "config_sha256": "b72abac5f51025a604da3dc89caa89f0aad12ef3391d3c21fd2604f5df44ba63",
+   "corpus_id": "argo_cd_docs",
+   "full_arcs": 753,
+   "full_nodes": 470,
+   "node_coverage": 0.8361702127659575,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "9a299907c9a1b9e01388e2fccf26add3bd946a42cd4d2b16e835469062a9848a",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "operator_manual_notifications_services_overview__168344f7",
+       "operator_manual_notifications_services_rocketchat__02a33867"
+      ],
+      [
+       "operator_manual_notifications_services_rocketchat__02a33867",
+       "operator_manual_notifications_templates__9d9b5afd"
+      ],
+      [
+       "operator_manual_notifications_templates__9d9b5afd",
+       "operator_manual_notifications_services_overview__168344f7"
+      ]
+     ],
+     [
+      [
+       "operator_manual_notifications_services_overview__168344f7",
+       "operator_manual_notifications_services_slack__ffb28102"
+      ],
+      [
+       "operator_manual_notifications_services_slack__ffb28102",
+       "operator_manual_notifications_templates__9d9b5afd"
+      ],
+      [
+       "operator_manual_notifications_templates__9d9b5afd",
+       "operator_manual_notifications_services_overview__168344f7"
+      ]
+     ],
+     [
+      [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0"
+      ],
+      [
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_2_14_3_0__04b37e4a"
+      ],
+      [
+       "operator_manual_upgrading_2_14_3_0__04b37e4a",
+       "operator_manual_rbac__d114e120"
+      ],
+      [
+       "operator_manual_rbac__d114e120",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      [
+       "operator_manual_applicationset_index__a1dfe05a",
+       "index__b8d322cc"
+      ]
+     ],
+     [
+      [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0"
+      ],
+      [
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_1_8_2_0__5fbefdaa"
+      ],
+      [
+       "operator_manual_upgrading_1_8_2_0__5fbefdaa",
+       "user_guide_helm__57073da6"
+      ],
+      [
+       "user_guide_helm__57073da6",
+       "user_guide_application_set__d1581504"
+      ],
+      [
+       "user_guide_application_set__d1581504",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      [
+       "operator_manual_applicationset_index__a1dfe05a",
+       "index__b8d322cc"
+      ]
+     ],
+     [
+      [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0"
+      ],
+      [
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_2_14_3_0__04b37e4a"
+      ],
+      [
+       "operator_manual_upgrading_2_14_3_0__04b37e4a",
+       "operator_manual_declarative_setup__357bd0c4"
+      ],
+      [
+       "operator_manual_declarative_setup__357bd0c4",
+       "operator_manual_rbac__d114e120"
+      ],
+      [
+       "operator_manual_rbac__d114e120",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      [
+       "operator_manual_applicationset_index__a1dfe05a",
+       "index__b8d322cc"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "0b14f4ee1602d0b78d98a7a7b5352e4864578162c6c35ad54336171109bf941d",
+      "candidates": 5,
+      "empty_interpretation": null,
+      "expansions": 815,
+      "selected": [
+       {
+        "cycle": [
+         "operator_manual_notifications_services_overview__168344f7",
+         "operator_manual_notifications_services_rocketchat__02a33867",
+         "operator_manual_notifications_templates__9d9b5afd"
+        ],
+        "length": 3,
+        "selection_hash": "3f515f246449f01a0bc778edf51c3d5da1ca0047be241edc8dc54472215bca83"
+       },
+       {
+        "cycle": [
+         "operator_manual_notifications_services_overview__168344f7",
+         "operator_manual_notifications_services_slack__ffb28102",
+         "operator_manual_notifications_templates__9d9b5afd"
+        ],
+        "length": 3,
+        "selection_hash": "426613f451db4c0864063c34c95a4039e02db8f42c3ebd05d76b815a0c42d1b7"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 1088,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "75ee3b6fb6e0dab4f890161d6050ddf82305dc1c28d01444c07b78604ae8f0f4",
+      "candidates": 1,
+      "empty_interpretation": null,
+      "expansions": 1423,
+      "selected": [
+       {
+        "cycle": [
+         "index__b8d322cc",
+         "operator_manual_upgrading_overview__734189f0",
+         "operator_manual_upgrading_2_14_3_0__04b37e4a",
+         "operator_manual_rbac__d114e120",
+         "operator_manual_applicationset_index__a1dfe05a"
+        ],
+        "length": 5,
+        "selection_hash": "e6dda3f33ea4aa780f72f319fb72e92dafb7e3ded8911de76ad40b95840da8a4"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "424a625e3c7e3636791e9eb0114d587ca20e788ab38ad9127970f8b5b900b3e9",
+      "candidates": 2,
+      "empty_interpretation": null,
+      "expansions": 1847,
+      "selected": [
+       {
+        "cycle": [
+         "index__b8d322cc",
+         "operator_manual_upgrading_overview__734189f0",
+         "operator_manual_upgrading_1_8_2_0__5fbefdaa",
+         "user_guide_helm__57073da6",
+         "user_guide_application_set__d1581504",
+         "operator_manual_applicationset_index__a1dfe05a"
+        ],
+        "length": 6,
+        "selection_hash": "4fd36f79d05aa9dbad8de2a6da762fa627fa30cfa562aa0f3d57052caac511ac"
+       },
+       {
+        "cycle": [
+         "index__b8d322cc",
+         "operator_manual_upgrading_overview__734189f0",
+         "operator_manual_upgrading_2_14_3_0__04b37e4a",
+         "operator_manual_declarative_setup__357bd0c4",
+         "operator_manual_rbac__d114e120",
+         "operator_manual_applicationset_index__a1dfe05a"
+        ],
+        "length": 6,
+        "selection_hash": "96fc80b40d306102fb172800e204dd6e1e12a599507e38e89f9705461728caee"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "operator_manual_notifications_services_overview__168344f7",
+      "operator_manual_notifications_services_rocketchat__02a33867",
+      "operator_manual_notifications_templates__9d9b5afd"
+     ],
+     [
+      "operator_manual_notifications_services_overview__168344f7",
+      "operator_manual_notifications_services_slack__ffb28102",
+      "operator_manual_notifications_templates__9d9b5afd"
+     ],
+     [
+      "index__b8d322cc",
+      "operator_manual_upgrading_overview__734189f0",
+      "operator_manual_upgrading_2_14_3_0__04b37e4a",
+      "operator_manual_rbac__d114e120",
+      "operator_manual_applicationset_index__a1dfe05a"
+     ],
+     [
+      "index__b8d322cc",
+      "operator_manual_upgrading_overview__734189f0",
+      "operator_manual_upgrading_1_8_2_0__5fbefdaa",
+      "user_guide_helm__57073da6",
+      "user_guide_application_set__d1581504",
+      "operator_manual_applicationset_index__a1dfe05a"
+     ],
+     [
+      "index__b8d322cc",
+      "operator_manual_upgrading_overview__734189f0",
+      "operator_manual_upgrading_2_14_3_0__04b37e4a",
+      "operator_manual_declarative_setup__357bd0c4",
+      "operator_manual_rbac__d114e120",
+      "operator_manual_applicationset_index__a1dfe05a"
+     ]
+    ],
+    "ledger_sha256": "5e1a8c5e579344547577dd556a6677dc11a45237ef1b5519960f9c8def292fe9",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 353,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "argo_cd_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "operator_manual_notifications_services_overview__168344f7",
+       "operator_manual_notifications_services_rocketchat__02a33867",
+       "operator_manual_notifications_templates__9d9b5afd"
+      ],
+      "length": 3,
+      "selection_hash": "3f515f246449f01a0bc778edf51c3d5da1ca0047be241edc8dc54472215bca83"
+     },
+     {
+      "cycle": [
+       "operator_manual_notifications_services_overview__168344f7",
+       "operator_manual_notifications_services_slack__ffb28102",
+       "operator_manual_notifications_templates__9d9b5afd"
+      ],
+      "length": 3,
+      "selection_hash": "426613f451db4c0864063c34c95a4039e02db8f42c3ebd05d76b815a0c42d1b7"
+     },
+     {
+      "cycle": [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_2_14_3_0__04b37e4a",
+       "operator_manual_rbac__d114e120",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      "length": 5,
+      "selection_hash": "e6dda3f33ea4aa780f72f319fb72e92dafb7e3ded8911de76ad40b95840da8a4"
+     },
+     {
+      "cycle": [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_1_8_2_0__5fbefdaa",
+       "user_guide_helm__57073da6",
+       "user_guide_application_set__d1581504",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      "length": 6,
+      "selection_hash": "4fd36f79d05aa9dbad8de2a6da762fa627fa30cfa562aa0f3d57052caac511ac"
+     },
+     {
+      "cycle": [
+       "index__b8d322cc",
+       "operator_manual_upgrading_overview__734189f0",
+       "operator_manual_upgrading_2_14_3_0__04b37e4a",
+       "operator_manual_declarative_setup__357bd0c4",
+       "operator_manual_rbac__d114e120",
+       "operator_manual_applicationset_index__a1dfe05a"
+      ],
+      "length": 6,
+      "selection_hash": "96fc80b40d306102fb172800e204dd6e1e12a599507e38e89f9705461728caee"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "f8707f822736352ae557a2a3bd6589666b88402b",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__argo_cd_docs.json",
+   "source_bundle_sha256": "b2ddb946b4557d7c97d863286e8f88027411cea2ff521291a1841995c06017b6",
+   "source_provenance": {
+    "commit": "f8707f822736352ae557a2a3bd6589666b88402b",
+    "corpus_id": "argo_cd_docs",
+    "edge_csv_rows": 753,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "3d8f25cd5ee8eb4253dc9f80980da2d939da533569f8d5d2551a3e381efae7fb",
+    "frozen_selected_edges_sha256": "2a97b153612b166f7dda2366198f6ad6e93f365c8c1c71e5505d00899a6b3661",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 470,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "8d73d97bf9b2baac606c673a785d208b394676aa109a1e63d9a41cc3ef94af34"
+   },
+   "view_arcs": 745,
+   "view_graph_sha256": "b33f7efa29d35e18a96bc03efae6f04caee68f6a59672f76a74f0d2734514e74",
+   "view_nodes": 393
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\django_docs.jsonl",
+   "config_sha256": "e7f8142dfa7775949789e51869dee5d073e042bb3e964c11a7f814a92ce89248",
+   "corpus_id": "django_docs",
+   "full_arcs": 1550,
+   "full_nodes": 651,
+   "node_coverage": 0.9969278033794163,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "f6a21e99dd64747fbd648035dfa769c2d7e6a6a6c917f21bcc985e9c8f5342fd",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69"
+      ],
+      [
+       "releases_index__b7f86a69",
+       "releases_1_1__69ae3dc2"
+      ],
+      [
+       "releases_1_1__69ae3dc2",
+       "misc_api_stability__0d7c9693"
+      ]
+     ],
+     [
+      [
+       "ref_models_index__c2525260",
+       "ref_models_lookups__d69d1034"
+      ],
+      [
+       "ref_models_lookups__d69d1034",
+       "topics_db_queries__1f0a8cdb"
+      ],
+      [
+       "topics_db_queries__1f0a8cdb",
+       "ref_models_index__c2525260"
+      ]
+     ],
+     [
+      [
+       "ref_contrib_admin_index__63ad5ac7",
+       "ref_forms_index__2a8676de"
+      ],
+      [
+       "ref_forms_index__2a8676de",
+       "ref_forms_renderers__c5487abf"
+      ],
+      [
+       "ref_forms_renderers__c5487abf",
+       "topics_templates__57ba5f11"
+      ],
+      [
+       "topics_templates__57ba5f11",
+       "ref_contrib_admin_index__63ad5ac7"
+      ]
+     ],
+     [
+      [
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69"
+      ],
+      [
+       "releases_index__b7f86a69",
+       "releases_1_2_4__29d610d3"
+      ],
+      [
+       "releases_1_2_4__29d610d3",
+       "releases_1_2__d6c1803e"
+      ],
+      [
+       "releases_1_2__d6c1803e",
+       "misc_api_stability__0d7c9693"
+      ]
+     ],
+     [
+      [
+       "ref_applications__098eeee2",
+       "topics_db_models__c0350ba6"
+      ],
+      [
+       "topics_db_models__c0350ba6",
+       "topics_settings__cfd85480"
+      ],
+      [
+       "topics_settings__cfd85480",
+       "ref_django_admin__ecd20847"
+      ],
+      [
+       "ref_django_admin__ecd20847",
+       "topics_migrations__cbeed3b3"
+      ],
+      [
+       "topics_migrations__cbeed3b3",
+       "ref_applications__098eeee2"
+      ]
+     ],
+     [
+      [
+       "intro_tutorial01__dc9b923e",
+       "topics_settings__cfd85480"
+      ],
+      [
+       "topics_settings__cfd85480",
+       "ref_django_admin__ecd20847"
+      ],
+      [
+       "ref_django_admin__ecd20847",
+       "ref_contrib_gis_index__10b1af1e"
+      ],
+      [
+       "ref_contrib_gis_index__10b1af1e",
+       "ref_contrib_gis_tutorial__101cca44"
+      ],
+      [
+       "ref_contrib_gis_tutorial__101cca44",
+       "intro_tutorial01__dc9b923e"
+      ]
+     ],
+     [
+      [
+       "howto_upgrade_version__37d2825b",
+       "internals_deprecation__28f65e9e"
+      ],
+      [
+       "internals_deprecation__28f65e9e",
+       "releases_1_4__3610deb0"
+      ],
+      [
+       "releases_1_4__3610deb0",
+       "misc_api_stability__0d7c9693"
+      ],
+      [
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69"
+      ],
+      [
+       "releases_index__b7f86a69",
+       "releases_2_1__973df0e1"
+      ],
+      [
+       "releases_2_1__973df0e1",
+       "howto_upgrade_version__37d2825b"
+      ]
+     ],
+     [
+      [
+       "internals_contributing_index__0d62b063",
+       "internals_contributing_new_contributors__f99bd94b"
+      ],
+      [
+       "internals_contributing_new_contributors__f99bd94b",
+       "internals_contributing_writing_documentation__7b592a59"
+      ],
+      [
+       "internals_contributing_writing_documentation__7b592a59",
+       "topics_index__584d4506"
+      ],
+      [
+       "topics_index__584d4506",
+       "topics_install__12dd9006"
+      ],
+      [
+       "topics_install__12dd9006",
+       "intro_contributing__c99fd006"
+      ],
+      [
+       "intro_contributing__c99fd006",
+       "internals_contributing_index__0d62b063"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "9276afc89b0bfafdf3c9d4fd9e49c18bcca37432763720bc97430d06f1ad65da",
+      "candidates": 16,
+      "empty_interpretation": null,
+      "expansions": 4298,
+      "selected": [
+       {
+        "cycle": [
+         "misc_api_stability__0d7c9693",
+         "releases_index__b7f86a69",
+         "releases_1_1__69ae3dc2"
+        ],
+        "length": 3,
+        "selection_hash": "077d5008bb2e89e6e88d94b5e5d27f07fa5aee2020d8997c08a4201a73f12ff5"
+       },
+       {
+        "cycle": [
+         "ref_models_index__c2525260",
+         "ref_models_lookups__d69d1034",
+         "topics_db_queries__1f0a8cdb"
+        ],
+        "length": 3,
+        "selection_hash": "14ffaac1d2f4c37f9299d830369c81e49f10b08f5758cbad4f8e39997a9866b2"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "1a74dd0a606c39ae6b98a315f51cca2fcec1d17a5b5585145743597d680bc869",
+      "candidates": 32,
+      "empty_interpretation": null,
+      "expansions": 9684,
+      "selected": [
+       {
+        "cycle": [
+         "ref_contrib_admin_index__63ad5ac7",
+         "ref_forms_index__2a8676de",
+         "ref_forms_renderers__c5487abf",
+         "topics_templates__57ba5f11"
+        ],
+        "length": 4,
+        "selection_hash": "026f6c8e9a47e0d883eb7b3dd078e76e2edc93a38ddba0d6a32cc70f2e06fa3e"
+       },
+       {
+        "cycle": [
+         "misc_api_stability__0d7c9693",
+         "releases_index__b7f86a69",
+         "releases_1_2_4__29d610d3",
+         "releases_1_2__d6c1803e"
+        ],
+        "length": 4,
+        "selection_hash": "064fb5454b6a9bf9a936688fa73f91a60c81dc9f66deeeb58607ed63251ec7a7"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "a55c20303f2c9bcf03ad34134d89f7d2b929cd72e1b65b7139f5e90183a8dd25",
+      "candidates": 34,
+      "empty_interpretation": null,
+      "expansions": 23909,
+      "selected": [
+       {
+        "cycle": [
+         "ref_applications__098eeee2",
+         "topics_db_models__c0350ba6",
+         "topics_settings__cfd85480",
+         "ref_django_admin__ecd20847",
+         "topics_migrations__cbeed3b3"
+        ],
+        "length": 5,
+        "selection_hash": "0ab0949184845489f146bf4484ffbb2035e127693f4433a50687dc7d50e231dc"
+       },
+       {
+        "cycle": [
+         "intro_tutorial01__dc9b923e",
+         "topics_settings__cfd85480",
+         "ref_django_admin__ecd20847",
+         "ref_contrib_gis_index__10b1af1e",
+         "ref_contrib_gis_tutorial__101cca44"
+        ],
+        "length": 5,
+        "selection_hash": "0d158e1a72c34a9a32ca841a2e0e9c4fa4f1f8ff790dcdb9c130b56088a2ddd4"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "015892d9fbaa74fe79300690e3afb5d7bdcfabbb861e5d3e48412f5bc98cc209",
+      "candidates": 79,
+      "empty_interpretation": null,
+      "expansions": 57952,
+      "selected": [
+       {
+        "cycle": [
+         "howto_upgrade_version__37d2825b",
+         "internals_deprecation__28f65e9e",
+         "releases_1_4__3610deb0",
+         "misc_api_stability__0d7c9693",
+         "releases_index__b7f86a69",
+         "releases_2_1__973df0e1"
+        ],
+        "length": 6,
+        "selection_hash": "01001d8c70178791576635abadb30ee3254b44fae3fe026272f76baa059174c8"
+       },
+       {
+        "cycle": [
+         "internals_contributing_index__0d62b063",
+         "internals_contributing_new_contributors__f99bd94b",
+         "internals_contributing_writing_documentation__7b592a59",
+         "topics_index__584d4506",
+         "topics_install__12dd9006",
+         "intro_contributing__c99fd006"
+        ],
+        "length": 6,
+        "selection_hash": "0199f323b3ac08858695f3b7960fe7b74dbe01572ac63bbdc92cabbe297657ac"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "misc_api_stability__0d7c9693",
+      "releases_index__b7f86a69",
+      "releases_1_1__69ae3dc2"
+     ],
+     [
+      "ref_models_index__c2525260",
+      "ref_models_lookups__d69d1034",
+      "topics_db_queries__1f0a8cdb"
+     ],
+     [
+      "ref_contrib_admin_index__63ad5ac7",
+      "ref_forms_index__2a8676de",
+      "ref_forms_renderers__c5487abf",
+      "topics_templates__57ba5f11"
+     ],
+     [
+      "misc_api_stability__0d7c9693",
+      "releases_index__b7f86a69",
+      "releases_1_2_4__29d610d3",
+      "releases_1_2__d6c1803e"
+     ],
+     [
+      "ref_applications__098eeee2",
+      "topics_db_models__c0350ba6",
+      "topics_settings__cfd85480",
+      "ref_django_admin__ecd20847",
+      "topics_migrations__cbeed3b3"
+     ],
+     [
+      "intro_tutorial01__dc9b923e",
+      "topics_settings__cfd85480",
+      "ref_django_admin__ecd20847",
+      "ref_contrib_gis_index__10b1af1e",
+      "ref_contrib_gis_tutorial__101cca44"
+     ],
+     [
+      "howto_upgrade_version__37d2825b",
+      "internals_deprecation__28f65e9e",
+      "releases_1_4__3610deb0",
+      "misc_api_stability__0d7c9693",
+      "releases_index__b7f86a69",
+      "releases_2_1__973df0e1"
+     ],
+     [
+      "internals_contributing_index__0d62b063",
+      "internals_contributing_new_contributors__f99bd94b",
+      "internals_contributing_writing_documentation__7b592a59",
+      "topics_index__584d4506",
+      "topics_install__12dd9006",
+      "intro_contributing__c99fd006"
+     ]
+    ],
+    "ledger_sha256": "caa9c31252e875d2da2101f9a1d9d356a538bcfa7f0db1534d4959ca8549b940",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 1416,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "django_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69",
+       "releases_1_1__69ae3dc2"
+      ],
+      "length": 3,
+      "selection_hash": "077d5008bb2e89e6e88d94b5e5d27f07fa5aee2020d8997c08a4201a73f12ff5"
+     },
+     {
+      "cycle": [
+       "ref_models_index__c2525260",
+       "ref_models_lookups__d69d1034",
+       "topics_db_queries__1f0a8cdb"
+      ],
+      "length": 3,
+      "selection_hash": "14ffaac1d2f4c37f9299d830369c81e49f10b08f5758cbad4f8e39997a9866b2"
+     },
+     {
+      "cycle": [
+       "ref_contrib_admin_index__63ad5ac7",
+       "ref_forms_index__2a8676de",
+       "ref_forms_renderers__c5487abf",
+       "topics_templates__57ba5f11"
+      ],
+      "length": 4,
+      "selection_hash": "026f6c8e9a47e0d883eb7b3dd078e76e2edc93a38ddba0d6a32cc70f2e06fa3e"
+     },
+     {
+      "cycle": [
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69",
+       "releases_1_2_4__29d610d3",
+       "releases_1_2__d6c1803e"
+      ],
+      "length": 4,
+      "selection_hash": "064fb5454b6a9bf9a936688fa73f91a60c81dc9f66deeeb58607ed63251ec7a7"
+     },
+     {
+      "cycle": [
+       "ref_applications__098eeee2",
+       "topics_db_models__c0350ba6",
+       "topics_settings__cfd85480",
+       "ref_django_admin__ecd20847",
+       "topics_migrations__cbeed3b3"
+      ],
+      "length": 5,
+      "selection_hash": "0ab0949184845489f146bf4484ffbb2035e127693f4433a50687dc7d50e231dc"
+     },
+     {
+      "cycle": [
+       "intro_tutorial01__dc9b923e",
+       "topics_settings__cfd85480",
+       "ref_django_admin__ecd20847",
+       "ref_contrib_gis_index__10b1af1e",
+       "ref_contrib_gis_tutorial__101cca44"
+      ],
+      "length": 5,
+      "selection_hash": "0d158e1a72c34a9a32ca841a2e0e9c4fa4f1f8ff790dcdb9c130b56088a2ddd4"
+     },
+     {
+      "cycle": [
+       "howto_upgrade_version__37d2825b",
+       "internals_deprecation__28f65e9e",
+       "releases_1_4__3610deb0",
+       "misc_api_stability__0d7c9693",
+       "releases_index__b7f86a69",
+       "releases_2_1__973df0e1"
+      ],
+      "length": 6,
+      "selection_hash": "01001d8c70178791576635abadb30ee3254b44fae3fe026272f76baa059174c8"
+     },
+     {
+      "cycle": [
+       "internals_contributing_index__0d62b063",
+       "internals_contributing_new_contributors__f99bd94b",
+       "internals_contributing_writing_documentation__7b592a59",
+       "topics_index__584d4506",
+       "topics_install__12dd9006",
+       "intro_contributing__c99fd006"
+      ],
+      "length": 6,
+      "selection_hash": "0199f323b3ac08858695f3b7960fe7b74dbe01572ac63bbdc92cabbe297657ac"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "f2169ef3688422d394d36007e320bac839117f0b",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__django_docs.json",
+   "source_bundle_sha256": "b36c53938613b2b522db2f698631e6e2b654b93b50291b90bf4f2682236a4b4e",
+   "source_provenance": {
+    "commit": "f2169ef3688422d394d36007e320bac839117f0b",
+    "corpus_id": "django_docs",
+    "edge_csv_rows": 1550,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "55e29491ed4dc886ce9253c9b848e98c663034710522b68df5c767b8f3ba6761",
+    "frozen_selected_edges_sha256": "44f2ef28ef07cdb5a17719ac9e16e7dc5c7be17ad301459daa6d728e7a3cde54",
+    "import_faq_patterns": [
+     "faq/*"
+    ],
+    "manifest_num_corpus_pages": 651,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "7e439b71208a71c1f28297b964adb3ba2dd4e8c6f291043ae40d851f61748cda"
+   },
+   "view_arcs": 1550,
+   "view_graph_sha256": "941a42c7f1cadfb101252ee56f8b26c953ace498c91d9a957bf3e2a200e728f5",
+   "view_nodes": 649
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\docker_docs.jsonl",
+   "config_sha256": "daf252efee70cbb79b77f42841c3a53dc1adc8967afa9b5c172c60e5ff16db58",
+   "corpus_id": "docker_docs",
+   "full_arcs": 2496,
+   "full_nodes": 1263,
+   "node_coverage": 0.6682501979414094,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "c656ca5d464e0a776c4ad3f6fdc16c026b42076a0c1666ded7906bbbd5762522",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "content_manuals_ai_sandboxes_agents_docker_agent__b6310f7b",
+       "content_manuals_ai_sandboxes_security_credentials__e22ac9ad"
+      ],
+      [
+       "content_manuals_ai_sandboxes_security_credentials__e22ac9ad",
+       "content_manuals_ai_sandboxes_agents_index__49a7791f"
+      ],
+      [
+       "content_manuals_ai_sandboxes_agents_index__49a7791f",
+       "content_manuals_ai_sandboxes_agents_docker_agent__b6310f7b"
+      ]
+     ],
+     [
+      [
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_limitations__d4f08cc1"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_limitations__d4f08cc1",
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+      ]
+     ],
+     [
+      [
+       "content_manuals_compose_gettingstarted__7ae78cf6",
+       "content_manuals_compose_install_index__21200dc0"
+      ],
+      [
+       "content_manuals_compose_install_index__21200dc0",
+       "content_manuals_compose_install_linux__a7ce2989"
+      ],
+      [
+       "content_manuals_compose_install_linux__a7ce2989",
+       "content_manuals_compose_intro_compose_application_model__2bf03531"
+      ],
+      [
+       "content_manuals_compose_intro_compose_application_model__2bf03531",
+       "content_manuals_compose_gettingstarted__7ae78cf6"
+      ]
+     ],
+     [
+      [
+       "content_manuals_ai_gordon_index__d3b660cd",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ],
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283",
+       "content_manuals_ai_gordon_index__d3b660cd"
+      ]
+     ],
+     [
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794"
+      ],
+      [
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ]
+     ],
+     [
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ]
+     ],
+     [
+      [
+       "content_manuals_desktop_features_networking_index__83fe2b9a",
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59"
+      ],
+      [
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ],
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+      ],
+      [
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c",
+       "content_manuals_desktop_features_networking_index__83fe2b9a"
+      ]
+     ],
+     [
+      [
+       "content_manuals_admin_insights__40692ae8",
+       "content_manuals_desktop_release_notes__0ffd0aaf"
+      ],
+      [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af"
+      ],
+      [
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af",
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59"
+      ],
+      [
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+       "content_manuals_offload_configuration__bcb283bb"
+      ],
+      [
+       "content_manuals_offload_configuration__bcb283bb",
+       "content_manuals_admin_organization_manage_manage_products__542f067a"
+      ],
+      [
+       "content_manuals_admin_organization_manage_manage_products__542f067a",
+       "content_manuals_admin_insights__40692ae8"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "660df1d7966c3ec260821e81507b0aaa2f06ecee10896487c0c75b152c24062c",
+      "candidates": 38,
+      "empty_interpretation": null,
+      "expansions": 4159,
+      "selected": [
+       {
+        "cycle": [
+         "content_manuals_ai_sandboxes_agents_docker_agent__b6310f7b",
+         "content_manuals_ai_sandboxes_security_credentials__e22ac9ad",
+         "content_manuals_ai_sandboxes_agents_index__49a7791f"
+        ],
+        "length": 3,
+        "selection_hash": "0835d8ea9fb34e46d389e5434412c2f11a3c4eeb0f9203b49ecf6e5819ed7189"
+       },
+       {
+        "cycle": [
+         "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+         "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+         "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_limitations__d4f08cc1"
+        ],
+        "length": 3,
+        "selection_hash": "0dea0bc1a8711bf7e089a83119ffade027d323aca79f35b01acc0102581626fa"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "c3e3a1333bbece663c5d777ee96eda9ca9045f8efd5b82f97d9ed8590b24629e",
+      "candidates": 36,
+      "empty_interpretation": null,
+      "expansions": 8148,
+      "selected": [
+       {
+        "cycle": [
+         "content_manuals_compose_gettingstarted__7ae78cf6",
+         "content_manuals_compose_install_index__21200dc0",
+         "content_manuals_compose_install_linux__a7ce2989",
+         "content_manuals_compose_intro_compose_application_model__2bf03531"
+        ],
+        "length": 4,
+        "selection_hash": "02778348584c7e58bd63e3c924a6dd219312ed338c2814fd553c21edf6a5a255"
+       },
+       {
+        "cycle": [
+         "content_manuals_ai_gordon_index__d3b660cd",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+         "content_manuals_desktop_release_notes__0ffd0aaf",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+        ],
+        "length": 4,
+        "selection_hash": "05e72815577c439f892c1ef5858a9ebcdadedb9a7ea6419ef2f050c2995ea2b0"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "337789ee97d3707032aa060f400ba5855436f678553a9a977c26771587cecef2",
+      "candidates": 53,
+      "empty_interpretation": null,
+      "expansions": 16669,
+      "selected": [
+       {
+        "cycle": [
+         "content_manuals_desktop_release_notes__0ffd0aaf",
+         "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+         "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+        ],
+        "length": 5,
+        "selection_hash": "0db25c40032249b5b9212fb8e58a0269299437d89b0ff737021a146c15139136"
+       },
+       {
+        "cycle": [
+         "content_manuals_desktop_release_notes__0ffd0aaf",
+         "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c",
+         "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+        ],
+        "length": 5,
+        "selection_hash": "1b8af50c6e5ef091ae3d43d9d107d2e334362cb65d33439b3f91b696bd4cd003"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "8971b853b9ac7252db35c6bde94cc8b2fe946a69c0fc606f5d4bfa2d3a63308d",
+      "candidates": 111,
+      "empty_interpretation": null,
+      "expansions": 35652,
+      "selected": [
+       {
+        "cycle": [
+         "content_manuals_desktop_features_networking_index__83fe2b9a",
+         "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+         "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+         "content_manuals_desktop_release_notes__0ffd0aaf",
+         "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+        ],
+        "length": 6,
+        "selection_hash": "02ba6a41e125b9652c919cac674d75fc65505a72bf617047048c1793b2bbb5cd"
+       },
+       {
+        "cycle": [
+         "content_manuals_admin_insights__40692ae8",
+         "content_manuals_desktop_release_notes__0ffd0aaf",
+         "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af",
+         "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+         "content_manuals_offload_configuration__bcb283bb",
+         "content_manuals_admin_organization_manage_manage_products__542f067a"
+        ],
+        "length": 6,
+        "selection_hash": "08c679c3ffc62e68da30ccf5e7a411ab1722d846fbfd381c776dbd8fe04e75c3"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "content_manuals_ai_sandboxes_agents_docker_agent__b6310f7b",
+      "content_manuals_ai_sandboxes_security_credentials__e22ac9ad",
+      "content_manuals_ai_sandboxes_agents_index__49a7791f"
+     ],
+     [
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_limitations__d4f08cc1"
+     ],
+     [
+      "content_manuals_compose_gettingstarted__7ae78cf6",
+      "content_manuals_compose_install_index__21200dc0",
+      "content_manuals_compose_install_linux__a7ce2989",
+      "content_manuals_compose_intro_compose_application_model__2bf03531"
+     ],
+     [
+      "content_manuals_ai_gordon_index__d3b660cd",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+      "content_manuals_desktop_release_notes__0ffd0aaf",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+     ],
+     [
+      "content_manuals_desktop_release_notes__0ffd0aaf",
+      "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+     ],
+     [
+      "content_manuals_desktop_release_notes__0ffd0aaf",
+      "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c",
+      "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+     ],
+     [
+      "content_manuals_desktop_features_networking_index__83fe2b9a",
+      "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+      "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+      "content_manuals_desktop_release_notes__0ffd0aaf",
+      "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+     ],
+     [
+      "content_manuals_admin_insights__40692ae8",
+      "content_manuals_desktop_release_notes__0ffd0aaf",
+      "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af",
+      "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+      "content_manuals_offload_configuration__bcb283bb",
+      "content_manuals_admin_organization_manage_manage_products__542f067a"
+     ]
+    ],
+    "ledger_sha256": "9f12b7b3c592141d4e45400d372ed28787023e8bfb6b747ab0902944e998440e",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 1998,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "docker_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "content_manuals_ai_sandboxes_agents_docker_agent__b6310f7b",
+       "content_manuals_ai_sandboxes_security_credentials__e22ac9ad",
+       "content_manuals_ai_sandboxes_agents_index__49a7791f"
+      ],
+      "length": 3,
+      "selection_hash": "0835d8ea9fb34e46d389e5434412c2f11a3c4eeb0f9203b49ecf6e5819ed7189"
+     },
+     {
+      "cycle": [
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_limitations__d4f08cc1"
+      ],
+      "length": 3,
+      "selection_hash": "0dea0bc1a8711bf7e089a83119ffade027d323aca79f35b01acc0102581626fa"
+     },
+     {
+      "cycle": [
+       "content_manuals_compose_gettingstarted__7ae78cf6",
+       "content_manuals_compose_install_index__21200dc0",
+       "content_manuals_compose_install_linux__a7ce2989",
+       "content_manuals_compose_intro_compose_application_model__2bf03531"
+      ],
+      "length": 4,
+      "selection_hash": "02778348584c7e58bd63e3c924a6dd219312ed338c2814fd553c21edf6a5a255"
+     },
+     {
+      "cycle": [
+       "content_manuals_ai_gordon_index__d3b660cd",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_json_file__0c326283"
+      ],
+      "length": 4,
+      "selection_hash": "05e72815577c439f892c1ef5858a9ebcdadedb9a7ea6419ef2f050c2995ea2b0"
+     },
+     {
+      "cycle": [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_desktop_use_desktop_kubernetes__5f933794",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      "length": 5,
+      "selection_hash": "0db25c40032249b5b9212fb8e58a0269299437d89b0ff737021a146c15139136"
+     },
+     {
+      "cycle": [
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c",
+       "content_manuals_enterprise_security_hardened_desktop_enhanced_container_isolation_index__2eb88e73",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129"
+      ],
+      "length": 5,
+      "selection_hash": "1b8af50c6e5ef091ae3d43d9d107d2e334362cb65d33439b3f91b696bd4cd003"
+     },
+     {
+      "cycle": [
+       "content_manuals_desktop_features_networking_index__83fe2b9a",
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_index__e6b96c1b",
+       "content_manuals_enterprise_security_hardened_desktop_settings_management_configure_admin_console__af18d129",
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_enterprise_security_hardened_desktop_air_gapped_containers__8ba7c72c"
+      ],
+      "length": 6,
+      "selection_hash": "02ba6a41e125b9652c919cac674d75fc65505a72bf617047048c1793b2bbb5cd"
+     },
+     {
+      "cycle": [
+       "content_manuals_admin_insights__40692ae8",
+       "content_manuals_desktop_release_notes__0ffd0aaf",
+       "content_manuals_desktop_troubleshoot_and_support_troubleshoot_index__9e6484af",
+       "content_manuals_desktop_settings_and_maintenance_settings__29e15c59",
+       "content_manuals_offload_configuration__bcb283bb",
+       "content_manuals_admin_organization_manage_manage_products__542f067a"
+      ],
+      "length": 6,
+      "selection_hash": "08c679c3ffc62e68da30ccf5e7a411ab1722d846fbfd381c776dbd8fe04e75c3"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "274681c49355bd951ae60c9208e854ff70f12474",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__docker_docs.json",
+   "source_bundle_sha256": "d902cf98d0b381089a61c3d1c019ae4135a67e1c1bcecd6181270d251aaa81a7",
+   "source_provenance": {
+    "commit": "274681c49355bd951ae60c9208e854ff70f12474",
+    "corpus_id": "docker_docs",
+    "edge_csv_rows": 2496,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "6007991a116a65df9d486553072c50ae79b70f6c4be971bab6cf3117371aa951",
+    "frozen_selected_edges_sha256": "4493cb7e1503d7e14163cb89b12dca4f8e917cf6063754b36483288e3c312380",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 1263,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "699f55e14b44b6b156b8a09c95d4e7e1c4c81df4ad627ee535f91dc66340ceca"
+   },
+   "view_arcs": 2414,
+   "view_graph_sha256": "b12e335e8852c54bbcacdd30728689bba45e5337a6d4239b0f1c7796b4a1805c",
+   "view_nodes": 844
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\elasticsearch_docs.jsonl",
+   "config_sha256": "86f59a597bfacc285bb457e01d367ae05ac4f0a2b4a9c9ee2120279c30f10390",
+   "corpus_id": "elasticsearch_docs",
+   "full_arcs": 9432,
+   "full_nodes": 2364,
+   "node_coverage": 0.9547377326565144,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "7acd6d324dc84a54f82d048cf17f9765af645b80c48f0607ba797bb7ba9c2c27",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "deploy_manage_upgrade_deployment_or_cluster__cbe342f8",
+       "deploy_manage_upgrade_deployment_or_cluster_upgrade_on_eck__1c13adb9"
+      ],
+      [
+       "deploy_manage_upgrade_deployment_or_cluster_upgrade_on_eck__1c13adb9",
+       "deploy_manage_upgrade_orchestrator_upgrade_cloud_on_k8s__9aa5d770"
+      ],
+      [
+       "deploy_manage_upgrade_orchestrator_upgrade_cloud_on_k8s__9aa5d770",
+       "deploy_manage_upgrade_deployment_or_cluster__cbe342f8"
+      ]
+     ],
+     [
+      [
+       "get_started_the_stack__31c1b604",
+       "manage_data_data_store__86b60b0e"
+      ],
+      [
+       "manage_data_data_store__86b60b0e",
+       "manage_data_data_store_manage_data_from_the_command_line__54e7afc1"
+      ],
+      [
+       "manage_data_data_store_manage_data_from_the_command_line__54e7afc1",
+       "get_started_the_stack__31c1b604"
+      ]
+     ],
+     [
+      [
+       "deploy_manage_users_roles_cloud_enterprise_orchestrator__15ffe74d",
+       "deploy_manage_users_roles_cluster_or_deployment_auth__91a765f5"
+      ],
+      [
+       "deploy_manage_users_roles_cluster_or_deployment_auth__91a765f5",
+       "deploy_manage_users_roles_cluster_or_deployment_auth_quickstart__0e70bf4d"
+      ],
+      [
+       "deploy_manage_users_roles_cluster_or_deployment_auth_quickstart__0e70bf4d",
+       "deploy_manage_users_roles_cluster_or_deployment_auth_user_roles__534c1ed1"
+      ],
+      [
+       "deploy_manage_users_roles_cluster_or_deployment_auth_user_roles__534c1ed1",
+       "deploy_manage_users_roles_cloud_enterprise_orchestrator__15ffe74d"
+      ]
+     ],
+     [
+      [
+       "deploy_manage_monitor_autoops__68021e7e",
+       "deploy_manage_monitor_autoops_cc_autoops_as_cloud_connected__a9dc5c4f"
+      ],
+      [
+       "deploy_manage_monitor_autoops_cc_autoops_as_cloud_connected__a9dc5c4f",
+       "deploy_manage_monitor_autoops_cc_connect_local_dev_to_autoops__8b623a5b"
+      ],
+      [
+       "deploy_manage_monitor_autoops_cc_connect_local_dev_to_autoops__8b623a5b",
+       "deploy_manage_monitor_autoops_cc_connect_self_managed_to_autoops__5dbe3e8a"
+      ],
+      [
+       "deploy_manage_monitor_autoops_cc_connect_self_managed_to_autoops__5dbe3e8a",
+       "deploy_manage_monitor_autoops__68021e7e"
+      ]
+     ],
+     [
+      [
+       "explore_analyze_dashboards__72371aa6",
+       "explore_analyze_dashboards_create_dashboard__21348a3b"
+      ],
+      [
+       "explore_analyze_dashboards_create_dashboard__21348a3b",
+       "explore_analyze_visualize__7f5b0095"
+      ],
+      [
+       "explore_analyze_visualize__7f5b0095",
+       "explore_analyze_visualize_custom_visualizations_with_vega__979d290a"
+      ],
+      [
+       "explore_analyze_visualize_custom_visualizations_with_vega__979d290a",
+       "explore_analyze_index__71218307"
+      ],
+      [
+       "explore_analyze_index__71218307",
+       "explore_analyze_dashboards__72371aa6"
+      ]
+     ],
+     [
+      [
+       "deploy_manage_distributed_architecture__34791f73",
+       "deploy_manage_distributed_architecture_shard_allocation_relocation_recovery__3a2d25e7"
+      ],
+      [
+       "deploy_manage_distributed_architecture_shard_allocation_relocation_recovery__3a2d25e7",
+       "deploy_manage_distributed_architecture_reading_and_writing_documents__1665707a"
+      ],
+      [
+       "deploy_manage_distributed_architecture_reading_and_writing_documents__1665707a",
+       "deploy_manage_index__f5d01aa3"
+      ],
+      [
+       "deploy_manage_index__f5d01aa3",
+       "get_started_the_stack__31c1b604"
+      ],
+      [
+       "get_started_the_stack__31c1b604",
+       "deploy_manage_distributed_architecture__34791f73"
+      ]
+     ],
+     [
+      [
+       "explore_analyze_dashboards__72371aa6",
+       "explore_analyze_dashboards_create_dashboard_of_panels_with_web_server_data__3fa86d6a"
+      ],
+      [
+       "explore_analyze_dashboards_create_dashboard_of_panels_with_web_server_data__3fa86d6a",
+       "explore_analyze_query_filter_filtering__abc5fc94"
+      ],
+      [
+       "explore_analyze_query_filter_filtering__abc5fc94",
+       "explore_analyze_find_and_organize_data_views__b21888a5"
+      ],
+      [
+       "explore_analyze_find_and_organize_data_views__b21888a5",
+       "explore_analyze_index__71218307"
+      ],
+      [
+       "explore_analyze_index__71218307",
+       "explore_analyze_kibana_data_exploration_learning_tutorial__010abfb3"
+      ],
+      [
+       "explore_analyze_kibana_data_exploration_learning_tutorial__010abfb3",
+       "explore_analyze_dashboards__72371aa6"
+      ]
+     ],
+     [
+      [
+       "deploy_manage_deploy_cloud_enterprise__63664992",
+       "deploy_manage_tools_snapshot_and_restore__5ff919d5"
+      ],
+      [
+       "deploy_manage_tools_snapshot_and_restore__5ff919d5",
+       "manage_data_ingest_transform_enrich_ingest_pipelines__0f7fd9a3"
+      ],
+      [
+       "manage_data_ingest_transform_enrich_ingest_pipelines__0f7fd9a3",
+       "manage_data_data_store_index_basics__19ed90d0"
+      ],
+      [
+       "manage_data_data_store_index_basics__19ed90d0",
+       "solutions_observability_get_started__4f746f67"
+      ],
+      [
+       "solutions_observability_get_started__4f746f67",
+       "deploy_manage_deploy_deployment_comparison__622ce2c6"
+      ],
+      [
+       "deploy_manage_deploy_deployment_comparison__622ce2c6",
+       "deploy_manage_deploy_cloud_enterprise__63664992"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "2dc9e0d290931f00046fa2ba4d6290777f86e5c7a14d18a3a5738415a7b0589c",
+      "candidates": 254,
+      "empty_interpretation": null,
+      "expansions": 18054,
+      "selected": [
+       {
+        "cycle": [
+         "deploy_manage_upgrade_deployment_or_cluster__cbe342f8",
+         "deploy_manage_upgrade_deployment_or_cluster_upgrade_on_eck__1c13adb9",
+         "deploy_manage_upgrade_orchestrator_upgrade_cloud_on_k8s__9aa5d770"
+        ],
+        "length": 3,
+        "selection_hash": "007617ac5847696f59c4c8417e5d8220c89f39a451e99b2cfc207300e903dc1b"
+       },
+       {
+        "cycle": [
+         "get_started_the_stack__31c1b604",
+         "manage_data_data_store__86b60b0e",
+         "manage_data_data_store_manage_data_from_the_command_line__54e7afc1"
+        ],
+        "length": 3,
+        "selection_hash": "018f502ba2cdbc8e411d9b3396c9f7fd9ecc005f6b107ea96e81accdbb839c54"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "5e72b1179f39341fd00978346d8f94df05e2892df341b829ea1351bfbcfac743",
+      "candidates": 415,
+      "empty_interpretation": null,
+      "expansions": 60015,
+      "selected": [
+       {
+        "cycle": [
+         "deploy_manage_users_roles_cloud_enterprise_orchestrator__15ffe74d",
+         "deploy_manage_users_roles_cluster_or_deployment_auth__91a765f5",
+         "deploy_manage_users_roles_cluster_or_deployment_auth_quickstart__0e70bf4d",
+         "deploy_manage_users_roles_cluster_or_deployment_auth_user_roles__534c1ed1"
+        ],
+        "length": 4,
+        "selection_hash": "00cfe89d9e6f62bf12e20930f19f5f123dbb58432da4fd6c8c518e0fecdc518c"
+       },
+       {
+        "cycle": [
+         "deploy_manage_monitor_autoops__68021e7e",
+         "deploy_manage_monitor_autoops_cc_autoops_as_cloud_connected__a9dc5c4f",
+         "deploy_manage_monitor_autoops_cc_connect_local_dev_to_autoops__8b623a5b",
+         "deploy_manage_monitor_autoops_cc_connect_self_managed_to_autoops__5dbe3e8a"
+        ],
+        "length": 4,
+        "selection_hash": "00ef8b295a69a1e0186eb1bfc8eba160883ce0e30cbe51f3a45f8e9f17f515e0"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "15467446f7105c47065160fdcbfd3e6d44e6b187e083febc5af01803288584c2",
+      "candidates": 1094,
+      "empty_interpretation": null,
+      "expansions": 218013,
+      "selected": [
+       {
+        "cycle": [
+         "explore_analyze_dashboards__72371aa6",
+         "explore_analyze_dashboards_create_dashboard__21348a3b",
+         "explore_analyze_visualize__7f5b0095",
+         "explore_analyze_visualize_custom_visualizations_with_vega__979d290a",
+         "explore_analyze_index__71218307"
+        ],
+        "length": 5,
+        "selection_hash": "005452f2fce7cd860ae4ac0b4b83596e1e35e858703558890c5f707563de0f43"
+       },
+       {
+        "cycle": [
+         "deploy_manage_distributed_architecture__34791f73",
+         "deploy_manage_distributed_architecture_shard_allocation_relocation_recovery__3a2d25e7",
+         "deploy_manage_distributed_architecture_reading_and_writing_documents__1665707a",
+         "deploy_manage_index__f5d01aa3",
+         "get_started_the_stack__31c1b604"
+        ],
+        "length": 5,
+        "selection_hash": "0058015104371977af0cd715a4ea67e553719ab368f1e8fb471622abefa5966b"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "52c19f70c481000d8560089734b072070e30b9f881fdd71f438ab8b64d194c03",
+      "candidates": 960,
+      "empty_interpretation": null,
+      "expansions": 250000,
+      "selected": [
+       {
+        "cycle": [
+         "explore_analyze_dashboards__72371aa6",
+         "explore_analyze_dashboards_create_dashboard_of_panels_with_web_server_data__3fa86d6a",
+         "explore_analyze_query_filter_filtering__abc5fc94",
+         "explore_analyze_find_and_organize_data_views__b21888a5",
+         "explore_analyze_index__71218307",
+         "explore_analyze_kibana_data_exploration_learning_tutorial__010abfb3"
+        ],
+        "length": 6,
+        "selection_hash": "004d8298f7db20be1c51a836ca3fa9c0fac5907c5b2cfcce5cfb3d3770e3d1ec"
+       },
+       {
+        "cycle": [
+         "deploy_manage_deploy_cloud_enterprise__63664992",
+         "deploy_manage_tools_snapshot_and_restore__5ff919d5",
+         "manage_data_ingest_transform_enrich_ingest_pipelines__0f7fd9a3",
+         "manage_data_data_store_index_basics__19ed90d0",
+         "solutions_observability_get_started__4f746f67",
+         "deploy_manage_deploy_deployment_comparison__622ce2c6"
+        ],
+        "length": 6,
+        "selection_hash": "0096a9efc127c5e9fe0b53b5503eabf943fa99726860b61b5f84ab0d7d0af736"
+       }
+      ],
+      "status": "capped"
+     }
+    },
+    "cycles": [
+     [
+      "deploy_manage_upgrade_deployment_or_cluster__cbe342f8",
+      "deploy_manage_upgrade_deployment_or_cluster_upgrade_on_eck__1c13adb9",
+      "deploy_manage_upgrade_orchestrator_upgrade_cloud_on_k8s__9aa5d770"
+     ],
+     [
+      "get_started_the_stack__31c1b604",
+      "manage_data_data_store__86b60b0e",
+      "manage_data_data_store_manage_data_from_the_command_line__54e7afc1"
+     ],
+     [
+      "deploy_manage_users_roles_cloud_enterprise_orchestrator__15ffe74d",
+      "deploy_manage_users_roles_cluster_or_deployment_auth__91a765f5",
+      "deploy_manage_users_roles_cluster_or_deployment_auth_quickstart__0e70bf4d",
+      "deploy_manage_users_roles_cluster_or_deployment_auth_user_roles__534c1ed1"
+     ],
+     [
+      "deploy_manage_monitor_autoops__68021e7e",
+      "deploy_manage_monitor_autoops_cc_autoops_as_cloud_connected__a9dc5c4f",
+      "deploy_manage_monitor_autoops_cc_connect_local_dev_to_autoops__8b623a5b",
+      "deploy_manage_monitor_autoops_cc_connect_self_managed_to_autoops__5dbe3e8a"
+     ],
+     [
+      "explore_analyze_dashboards__72371aa6",
+      "explore_analyze_dashboards_create_dashboard__21348a3b",
+      "explore_analyze_visualize__7f5b0095",
+      "explore_analyze_visualize_custom_visualizations_with_vega__979d290a",
+      "explore_analyze_index__71218307"
+     ],
+     [
+      "deploy_manage_distributed_architecture__34791f73",
+      "deploy_manage_distributed_architecture_shard_allocation_relocation_recovery__3a2d25e7",
+      "deploy_manage_distributed_architecture_reading_and_writing_documents__1665707a",
+      "deploy_manage_index__f5d01aa3",
+      "get_started_the_stack__31c1b604"
+     ],
+     [
+      "explore_analyze_dashboards__72371aa6",
+      "explore_analyze_dashboards_create_dashboard_of_panels_with_web_server_data__3fa86d6a",
+      "explore_analyze_query_filter_filtering__abc5fc94",
+      "explore_analyze_find_and_organize_data_views__b21888a5",
+      "explore_analyze_index__71218307",
+      "explore_analyze_kibana_data_exploration_learning_tutorial__010abfb3"
+     ],
+     [
+      "deploy_manage_deploy_cloud_enterprise__63664992",
+      "deploy_manage_tools_snapshot_and_restore__5ff919d5",
+      "manage_data_ingest_transform_enrich_ingest_pipelines__0f7fd9a3",
+      "manage_data_data_store_index_basics__19ed90d0",
+      "solutions_observability_get_started__4f746f67",
+      "deploy_manage_deploy_deployment_comparison__622ce2c6"
+     ]
+    ],
+    "ledger_sha256": "73b878ca2e1871506721adfa13ab6d4f2d6e60eb5095bba7a6c8235e518f5c58",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 8098,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "elasticsearch_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "deploy_manage_upgrade_deployment_or_cluster__cbe342f8",
+       "deploy_manage_upgrade_deployment_or_cluster_upgrade_on_eck__1c13adb9",
+       "deploy_manage_upgrade_orchestrator_upgrade_cloud_on_k8s__9aa5d770"
+      ],
+      "length": 3,
+      "selection_hash": "007617ac5847696f59c4c8417e5d8220c89f39a451e99b2cfc207300e903dc1b"
+     },
+     {
+      "cycle": [
+       "get_started_the_stack__31c1b604",
+       "manage_data_data_store__86b60b0e",
+       "manage_data_data_store_manage_data_from_the_command_line__54e7afc1"
+      ],
+      "length": 3,
+      "selection_hash": "018f502ba2cdbc8e411d9b3396c9f7fd9ecc005f6b107ea96e81accdbb839c54"
+     },
+     {
+      "cycle": [
+       "deploy_manage_users_roles_cloud_enterprise_orchestrator__15ffe74d",
+       "deploy_manage_users_roles_cluster_or_deployment_auth__91a765f5",
+       "deploy_manage_users_roles_cluster_or_deployment_auth_quickstart__0e70bf4d",
+       "deploy_manage_users_roles_cluster_or_deployment_auth_user_roles__534c1ed1"
+      ],
+      "length": 4,
+      "selection_hash": "00cfe89d9e6f62bf12e20930f19f5f123dbb58432da4fd6c8c518e0fecdc518c"
+     },
+     {
+      "cycle": [
+       "deploy_manage_monitor_autoops__68021e7e",
+       "deploy_manage_monitor_autoops_cc_autoops_as_cloud_connected__a9dc5c4f",
+       "deploy_manage_monitor_autoops_cc_connect_local_dev_to_autoops__8b623a5b",
+       "deploy_manage_monitor_autoops_cc_connect_self_managed_to_autoops__5dbe3e8a"
+      ],
+      "length": 4,
+      "selection_hash": "00ef8b295a69a1e0186eb1bfc8eba160883ce0e30cbe51f3a45f8e9f17f515e0"
+     },
+     {
+      "cycle": [
+       "explore_analyze_dashboards__72371aa6",
+       "explore_analyze_dashboards_create_dashboard__21348a3b",
+       "explore_analyze_visualize__7f5b0095",
+       "explore_analyze_visualize_custom_visualizations_with_vega__979d290a",
+       "explore_analyze_index__71218307"
+      ],
+      "length": 5,
+      "selection_hash": "005452f2fce7cd860ae4ac0b4b83596e1e35e858703558890c5f707563de0f43"
+     },
+     {
+      "cycle": [
+       "deploy_manage_distributed_architecture__34791f73",
+       "deploy_manage_distributed_architecture_shard_allocation_relocation_recovery__3a2d25e7",
+       "deploy_manage_distributed_architecture_reading_and_writing_documents__1665707a",
+       "deploy_manage_index__f5d01aa3",
+       "get_started_the_stack__31c1b604"
+      ],
+      "length": 5,
+      "selection_hash": "0058015104371977af0cd715a4ea67e553719ab368f1e8fb471622abefa5966b"
+     },
+     {
+      "cycle": [
+       "explore_analyze_dashboards__72371aa6",
+       "explore_analyze_dashboards_create_dashboard_of_panels_with_web_server_data__3fa86d6a",
+       "explore_analyze_query_filter_filtering__abc5fc94",
+       "explore_analyze_find_and_organize_data_views__b21888a5",
+       "explore_analyze_index__71218307",
+       "explore_analyze_kibana_data_exploration_learning_tutorial__010abfb3"
+      ],
+      "length": 6,
+      "selection_hash": "004d8298f7db20be1c51a836ca3fa9c0fac5907c5b2cfcce5cfb3d3770e3d1ec"
+     },
+     {
+      "cycle": [
+       "deploy_manage_deploy_cloud_enterprise__63664992",
+       "deploy_manage_tools_snapshot_and_restore__5ff919d5",
+       "manage_data_ingest_transform_enrich_ingest_pipelines__0f7fd9a3",
+       "manage_data_data_store_index_basics__19ed90d0",
+       "solutions_observability_get_started__4f746f67",
+       "deploy_manage_deploy_deployment_comparison__622ce2c6"
+      ],
+      "length": 6,
+      "selection_hash": "0096a9efc127c5e9fe0b53b5503eabf943fa99726860b61b5f84ab0d7d0af736"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "a1d4031bca59d5d5668020b56ee9db17d2a12c3e",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__elasticsearch_docs.json",
+   "source_bundle_sha256": "0a6b275dc80e08cd179d72df6c5ccebe92bebca029e1a7e0601bb52589c593e7",
+   "source_provenance": {
+    "commit": "a1d4031bca59d5d5668020b56ee9db17d2a12c3e",
+    "corpus_id": "elasticsearch_docs",
+    "edge_csv_rows": 9432,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "778e9bc0b8aaee34a73beacab2150d9a9e009f777c73cddb3b4e75c70092ffa6",
+    "frozen_selected_edges_sha256": "4ea05221b52bd70114cc9b69c79b01d4ed05442fe1ee2136b60e6171254ee6d9",
+    "import_faq_patterns": [
+     "*faq*",
+     "*frequently*"
+    ],
+    "manifest_num_corpus_pages": 2364,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "25cc627db63697dbaa1f436fa912c30ac1f2dcf23b961b4915ddd41a3ec58e97"
+   },
+   "view_arcs": 9432,
+   "view_graph_sha256": "192d7e54cc76f6660dedd75399e9906e44c20c9b50c3477a86312d9624dc3174",
+   "view_nodes": 2257
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\express_docs.jsonl",
+   "config_sha256": "94965a4f9957c7f75ccac04dad89459868e7cac8b27177168cf39d5c98af0507",
+   "corpus_id": "express_docs",
+   "full_arcs": 62,
+   "full_nodes": 52,
+   "node_coverage": 0.8461538461538461,
+   "previously_examined": [],
+   "request_sha256": "c4b2b5845a9ae2a33ef1a95da170d5198237e5f236251ac751620a0132d01580",
+   "selection": {
+    "arcs": [],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 140,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 180,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 216,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 233,
+      "selected": [],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [],
+    "ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 56,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "express_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "2d4df3f05fbd5d5f211f5938395ae965e8714d60",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__express_docs.json",
+   "source_bundle_sha256": "478c9e5a9685e6fb4922b84a4b4c6e923fc70922990e24e944f0aad1fe481d92",
+   "source_provenance": {
+    "commit": "2d4df3f05fbd5d5f211f5938395ae965e8714d60",
+    "corpus_id": "express_docs",
+    "edge_csv_rows": 62,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "9c781d354196abf0f29ceadbc0ac61177b0f663c57b33bb3c0527d405cefaa13",
+    "frozen_selected_edges_sha256": "39d63ec7e5c0a64c947e6926a071a707261c4efa37609ccd29820694604d4025",
+    "import_faq_patterns": [
+     "starter/faq.md"
+    ],
+    "manifest_num_corpus_pages": 52,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "7b6cc6aeab0ac6800841fd30433fc06f9c4a6b1568ace1e6b0e88c2d11b92e27"
+   },
+   "view_arcs": 60,
+   "view_graph_sha256": "d9c1f8839da080491cedfe3cf957623ac387983f71225cf9dc5c570f05775e04",
+   "view_nodes": 44
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\github_docs.jsonl",
+   "config_sha256": "e8dffd421c0c5873af0c2521a119839ec6ed522d88777aff2be010d2d654df85",
+   "corpus_id": "github_docs",
+   "full_arcs": 6389,
+   "full_nodes": 3515,
+   "node_coverage": 0.669701280227596,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "9e5cc9c68fe35847bfa576abc08a72de934c9b3a9cea9ab14b352f36eb64b3e7",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "copilot_concepts_agents_coding_agent_about_coding_agent__891f34a7",
+       "copilot_concepts_agents_coding_agent_about_hooks__1840169b"
+      ],
+      [
+       "copilot_concepts_agents_coding_agent_about_hooks__1840169b",
+       "copilot_how_tos_use_copilot_agents_coding_agent_use_hooks__5402c5a7"
+      ],
+      [
+       "copilot_how_tos_use_copilot_agents_coding_agent_use_hooks__5402c5a7",
+       "copilot_concepts_agents_coding_agent_about_coding_agent__891f34a7"
+      ]
+     ],
+     [
+      [
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+       "discussions_quickstart__68a916e6"
+      ],
+      [
+       "discussions_quickstart__68a916e6",
+       "discussions_managing_discussions_for_your_community_managing_categories_for_discussions__33e44306"
+      ],
+      [
+       "discussions_managing_discussions_for_your_community_managing_categories_for_discussions__33e44306",
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f"
+      ]
+     ],
+     [
+      [
+       "organizations_managing_peoples_access_to_your_organization_with_roles_managing_security_managers_in_your_organization__1921a233",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0"
+      ],
+      [
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179"
+      ],
+      [
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+       "organizations_managing_peoples_access_to_your_organization_with_roles_roles_in_an_organization__3cb8d75b"
+      ],
+      [
+       "organizations_managing_peoples_access_to_your_organization_with_roles_roles_in_an_organization__3cb8d75b",
+       "organizations_managing_peoples_access_to_your_organization_with_roles_managing_security_managers_in_your_organization__1921a233"
+      ]
+     ],
+     [
+      [
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+       "discussions_quickstart__68a916e6"
+      ],
+      [
+       "discussions_quickstart__68a916e6",
+       "discussions_managing_discussions_for_your_community_managing_discussions__dc3ec4f3"
+      ],
+      [
+       "discussions_managing_discussions_for_your_community_managing_discussions__dc3ec4f3",
+       "repositories_managing_your_repositorys_settings_and_features_enabling_features_for_your_repository_enabling_or_disabling_github_discussions_for_a_repository__44207321"
+      ],
+      [
+       "repositories_managing_your_repositorys_settings_and_features_enabling_features_for_your_repository_enabling_or_disabling_github_discussions_for_a_repository__44207321",
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f"
+      ]
+     ],
+     [
+      [
+       "organizations_keeping_your_organization_secure_managing_security_settings_for_your_organization_reviewing_the_audit_log_for_your_organization__4255fbb6",
+       "organizations_managing_membership_in_your_organization_exporting_member_information_for_your_organization__46b62cee"
+      ],
+      [
+       "organizations_managing_membership_in_your_organization_exporting_member_information_for_your_organization__46b62cee",
+       "organizations_managing_saml_single_sign_on_for_your_organization_about_identity_and_access_management_with_saml_single_sign_on__2f3c36e2"
+      ],
+      [
+       "organizations_managing_saml_single_sign_on_for_your_organization_about_identity_and_access_management_with_saml_single_sign_on__2f3c36e2",
+       "organizations_managing_membership_in_your_organization_inviting_users_to_join_your_organization__0b25f2f7"
+      ],
+      [
+       "organizations_managing_membership_in_your_organization_inviting_users_to_join_your_organization__0b25f2f7",
+       "organizations_keeping_your_organization_secure_managing_two_factor_authentication_for_your_organization_requiring_two_factor_authentication_in_your_organization__85c48913"
+      ],
+      [
+       "organizations_keeping_your_organization_secure_managing_two_factor_authentication_for_your_organization_requiring_two_factor_authentication_in_your_organization__85c48913",
+       "organizations_keeping_your_organization_secure_managing_security_settings_for_your_organization_reviewing_the_audit_log_for_your_organization__4255fbb6"
+      ]
+     ],
+     [
+      [
+       "codespaces_managing_codespaces_for_your_organization_enabling_or_disabling_github_codespaces_for_your_organization__951e5289",
+       "organizations_managing_organization_settings_managing_the_forking_policy_for_your_organization__386e53f1"
+      ],
+      [
+       "organizations_managing_organization_settings_managing_the_forking_policy_for_your_organization__386e53f1",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76"
+      ],
+      [
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+       "codespaces_managing_codespaces_for_your_organization_managing_development_environment_secrets_for_your_repository_or_organization__86f31f03"
+      ],
+      [
+       "codespaces_managing_codespaces_for_your_organization_managing_development_environment_secrets_for_your_repository_or_organization__86f31f03",
+       "get_started_learning_about_github_githubs_plans__52338d2b"
+      ],
+      [
+       "get_started_learning_about_github_githubs_plans__52338d2b",
+       "codespaces_managing_codespaces_for_your_organization_enabling_or_disabling_github_codespaces_for_your_organization__951e5289"
+      ]
+     ],
+     [
+      [
+       "pull_requests_collaborating_with_pull_requests_incorporating_changes_from_a_pull_request_merging_a_pull_request__8096d9f2",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_about_pull_requests__1a7fea7e"
+      ],
+      [
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_about_pull_requests__1a7fea7e",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_a_pull_request__5497f4f1"
+      ],
+      [
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_a_pull_request__5497f4f1",
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_about_forks__6019314c"
+      ],
+      [
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_about_forks__6019314c",
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_fork_a_repo__90b7f32f"
+      ],
+      [
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_fork_a_repo__90b7f32f",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_and_deleting_branches_within_your_repository__ed7ac397"
+      ],
+      [
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_and_deleting_branches_within_your_repository__ed7ac397",
+       "pull_requests_collaborating_with_pull_requests_incorporating_changes_from_a_pull_request_merging_a_pull_request__8096d9f2"
+      ]
+     ],
+     [
+      [
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179"
+      ],
+      [
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76"
+      ],
+      [
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_about_rulesets__e2c1cf53"
+      ],
+      [
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_about_rulesets__e2c1cf53",
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_available_rules_for_rulesets__957d92d6"
+      ],
+      [
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_available_rules_for_rulesets__957d92d6",
+       "repositories_managing_your_repositorys_settings_and_features_customizing_your_repository_about_code_owners__582c7d76"
+      ],
+      [
+       "repositories_managing_your_repositorys_settings_and_features_customizing_your_repository_about_code_owners__582c7d76",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "50f6a731a16b39b614892bfc2553b4ef6f2e9305f76b1d47557e7e51623ba628",
+      "candidates": 44,
+      "empty_interpretation": null,
+      "expansions": 11210,
+      "selected": [
+       {
+        "cycle": [
+         "copilot_concepts_agents_coding_agent_about_coding_agent__891f34a7",
+         "copilot_concepts_agents_coding_agent_about_hooks__1840169b",
+         "copilot_how_tos_use_copilot_agents_coding_agent_use_hooks__5402c5a7"
+        ],
+        "length": 3,
+        "selection_hash": "0d5035cc14ea418df4536f79698aa39573ee34eaa2222b685ae2ae9ec388c529"
+       },
+       {
+        "cycle": [
+         "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+         "discussions_quickstart__68a916e6",
+         "discussions_managing_discussions_for_your_community_managing_categories_for_discussions__33e44306"
+        ],
+        "length": 3,
+        "selection_hash": "12a67ce61ba140384432e4f7406924a32ece9f5aa0c635d99c84b33cd07d508e"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "cab6552144ea6a8cae73e0e3ba0b3b3d436d3bd81fa51e6af326ca56c0c66ce4",
+      "candidates": 63,
+      "empty_interpretation": null,
+      "expansions": 26149,
+      "selected": [
+       {
+        "cycle": [
+         "organizations_managing_peoples_access_to_your_organization_with_roles_managing_security_managers_in_your_organization__1921a233",
+         "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+         "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+         "organizations_managing_peoples_access_to_your_organization_with_roles_roles_in_an_organization__3cb8d75b"
+        ],
+        "length": 4,
+        "selection_hash": "031832c4105e7afd40c607d69912e6dd1126f5b52f0b167c8ccf5579493a3e91"
+       },
+       {
+        "cycle": [
+         "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+         "discussions_quickstart__68a916e6",
+         "discussions_managing_discussions_for_your_community_managing_discussions__dc3ec4f3",
+         "repositories_managing_your_repositorys_settings_and_features_enabling_features_for_your_repository_enabling_or_disabling_github_discussions_for_a_repository__44207321"
+        ],
+        "length": 4,
+        "selection_hash": "057e46b6526fca2d16f8b0aa1a09beaa3bf03b2e9b921ea73939717b8a4a9e40"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "b0a87a25332d3d988504b64af7111c3e7b1d269810197540c4d81bfcf84601da",
+      "candidates": 69,
+      "empty_interpretation": null,
+      "expansions": 65194,
+      "selected": [
+       {
+        "cycle": [
+         "organizations_keeping_your_organization_secure_managing_security_settings_for_your_organization_reviewing_the_audit_log_for_your_organization__4255fbb6",
+         "organizations_managing_membership_in_your_organization_exporting_member_information_for_your_organization__46b62cee",
+         "organizations_managing_saml_single_sign_on_for_your_organization_about_identity_and_access_management_with_saml_single_sign_on__2f3c36e2",
+         "organizations_managing_membership_in_your_organization_inviting_users_to_join_your_organization__0b25f2f7",
+         "organizations_keeping_your_organization_secure_managing_two_factor_authentication_for_your_organization_requiring_two_factor_authentication_in_your_organization__85c48913"
+        ],
+        "length": 5,
+        "selection_hash": "020db4a8c28994dae173db5e80eb0c639eede91ac0f6d8f70386c6dde3177450"
+       },
+       {
+        "cycle": [
+         "codespaces_managing_codespaces_for_your_organization_enabling_or_disabling_github_codespaces_for_your_organization__951e5289",
+         "organizations_managing_organization_settings_managing_the_forking_policy_for_your_organization__386e53f1",
+         "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+         "codespaces_managing_codespaces_for_your_organization_managing_development_environment_secrets_for_your_repository_or_organization__86f31f03",
+         "get_started_learning_about_github_githubs_plans__52338d2b"
+        ],
+        "length": 5,
+        "selection_hash": "0354e5206e37b52511612baf1ec6ae152db88f781b4efa78a4297adfc5dd9fe9"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "d9b788c7678d618184c8bfffbd6d9210cf66a65343f2dab0914ebc2cdabe4d41",
+      "candidates": 111,
+      "empty_interpretation": null,
+      "expansions": 162909,
+      "selected": [
+       {
+        "cycle": [
+         "pull_requests_collaborating_with_pull_requests_incorporating_changes_from_a_pull_request_merging_a_pull_request__8096d9f2",
+         "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_about_pull_requests__1a7fea7e",
+         "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_a_pull_request__5497f4f1",
+         "pull_requests_collaborating_with_pull_requests_working_with_forks_about_forks__6019314c",
+         "pull_requests_collaborating_with_pull_requests_working_with_forks_fork_a_repo__90b7f32f",
+         "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_and_deleting_branches_within_your_repository__ed7ac397"
+        ],
+        "length": 6,
+        "selection_hash": "02f19f33cd34ac080e70a4f77a5179c16e75c5abf8272a5fdde8cfb86c0bc25b"
+       },
+       {
+        "cycle": [
+         "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+         "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+         "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+         "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_about_rulesets__e2c1cf53",
+         "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_available_rules_for_rulesets__957d92d6",
+         "repositories_managing_your_repositorys_settings_and_features_customizing_your_repository_about_code_owners__582c7d76"
+        ],
+        "length": 6,
+        "selection_hash": "06d5c40a54e6dacd2370e1c9b39c603813674cd533e4180b505fbe91695749e3"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "copilot_concepts_agents_coding_agent_about_coding_agent__891f34a7",
+      "copilot_concepts_agents_coding_agent_about_hooks__1840169b",
+      "copilot_how_tos_use_copilot_agents_coding_agent_use_hooks__5402c5a7"
+     ],
+     [
+      "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+      "discussions_quickstart__68a916e6",
+      "discussions_managing_discussions_for_your_community_managing_categories_for_discussions__33e44306"
+     ],
+     [
+      "organizations_managing_peoples_access_to_your_organization_with_roles_managing_security_managers_in_your_organization__1921a233",
+      "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+      "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+      "organizations_managing_peoples_access_to_your_organization_with_roles_roles_in_an_organization__3cb8d75b"
+     ],
+     [
+      "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+      "discussions_quickstart__68a916e6",
+      "discussions_managing_discussions_for_your_community_managing_discussions__dc3ec4f3",
+      "repositories_managing_your_repositorys_settings_and_features_enabling_features_for_your_repository_enabling_or_disabling_github_discussions_for_a_repository__44207321"
+     ],
+     [
+      "organizations_keeping_your_organization_secure_managing_security_settings_for_your_organization_reviewing_the_audit_log_for_your_organization__4255fbb6",
+      "organizations_managing_membership_in_your_organization_exporting_member_information_for_your_organization__46b62cee",
+      "organizations_managing_saml_single_sign_on_for_your_organization_about_identity_and_access_management_with_saml_single_sign_on__2f3c36e2",
+      "organizations_managing_membership_in_your_organization_inviting_users_to_join_your_organization__0b25f2f7",
+      "organizations_keeping_your_organization_secure_managing_two_factor_authentication_for_your_organization_requiring_two_factor_authentication_in_your_organization__85c48913"
+     ],
+     [
+      "codespaces_managing_codespaces_for_your_organization_enabling_or_disabling_github_codespaces_for_your_organization__951e5289",
+      "organizations_managing_organization_settings_managing_the_forking_policy_for_your_organization__386e53f1",
+      "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+      "codespaces_managing_codespaces_for_your_organization_managing_development_environment_secrets_for_your_repository_or_organization__86f31f03",
+      "get_started_learning_about_github_githubs_plans__52338d2b"
+     ],
+     [
+      "pull_requests_collaborating_with_pull_requests_incorporating_changes_from_a_pull_request_merging_a_pull_request__8096d9f2",
+      "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_about_pull_requests__1a7fea7e",
+      "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_a_pull_request__5497f4f1",
+      "pull_requests_collaborating_with_pull_requests_working_with_forks_about_forks__6019314c",
+      "pull_requests_collaborating_with_pull_requests_working_with_forks_fork_a_repo__90b7f32f",
+      "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_and_deleting_branches_within_your_repository__ed7ac397"
+     ],
+     [
+      "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+      "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+      "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+      "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_about_rulesets__e2c1cf53",
+      "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_available_rules_for_rulesets__957d92d6",
+      "repositories_managing_your_repositorys_settings_and_features_customizing_your_repository_about_code_owners__582c7d76"
+     ]
+    ],
+    "ledger_sha256": "86e7c870ce5164ab64a3014375896b93f0e6e08876a2c70628cd487672d7f918",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 5023,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "github_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "copilot_concepts_agents_coding_agent_about_coding_agent__891f34a7",
+       "copilot_concepts_agents_coding_agent_about_hooks__1840169b",
+       "copilot_how_tos_use_copilot_agents_coding_agent_use_hooks__5402c5a7"
+      ],
+      "length": 3,
+      "selection_hash": "0d5035cc14ea418df4536f79698aa39573ee34eaa2222b685ae2ae9ec388c529"
+     },
+     {
+      "cycle": [
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+       "discussions_quickstart__68a916e6",
+       "discussions_managing_discussions_for_your_community_managing_categories_for_discussions__33e44306"
+      ],
+      "length": 3,
+      "selection_hash": "12a67ce61ba140384432e4f7406924a32ece9f5aa0c635d99c84b33cd07d508e"
+     },
+     {
+      "cycle": [
+       "organizations_managing_peoples_access_to_your_organization_with_roles_managing_security_managers_in_your_organization__1921a233",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+       "organizations_managing_peoples_access_to_your_organization_with_roles_roles_in_an_organization__3cb8d75b"
+      ],
+      "length": 4,
+      "selection_hash": "031832c4105e7afd40c607d69912e6dd1126f5b52f0b167c8ccf5579493a3e91"
+     },
+     {
+      "cycle": [
+       "discussions_collaborating_with_your_community_using_discussions_about_discussions__46aadc2f",
+       "discussions_quickstart__68a916e6",
+       "discussions_managing_discussions_for_your_community_managing_discussions__dc3ec4f3",
+       "repositories_managing_your_repositorys_settings_and_features_enabling_features_for_your_repository_enabling_or_disabling_github_discussions_for_a_repository__44207321"
+      ],
+      "length": 4,
+      "selection_hash": "057e46b6526fca2d16f8b0aa1a09beaa3bf03b2e9b921ea73939717b8a4a9e40"
+     },
+     {
+      "cycle": [
+       "organizations_keeping_your_organization_secure_managing_security_settings_for_your_organization_reviewing_the_audit_log_for_your_organization__4255fbb6",
+       "organizations_managing_membership_in_your_organization_exporting_member_information_for_your_organization__46b62cee",
+       "organizations_managing_saml_single_sign_on_for_your_organization_about_identity_and_access_management_with_saml_single_sign_on__2f3c36e2",
+       "organizations_managing_membership_in_your_organization_inviting_users_to_join_your_organization__0b25f2f7",
+       "organizations_keeping_your_organization_secure_managing_two_factor_authentication_for_your_organization_requiring_two_factor_authentication_in_your_organization__85c48913"
+      ],
+      "length": 5,
+      "selection_hash": "020db4a8c28994dae173db5e80eb0c639eede91ac0f6d8f70386c6dde3177450"
+     },
+     {
+      "cycle": [
+       "codespaces_managing_codespaces_for_your_organization_enabling_or_disabling_github_codespaces_for_your_organization__951e5289",
+       "organizations_managing_organization_settings_managing_the_forking_policy_for_your_organization__386e53f1",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+       "codespaces_managing_codespaces_for_your_organization_managing_development_environment_secrets_for_your_repository_or_organization__86f31f03",
+       "get_started_learning_about_github_githubs_plans__52338d2b"
+      ],
+      "length": 5,
+      "selection_hash": "0354e5206e37b52511612baf1ec6ae152db88f781b4efa78a4297adfc5dd9fe9"
+     },
+     {
+      "cycle": [
+       "pull_requests_collaborating_with_pull_requests_incorporating_changes_from_a_pull_request_merging_a_pull_request__8096d9f2",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_about_pull_requests__1a7fea7e",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_a_pull_request__5497f4f1",
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_about_forks__6019314c",
+       "pull_requests_collaborating_with_pull_requests_working_with_forks_fork_a_repo__90b7f32f",
+       "pull_requests_collaborating_with_pull_requests_proposing_changes_to_your_work_with_pull_requests_creating_and_deleting_branches_within_your_repository__ed7ac397"
+      ],
+      "length": 6,
+      "selection_hash": "02f19f33cd34ac080e70a4f77a5179c16e75c5abf8272a5fdde8cfb86c0bc25b"
+     },
+     {
+      "cycle": [
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_managing_team_access_to_an_organization_repository__c3877fe0",
+       "repositories_managing_your_repositorys_settings_and_features_managing_repository_settings_managing_teams_and_people_with_access_to_your_repository__2bd4a179",
+       "organizations_managing_user_access_to_your_organizations_repositories_managing_repository_roles_repository_roles_for_an_organization__35620e76",
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_about_rulesets__e2c1cf53",
+       "repositories_configuring_branches_and_merges_in_your_repository_managing_rulesets_available_rules_for_rulesets__957d92d6",
+       "repositories_managing_your_repositorys_settings_and_features_customizing_your_repository_about_code_owners__582c7d76"
+      ],
+      "length": 6,
+      "selection_hash": "06d5c40a54e6dacd2370e1c9b39c603813674cd533e4180b505fbe91695749e3"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "945b78ebf7892e0eaec742fff8872b30aef33790",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__github_docs.json",
+   "source_bundle_sha256": "6d4a33dcf4c00a9639abb8effd0fc24205b2e0bbbdf9e7e5ba0a82471ba4ee94",
+   "source_provenance": {
+    "commit": "945b78ebf7892e0eaec742fff8872b30aef33790",
+    "corpus_id": "github_docs",
+    "edge_csv_rows": 6389,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "0e1844fca6def02c0571c0f1013b9251a09c20a9a25c3059fe4e3edbd234965c",
+    "frozen_selected_edges_sha256": "afc366c9fe9069fa39645985bf38863350a21c1acff5301da63553d66d85fcab",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 3515,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "8e8fc5a1179ec606d57d01706ece07ba2d0076411e269b6b68688689d434a39e"
+   },
+   "view_arcs": 6341,
+   "view_graph_sha256": "bbb379589f8039bc14cacdaa757166818876ce1861aa88b4186c96928a37e16b",
+   "view_nodes": 2354
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\kubernetes_website_docs.jsonl",
+   "config_sha256": "48ba313f03878fc83c05f25ae5aa5768b46b672df73b48c5170163eec23e2a1d",
+   "corpus_id": "kubernetes_website_docs",
+   "full_arcs": 4093,
+   "full_nodes": 1572,
+   "node_coverage": 0.7290076335877863,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "64ad3b35259e854f1b3d3a405b6f4030b1d9017159500e6b4ec117ddb741a2bc",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "concepts_security_controlling_access__9c8c9d08",
+       "tasks_configure_pod_container_configure_service_account__cf2df204"
+      ],
+      [
+       "tasks_configure_pod_container_configure_service_account__cf2df204",
+       "tasks_access_application_cluster_access_cluster__f1b9af7e"
+      ],
+      [
+       "tasks_access_application_cluster_access_cluster__f1b9af7e",
+       "concepts_security_controlling_access__9c8c9d08"
+      ]
+     ],
+     [
+      [
+       "concepts_scheduling_eviction_api_eviction__f005a414",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2"
+      ],
+      [
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "concepts_scheduling_eviction_index__93625f1a"
+      ],
+      [
+       "concepts_scheduling_eviction_index__93625f1a",
+       "concepts_scheduling_eviction_api_eviction__f005a414"
+      ]
+     ],
+     [
+      [
+       "concepts_architecture_nodes__79f7e998",
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295"
+      ],
+      [
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295",
+       "concepts_workloads_controllers_daemonset__ed8f0a5b"
+      ],
+      [
+       "concepts_workloads_controllers_daemonset__ed8f0a5b",
+       "concepts_cluster_administration_addons__9537948b"
+      ],
+      [
+       "concepts_cluster_administration_addons__9537948b",
+       "concepts_architecture_nodes__79f7e998"
+      ]
+     ],
+     [
+      [
+       "concepts_configuration_secret__5fa1d930",
+       "reference_access_authn_authz_authorization__b6feb5cb"
+      ],
+      [
+       "reference_access_authn_authz_authorization__b6feb5cb",
+       "reference_using_api_index__288ed70f"
+      ],
+      [
+       "reference_using_api_index__288ed70f",
+       "concepts_security_controlling_access__9c8c9d08"
+      ],
+      [
+       "concepts_security_controlling_access__9c8c9d08",
+       "concepts_configuration_secret__5fa1d930"
+      ]
+     ],
+     [
+      [
+       "contribute_blog_guidelines__12081426",
+       "contribute_new_content_index__f087580e"
+      ],
+      [
+       "contribute_new_content_index__f087580e",
+       "contribute_style_hugo_shortcodes_index__719cd709"
+      ],
+      [
+       "contribute_style_hugo_shortcodes_index__719cd709",
+       "contribute_new_content_open_a_pr__474b1dc6"
+      ],
+      [
+       "contribute_new_content_open_a_pr__474b1dc6",
+       "contribute_review_reviewing_prs__e867fa82"
+      ],
+      [
+       "contribute_review_reviewing_prs__e867fa82",
+       "contribute_blog_guidelines__12081426"
+      ]
+     ],
+     [
+      [
+       "concepts_scheduling_eviction_pod_priority_preemption__5e89c72c",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2"
+      ],
+      [
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "reference_labels_annotations_taints_index__978cde77"
+      ],
+      [
+       "reference_labels_annotations_taints_index__978cde77",
+       "reference_scheduling_config__d311160a"
+      ],
+      [
+       "reference_scheduling_config__d311160a",
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295"
+      ],
+      [
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295",
+       "concepts_scheduling_eviction_pod_priority_preemption__5e89c72c"
+      ]
+     ],
+     [
+      [
+       "concepts_security_pod_security_admission__ca056080",
+       "concepts_workloads_controllers_index__cc903321"
+      ],
+      [
+       "concepts_workloads_controllers_index__cc903321",
+       "concepts_workloads_controllers_statefulset__2b73541d"
+      ],
+      [
+       "concepts_workloads_controllers_statefulset__2b73541d",
+       "concepts_workloads_pods_index__628f4b2d"
+      ],
+      [
+       "concepts_workloads_pods_index__628f4b2d",
+       "concepts_workloads_pods_advanced_pod_config__61e9c8f9"
+      ],
+      [
+       "concepts_workloads_pods_advanced_pod_config__61e9c8f9",
+       "reference_labels_annotations_taints_index__978cde77"
+      ],
+      [
+       "reference_labels_annotations_taints_index__978cde77",
+       "concepts_security_pod_security_admission__ca056080"
+      ]
+     ],
+     [
+      [
+       "concepts_extend_kubernetes_compute_storage_net_network_plugins__d239df3a",
+       "tasks_administer_cluster_migrating_from_dockershim_troubleshooting_cni_plugin_related_errors__d418d0cd"
+      ],
+      [
+       "tasks_administer_cluster_migrating_from_dockershim_troubleshooting_cni_plugin_related_errors__d418d0cd",
+       "tasks_administer_cluster_safely_drain_node__0be3d167"
+      ],
+      [
+       "tasks_administer_cluster_safely_drain_node__0be3d167",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2"
+      ],
+      [
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "concepts_workloads_controllers_index__cc903321"
+      ],
+      [
+       "concepts_workloads_controllers_index__cc903321",
+       "concepts_workloads_controllers_daemonset__ed8f0a5b"
+      ],
+      [
+       "concepts_workloads_controllers_daemonset__ed8f0a5b",
+       "concepts_extend_kubernetes_compute_storage_net_network_plugins__d239df3a"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "b19fdbdb97699b65475756457c1e9bd70182c904c413e3bcfbdca38107cab655",
+      "candidates": 80,
+      "empty_interpretation": null,
+      "expansions": 6312,
+      "selected": [
+       {
+        "cycle": [
+         "concepts_security_controlling_access__9c8c9d08",
+         "tasks_configure_pod_container_configure_service_account__cf2df204",
+         "tasks_access_application_cluster_access_cluster__f1b9af7e"
+        ],
+        "length": 3,
+        "selection_hash": "0537891669218835926e68fe21b0e9e709911bfdca5a7e9c118a7a444a467e25"
+       },
+       {
+        "cycle": [
+         "concepts_scheduling_eviction_api_eviction__f005a414",
+         "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+         "concepts_scheduling_eviction_index__93625f1a"
+        ],
+        "length": 3,
+        "selection_hash": "07fcd85b0f52c2ce26f288e69dd1fd65fb4d1c2af33f8f995715a63f9bb0b571"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "94510dacd24e6f8ff6489dcc81ee2f21b35632721cad4363d8dab9f3cc37b1ff",
+      "candidates": 181,
+      "empty_interpretation": null,
+      "expansions": 19530,
+      "selected": [
+       {
+        "cycle": [
+         "concepts_architecture_nodes__79f7e998",
+         "concepts_scheduling_eviction_taint_and_toleration__6251a295",
+         "concepts_workloads_controllers_daemonset__ed8f0a5b",
+         "concepts_cluster_administration_addons__9537948b"
+        ],
+        "length": 4,
+        "selection_hash": "00c3f8fcff80639f9e64dc53965d15986492a08a32a07782115207faba23277e"
+       },
+       {
+        "cycle": [
+         "concepts_configuration_secret__5fa1d930",
+         "reference_access_authn_authz_authorization__b6feb5cb",
+         "reference_using_api_index__288ed70f",
+         "concepts_security_controlling_access__9c8c9d08"
+        ],
+        "length": 4,
+        "selection_hash": "014805ab79c65500ed0a609ba8c390cc38b7eb1c91ef97e31739623e574d7c2d"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "343edb5881d3341a50dfeb4dc4c4b90f4e6b110a35a482dd12984792dd4d9190",
+      "candidates": 538,
+      "empty_interpretation": null,
+      "expansions": 67067,
+      "selected": [
+       {
+        "cycle": [
+         "contribute_blog_guidelines__12081426",
+         "contribute_new_content_index__f087580e",
+         "contribute_style_hugo_shortcodes_index__719cd709",
+         "contribute_new_content_open_a_pr__474b1dc6",
+         "contribute_review_reviewing_prs__e867fa82"
+        ],
+        "length": 5,
+        "selection_hash": "008ad7433b55b2c8b9aeac1757c51ae6c9d07e9bf75fcb53412b7a2edf5bb6bb"
+       },
+       {
+        "cycle": [
+         "concepts_scheduling_eviction_pod_priority_preemption__5e89c72c",
+         "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+         "reference_labels_annotations_taints_index__978cde77",
+         "reference_scheduling_config__d311160a",
+         "concepts_scheduling_eviction_taint_and_toleration__6251a295"
+        ],
+        "length": 5,
+        "selection_hash": "00cb574464af38c03a16736b1a66d0a568fd613a4456686dc4c695f1c94f93ca"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "73f9ca6148913433c3d48bb7a774c573d3ddc6e51b91e26e9cbc731b27c21ce7",
+      "candidates": 1753,
+      "empty_interpretation": null,
+      "expansions": 244580,
+      "selected": [
+       {
+        "cycle": [
+         "concepts_security_pod_security_admission__ca056080",
+         "concepts_workloads_controllers_index__cc903321",
+         "concepts_workloads_controllers_statefulset__2b73541d",
+         "concepts_workloads_pods_index__628f4b2d",
+         "concepts_workloads_pods_advanced_pod_config__61e9c8f9",
+         "reference_labels_annotations_taints_index__978cde77"
+        ],
+        "length": 6,
+        "selection_hash": "000f54e0bd2e55848f0711cc580a404ee19cf00826f0b46c4fe3c1692cebb99b"
+       },
+       {
+        "cycle": [
+         "concepts_extend_kubernetes_compute_storage_net_network_plugins__d239df3a",
+         "tasks_administer_cluster_migrating_from_dockershim_troubleshooting_cni_plugin_related_errors__d418d0cd",
+         "tasks_administer_cluster_safely_drain_node__0be3d167",
+         "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+         "concepts_workloads_controllers_index__cc903321",
+         "concepts_workloads_controllers_daemonset__ed8f0a5b"
+        ],
+        "length": 6,
+        "selection_hash": "0038c8b421b06e29e44d75db0f9c900b7322a3cf0f95fdce8b397d637afb2530"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "concepts_security_controlling_access__9c8c9d08",
+      "tasks_configure_pod_container_configure_service_account__cf2df204",
+      "tasks_access_application_cluster_access_cluster__f1b9af7e"
+     ],
+     [
+      "concepts_scheduling_eviction_api_eviction__f005a414",
+      "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+      "concepts_scheduling_eviction_index__93625f1a"
+     ],
+     [
+      "concepts_architecture_nodes__79f7e998",
+      "concepts_scheduling_eviction_taint_and_toleration__6251a295",
+      "concepts_workloads_controllers_daemonset__ed8f0a5b",
+      "concepts_cluster_administration_addons__9537948b"
+     ],
+     [
+      "concepts_configuration_secret__5fa1d930",
+      "reference_access_authn_authz_authorization__b6feb5cb",
+      "reference_using_api_index__288ed70f",
+      "concepts_security_controlling_access__9c8c9d08"
+     ],
+     [
+      "contribute_blog_guidelines__12081426",
+      "contribute_new_content_index__f087580e",
+      "contribute_style_hugo_shortcodes_index__719cd709",
+      "contribute_new_content_open_a_pr__474b1dc6",
+      "contribute_review_reviewing_prs__e867fa82"
+     ],
+     [
+      "concepts_scheduling_eviction_pod_priority_preemption__5e89c72c",
+      "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+      "reference_labels_annotations_taints_index__978cde77",
+      "reference_scheduling_config__d311160a",
+      "concepts_scheduling_eviction_taint_and_toleration__6251a295"
+     ],
+     [
+      "concepts_security_pod_security_admission__ca056080",
+      "concepts_workloads_controllers_index__cc903321",
+      "concepts_workloads_controllers_statefulset__2b73541d",
+      "concepts_workloads_pods_index__628f4b2d",
+      "concepts_workloads_pods_advanced_pod_config__61e9c8f9",
+      "reference_labels_annotations_taints_index__978cde77"
+     ],
+     [
+      "concepts_extend_kubernetes_compute_storage_net_network_plugins__d239df3a",
+      "tasks_administer_cluster_migrating_from_dockershim_troubleshooting_cni_plugin_related_errors__d418d0cd",
+      "tasks_administer_cluster_safely_drain_node__0be3d167",
+      "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+      "concepts_workloads_controllers_index__cc903321",
+      "concepts_workloads_controllers_daemonset__ed8f0a5b"
+     ]
+    ],
+    "ledger_sha256": "7b39b0d19cccfff7b4fca15bf5cc416532c3df7d780c5476a80b22c2b6540a21",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 3328,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "kubernetes_website_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "concepts_security_controlling_access__9c8c9d08",
+       "tasks_configure_pod_container_configure_service_account__cf2df204",
+       "tasks_access_application_cluster_access_cluster__f1b9af7e"
+      ],
+      "length": 3,
+      "selection_hash": "0537891669218835926e68fe21b0e9e709911bfdca5a7e9c118a7a444a467e25"
+     },
+     {
+      "cycle": [
+       "concepts_scheduling_eviction_api_eviction__f005a414",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "concepts_scheduling_eviction_index__93625f1a"
+      ],
+      "length": 3,
+      "selection_hash": "07fcd85b0f52c2ce26f288e69dd1fd65fb4d1c2af33f8f995715a63f9bb0b571"
+     },
+     {
+      "cycle": [
+       "concepts_architecture_nodes__79f7e998",
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295",
+       "concepts_workloads_controllers_daemonset__ed8f0a5b",
+       "concepts_cluster_administration_addons__9537948b"
+      ],
+      "length": 4,
+      "selection_hash": "00c3f8fcff80639f9e64dc53965d15986492a08a32a07782115207faba23277e"
+     },
+     {
+      "cycle": [
+       "concepts_configuration_secret__5fa1d930",
+       "reference_access_authn_authz_authorization__b6feb5cb",
+       "reference_using_api_index__288ed70f",
+       "concepts_security_controlling_access__9c8c9d08"
+      ],
+      "length": 4,
+      "selection_hash": "014805ab79c65500ed0a609ba8c390cc38b7eb1c91ef97e31739623e574d7c2d"
+     },
+     {
+      "cycle": [
+       "contribute_blog_guidelines__12081426",
+       "contribute_new_content_index__f087580e",
+       "contribute_style_hugo_shortcodes_index__719cd709",
+       "contribute_new_content_open_a_pr__474b1dc6",
+       "contribute_review_reviewing_prs__e867fa82"
+      ],
+      "length": 5,
+      "selection_hash": "008ad7433b55b2c8b9aeac1757c51ae6c9d07e9bf75fcb53412b7a2edf5bb6bb"
+     },
+     {
+      "cycle": [
+       "concepts_scheduling_eviction_pod_priority_preemption__5e89c72c",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "reference_labels_annotations_taints_index__978cde77",
+       "reference_scheduling_config__d311160a",
+       "concepts_scheduling_eviction_taint_and_toleration__6251a295"
+      ],
+      "length": 5,
+      "selection_hash": "00cb574464af38c03a16736b1a66d0a568fd613a4456686dc4c695f1c94f93ca"
+     },
+     {
+      "cycle": [
+       "concepts_security_pod_security_admission__ca056080",
+       "concepts_workloads_controllers_index__cc903321",
+       "concepts_workloads_controllers_statefulset__2b73541d",
+       "concepts_workloads_pods_index__628f4b2d",
+       "concepts_workloads_pods_advanced_pod_config__61e9c8f9",
+       "reference_labels_annotations_taints_index__978cde77"
+      ],
+      "length": 6,
+      "selection_hash": "000f54e0bd2e55848f0711cc580a404ee19cf00826f0b46c4fe3c1692cebb99b"
+     },
+     {
+      "cycle": [
+       "concepts_extend_kubernetes_compute_storage_net_network_plugins__d239df3a",
+       "tasks_administer_cluster_migrating_from_dockershim_troubleshooting_cni_plugin_related_errors__d418d0cd",
+       "tasks_administer_cluster_safely_drain_node__0be3d167",
+       "concepts_workloads_pods_pod_lifecycle__e6dd5ca2",
+       "concepts_workloads_controllers_index__cc903321",
+       "concepts_workloads_controllers_daemonset__ed8f0a5b"
+      ],
+      "length": 6,
+      "selection_hash": "0038c8b421b06e29e44d75db0f9c900b7322a3cf0f95fdce8b397d637afb2530"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "a98baf3848b1f072a50d322eb44d722b127efe3e",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__kubernetes_website_docs.json",
+   "source_bundle_sha256": "888a53eefd2fe7582ac42c09573051bc0704cece63d8239600baea4e5c0f1803",
+   "source_provenance": {
+    "commit": "a98baf3848b1f072a50d322eb44d722b127efe3e",
+    "corpus_id": "kubernetes_website_docs",
+    "edge_csv_rows": 4093,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "d38dbc74cae8d1658995bb0743ebec5a983817282aea785d4e10217d2b393782",
+    "frozen_selected_edges_sha256": "b898597ce92dd0e8c21648f2858fcff7ca828659f1b44af39c65bad6dc11b976",
+    "import_faq_patterns": [
+     "*debug-service.md",
+     "*dns-debugging-resolution.md",
+     "*admission-controllers.md"
+    ],
+    "manifest_num_corpus_pages": 1572,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "2d361812ccf4daec98b4906e4d389994aeaf5309edefa92649b59b0592737eab"
+   },
+   "view_arcs": 4088,
+   "view_graph_sha256": "06d772a2a65ac0fbc67b7038bde6bc1ce98ba47e35fc8d1c38c9c7ea25ea130e",
+   "view_nodes": 1146
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\nextjs_docs.jsonl",
+   "config_sha256": "37de2a54108ef43c0c7547bf837f3a43ac6c6bdf1d4c7bf19f8c2882ca3b6378",
+   "corpus_id": "nextjs_docs",
+   "full_arcs": 1361,
+   "full_nodes": 418,
+   "node_coverage": 0.7057416267942583,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "2fd2d31b304b8ba2cb26e563148449db931969251110e86392b50c3d5e6e8596",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_01_getting_started_02_project_structure__ed224a5a"
+      ]
+     ],
+     [
+      [
+       "01_app_01_getting_started_04_linking_and_navigating__0e9dcf43",
+       "01_app_03_api_reference_04_functions_generate_static_params__37026649"
+      ],
+      [
+       "01_app_03_api_reference_04_functions_generate_static_params__37026649",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_01_getting_started_04_linking_and_navigating__0e9dcf43"
+      ]
+     ],
+     [
+      [
+       "01_app_01_getting_started_12_images__d0ac4ef8",
+       "01_app_03_api_reference_05_config_01_next_config_js_index__ee11ce47"
+      ],
+      [
+       "01_app_03_api_reference_05_config_01_next_config_js_index__ee11ce47",
+       "01_app_03_api_reference_05_config_01_next_config_js_rewrites__e32d33e7"
+      ],
+      [
+       "01_app_03_api_reference_05_config_01_next_config_js_rewrites__e32d33e7",
+       "01_app_03_api_reference_05_config_01_next_config_js_headers__dd19290f"
+      ],
+      [
+       "01_app_03_api_reference_05_config_01_next_config_js_headers__dd19290f",
+       "01_app_01_getting_started_12_images__d0ac4ef8"
+      ]
+     ],
+     [
+      [
+       "01_app_02_guides_migrating_app_router_migration__2cb16d91",
+       "01_app_03_api_reference_04_functions_use_pathname__208aae3a"
+      ],
+      [
+       "01_app_03_api_reference_04_functions_use_pathname__208aae3a",
+       "02_pages_03_building_your_application_02_rendering_04_automatic_static_optimization__a18c944e"
+      ],
+      [
+       "02_pages_03_building_your_application_02_rendering_04_automatic_static_optimization__a18c944e",
+       "02_pages_03_building_your_application_01_routing_06_custom_document__c93153aa"
+      ],
+      [
+       "02_pages_03_building_your_application_01_routing_06_custom_document__c93153aa",
+       "01_app_02_guides_migrating_app_router_migration__2cb16d91"
+      ]
+     ],
+     [
+      [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_03_api_reference_03_file_conventions_layout__d307436f"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_layout__d307436f",
+       "01_app_01_getting_started_10_error_handling__1f00e5c7"
+      ],
+      [
+       "01_app_01_getting_started_10_error_handling__1f00e5c7",
+       "01_app_01_getting_started_02_project_structure__ed224a5a"
+      ]
+     ],
+     [
+      [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+       "01_app_03_api_reference_03_file_conventions_02_route_segment_config_index__f8f2a046"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_02_route_segment_config_index__f8f2a046",
+       "01_app_03_api_reference_05_config_01_next_config_js_cachecomponents__9323b08a"
+      ],
+      [
+       "01_app_03_api_reference_05_config_01_next_config_js_cachecomponents__9323b08a",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_01_getting_started_02_project_structure__ed224a5a"
+      ]
+     ],
+     [
+      [
+       "01_app_02_guides_backend_for_frontend__ba7c8623",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_sitemap__e0c49a78"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_01_metadata_sitemap__e0c49a78",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_02_guides_static_exports__f1da0ba6"
+      ],
+      [
+       "01_app_02_guides_static_exports__f1da0ba6",
+       "01_app_03_api_reference_03_file_conventions_proxy__19acadbb"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_proxy__19acadbb",
+       "01_app_02_guides_data_security__5688c95a"
+      ],
+      [
+       "01_app_02_guides_data_security__5688c95a",
+       "01_app_02_guides_backend_for_frontend__ba7c8623"
+      ]
+     ],
+     [
+      [
+       "01_app_01_getting_started_14_metadata_and_og_images__385124ba",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+       "01_app_04_glossary__208175ea"
+      ],
+      [
+       "01_app_04_glossary__208175ea",
+       "01_app_02_guides_static_exports__f1da0ba6"
+      ],
+      [
+       "01_app_02_guides_static_exports__f1da0ba6",
+       "01_app_03_api_reference_03_file_conventions_route__4c8d4af1"
+      ],
+      [
+       "01_app_03_api_reference_03_file_conventions_route__4c8d4af1",
+       "01_app_02_guides_upgrading_codemods__20a26c9c"
+      ],
+      [
+       "01_app_02_guides_upgrading_codemods__20a26c9c",
+       "01_app_01_getting_started_14_metadata_and_og_images__385124ba"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "81e2ce5b2b46f0e907e5c48b0436487b72b35c6409f03d4c516eeadee6d723d0",
+      "candidates": 48,
+      "empty_interpretation": null,
+      "expansions": 3376,
+      "selected": [
+       {
+        "cycle": [
+         "01_app_01_getting_started_02_project_structure__ed224a5a",
+         "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+         "01_app_04_glossary__208175ea"
+        ],
+        "length": 3,
+        "selection_hash": "02356a30cfb2f00107f2c4b0c2463c9ba7c8c4b38eacf1c7720a76ff7f8f35a3"
+       },
+       {
+        "cycle": [
+         "01_app_01_getting_started_04_linking_and_navigating__0e9dcf43",
+         "01_app_03_api_reference_04_functions_generate_static_params__37026649",
+         "01_app_04_glossary__208175ea"
+        ],
+        "length": 3,
+        "selection_hash": "0853989eb666c74b8f5fd06d78bf17c9bcbf88988fa5c5b04233c4bfd06d8097"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "646a3cca8979da094e4896eea7073dfe3535a69e7f34060f8f53c5898822f7c5",
+      "candidates": 194,
+      "empty_interpretation": null,
+      "expansions": 12229,
+      "selected": [
+       {
+        "cycle": [
+         "01_app_01_getting_started_12_images__d0ac4ef8",
+         "01_app_03_api_reference_05_config_01_next_config_js_index__ee11ce47",
+         "01_app_03_api_reference_05_config_01_next_config_js_rewrites__e32d33e7",
+         "01_app_03_api_reference_05_config_01_next_config_js_headers__dd19290f"
+        ],
+        "length": 4,
+        "selection_hash": "00d199623086c5c63838edb7c90f738e1b0b8515a7aff4760bbce99302a98a40"
+       },
+       {
+        "cycle": [
+         "01_app_02_guides_migrating_app_router_migration__2cb16d91",
+         "01_app_03_api_reference_04_functions_use_pathname__208aae3a",
+         "02_pages_03_building_your_application_02_rendering_04_automatic_static_optimization__a18c944e",
+         "02_pages_03_building_your_application_01_routing_06_custom_document__c93153aa"
+        ],
+        "length": 4,
+        "selection_hash": "0392c85eec00f338eb437bb7a54347206877c6b9e8d7661897a7d0df17a8165c"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "bf508fa29883f072d70e8d02acb70f5b798370c0ee9e4450bf16fec1a50c18e1",
+      "candidates": 659,
+      "empty_interpretation": null,
+      "expansions": 44341,
+      "selected": [
+       {
+        "cycle": [
+         "01_app_01_getting_started_02_project_structure__ed224a5a",
+         "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+         "01_app_04_glossary__208175ea",
+         "01_app_03_api_reference_03_file_conventions_layout__d307436f",
+         "01_app_01_getting_started_10_error_handling__1f00e5c7"
+        ],
+        "length": 5,
+        "selection_hash": "00363dd08afa7e1bbe60e0e32508b374b63cc88253890e44e40d9abb88efdaa2"
+       },
+       {
+        "cycle": [
+         "01_app_01_getting_started_02_project_structure__ed224a5a",
+         "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+         "01_app_03_api_reference_03_file_conventions_02_route_segment_config_index__f8f2a046",
+         "01_app_03_api_reference_05_config_01_next_config_js_cachecomponents__9323b08a",
+         "01_app_04_glossary__208175ea"
+        ],
+        "length": 5,
+        "selection_hash": "0058272dfce8a91c18b920785f28d65c13320540199214e58a75027fdb31c5b4"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "19e60f60adaa801b0f669fa85156bedc8a9cb8fdf570d51065478049ae4a6747",
+      "candidates": 2259,
+      "empty_interpretation": null,
+      "expansions": 157700,
+      "selected": [
+       {
+        "cycle": [
+         "01_app_02_guides_backend_for_frontend__ba7c8623",
+         "01_app_03_api_reference_03_file_conventions_01_metadata_sitemap__e0c49a78",
+         "01_app_04_glossary__208175ea",
+         "01_app_02_guides_static_exports__f1da0ba6",
+         "01_app_03_api_reference_03_file_conventions_proxy__19acadbb",
+         "01_app_02_guides_data_security__5688c95a"
+        ],
+        "length": 6,
+        "selection_hash": "003aec3fb467904ddfc1e4535f74cbb97c0390d6a9441b20695d954eeac93a60"
+       },
+       {
+        "cycle": [
+         "01_app_01_getting_started_14_metadata_and_og_images__385124ba",
+         "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+         "01_app_04_glossary__208175ea",
+         "01_app_02_guides_static_exports__f1da0ba6",
+         "01_app_03_api_reference_03_file_conventions_route__4c8d4af1",
+         "01_app_02_guides_upgrading_codemods__20a26c9c"
+        ],
+        "length": 6,
+        "selection_hash": "006e41705f29eb673c4e64e92322c355b1ef1eda975842555f2300bdf4732f65"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "01_app_01_getting_started_02_project_structure__ed224a5a",
+      "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+      "01_app_04_glossary__208175ea"
+     ],
+     [
+      "01_app_01_getting_started_04_linking_and_navigating__0e9dcf43",
+      "01_app_03_api_reference_04_functions_generate_static_params__37026649",
+      "01_app_04_glossary__208175ea"
+     ],
+     [
+      "01_app_01_getting_started_12_images__d0ac4ef8",
+      "01_app_03_api_reference_05_config_01_next_config_js_index__ee11ce47",
+      "01_app_03_api_reference_05_config_01_next_config_js_rewrites__e32d33e7",
+      "01_app_03_api_reference_05_config_01_next_config_js_headers__dd19290f"
+     ],
+     [
+      "01_app_02_guides_migrating_app_router_migration__2cb16d91",
+      "01_app_03_api_reference_04_functions_use_pathname__208aae3a",
+      "02_pages_03_building_your_application_02_rendering_04_automatic_static_optimization__a18c944e",
+      "02_pages_03_building_your_application_01_routing_06_custom_document__c93153aa"
+     ],
+     [
+      "01_app_01_getting_started_02_project_structure__ed224a5a",
+      "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+      "01_app_04_glossary__208175ea",
+      "01_app_03_api_reference_03_file_conventions_layout__d307436f",
+      "01_app_01_getting_started_10_error_handling__1f00e5c7"
+     ],
+     [
+      "01_app_01_getting_started_02_project_structure__ed224a5a",
+      "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+      "01_app_03_api_reference_03_file_conventions_02_route_segment_config_index__f8f2a046",
+      "01_app_03_api_reference_05_config_01_next_config_js_cachecomponents__9323b08a",
+      "01_app_04_glossary__208175ea"
+     ],
+     [
+      "01_app_02_guides_backend_for_frontend__ba7c8623",
+      "01_app_03_api_reference_03_file_conventions_01_metadata_sitemap__e0c49a78",
+      "01_app_04_glossary__208175ea",
+      "01_app_02_guides_static_exports__f1da0ba6",
+      "01_app_03_api_reference_03_file_conventions_proxy__19acadbb",
+      "01_app_02_guides_data_security__5688c95a"
+     ],
+     [
+      "01_app_01_getting_started_14_metadata_and_og_images__385124ba",
+      "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+      "01_app_04_glossary__208175ea",
+      "01_app_02_guides_static_exports__f1da0ba6",
+      "01_app_03_api_reference_03_file_conventions_route__4c8d4af1",
+      "01_app_02_guides_upgrading_codemods__20a26c9c"
+     ]
+    ],
+    "ledger_sha256": "23a69c036eca1da6d9b3b2bc5a0bbe9f4b656231d04cf3003335093e99abab6b",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 1068,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "nextjs_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+       "01_app_04_glossary__208175ea"
+      ],
+      "length": 3,
+      "selection_hash": "02356a30cfb2f00107f2c4b0c2463c9ba7c8c4b38eacf1c7720a76ff7f8f35a3"
+     },
+     {
+      "cycle": [
+       "01_app_01_getting_started_04_linking_and_navigating__0e9dcf43",
+       "01_app_03_api_reference_04_functions_generate_static_params__37026649",
+       "01_app_04_glossary__208175ea"
+      ],
+      "length": 3,
+      "selection_hash": "0853989eb666c74b8f5fd06d78bf17c9bcbf88988fa5c5b04233c4bfd06d8097"
+     },
+     {
+      "cycle": [
+       "01_app_01_getting_started_12_images__d0ac4ef8",
+       "01_app_03_api_reference_05_config_01_next_config_js_index__ee11ce47",
+       "01_app_03_api_reference_05_config_01_next_config_js_rewrites__e32d33e7",
+       "01_app_03_api_reference_05_config_01_next_config_js_headers__dd19290f"
+      ],
+      "length": 4,
+      "selection_hash": "00d199623086c5c63838edb7c90f738e1b0b8515a7aff4760bbce99302a98a40"
+     },
+     {
+      "cycle": [
+       "01_app_02_guides_migrating_app_router_migration__2cb16d91",
+       "01_app_03_api_reference_04_functions_use_pathname__208aae3a",
+       "02_pages_03_building_your_application_02_rendering_04_automatic_static_optimization__a18c944e",
+       "02_pages_03_building_your_application_01_routing_06_custom_document__c93153aa"
+      ],
+      "length": 4,
+      "selection_hash": "0392c85eec00f338eb437bb7a54347206877c6b9e8d7661897a7d0df17a8165c"
+     },
+     {
+      "cycle": [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+       "01_app_04_glossary__208175ea",
+       "01_app_03_api_reference_03_file_conventions_layout__d307436f",
+       "01_app_01_getting_started_10_error_handling__1f00e5c7"
+      ],
+      "length": 5,
+      "selection_hash": "00363dd08afa7e1bbe60e0e32508b374b63cc88253890e44e40d9abb88efdaa2"
+     },
+     {
+      "cycle": [
+       "01_app_01_getting_started_02_project_structure__ed224a5a",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_opengraph_image__4e2592c2",
+       "01_app_03_api_reference_03_file_conventions_02_route_segment_config_index__f8f2a046",
+       "01_app_03_api_reference_05_config_01_next_config_js_cachecomponents__9323b08a",
+       "01_app_04_glossary__208175ea"
+      ],
+      "length": 5,
+      "selection_hash": "0058272dfce8a91c18b920785f28d65c13320540199214e58a75027fdb31c5b4"
+     },
+     {
+      "cycle": [
+       "01_app_02_guides_backend_for_frontend__ba7c8623",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_sitemap__e0c49a78",
+       "01_app_04_glossary__208175ea",
+       "01_app_02_guides_static_exports__f1da0ba6",
+       "01_app_03_api_reference_03_file_conventions_proxy__19acadbb",
+       "01_app_02_guides_data_security__5688c95a"
+      ],
+      "length": 6,
+      "selection_hash": "003aec3fb467904ddfc1e4535f74cbb97c0390d6a9441b20695d954eeac93a60"
+     },
+     {
+      "cycle": [
+       "01_app_01_getting_started_14_metadata_and_og_images__385124ba",
+       "01_app_03_api_reference_03_file_conventions_01_metadata_app_icons__4c5c96e0",
+       "01_app_04_glossary__208175ea",
+       "01_app_02_guides_static_exports__f1da0ba6",
+       "01_app_03_api_reference_03_file_conventions_route__4c8d4af1",
+       "01_app_02_guides_upgrading_codemods__20a26c9c"
+      ],
+      "length": 6,
+      "selection_hash": "006e41705f29eb673c4e64e92322c355b1ef1eda975842555f2300bdf4732f65"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "ed1c6ccbdb2642d514dfe503eda337a2b7b53286",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__nextjs_docs.json",
+   "source_bundle_sha256": "b97c9c8592fa7aa04dd723eb36c4c3c984832b0fb0d3b322ff51796ec9cfcd8c",
+   "source_provenance": {
+    "commit": "ed1c6ccbdb2642d514dfe503eda337a2b7b53286",
+    "corpus_id": "nextjs_docs",
+    "edge_csv_rows": 1361,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "3404880669bde5523f11101f98a239332a5f776e6472c4d688a507835fbae0da",
+    "frozen_selected_edges_sha256": "cce7078a3593d71f0920ac71fb518b253e0500a649de1b1f4e214848d520c177",
+    "import_faq_patterns": [
+     "01-app/01-getting-started/05-server-and-client-components.mdx",
+     "01-app/02-guides/prefetching.mdx",
+     "01-app/02-guides/single-page-applications.mdx",
+     "01-app/02-guides/streaming.mdx",
+     "01-app/02-guides/preventing-flash-before-hydration.mdx",
+     "02-pages/03-building-your-application/03-data-fetching/01-get-static-props.mdx",
+     "02-pages/03-building-your-application/03-data-fetching/02-get-static-paths.mdx",
+     "02-pages/03-building-your-application/03-data-fetching/03-get-server-side-props.mdx"
+    ],
+    "manifest_num_corpus_pages": 418,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "0e2880d58b7487bf5aa4c8049852dd843df11ed84894a5d2c734e95689313a90"
+   },
+   "view_arcs": 1360,
+   "view_graph_sha256": "a5fcc683b389f7eceaa3b86aad213f5d4c0def3b6e87b1ad1b81726582e13696",
+   "view_nodes": 295
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\pytorch_docs.jsonl",
+   "config_sha256": "8f2f987f3b164a3ab818301bac0f192874bae619729070bb3563f980c301ccd3",
+   "corpus_id": "pytorch_docs",
+   "full_arcs": 38,
+   "full_nodes": 244,
+   "node_coverage": 0.036885245901639344,
+   "previously_examined": [],
+   "request_sha256": "5d009ce14efec2dab4d260395ec5f3e6fe2aa2ecc20c59fd732515666e1ca0b6",
+   "selection": {
+    "arcs": [],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 17,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 17,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 17,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 17,
+      "selected": [],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [],
+    "ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 9,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "pytorch_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "787b289f36fcfd28bc4401cfa2d775fb12286bf4",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__pytorch_docs.json",
+   "source_bundle_sha256": "c1e4210c8eb67c27374f55f2fb0bee0dc01c4e2a4be0872e710cfc5518b7282e",
+   "source_provenance": {
+    "commit": "787b289f36fcfd28bc4401cfa2d775fb12286bf4",
+    "corpus_id": "pytorch_docs",
+    "edge_csv_rows": 38,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "db5b78fff9b762a2e048ce442ecb8d7986dafbcdf09d0bf0d5ce0e4c373b3106",
+    "frozen_selected_edges_sha256": "cb76569f2223d92a1c5c10c6b3e4e46e9432190dd324ec4bfaa43783133eddee",
+    "import_faq_patterns": [
+     "notes/faq.rst",
+     "user_guide/torch_compiler/torch.compiler_faq.md",
+     "user_guide/torch_compiler/troubleshooting_faqs.md"
+    ],
+    "manifest_num_corpus_pages": 244,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "aad057912a847a1b142fbb3c4e2ddff2efc15230c37f5e1c3d23dd91ff3020f4"
+   },
+   "view_arcs": 9,
+   "view_graph_sha256": "fa34864c0e5c2a8e62019259ada6154547dc3f46bc3caf54484b74703113e2c6",
+   "view_nodes": 9
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\react_docs.jsonl",
+   "config_sha256": "2deab3b938eb6778a44d46e59c0fb8d30f6c7452cf74c29df33e93eb3cf57d77",
+   "corpus_id": "react_docs",
+   "full_arcs": 1064,
+   "full_nodes": 218,
+   "node_coverage": 0.944954128440367,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "02a72deaa2bed735426e328ed3ef6b2ef62ffa2862e4df03d09b05558297ef3d",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "learn_you_might_not_need_an_effect__41a45f77",
+       "reference_react_usesyncexternalstore__e89821e3"
+      ],
+      [
+       "reference_react_usesyncexternalstore__e89821e3",
+       "reference_react_usecallback__e79cb41f"
+      ],
+      [
+       "reference_react_usecallback__e79cb41f",
+       "learn_you_might_not_need_an_effect__41a45f77"
+      ]
+     ],
+     [
+      [
+       "learn_lifecycle_of_reactive_effects__0368c75e",
+       "learn_scaling_up_with_reducer_and_context__9802a44f"
+      ],
+      [
+       "learn_scaling_up_with_reducer_and_context__9802a44f",
+       "learn_reusing_logic_with_custom_hooks__8bb02b79"
+      ],
+      [
+       "learn_reusing_logic_with_custom_hooks__8bb02b79",
+       "learn_lifecycle_of_reactive_effects__0368c75e"
+      ]
+     ],
+     [
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertostaticmarkup__2395ce80"
+      ],
+      [
+       "reference_react_dom_server_rendertostaticmarkup__2395ce80",
+       "reference_react_dom_server_rendertostring__da980191"
+      ],
+      [
+       "reference_react_dom_server_rendertostring__da980191",
+       "reference_react_suspense__f6ed748d"
+      ],
+      [
+       "reference_react_suspense__f6ed748d",
+       "reference_react_dom_server_index__6cf491d4"
+      ]
+     ],
+     [
+      [
+       "learn_render_and_commit__45777a9f",
+       "reference_react_dom_client_createroot__e03f5e89"
+      ],
+      [
+       "reference_react_dom_client_createroot__e03f5e89",
+       "reference_react_usestate__e8e7e017"
+      ],
+      [
+       "reference_react_usestate__e8e7e017",
+       "learn_state_as_a_snapshot__1e9bbe78"
+      ],
+      [
+       "learn_state_as_a_snapshot__1e9bbe78",
+       "learn_render_and_commit__45777a9f"
+      ]
+     ],
+     [
+      [
+       "reference_react_component__93542dde",
+       "reference_react_dom_server_index__6cf491d4"
+      ],
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertostring__da980191"
+      ],
+      [
+       "reference_react_dom_server_rendertostring__da980191",
+       "reference_react_dom_static_prerender__57389574"
+      ],
+      [
+       "reference_react_dom_static_prerender__57389574",
+       "reference_react_dom_server_rendertoreadablestream__d74e3923"
+      ],
+      [
+       "reference_react_dom_server_rendertoreadablestream__d74e3923",
+       "reference_react_component__93542dde"
+      ]
+     ],
+     [
+      [
+       "reference_react_component__93542dde",
+       "reference_react_dom_server_index__6cf491d4"
+      ],
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_static_prerender__57389574"
+      ],
+      [
+       "reference_react_dom_static_prerender__57389574",
+       "reference_react_useid__072985c0"
+      ],
+      [
+       "reference_react_useid__072985c0",
+       "reference_react_use__279bd7ef"
+      ],
+      [
+       "reference_react_use__279bd7ef",
+       "reference_react_component__93542dde"
+      ]
+     ],
+     [
+      [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_server_index__6cf491d4"
+      ],
+      [
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertoreadablestream__d74e3923"
+      ],
+      [
+       "reference_react_dom_server_rendertoreadablestream__d74e3923",
+       "reference_react_component__93542dde"
+      ],
+      [
+       "reference_react_component__93542dde",
+       "learn_your_first_component__ca2139ea"
+      ],
+      [
+       "learn_your_first_component__ca2139ea",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      [
+       "learn_creating_a_react_app__0b4dac7e",
+       "blog_2022_03_29_react_v18__396e4232"
+      ]
+     ],
+     [
+      [
+       "learn_extracting_state_logic_into_a_reducer__f89bb7c2",
+       "learn_updating_objects_in_state__bbc97266"
+      ],
+      [
+       "learn_updating_objects_in_state__bbc97266",
+       "reference_react_memo__02583f4b"
+      ],
+      [
+       "reference_react_memo__02583f4b",
+       "learn_you_might_not_need_an_effect__41a45f77"
+      ],
+      [
+       "learn_you_might_not_need_an_effect__41a45f77",
+       "reference_react_usesyncexternalstore__e89821e3"
+      ],
+      [
+       "reference_react_usesyncexternalstore__e89821e3",
+       "reference_react_usereducer__8c59f371"
+      ],
+      [
+       "reference_react_usereducer__8c59f371",
+       "learn_extracting_state_logic_into_a_reducer__f89bb7c2"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "8fdcd12ad3c6fb0ae03ebc3dc395f5338cc7ceedf5a1543717f617bcacea6d26",
+      "candidates": 39,
+      "empty_interpretation": null,
+      "expansions": 2173,
+      "selected": [
+       {
+        "cycle": [
+         "learn_you_might_not_need_an_effect__41a45f77",
+         "reference_react_usesyncexternalstore__e89821e3",
+         "reference_react_usecallback__e79cb41f"
+        ],
+        "length": 3,
+        "selection_hash": "0314e2830b404ccb786b5ab9ff77e5d0d3e1ff8dd804e5ef2c0b2840d803d8aa"
+       },
+       {
+        "cycle": [
+         "learn_lifecycle_of_reactive_effects__0368c75e",
+         "learn_scaling_up_with_reducer_and_context__9802a44f",
+         "learn_reusing_logic_with_custom_hooks__8bb02b79"
+        ],
+        "length": 3,
+        "selection_hash": "07dd19fb11d47e1cca4f08e775547b4b8f81d40e1cb6b84509f4aef098e5bb0e"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "2b1a956f434ab4c9c0a25ef88cf911b5ffcac1cf9fb99f5522072b241a19c6ed",
+      "candidates": 106,
+      "empty_interpretation": null,
+      "expansions": 7351,
+      "selected": [
+       {
+        "cycle": [
+         "reference_react_dom_server_index__6cf491d4",
+         "reference_react_dom_server_rendertostaticmarkup__2395ce80",
+         "reference_react_dom_server_rendertostring__da980191",
+         "reference_react_suspense__f6ed748d"
+        ],
+        "length": 4,
+        "selection_hash": "04cb1cdc7a572d3826aabae7e946a352e187020aded8313a0312c138661d538e"
+       },
+       {
+        "cycle": [
+         "learn_render_and_commit__45777a9f",
+         "reference_react_dom_client_createroot__e03f5e89",
+         "reference_react_usestate__e8e7e017",
+         "learn_state_as_a_snapshot__1e9bbe78"
+        ],
+        "length": 4,
+        "selection_hash": "0634ac43194a1f1105ab2eefe6a4c72b86221bce72d17211cbcb16ba46f1f240"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "735d3985759f43a8b4aab38916897bd48c38f68ea817ef1f235c5a80516fd943",
+      "candidates": 279,
+      "empty_interpretation": null,
+      "expansions": 26497,
+      "selected": [
+       {
+        "cycle": [
+         "reference_react_component__93542dde",
+         "reference_react_dom_server_index__6cf491d4",
+         "reference_react_dom_server_rendertostring__da980191",
+         "reference_react_dom_static_prerender__57389574",
+         "reference_react_dom_server_rendertoreadablestream__d74e3923"
+        ],
+        "length": 5,
+        "selection_hash": "0205dc320583ce2c12c3f9af0b2d28ada791ca6a63032fdddc1530c30f07eeab"
+       },
+       {
+        "cycle": [
+         "reference_react_component__93542dde",
+         "reference_react_dom_server_index__6cf491d4",
+         "reference_react_dom_static_prerender__57389574",
+         "reference_react_useid__072985c0",
+         "reference_react_use__279bd7ef"
+        ],
+        "length": 5,
+        "selection_hash": "028e4ea5ecd8465e70f7b6c284a3169278c48c6d1528b13d50bc9fdc8a3712b8"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "e41cab11c0f6e65c7de45f46eb8c305d0e3c69836dca3048114848a216f68e41",
+      "candidates": 808,
+      "empty_interpretation": null,
+      "expansions": 98590,
+      "selected": [
+       {
+        "cycle": [
+         "blog_2022_03_29_react_v18__396e4232",
+         "reference_react_dom_server_index__6cf491d4",
+         "reference_react_dom_server_rendertoreadablestream__d74e3923",
+         "reference_react_component__93542dde",
+         "learn_your_first_component__ca2139ea",
+         "learn_creating_a_react_app__0b4dac7e"
+        ],
+        "length": 6,
+        "selection_hash": "000f2ae7f7d2c3d259082cdb2276483150e94aaebc9fe35de4193602462ff8bf"
+       },
+       {
+        "cycle": [
+         "learn_extracting_state_logic_into_a_reducer__f89bb7c2",
+         "learn_updating_objects_in_state__bbc97266",
+         "reference_react_memo__02583f4b",
+         "learn_you_might_not_need_an_effect__41a45f77",
+         "reference_react_usesyncexternalstore__e89821e3",
+         "reference_react_usereducer__8c59f371"
+        ],
+        "length": 6,
+        "selection_hash": "0024bb3c662fef7b2c90522133c238220c9381e0a25c7e38e3fef918bd91cdb5"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "learn_you_might_not_need_an_effect__41a45f77",
+      "reference_react_usesyncexternalstore__e89821e3",
+      "reference_react_usecallback__e79cb41f"
+     ],
+     [
+      "learn_lifecycle_of_reactive_effects__0368c75e",
+      "learn_scaling_up_with_reducer_and_context__9802a44f",
+      "learn_reusing_logic_with_custom_hooks__8bb02b79"
+     ],
+     [
+      "reference_react_dom_server_index__6cf491d4",
+      "reference_react_dom_server_rendertostaticmarkup__2395ce80",
+      "reference_react_dom_server_rendertostring__da980191",
+      "reference_react_suspense__f6ed748d"
+     ],
+     [
+      "learn_render_and_commit__45777a9f",
+      "reference_react_dom_client_createroot__e03f5e89",
+      "reference_react_usestate__e8e7e017",
+      "learn_state_as_a_snapshot__1e9bbe78"
+     ],
+     [
+      "reference_react_component__93542dde",
+      "reference_react_dom_server_index__6cf491d4",
+      "reference_react_dom_server_rendertostring__da980191",
+      "reference_react_dom_static_prerender__57389574",
+      "reference_react_dom_server_rendertoreadablestream__d74e3923"
+     ],
+     [
+      "reference_react_component__93542dde",
+      "reference_react_dom_server_index__6cf491d4",
+      "reference_react_dom_static_prerender__57389574",
+      "reference_react_useid__072985c0",
+      "reference_react_use__279bd7ef"
+     ],
+     [
+      "blog_2022_03_29_react_v18__396e4232",
+      "reference_react_dom_server_index__6cf491d4",
+      "reference_react_dom_server_rendertoreadablestream__d74e3923",
+      "reference_react_component__93542dde",
+      "learn_your_first_component__ca2139ea",
+      "learn_creating_a_react_app__0b4dac7e"
+     ],
+     [
+      "learn_extracting_state_logic_into_a_reducer__f89bb7c2",
+      "learn_updating_objects_in_state__bbc97266",
+      "reference_react_memo__02583f4b",
+      "learn_you_might_not_need_an_effect__41a45f77",
+      "reference_react_usesyncexternalstore__e89821e3",
+      "reference_react_usereducer__8c59f371"
+     ]
+    ],
+    "ledger_sha256": "ddf0d558117173d96ff49efdefbb60cf1152082b366a99513da8ef9daf4454da",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 880,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "react_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "learn_you_might_not_need_an_effect__41a45f77",
+       "reference_react_usesyncexternalstore__e89821e3",
+       "reference_react_usecallback__e79cb41f"
+      ],
+      "length": 3,
+      "selection_hash": "0314e2830b404ccb786b5ab9ff77e5d0d3e1ff8dd804e5ef2c0b2840d803d8aa"
+     },
+     {
+      "cycle": [
+       "learn_lifecycle_of_reactive_effects__0368c75e",
+       "learn_scaling_up_with_reducer_and_context__9802a44f",
+       "learn_reusing_logic_with_custom_hooks__8bb02b79"
+      ],
+      "length": 3,
+      "selection_hash": "07dd19fb11d47e1cca4f08e775547b4b8f81d40e1cb6b84509f4aef098e5bb0e"
+     },
+     {
+      "cycle": [
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertostaticmarkup__2395ce80",
+       "reference_react_dom_server_rendertostring__da980191",
+       "reference_react_suspense__f6ed748d"
+      ],
+      "length": 4,
+      "selection_hash": "04cb1cdc7a572d3826aabae7e946a352e187020aded8313a0312c138661d538e"
+     },
+     {
+      "cycle": [
+       "learn_render_and_commit__45777a9f",
+       "reference_react_dom_client_createroot__e03f5e89",
+       "reference_react_usestate__e8e7e017",
+       "learn_state_as_a_snapshot__1e9bbe78"
+      ],
+      "length": 4,
+      "selection_hash": "0634ac43194a1f1105ab2eefe6a4c72b86221bce72d17211cbcb16ba46f1f240"
+     },
+     {
+      "cycle": [
+       "reference_react_component__93542dde",
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertostring__da980191",
+       "reference_react_dom_static_prerender__57389574",
+       "reference_react_dom_server_rendertoreadablestream__d74e3923"
+      ],
+      "length": 5,
+      "selection_hash": "0205dc320583ce2c12c3f9af0b2d28ada791ca6a63032fdddc1530c30f07eeab"
+     },
+     {
+      "cycle": [
+       "reference_react_component__93542dde",
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_static_prerender__57389574",
+       "reference_react_useid__072985c0",
+       "reference_react_use__279bd7ef"
+      ],
+      "length": 5,
+      "selection_hash": "028e4ea5ecd8465e70f7b6c284a3169278c48c6d1528b13d50bc9fdc8a3712b8"
+     },
+     {
+      "cycle": [
+       "blog_2022_03_29_react_v18__396e4232",
+       "reference_react_dom_server_index__6cf491d4",
+       "reference_react_dom_server_rendertoreadablestream__d74e3923",
+       "reference_react_component__93542dde",
+       "learn_your_first_component__ca2139ea",
+       "learn_creating_a_react_app__0b4dac7e"
+      ],
+      "length": 6,
+      "selection_hash": "000f2ae7f7d2c3d259082cdb2276483150e94aaebc9fe35de4193602462ff8bf"
+     },
+     {
+      "cycle": [
+       "learn_extracting_state_logic_into_a_reducer__f89bb7c2",
+       "learn_updating_objects_in_state__bbc97266",
+       "reference_react_memo__02583f4b",
+       "learn_you_might_not_need_an_effect__41a45f77",
+       "reference_react_usesyncexternalstore__e89821e3",
+       "reference_react_usereducer__8c59f371"
+      ],
+      "length": 6,
+      "selection_hash": "0024bb3c662fef7b2c90522133c238220c9381e0a25c7e38e3fef918bd91cdb5"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "40ea071c846b3ab1232391bab15d31f508913bf4",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__react_docs.json",
+   "source_bundle_sha256": "1fef86df267f7ba129c0e49f6746fa2252057744867e22c683eadc0ba34c2b3a",
+   "source_provenance": {
+    "commit": "40ea071c846b3ab1232391bab15d31f508913bf4",
+    "corpus_id": "react_docs",
+    "edge_csv_rows": 1064,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "a0253a6d090646d810ae1856d10aec4e87026dc892b35c084900a195e6263dad",
+    "frozen_selected_edges_sha256": "06eb86ffbda42adf281e96479058f2f8ce0256a3afada192a024d98735c4a1d2",
+    "import_faq_patterns": [
+     "*versioning-policy.md",
+     "*learn/installation.md",
+     "*react-compiler/introduction.md",
+     "*synchronizing-with-effects.md"
+    ],
+    "manifest_num_corpus_pages": 218,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "4e9f127275e518061f8a085517b4a8f9564a8e866f4bb4558af01789fa705f15"
+   },
+   "view_arcs": 1064,
+   "view_graph_sha256": "3c447e06dd9a2ce5c56fd33e394ce2dc2b0aec6cf84abeeaaec3925c170d3dc8",
+   "view_nodes": 206
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\redis_docs.jsonl",
+   "config_sha256": "668688230968ecb7a007f69eedc647176615f29241b2b03a235dd221ebc2eb8c",
+   "corpus_id": "redis_docs",
+   "full_arcs": 64,
+   "full_nodes": 97,
+   "node_coverage": 0.4639175257731959,
+   "previously_examined": [
+    false,
+    false
+   ],
+   "request_sha256": "e9466af356102625d7fad906ba11c4528d7b58924b761ad2c86aedae11bebb26",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "install_index__1c5e29bb",
+       "install_install_redis_index__bc818ba8"
+      ],
+      [
+       "install_install_redis_index__bc818ba8",
+       "install_install_redis_install_redis_from_source__70ad164d"
+      ],
+      [
+       "install_install_redis_install_redis_from_source__70ad164d",
+       "install_index__1c5e29bb"
+      ]
+     ],
+     [
+      [
+       "install_index__1c5e29bb",
+       "install_install_redis_index__bc818ba8"
+      ],
+      [
+       "install_install_redis_index__bc818ba8",
+       "install_install_redis_install_redis_on_mac_os__89cc78fb"
+      ],
+      [
+       "install_install_redis_install_redis_on_mac_os__89cc78fb",
+       "install_install_redis_install_redis_from_source__70ad164d"
+      ],
+      [
+       "install_install_redis_install_redis_from_source__70ad164d",
+       "install_index__1c5e29bb"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "022dac717b348f66604f31b5142e2539a3f28fec2d222e5626bd58b03096e10c",
+      "candidates": 1,
+      "empty_interpretation": null,
+      "expansions": 117,
+      "selected": [
+       {
+        "cycle": [
+         "install_index__1c5e29bb",
+         "install_install_redis_index__bc818ba8",
+         "install_install_redis_install_redis_from_source__70ad164d"
+        ],
+        "length": 3,
+        "selection_hash": "65a2114abeb84affec92e8cc0b8f9815d073debc06c0fec76f74747c79924e77"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "5f80b78d5a26190b21fdcb670efeb42227b96ce3ee23a0b00dd263f0547d8143",
+      "candidates": 1,
+      "empty_interpretation": null,
+      "expansions": 124,
+      "selected": [
+       {
+        "cycle": [
+         "install_index__1c5e29bb",
+         "install_install_redis_index__bc818ba8",
+         "install_install_redis_install_redis_on_mac_os__89cc78fb",
+         "install_install_redis_install_redis_from_source__70ad164d"
+        ],
+        "length": 4,
+        "selection_hash": "03b2c3329873e0b4fc1d38b370040b6e036fc95cad7ec5faa168f98624ae2840"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 124,
+      "selected": [],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidates": 0,
+      "empty_interpretation": "no_eligible_cycles",
+      "expansions": 124,
+      "selected": [],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "install_index__1c5e29bb",
+      "install_install_redis_index__bc818ba8",
+      "install_install_redis_install_redis_from_source__70ad164d"
+     ],
+     [
+      "install_index__1c5e29bb",
+      "install_install_redis_index__bc818ba8",
+      "install_install_redis_install_redis_on_mac_os__89cc78fb",
+      "install_install_redis_install_redis_from_source__70ad164d"
+     ]
+    ],
+    "ledger_sha256": "e1d573f7a3d12fd33fb7d352edb17fcf655fac8e708a925c29a5f0b9e69e8795",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 62,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "redis_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "install_index__1c5e29bb",
+       "install_install_redis_index__bc818ba8",
+       "install_install_redis_install_redis_from_source__70ad164d"
+      ],
+      "length": 3,
+      "selection_hash": "65a2114abeb84affec92e8cc0b8f9815d073debc06c0fec76f74747c79924e77"
+     },
+     {
+      "cycle": [
+       "install_index__1c5e29bb",
+       "install_install_redis_index__bc818ba8",
+       "install_install_redis_install_redis_on_mac_os__89cc78fb",
+       "install_install_redis_install_redis_from_source__70ad164d"
+      ],
+      "length": 4,
+      "selection_hash": "03b2c3329873e0b4fc1d38b370040b6e036fc95cad7ec5faa168f98624ae2840"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "1044224477fceacc5af56a636b0a7495d19e533c",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__redis_docs.json",
+   "source_bundle_sha256": "7be180b2084f939b3298cdc9ef2c8e50726f2ebc4c9371eaab473733c59a394e",
+   "source_provenance": {
+    "commit": "1044224477fceacc5af56a636b0a7495d19e533c",
+    "corpus_id": "redis_docs",
+    "edge_csv_rows": 64,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "2932c8dd0486abdf231770aab8748962948fe6e0faadfc1fb430a8b8510cced0",
+    "frozen_selected_edges_sha256": "4ffff060db3395adee2f52602bac33b2f8a0f649fb45bdae03cfd6e7b180a914",
+    "import_faq_patterns": [
+     "get-started/faq.md"
+    ],
+    "manifest_num_corpus_pages": 97,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "6623d4402209004a6cbf0fa7137a82b72f4f192541c5bdda82626f73aec0c5ae"
+   },
+   "view_arcs": 62,
+   "view_graph_sha256": "02cb2549a749cf8b9cc1e24c3bc6759b654da8a7812e45047b99e380acfaaebc",
+   "view_nodes": 45
+  },
+  {
+   "candidate_ledger": "artifacts\\magnetic-attribution-23b-v1\\selection\\vscode_docs.jsonl",
+   "config_sha256": "6d9665779442dce3a33a63f612f4fc62540efa2edc49484ec6549c99c5dd6af9",
+   "corpus_id": "vscode_docs",
+   "full_arcs": 3028,
+   "full_nodes": 770,
+   "node_coverage": 0.8545454545454545,
+   "previously_examined": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "request_sha256": "f0c2b7b0baa742df666799c7468960898e408e95016acd46699699f32b2c50be",
+   "selection": {
+    "arcs": [
+     [
+      [
+       "docs_configure_settings__9922f3c2",
+       "docs_remote_remote_overview__75c558ae"
+      ],
+      [
+       "docs_remote_remote_overview__75c558ae",
+       "docs_remote_ssh__a35fe360"
+      ],
+      [
+       "docs_remote_ssh__a35fe360",
+       "docs_configure_settings__9922f3c2"
+      ]
+     ],
+     [
+      [
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f"
+      ],
+      [
+       "docs_languages_overview__924a2e0f",
+       "docs_languages_dotnet__8eff33e2"
+      ],
+      [
+       "docs_languages_dotnet__8eff33e2",
+       "docs_editing_codebasics__fffe42c0"
+      ]
+     ],
+     [
+      [
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f"
+      ],
+      [
+       "docs_languages_overview__924a2e0f",
+       "docs_languages_python__56c08e97"
+      ],
+      [
+       "docs_languages_python__56c08e97",
+       "docs_getstarted_userinterface__2c831921"
+      ],
+      [
+       "docs_getstarted_userinterface__2c831921",
+       "docs_editing_codebasics__fffe42c0"
+      ]
+     ],
+     [
+      [
+       "docs_copilot_ai_powered_suggestions__31c720f2",
+       "docs_setup_setup_overview__6919441a"
+      ],
+      [
+       "docs_setup_setup_overview__6919441a",
+       "docs_setup_linux__76ac290d"
+      ],
+      [
+       "docs_setup_linux__76ac290d",
+       "docs_copilot_overview__2cd7cd75"
+      ],
+      [
+       "docs_copilot_overview__2cd7cd75",
+       "docs_copilot_ai_powered_suggestions__31c720f2"
+      ]
+     ],
+     [
+      [
+       "docs_java_extensions__b50b8849",
+       "docs_java_java_tomcat_jetty__26f8c7d9"
+      ],
+      [
+       "docs_java_java_tomcat_jetty__26f8c7d9",
+       "docs_java_java_spring_boot__e959864f"
+      ],
+      [
+       "docs_java_java_spring_boot__e959864f",
+       "docs_java_java_webapp__19295e43"
+      ],
+      [
+       "docs_java_java_webapp__19295e43",
+       "docs_java_java_debugging__5f7a5360"
+      ],
+      [
+       "docs_java_java_debugging__5f7a5360",
+       "docs_java_extensions__b50b8849"
+      ]
+     ],
+     [
+      [
+       "api_extension_guides_markdown_extension__cad6a123",
+       "api_references_contribution_points__4f3841fd"
+      ],
+      [
+       "api_references_contribution_points__4f3841fd",
+       "docs_editing_userdefinedsnippets__0a402757"
+      ],
+      [
+       "docs_editing_userdefinedsnippets__0a402757",
+       "api_index__3920a8b1"
+      ],
+      [
+       "api_index__3920a8b1",
+       "api_extension_guides_overview__04d7e663"
+      ],
+      [
+       "api_extension_guides_overview__04d7e663",
+       "api_extension_guides_markdown_extension__cad6a123"
+      ]
+     ],
+     [
+      [
+       "docs_copilot_ai_powered_suggestions__31c720f2",
+       "docs_setup_setup_overview__6919441a"
+      ],
+      [
+       "docs_setup_setup_overview__6919441a",
+       "docs_getstarted_tips_and_tricks__f33c971f"
+      ],
+      [
+       "docs_getstarted_tips_and_tricks__f33c971f",
+       "docs_getstarted_getting_started__927330a1"
+      ],
+      [
+       "docs_getstarted_getting_started__927330a1",
+       "docs_debugtest_debugging__84e7f911"
+      ],
+      [
+       "docs_debugtest_debugging__84e7f911",
+       "docs_copilot_reference_copilot_vscode_features__eb758d7f"
+      ],
+      [
+       "docs_copilot_reference_copilot_vscode_features__eb758d7f",
+       "docs_copilot_ai_powered_suggestions__31c720f2"
+      ]
+     ],
+     [
+      [
+       "api_index__3920a8b1",
+       "api_references_contribution_points__4f3841fd"
+      ],
+      [
+       "api_references_contribution_points__4f3841fd",
+       "docs_debugtest_tasks__e815e8af"
+      ],
+      [
+       "docs_debugtest_tasks__e815e8af",
+       "docs_editing_codebasics__fffe42c0"
+      ],
+      [
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f"
+      ],
+      [
+       "docs_languages_overview__924a2e0f",
+       "api_language_extensions_language_server_extension_guide__6a7e6ac8"
+      ],
+      [
+       "api_language_extensions_language_server_extension_guide__6a7e6ac8",
+       "api_index__3920a8b1"
+      ]
+     ]
+    ],
+    "by_length": {
+     "3": {
+      "candidate_stream_sha256": "8129a6760925b09a8103ba2e76b3aa64288601f6421aa6899ccfa0de0da1d1de",
+      "candidates": 60,
+      "empty_interpretation": null,
+      "expansions": 3807,
+      "selected": [
+       {
+        "cycle": [
+         "docs_configure_settings__9922f3c2",
+         "docs_remote_remote_overview__75c558ae",
+         "docs_remote_ssh__a35fe360"
+        ],
+        "length": 3,
+        "selection_hash": "0595085f1829a60819be46c51a12025184cd45dfc5488583fe3e7c56c8ac30aa"
+       },
+       {
+        "cycle": [
+         "docs_editing_codebasics__fffe42c0",
+         "docs_languages_overview__924a2e0f",
+         "docs_languages_dotnet__8eff33e2"
+        ],
+        "length": 3,
+        "selection_hash": "08b64365032529034f5366d182ce57855bc977439c9d06a2e414a7d243acc251"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "4": {
+      "candidate_stream_sha256": "3c1fc44b75f317c7f45bf5f082f721eef69693940375850090c44c3e75e826cc",
+      "candidates": 116,
+      "empty_interpretation": null,
+      "expansions": 11549,
+      "selected": [
+       {
+        "cycle": [
+         "docs_editing_codebasics__fffe42c0",
+         "docs_languages_overview__924a2e0f",
+         "docs_languages_python__56c08e97",
+         "docs_getstarted_userinterface__2c831921"
+        ],
+        "length": 4,
+        "selection_hash": "0381cae58f54fae629936e21eaf67717e9ac7beb0ed8880205e314afd5cd3472"
+       },
+       {
+        "cycle": [
+         "docs_copilot_ai_powered_suggestions__31c720f2",
+         "docs_setup_setup_overview__6919441a",
+         "docs_setup_linux__76ac290d",
+         "docs_copilot_overview__2cd7cd75"
+        ],
+        "length": 4,
+        "selection_hash": "03dc62af3b56bf18b82ef35cfbb630ac54d1f912679b2102ac619adb5ad281bf"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "5": {
+      "candidate_stream_sha256": "49256bb76667cbc99278e8ed7c5517caef49635b7c56db5e84ebad614522af94",
+      "candidates": 443,
+      "empty_interpretation": null,
+      "expansions": 40754,
+      "selected": [
+       {
+        "cycle": [
+         "docs_java_extensions__b50b8849",
+         "docs_java_java_tomcat_jetty__26f8c7d9",
+         "docs_java_java_spring_boot__e959864f",
+         "docs_java_java_webapp__19295e43",
+         "docs_java_java_debugging__5f7a5360"
+        ],
+        "length": 5,
+        "selection_hash": "00e45b2546ee46b1d5db6bad8219231972727a89659aa1d977b680ac1927aa93"
+       },
+       {
+        "cycle": [
+         "api_extension_guides_markdown_extension__cad6a123",
+         "api_references_contribution_points__4f3841fd",
+         "docs_editing_userdefinedsnippets__0a402757",
+         "api_index__3920a8b1",
+         "api_extension_guides_overview__04d7e663"
+        ],
+        "length": 5,
+        "selection_hash": "01a23149f5957cce326e7259ba21a9265a77191657167f29cece8c82d4a8e120"
+       }
+      ],
+      "status": "exhaustive"
+     },
+     "6": {
+      "candidate_stream_sha256": "a08a87084aa32a947133bcd9cbecf13549972ccc574aa0c75d92747805529441",
+      "candidates": 1445,
+      "empty_interpretation": null,
+      "expansions": 152641,
+      "selected": [
+       {
+        "cycle": [
+         "docs_copilot_ai_powered_suggestions__31c720f2",
+         "docs_setup_setup_overview__6919441a",
+         "docs_getstarted_tips_and_tricks__f33c971f",
+         "docs_getstarted_getting_started__927330a1",
+         "docs_debugtest_debugging__84e7f911",
+         "docs_copilot_reference_copilot_vscode_features__eb758d7f"
+        ],
+        "length": 6,
+        "selection_hash": "0068cee4c12b991490e9dcd43ca5e6f6b22337b28fa4286c73102660954e79f3"
+       },
+       {
+        "cycle": [
+         "api_index__3920a8b1",
+         "api_references_contribution_points__4f3841fd",
+         "docs_debugtest_tasks__e815e8af",
+         "docs_editing_codebasics__fffe42c0",
+         "docs_languages_overview__924a2e0f",
+         "api_language_extensions_language_server_extension_guide__6a7e6ac8"
+        ],
+        "length": 6,
+        "selection_hash": "00d0397d42755d02aff11a10ed9800a332d30cab5cd4a7051901a5c805ddc622"
+       }
+      ],
+      "status": "exhaustive"
+     }
+    },
+    "cycles": [
+     [
+      "docs_configure_settings__9922f3c2",
+      "docs_remote_remote_overview__75c558ae",
+      "docs_remote_ssh__a35fe360"
+     ],
+     [
+      "docs_editing_codebasics__fffe42c0",
+      "docs_languages_overview__924a2e0f",
+      "docs_languages_dotnet__8eff33e2"
+     ],
+     [
+      "docs_editing_codebasics__fffe42c0",
+      "docs_languages_overview__924a2e0f",
+      "docs_languages_python__56c08e97",
+      "docs_getstarted_userinterface__2c831921"
+     ],
+     [
+      "docs_copilot_ai_powered_suggestions__31c720f2",
+      "docs_setup_setup_overview__6919441a",
+      "docs_setup_linux__76ac290d",
+      "docs_copilot_overview__2cd7cd75"
+     ],
+     [
+      "docs_java_extensions__b50b8849",
+      "docs_java_java_tomcat_jetty__26f8c7d9",
+      "docs_java_java_spring_boot__e959864f",
+      "docs_java_java_webapp__19295e43",
+      "docs_java_java_debugging__5f7a5360"
+     ],
+     [
+      "api_extension_guides_markdown_extension__cad6a123",
+      "api_references_contribution_points__4f3841fd",
+      "docs_editing_userdefinedsnippets__0a402757",
+      "api_index__3920a8b1",
+      "api_extension_guides_overview__04d7e663"
+     ],
+     [
+      "docs_copilot_ai_powered_suggestions__31c720f2",
+      "docs_setup_setup_overview__6919441a",
+      "docs_getstarted_tips_and_tricks__f33c971f",
+      "docs_getstarted_getting_started__927330a1",
+      "docs_debugtest_debugging__84e7f911",
+      "docs_copilot_reference_copilot_vscode_features__eb758d7f"
+     ],
+     [
+      "api_index__3920a8b1",
+      "api_references_contribution_points__4f3841fd",
+      "docs_debugtest_tasks__e815e8af",
+      "docs_editing_codebasics__fffe42c0",
+      "docs_languages_overview__924a2e0f",
+      "api_language_extensions_language_server_extension_guide__6a7e6ac8"
+     ]
+    ],
+    "ledger_sha256": "d6c8067d3af5814e1c3660b99fd8d05082a00aa23ff8342278b06e500ba6c0f5",
+    "limitation": "hash sample of encountered candidates; capped traversal is not uniform over all cycles",
+    "nonreciprocal_arcs": 2407,
+    "parameters": {
+     "budget": 250000,
+     "corpus": "vscode_docs",
+     "lengths": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "quota": 2,
+     "seed": 231031
+    },
+    "selected": [
+     {
+      "cycle": [
+       "docs_configure_settings__9922f3c2",
+       "docs_remote_remote_overview__75c558ae",
+       "docs_remote_ssh__a35fe360"
+      ],
+      "length": 3,
+      "selection_hash": "0595085f1829a60819be46c51a12025184cd45dfc5488583fe3e7c56c8ac30aa"
+     },
+     {
+      "cycle": [
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f",
+       "docs_languages_dotnet__8eff33e2"
+      ],
+      "length": 3,
+      "selection_hash": "08b64365032529034f5366d182ce57855bc977439c9d06a2e414a7d243acc251"
+     },
+     {
+      "cycle": [
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f",
+       "docs_languages_python__56c08e97",
+       "docs_getstarted_userinterface__2c831921"
+      ],
+      "length": 4,
+      "selection_hash": "0381cae58f54fae629936e21eaf67717e9ac7beb0ed8880205e314afd5cd3472"
+     },
+     {
+      "cycle": [
+       "docs_copilot_ai_powered_suggestions__31c720f2",
+       "docs_setup_setup_overview__6919441a",
+       "docs_setup_linux__76ac290d",
+       "docs_copilot_overview__2cd7cd75"
+      ],
+      "length": 4,
+      "selection_hash": "03dc62af3b56bf18b82ef35cfbb630ac54d1f912679b2102ac619adb5ad281bf"
+     },
+     {
+      "cycle": [
+       "docs_java_extensions__b50b8849",
+       "docs_java_java_tomcat_jetty__26f8c7d9",
+       "docs_java_java_spring_boot__e959864f",
+       "docs_java_java_webapp__19295e43",
+       "docs_java_java_debugging__5f7a5360"
+      ],
+      "length": 5,
+      "selection_hash": "00e45b2546ee46b1d5db6bad8219231972727a89659aa1d977b680ac1927aa93"
+     },
+     {
+      "cycle": [
+       "api_extension_guides_markdown_extension__cad6a123",
+       "api_references_contribution_points__4f3841fd",
+       "docs_editing_userdefinedsnippets__0a402757",
+       "api_index__3920a8b1",
+       "api_extension_guides_overview__04d7e663"
+      ],
+      "length": 5,
+      "selection_hash": "01a23149f5957cce326e7259ba21a9265a77191657167f29cece8c82d4a8e120"
+     },
+     {
+      "cycle": [
+       "docs_copilot_ai_powered_suggestions__31c720f2",
+       "docs_setup_setup_overview__6919441a",
+       "docs_getstarted_tips_and_tricks__f33c971f",
+       "docs_getstarted_getting_started__927330a1",
+       "docs_debugtest_debugging__84e7f911",
+       "docs_copilot_reference_copilot_vscode_features__eb758d7f"
+      ],
+      "length": 6,
+      "selection_hash": "0068cee4c12b991490e9dcd43ca5e6f6b22337b28fa4286c73102660954e79f3"
+     },
+     {
+      "cycle": [
+       "api_index__3920a8b1",
+       "api_references_contribution_points__4f3841fd",
+       "docs_debugtest_tasks__e815e8af",
+       "docs_editing_codebasics__fffe42c0",
+       "docs_languages_overview__924a2e0f",
+       "api_language_extensions_language_server_extension_guide__6a7e6ac8"
+      ],
+      "length": 6,
+      "selection_hash": "00d0397d42755d02aff11a10ed9800a332d30cab5cd4a7051901a5c805ddc622"
+     }
+    ],
+    "selection_contract": "nonreciprocal_cycle_sample.v2"
+   },
+   "snapshot_commit": "8f89278b1fbe4ee0b8a69cd6103f0668d569a9e1",
+   "source_bundle": "artifacts\\normalized-magnetic-22-v1\\inputs\\anchors\\bundles\\anchor__vscode_docs.json",
+   "source_bundle_sha256": "9e190acdbe435b296bcb59258d0e6b15a7df556f42edbe31764be549e18d2f07",
+   "source_provenance": {
+    "commit": "8f89278b1fbe4ee0b8a69cd6103f0668d569a9e1",
+    "corpus_id": "vscode_docs",
+    "edge_csv_rows": 3028,
+    "edge_rows_with_endpoint_outside_nodes": 0,
+    "frozen_nodes_sha256": "a0d8eddb077acf2861b09b8ac3a8d8c1b9975dc79f03094219f212c4b7b2bf5a",
+    "frozen_selected_edges_sha256": "a10ca8727f84b3c0266cf872faed4826df6466f622b431004554d109e321ec1e",
+    "import_faq_patterns": [
+     "*faq*"
+    ],
+    "manifest_num_corpus_pages": 770,
+    "node_policy": "pinned CIKM importer discover_markdown_pages, FAQ excluded by the roster patterns",
+    "reconstruction": "audit_phase_flow_v2.anchor_graphs logic; importer pinned by diagnose_phase_flow.historical",
+    "source_graph_csv_sha256": "452af209bf391bd2d4e005a864951609f08b401e5fed34767b89ab3828c68d9b"
+   },
+   "view_arcs": 3025,
+   "view_graph_sha256": "810e5caec9076862f862f0b1f4758ba858683ed396fe9cf4af0a801560554cca",
+   "view_nodes": 658
+  }
+ ],
+ "policy": {
+  "budget": 250000,
+  "lengths": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "quota": 2,
+  "seed": 231031
+ },
+ "schema_version": "icsc.magnetic_attribution_23b_selection.v1",
+ "selection_contract": "nonreciprocal_cycle_sample.v2"
+}

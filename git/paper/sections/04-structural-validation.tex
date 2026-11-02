@@ -1,0 +1,39 @@
+\section{Validation and Structural Interpretation}
+\label{sec:validation}
+\subsection{Qualification and Known Blind Spots}
+All 802 characterization graph/view receipts and the 77 selected matched pairs
+at both attribution charges qualified numerically.
+Fixtures verify normalization, same-$W$ $q=0$ equality, spectral bounds and
+node-order invariance. Dense/sparse eigenvalues agree on benchmark graphs;
+projector parity was checked only in fixtures. Attribution baselines reproduce
+the corpus measurements exactly.
+
+Global reversal conjugates the operator and preserves its spectrum. On a forest,
+edge phases can be removed by a diagonal unitary transformation, so fixed-weight
+reorientation also preserves the spectrum. Reciprocal graphs have no charge
+dependence. Cyclic phase accumulation can alias: a directed four-cycle at
+$q=.25$ accumulates $2\pi$ and is balanced. A zero lowest eigenvalue therefore
+does not imply an acyclic graph or meaningful procedural hierarchy.
+
+An isolate or balanced component supplies a zero ground mode. The isolate
+control confirms that LWCC selection recovers a positive eigenvalue hidden in
+the full graph. Full-view $\lambda_1(.25)$ is numerically zero for every anchor.
+
+\subsection{Distinctions beyond the Preserved Summaries}
+The topology-only search selected 77 reversals in twelve corpora. Express and
+PyTorch had no eligible cycles of lengths 3--6; Elasticsearch's length-six search
+reached its cap. Every pair preserves the specified controls, with trophic
+incoherence agreeing within $10^{-9}$. At $q=.25$, 54 changes resolve across ten
+corpora (Table~\ref{tab:matched}); GitHub and Redis have no resolved response.
+At $q=.10$, 66 resolve across eleven corpora. Of the 54 pairs resolved at both
+charges, 22 switch sign.
+
+\input{tables/w02-matched-summary}
+The largest relative response occurs on AgOpenGPS's 23-node component, covering
+39\% of its snapshot, with a less concentrated baseline mode. In the other nine
+responding corpora, the largest selected change is 0.554\% and baseline effective
+support is below 10\% of component nodes. Thus the matched comparisons establish
+sensitivity beyond the specified preserved summaries, with mostly small,
+localized and charge-dependent responses. They do not establish useful evidence
+access. Baseline edge energy does not by itself determine the response, and
+cycle reversals do not isolate individual links' causal effects.

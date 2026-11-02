@@ -1,0 +1,33 @@
+{
+  "B": "unrun-not-authorized",
+  "frozen_41": {
+    "audit-inventory-v1.json": "08ab49d51e783468af1706a7b77e8da1db0fd8004556e831ac79c7676c8ea7ad",
+    "curated-freeze-v1.json": "0f2f261208b8aad0dc8fd9d3cd49454d99792c17891bff6939d33487b785c0c5",
+    "curation-decisions-v1.json": "06a9f2dad2a6d74aa0836df73e9ae0e1ce7cc98c94425e9876803b376d73e6b5",
+    "freeze-receipt-v1.json": "e0434de8fbd00816b5bd64e6e2f16cf90d17f1545c32dbde136c65725dbe0867",
+    "reading-receipt-v1.json": "24d0d682574c00f6e3e27a3a25f69bfa53a2c4f5dc8daf09d8516d025a4f0338",
+    "verification-receipt-v1.json": "785572b37211284f60c656a64c3322c2f686376b4b6d2652745bfeeb4703b8de"
+  },
+  "historical_groups_sha256": "d0a77e38b5ea4dccbdff2172321d31c14e3df5b3c86003c5281529fa18ea564b",
+  "historical_primary_seal_sha256": "67c8b6b34fb2af7758719b91855e0a4af52c19d13f106028c06a32fa7e5a9325",
+  "new_provider_calls": 0,
+  "new_verification_receipt": {
+    "dependency_lock_sha256": "a6ebf1d518359498492d2464f8209a487c96aee20407bef2705472c5ee9b0c11",
+    "image": {
+      "reference": "sha256:63508efc544dd0e5186dbe3f4aeba48415779beccdf7d410e2c95aa4a272e3cf",
+      "tag": "retrieval-arena/verification:s41b-v1"
+    },
+    "platform": "linux/amd64",
+    "receipt_sha256": "ea005a4d5fd96aa6040cccd9bb64363f2c2489f1b82abc6acf61d38a173a0b35",
+    "schema_version": "retrieval_arena.verification_image_receipt.v2",
+    "source_commit": "99c2106a655bf3d2a71003c9103a6cc393a87498",
+    "source_tree": "0a3ca1c0fa471268e8cb6cc66936f33e4b423790"
+  },
+  "policy": "unchanged v2 numerical/constraints/highest-tier; only k=1 tie selection opts in",
+  "protocol_commit": "a26d17d4b93132565dafaa6e41f38b85cefe770a",
+  "protocol_sha256": "0aede1ff5e02b8b6e003f5b9b16689ad8cb0c463498ddd076cbf72b188340a76",
+  "schema_version": "icsc.minimum_cost_set.41b.v1",
+  "score_version": "retrieval_arena.embedded_selection.v2",
+  "selector": "retrieval_arena.embedded_selection.minimum_set.v1",
+  "study_binding_sha256": "741d2ac29f350efe7c65c2fc0563d50ca10b5937333856853c5a3f4a35e43925"
+}

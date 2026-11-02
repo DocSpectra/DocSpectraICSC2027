@@ -1,0 +1,10 @@
+{
+  "B": "unrun-not-authorized; any later B follows exposure to A",
+  "RA_source": "cf2eae9a4f1a805558446faa04dcfa0afc44974f",
+  "audit_inventory_sha256": "08ab49d51e783468af1706a7b77e8da1db0fd8004556e831ac79c7676c8ea7ad",
+  "context_commit": "888f0bca897a4402f44a606779e3e9dcebd1328b",
+  "curated_freeze_sha256": "0f2f261208b8aad0dc8fd9d3cd49454d99792c17891bff6939d33487b785c0c5",
+  "design_sha256": "36c172aae42976c4c747b0e711c21da41eb7aba2a8e6af81e872d8cca4b364b2",
+  "provider_calls": 0,
+  "real_scores_before_receipt": 0
+}

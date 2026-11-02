@@ -1,0 +1,192 @@
+{
+  "directed_arc_weight": 1,
+  "maximum_error": 3.0531133177191805e-14,
+  "q": 0.25,
+  "records": [
+    {
+      "analytic_marginal": 0.4019237886466841,
+      "audit_id": "41-06",
+      "baseline_analytic_energy": 0.0,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.4019237886466841,
+      "global_solver_certificate": false,
+      "gradient_inf": 1.6653345369377348e-16,
+      "kind": "new-transitive-triangle",
+      "maximum_schedule_error": 1.1102230246251565e-16,
+      "phase_assignments": {
+        "content_guides_dotnet_containerize__df8c5bec": 0.0,
+        "content_guides_dotnet_develop__b9588047": 2.0943951023931953,
+        "content_guides_dotnet_run_tests__df5b8b95": 1.0471975511965976
+      }
+    },
+    {
+      "analytic_marginal": 0.4019237886466841,
+      "audit_id": "41-03",
+      "baseline_analytic_energy": 0.0,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.4019237886466841,
+      "global_solver_certificate": false,
+      "gradient_inf": 1.6653345369377348e-16,
+      "kind": "new-transitive-triangle",
+      "maximum_schedule_error": 2.220446049250313e-16,
+      "phase_assignments": {
+        "content_guides_java_containerize__7f36650a": 0.0,
+        "content_guides_java_develop__b872b1f0": 2.0943951023931953,
+        "content_guides_java_run_tests__e79ed2ef": 1.0471975511965976
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-12",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 3.885780586188048e-16,
+      "phase_assignments": {
+        "content_guides_cpp_configure_ci_cd__a181fa64": 0.74946886541748,
+        "content_guides_cpp_containerize__87a0c70e": 0.0,
+        "content_guides_cpp_deploy__8a7e4894": 1.9455307595036366,
+        "content_guides_cpp_develop__8c0cb6f9": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-01",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 3.219646771412954e-15,
+      "phase_assignments": {
+        "content_guides_dotnet_configure_ci_cd__9ad09014": 0.74946886541748,
+        "content_guides_dotnet_containerize__df8c5bec": 0.0,
+        "content_guides_dotnet_deploy__a508745b": 1.9455307595036366,
+        "content_guides_dotnet_run_tests__df5b8b95": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-04",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 1.2212453270876722e-15,
+      "phase_assignments": {
+        "content_guides_bun_configure_ci_cd__df823a5d": 0.74946886541748,
+        "content_guides_bun_containerize__6872b268": 0.0,
+        "content_guides_bun_deploy__329b581d": 1.9455307595036366,
+        "content_guides_bun_develop__7d231d40": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-11",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 2.220446049250313e-15,
+      "phase_assignments": {
+        "content_guides_golang_build_images__68431fa3": 0.0,
+        "content_guides_golang_configure_ci_cd__e1163fe4": 0.74946886541748,
+        "content_guides_golang_deploy__1af0af97": 1.9455307595036366,
+        "content_guides_golang_run_tests__ec5a3bf0": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-09",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 6.106226635438361e-15,
+      "phase_assignments": {
+        "content_guides_php_configure_ci_cd__d8e10536": 0.74946886541748,
+        "content_guides_php_containerize__fd88cf46": 0.0,
+        "content_guides_php_deploy__3875e7a7": 1.9455307595036366,
+        "content_guides_php_run_tests__2259e5a9": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-13",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 3.0531133177191805e-14,
+      "phase_assignments": {
+        "content_guides_r_configure_ci_cd__ea2482b3": 0.74946886541748,
+        "content_guides_r_containerize__892d7e9b": 0.0,
+        "content_guides_r_deploy__9f82592d": 1.9455307595036366,
+        "content_guides_r_develop__9e8f6fa5": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-07",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 5.551115123125783e-16,
+      "phase_assignments": {
+        "content_guides_java_configure_ci_cd__9e825d49": 0.74946886541748,
+        "content_guides_java_containerize__7f36650a": 0.0,
+        "content_guides_java_deploy__71bf11ee": 1.9455307595036366,
+        "content_guides_java_run_tests__e79ed2ef": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.1944067363117047,
+      "audit_id": "41-02",
+      "baseline_analytic_energy": 0.4019237886466839,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.5963305249583886,
+      "global_solver_certificate": false,
+      "gradient_inf": 0.0,
+      "kind": "two-triangles-sharing-edge",
+      "maximum_schedule_error": 3.6637359812630166e-15,
+      "phase_assignments": {
+        "content_guides_deno_configure_ci_cd__6901b8f0": 0.74946886541748,
+        "content_guides_deno_containerize__91ad6baf": 0.0,
+        "content_guides_deno_deploy__2c09b51e": 1.9455307595036366,
+        "content_guides_deno_develop__bd8d1835": 1.9455307595036366
+      }
+    },
+    {
+      "analytic_marginal": 0.4019237886466841,
+      "audit_id": "41-08",
+      "baseline_analytic_energy": 0.0,
+      "derived_from_actual_equal_weight_arcs": true,
+      "edited_analytic_energy": 0.4019237886466841,
+      "global_solver_certificate": false,
+      "gradient_inf": 1.6653345369377348e-16,
+      "kind": "new-transitive-triangle",
+      "maximum_schedule_error": 8.104628079763643e-15,
+      "phase_assignments": {
+        "content_guides_php_containerize__fd88cf46": 0.0,
+        "content_guides_php_develop__08e2c054": 2.0943951023931953,
+        "content_guides_php_run_tests__2259e5a9": 1.0471975511965976
+      }
+    }
+  ],
+  "symmetric_term_weight": 0.5
+}

@@ -1,0 +1,460 @@
+{
+  "construction": "Fixed named workflow pair list using paths and historical five mandatory identities; no costs or full-page curation.",
+  "design_sha256": "36c172aae42976c4c747b0e711c21da41eb7aba2a8e6af81e872d8cca4b364b2",
+  "maximum_admitted": 16,
+  "pairs": [
+    {
+      "audit_id": "41-01",
+      "mandatory": true,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_dotnet_run_tests__df5b8b95",
+        "historical_export_sha256": "51505d3edd54a84a4e293b4cdedc4b7a6e4793baba53e600da1ce051dd1f9624",
+        "path": "content/guides/dotnet/run-tests.md",
+        "raw_sha256": "131a5207982da2181e091b7e8af06a15471e737d6cdb615c7706a24544844759"
+      },
+      "target": {
+        "doc_id": "content_guides_dotnet_configure_ci_cd__9ad09014",
+        "historical_export_sha256": "f320d326bdd26b6e94aa80ae09f67eac327b1b698f306c5c71cd9d717b8931bf",
+        "path": "content/guides/dotnet/configure-ci-cd.md",
+        "raw_sha256": "2edb14553086f2dbec1dac9a86a51a35eac2d6d145ca1a8a515e3213f9369287"
+      }
+    },
+    {
+      "audit_id": "41-02",
+      "mandatory": true,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_deno_develop__bd8d1835",
+        "historical_export_sha256": "5c353e290b9c1b3fe892f1fc9103362537939bc67b188268ab0c694af51b2405",
+        "path": "content/guides/deno/develop.md",
+        "raw_sha256": "56e82d36ab2a5841fc81b5fc63c2c10b9cb028fe57f0655ae01c05870bad0c21"
+      },
+      "target": {
+        "doc_id": "content_guides_deno_configure_ci_cd__6901b8f0",
+        "historical_export_sha256": "61ebfe2811e311cbb9e502d0e879647fff516b682f297f367921645d4a42ea4d",
+        "path": "content/guides/deno/configure-ci-cd.md",
+        "raw_sha256": "52641751311c96a40855e56110c4484a6069d53d6941460d7a576fff91a87581"
+      }
+    },
+    {
+      "audit_id": "41-03",
+      "mandatory": true,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_java_develop__b872b1f0",
+        "historical_export_sha256": "1270bc506d969c75e383f2675dfc5de9f9ecaf240a7ac314ab6a27a502272849",
+        "path": "content/guides/java/develop.md",
+        "raw_sha256": "1b6ed7176792948fa8871c42bf5ddca8dd7ba236bef8fda23ab9fb6a20edf0d0"
+      },
+      "target": {
+        "doc_id": "content_guides_java_run_tests__e79ed2ef",
+        "historical_export_sha256": "8557ea38c9f7bc898b7d54a025f95ad4e6962ca9d1b2600d10583f71cd39840f",
+        "path": "content/guides/java/run-tests.md",
+        "raw_sha256": "424c81db9bcaa7e506b46bc4e12b9f87c30a649500517b10b1ec98e24b313ae6"
+      }
+    },
+    {
+      "audit_id": "41-04",
+      "mandatory": true,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_bun_develop__7d231d40",
+        "historical_export_sha256": "e7c7411a6afa7d23648b5c2cc8d17bd3173c17d5e003465f8391eb1b803297bd",
+        "path": "content/guides/bun/develop.md",
+        "raw_sha256": "61fccc388fbdd67cdd4cdf0e77868ac345ab679e34f2c81d1a548f4273fe9dd6"
+      },
+      "target": {
+        "doc_id": "content_guides_bun_configure_ci_cd__df823a5d",
+        "historical_export_sha256": "9f283970265df9fb4814181146bd3d8f7e73a2e8b5ea37389c900d6648aa7803",
+        "path": "content/guides/bun/configure-ci-cd.md",
+        "raw_sha256": "cca71dd8cd4295f7ae3e25a0e7735bf6febe567326e4f175ec68258b5795489c"
+      }
+    },
+    {
+      "audit_id": "41-05",
+      "mandatory": true,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+      "source": {
+        "doc_id": "content_guides_nextjs_run_tests__c2119b59",
+        "historical_export_sha256": "51b6fbfa80741ba1e3d2f2a9e1bdf9f79f3343c6a843cc384755a08244463a2f",
+        "path": "content/guides/nextjs/run-tests.md",
+        "raw_sha256": "602eba60f865b1219662432493b60bb3229480935dda83130c8d23806586a9a6"
+      },
+      "target": {
+        "doc_id": "content_guides_nextjs_configure_github_actions__84c7bac3",
+        "historical_export_sha256": "47c9e5dad8aa96125f4c4ee61757a651f32097674aadf71cda8ceb6186fe641f",
+        "path": "content/guides/nextjs/configure-github-actions.md",
+        "raw_sha256": "960ac42f33914833fc2edef48f006ffa98206e090922d3679baf3555cb9e4587"
+      }
+    },
+    {
+      "audit_id": "41-06",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_dotnet_develop__b9588047",
+        "historical_export_sha256": "5f28e1961e44f66672ccf93eea782a9aa3663cf87b8da272349e1e189517163e",
+        "path": "content/guides/dotnet/develop.md",
+        "raw_sha256": "0ba48d975957584c937a4dc7aa8e190311b7186cf48183a476b5cb31852f234e"
+      },
+      "target": {
+        "doc_id": "content_guides_dotnet_run_tests__df5b8b95",
+        "historical_export_sha256": "51505d3edd54a84a4e293b4cdedc4b7a6e4793baba53e600da1ce051dd1f9624",
+        "path": "content/guides/dotnet/run-tests.md",
+        "raw_sha256": "131a5207982da2181e091b7e8af06a15471e737d6cdb615c7706a24544844759"
+      }
+    },
+    {
+      "audit_id": "41-07",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_java_run_tests__e79ed2ef",
+        "historical_export_sha256": "8557ea38c9f7bc898b7d54a025f95ad4e6962ca9d1b2600d10583f71cd39840f",
+        "path": "content/guides/java/run-tests.md",
+        "raw_sha256": "424c81db9bcaa7e506b46bc4e12b9f87c30a649500517b10b1ec98e24b313ae6"
+      },
+      "target": {
+        "doc_id": "content_guides_java_configure_ci_cd__9e825d49",
+        "historical_export_sha256": "146870dab0b35b122c6a9e0c2bfd5d0ab4c7600fd1005945430ecc496248ce1f",
+        "path": "content/guides/java/configure-ci-cd.md",
+        "raw_sha256": "24132f6b24e0b122668f654a4b4ba8d10c4526bd734bd5ad74502f344828dadf"
+      }
+    },
+    {
+      "audit_id": "41-08",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_php_develop__08e2c054",
+        "historical_export_sha256": "7a37e55f65d4baa4b72a6e54e369b26523ec14ced6497036893c0dd159b22415",
+        "path": "content/guides/php/develop.md",
+        "raw_sha256": "dac4a9404f33648859a638e2cadecf7a85813df9a1da9a54f5110d36a90f31e2"
+      },
+      "target": {
+        "doc_id": "content_guides_php_run_tests__2259e5a9",
+        "historical_export_sha256": "82a62ccba02dbe8c3f7717c0f1006c14c1a66d7606fc059ab425114a086a88bf",
+        "path": "content/guides/php/run-tests.md",
+        "raw_sha256": "f1f46b65f8427b504350520f58da5ca46cd21575cb3706983033ada4be7d4e6e"
+      }
+    },
+    {
+      "audit_id": "41-09",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_php_run_tests__2259e5a9",
+        "historical_export_sha256": "82a62ccba02dbe8c3f7717c0f1006c14c1a66d7606fc059ab425114a086a88bf",
+        "path": "content/guides/php/run-tests.md",
+        "raw_sha256": "f1f46b65f8427b504350520f58da5ca46cd21575cb3706983033ada4be7d4e6e"
+      },
+      "target": {
+        "doc_id": "content_guides_php_configure_ci_cd__d8e10536",
+        "historical_export_sha256": "16cbe86b12f890d8a3eaa5de2de2c0f57cdb168bbdf24d10082d53ad5866ba3f",
+        "path": "content/guides/php/configure-ci-cd.md",
+        "raw_sha256": "8e0218f2b4ae75d662d2f613a2d1174ea079f635ba45b7fc4825f58a2024d762"
+      }
+    },
+    {
+      "audit_id": "41-10",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_golang_develop__45148e1f",
+        "historical_export_sha256": "dc695bf1e218224f4329f30e1dd15c1a6e719c3ece23978c1c56b0f1e24b6ca2",
+        "path": "content/guides/golang/develop.md",
+        "raw_sha256": "d9b95030baf3b58bc4442b977ee0f4be475ba5337bcf87b2052b7f83b578fec4"
+      },
+      "target": {
+        "doc_id": "content_guides_golang_run_tests__ec5a3bf0",
+        "historical_export_sha256": "e7bd2f7ebe2eb2c8a9476252369f7c95c35284c0a5ed20cf1dad6f7c1d335d77",
+        "path": "content/guides/golang/run-tests.md",
+        "raw_sha256": "7c1d0811e2c06224a1c7c476b636b5ac83af659aa8883f18a32753ebd49eba88"
+      }
+    },
+    {
+      "audit_id": "41-11",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_golang_run_tests__ec5a3bf0",
+        "historical_export_sha256": "e7bd2f7ebe2eb2c8a9476252369f7c95c35284c0a5ed20cf1dad6f7c1d335d77",
+        "path": "content/guides/golang/run-tests.md",
+        "raw_sha256": "7c1d0811e2c06224a1c7c476b636b5ac83af659aa8883f18a32753ebd49eba88"
+      },
+      "target": {
+        "doc_id": "content_guides_golang_configure_ci_cd__e1163fe4",
+        "historical_export_sha256": "534500daa15dbeea0d148046debd5945228c74e24ca5e7f718091c6de32b26df",
+        "path": "content/guides/golang/configure-ci-cd.md",
+        "raw_sha256": "d8ce2aab154a9edd607510773b6a3a8fd3e314c000643dbcae2623ff11c7afce"
+      }
+    },
+    {
+      "audit_id": "41-12",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_cpp_develop__8c0cb6f9",
+        "historical_export_sha256": "f0f292e27772d4111167cb0845f765db08d04e2ddd5715de4f1b33470bbf0f06",
+        "path": "content/guides/cpp/develop.md",
+        "raw_sha256": "46f899590b8cc1099778a60d4a20b428dcefb79afa8044e99b7e8a8667dd78fc"
+      },
+      "target": {
+        "doc_id": "content_guides_cpp_configure_ci_cd__a181fa64",
+        "historical_export_sha256": "f9ac16637e0cbf86adf2bcf3965dc163894163ca46ea6d1355c8498daeb791de",
+        "path": "content/guides/cpp/configure-ci-cd.md",
+        "raw_sha256": "ffc2242cc40c8e1a4a02b55a98d8f85b28ab6ea53d08662b326b48c38f7fa276"
+      }
+    },
+    {
+      "audit_id": "41-13",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ae5f6d3f09969cc63e2d6b59fc90f41498f5155b2faad7294eef1bdb7eb85593",
+      "source": {
+        "doc_id": "content_guides_r_develop__9e8f6fa5",
+        "historical_export_sha256": "b006d48e517fc1f14553f1a72cd6a0a08d6b000017523fbe735aa83d1e627405",
+        "path": "content/guides/r/develop.md",
+        "raw_sha256": "77d6b20c41c5ee8f08812b390752350e15b32fdcdfc0a46eff5546941ab75181"
+      },
+      "target": {
+        "doc_id": "content_guides_r_configure_ci_cd__ea2482b3",
+        "historical_export_sha256": "86325a7f5063e6174cf28b4b0a032ce486f264f5c02a4e8868446cf8c09eeaba",
+        "path": "content/guides/r/configure-ci-cd.md",
+        "raw_sha256": "b22167e0efcfc39d244edf23dad7db8da20ee9f314ab2bd913163ee3e3bffa63"
+      }
+    },
+    {
+      "audit_id": "41-14",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+      "source": {
+        "doc_id": "content_guides_nextjs_develop__8b508da8",
+        "historical_export_sha256": "415b84c2a417c078a0cd271d8dc8b60577b6f170f6573f534bb5923e78038fca",
+        "path": "content/guides/nextjs/develop.md",
+        "raw_sha256": "b17efd9de44c9c2e3131317df09de9dfdc425ec74911854aaa8db0fb90a677bc"
+      },
+      "target": {
+        "doc_id": "content_guides_nextjs_run_tests__c2119b59",
+        "historical_export_sha256": "51b6fbfa80741ba1e3d2f2a9e1bdf9f79f3343c6a843cc384755a08244463a2f",
+        "path": "content/guides/nextjs/run-tests.md",
+        "raw_sha256": "602eba60f865b1219662432493b60bb3229480935dda83130c8d23806586a9a6"
+      }
+    },
+    {
+      "audit_id": "41-15",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+      "source": {
+        "doc_id": "content_guides_nextjs_containerize__2ddfb5de",
+        "historical_export_sha256": "5a954b01d993afb76b4ddbaeaec6afc320867bc37a9fc96a26291dc8248f0a95",
+        "path": "content/guides/nextjs/containerize.md",
+        "raw_sha256": "c1a57bcfba1c1387d31096917b6d81b7a88a41cd5355ad6c81e15cf536ac8869"
+      },
+      "target": {
+        "doc_id": "content_guides_nextjs_develop__8b508da8",
+        "historical_export_sha256": "415b84c2a417c078a0cd271d8dc8b60577b6f170f6573f534bb5923e78038fca",
+        "path": "content/guides/nextjs/develop.md",
+        "raw_sha256": "b17efd9de44c9c2e3131317df09de9dfdc425ec74911854aaa8db0fb90a677bc"
+      }
+    },
+    {
+      "audit_id": "41-16",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:a6686fcb22505abd4d253302bdc343b5830faab979452b733fd8bf5374f7dd61",
+      "source": {
+        "doc_id": "content_guides_nextjs_deploy__77f2e75f",
+        "historical_export_sha256": "88bf9ae2bd52bee67093bc11c54523c1035cbe00a8f499e7ad32c08c8b646b33",
+        "path": "content/guides/nextjs/deploy.md",
+        "raw_sha256": "366b81a139173c1555d57272ec1488e960b7650627c2c3f1584f318aa44134b9"
+      },
+      "target": {
+        "doc_id": "content_guides_nextjs_configure_github_actions__84c7bac3",
+        "historical_export_sha256": "47c9e5dad8aa96125f4c4ee61757a651f32097674aadf71cda8ceb6186fe641f",
+        "path": "content/guides/nextjs/configure-github-actions.md",
+        "raw_sha256": "960ac42f33914833fc2edef48f006ffa98206e090922d3679baf3555cb9e4587"
+      }
+    },
+    {
+      "audit_id": "41-17",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:436cbae1e356b317e8f94bcf0eadc43b0cf008aedd2a79ea23dd1b04bec9bf81",
+      "source": {
+        "doc_id": "content_manuals_offload_about__5ecc6c57",
+        "historical_export_sha256": "cd4a664c23cc178d95a904f7aed228632c4d4d4eb59d19812e46d7eeb24a63b5",
+        "path": "content/manuals/offload/about.md",
+        "raw_sha256": "ea87db0f1357f87643afebc08aa7fde16fd0efd765aa510092229e278bce5c10"
+      },
+      "target": {
+        "doc_id": "content_manuals_offload_quickstart__e67bb7d0",
+        "historical_export_sha256": "7b78ef54ccb270b8825e0871df388f5e768471f2a4d7614b3246afe4f2e1859c",
+        "path": "content/manuals/offload/quickstart.md",
+        "raw_sha256": "1b595d4fe9732b87d9d37a39f04cf5862f55d3d2b6485dfc4db3e53e1ad4e690"
+      }
+    },
+    {
+      "audit_id": "41-18",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:436cbae1e356b317e8f94bcf0eadc43b0cf008aedd2a79ea23dd1b04bec9bf81",
+      "source": {
+        "doc_id": "content_manuals_offload_optimize__1bcd12b4",
+        "historical_export_sha256": "76198570ff7956fdef5cdcae6667dc3b3a7bcee069b87d33fefff4bb158f863f",
+        "path": "content/manuals/offload/optimize.md",
+        "raw_sha256": "cd084c387e5bb0312b36c6d666b3c438aef26f3d6cab2659a23cadbc6e463593"
+      },
+      "target": {
+        "doc_id": "content_manuals_offload_usage__2006b6c7",
+        "historical_export_sha256": "54f8aab3f4eded3a26be4b49433fe287d141af4ec1374e84dc5e84d9d1389f6f",
+        "path": "content/manuals/offload/usage.md",
+        "raw_sha256": "fab3e3f4fdad8b996525073357a6e37d074330d4d931931b7539c5fb88fb7e11"
+      }
+    },
+    {
+      "audit_id": "41-19",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:436cbae1e356b317e8f94bcf0eadc43b0cf008aedd2a79ea23dd1b04bec9bf81",
+      "source": {
+        "doc_id": "content_manuals_offload_configuration__bcb283bb",
+        "historical_export_sha256": "6cf7300e4069b8e9a946838ba9e3f50cdc6ccacdc671fdcd2e3917f3d44c78e7",
+        "path": "content/manuals/offload/configuration.md",
+        "raw_sha256": "1ac0ce6bf598e03c67cf76bb6217822e7f3821fb7c57ba8bbc436412f91e68f9"
+      },
+      "target": {
+        "doc_id": "content_manuals_offload_usage__2006b6c7",
+        "historical_export_sha256": "54f8aab3f4eded3a26be4b49433fe287d141af4ec1374e84dc5e84d9d1389f6f",
+        "path": "content/manuals/offload/usage.md",
+        "raw_sha256": "fab3e3f4fdad8b996525073357a6e37d074330d4d931931b7539c5fb88fb7e11"
+      }
+    },
+    {
+      "audit_id": "41-20",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:436cbae1e356b317e8f94bcf0eadc43b0cf008aedd2a79ea23dd1b04bec9bf81",
+      "source": {
+        "doc_id": "content_manuals_offload_quickstart__e67bb7d0",
+        "historical_export_sha256": "7b78ef54ccb270b8825e0871df388f5e768471f2a4d7614b3246afe4f2e1859c",
+        "path": "content/manuals/offload/quickstart.md",
+        "raw_sha256": "1b595d4fe9732b87d9d37a39f04cf5862f55d3d2b6485dfc4db3e53e1ad4e690"
+      },
+      "target": {
+        "doc_id": "content_manuals_offload_configuration__bcb283bb",
+        "historical_export_sha256": "6cf7300e4069b8e9a946838ba9e3f50cdc6ccacdc671fdcd2e3917f3d44c78e7",
+        "path": "content/manuals/offload/configuration.md",
+        "raw_sha256": "1ac0ce6bf598e03c67cf76bb6217822e7f3821fb7c57ba8bbc436412f91e68f9"
+      }
+    },
+    {
+      "audit_id": "41-21",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "source": {
+        "doc_id": "content_manuals_extensions_index__0272c25f",
+        "historical_export_sha256": "fd67ea1bf55ea64d9d17691a85ee9c319fa6d94b1518c8293a8eb1602be6b045",
+        "path": "content/manuals/extensions/_index.md",
+        "raw_sha256": "bb207edbbd51c6b42925193427739aea1c7b36c9a7dcfa5521058ad70ef97214"
+      },
+      "target": {
+        "doc_id": "content_manuals_extensions_marketplace__bb372e8f",
+        "historical_export_sha256": "b19190b3f99e4715b9a6b3c7b1712e932af5636ee6752a8d526016d819b93ae7",
+        "path": "content/manuals/extensions/marketplace.md",
+        "raw_sha256": "937d13906423f4716c6f43eeff0d6e38fd0f472f565098fec031524d20cbc8da"
+      }
+    },
+    {
+      "audit_id": "41-22",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "source": {
+        "doc_id": "content_manuals_extensions_extensions_sdk_design_design_guidelines__27a09d2d",
+        "historical_export_sha256": "8d9a181fee66cf6925b402e4f61ea23d7756d6aa70b67bb696a933861d76566b",
+        "path": "content/manuals/extensions/extensions-sdk/design/design-guidelines.md",
+        "raw_sha256": "a1940850865ed0a89343d95ac4f913d2529e055da0f2cdfcbe04d45bf9522074"
+      },
+      "target": {
+        "doc_id": "content_manuals_extensions_marketplace__bb372e8f",
+        "historical_export_sha256": "b19190b3f99e4715b9a6b3c7b1712e932af5636ee6752a8d526016d819b93ae7",
+        "path": "content/manuals/extensions/marketplace.md",
+        "raw_sha256": "937d13906423f4716c6f43eeff0d6e38fd0f472f565098fec031524d20cbc8da"
+      }
+    },
+    {
+      "audit_id": "41-23",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "source": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_deploy_service__9eb1078d",
+        "historical_export_sha256": "e9ebf8bb498a5fe33457743ef540391ab71f32655d47b8a9033bf22f6d407fc8",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/deploy-service.md",
+        "raw_sha256": "165fd09b8ff9647ce7d8e714c6944ff8040f7b5106b7155822fe03e7f08c1bc6"
+      },
+      "target": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_scale_service__4ce47415",
+        "historical_export_sha256": "c1be1d231b17fb715ce76ff969836cb06fa6fefee8aef924bc12b1d45a3b33b7",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/scale-service.md",
+        "raw_sha256": "f5f071a7988c9f548067dc288692be16f3993a67c15b4bcf6426c1ec5a60f7b5"
+      }
+    },
+    {
+      "audit_id": "41-24",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "source": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_scale_service__4ce47415",
+        "historical_export_sha256": "c1be1d231b17fb715ce76ff969836cb06fa6fefee8aef924bc12b1d45a3b33b7",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/scale-service.md",
+        "raw_sha256": "f5f071a7988c9f548067dc288692be16f3993a67c15b4bcf6426c1ec5a60f7b5"
+      },
+      "target": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_drain_node__58011138",
+        "historical_export_sha256": "631972fd3d3bb5eb5778cf6f807ef6db4de9c039af49181a490e87716a53ba41",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/drain-node.md",
+        "raw_sha256": "c1773b345de08903e40baf58ee6f1066f2ebfcb6db4b4e3220d23822962d0546"
+      }
+    },
+    {
+      "audit_id": "41-25",
+      "mandatory": false,
+      "prior_exposure": "Conservatively potentially numerically exposed development case; no fresh-outcome claim.",
+      "region_id": "region:ca6ec50c7bc68ecb1c52a584f7854201824629c34018a8a2a91cb62d2d7487b0",
+      "source": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_inspect_service__d1d69252",
+        "historical_export_sha256": "cd699ea111ed82d1ee08b0cbf6a3d38a8aa7b9ddc8a9be4c0e107bf8f9653e1e",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/inspect-service.md",
+        "raw_sha256": "ac136503dfc621af5096d01b2ba48c935c286cf268a5461220790e4da03bbdc5"
+      },
+      "target": {
+        "doc_id": "content_manuals_engine_swarm_swarm_tutorial_rolling_update__266fcc94",
+        "historical_export_sha256": "44167e19b00b6d70a3d43493ffa01171bf903fb4a808a8439935ae8d29e1c708",
+        "path": "content/manuals/engine/swarm/swarm-tutorial/rolling-update.md",
+        "raw_sha256": "1af686c29af2259ba4d0450ae5c19bbc491fdf7ea2468aa5f9e84f733fef61b7"
+      }
+    }
+  ],
+  "provider_calls": 0,
+  "schema_version": "icsc.curated_audit.v1",
+  "source_file_count": 897
+}

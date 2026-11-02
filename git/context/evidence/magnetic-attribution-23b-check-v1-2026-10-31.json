@@ -1,0 +1,15 @@
+{
+ "all_pair_q_rows": 231,
+ "candidate_ledger_rows": 12435,
+ "check_script_sha256": "b1fafdd72a79dd1fe4270796710c6c1d2a0dfb64e11d4d7b9d2f541fb19db413",
+ "corpora": 14,
+ "freeze_commit": "b695a95",
+ "freeze_precedes_all_new_outcomes": true,
+ "paper_unchanged": true,
+ "passed": true,
+ "primary_pairs": 77,
+ "report_sha256": "ee61c26717737c4753eee82d71b0b97cee85634ab7f0d3012b163d7bcf5ff818",
+ "run_evidence_sha256": "934ee3a187d9fb5e50696637d14c0d4c7e1be2e1dc9992d90b9844ff81fb8be7",
+ "schema_version": "icsc.magnetic_attribution_23b_check.v1",
+ "selection_manifest_unchanged": true
+}

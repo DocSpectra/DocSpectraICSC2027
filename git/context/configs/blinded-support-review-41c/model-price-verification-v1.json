@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "manifest_sha256": "f351446c020c86cdda3aab3ab2b9c4fabc64aa967d155095c41cce1659c7e494",
+  "verified_utc": "2026-11-02T09:55:20Z",
+  "method": "Official documentation search followed by fetched model overview and settings pages; account access is tested only by the frozen synthetic preflight.",
+  "roles": [
+    {
+      "role": "eligibility",
+      "model": "claude-haiku-5-5",
+      "revision": "claude-haiku-5-5",
+      "input_per_mtok": 0.1,
+      "output_per_mtok": 0.5,
+      "context_tokens": 1000000,
+      "maximum_output_tokens": 128000,
+      "official_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "settings_source": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+      "effort_source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+      "verified_utc": "2026-11-02T09:55:20Z",
+      "availability": "Active on Claude API; fixed model ID without a separate dated alias.",
+      "pricing_scope": "Standard API, prompts <=100000 input tokens; frozen input cap is 32768. Above that threshold prices increase, outside this manifest's admitted request range.",
+      "settings": "low effort and thinking disabled are documented as supported; no sampling overrides. Frozen max_tokens=1800 is below the documented output maximum. Structured output schema is sent through the qualified SDK projection."
+    },
+    {
+      "role": "support_confirmation",
+      "model": "gpt-6.1-sol",
+      "revision": "gpt-6.1-sol",
+      "input_per_mtok": 2.0,
+      "output_per_mtok": 10.0,
+      "context_tokens": 1050000,
+      "maximum_output_tokens": 128000,
+      "official_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "verified_utc": "2026-11-02T09:55:20Z",
+      "availability": "Listed model and snapshot identity with Responses API and structured outputs support; account access remains for frozen preflight.",
+      "pricing_scope": "Standard default API tier; frozen 32768 input cap is below 272000-token long-context threshold. No regional or fast-tier configuration.",
+      "settings": "low reasoning effort is explicitly supported. Frozen max_output_tokens=1800 is below the documented output maximum; store=false and strict structured output remain unchanged."
+    }
+  ],
+  "caps_unchanged": true,
+  "requests_unchanged": true,
+  "provider_clients_constructed_during_documentation_verification": 0,
+  "note": "The Markdown variant of the OpenAI model page returned unsupported content-type; the fetched HTML model page established identity, limits, settings and tariffs."
+}
