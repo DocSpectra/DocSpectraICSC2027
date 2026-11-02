@@ -169,7 +169,11 @@ def displays():
                              ('prepare_w02_displays.py',['--corpora-only']),('draw_refinement_comparison.py',[]),
                              ('preview_answer_intervals.py',['--manuscript'])]:
             path=target/'git/paper/scripts'/script
-            sys.argv=[str(path),*args];runpy.run_path(str(path),run_name='__main__')
+            sys.argv=[str(path),*args]
+            try:
+                runpy.run_path(str(path),run_name='__main__')
+            except SystemExit as exc:
+                if exc.code not in (None,0):raise
         paper=ROOT/'git/paper'; new=target/'git/paper'
         import re
         main=(paper/'main.tex').read_text()+''.join(p.read_text() for p in (paper/'sections').glob('*.tex'))
